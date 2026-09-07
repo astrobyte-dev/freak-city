@@ -1,0 +1,8579 @@
+{
+  "nodes": [
+    {
+      "id": "arrival",
+      "title": "An address.\nNot an explanation.",
+      "category": "unease",
+      "location": "taxi",
+      "ending": false
+    },
+    {
+      "id": "door",
+      "title": "A name you can\nafford to lose.",
+      "category": "pressure",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "vestibule",
+      "title": "Nothing here\nis quite private.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "bar",
+      "title": "Something ordinary.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "coat",
+      "title": "Choose your armour.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "floor",
+      "title": "Everybody came\nfor something.",
+      "category": "mystery",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara",
+      "title": "The names\nare the problem.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "kitchen",
+      "title": "Salt. No revelation.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "quiet",
+      "title": "A seat left open.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste",
+      "title": "Terms of entry.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "terms",
+      "title": "The small print\nis still a choice.",
+      "category": "investigation",
+      "location": "upstairs",
+      "ending": false
+    },
+    {
+      "id": "luca",
+      "title": "No signal.\nPlenty to say.",
+      "category": "humour",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "radio",
+      "title": "Everybody’s archive.\nSomebody’s name.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "inez",
+      "title": "Paper remembers\nthe wrong things.",
+      "category": "investigation",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "register",
+      "title": "The price of\nan ordinary favour.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "washroom",
+      "title": "Out of order.\nMostly.",
+      "category": "humour",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "overhear",
+      "title": "A story you\ndon’t own.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "street",
+      "title": "The city\nwithout you.",
+      "category": "unease",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "kiosk",
+      "title": "The last thing\non the menu.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "decision",
+      "title": "You cannot be\nin both places.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "exchange",
+      "title": "Your presence\nhas been recorded.",
+      "category": "conflict",
+      "location": "upstairs",
+      "ending": false
+    },
+    {
+      "id": "objection",
+      "title": "Say it\nwhile they’re listening.",
+      "category": "pressure",
+      "location": "upstairs",
+      "ending": false
+    },
+    {
+      "id": "bay",
+      "title": "Someone has\na bus to catch.",
+      "category": "investigation",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "bus",
+      "title": "A small,\nnon-symbolic kindness.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "missed",
+      "title": "An empty chair\nis still an answer.",
+      "category": "unease",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "aftermath",
+      "title": "The first version\nis already circulating.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "contradiction",
+      "title": "A borrowed name\ncomes back.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "confession",
+      "title": "Repair isn’t\nerasure.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "archive",
+      "title": "An original\nwith missing pieces.",
+      "category": "investigation",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "hidden",
+      "title": "Eleven empty lines.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "proof",
+      "title": "The invitation\nhas a sender.",
+      "category": "mystery",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "sender",
+      "title": "“You could\nhave asked.”",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "ledger",
+      "title": "What does\nthe truth cost?",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "redact",
+      "title": "Eleven lines\nbecome a method.",
+      "category": "investigation",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "publish",
+      "title": "A file leaves\nyour hands.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "bargain",
+      "title": "A place\nat someone’s table.",
+      "category": "pressure",
+      "location": "upstairs",
+      "ending": false
+    },
+    {
+      "id": "withhold",
+      "title": "Possession\nis its own obligation.",
+      "category": "unease",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "mirror",
+      "title": "For your\nown protection.",
+      "category": "intimacy",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "walk",
+      "title": "The way home\nis still the way home.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "apartment",
+      "title": "Your own\nside of the door.",
+      "category": "mundane",
+      "location": "apartment",
+      "ending": false
+    },
+    {
+      "id": "reflection",
+      "title": "What stays\nwith you?",
+      "category": "intimacy",
+      "location": "apartment",
+      "ending": false
+    },
+    {
+      "id": "dawn",
+      "title": "The morning\nhas other plans.",
+      "category": "mystery",
+      "location": "apartment",
+      "ending": false
+    },
+    {
+      "id": "motel",
+      "title": "A room\nfor the next question.",
+      "category": "unease",
+      "location": "motel",
+      "ending": false
+    },
+    {
+      "id": "end_protect",
+      "title": "Some names\nstay unwritten.",
+      "category": "mundane",
+      "location": "apartment",
+      "ending": true
+    },
+    {
+      "id": "end_public",
+      "title": "The truth\nhas an audience.",
+      "category": "conflict",
+      "location": "apartment",
+      "ending": true
+    },
+    {
+      "id": "end_power",
+      "title": "Your name\nis on the list.",
+      "category": "pressure",
+      "location": "upstairs",
+      "ending": true
+    },
+    {
+      "id": "end_ghost",
+      "title": "You keep\nthe original.",
+      "category": "unease",
+      "location": "apartment",
+      "ending": true
+    },
+    {
+      "id": "salon",
+      "title": "The right\nto turn it over.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "reversal",
+      "title": "An introduction\non your terms.",
+      "category": "intimacy",
+      "location": "upstairs",
+      "ending": false
+    },
+    {
+      "id": "listening",
+      "title": "One shared\ntrack.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "casework",
+      "title": "Knowing who\nis a beginning.",
+      "category": "investigation",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "carbon_case",
+      "title": "The person\nshe didn’t ask.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "proxy_case",
+      "title": "A witness\nwith a casting vote.",
+      "category": "pressure",
+      "location": "upstairs",
+      "ending": false
+    },
+    {
+      "id": "letter_case",
+      "title": "The person\nbefore you.",
+      "category": "unease",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "source_call",
+      "title": "Someone says no.\nThe story has to bear it.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "assembly",
+      "title": "Put the pieces\nwhere they belong.",
+      "category": "investigation",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r1",
+      "title": "The things\nthat need doing.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r2",
+      "title": "A completely\nunnecessary argument.",
+      "category": "humour",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r3",
+      "title": "The space\nbetween shifts.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r4",
+      "title": "Help can\narrive badly.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r5",
+      "title": "Someone gets\nthe late shift.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r6",
+      "title": "Without\na useful excuse.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r7",
+      "title": "A break\nwith an actual end.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r8",
+      "title": "The counter\nafter midnight.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r9",
+      "title": "The right\nkind of ordinary.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r10",
+      "title": "An argument\nwith a history.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r11",
+      "title": "The choice\nthat came back.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r12",
+      "title": "Ask what\nshe means.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "mara_r13",
+      "title": "Not another\nshift.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r1",
+      "title": "A screw\nno bigger than a seed.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r2",
+      "title": "Dinner has\nbeen here for hours.",
+      "category": "humour",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r3",
+      "title": "The programme\nwith the bad wallpaper.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r4",
+      "title": "What the\nclothes suggested.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r5",
+      "title": "Relief for\none person.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r6",
+      "title": "A seat\nheld open.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r7",
+      "title": "Someone\nelse gets a turn.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r8",
+      "title": "The refunds\nhave names.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r9",
+      "title": "The favour\nwith a receipt.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r10",
+      "title": "A useful\nthing to refuse.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r11",
+      "title": "After the\npaper has moved.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r12",
+      "title": "The answer\nbelongs to her.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "celeste_r13",
+      "title": "One promise\nsmall enough to keep.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r1",
+      "title": "The wrong\nend of the cable.",
+      "category": "humour",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r2",
+      "title": "What you\nactually ordered.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r3",
+      "title": "Music for\ngetting home.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r4",
+      "title": "A smaller\nversion of your sentence.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r5",
+      "title": "Who paid\nfor the tools.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r6",
+      "title": "From this\nside of the room.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r7",
+      "title": "A message\ncan wait.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r8",
+      "title": "He was\ndoing something else.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r9",
+      "title": "The account\nand the person.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r10",
+      "title": "The correction\nneeds a subject.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r11",
+      "title": "No joke\nat the end.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r12",
+      "title": "Company\nwith an ending.",
+      "category": "intimacy",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "luca_r13",
+      "title": "A recommendation\nwithout an assignment.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "inez_r1",
+      "title": "Back for\none more hour.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r2",
+      "title": "The missing\nblue mitten.",
+      "category": "humour",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r3",
+      "title": "What plays\nbetween calls.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r4",
+      "title": "The colour\nshe remembered.",
+      "category": "conflict",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r5",
+      "title": "Whose explanation\nis it to give?",
+      "category": "pressure",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r6",
+      "title": "A lift\nis also a conversation.",
+      "category": "intimacy",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r7",
+      "title": "The end\nof the extra hour.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r8",
+      "title": "She has\nalready answered.",
+      "category": "conflict",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r9",
+      "title": "It belonged\nto the wrong hand.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r10",
+      "title": "An old\nargument changes hands.",
+      "category": "conflict",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r11",
+      "title": "Concern can\nbecome an instruction.",
+      "category": "intimacy",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r12",
+      "title": "An apology\nthat leaves you standing.",
+      "category": "intimacy",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "inez_r13",
+      "title": "A number\nfor ordinary things.",
+      "category": "mundane",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "late_room",
+      "title": "The room\nafter the rush.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "late_second",
+      "title": "Time belongs\nto someone else, too.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "late_table",
+      "title": "The last\nordinary table.",
+      "category": "humour",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "late_accounts",
+      "title": "What company\ndoes not settle.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "crossed_shift",
+      "title": "The same\nsmall pool of hours.",
+      "category": "conflict",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "closing_room",
+      "title": "Before\nyou disappear.",
+      "category": "mundane",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "closing_second",
+      "title": "One more\nproper goodbye.",
+      "category": "pressure",
+      "location": "velvet",
+      "ending": false
+    },
+    {
+      "id": "closing_table",
+      "title": "The things\nyou take with you.",
+      "category": "intimacy",
+      "location": "street",
+      "ending": false
+    },
+    {
+      "id": "home_callback",
+      "title": "Ordinary\nthings, returned.",
+      "category": "mundane",
+      "location": "apartment",
+      "ending": false
+    }
+  ],
+  "edges": [
+    {
+      "from": "arrival",
+      "to": "door",
+      "choice": "enter",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "nerve",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "arrival",
+      "to": "door",
+      "choice": "ask_driver",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "driverWarning",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "from": "DRIVER / RECEIPT",
+          "text": "Keep the cab receipt. The side entrance closes before the front. And don’t take their replacement taxi."
+        }
+      ]
+    },
+    {
+      "from": "arrival",
+      "to": "street",
+      "choice": "circle",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "circled",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "door",
+      "to": "vestibule",
+      "choice": "truth",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "doorHonest",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "invitation",
+          "value": "Player admitted the sender was unknown"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "door",
+      "to": "vestibule",
+      "choice": "lie",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "liedLuca",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "claimedSender",
+          "value": "Luca"
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "door-report",
+          "delay": 25,
+          "effects": [
+            {
+              "type": "belief",
+              "npc": "luca",
+              "key": "playerClaim",
+              "value": "The player said I invited them.",
+              "source": "Inez directly reported the door conversation"
+            },
+            {
+              "type": "memory",
+              "npc": "luca",
+              "key": "doorReport",
+              "value": "Inez heard the player claim my invitation"
+            },
+            {
+              "type": "message",
+              "from": "Luca",
+              "text": "inez says i invited you. funny. come find me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "door",
+      "to": "vestibule",
+      "choice": "private",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "boundary",
+          "value": "Asked to give only an alias"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "vestibule",
+      "to": "bar",
+      "choice": "bar",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "metMara",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "vestibule",
+      "to": "coat",
+      "choice": "wardrobe",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "ritual",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "bar",
+      "to": "floor",
+      "choice": "tea",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "drink",
+          "value": "tea"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "drink",
+          "value": "Tea, no sugar"
+        },
+        {
+          "type": "pull",
+          "key": "connection",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "barDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "bar",
+      "to": "floor",
+      "choice": "coffee",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "drink",
+          "value": "coffee"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "drink",
+          "value": "Coffee, despite the warning"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "barDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "bar",
+      "to": "floor",
+      "choice": "water",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "drink",
+          "value": "water"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "drink",
+          "value": "Water; asked about my shift"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "barDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "coat",
+      "to": "bar",
+      "choice": "keep_coat",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "outfit",
+          "value": "coat"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "coat",
+          "value": "Kept the raincoat"
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "coat",
+      "to": "bar",
+      "choice": "formal",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "outfit",
+          "value": "formal"
+        },
+        {
+          "type": "flag",
+          "key": "formalAccess",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "fashion.materials",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "attractor",
+          "key": "tailoring",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "coat",
+      "to": "bar",
+      "choice": "workwear",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "outfit",
+          "value": "workwear"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "nerve",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "mara",
+      "choice": "find_mara",
+      "minutes": 4,
+      "condition": {
+        "not": {
+          "flag": "maraTalk"
+        }
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraTalk",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "connection",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "celeste",
+      "choice": "find_celeste",
+      "minutes": 4,
+      "condition": {
+        "not": {
+          "flag": "celesteTalk"
+        }
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteTalk",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "ritual",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "luca",
+      "choice": "find_luca",
+      "minutes": 4,
+      "condition": {
+        "not": {
+          "flag": "lucaTalk"
+        }
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaTalk",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "inez",
+      "choice": "find_inez",
+      "minutes": 4,
+      "condition": {
+        "not": {
+          "flag": "inezTalk"
+        }
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezTalk",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "washroom",
+      "choice": "toilet",
+      "minutes": 3,
+      "condition": {
+        "not": {
+          "flag": "washroomDone"
+        }
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "washroomDone",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "salon",
+      "choice": "salon",
+      "minutes": 3,
+      "condition": {
+        "all": [
+          {
+            "not": {
+              "flag": "salonDone"
+            }
+          },
+          {
+            "before": 1455
+          },
+          {
+            "theme": "performance"
+          }
+        ]
+      },
+      "theme": "powerExchange",
+      "effects": [
+        {
+          "type": "engagement",
+          "key": "performance.observer",
+          "response": "explore",
+          "context": "authored choice"
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "reversal",
+      "choice": "private_token",
+      "minutes": 3,
+      "condition": {
+        "all": [
+          {
+            "interest": "authority.negotiated",
+            "minimum": 2
+          },
+          {
+            "npc": "celeste",
+            "trust": 2
+          },
+          {
+            "not": {
+              "flag": "salonDone"
+            }
+          }
+        ]
+      },
+      "theme": "powerExchange",
+      "effects": [
+        {
+          "type": "flag",
+          "key": "salonDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "floor",
+      "to": "listening",
+      "choice": "listen_track",
+      "minutes": 3,
+      "condition": {
+        "all": [
+          {
+            "flag": "lucaTalk"
+          },
+          {
+            "not": {
+              "flag": "heardTrack"
+            }
+          }
+        ]
+      },
+      "theme": "romance",
+      "effects": []
+    },
+    {
+      "from": "floor",
+      "to": "decision",
+      "choice": "commit",
+      "minutes": 1,
+      "effects": []
+    },
+    {
+      "from": "mara",
+      "to": "kitchen",
+      "choice": "protect_mara",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "promisedProtection",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "promise",
+          "value": "Promised to protect tenant names"
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara",
+      "to": "kitchen",
+      "choice": "no_promise",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara",
+      "to": "floor",
+      "choice": "trade_mara",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -2
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "pricedMara",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "kitchen",
+      "to": "quiet",
+      "choice": "chips",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "chips",
+          "value": "Shared cold chips and repaired the fan"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "flag",
+          "key": "fixedFan",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "kitchen",
+      "to": "floor",
+      "choice": "thanks",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "from": "quiet",
+      "to": "floor",
+      "choice": "stay_close",
+      "minutes": 3,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "affinity",
+          "amount": 2
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "chair",
+          "value": "Asked to sit together again"
+        },
+        {
+          "type": "pull",
+          "key": "connection",
+          "amount": 2
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 12
+        },
+        {
+          "type": "attractor",
+          "key": "practical-warmth",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "quiet",
+      "to": "floor",
+      "choice": "friends",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 10
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "quiet",
+      "to": "floor",
+      "choice": "leave_quiet",
+      "minutes": 1,
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 6
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste",
+      "to": "terms",
+      "choice": "read_terms",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "engagement",
+          "key": "authority.negotiated",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "pull",
+          "key": "ritual",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste",
+      "to": "floor",
+      "choice": "take_pass",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "item",
+          "id": "pass"
+        },
+        {
+          "type": "flag",
+          "key": "acceptedWitness",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "authority.negotiated",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "ambition",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "from": "celeste",
+      "to": "floor",
+      "choice": "decline_status",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "refusedWitness",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "ritual.optOut",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "terms",
+      "to": "floor",
+      "choice": "annotate",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "item",
+          "id": "pass"
+        },
+        {
+          "type": "flag",
+          "key": "objectedTerms",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "authority.negotiated",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "terms",
+          "value": "Annotated presence is not consent"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "terms",
+      "to": "floor",
+      "choice": "sign_alias",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "item",
+          "id": "pass"
+        },
+        {
+          "type": "flag",
+          "key": "acceptedWitness",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "ambition",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "terms",
+      "to": "floor",
+      "choice": "refuse_pen",
+      "minutes": 1,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "refusedWitness",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca",
+      "to": "radio",
+      "choice": "listen_luca",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "item",
+          "id": "matchbook"
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca",
+      "to": "radio",
+      "choice": "sympathy",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaMisunderstood",
+          "value": true
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "publication",
+          "value": "The player agreed to help publish.",
+          "source": "Misinterpreted sympathetic wording"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca",
+      "to": "floor",
+      "choice": "no_radio",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "boundary",
+          "value": "Declined to become a source"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "radio",
+      "to": "floor",
+      "choice": "correct_luca",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "correctedLuca",
+          "value": true
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "publication",
+          "value": "The player requires consent before publication.",
+          "source": "Player explicitly corrected me"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "radio",
+      "to": "floor",
+      "choice": "promise_publish",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "promisedLuca",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "moral",
+          "key": "ambition",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "radio",
+      "to": "floor",
+      "choice": "reserve",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez",
+      "to": "register",
+      "choice": "help_inez",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez",
+      "to": "register",
+      "choice": "accuse_inez",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "dimension",
+          "key": "nerve",
+          "amount": 5
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez",
+      "to": "floor",
+      "choice": "leave_inez",
+      "minutes": 1,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "register",
+      "to": "floor",
+      "choice": "return_bag",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "respectedRegister",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "register",
+          "value": "Returned the open register unread"
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "register",
+      "to": "floor",
+      "choice": "photo_page",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "copiedPage",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": -2
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 2
+        },
+        {
+          "type": "knowledge",
+          "who": "player",
+          "fact": "signature",
+          "source": "Apartment reference in the register"
+        }
+      ]
+    },
+    {
+      "from": "register",
+      "to": "floor",
+      "choice": "ask_copy",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "respectedRegister",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "knowledge",
+          "who": "player",
+          "fact": "signature",
+          "source": "Inez’s redacted register copy"
+        }
+      ]
+    },
+    {
+      "from": "washroom",
+      "to": "overhear",
+      "choice": "hear_more",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": -7
+        }
+      ]
+    },
+    {
+      "from": "washroom",
+      "to": "floor",
+      "choice": "leave_toilet",
+      "minutes": 1,
+      "effects": [
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "from": "overhear",
+      "to": "floor",
+      "choice": "keep_secret",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "protectedStranger",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 2
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "overhear",
+      "to": "floor",
+      "choice": "spread",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "exposedStranger",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 2
+        },
+        {
+          "type": "rumour",
+          "id": "fund-name",
+          "text": "A guest says relief money paid for a private membership. The account is unverified.",
+          "faction": "static"
+        },
+        {
+          "type": "message",
+          "from": "VENUE GROUP",
+          "text": "Your post has been forwarded. The named guest has left the group."
+        }
+      ]
+    },
+    {
+      "from": "overhear",
+      "to": "floor",
+      "choice": "anonymize",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "protectedStranger",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "from": "VENUE GROUP",
+          "text": "The treasurer has been asked to explain the shared accounting category."
+        }
+      ]
+    },
+    {
+      "from": "street",
+      "to": "door",
+      "choice": "street_door",
+      "minutes": 3,
+      "condition": {
+        "not": {
+          "flag": "barDone"
+        }
+      },
+      "effects": [
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "flag",
+          "key": "sawTrolley",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "street",
+      "to": "kiosk",
+      "choice": "street_kiosk",
+      "minutes": 5,
+      "condition": {
+        "not": {
+          "flag": "kioskDone"
+        }
+      },
+      "effects": [
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "flag",
+          "key": "sawTrolley",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "street",
+      "to": "decision",
+      "choice": "street_choose",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "flag",
+          "key": "sawTrolley",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "kiosk",
+      "to": "decision",
+      "choice": "kiosk_back",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "kioskDone",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "soup",
+          "value": "Player left a paid soup at the night window"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "from": "kiosk",
+      "to": "decision",
+      "choice": "kiosk_rush",
+      "minutes": 1,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "kioskDone",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "decision",
+      "to": "exchange",
+      "choice": "upstairs",
+      "minutes": 16,
+      "condition": {
+        "all": [
+          {
+            "before": 1460
+          },
+          {
+            "not": {
+              "flag": "refusedWitness"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "attendedExchange",
+          "value": true
+        },
+        {
+          "type": "lock",
+          "scene": "bay"
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 12
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": -8
+        }
+      ]
+    },
+    {
+      "from": "decision",
+      "to": "bay",
+      "choice": "loading_bay",
+      "minutes": 16,
+      "condition": {
+        "before": 1466
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "metWitness",
+          "value": true
+        },
+        {
+          "type": "lock",
+          "scene": "exchange"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "decision",
+      "to": "missed",
+      "choice": "neither",
+      "minutes": 30,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "choseNeither",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "selfPreservation",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "from": "decision",
+      "to": "floor",
+      "choice": "one_more",
+      "minutes": 2,
+      "condition": {
+        "before": 1455
+      },
+      "effects": []
+    },
+    {
+      "from": "exchange",
+      "to": "objection",
+      "choice": "object",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "knowledge",
+          "who": "player",
+          "fact": "signature",
+          "source": "Authorization attached to the transfer"
+        },
+        {
+          "type": "flag",
+          "key": "objected",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": -8
+        }
+      ]
+    },
+    {
+      "from": "exchange",
+      "to": "objection",
+      "choice": "watch_transfer",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "watchedCustody",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "from": "exchange",
+      "to": "aftermath",
+      "choice": "leave_exchange",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "objected",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "objection",
+      "to": "aftermath",
+      "choice": "call_bluff",
+      "minutes": 4,
+      "condition": {
+        "composure": 55
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "challengedBoard",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "faction",
+          "id": "umbrella",
+          "amount": -2
+        }
+      ]
+    },
+    {
+      "from": "objection",
+      "to": "aftermath",
+      "choice": "recover",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "challengedBoard",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 12
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "objection",
+      "to": "aftermath",
+      "choice": "leverage",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "boardDeal",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 2
+        },
+        {
+          "type": "faction",
+          "id": "umbrella",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "objection",
+      "to": "aftermath",
+      "choice": "leave_room",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "leftExchange",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "bay",
+      "to": "bus",
+      "choice": "protect_witness",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "protectedWitness",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "witness",
+          "value": "Promised Ruth anonymity"
+        }
+      ]
+    },
+    {
+      "from": "bay",
+      "to": "bus",
+      "choice": "name_witness",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "namedWitness",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": -2
+        },
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "message",
+          "from": "Luca",
+          "text": "got a message from ruth. she says you wanted her name on it. i need to think about that."
+        }
+      ]
+    },
+    {
+      "from": "bay",
+      "to": "bus",
+      "choice": "copy_dates",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "protectedWitness",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "id": "photo"
+        }
+      ]
+    },
+    {
+      "from": "bus",
+      "to": "aftermath",
+      "choice": "fare",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "paidFare",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "fare",
+          "value": "Paid Ruth’s fare without asking for anything"
+        }
+      ]
+    },
+    {
+      "from": "bus",
+      "to": "aftermath",
+      "choice": "arrange",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "fareDeferred",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "bus",
+      "to": "aftermath",
+      "choice": "keep_cash",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "moral",
+          "key": "selfPreservation",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "from": "missed",
+      "to": "aftermath",
+      "choice": "return_after",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "flag",
+          "key": "fallbackEvidence",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "missed",
+      "to": "aftermath",
+      "choice": "keep_distance",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "item",
+          "id": "photo"
+        },
+        {
+          "type": "flag",
+          "key": "fallbackEvidence",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "aftermath",
+      "to": "contradiction",
+      "choice": "face_luca",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "liedLuca"
+          },
+          {
+            "after": 1456
+          }
+        ]
+      },
+      "effects": []
+    },
+    {
+      "from": "aftermath",
+      "to": "archive",
+      "choice": "archive_now",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "item",
+          "id": "ledger"
+        },
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "aftermath",
+      "to": "hidden",
+      "choice": "mara_private",
+      "minutes": 5,
+      "condition": {
+        "all": [
+          {
+            "npc": "mara",
+            "trust": 5
+          },
+          {
+            "flag": "fixedFan"
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "item",
+          "id": "ledger"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "aftermath",
+      "to": "archive",
+      "choice": "outside_read",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "item",
+          "id": "ledger"
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "contradiction",
+      "to": "confession",
+      "choice": "admit_lie",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "admittedLie",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "lie",
+          "value": "Admitted falsely claiming my invitation"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "suspicion",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "contradiction",
+      "to": "archive",
+      "choice": "double_down",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "item",
+          "id": "ledger"
+        },
+        {
+          "type": "flag",
+          "key": "doubledDown",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "contradiction",
+          "value": "Repeated invitation claim after being challenged"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "suspicion",
+          "amount": 6
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": -3
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "contradiction",
+      "to": "archive",
+      "choice": "refuse_explain",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "item",
+          "id": "ledger"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "contradiction",
+          "value": "Declined to explain the door claim"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "suspicion",
+          "amount": 3
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "confession",
+      "to": "archive",
+      "choice": "accept_repair",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "item",
+          "id": "ledger"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "archive",
+      "to": "proof",
+      "choice": "open_proof",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "archive",
+      "to": "proof",
+      "choice": "ask_before",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "hidden",
+      "to": "proof",
+      "choice": "hold_history",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "sawHidden",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "hidden",
+      "to": "proof",
+      "choice": "ask_accountability",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "sawHidden",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "proof",
+      "to": "sender",
+      "choice": "confront_sender",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "confrontedSender",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "proof",
+      "to": "casework",
+      "choice": "focus_ledger",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "keptProofPrivate",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "sender",
+      "to": "casework",
+      "choice": "boundary_sender",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "senderBoundary",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "sender",
+      "to": "casework",
+      "choice": "debt_sender",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "senderDebt",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "nerve",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "from": "sender",
+      "to": "casework",
+      "choice": "distance_sender",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "senderDistance",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "ledger",
+      "to": "late_room",
+      "choice": "take_time",
+      "minutes": 3,
+      "condition": {
+        "not": {
+          "flag": "lateExpanded"
+        }
+      },
+      "effects": []
+    },
+    {
+      "from": "ledger",
+      "to": "redact",
+      "choice": "choose_redact",
+      "minutes": 12,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "ending",
+          "value": "protect"
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 4
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "faction",
+          "id": "static",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "id": "ledger",
+          "remove": true
+        },
+        {
+          "type": "item",
+          "id": "redacted"
+        },
+        {
+          "type": "schedule",
+          "id": "redaction-cost",
+          "delay": 10,
+          "effects": [
+            {
+              "type": "message",
+              "from": "Luca",
+              "text": "without dates matched to names, it needs another source. board gets a week. i know why you did it. still a week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "ledger",
+      "to": "publish",
+      "choice": "choose_publish",
+      "minutes": 8,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "ending",
+          "value": "public"
+        },
+        {
+          "type": "moral",
+          "key": "ambition",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 4
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -5
+        },
+        {
+          "type": "faction",
+          "id": "static",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "id": "ledger",
+          "remove": true
+        },
+        {
+          "type": "schedule",
+          "id": "publication-cost",
+          "delay": 8,
+          "effects": [
+            {
+              "type": "message",
+              "from": "VENUE GROUP",
+              "text": "The archive is public. A tenant has requested removal of their details. Copies are already circulating."
+            },
+            {
+              "type": "rumour",
+              "id": "published",
+              "text": "The outside witness exposed the club accounts and everyone named in them.",
+              "faction": "static"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "ledger",
+      "to": "bargain",
+      "choice": "choose_bargain",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "ending",
+          "value": "power"
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 4
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -3
+        },
+        {
+          "type": "faction",
+          "id": "umbrella",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "id": "ledger",
+          "remove": true
+        },
+        {
+          "type": "item",
+          "id": "pass"
+        }
+      ]
+    },
+    {
+      "from": "ledger",
+      "to": "withhold",
+      "choice": "choose_withhold",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "ending",
+          "value": "ghost"
+        },
+        {
+          "type": "moral",
+          "key": "selfPreservation",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": -2
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": -2
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "redact",
+      "to": "mirror",
+      "choice": "redact_done",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "redactionFinished",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "publish",
+      "to": "mirror",
+      "choice": "publish_done",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "publicationFinished",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "bargain",
+      "to": "mirror",
+      "choice": "bargain_done",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "bargainFinished",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "withhold",
+      "to": "mirror",
+      "choice": "withhold_done",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "withholdingFinished",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "mirror",
+      "to": "walk",
+      "choice": "mirror_ask",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "mirror",
+          "value": "Asked to receive information before decisions are made"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mirror",
+      "to": "walk",
+      "choice": "mirror_accept",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "mirror",
+          "value": "Accepted intention but requested remaining information"
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "mirror",
+      "to": "walk",
+      "choice": "mirror_angry",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "mirror",
+          "value": "Angry about the withheld message"
+        },
+        {
+          "type": "dimension",
+          "key": "nerve",
+          "amount": 6
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mirror",
+      "to": "walk",
+      "choice": "mirror_silence",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "moral",
+          "key": "selfPreservation",
+          "amount": 1
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "walk",
+      "to": "closing_room",
+      "choice": "keep_promises",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "lateExpanded"
+          },
+          {
+            "not": {
+              "flag": "closingComplete"
+            }
+          }
+        ]
+      },
+      "effects": []
+    },
+    {
+      "from": "walk",
+      "to": "apartment",
+      "choice": "home",
+      "minutes": 10,
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 15
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": -10
+        }
+      ]
+    },
+    {
+      "from": "walk",
+      "to": "apartment",
+      "choice": "reply_mara",
+      "minutes": 11,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "engagement",
+          "key": "care.checkIn",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "aftercare",
+          "value": "Asked me to get some sleep after the shift"
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 15
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": -10
+        }
+      ]
+    },
+    {
+      "from": "apartment",
+      "to": "home_callback",
+      "choice": "settle_home",
+      "minutes": 5,
+      "condition": {
+        "flag": "lateExpanded"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "homeReturned",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "apartment",
+      "to": "reflection",
+      "choice": "reflect",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "item",
+          "id": "key27"
+        },
+        {
+          "type": "message",
+          "from": "Inez",
+          "text": "The key is an offer, not an appointment. You can call before you come."
+        }
+      ]
+    },
+    {
+      "from": "reflection",
+      "to": "dawn",
+      "choice": "reflect_connection",
+      "minutes": 5,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "pull",
+          "key": "connection",
+          "amount": 2
+        },
+        {
+          "type": "flag",
+          "key": "reflection",
+          "value": "connection"
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        }
+      ]
+    },
+    {
+      "from": "reflection",
+      "to": "dawn",
+      "choice": "reflect_truth",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 2
+        },
+        {
+          "type": "flag",
+          "key": "reflection",
+          "value": "truth"
+        }
+      ]
+    },
+    {
+      "from": "reflection",
+      "to": "dawn",
+      "choice": "reflect_control",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 2
+        },
+        {
+          "type": "pull",
+          "key": "defiance",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "reflection",
+          "value": "autonomy"
+        }
+      ]
+    },
+    {
+      "from": "reflection",
+      "to": "dawn",
+      "choice": "reflect_unknown",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "reflection",
+          "value": "uncertain"
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "uncertain",
+          "context": "authored choice"
+        }
+      ]
+    },
+    {
+      "from": "reflection",
+      "to": "dawn",
+      "choice": "reflect_never",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "connection",
+          "amount": -5
+        },
+        {
+          "type": "flag",
+          "key": "reflection",
+          "value": "distance"
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "avoid",
+          "context": "authored choice"
+        }
+      ]
+    },
+    {
+      "from": "dawn",
+      "to": "motel",
+      "choice": "motel_hook",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "dawn",
+      "to": "end_protect",
+      "choice": "end_protected",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "protect"
+      },
+      "effects": []
+    },
+    {
+      "from": "dawn",
+      "to": "end_public",
+      "choice": "end_published",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "public"
+      },
+      "effects": []
+    },
+    {
+      "from": "dawn",
+      "to": "end_power",
+      "choice": "end_bargained",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "power"
+      },
+      "effects": []
+    },
+    {
+      "from": "dawn",
+      "to": "end_ghost",
+      "choice": "end_withheld",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "ghost"
+      },
+      "effects": []
+    },
+    {
+      "from": "motel",
+      "to": "end_protect",
+      "choice": "motel_protect",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "protect"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "motelCalled",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "motel",
+      "to": "end_public",
+      "choice": "motel_public",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "public"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "motelCalled",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "motel",
+      "to": "end_power",
+      "choice": "motel_power",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "power"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "motelCalled",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "motel",
+      "to": "end_ghost",
+      "choice": "motel_ghost",
+      "minutes": 0,
+      "condition": {
+        "flag": "ending",
+        "value": "ghost"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "motelCalled",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "salon",
+      "to": "floor",
+      "choice": "salon_observe",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "salonDone",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "ritual.optOut",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "engagement",
+          "key": "performance.observer",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "salon",
+      "to": "reversal",
+      "choice": "salon_join",
+      "minutes": 5,
+      "condition": {
+        "npc": "celeste",
+        "trust": 2
+      },
+      "theme": "powerExchange",
+      "effects": [
+        {
+          "type": "flag",
+          "key": "salonDone",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "authority.roleReversal",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "engagement",
+          "key": "authority.negotiated",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "salon",
+      "to": "floor",
+      "choice": "salon_leave",
+      "minutes": 1,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "salonDone",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "performance.observer",
+          "response": "avoid",
+          "context": "authored choice"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "salon",
+      "to": "floor",
+      "choice": "boundary_exit",
+      "minutes": 0,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "salonDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "reversal",
+      "to": "floor",
+      "choice": "introduce_person",
+      "minutes": 4,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteIntroduction",
+          "value": "person"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "affinity",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "introduction",
+          "value": "Player noticed I can listen without directing"
+        },
+        {
+          "type": "engagement",
+          "key": "authority.roleReversal",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "from": "reversal",
+      "to": "floor",
+      "choice": "introduce_terms",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteIntroduction",
+          "value": "terms"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "engagement",
+          "key": "authority.negotiated",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "reversal",
+      "to": "floor",
+      "choice": "return_token",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteIntroduction",
+          "value": "declined"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "engagement",
+          "key": "ritual.optOut",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "reversal",
+      "to": "floor",
+      "choice": "boundary_exit",
+      "minutes": 0,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "salonDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "listening",
+      "to": "floor",
+      "choice": "track_again",
+      "minutes": 4,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "flag",
+          "key": "heardTrack",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "track",
+          "value": "Asked for the shared track"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "affinity",
+          "amount": 2
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "pull",
+          "key": "connection",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "luca-track",
+          "delay": 35,
+          "effects": [
+            {
+              "type": "message",
+              "from": "Luca",
+              "text": "track is called Kitchen Window. he says thanks for listening. still no microwave."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "listening",
+      "to": "floor",
+      "choice": "track_credit",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "heardTrack",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "track",
+          "value": "Joked about the microwave royalties"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "pull",
+          "key": "candour",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "listening",
+      "to": "floor",
+      "choice": "track_thanks",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "heardTrack",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "uncertain",
+          "context": "authored choice"
+        }
+      ]
+    },
+    {
+      "from": "listening",
+      "to": "floor",
+      "choice": "boundary_exit",
+      "minutes": 0,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "heardTrack",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "casework",
+      "to": "carbon_case",
+      "choice": "investigate_carbon",
+      "minutes": 5,
+      "condition": {
+        "flag": "variantCarbon"
+      },
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "casework",
+      "to": "proxy_case",
+      "choice": "investigate_proxy",
+      "minutes": 5,
+      "condition": {
+        "flag": "variantProxy"
+      },
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "casework",
+      "to": "letter_case",
+      "choice": "investigate_letter",
+      "minutes": 5,
+      "condition": {
+        "flag": "variantDeadletter"
+      },
+      "effects": [
+        {
+          "type": "pull",
+          "key": "curiosity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "casework",
+      "to": "ledger",
+      "choice": "decide_now",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "declinedCasework",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "carbon_case",
+      "to": "source_call",
+      "choice": "mara_tells",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "carbonReconciled",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "carbon",
+          "value": "Mara kept a carbon after agreeing to return the originals.",
+          "source": "Mara directly admitted it after the player gave her time"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "from": "Luca",
+          "text": "mara told me. i need a minute. thanks for not making it a group announcement."
+        }
+      ]
+    },
+    {
+      "from": "carbon_case",
+      "to": "source_call",
+      "choice": "tell_luca",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "carbonExposed",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -3
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "carbon",
+          "value": "Mara concealed a carbon copy.",
+          "source": "Player reported Mara’s admission"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "carbon_case",
+      "to": "assembly",
+      "choice": "stay_out",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "carbonUnresolved",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "selfPreservation",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "proxy_case",
+      "to": "source_call",
+      "choice": "refuse_proxy",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "proxyRefused",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "proxy",
+          "value": "Explicitly refused the casting vote"
+        },
+        {
+          "type": "faction",
+          "id": "umbrella",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "from": "proxy_case",
+      "to": "source_call",
+      "choice": "use_proxy",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "proxyAudit",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "ambition",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "faction",
+          "id": "umbrella",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "from": "BOARD / RECORD",
+          "text": "Your request for an independent audit has been entered with the casting vote. Approval of the transfer remains a separate matter."
+        }
+      ]
+    },
+    {
+      "from": "proxy_case",
+      "to": "assembly",
+      "choice": "keep_option",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "proxyOpen",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "opportunism",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "letter_case",
+      "to": "source_call",
+      "choice": "ask_contact",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "tenantContactRequested",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "tenant-response",
+          "delay": 12,
+          "effects": [
+            {
+              "type": "message",
+              "from": "Inez",
+              "text": "They have agreed to send their account in writing. No call. That is what they are comfortable with."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "letter_case",
+      "to": "source_call",
+      "choice": "demand_contact",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "tenantContactRefused",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": -3
+        },
+        {
+          "type": "moral",
+          "key": "control",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "from": "Inez",
+          "text": "No. Your right to an explanation does not give me permission to share their number."
+        }
+      ]
+    },
+    {
+      "from": "letter_case",
+      "to": "assembly",
+      "choice": "no_contact",
+      "minutes": 2,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "tenantLeftAlone",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "source_call",
+      "to": "assembly",
+      "choice": "sealed_trust",
+      "minutes": 5,
+      "condition": {
+        "trait": "Keeps a confidence"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "sealedStatement",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "source",
+          "value": "Offered private custody with a history of keeping confidence"
+        }
+      ]
+    },
+    {
+      "from": "source_call",
+      "to": "assembly",
+      "choice": "respect_no",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "sourceRefused",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 2
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "source",
+          "value": "Accepted Ellis’s refusal without bargaining"
+        }
+      ]
+    },
+    {
+      "from": "source_call",
+      "to": "assembly",
+      "choice": "private_statement",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "sealedStatement",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "from": "Mara",
+          "text": "ellis agreed to a sealed statement for an independent reviewer only. not the archive. please keep that distinction."
+        }
+      ]
+    },
+    {
+      "from": "source_call",
+      "to": "assembly",
+      "choice": "press_source",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "sourcePressured",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "control",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -3
+        },
+        {
+          "type": "message",
+          "from": "Mara",
+          "text": "ellis ended the call. do not contact them again. i will find another way."
+        }
+      ]
+    },
+    {
+      "from": "assembly",
+      "to": "ledger",
+      "choice": "stand_account",
+      "minutes": 4,
+      "condition": {
+        "trait": "On the record"
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "wroteAccount",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "publicObjector",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "rumour",
+          "id": "named-objector",
+          "text": "The outside witness has become a named objector in the board record.",
+          "faction": "umbrella"
+        }
+      ]
+    },
+    {
+      "from": "assembly",
+      "to": "ledger",
+      "choice": "write_account",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "wroteAccount",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "knowledge",
+          "who": "player",
+          "fact": "header",
+          "source": "Compared delivery header with routing timestamp"
+        }
+      ]
+    },
+    {
+      "from": "assembly",
+      "to": "ledger",
+      "choice": "record_account",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "recordedAccount",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "ambition",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "faction",
+          "id": "static",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "assembly",
+      "to": "ledger",
+      "choice": "private_account",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "privateAccount",
+          "value": true
+        },
+        {
+          "type": "pull",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "selfPreservation",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r1",
+      "to": "mara_r2",
+      "choice": "follow_system",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "workingStyle",
+          "value": "Asked before changing my system"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r1",
+      "to": "mara_r2",
+      "choice": "offer_system",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "workingStyle",
+          "value": "Offered a better system before learning mine"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "flag",
+          "key": "maraImproved",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "mara_r2",
+      "to": "mara_r3",
+      "choice": "vinegar",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraFood",
+          "value": "vinegar"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "snack",
+          "value": "Likes vinegar crisps"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r2",
+      "to": "mara_r3",
+      "choice": "salt",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraFood",
+          "value": "salt"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "snack",
+          "value": "Prefers plain salt; made the mouth injury joke"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r2",
+      "to": "mara_r3",
+      "choice": "no_food",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraFood",
+          "value": "none"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "snack",
+          "value": "Declined food, wanted company"
+        },
+        {
+          "type": "engagement",
+          "key": "care.checkIn",
+          "response": "explore",
+          "context": "authored choice"
+        }
+      ]
+    },
+    {
+      "from": "mara_r3",
+      "to": "mara_r4",
+      "choice": "home_noise",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "homeDetail",
+          "value": "The refrigerator clicks when the apartment is quiet"
+        },
+        {
+          "type": "flag",
+          "key": "homeDetail",
+          "value": "fridge"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "mara_r3",
+      "to": "mara_r4",
+      "choice": "home_mug",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "homeDetail",
+          "value": "Always leaves a mug in the sink"
+        },
+        {
+          "type": "flag",
+          "key": "homeDetail",
+          "value": "mug"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "mara_r3",
+      "to": "mara_r4",
+      "choice": "home_private",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "homeDetail",
+          "value": "Prefers to keep home private"
+        },
+        {
+          "type": "flag",
+          "key": "homeDetail",
+          "value": "private"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r4",
+      "to": "mara_r5",
+      "choice": "name_help",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "mara",
+          "key": "help",
+          "value": "Company, not supervision",
+          "source": "Player explained their intent directly"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "flag",
+          "key": "maraRepairStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "mara_r4",
+      "to": "mara_r5",
+      "choice": "push_back",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "mara",
+          "key": "help",
+          "value": "Feels judged by my assumption",
+          "source": "Player directly challenged my assumption"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r4",
+      "to": "mara_r5",
+      "choice": "take_over",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "mara",
+          "key": "help",
+          "value": "Thinks I need supervising",
+          "source": "Player offered to take over after I asked them not to"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -3
+        },
+        {
+          "type": "flag",
+          "key": "maraSupervised",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "mara_r5",
+      "to": "mara_r6",
+      "choice": "cover_hours",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraRota",
+          "value": "covered"
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "rota-query",
+          "delay": 35,
+          "effects": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "cleaner got asked about the missing help. i need to fix this. not asking you to answer for me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "mara_r5",
+      "to": "mara_r6",
+      "choice": "ask_leave",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraRota",
+          "value": "leave"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "rota-leave",
+          "delay": 30,
+          "effects": [
+            {
+              "type": "belief",
+              "npc": "celeste",
+              "key": "seraLeave",
+              "value": "A colleague left for a private emergency",
+              "source": "Mara requested emergency leave without naming the clinic"
+            },
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "leave approved. sera wanted nobody told there was an emergency. she is not thrilled."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "mara_r5",
+      "to": "mara_r6",
+      "choice": "correct_hours",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraRota",
+          "value": "corrected"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "schedule",
+          "id": "rota-corrected",
+          "delay": 35,
+          "effects": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "record is right now. money is still missing. those are different problems apparently."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "mara_r6",
+      "to": "mara_r7",
+      "choice": "stay_personal",
+      "minutes": 5,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "affinity",
+          "amount": 2
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "interest",
+          "value": "Said they wanted my company"
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "from": "mara_r6",
+      "to": "mara_r7",
+      "choice": "stay_friendly",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "interest",
+          "value": "Wanted unproductive company"
+        }
+      ]
+    },
+    {
+      "from": "mara_r6",
+      "to": "mara_r7",
+      "choice": "stay_distance",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "interest",
+          "value": "Asked for space without blaming me"
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "from": "mara_r7",
+      "to": "late_second",
+      "choice": "keep_company",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "mara_firstDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "mara_r7",
+      "to": "late_second",
+      "choice": "make_space",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "mara_firstDone",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "mara_r8",
+      "to": "mara_r9",
+      "choice": "ask_after",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "returned",
+          "value": "Asked rather than assumed the shift outcome"
+        }
+      ]
+    },
+    {
+      "from": "mara_r8",
+      "to": "mara_r9",
+      "choice": "sit_after",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "mara_r9",
+      "to": "mara_r10",
+      "choice": "remember_snack",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "ordinaryReturn",
+          "value": "Accepted the remembered snack naturally"
+        }
+      ]
+    },
+    {
+      "from": "mara_r9",
+      "to": "mara_r10",
+      "choice": "ask_rest",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "compassion",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r10",
+      "to": "mara_r11",
+      "choice": "stay_out_pair",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r10",
+      "to": "mara_r11",
+      "choice": "name_pair",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "belief",
+          "npc": "mara",
+          "key": "mediator",
+          "value": "May turn practical gestures into a verdict",
+          "source": "Player interpreted Luca’s gesture for me"
+        }
+      ]
+    },
+    {
+      "from": "mara_r11",
+      "to": "mara_r12",
+      "choice": "own_cost",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "outcomeTalk",
+          "value": "Did not ask me to approve the document choice"
+        }
+      ]
+    },
+    {
+      "from": "mara_r11",
+      "to": "mara_r12",
+      "choice": "defend_cost",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -2
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "outcomeTalk",
+          "value": "Needed me to agree their choice was necessary"
+        }
+      ]
+    },
+    {
+      "from": "mara_r12",
+      "to": "mara_r13",
+      "choice": "repair_help",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraArc",
+          "value": "repaired"
+        },
+        {
+          "type": "belief",
+          "npc": "mara",
+          "key": "help",
+          "value": "We will ask instead of deciding for each other",
+          "source": "Mutual agreement during the closing conversation"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "from": "mara_r12",
+      "to": "mara_r13",
+      "choice": "limit_help",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraArc",
+          "value": "bounded"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "mara_r12",
+      "to": "mara_r13",
+      "choice": "end_help",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "maraArc",
+          "value": "distance"
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "limit",
+          "value": "Asked to leave the relationship at a distance"
+        }
+      ]
+    },
+    {
+      "from": "mara_r13",
+      "to": "closing_second",
+      "choice": "finish_talk",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "mara_closed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "mara_r13",
+      "to": "closing_second",
+      "choice": "thanks_talk",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "mara_closed",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "mara",
+          "key": "goodbye",
+          "value": "Thanked me for the time without asking for more"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r1",
+      "to": "celeste_r2",
+      "choice": "tape_glasses",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "glasses",
+          "value": "Helped with the taped glasses without making a performance of it"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "celeste_r1",
+      "to": "celeste_r2",
+      "choice": "laugh_glasses",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "glasses",
+          "value": "Laughed when invited; found a better light"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "celesteLaughed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "celeste_r2",
+      "to": "celeste_r3",
+      "choice": "soup",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteMeal",
+          "value": "soup"
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "meal",
+          "value": "Recommended soup; refused to make dinner a status test"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r2",
+      "to": "celeste_r3",
+      "choice": "toast",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteMeal",
+          "value": "toast"
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "meal",
+          "value": "Trusts toast after midnight"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r2",
+      "to": "celeste_r3",
+      "choice": "decline_meal",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteMeal",
+          "value": "none"
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "meal",
+          "value": "Wanted conversation without sharing dinner"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r3",
+      "to": "celeste_r4",
+      "choice": "leave_dog",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "television",
+          "value": "Let the television story stay ordinary"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "flag",
+          "key": "celesteDog",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "celeste_r3",
+      "to": "celeste_r4",
+      "choice": "name_pattern",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "celeste",
+          "key": "interpretation",
+          "value": "Knows they keep interpreting me",
+          "source": "Player admitted the habit"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r4",
+      "to": "celeste_r5",
+      "choice": "correct_impression",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "celeste",
+          "key": "arrival",
+          "value": "Wanted to belong, did not know the room",
+          "source": "Player corrected my first impression"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "celeste_r4",
+      "to": "celeste_r5",
+      "choice": "enjoy_impression",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "celeste",
+          "key": "arrival",
+          "value": "Can admit enjoying apparent status",
+          "source": "Player said so directly"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r4",
+      "to": "celeste_r5",
+      "choice": "decline_impression",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "celeste",
+          "key": "arrival",
+          "value": "Wants privacy even during a friendly conversation",
+          "source": "Player declined to explain"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r5",
+      "to": "celeste_r6",
+      "choice": "close_room",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteStaff",
+          "value": "closed"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "celeste-refunds",
+          "delay": 32,
+          "effects": [
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "The small room is closed. One member thanked us. Another wants a written explanation. Noor has gone home."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "celeste_r5",
+      "to": "celeste_r6",
+      "choice": "cover_room",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteStaff",
+          "value": "covered"
+        },
+        {
+          "type": "moral",
+          "key": "responsibility",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "celeste-sister",
+          "delay": 32,
+          "effects": [
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "I covered the room. My sister said she understood, then ended the call. Both statements are information."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "celeste_r5",
+      "to": "celeste_r6",
+      "choice": "ask_worker",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteStaff",
+          "value": "asked"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "celeste-cover",
+          "delay": 32,
+          "effects": [
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "The colleague declined. I accepted it and covered the room. Asking was worth doing; it did not create an obligation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "celeste_r6",
+      "to": "celeste_r7",
+      "choice": "ask_chemistry",
+      "minutes": 10,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteAttention",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "affinity",
+          "amount": 2
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "from": "celeste_r6",
+      "to": "celeste_r7",
+      "choice": "offer_ritual",
+      "minutes": 10,
+      "theme": "powerExchange",
+      "effects": [
+        {
+          "type": "engagement",
+          "key": "authority.negotiated",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "ritual",
+          "value": "Asked for a shared rule with an explicit exit"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r6",
+      "to": "celeste_r7",
+      "choice": "stay_colleagues",
+      "minutes": 10,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "company",
+          "value": "Welcomed professional company"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "flag",
+          "key": "celesteProfessional",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "celeste_r7",
+      "to": "late_second",
+      "choice": "keep_company",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celeste_firstDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "celeste_r7",
+      "to": "late_second",
+      "choice": "make_space",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celeste_firstDone",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "celeste_r8",
+      "to": "celeste_r9",
+      "choice": "ask_actual",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "return",
+          "value": "Asked about the actual outcome, not whether my advice won"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r8",
+      "to": "celeste_r9",
+      "choice": "name_advice",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "celeste",
+          "key": "advice",
+          "value": "Needs reassurance about their influence",
+          "source": "Asked whether their advice helped"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r9",
+      "to": "celeste_r10",
+      "choice": "keep_amount",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "favour",
+          "value": "Respected Luca’s private amount"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r9",
+      "to": "celeste_r10",
+      "choice": "name_leverage",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "belief",
+          "npc": "celeste",
+          "key": "favour",
+          "value": "Sees the unpriced pressure in a favour",
+          "source": "Player said this in my presence"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r10",
+      "to": "celeste_r11",
+      "choice": "accept_car",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "carHome",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "ride",
+          "value": "Accepted a practical ride without a further obligation"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r10",
+      "to": "celeste_r11",
+      "choice": "decline_car",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "ride",
+          "value": "Declined the ride; wanted the walk"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r11",
+      "to": "celeste_r12",
+      "choice": "own_document",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "documentTalk",
+          "value": "Owned the decision without asking for absolution"
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "celeste_r11",
+      "to": "celeste_r12",
+      "choice": "ask_accountability",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "documentTalk",
+          "value": "Asked for a concrete account of my responsibility"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "celeste_r12",
+      "to": "celeste_r13",
+      "choice": "name_attraction",
+      "minutes": 7,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "flag",
+          "key": "celesteAsked",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 12
+        },
+        {
+          "type": "when",
+          "condition": {
+            "all": [
+              {
+                "npc": "celeste",
+                "trust": 7
+              },
+              {
+                "flag": "celesteAttention"
+              },
+              {
+                "not": {
+                  "flag": "celesteProfessional"
+                }
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "flag",
+              "key": "celesteChemistry",
+              "value": true
+            },
+            {
+              "type": "relationship",
+              "npc": "celeste",
+              "axis": "affinity",
+              "amount": 2
+            },
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "Yes. I would like to see you when neither of us is conducting business. We can decide what that means then."
+            }
+          ],
+          "otherwise": [
+            {
+              "type": "flag",
+              "key": "celesteBounded",
+              "value": true
+            },
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "I have liked talking. I want to leave it there tonight. You have not embarrassed me by asking."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "celeste_r12",
+      "to": "celeste_r13",
+      "choice": "name_uncertain",
+      "minutes": 6,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "uncertain",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "interest",
+          "value": "Interested and uncertain; did not promise an answer"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r12",
+      "to": "celeste_r13",
+      "choice": "name_professional",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celesteProfessional",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "celeste",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "interest",
+          "value": "Wants an honest professional relationship"
+        }
+      ]
+    },
+    {
+      "from": "celeste_r13",
+      "to": "closing_second",
+      "choice": "finish_talk",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celeste_closed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "celeste_r13",
+      "to": "closing_second",
+      "choice": "thanks_talk",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "celeste_closed",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "celeste",
+          "key": "goodbye",
+          "value": "Thanked me for the time without asking for more"
+        }
+      ]
+    },
+    {
+      "from": "luca_r1",
+      "to": "luca_r2",
+      "choice": "hold_light",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "equipment",
+          "value": "Stayed with a boring repair"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "luca_r1",
+      "to": "luca_r2",
+      "choice": "tease_cable",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "equipment",
+          "value": "Made the geometry joke"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "flag",
+          "key": "lucaGeometry",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "luca_r2",
+      "to": "luca_r3",
+      "choice": "coriander",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaFood",
+          "value": "coriander"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "food",
+          "value": "Likes coriander; corrected my assumption"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r2",
+      "to": "luca_r3",
+      "choice": "plain_food",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaFood",
+          "value": "plain"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "food",
+          "value": "Wanted the plain sandwich"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r2",
+      "to": "luca_r3",
+      "choice": "no_sandwich",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaFood",
+          "value": "none"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "food",
+          "value": "Declined food directly"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r3",
+      "to": "luca_r4",
+      "choice": "old_music",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaMusic",
+          "value": "familiar"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "music",
+          "value": "Wants familiar music on the walk home"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "luca_r3",
+      "to": "luca_r4",
+      "choice": "new_music",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaMusic",
+          "value": "new"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "music",
+          "value": "Asked for the neighbour’s least favourite track"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "luca_r3",
+      "to": "luca_r4",
+      "choice": "quiet_music",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaMusic",
+          "value": "silence"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "music",
+          "value": "Prefers quiet on the way home"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r4",
+      "to": "luca_r5",
+      "choice": "correct_now",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaSummary",
+          "value": "corrected"
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "availability",
+          "value": "Interest is not a commitment",
+          "source": "Player explicitly corrected my summary"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r4",
+      "to": "luca_r5",
+      "choice": "correct_later",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaSummary",
+          "value": "later"
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "availability",
+          "value": "Wants a correction without a public scene",
+          "source": "Player requested a written correction"
+        },
+        {
+          "type": "moral",
+          "key": "privacy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r4",
+      "to": "luca_r5",
+      "choice": "let_stand",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaSummary",
+          "value": "unresolved"
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "availability",
+          "value": "May be willing to help; I still have not asked properly",
+          "source": "Player allowed the summary to stand"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "from": "luca_r5",
+      "to": "luca_r6",
+      "choice": "disclose_terms",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaFunding",
+          "value": "terms"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "luca-disclosure",
+          "delay": 35,
+          "effects": [
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "I disclosed the repair gift and the absence of editorial control. Someone still called it a conflict. Disclosure did not oblige them to approve."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "luca_r5",
+      "to": "luca_r6",
+      "choice": "joint_terms",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaFunding",
+          "value": "joint"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "luca-joint",
+          "delay": 35,
+          "effects": [
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "Celeste agreed to confirm the terms. She also asked why I waited until there was an audience. Fair question, badly timed for my dignity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "luca_r5",
+      "to": "luca_r6",
+      "choice": "wait_repay",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaFunding",
+          "value": "delay"
+        },
+        {
+          "type": "moral",
+          "key": "independence",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "luca-delay",
+          "delay": 35,
+          "effects": [
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "I delayed the complaint. The worker who reported the fault is angry. My independence is costing somebody else another week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "luca_r6",
+      "to": "luca_r7",
+      "choice": "watch_together",
+      "minutes": 8,
+      "theme": "performance",
+      "effects": [
+        {
+          "type": "engagement",
+          "key": "performance.observer",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "audience",
+          "value": "Chose to observe without joining the stage"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r6",
+      "to": "luca_r7",
+      "choice": "private_joke",
+      "minutes": 8,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaAttention",
+          "value": true
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "affinity",
+          "amount": 2
+        },
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "from": "luca_r6",
+      "to": "luca_r7",
+      "choice": "rest_feet",
+      "minutes": 8,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "audience",
+          "value": "Wanted quiet company"
+        }
+      ]
+    },
+    {
+      "from": "luca_r7",
+      "to": "late_second",
+      "choice": "keep_company",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "luca_firstDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "luca_r7",
+      "to": "late_second",
+      "choice": "make_space",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "luca_firstDone",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "luca_r8",
+      "to": "luca_r9",
+      "choice": "ask_keys",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "return",
+          "value": "Asked about the ordinary work too"
+        }
+      ]
+    },
+    {
+      "from": "luca_r8",
+      "to": "luca_r9",
+      "choice": "ask_funding",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "return",
+          "value": "Remembered the difficult funding conversation"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r9",
+      "to": "luca_r10",
+      "choice": "hear_cost",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "documentTalk",
+          "value": "Heard disagreement without demanding reassurance"
+        }
+      ]
+    },
+    {
+      "from": "luca_r9",
+      "to": "luca_r10",
+      "choice": "name_own_cost",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "documentTalk",
+          "value": "Asked me to recognise the witness’s own cost"
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r10",
+      "to": "luca_r11",
+      "choice": "own_misstatement",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaCorrection",
+          "value": "owned"
+        },
+        {
+          "type": "belief",
+          "npc": "luca",
+          "key": "availability",
+          "value": "I must ask before describing their commitments",
+          "source": "Player required an accurate correction"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "luca-correction",
+          "delay": 18,
+          "effects": [
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "Sent the plain version. The member accepted it. Then asked whether my other introductions were equally provisional. A fair, inconvenient question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "luca_r10",
+      "to": "luca_r11",
+      "choice": "limited_correction",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaCorrection",
+          "value": "limited"
+        },
+        {
+          "type": "moral",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r10",
+      "to": "luca_r11",
+      "choice": "own_reply",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaCorrection",
+          "value": "player"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": -1
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "correction",
+          "value": "Had to do my correction for me"
+        }
+      ]
+    },
+    {
+      "from": "luca_r11",
+      "to": "luca_r12",
+      "choice": "accept_limited",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaRepair",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 3
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "repair",
+          "value": "Accepted an apology without erasing the limit"
+        }
+      ]
+    },
+    {
+      "from": "luca_r11",
+      "to": "luca_r12",
+      "choice": "need_distance",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "lucaDistance",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "repair",
+          "value": "Appreciated the apology and requested distance"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r12",
+      "to": "luca_r13",
+      "choice": "ask_luca_date",
+      "minutes": 6,
+      "theme": "romance",
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "heat",
+          "amount": 12
+        },
+        {
+          "type": "engagement",
+          "key": "attention.private",
+          "response": "explore",
+          "context": "authored choice"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "all": [
+              {
+                "flag": "lucaAttention"
+              },
+              {
+                "flag": "lucaRepair"
+              },
+              {
+                "not": {
+                  "flag": "lucaDistance"
+                }
+              },
+              {
+                "npc": "luca",
+                "trust": 6
+              }
+            ]
+          },
+          "then": [
+            {
+              "type": "flag",
+              "key": "lucaChemistry",
+              "value": true
+            },
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "Yes to a date. After sleep. Somewhere that does not contain any of my equipment."
+            }
+          ],
+          "otherwise": [
+            {
+              "type": "flag",
+              "key": "lucaBounded",
+              "value": true
+            },
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "I want to keep this as company. Thank you for asking a question I could answer honestly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "luca_r12",
+      "to": "luca_r13",
+      "choice": "take_corner",
+      "minutes": 5,
+      "condition": {
+        "not": {
+          "flag": "lucaDistance"
+        }
+      },
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "walk",
+          "value": "Accepted a short walk with a clear end"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r12",
+      "to": "luca_r13",
+      "choice": "walk_alone",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "walk",
+          "value": "Wanted solitude and remembered my call"
+        },
+        {
+          "type": "relationship",
+          "npc": "luca",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "luca_r13",
+      "to": "closing_second",
+      "choice": "finish_talk",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "luca_closed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "luca_r13",
+      "to": "closing_second",
+      "choice": "thanks_talk",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "luca_closed",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "luca",
+          "key": "goodbye",
+          "value": "Thanked me for the time without asking for more"
+        }
+      ]
+    },
+    {
+      "from": "inez_r1",
+      "to": "inez_r2",
+      "choice": "ordinary_inez",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "return",
+          "value": "Wanted an ordinary conversation after the first shift"
+        }
+      ]
+    },
+    {
+      "from": "inez_r1",
+      "to": "inez_r2",
+      "choice": "quiet_inez",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 10
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "return",
+          "value": "Could sit quietly without demanding an explanation"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r2",
+      "to": "inez_r3",
+      "choice": "mitten_visible",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezMitten",
+          "value": "ledge"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "mitten",
+          "value": "Put the mitten where its owner could see it"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r2",
+      "to": "inez_r3",
+      "choice": "mitten_bag",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezMitten",
+          "value": "bag"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "mitten",
+          "value": "Dated the mitten bag without inventing a history"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r3",
+      "to": "inez_r4",
+      "choice": "radio_company",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezRadio",
+          "value": "voices"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "homeSound",
+          "value": "Likes familiar voices in an empty room"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "inez_r3",
+      "to": "inez_r4",
+      "choice": "radio_music",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezRadio",
+          "value": "music"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "homeSound",
+          "value": "Uses music to settle at home"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "inez_r3",
+      "to": "inez_r4",
+      "choice": "radio_quiet",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezRadio",
+          "value": "quiet"
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "homeSound",
+          "value": "Likes quiet after taking time to settle"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r4",
+      "to": "inez_r5",
+      "choice": "trust_correction",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "belief",
+          "npc": "inez",
+          "key": "accuracy",
+          "value": "Values a visible correction",
+          "source": "Player said so after the trolley mistake"
+        }
+      ]
+    },
+    {
+      "from": "inez_r4",
+      "to": "inez_r5",
+      "choice": "admit_pedestal",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "belief",
+          "npc": "inez",
+          "key": "accuracy",
+          "value": "Had mistaken my confidence for infallibility",
+          "source": "Player admitted the assumption"
+        }
+      ]
+    },
+    {
+      "from": "inez_r5",
+      "to": "inez_r6",
+      "choice": "challenge_thread",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezThread",
+          "value": "challenged"
+        },
+        {
+          "type": "moral",
+          "key": "protection",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "inez-thread-reply",
+          "delay": 28,
+          "effects": [
+            {
+              "type": "message",
+              "from": "INEZ",
+              "text": "I wrote that Tom arranged cover responsibly. Supervisor says we should discuss my tone tomorrow. Tom says thank you. Two replies, two problems."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "inez_r5",
+      "to": "inez_r6",
+      "choice": "ask_tom",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezThread",
+          "value": "asked"
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "inez-tom-reply",
+          "delay": 28,
+          "effects": [
+            {
+              "type": "message",
+              "from": "INEZ",
+              "text": "Tom gave permission to say “family care”, nothing more. He also asked not to have any more decisions sent to him tonight. Fair."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "inez_r5",
+      "to": "inez_r6",
+      "choice": "wait_thread",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezThread",
+          "value": "waited"
+        },
+        {
+          "type": "moral",
+          "key": "privacy",
+          "amount": 1
+        },
+        {
+          "type": "schedule",
+          "id": "inez-wait-reply",
+          "delay": 28,
+          "effects": [
+            {
+              "type": "message",
+              "from": "INEZ",
+              "text": "I left the thread alone. Another worker has repeated the unreliable remark. Waiting kept the confidence and let the wrong account travel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "inez_r6",
+      "to": "inez_r7",
+      "choice": "tell_help",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "help",
+          "value": "Admitted finding help difficult to accept"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "inez_r6",
+      "to": "inez_r7",
+      "choice": "keep_help_private",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "help",
+          "value": "Declined a personal question plainly"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r7",
+      "to": "late_second",
+      "choice": "keep_company",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inez_firstDone",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "inez_r7",
+      "to": "late_second",
+      "choice": "make_space",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inez_firstDone",
+          "value": true
+        },
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "from": "inez_r8",
+      "to": "inez_r9",
+      "choice": "ask_answer",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "followup",
+          "value": "Asked about living with the decision, not whether my advice won"
+        }
+      ]
+    },
+    {
+      "from": "inez_r8",
+      "to": "inez_r9",
+      "choice": "offer_handover",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "followup",
+          "value": "Helped finish before asking for more time"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r9",
+      "to": "inez_r10",
+      "choice": "share_outline",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "confidence",
+          "value": "Shared the shape of another conversation without its private details"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "inez_r9",
+      "to": "inez_r10",
+      "choice": "stay_objects",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "confidence",
+          "value": "Preferred to leave other conversations private"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r10",
+      "to": "inez_r11",
+      "choice": "give_privacy",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "npcRelationship",
+          "a": "inez",
+          "b": "celeste",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r10",
+      "to": "inez_r11",
+      "choice": "read_first",
+      "minutes": 7,
+      "effects": [
+        {
+          "type": "moral",
+          "key": "honesty",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "mediation",
+          "value": "Supported checking before judging; did not take over"
+        }
+      ]
+    },
+    {
+      "from": "inez_r11",
+      "to": "inez_r12",
+      "choice": "care_not_guard",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezLimit",
+          "value": "clear"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "departure",
+          "value": "Welcomed concern and declined supervision"
+        }
+      ]
+    },
+    {
+      "from": "inez_r11",
+      "to": "inez_r12",
+      "choice": "welcome_check",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezCheck",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "departure",
+          "value": "Invited one later check-in"
+        }
+      ]
+    },
+    {
+      "from": "inez_r11",
+      "to": "inez_r12",
+      "choice": "private_route",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezLimit",
+          "value": "private"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "departure",
+          "value": "Asked to keep travel private"
+        }
+      ]
+    },
+    {
+      "from": "inez_r12",
+      "to": "inez_r13",
+      "choice": "accept_inez",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezRepair",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 2
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "apology",
+          "value": "Accepted the apology without demanding more explanation"
+        }
+      ]
+    },
+    {
+      "from": "inez_r12",
+      "to": "inez_r13",
+      "choice": "keep_inez_limit",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inezRepair",
+          "value": true
+        },
+        {
+          "type": "moral",
+          "key": "autonomy",
+          "amount": 1
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "apology",
+          "value": "Accepted the apology while keeping the limit explicit"
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "from": "inez_r13",
+      "to": "closing_second",
+      "choice": "finish_talk",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inez_closed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "inez_r13",
+      "to": "closing_second",
+      "choice": "thanks_talk",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "inez_closed",
+          "value": true
+        },
+        {
+          "type": "memory",
+          "npc": "inez",
+          "key": "goodbye",
+          "value": "Thanked me for the time without asking for more"
+        }
+      ]
+    },
+    {
+      "from": "late_room",
+      "to": "mara_r1",
+      "choice": "spend_mara",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_mara",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "firstLead",
+          "value": "mara"
+        },
+        {
+          "type": "flag",
+          "key": "firstChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_room",
+      "to": "celeste_r1",
+      "choice": "spend_celeste",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_celeste",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "firstLead",
+          "value": "celeste"
+        },
+        {
+          "type": "flag",
+          "key": "firstChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_room",
+      "to": "luca_r1",
+      "choice": "spend_luca",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_luca",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "firstLead",
+          "value": "luca"
+        },
+        {
+          "type": "flag",
+          "key": "firstChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_room",
+      "to": "inez_r1",
+      "choice": "spend_inez",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_inez",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "firstLead",
+          "value": "inez"
+        },
+        {
+          "type": "flag",
+          "key": "firstChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_second",
+      "to": "mara_r1",
+      "choice": "spend_mara",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "not": {
+              "flag": "arc_mara"
+            }
+          },
+          {
+            "not": {
+              "flag": "secondChosen"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_mara",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "secondLead",
+          "value": "mara"
+        },
+        {
+          "type": "flag",
+          "key": "secondChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_second",
+      "to": "celeste_r1",
+      "choice": "spend_celeste",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "not": {
+              "flag": "arc_celeste"
+            }
+          },
+          {
+            "not": {
+              "flag": "secondChosen"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_celeste",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "secondLead",
+          "value": "celeste"
+        },
+        {
+          "type": "flag",
+          "key": "secondChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_second",
+      "to": "luca_r1",
+      "choice": "spend_luca",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "not": {
+              "flag": "arc_luca"
+            }
+          },
+          {
+            "not": {
+              "flag": "secondChosen"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_luca",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "secondLead",
+          "value": "luca"
+        },
+        {
+          "type": "flag",
+          "key": "secondChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_second",
+      "to": "inez_r1",
+      "choice": "spend_inez",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "not": {
+              "flag": "arc_inez"
+            }
+          },
+          {
+            "not": {
+              "flag": "secondChosen"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arc_inez",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "secondLead",
+          "value": "inez"
+        },
+        {
+          "type": "flag",
+          "key": "secondChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_second",
+      "to": "late_table",
+      "choice": "enough_company",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "companionsChosen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_table",
+      "to": "late_accounts",
+      "choice": "help_table",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 8
+        },
+        {
+          "type": "flag",
+          "key": "sharedTable",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_table",
+      "to": "late_accounts",
+      "choice": "quiet_table",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 12
+        },
+        {
+          "type": "flag",
+          "key": "heardTable",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_accounts",
+      "to": "ledger",
+      "choice": "decide_after_company",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "companyComplete",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "late_accounts",
+      "to": "crossed_shift",
+      "choice": "compare_shifts",
+      "minutes": 5,
+      "condition": {
+        "all": [
+          {
+            "flag": "mara_firstDone"
+          },
+          {
+            "flag": "inez_firstDone"
+          },
+          {
+            "flag": "maraRota",
+            "value": "leave"
+          },
+          {
+            "flag": "inezThread",
+            "value": "challenged"
+          }
+        ]
+      },
+      "effects": []
+    },
+    {
+      "from": "crossed_shift",
+      "to": "ledger",
+      "choice": "leave_budget",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "crossedShifts",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "npc": "mara",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "relationship",
+          "npc": "inez",
+          "axis": "trust",
+          "amount": 1
+        },
+        {
+          "type": "npcRelationship",
+          "a": "mara",
+          "b": "inez",
+          "axis": "trust",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "from": "closing_room",
+      "to": "mara_r8",
+      "choice": "spend_mara",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "mara_firstDone"
+          },
+          {
+            "not": {
+              "flag": "mara_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_room",
+      "to": "celeste_r8",
+      "choice": "spend_celeste",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "celeste_firstDone"
+          },
+          {
+            "not": {
+              "flag": "celeste_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_room",
+      "to": "luca_r8",
+      "choice": "spend_luca",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "luca_firstDone"
+          },
+          {
+            "not": {
+              "flag": "luca_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_room",
+      "to": "inez_r8",
+      "choice": "spend_inez",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "inez_firstDone"
+          },
+          {
+            "not": {
+              "flag": "inez_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_room",
+      "to": "closing_table",
+      "choice": "leave_promises",
+      "minutes": 3,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "leftConversations",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_second",
+      "to": "mara_r8",
+      "choice": "spend_mara",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "mara_firstDone"
+          },
+          {
+            "not": {
+              "flag": "mara_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_second",
+      "to": "celeste_r8",
+      "choice": "spend_celeste",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "celeste_firstDone"
+          },
+          {
+            "not": {
+              "flag": "celeste_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_second",
+      "to": "luca_r8",
+      "choice": "spend_luca",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "luca_firstDone"
+          },
+          {
+            "not": {
+              "flag": "luca_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_second",
+      "to": "inez_r8",
+      "choice": "spend_inez",
+      "minutes": 4,
+      "condition": {
+        "all": [
+          {
+            "flag": "inez_firstDone"
+          },
+          {
+            "not": {
+              "flag": "inez_closed"
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingStarted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_second",
+      "to": "closing_table",
+      "choice": "finish_closing",
+      "minutes": 4,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingComplete",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "closing_table",
+      "to": "walk",
+      "choice": "take_night_home",
+      "minutes": 5,
+      "effects": [
+        {
+          "type": "flag",
+          "key": "closingComplete",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "home_callback",
+      "to": "reflection",
+      "choice": "reflect_after_home",
+      "minutes": 6,
+      "effects": [
+        {
+          "type": "dimension",
+          "key": "composure",
+          "amount": 12
+        },
+        {
+          "type": "flag",
+          "key": "homeSettled",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

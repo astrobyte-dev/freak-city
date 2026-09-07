@@ -1,0 +1,9 @@
+# Asset provenance
+
+`public/velvet-exterior.png` is original generated environment art created with the built-in imagegen tool. It was inspected and copied into the project from the tool's generated output; the game never calls an image service. No user image, private player data or existing third-party photograph was used as a reference. Apartment imagery is an original CSS window composition; silhouettes are original CSS abstractions, not photographs of people.
+
+Final generation prompt:
+
+> Use case: photorealistic-natural. Asset type: environmental background for FREAK//CITY, a premium neo-noir narrative game. Create one landscape 1536x1024 editorial night photograph of a decaying European industrial quarter side street in heavy rain. Main subject: the discreet entrance of a private nightclub named VELVET in a dark former municipal night office, a worn black double door under a small burgundy awning, aged masonry, metal shutters, a single narrow red neon vertical sign reading VELVET. Empty street, no people. A dim warm bulb over a side entrance. Deep perspective, wet pavement with restrained blood-red reflections, desaturated almost monochrome silver and charcoal. Night, fine analog film grain, authentic architectural detail, deep shadow but legible entrance, subtly unsettling. Art directed independent cinema location photography. Composition wide, door and red sign center right, street receding to left; foreground pavement bottom third. No purple, no futuristic cyberpunk, no UI, no typography other than the VELVET sign, no logos or watermark. Non-explicit.
+
+Fonts: locally bundled DM Sans, Cormorant Garamond and IBM Plex Mono through Fontsource packages. Only Latin subsets are imported. See the packages for their font licenses. Icons are Lucide React; see its package license. Sound is local Web Audio synthesis rather than an external recording.

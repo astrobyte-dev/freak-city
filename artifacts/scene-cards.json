@@ -1,0 +1,3818 @@
+{
+  "arrival": {
+    "purpose": "Start inside the taxi; the player chooses how to enter the city.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Who sent the message",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "door": {
+    "purpose": "Alias and first account of the invitation establish a traceable lie or disclosure.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "inez": [
+        "header",
+        "motel",
+        "signature"
+      ]
+    },
+    "npcBeliefs": {
+      "inez": "Sender identity is an inference, not a fact."
+    },
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "header"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "vestibule": {
+    "purpose": "Establish workplace reality and the price of membership.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "bar": {
+    "purpose": "Mara remembers a mundane preference; let trust begin through attention.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "mara": [
+        "tenantRisk",
+        "missingNames"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Tea or coffee returns in the apartment message."
+    ]
+  },
+  "coat": {
+    "purpose": "Clothing creates a social first impression and access conditions.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "floor": {
+    "purpose": "Offer competing invitations and clearly show the time cost.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mystery",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "mara": {
+    "purpose": "Protection has costs; Mara asks before involving another person.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "mara": [
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "tenantRisk"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "kitchen": {
+    "purpose": "Humanize Mara through a broken fan and a shared late meal.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "quiet": {
+    "purpose": "Optional reciprocal romantic attention, with an equal neutral path.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "celeste": {
+    "purpose": "Celeste offers access in return for accepting witness status.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "celeste": [
+        "tenantRisk",
+        "boardCopy"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "signature"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "terms": {
+    "purpose": "A formal agreement hides its pressure in respectable wording.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "signature"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "luca": {
+    "purpose": "Let Luca misunderstand sympathy as an agreement to publish.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "luca": [
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "humour",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "radio": {
+    "purpose": "Question Luca about the human cost of his archive.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "luca": [
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "tenantRisk"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "inez": {
+    "purpose": "The printer timing has an ordinary explanation; remove a false supernatural inference.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "inez": [
+        "header",
+        "signature",
+        "motel"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "header",
+      "signature"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "register": {
+    "purpose": "Offer a private document without turning Inez into an oracle.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "washroom": {
+    "purpose": "Contrast the social pressure with banal club maintenance.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "humour",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "overhear": {
+    "purpose": "The player can expose or preserve an absent person’s confidence.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "street": {
+    "purpose": "Surface the departure deadline and offer a way to leave.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "kiosk": {
+    "purpose": "Use ordinary talk to earn a contact and waste real time.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "decision": {
+    "purpose": "Make the mutually exclusive time commitments legible.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Upstairs consumes the witness window; loading bay consumes the exchange window."
+    ],
+    "tension": 4,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "exchange": {
+    "purpose": "Witness the ledger move; attendance changes the board’s public account.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "celeste": [
+        "tenantRisk",
+        "boardCopy"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "tenantRisk"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "objection": {
+    "purpose": "Composure changes the available way of objecting, never the ability to leave.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "celeste": [
+        "boardCopy"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "boardCopy"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "bay": {
+    "purpose": "Meet the departing witness and learn the box moved before the exchange.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "inez": [
+        "header",
+        "signature",
+        "motel"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "witness",
+      "signature"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "bus": {
+    "purpose": "Pay a cost for helping the witness depart.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "missed": {
+    "purpose": "Absence is a branch with material world consequences.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "aftermath": {
+    "purpose": "Bring the missed event and distorted reputation back into play.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "contradiction": {
+    "purpose": "Only Luca confronts the lie; Mara cannot learn it without a message.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "luca": [
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {
+      "luca": "Player claimed a different invitation origin to the custodian."
+    },
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "confession": {
+    "purpose": "Repair is possible but a confession does not erase the first lie.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "archive": {
+    "purpose": "Recover the physical proof through the attended route or a slower alternative.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "missingNames"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "hidden": {
+    "purpose": "Reward a small, trusted act with an optional record of the erased names.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "mara": [
+        "missingNames",
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "missingNames"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "proof": {
+    "purpose": "Authenticate a curated seed-specific sender; distinguish motive from absolution.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "sender",
+      "carbonProof",
+      "proxyProof",
+      "registerProof"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mystery",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "sender": {
+    "purpose": "Give an answer and a specific motive, not another evasive riddle.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "ledger": {
+    "purpose": "Make the final document decision costly in every direction.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "tenantRisk"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "redact": {
+    "purpose": "Protect names at the cost of immediate public verification.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "publish": {
+    "purpose": "Publish evidence; the source becomes exposed along with the institution.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "bargain": {
+    "purpose": "Trade custody for influence; the board absorbs the challenge.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "withhold": {
+    "purpose": "Keep the original and accept that people must act without it.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "mirror": {
+    "purpose": "Reverse the player’s earlier standard for withholding information.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "walk": {
+    "purpose": "Let a mundane remembered preference return after the crisis.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "apartment": {
+    "purpose": "Return home with evidence, unresolved relationships and messages.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "reflection": {
+    "purpose": "Let the player name their own interpretation, including uncertainty or refusal.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "dawn": {
+    "purpose": "Show concrete ending consequences before offering the Motel hook.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mystery",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "motel": {
+    "purpose": "Open a grounded future hook without withholding this chapter’s answer.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "inez": [
+        "motel"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "motel"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "end_protect": {
+    "purpose": "Conclude protection route with a cost and an independent ally.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "end_public": {
+    "purpose": "Conclude exposure route with public movement and private damage.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "end_power": {
+    "purpose": "Conclude institutional route with access and complicity.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "end_ghost": {
+    "purpose": "Conclude withdrawal route with custody, isolation and an open question.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "salon": {
+    "purpose": "Establish an adult social ritual through explicitly negotiated limits; player can observe or decline.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "celeste": [
+        "boardCopy"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "The patron’s personal boundaries remain private.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "A token returned without explanation"
+    ]
+  },
+  "reversal": {
+    "purpose": "Let Celeste temporarily give the player control of the introduction; intimacy is a concession, not submission on demand.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "celeste": [
+        "boardCopy"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Who had permission to use a name"
+    ]
+  },
+  "listening": {
+    "purpose": "Give Luca an ordinary, private music moment distinct from his public persona.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "luca": [
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "A track sent after publication even when trust is strained"
+    ]
+  },
+  "casework": {
+    "purpose": "Offer a slower, player-directed investigation of the seeded motive and its costs.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "sender"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "carbon_case": {
+    "purpose": "Mara’s invitation reopens a betrayal about who controlled the tenant archive.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "mara": [
+        "missingNames",
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Names of former tenants never appear.",
+    "mayReveal": [
+      "missingNames"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "proxy_case": {
+    "purpose": "Celeste’s intended witness role changes a board vote, not just the invitation text.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "celeste": [
+        "boardCopy"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "boardCopy"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Objecting blocks the board from using the witness to break a tied vote."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "letter_case": {
+    "purpose": "Inez’s misdelivery reveals a living addressee who may or may not consent to contact.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "inez": [
+        "motel",
+        "signature"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "The former tenant’s legal identity is not revealed.",
+    "mayReveal": [
+      "motel"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "unease",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "source_call": {
+    "purpose": "A named person can refuse corroboration; make player respect for autonomy costly.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {
+      "mara": [
+        "tenantRisk"
+      ]
+    },
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "assembly": {
+    "purpose": "Compare evidence sources; distinguish what the records establish from what remains inferred.",
+    "world": "Friday night; the 00:20 exchange and 00:26 departure proceed without the player.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Obtain informed cooperation without giving up the source.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Seed-variable authorship until an authenticated object is examined.",
+    "mayReveal": [
+      "header",
+      "signature",
+      "witness"
+    ],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "investigation",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A listed choice commits; refusing intimacy never blocks investigation.",
+    "callbacks": [
+      "Alias used with permission",
+      "Earlier handling of confidential information"
+    ]
+  },
+  "mara_r1": {
+    "purpose": "Learn how Mara distinguishes useful help from supervision.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Learn how Mara distinguishes useful help from supervision.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Selected as one of at most two companions.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r2": {
+    "purpose": "Remember a food preference without turning it into a clue.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Remember a food preference without turning it into a clue.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "humour",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r3": {
+    "purpose": "Discuss home and the practical cost of private space.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Discuss home and the practical cost of private space.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r4": {
+    "purpose": "Let a well-meant gesture become an unwanted rescue.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let a well-meant gesture become an unwanted rescue.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r5": {
+    "purpose": "Choose between protecting an exhausted colleague and correcting an unfair shift record.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Choose between protecting an exhausted colleague and correcting an unfair shift record.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "pressure",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r6": {
+    "purpose": "Offer personal attention without making trust into permission.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Offer personal attention without making trust into permission.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r7": {
+    "purpose": "Set an explicit expectation about a later break.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Set an explicit expectation about a later break.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous mara arc scene.",
+    "exit": "Return to the next companionship decision.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r8": {
+    "purpose": "Return to a room changed by a staffing decision.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Return to a room changed by a staffing decision.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previously selected companion; closing follow-up not yet completed.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r9": {
+    "purpose": "Bring back a small food memory several hours later.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Bring back a small food memory several hours later.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r10": {
+    "purpose": "Witness Mara and Luca disagree without appointing the player judge.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Witness Mara and Luca disagree without appointing the player judge.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r11": {
+    "purpose": "Let the document decision alter a personal relationship.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let the document decision alter a personal relationship.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r12": {
+    "purpose": "Repair the practical misunderstanding or accept distance.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Repair the practical misunderstanding or accept distance.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous mara arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "mara_r13": {
+    "purpose": "End with a bounded future invitation, not unconditional affection.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "End with a bounded future invitation, not unconditional affection.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous mara arc scene.",
+    "exit": "Return to closing handover.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r1": {
+    "purpose": "Let the proprietor fail at a small practical task.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let the proprietor fail at a small practical task.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Selected as one of at most two companions.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r2": {
+    "purpose": "Ask about a meal without making taste a class test.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Ask about a meal without making taste a class test.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "humour",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r3": {
+    "purpose": "Reveal an ordinary leisure habit she dislikes having interpreted.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Reveal an ordinary leisure habit she dislikes having interpreted.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r4": {
+    "purpose": "Make first impressions and clothing assumptions contestable.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Make first impressions and clothing assumptions contestable.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "pressure",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r5": {
+    "purpose": "Choose whether a worker gets relief at another worker’s expense.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Choose whether a worker gets relief at another worker’s expense.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r6": {
+    "purpose": "Negotiate a private social ritual with an unambiguous exit.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Negotiate a private social ritual with an unambiguous exit.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r7": {
+    "purpose": "Let a family interruption end a charged moment.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let a family interruption end a charged moment.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous celeste arc scene.",
+    "exit": "Return to the next companionship decision.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r8": {
+    "purpose": "Return to Celeste after she has taken a decision without the player.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Return to Celeste after she has taken a decision without the player.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "pressure",
+    "entry": "Previously selected companion; closing follow-up not yet completed.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r9": {
+    "purpose": "Discover the human cost of a confidential financial favour.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Discover the human cost of a confidential financial favour.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r10": {
+    "purpose": "Decline an offer without requiring Celeste to become a villain.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Decline an offer without requiring Celeste to become a villain.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r11": {
+    "purpose": "Discuss the document outcome without flattering the selected ending.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Discuss the document outcome without flattering the selected ending.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r12": {
+    "purpose": "Permit chemistry, uncertainty or a clear professional boundary.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Permit chemistry, uncertainty or a clear professional boundary.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous celeste arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "celeste_r13": {
+    "purpose": "Close with a specific promise the player can later hold her to.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Close with a specific promise the player can later hold her to.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous celeste arc scene.",
+    "exit": "Return to closing handover.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r1": {
+    "purpose": "Make Luca useful and fallible away from his archive persona.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Make Luca useful and fallible away from his archive persona.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "humour",
+    "entry": "Selected as one of at most two companions.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r2": {
+    "purpose": "Use a food disagreement to reveal how he mishears agreement.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Use a food disagreement to reveal how he mishears agreement.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r3": {
+    "purpose": "Give a music preference a genuinely non-plot callback.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Give a music preference a genuinely non-plot callback.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r4": {
+    "purpose": "Let Luca distribute a summary the player did not authorize.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let Luca distribute a summary the player did not authorize.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r5": {
+    "purpose": "Decide whether exposing a private benefactor serves accountability or pride.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Decide whether exposing a private benefactor serves accountability or pride.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "pressure",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r6": {
+    "purpose": "Share an adult social setting without presuming participation.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Share an adult social setting without presuming participation.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r7": {
+    "purpose": "Set an availability expectation and allow a missed reply.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Set an availability expectation and allow a missed reply.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous luca arc scene.",
+    "exit": "Return to the next companionship decision.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r8": {
+    "purpose": "Find Luca working on a different task rather than waiting romantically.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Find Luca working on a different task rather than waiting romantically.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previously selected companion; closing follow-up not yet completed.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r9": {
+    "purpose": "Make the ledger outcome cost something in the relationship.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Make the ledger outcome cost something in the relationship.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r10": {
+    "purpose": "Choose a correction that risks his reputation or the source’s.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Choose a correction that risks his reputation or the source’s.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "pressure",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r11": {
+    "purpose": "Distinguish an apology from a joke that avoids one.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Distinguish an apology from a joke that avoids one.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r12": {
+    "purpose": "Offer company with a right to decline it.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Offer company with a right to decline it.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous luca arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "luca_r13": {
+    "purpose": "Return a remembered preference and leave an unfinished friendship.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Return a remembered preference and leave an unfinished friendship.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous luca arc scene.",
+    "exit": "Return to closing handover.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r1": {
+    "purpose": "Explain Inez’s return through ordinary shift coverage.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Explain Inez’s return through ordinary shift coverage.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Selected as one of at most two companions.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r2": {
+    "purpose": "Let a lost object matter without belonging to the mystery.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let a lost object matter without belonging to the mystery.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "humour",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r3": {
+    "purpose": "Reveal what she listens to when she is not listening for others.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Reveal what she listens to when she is not listening for others.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r4": {
+    "purpose": "Allow uncertainty in someone whose reputation depends on precision.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Allow uncertainty in someone whose reputation depends on precision.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r5": {
+    "purpose": "Protect a confidence or correct a colleague’s damaging belief.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Protect a confidence or correct a colleague’s damaging belief.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "pressure",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r6": {
+    "purpose": "Make home and transport a practical conversation rather than a secret.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Make home and transport a practical conversation rather than a secret.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r7": {
+    "purpose": "Arrange a later handover without assuming friendship is availability.",
+    "world": "After authentication, before the document decision; two companions can receive substantial time.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Arrange a later handover without assuming friendship is availability.",
+    "emotion": "Tired; interested in specific conduct, not universally attracted to the player.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous inez arc scene.",
+    "exit": "Return to the next companionship decision.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r8": {
+    "purpose": "Return after Inez has independently acted on the shift problem.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Return after Inez has independently acted on the shift problem.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previously selected companion; closing follow-up not yet completed.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r9": {
+    "purpose": "Bring back an ordinary object and a small admitted mistake.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Bring back an ordinary object and a small admitted mistake.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r10": {
+    "purpose": "Witness two adults negotiate an old resentment without resolving it for them.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Witness two adults negotiate an old resentment without resolving it for them.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "conflict",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r11": {
+    "purpose": "Let respect for refusal affect the warmth of a later conversation.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let respect for refusal affect the warmth of a later conversation.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r12": {
+    "purpose": "Accept a limited apology and refuse unwanted guardianship.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Accept a limited apology and refuse unwanted guardianship.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 3,
+    "pacing": "intimacy",
+    "entry": "Previous inez arc scene.",
+    "exit": "A choice writes memory, belief or an explicit interpersonal cost.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "inez_r13": {
+    "purpose": "Leave a future ordinary contact, not another mandatory mystery.",
+    "world": "After the document decision; selected companions have continued their own work.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Leave a future ordinary contact, not another mandatory mystery.",
+    "emotion": "Changed by the player’s conduct and independently witnessed events.",
+    "hidden": "Other characters’ private conversations and uncommunicated player motives.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 1,
+    "pacing": "mundane",
+    "entry": "Previous inez arc scene.",
+    "exit": "Return to closing handover.",
+    "callbacks": [
+      "Food or ordinary habit from an earlier scene",
+      "The misunderstanding and attempted repair",
+      "The document decision"
+    ]
+  },
+  "late_room": {
+    "purpose": "Let Velvet change after the first departures; offer time with a person.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let Velvet change after the first departures; offer time with a person.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "late_second": {
+    "purpose": "Choose a second companion and relinquish the other full arcs.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Choose a second companion and relinquish the other full arcs.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "late_table": {
+    "purpose": "Witness the leads’ ordinary disagreement after time apart.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Witness the leads’ ordinary disagreement after time apart.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "humour",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "late_accounts": {
+    "purpose": "Separate a relationship promise from the evidence decision.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Separate a relationship promise from the evidence decision.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "crossed_shift": {
+    "purpose": "Let two separately witnessed staffing dilemmas collide without sharing either confidence.",
+    "world": "Player spent time with both Mara and Inez and recommended limited disclosure.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Recognise that apparently individual remedies affect the same small staff.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Sera’s clinical details and Tom’s family details remain private.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "conflict",
+    "entry": "Mara emergency-leave advice and Inez public correction, after both first encounters.",
+    "exit": "Return to the custody decision with a remembered limit on intervention.",
+    "callbacks": [
+      "Mara’s leave request",
+      "Inez’s challenged shift thread"
+    ]
+  },
+  "closing_room": {
+    "purpose": "Return to selected companions after the document decision.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Return to selected companions after the document decision.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "closing_second": {
+    "purpose": "Make the final promised conversation possible; others have made plans.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Make the final promised conversation possible; others have made plans.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "pressure",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "closing_table": {
+    "purpose": "Let different pairs and different choices produce different goodbyes.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Let different pairs and different choices produce different goodbyes.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "intimacy",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  },
+  "home_callback": {
+    "purpose": "Give a mundane detail one final return before reflection.",
+    "world": "Velvet Quarter only; a long single night, with commitments rather than a completionist checklist.",
+    "playerKnowledge": [],
+    "npcKnowledge": {},
+    "npcBeliefs": {},
+    "goals": "Give a mundane detail one final return before reflection.",
+    "emotion": "Tired, guarded; willingness to listen depends on witnessed conduct.",
+    "hidden": "Unwitnessed motives of people the player did not choose.",
+    "mayReveal": [],
+    "mustNotReveal": [
+      "unearned NPC memories",
+      "unobserved player decisions"
+    ],
+    "approaches": [
+      "ask directly",
+      "protect privacy",
+      "leave"
+    ],
+    "consequences": [
+      "Time advances; choices write explicit effects to the transcript."
+    ],
+    "tension": 2,
+    "pacing": "mundane",
+    "entry": "Previous scene choice points here and its conditions are met.",
+    "exit": "A player-selected companion or the next existing story beat.",
+    "callbacks": [
+      "First and second companionship choice",
+      "Missed messages and completed promises"
+    ]
+  }
+}

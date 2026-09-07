@@ -1,0 +1,37 @@
+{
+  "errors": [],
+  "audits": [
+    {
+      "screen": "desktop opening",
+      "violations": []
+    },
+    {
+      "screen": "desktop transcript",
+      "violations": []
+    },
+    {
+      "screen": "Belongings",
+      "violations": []
+    },
+    {
+      "screen": "The city",
+      "violations": []
+    },
+    {
+      "screen": "Journal",
+      "violations": []
+    },
+    {
+      "screen": "phone composer",
+      "violations": []
+    },
+    {
+      "screen": "boundaries",
+      "violations": []
+    },
+    {
+      "screen": "mobile transcript",
+      "violations": []
+    }
+  ]
+}

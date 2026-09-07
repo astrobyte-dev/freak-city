@@ -1,0 +1,2939 @@
+{
+  "sceneCount": 117,
+  "locations": [
+    {
+      "id": "taxi",
+      "name": "taxi",
+      "rooms": [
+        "taxi"
+      ]
+    },
+    {
+      "id": "street",
+      "name": "street",
+      "rooms": [
+        "street",
+        "loading-bay",
+        "kiosk"
+      ]
+    },
+    {
+      "id": "velvet",
+      "name": "velvet",
+      "rooms": [
+        "vestibule",
+        "bar",
+        "cloakroom",
+        "washroom",
+        "kitchen",
+        "stage",
+        "salon",
+        "archive"
+      ]
+    },
+    {
+      "id": "upstairs",
+      "name": "upstairs",
+      "rooms": [
+        "landing",
+        "office",
+        "exchange-room"
+      ]
+    },
+    {
+      "id": "apartment",
+      "name": "apartment",
+      "rooms": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "motel",
+      "name": "motel",
+      "rooms": [
+        "motel"
+      ]
+    }
+  ],
+  "rooms": {
+    "taxi": {
+      "id": "taxi",
+      "name": "An address. A wet street.",
+      "location": "taxi",
+      "description": "The taxi idles outside Velvet. Your phone holds an unsigned invitation. A black envelope lies beside you on the seat. Beyond the window, a narrow awning shelters the side entrance.",
+      "exits": [
+        {
+          "name": "outside",
+          "to": "street",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "street",
+            "exit",
+            "leave",
+            "side entrance"
+          ]
+        }
+      ],
+      "sound": "The meter clicks. Rain needles the roof.",
+      "smell": "Warm vinyl and the driver's mint tea."
+    },
+    "street": {
+      "id": "street",
+      "name": "Velvet / side entrance",
+      "location": "street",
+      "description": "Rain writes over the taxi's tyre marks. Velvet's side entrance glows beneath a narrow awning. The loading bay runs behind the building; a soup kiosk stays lit across the road.",
+      "exits": [
+        {
+          "name": "inside",
+          "to": "vestibule",
+          "minutes": 1,
+          "aliases": [
+            "in",
+            "velvet",
+            "entrance",
+            "side entrance"
+          ],
+          "door": "side_door"
+        },
+        {
+          "name": "loading bay",
+          "to": "loading-bay",
+          "minutes": 4,
+          "aliases": [
+            "bay",
+            "loading door",
+            "behind",
+            "east"
+          ]
+        },
+        {
+          "name": "kiosk",
+          "to": "kiosk",
+          "minutes": 2,
+          "aliases": [
+            "across street"
+          ]
+        },
+        {
+          "name": "home",
+          "to": "apartment",
+          "minutes": 18,
+          "aliases": [
+            "apartment",
+            "west"
+          ]
+        },
+        {
+          "name": "front door",
+          "to": "bar",
+          "minutes": 2,
+          "aliases": [
+            "front",
+            "front entrance"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "vestibule": {
+      "id": "vestibule",
+      "name": "The vestibule",
+      "location": "velvet",
+      "description": "Warm air. Wet wool. A corridor the colour of dried wine. A notice points left to the working toilets. The bar is ahead; a cloakroom opens on the right.",
+      "exits": [
+        {
+          "name": "bar",
+          "to": "bar",
+          "minutes": 1,
+          "aliases": [
+            "inside",
+            "in",
+            "ahead",
+            "north",
+            "floor"
+          ]
+        },
+        {
+          "name": "outside",
+          "to": "street",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "south"
+          ],
+          "door": "side_door"
+        },
+        {
+          "name": "cloakroom",
+          "to": "cloakroom",
+          "minutes": 1,
+          "aliases": [
+            "right",
+            "coat"
+          ]
+        },
+        {
+          "name": "washroom",
+          "to": "washroom",
+          "minutes": 1,
+          "aliases": [
+            "left",
+            "toilets"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "bar": {
+      "id": "bar",
+      "name": "Velvet / the bar",
+      "location": "velvet",
+      "description": "A folded towel protects the counter. Two pencils wait beside mismatched cups. The main floor opens toward a small stage; stairs rise beside a quieter salon. A service door leads to the kitchen.",
+      "exits": [
+        {
+          "name": "vestibule",
+          "to": "vestibule",
+          "minutes": 1,
+          "aliases": [
+            "south",
+            "entrance"
+          ]
+        },
+        {
+          "name": "outside",
+          "to": "street",
+          "minutes": 2,
+          "aliases": [
+            "out",
+            "leave",
+            "front door"
+          ]
+        },
+        {
+          "name": "upstairs",
+          "to": "landing",
+          "minutes": 2,
+          "aliases": [
+            "up",
+            "stairs"
+          ]
+        },
+        {
+          "name": "kitchen",
+          "to": "kitchen",
+          "minutes": 1,
+          "aliases": [
+            "service door",
+            "west"
+          ]
+        },
+        {
+          "name": "stage",
+          "to": "stage",
+          "minutes": 1,
+          "aliases": [
+            "luca",
+            "east",
+            "floor"
+          ]
+        },
+        {
+          "name": "salon",
+          "to": "salon",
+          "minutes": 1,
+          "aliases": []
+        },
+        {
+          "name": "archive",
+          "to": "archive",
+          "minutes": 1,
+          "aliases": [
+            "service table",
+            "envelope",
+            "documents"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "cloakroom": {
+      "id": "cloakroom",
+      "name": "The cloakroom",
+      "location": "velvet",
+      "description": "An open rack holds a black jacket. A bench makes a small island beneath the dripping coats.",
+      "exits": [
+        {
+          "name": "vestibule",
+          "to": "vestibule",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "washroom": {
+      "id": "washroom",
+      "name": "The working toilets",
+      "location": "velvet",
+      "description": "The mirror has a clean stripe at eye level. Someone has crossed out a number on the poster and written ASK FIRST.",
+      "exits": [
+        {
+          "name": "vestibule",
+          "to": "vestibule",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave"
+          ]
+        }
+      ],
+      "sound": "Water rattles in the pipes. Voices carry from behind the partition.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "kitchen": {
+      "id": "kitchen",
+      "name": "A chair beside the repairs",
+      "location": "velvet",
+      "description": "A door-closer casing lies open beside cooling chips. The spare chair is clear. Through the hatch you can see the bar.",
+      "exits": [
+        {
+          "name": "bar",
+          "to": "bar",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave",
+            "east"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "stage": {
+      "id": "stage",
+      "name": "The small stage",
+      "location": "velvet",
+      "description": "A cable snakes past a keyboard. Someone has taped UNKNOWN to a ring of spare keys. Headphones rest beside a dead phone.",
+      "exits": [
+        {
+          "name": "bar",
+          "to": "bar",
+          "minutes": 1,
+          "aliases": [
+            "west",
+            "out",
+            "leave"
+          ]
+        },
+        {
+          "name": "loading bay",
+          "to": "loading-bay",
+          "minutes": 4,
+          "aliases": [
+            "outside",
+            "out back"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "salon": {
+      "id": "salon",
+      "name": "The room beside the floor",
+      "location": "velvet",
+      "description": "A circle of chairs leaves plenty of room near the door. Nobody has to cross the threshold to see the room.",
+      "exits": [
+        {
+          "name": "bar",
+          "to": "bar",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "landing": {
+      "id": "landing",
+      "name": "Above the bass",
+      "location": "upstairs",
+      "description": "The stairs end at a narrow landing. Light sits under an office door. The exchange room is farther along the corridor.",
+      "exits": [
+        {
+          "name": "downstairs",
+          "to": "bar",
+          "minutes": 2,
+          "aliases": [
+            "down",
+            "bar",
+            "out"
+          ]
+        },
+        {
+          "name": "office",
+          "to": "office",
+          "minutes": 1,
+          "aliases": [
+            "inside",
+            "in"
+          ],
+          "door": "office_door"
+        },
+        {
+          "name": "exchange room",
+          "to": "exchange-room",
+          "minutes": 1,
+          "aliases": [
+            "exchange",
+            "reception",
+            "north"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "office": {
+      "id": "office",
+      "name": "The office",
+      "location": "upstairs",
+      "description": "A desk faces the window. There are two drawers and a chair that never quite fits beneath it. The door opens onto the landing.",
+      "exits": [
+        {
+          "name": "outside",
+          "to": "landing",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave",
+            "landing"
+          ],
+          "door": "office_door"
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "exchange-room": {
+      "id": "exchange-room",
+      "name": "The exchange room",
+      "location": "upstairs",
+      "description": "Four chairs. One is the wrong height. A document box waits beneath a water stain. The landing remains open behind you.",
+      "exits": [
+        {
+          "name": "landing",
+          "to": "landing",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave",
+            "south"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "archive": {
+      "id": "archive",
+      "name": "The service table",
+      "location": "velvet",
+      "description": "A lamp illuminates a clear patch of table. After the transfer, the service envelope and ledger will be left here for the outside witness.",
+      "exits": [
+        {
+          "name": "bar",
+          "to": "bar",
+          "minutes": 1,
+          "aliases": [
+            "out",
+            "leave"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "loading-bay": {
+      "id": "loading-bay",
+      "name": "The loading bay",
+      "location": "street",
+      "description": "Wheel marks cross the loading door. A bus stop faces the service road. A camera watches the trolley ramp with bureaucratic patience.",
+      "exits": [
+        {
+          "name": "street",
+          "to": "street",
+          "minutes": 4,
+          "aliases": [
+            "out",
+            "leave",
+            "west"
+          ]
+        },
+        {
+          "name": "stage",
+          "to": "stage",
+          "minutes": 4,
+          "aliases": [
+            "inside",
+            "in",
+            "velvet"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "kiosk": {
+      "id": "kiosk",
+      "name": "The soup kiosk",
+      "location": "street",
+      "description": "Steam fogs the glass. A handwritten menu promises soup with no further qualifications.",
+      "exits": [
+        {
+          "name": "street",
+          "to": "street",
+          "minutes": 2,
+          "aliases": [
+            "out",
+            "leave"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "apartment": {
+      "id": "apartment",
+      "name": "Your apartment",
+      "location": "apartment",
+      "description": "The refrigerator hums in two keys at once. Your mug is in the sink. The kettle waits beside an unclaimed patch of counter.",
+      "exits": [
+        {
+          "name": "street",
+          "to": "street",
+          "minutes": 18,
+          "aliases": [
+            "outside",
+            "out",
+            "velvet"
+          ]
+        },
+        {
+          "name": "motel 27",
+          "to": "motel",
+          "minutes": 20,
+          "aliases": [
+            "motel"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    },
+    "motel": {
+      "id": "motel",
+      "name": "Motel 27",
+      "location": "motel",
+      "description": "The corridor is lit by an exit sign and a vending machine. Room 06 has an ordinary lock. That feels deliberate.",
+      "exits": [
+        {
+          "name": "home",
+          "to": "apartment",
+          "minutes": 20,
+          "aliases": [
+            "out",
+            "leave",
+            "apartment"
+          ]
+        }
+      ],
+      "sound": "Bass travels through the walls. Somewhere, a glass meets a counter.",
+      "smell": "Wet wool, old wood, a little lemon cleaner."
+    }
+  },
+  "scenes": [
+    {
+      "id": "arrival",
+      "room": "taxi",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "enter",
+          "to": "door",
+          "phrase": "“This is the place.”"
+        },
+        {
+          "id": "ask_driver",
+          "to": "door",
+          "phrase": "“Has anyone else asked you to come here?”"
+        },
+        {
+          "id": "circle",
+          "to": "street",
+          "phrase": "“Go around the block first.”"
+        }
+      ]
+    },
+    {
+      "id": "door",
+      "room": "street",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "truth",
+          "to": "vestibule",
+          "phrase": "“Someone sent this. I don’t know who.”"
+        },
+        {
+          "id": "lie",
+          "to": "vestibule",
+          "phrase": "“Luca invited me.”"
+        },
+        {
+          "id": "private",
+          "to": "vestibule",
+          "phrase": "“Just the alias. Is that enough?”"
+        }
+      ]
+    },
+    {
+      "id": "vestibule",
+      "room": "vestibule",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "bar",
+          "to": "bar",
+          "phrase": "Follow her to the bar."
+        },
+        {
+          "id": "wardrobe",
+          "to": "coat",
+          "phrase": "Stop at the cloakroom first."
+        }
+      ]
+    },
+    {
+      "id": "bar",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "tea",
+          "to": "floor",
+          "phrase": "“Tea. No sugar.”"
+        },
+        {
+          "id": "coffee",
+          "to": "floor",
+          "phrase": "“The technically coffee.”"
+        },
+        {
+          "id": "water",
+          "to": "floor",
+          "phrase": "“Water’s good. Long night?”"
+        }
+      ]
+    },
+    {
+      "id": "coat",
+      "room": "cloakroom",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "keep_coat",
+          "to": "bar",
+          "phrase": "Keep the raincoat. Stay an outsider."
+        },
+        {
+          "id": "formal",
+          "to": "bar",
+          "phrase": "Borrow the black jacket."
+        },
+        {
+          "id": "workwear",
+          "to": "bar",
+          "phrase": "Roll up your sleeves."
+        }
+      ]
+    },
+    {
+      "id": "floor",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "find_mara",
+          "to": "mara",
+          "phrase": "Ask Mara about the invitation."
+        },
+        {
+          "id": "find_celeste",
+          "to": "celeste",
+          "phrase": "Approach the woman by the stairs."
+        },
+        {
+          "id": "find_luca",
+          "to": "luca",
+          "phrase": "Help the man with the dead phone."
+        },
+        {
+          "id": "find_inez",
+          "to": "inez",
+          "phrase": "Find the custodian and her book."
+        },
+        {
+          "id": "toilet",
+          "to": "washroom",
+          "phrase": "Take a minute away from the room."
+        },
+        {
+          "id": "salon",
+          "to": "salon",
+          "phrase": "Look into the room beside the dance floor."
+        },
+        {
+          "id": "private_token",
+          "to": "reversal",
+          "phrase": "Ask about a different kind of introduction."
+        },
+        {
+          "id": "listen_track",
+          "to": "listening",
+          "phrase": "Ask Luca about the track."
+        },
+        {
+          "id": "commit",
+          "to": "decision",
+          "phrase": "Decide where to be at twenty past."
+        }
+      ]
+    },
+    {
+      "id": "mara",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "protect_mara",
+          "to": "kitchen",
+          "phrase": "“I’ll keep their names out of it.”"
+        },
+        {
+          "id": "no_promise",
+          "to": "kitchen",
+          "phrase": "“I need to see it before I promise.”"
+        },
+        {
+          "id": "trade_mara",
+          "to": "floor",
+          "phrase": "“What do I get for helping?”"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "room": "kitchen",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "chips",
+          "to": "quiet",
+          "phrase": "Share the chips. Hold the casing steady."
+        },
+        {
+          "id": "thanks",
+          "to": "floor",
+          "phrase": "Thank her and give her a quiet minute."
+        }
+      ]
+    },
+    {
+      "id": "quiet",
+      "room": "kitchen",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "stay_close",
+          "to": "floor",
+          "phrase": "“Save me this chair later.”"
+        },
+        {
+          "id": "friends",
+          "to": "floor",
+          "phrase": "“I’m glad I met someone normal.”"
+        },
+        {
+          "id": "leave_quiet",
+          "to": "floor",
+          "phrase": "Leave the chair open. Go back to the room."
+        }
+      ]
+    },
+    {
+      "id": "celeste",
+      "room": "landing",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "read_terms",
+          "to": "terms",
+          "phrase": "“Show me what I’m agreeing to.”"
+        },
+        {
+          "id": "take_pass",
+          "to": "floor",
+          "phrase": "Take the pass. Decide upstairs."
+        },
+        {
+          "id": "decline_status",
+          "to": "floor",
+          "phrase": "“I didn’t agree to be your witness.”"
+        }
+      ]
+    },
+    {
+      "id": "terms",
+      "room": "office",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "annotate",
+          "to": "floor",
+          "phrase": "Write: “Presence is not consent.” Use the alias."
+        },
+        {
+          "id": "sign_alias",
+          "to": "floor",
+          "phrase": "Sign the alias and keep the pass."
+        },
+        {
+          "id": "refuse_pen",
+          "to": "floor",
+          "phrase": "Put the pen down."
+        }
+      ]
+    },
+    {
+      "id": "luca",
+      "room": "stage",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "listen_luca",
+          "to": "radio",
+          "phrase": "“Tell me about the box.”"
+        },
+        {
+          "id": "sympathy",
+          "to": "radio",
+          "phrase": "“I understand what you’re trying to do.”"
+        },
+        {
+          "id": "no_radio",
+          "to": "floor",
+          "phrase": "“I’m not a source.”"
+        }
+      ]
+    },
+    {
+      "id": "radio",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "correct_luca",
+          "to": "floor",
+          "phrase": "“Understanding isn’t permission. Ask the people named.”"
+        },
+        {
+          "id": "promise_publish",
+          "to": "floor",
+          "phrase": "“Get me evidence. I’ll get it out.”"
+        },
+        {
+          "id": "reserve",
+          "to": "floor",
+          "phrase": "“I’ll hear the witness first.”"
+        }
+      ]
+    },
+    {
+      "id": "inez",
+      "room": "vestibule",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "help_inez",
+          "to": "register",
+          "phrase": "“What can I do about it?”"
+        },
+        {
+          "id": "accuse_inez",
+          "to": "register",
+          "phrase": "“You know more than you’re saying.”"
+        },
+        {
+          "id": "leave_inez",
+          "to": "floor",
+          "phrase": "Give back the bulb. Leave her to her shift."
+        }
+      ]
+    },
+    {
+      "id": "register",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "return_bag",
+          "to": "floor",
+          "phrase": "Hand over the bag without looking further."
+        },
+        {
+          "id": "photo_page",
+          "to": "floor",
+          "phrase": "Photograph the page while she changes bags."
+        },
+        {
+          "id": "ask_copy",
+          "to": "floor",
+          "phrase": "Ask for a copy with the name covered."
+        }
+      ]
+    },
+    {
+      "id": "washroom",
+      "room": "washroom",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "hear_more",
+          "to": "overhear",
+          "phrase": "Stay long enough to hear the rest."
+        },
+        {
+          "id": "leave_toilet",
+          "to": "floor",
+          "phrase": "Let a private conversation stay private."
+        }
+      ]
+    },
+    {
+      "id": "overhear",
+      "room": "washroom",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "keep_secret",
+          "to": "floor",
+          "phrase": "Keep her name out of tonight."
+        },
+        {
+          "id": "spread",
+          "to": "floor",
+          "phrase": "Send the allegation to the venue group."
+        },
+        {
+          "id": "anonymize",
+          "to": "floor",
+          "phrase": "Report the accounting concern without a name."
+        }
+      ]
+    },
+    {
+      "id": "street",
+      "room": "street",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "street_door",
+          "to": "door",
+          "phrase": "Go to the side entrance."
+        },
+        {
+          "id": "street_kiosk",
+          "to": "kiosk",
+          "phrase": "Get something warm at the kiosk."
+        },
+        {
+          "id": "street_choose",
+          "to": "decision",
+          "phrase": "Choose which invitation to follow."
+        }
+      ]
+    },
+    {
+      "id": "kiosk",
+      "room": "kiosk",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "kiosk_back",
+          "to": "decision",
+          "phrase": "Finish the soup. Make a decision."
+        },
+        {
+          "id": "kiosk_rush",
+          "to": "decision",
+          "phrase": "Leave the soup for Inez. Go."
+        }
+      ]
+    },
+    {
+      "id": "decision",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "upstairs",
+          "to": "exchange",
+          "phrase": "Attend the ledger exchange."
+        },
+        {
+          "id": "loading_bay",
+          "to": "bay",
+          "phrase": "Meet the departing witness."
+        },
+        {
+          "id": "neither",
+          "to": "missed",
+          "phrase": "Decline both. Wait outside."
+        },
+        {
+          "id": "one_more",
+          "to": "floor",
+          "phrase": "Return to the floor for another conversation."
+        }
+      ]
+    },
+    {
+      "id": "exchange",
+      "room": "exchange-room",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "object",
+          "to": "objection",
+          "phrase": "Ask why your old signature is attached."
+        },
+        {
+          "id": "watch_transfer",
+          "to": "objection",
+          "phrase": "Watch the custody chain. Say nothing yet."
+        },
+        {
+          "id": "leave_exchange",
+          "to": "aftermath",
+          "phrase": "Leave a written objection and step out."
+        }
+      ]
+    },
+    {
+      "id": "objection",
+      "room": "exchange-room",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "call_bluff",
+          "to": "aftermath",
+          "phrase": "“Then my presence cannot make this legitimate.”"
+        },
+        {
+          "id": "recover",
+          "to": "aftermath",
+          "phrase": "Ask for water. Put the objection in writing."
+        },
+        {
+          "id": "leverage",
+          "to": "aftermath",
+          "phrase": "“Give me a copy and I’ll stay quiet for now.”"
+        },
+        {
+          "id": "leave_room",
+          "to": "aftermath",
+          "phrase": "“I’m leaving. Record that too.”"
+        }
+      ]
+    },
+    {
+      "id": "bay",
+      "room": "loading-bay",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "protect_witness",
+          "to": "bus",
+          "phrase": "“Your name stays off my copy.”"
+        },
+        {
+          "id": "name_witness",
+          "to": "bus",
+          "phrase": "“Evidence needs an accountable source.”"
+        },
+        {
+          "id": "copy_dates",
+          "to": "bus",
+          "phrase": "Take only the dates and custody stamps."
+        }
+      ]
+    },
+    {
+      "id": "bus",
+      "room": "loading-bay",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "fare",
+          "to": "aftermath",
+          "phrase": "Pay her fare. Walk home later."
+        },
+        {
+          "id": "arrange",
+          "to": "aftermath",
+          "phrase": "Ask the driver to log a deferred fare."
+        },
+        {
+          "id": "keep_cash",
+          "to": "aftermath",
+          "phrase": "Keep your fare home. Let Inez sort it out."
+        }
+      ]
+    },
+    {
+      "id": "missed",
+      "room": "street",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "return_after",
+          "to": "aftermath",
+          "phrase": "Take the envelope and go back inside."
+        },
+        {
+          "id": "keep_distance",
+          "to": "aftermath",
+          "phrase": "Ask the attendant to bring it outside."
+        }
+      ]
+    },
+    {
+      "id": "aftermath",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "face_luca",
+          "to": "contradiction",
+          "phrase": "Speak to Luca about the door conversation."
+        },
+        {
+          "id": "archive_now",
+          "to": "archive",
+          "phrase": "Ask to examine the service envelope."
+        },
+        {
+          "id": "mara_private",
+          "to": "hidden",
+          "phrase": "Ask Mara for a quiet place to read it."
+        },
+        {
+          "id": "outside_read",
+          "to": "archive",
+          "phrase": "Take the envelope to the vestibule."
+        }
+      ]
+    },
+    {
+      "id": "contradiction",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "admit_lie",
+          "to": "confession",
+          "phrase": "“A door excuse. I’m sorry I used your name.”"
+        },
+        {
+          "id": "double_down",
+          "to": "archive",
+          "phrase": "“That’s what the message implied.”"
+        },
+        {
+          "id": "refuse_explain",
+          "to": "archive",
+          "phrase": "“I’m not discussing it here.”"
+        }
+      ]
+    },
+    {
+      "id": "confession",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "accept_repair",
+          "to": "archive",
+          "phrase": "Thank him. Open the envelope."
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "room": "archive",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "open_proof",
+          "to": "proof",
+          "phrase": "Open the routing envelope."
+        },
+        {
+          "id": "ask_before",
+          "to": "proof",
+          "phrase": "Ask Mara whether the routing envelope is yours to open."
+        }
+      ]
+    },
+    {
+      "id": "hidden",
+      "room": "kitchen",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "hold_history",
+          "to": "proof",
+          "phrase": "“I won’t pretend the choice was simple.”"
+        },
+        {
+          "id": "ask_accountability",
+          "to": "proof",
+          "phrase": "“Who can check the totals now?”"
+        }
+      ]
+    },
+    {
+      "id": "proof",
+      "room": "archive",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "confront_sender",
+          "to": "sender",
+          "phrase": "Ask the sender to account for it."
+        },
+        {
+          "id": "focus_ledger",
+          "to": "casework",
+          "phrase": "Keep the proof. Review the account before deciding."
+        }
+      ]
+    },
+    {
+      "id": "sender",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "boundary_sender",
+          "to": "casework",
+          "phrase": "“You ask me next time. Before you act.”"
+        },
+        {
+          "id": "debt_sender",
+          "to": "casework",
+          "phrase": "“Then you owe me something.”"
+        },
+        {
+          "id": "distance_sender",
+          "to": "casework",
+          "phrase": "“We can discuss it when this is over.”"
+        }
+      ]
+    },
+    {
+      "id": "ledger",
+      "room": "archive",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "take_time",
+          "to": "late_room",
+          "phrase": "Spend time with the people behind the decision."
+        },
+        {
+          "id": "choose_redact",
+          "to": "redact",
+          "phrase": "Protect the names. Release the accounts."
+        },
+        {
+          "id": "choose_publish",
+          "to": "publish",
+          "phrase": "Give Luca the complete original."
+        },
+        {
+          "id": "choose_bargain",
+          "to": "bargain",
+          "phrase": "Trade the original for board access."
+        },
+        {
+          "id": "choose_withhold",
+          "to": "withhold",
+          "phrase": "Keep the original. Walk away."
+        }
+      ]
+    },
+    {
+      "id": "redact",
+      "room": "bar",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "redact_done",
+          "to": "mirror",
+          "phrase": "Carry the redacted copy out."
+        }
+      ]
+    },
+    {
+      "id": "publish",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "publish_done",
+          "to": "mirror",
+          "phrase": "Leave Luca to the responses."
+        }
+      ]
+    },
+    {
+      "id": "bargain",
+      "room": "landing",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "bargain_done",
+          "to": "mirror",
+          "phrase": "Keep the agreement. Leave the building."
+        }
+      ]
+    },
+    {
+      "id": "withhold",
+      "room": "street",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "withhold_done",
+          "to": "mirror",
+          "phrase": "Take the long way home."
+        }
+      ]
+    },
+    {
+      "id": "mirror",
+      "room": "street",
+      "kind": "phone content",
+      "continuations": [
+        {
+          "id": "mirror_ask",
+          "to": "walk",
+          "phrase": "“Please ask me next time.”"
+        },
+        {
+          "id": "mirror_accept",
+          "to": "walk",
+          "phrase": "“I understand why. Send the rest now.”"
+        },
+        {
+          "id": "mirror_angry",
+          "to": "walk",
+          "phrase": "“You don’t get to decide what I can handle.”"
+        },
+        {
+          "id": "mirror_silence",
+          "to": "walk",
+          "phrase": "Put the phone away. Answer tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "walk",
+      "room": "street",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "keep_promises",
+          "to": "closing_room",
+          "phrase": "Return for the conversations you left unfinished."
+        },
+        {
+          "id": "home",
+          "to": "apartment",
+          "phrase": "Go home. Put the kettle on."
+        },
+        {
+          "id": "reply_mara",
+          "to": "apartment",
+          "phrase": "Reply: “Glad it’s still running. Get some sleep.”"
+        }
+      ]
+    },
+    {
+      "id": "apartment",
+      "room": "apartment",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "settle_home",
+          "to": "home_callback",
+          "phrase": "Let the ordinary details of the night catch up."
+        },
+        {
+          "id": "reflect",
+          "to": "reflection",
+          "phrase": "Sit down with what happened."
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "room": "apartment",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "reflect_connection",
+          "to": "dawn",
+          "phrase": "The person who remembered something small."
+        },
+        {
+          "id": "reflect_truth",
+          "to": "dawn",
+          "phrase": "The moment the evidence finally made sense."
+        },
+        {
+          "id": "reflect_control",
+          "to": "dawn",
+          "phrase": "I want to choose my involvement next time."
+        },
+        {
+          "id": "reflect_unknown",
+          "to": "dawn",
+          "phrase": "I don’t know yet."
+        },
+        {
+          "id": "reflect_never",
+          "to": "dawn",
+          "phrase": "I don’t want personal attention like that again."
+        }
+      ]
+    },
+    {
+      "id": "dawn",
+      "room": "apartment",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "motel_hook",
+          "to": "motel",
+          "phrase": "Call Inez about Motel 27."
+        },
+        {
+          "id": "end_protected",
+          "to": "end_protect",
+          "phrase": "Put the key away. End the night."
+        },
+        {
+          "id": "end_published",
+          "to": "end_public",
+          "phrase": "Put the key away. End the night."
+        },
+        {
+          "id": "end_bargained",
+          "to": "end_power",
+          "phrase": "Put the key away. End the night."
+        },
+        {
+          "id": "end_withheld",
+          "to": "end_ghost",
+          "phrase": "Put the key away. End the night."
+        }
+      ]
+    },
+    {
+      "id": "motel",
+      "room": "motel",
+      "kind": "phone content",
+      "continuations": [
+        {
+          "id": "motel_protect",
+          "to": "end_protect",
+          "phrase": "Keep the inventory. Close the phone."
+        },
+        {
+          "id": "motel_public",
+          "to": "end_public",
+          "phrase": "Keep the inventory. Close the phone."
+        },
+        {
+          "id": "motel_power",
+          "to": "end_power",
+          "phrase": "Keep the inventory. Close the phone."
+        },
+        {
+          "id": "motel_ghost",
+          "to": "end_ghost",
+          "phrase": "Keep the inventory. Close the phone."
+        }
+      ]
+    },
+    {
+      "id": "end_protect",
+      "room": "apartment",
+      "kind": "consequence outcome",
+      "continuations": []
+    },
+    {
+      "id": "end_public",
+      "room": "apartment",
+      "kind": "consequence outcome",
+      "continuations": []
+    },
+    {
+      "id": "end_power",
+      "room": "landing",
+      "kind": "consequence outcome",
+      "continuations": []
+    },
+    {
+      "id": "end_ghost",
+      "room": "apartment",
+      "kind": "consequence outcome",
+      "continuations": []
+    },
+    {
+      "id": "salon",
+      "room": "salon",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "salon_observe",
+          "to": "floor",
+          "phrase": "Stay by the door. Learn how people say no."
+        },
+        {
+          "id": "salon_join",
+          "to": "reversal",
+          "phrase": "Ask Celeste whether she would give you the token."
+        },
+        {
+          "id": "salon_leave",
+          "to": "floor",
+          "phrase": "Let the table continue without an audience."
+        },
+        {
+          "id": "boundary_exit",
+          "to": "floor",
+          "phrase": "Return to the main room."
+        }
+      ]
+    },
+    {
+      "id": "reversal",
+      "room": "salon",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "introduce_person",
+          "to": "floor",
+          "phrase": "“Celeste. She listens better when she isn’t deciding.”"
+        },
+        {
+          "id": "introduce_terms",
+          "to": "floor",
+          "phrase": "“Celeste. She leaves room for an exception.”"
+        },
+        {
+          "id": "return_token",
+          "to": "floor",
+          "phrase": "“I don’t know you well enough yet.” Return the token."
+        },
+        {
+          "id": "boundary_exit",
+          "to": "floor",
+          "phrase": "Return to the main room."
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "room": "stage",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "track_again",
+          "to": "floor",
+          "phrase": "“Send me the track when your phone wakes up.”"
+        },
+        {
+          "id": "track_credit",
+          "to": "floor",
+          "phrase": "“Additional percussion deserves half the royalties.”"
+        },
+        {
+          "id": "track_thanks",
+          "to": "floor",
+          "phrase": "Thank him. Give the headphones back."
+        },
+        {
+          "id": "boundary_exit",
+          "to": "floor",
+          "phrase": "Return to the main room."
+        }
+      ]
+    },
+    {
+      "id": "casework",
+      "room": "archive",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "investigate_carbon",
+          "to": "carbon_case",
+          "phrase": "Ask Mara why she needed an outsider."
+        },
+        {
+          "id": "investigate_proxy",
+          "to": "proxy_case",
+          "phrase": "Ask Celeste about the board reference."
+        },
+        {
+          "id": "investigate_letter",
+          "to": "letter_case",
+          "phrase": "Call Inez about the intended recipient."
+        },
+        {
+          "id": "decide_now",
+          "to": "ledger",
+          "phrase": "I have enough to make the document decision."
+        }
+      ]
+    },
+    {
+      "id": "carbon_case",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "mara_tells",
+          "to": "source_call",
+          "phrase": "Give her five minutes to tell Luca herself."
+        },
+        {
+          "id": "tell_luca",
+          "to": "source_call",
+          "phrase": "Tell Luca yourself. He deserves the accurate record."
+        },
+        {
+          "id": "stay_out",
+          "to": "assembly",
+          "phrase": "Leave the old argument between them."
+        }
+      ]
+    },
+    {
+      "id": "proxy_case",
+      "room": "landing",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "refuse_proxy",
+          "to": "source_call",
+          "phrase": "Write an explicit refusal. Let the tie remain."
+        },
+        {
+          "id": "use_proxy",
+          "to": "source_call",
+          "phrase": "Accept the vote only for an independent audit."
+        },
+        {
+          "id": "keep_option",
+          "to": "assembly",
+          "phrase": "Leave the page unsigned. Keep the option."
+        }
+      ]
+    },
+    {
+      "id": "letter_case",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "ask_contact",
+          "to": "source_call",
+          "phrase": "Ask Inez to request permission to contact them."
+        },
+        {
+          "id": "demand_contact",
+          "to": "source_call",
+          "phrase": "Press her for the number. You’ve already been involved."
+        },
+        {
+          "id": "no_contact",
+          "to": "assembly",
+          "phrase": "Let the former tenant stay out of this night."
+        }
+      ]
+    },
+    {
+      "id": "source_call",
+      "room": "bar",
+      "kind": "authored conversation",
+      "continuations": [
+        {
+          "id": "sealed_trust",
+          "to": "assembly",
+          "phrase": "Offer to hold a sealed account without publishing it."
+        },
+        {
+          "id": "respect_no",
+          "to": "assembly",
+          "phrase": "“Thank you for talking. We won’t use your account.”"
+        },
+        {
+          "id": "private_statement",
+          "to": "assembly",
+          "phrase": "Ask once about a sealed statement, with room to refuse."
+        },
+        {
+          "id": "press_source",
+          "to": "assembly",
+          "phrase": "“Without a source, this will happen to someone else.”"
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "room": "bar",
+      "kind": "special interaction",
+      "continuations": [
+        {
+          "id": "stand_account",
+          "to": "ledger",
+          "phrase": "Put your alias on a formal objection."
+        },
+        {
+          "id": "write_account",
+          "to": "ledger",
+          "phrase": "Write a factual account, keeping witnesses anonymous."
+        },
+        {
+          "id": "record_account",
+          "to": "ledger",
+          "phrase": "Record a statement in your own words for the archive."
+        },
+        {
+          "id": "private_account",
+          "to": "ledger",
+          "phrase": "Keep your notes private for now."
+        }
+      ]
+    },
+    {
+      "id": "mara_r1",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "follow_system",
+          "to": "mara_r2",
+          "phrase": "Use her system. Ask before changing anything."
+        },
+        {
+          "id": "offer_system",
+          "to": "mara_r2",
+          "phrase": "Suggest a simpler way to count the glasses."
+        }
+      ]
+    },
+    {
+      "id": "mara_r2",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "vinegar",
+          "to": "mara_r3",
+          "phrase": "“Vinegar is the correct choice.”"
+        },
+        {
+          "id": "salt",
+          "to": "mara_r3",
+          "phrase": "“Plain salt. I like knowing when my mouth is injured.”"
+        },
+        {
+          "id": "no_food",
+          "to": "mara_r3",
+          "phrase": "“No food for me. Company is enough.”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r3",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "home_noise",
+          "to": "mara_r4",
+          "phrase": "Tell her about the refrigerator noise."
+        },
+        {
+          "id": "home_mug",
+          "to": "mara_r4",
+          "phrase": "Tell her about the mug you always leave in the sink."
+        },
+        {
+          "id": "home_private",
+          "to": "mara_r4",
+          "phrase": "“The door locking. I’d rather leave it at that.”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r4",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "name_help",
+          "to": "mara_r5",
+          "phrase": "“I like being useful. I wasn’t offering an inspection.”"
+        },
+        {
+          "id": "push_back",
+          "to": "mara_r5",
+          "phrase": "“You could ask what I mean before deciding.”"
+        },
+        {
+          "id": "take_over",
+          "to": "mara_r5",
+          "phrase": "“You do look like you need somebody to take over.”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r5",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "cover_hours",
+          "to": "mara_r6",
+          "phrase": "Keep Sera’s reason private. Let the hours stand."
+        },
+        {
+          "id": "ask_leave",
+          "to": "mara_r6",
+          "phrase": "Ask Celeste for emergency leave, sharing only the minimum."
+        },
+        {
+          "id": "correct_hours",
+          "to": "mara_r6",
+          "phrase": "Correct the hours and offer to help replace the lost pay."
+        }
+      ]
+    },
+    {
+      "id": "mara_r6",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "stay_personal",
+          "to": "mara_r7",
+          "phrase": "“I wanted an excuse to be around you.”"
+        },
+        {
+          "id": "stay_friendly",
+          "to": "mara_r7",
+          "phrase": "“You’re easier to talk to when neither of us is fixing anything.”"
+        },
+        {
+          "id": "stay_distance",
+          "to": "mara_r7",
+          "phrase": "“I’m glad we talked. I need some space now.”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r7",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "keep_company",
+          "to": "late_second",
+          "phrase": "Return to the room."
+        },
+        {
+          "id": "make_space",
+          "to": "late_second",
+          "phrase": "Take a quiet minute before going back."
+        }
+      ]
+    },
+    {
+      "id": "mara_r8",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ask_after",
+          "to": "mara_r9",
+          "phrase": "Ask what happened while you were elsewhere."
+        },
+        {
+          "id": "sit_after",
+          "to": "mara_r9",
+          "phrase": "Take the spare cup. Let her start when she wants."
+        }
+      ]
+    },
+    {
+      "id": "mara_r9",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "remember_snack",
+          "to": "mara_r10",
+          "phrase": "Accept the packet without making a speech."
+        },
+        {
+          "id": "ask_rest",
+          "to": "mara_r10",
+          "phrase": "“Can you actually leave the other end to somebody else?”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r10",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "stay_out_pair",
+          "to": "mara_r11",
+          "phrase": "Let their imperfect repair stand."
+        },
+        {
+          "id": "name_pair",
+          "to": "mara_r11",
+          "phrase": "“He did listen about the fuses.”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r11",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "own_cost",
+          "to": "mara_r12",
+          "phrase": "Acknowledge the cost without asking her to approve."
+        },
+        {
+          "id": "defend_cost",
+          "to": "mara_r12",
+          "phrase": "Explain why her preferred option also had costs."
+        }
+      ]
+    },
+    {
+      "id": "mara_r12",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "repair_help",
+          "to": "mara_r13",
+          "phrase": "“Ask what I mean. I’ll ask what you need.”"
+        },
+        {
+          "id": "limit_help",
+          "to": "mara_r13",
+          "phrase": "“I like you. I can’t be on call for this place.”"
+        },
+        {
+          "id": "end_help",
+          "to": "mara_r13",
+          "phrase": "“I think we keep making each other defensive.”"
+        }
+      ]
+    },
+    {
+      "id": "mara_r13",
+      "room": "kitchen",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "finish_talk",
+          "to": "closing_second",
+          "phrase": "Let the conversation end here."
+        },
+        {
+          "id": "thanks_talk",
+          "to": "closing_second",
+          "phrase": "Thank them for the time."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r1",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "tape_glasses",
+          "to": "celeste_r2",
+          "phrase": "Hold the arm steady while she tapes it."
+        },
+        {
+          "id": "laugh_glasses",
+          "to": "celeste_r2",
+          "phrase": "Laugh, then offer to find a better light."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r2",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "soup",
+          "to": "celeste_r3",
+          "phrase": "Recommend the least sensible soup."
+        },
+        {
+          "id": "toast",
+          "to": "celeste_r3",
+          "phrase": "“Toast. At this hour I trust toast.”"
+        },
+        {
+          "id": "decline_meal",
+          "to": "celeste_r3",
+          "phrase": "Decline the food. Stay for the conversation."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r3",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "leave_dog",
+          "to": "celeste_r4",
+          "phrase": "Ask whether the dog preferred the expensive wallpaper."
+        },
+        {
+          "id": "name_pattern",
+          "to": "celeste_r4",
+          "phrase": "“I do keep looking for a motive. Occupational hazard tonight.”"
+        }
+      ]
+    },
+    {
+      "id": "celeste_r4",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "correct_impression",
+          "to": "celeste_r5",
+          "phrase": "“I wanted to look as if I belonged. That isn’t the same thing.”"
+        },
+        {
+          "id": "enjoy_impression",
+          "to": "celeste_r5",
+          "phrase": "“I liked being overestimated. Briefly.”"
+        },
+        {
+          "id": "decline_impression",
+          "to": "celeste_r5",
+          "phrase": "“I’d rather be allowed to remain unclear.”"
+        }
+      ]
+    },
+    {
+      "id": "celeste_r5",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "close_room",
+          "to": "celeste_r6",
+          "phrase": "Recommend closing the room and owning the refund."
+        },
+        {
+          "id": "cover_room",
+          "to": "celeste_r6",
+          "phrase": "Ask whether she can cover it herself this once."
+        },
+        {
+          "id": "ask_worker",
+          "to": "celeste_r6",
+          "phrase": "Suggest asking the colleague, with a real right to refuse."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r6",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ask_chemistry",
+          "to": "celeste_r7",
+          "phrase": "“Is this business?” Hold her attention."
+        },
+        {
+          "id": "offer_ritual",
+          "to": "celeste_r7",
+          "phrase": "Ask her to set the notebook aside; either of you may end the ritual."
+        },
+        {
+          "id": "stay_colleagues",
+          "to": "celeste_r7",
+          "phrase": "“Company counts even when it stays professional.”"
+        }
+      ]
+    },
+    {
+      "id": "celeste_r7",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "keep_company",
+          "to": "late_second",
+          "phrase": "Return to the room."
+        },
+        {
+          "id": "make_space",
+          "to": "late_second",
+          "phrase": "Take a quiet minute before going back."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r8",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ask_actual",
+          "to": "celeste_r9",
+          "phrase": "Ask how she is, now that the decision is real."
+        },
+        {
+          "id": "name_advice",
+          "to": "celeste_r9",
+          "phrase": "Ask whether your advice helped."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r9",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "keep_amount",
+          "to": "celeste_r10",
+          "phrase": "Respect the private amount. Ask what an independent arrangement needs."
+        },
+        {
+          "id": "name_leverage",
+          "to": "celeste_r10",
+          "phrase": "“Even a generous favour can make refusal harder.”"
+        }
+      ]
+    },
+    {
+      "id": "celeste_r10",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "accept_car",
+          "to": "celeste_r11",
+          "phrase": "Accept a ride arranged through the desk."
+        },
+        {
+          "id": "decline_car",
+          "to": "celeste_r11",
+          "phrase": "“I want the walk. Thank you for asking once.”"
+        }
+      ]
+    },
+    {
+      "id": "celeste_r11",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "own_document",
+          "to": "celeste_r12",
+          "phrase": "Acknowledge the costs of your decision without asking her to absolve you."
+        },
+        {
+          "id": "ask_accountability",
+          "to": "celeste_r12",
+          "phrase": "Ask what she will personally answer for tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "celeste_r12",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "name_attraction",
+          "to": "celeste_r13",
+          "phrase": "Say you are attracted to her; leave her room to answer."
+        },
+        {
+          "id": "name_uncertain",
+          "to": "celeste_r13",
+          "phrase": "“I enjoyed this. I don’t yet know what kind of interest it is.”"
+        },
+        {
+          "id": "name_professional",
+          "to": "celeste_r13",
+          "phrase": "“I would like us to be able to talk honestly again.”"
+        }
+      ]
+    },
+    {
+      "id": "celeste_r13",
+      "room": "office",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "finish_talk",
+          "to": "closing_second",
+          "phrase": "Let the conversation end here."
+        },
+        {
+          "id": "thanks_talk",
+          "to": "closing_second",
+          "phrase": "Thank them for the time."
+        }
+      ]
+    },
+    {
+      "id": "luca_r1",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "hold_light",
+          "to": "luca_r2",
+          "phrase": "Hold the light until he is finished."
+        },
+        {
+          "id": "tease_cable",
+          "to": "luca_r2",
+          "phrase": "“Will geometry be apologising?”"
+        }
+      ]
+    },
+    {
+      "id": "luca_r2",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "coriander",
+          "to": "luca_r3",
+          "phrase": "“Coriander is fine. Thank you for asking twice.”"
+        },
+        {
+          "id": "plain_food",
+          "to": "luca_r3",
+          "phrase": "Ask for the plain sandwich."
+        },
+        {
+          "id": "no_sandwich",
+          "to": "luca_r3",
+          "phrase": "Decline the food without inventing a reason."
+        }
+      ]
+    },
+    {
+      "id": "luca_r3",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "old_music",
+          "to": "luca_r4",
+          "phrase": "Ask for something familiar enough to stop thinking to."
+        },
+        {
+          "id": "new_music",
+          "to": "luca_r4",
+          "phrase": "Ask him to send the neighbour’s least favourite track."
+        },
+        {
+          "id": "quiet_music",
+          "to": "luca_r4",
+          "phrase": "“Silence. I’ve heard enough people for one night.”"
+        }
+      ]
+    },
+    {
+      "id": "luca_r4",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "correct_now",
+          "to": "luca_r5",
+          "phrase": "Ask him to correct the commitment now, in front of you."
+        },
+        {
+          "id": "correct_later",
+          "to": "luca_r5",
+          "phrase": "Ask for a written correction tomorrow; keep tonight private."
+        },
+        {
+          "id": "let_stand",
+          "to": "luca_r5",
+          "phrase": "Let it stand, though you have promised nothing."
+        }
+      ]
+    },
+    {
+      "id": "luca_r5",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "disclose_terms",
+          "to": "luca_r6",
+          "phrase": "Recommend disclosing the terms, keeping the amount private."
+        },
+        {
+          "id": "joint_terms",
+          "to": "luca_r6",
+          "phrase": "Suggest asking Celeste for a joint account."
+        },
+        {
+          "id": "wait_repay",
+          "to": "luca_r6",
+          "phrase": "Recommend repaying it before circulating the complaint."
+        }
+      ]
+    },
+    {
+      "id": "luca_r6",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "watch_together",
+          "to": "luca_r7",
+          "phrase": "Choose the little audience; agree that watching is enough."
+        },
+        {
+          "id": "private_joke",
+          "to": "luca_r7",
+          "phrase": "Choose the wall and admit you like having his attention."
+        },
+        {
+          "id": "rest_feet",
+          "to": "luca_r7",
+          "phrase": "Take the ordinary seat. Let the room be quiet."
+        }
+      ]
+    },
+    {
+      "id": "luca_r7",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "keep_company",
+          "to": "late_second",
+          "phrase": "Return to the room."
+        },
+        {
+          "id": "make_space",
+          "to": "late_second",
+          "phrase": "Take a quiet minute before going back."
+        }
+      ]
+    },
+    {
+      "id": "luca_r8",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ask_keys",
+          "to": "luca_r9",
+          "phrase": "Ask about the useless key before the difficult conversation."
+        },
+        {
+          "id": "ask_funding",
+          "to": "luca_r9",
+          "phrase": "Ask how the funding explanation went."
+        }
+      ]
+    },
+    {
+      "id": "luca_r9",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "hear_cost",
+          "to": "luca_r10",
+          "phrase": "Ask him to name the cost he finds hardest to accept."
+        },
+        {
+          "id": "name_own_cost",
+          "to": "luca_r10",
+          "phrase": "Explain what the decision cost you, too."
+        }
+      ]
+    },
+    {
+      "id": "luca_r10",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "own_misstatement",
+          "to": "luca_r11",
+          "phrase": "Ask him to write: “I misunderstood; they made no commitment.”"
+        },
+        {
+          "id": "limited_correction",
+          "to": "luca_r11",
+          "phrase": "Allow “No help has been arranged” without discussing your motives."
+        },
+        {
+          "id": "own_reply",
+          "to": "luca_r11",
+          "phrase": "Correct the member yourself; tell Luca why you are doing his work."
+        }
+      ]
+    },
+    {
+      "id": "luca_r11",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "accept_limited",
+          "to": "luca_r12",
+          "phrase": "Accept the apology; keep the new limit explicit."
+        },
+        {
+          "id": "need_distance",
+          "to": "luca_r12",
+          "phrase": "Thank him for saying it. Ask for more distance."
+        }
+      ]
+    },
+    {
+      "id": "luca_r12",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ask_luca_date",
+          "to": "luca_r13",
+          "phrase": "Ask whether he would like to meet again, as a date."
+        },
+        {
+          "id": "take_corner",
+          "to": "luca_r13",
+          "phrase": "Accept company as far as the corner."
+        },
+        {
+          "id": "walk_alone",
+          "to": "luca_r13",
+          "phrase": "Choose the walk alone; wish him a good call."
+        }
+      ]
+    },
+    {
+      "id": "luca_r13",
+      "room": "stage",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "finish_talk",
+          "to": "closing_second",
+          "phrase": "Let the conversation end here."
+        },
+        {
+          "id": "thanks_talk",
+          "to": "closing_second",
+          "phrase": "Thank them for the time."
+        }
+      ]
+    },
+    {
+      "id": "inez_r1",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ordinary_inez",
+          "to": "inez_r2",
+          "phrase": "Ask for something ordinary. Accept the chair."
+        },
+        {
+          "id": "quiet_inez",
+          "to": "inez_r2",
+          "phrase": "Choose a little quiet before talking."
+        }
+      ]
+    },
+    {
+      "id": "inez_r2",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "mitten_visible",
+          "to": "inez_r3",
+          "phrase": "Put the mitten on the ledge, well away from the rain."
+        },
+        {
+          "id": "mitten_bag",
+          "to": "inez_r3",
+          "phrase": "Label a clear bag with tonight’s date and “blue mitten”."
+        }
+      ]
+    },
+    {
+      "id": "inez_r3",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "radio_company",
+          "to": "inez_r4",
+          "phrase": "Tell her you like familiar voices in the background."
+        },
+        {
+          "id": "radio_music",
+          "to": "inez_r4",
+          "phrase": "Tell her music makes the room feel like yours."
+        },
+        {
+          "id": "radio_quiet",
+          "to": "inez_r4",
+          "phrase": "“I like the quiet. Eventually.”"
+        }
+      ]
+    },
+    {
+      "id": "inez_r4",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "trust_correction",
+          "to": "inez_r5",
+          "phrase": "“I trust the correction more than I trusted the certainty.”"
+        },
+        {
+          "id": "admit_pedestal",
+          "to": "inez_r5",
+          "phrase": "Admit you had assumed she always remembered correctly."
+        }
+      ]
+    },
+    {
+      "id": "inez_r5",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "challenge_thread",
+          "to": "inez_r6",
+          "phrase": "Recommend challenging the claim using only the arranged cover."
+        },
+        {
+          "id": "ask_tom",
+          "to": "inez_r6",
+          "phrase": "Suggest asking Tom what he wants shared."
+        },
+        {
+          "id": "wait_thread",
+          "to": "inez_r6",
+          "phrase": "Recommend waiting to speak privately in the morning."
+        }
+      ]
+    },
+    {
+      "id": "inez_r6",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "tell_help",
+          "to": "inez_r7",
+          "phrase": "Tell her you sometimes make accepting help needlessly difficult."
+        },
+        {
+          "id": "keep_help_private",
+          "to": "inez_r7",
+          "phrase": "“That’s one I would like to keep to myself.”"
+        }
+      ]
+    },
+    {
+      "id": "inez_r7",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "keep_company",
+          "to": "late_second",
+          "phrase": "Return to the room."
+        },
+        {
+          "id": "make_space",
+          "to": "late_second",
+          "phrase": "Take a quiet minute before going back."
+        }
+      ]
+    },
+    {
+      "id": "inez_r8",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "ask_answer",
+          "to": "inez_r9",
+          "phrase": "Ask how it felt to send her own answer."
+        },
+        {
+          "id": "offer_handover",
+          "to": "inez_r9",
+          "phrase": "Offer to finish the ordinary handover first."
+        }
+      ]
+    },
+    {
+      "id": "inez_r9",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "share_outline",
+          "to": "inez_r10",
+          "phrase": "Tell her you spent time with someone, keeping their confidences."
+        },
+        {
+          "id": "stay_objects",
+          "to": "inez_r10",
+          "phrase": "Keep the conversation with the lost property."
+        }
+      ]
+    },
+    {
+      "id": "inez_r10",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "give_privacy",
+          "to": "inez_r11",
+          "phrase": "Step outside while they finish the exchange."
+        },
+        {
+          "id": "read_first",
+          "to": "inez_r11",
+          "phrase": "Support reading the exchange first, then leave them to it."
+        }
+      ]
+    },
+    {
+      "id": "inez_r11",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "care_not_guard",
+          "to": "inez_r12",
+          "phrase": "“Concern is welcome. I can manage the route.”"
+        },
+        {
+          "id": "welcome_check",
+          "to": "inez_r12",
+          "phrase": "Accept one practical check-in later."
+        },
+        {
+          "id": "private_route",
+          "to": "inez_r12",
+          "phrase": "Keep your route and arrival time private."
+        }
+      ]
+    },
+    {
+      "id": "inez_r12",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "accept_inez",
+          "to": "inez_r13",
+          "phrase": "Accept the apology and wish them both a good night."
+        },
+        {
+          "id": "keep_inez_limit",
+          "to": "inez_r13",
+          "phrase": "Thank her, keeping the limit you set in place."
+        }
+      ]
+    },
+    {
+      "id": "inez_r13",
+      "room": "vestibule",
+      "kind": "relationship beat",
+      "continuations": [
+        {
+          "id": "finish_talk",
+          "to": "closing_second",
+          "phrase": "Let the conversation end here."
+        },
+        {
+          "id": "thanks_talk",
+          "to": "closing_second",
+          "phrase": "Thank them for the time."
+        }
+      ]
+    },
+    {
+      "id": "late_room",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "spend_mara",
+          "to": "mara_r1",
+          "phrase": "Spend some time with Mara."
+        },
+        {
+          "id": "spend_celeste",
+          "to": "celeste_r1",
+          "phrase": "Spend some time with Celeste."
+        },
+        {
+          "id": "spend_luca",
+          "to": "luca_r1",
+          "phrase": "Spend some time with Luca."
+        },
+        {
+          "id": "spend_inez",
+          "to": "inez_r1",
+          "phrase": "Spend some time with Inez."
+        }
+      ]
+    },
+    {
+      "id": "late_second",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "spend_mara",
+          "to": "mara_r1",
+          "phrase": "Spend some time with Mara."
+        },
+        {
+          "id": "spend_celeste",
+          "to": "celeste_r1",
+          "phrase": "Spend some time with Celeste."
+        },
+        {
+          "id": "spend_luca",
+          "to": "luca_r1",
+          "phrase": "Spend some time with Luca."
+        },
+        {
+          "id": "spend_inez",
+          "to": "inez_r1",
+          "phrase": "Spend some time with Inez."
+        },
+        {
+          "id": "enough_company",
+          "to": "late_table",
+          "phrase": "Return to the service table."
+        }
+      ]
+    },
+    {
+      "id": "late_table",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "help_table",
+          "to": "late_accounts",
+          "phrase": "Help clear a space without taking charge."
+        },
+        {
+          "id": "quiet_table",
+          "to": "late_accounts",
+          "phrase": "Eat quietly and listen to the room."
+        }
+      ]
+    },
+    {
+      "id": "late_accounts",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "decide_after_company",
+          "to": "ledger",
+          "phrase": "Make the document decision."
+        },
+        {
+          "id": "compare_shifts",
+          "to": "crossed_shift",
+          "phrase": "Ask Mara and Inez how the two shift disputes intersect."
+        }
+      ]
+    },
+    {
+      "id": "crossed_shift",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "leave_budget",
+          "to": "ledger",
+          "phrase": "Leave their joint question in their hands."
+        }
+      ]
+    },
+    {
+      "id": "closing_room",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "spend_mara",
+          "to": "mara_r8",
+          "phrase": "Find Mara before leaving."
+        },
+        {
+          "id": "spend_celeste",
+          "to": "celeste_r8",
+          "phrase": "Find Celeste before leaving."
+        },
+        {
+          "id": "spend_luca",
+          "to": "luca_r8",
+          "phrase": "Find Luca before leaving."
+        },
+        {
+          "id": "spend_inez",
+          "to": "inez_r8",
+          "phrase": "Find Inez before leaving."
+        },
+        {
+          "id": "leave_promises",
+          "to": "closing_table",
+          "phrase": "Leave the conversations unfinished and go home."
+        }
+      ]
+    },
+    {
+      "id": "closing_second",
+      "room": "bar",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "spend_mara",
+          "to": "mara_r8",
+          "phrase": "Find Mara before leaving."
+        },
+        {
+          "id": "spend_celeste",
+          "to": "celeste_r8",
+          "phrase": "Find Celeste before leaving."
+        },
+        {
+          "id": "spend_luca",
+          "to": "luca_r8",
+          "phrase": "Find Luca before leaving."
+        },
+        {
+          "id": "spend_inez",
+          "to": "inez_r8",
+          "phrase": "Find Inez before leaving."
+        },
+        {
+          "id": "finish_closing",
+          "to": "closing_table",
+          "phrase": "Let the night end here."
+        }
+      ]
+    },
+    {
+      "id": "closing_table",
+      "room": "street",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "take_night_home",
+          "to": "walk",
+          "phrase": "Carry the night home."
+        }
+      ]
+    },
+    {
+      "id": "home_callback",
+      "room": "apartment",
+      "kind": "environment / event sequence",
+      "continuations": [
+        {
+          "id": "reflect_after_home",
+          "to": "reflection",
+          "phrase": "Decide what you want to remember."
+        }
+      ]
+    }
+  ]
+}

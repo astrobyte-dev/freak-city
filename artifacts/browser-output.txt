@@ -1,0 +1,63 @@
+
+> freak-city@0.1.0 test:browser
+> tsx scripts/browser-playtest.ts
+
+{
+  "browser": "Chromium",
+  "desktop": "1440x1100",
+  "mobile": "390x844",
+  "fullRoute": "honest with every optional mature theme skipped",
+  "reloadRestored": true,
+  "bookmarksRestored": true,
+  "interestsReset": true,
+  "localErasureVerified": true,
+  "noHorizontalOverflow": true,
+  "pageErrors": [],
+  "externalRequests": [],
+  "a11y": [
+    {
+      "screen": "desktop opening",
+      "violations": []
+    },
+    {
+      "screen": "boundaries",
+      "violations": []
+    },
+    {
+      "screen": "ending",
+      "violations": []
+    },
+    {
+      "screen": "journal",
+      "violations": []
+    },
+    {
+      "screen": "phone",
+      "violations": []
+    },
+    {
+      "screen": "Belongings",
+      "violations": []
+    },
+    {
+      "screen": "The city",
+      "violations": []
+    },
+    {
+      "screen": "mobile opening",
+      "violations": []
+    },
+    {
+      "screen": "mobile people",
+      "violations": []
+    },
+    {
+      "screen": "mobile settings",
+      "violations": []
+    },
+    {
+      "screen": "mobile interests",
+      "violations": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scenes": 117,
+  "authoredWords": 24119,
+  "errors": 0,
+  "reviewFlags": 1,
+  "findings": [
+    {
+      "scene": "motel",
+      "rule": "agency",
+      "detail": "All exits are conditional; runtime reachability needs review.",
+      "severity": "review"
+    }
+  ]
+}
