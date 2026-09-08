@@ -176,14 +176,16 @@ export default function App() {
   function act(command: string, s = state) {
     if (!s.started) {
       setPendingChoice(command);
-      return;
+      return true;
     }
     try {
       const result = executeCommand(s, command);
       setState(result.state);
       if (result.panel) openPanel(result.panel);
+      return result.ok;
     } catch (error) {
       setNotice((error as Error).message);
+      return false;
     }
   }
   function begin() {

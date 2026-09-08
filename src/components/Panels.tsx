@@ -1,3 +1,4 @@
+import { useDraft } from "./useDraft";
 import { useState } from "react";
 import { executeCommand } from "../engine/parser";
 import { rooms } from "../content/spaces";
@@ -38,8 +39,12 @@ export function PhonePanel({
   onChange: (s: GameState) => void;
 }) {
   const [filter, setFilter] = useState("all");
-  const [recipient, setRecipient] = useState("mara");
-  const [message, setMessage] = useState("");
+  const [savedRecipient, setRecipient] = useDraft(
+    `freak-city:recipient:${state.seed}`,
+  );
+  const recipient = savedRecipient || "mara";
+  const [message, setMessage] = useDraft(`freak-city:message:${state.seed}`);
+  const [sendError, setSendError] = useState("");
   const senders = [...new Set(state.messages.map((m) => m.from.toUpperCase()))];
   return (
     <>
@@ -123,13 +128,21 @@ export function PhonePanel({
           onSubmit={(e) => {
             e.preventDefault();
             if (!message.trim()) return;
-            onChange(
-              executeCommand(
-                state,
-                `text ${recipient} "${message.replaceAll('"', "")}"`,
-              ).state,
+            const result = executeCommand(
+              state,
+              `text ${recipient} "${message.replaceAll('"', "")}"`,
             );
-            setMessage("");
+            onChange(result.state);
+            if (result.ok) {
+              setMessage("");
+              setSendError("");
+            } else
+              setSendError(
+                result.state
+                  .world!.transcript.at(-1)!
+                  .passages.map((p) => p.text)
+                  .join(" "),
+              );
           }}
         >
           <label className="field-label">
@@ -152,8 +165,21 @@ export function PhonePanel({
               maxLength={450}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Write a message"
+              enterKeyHint="send"
+              onKeyDown={(e) => {
+                if (
+                  e.key === "Enter" &&
+                  (e.nativeEvent.isComposing || e.repeat)
+                )
+                  e.preventDefault();
+              }}
             />
           </label>
+          {sendError && (
+            <p role="alert" className="form-error">
+              {sendError}
+            </p>
+          )}
           <button className="secondary-button" disabled={!message.trim()}>
             Send message
           </button>

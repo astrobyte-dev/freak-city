@@ -10,6 +10,8 @@ const context = await browser.newContext({
 });
 const page = await context.newPage();
 const errors: string[] = [];
+let completed = false;
+let failure: string | undefined;
 const audits: { screen: string; violations: unknown[] }[] = [];
 page.on("pageerror", (e) => errors.push(e.message));
 async function audit(screen: string) {
@@ -117,15 +119,123 @@ try {
     path: "artifacts/parser-mobile.png",
     fullPage: true,
   });
+  // Touch-accessible editing, persistence, composition, and constrained keyboard space.
+  await input.fill("a draft to keep");
+  await page
+    .getByRole("button", { name: "Previous command", exact: true })
+    .click();
+  await expect(input).toHaveValue("look");
+  await page.getByRole("button", { name: "Next command", exact: true }).click();
+  await expect(input).toHaveValue("a draft to keep");
+  await page.reload();
+  await expect(input).toHaveValue("a draft to keep");
+  await input.fill("exa");
+  await page.getByRole("button", { name: "Complete", exact: true }).click();
+  await expect(input).toHaveValue("examine");
+  await input.fill("wait 5");
+  const beforeComposition = (await state()).world.commandHistory.length;
+  await input.dispatchEvent("compositionstart");
+  await input.press("Enter");
+  expect((await state()).world.commandHistory.length).toBe(beforeComposition);
+  await input.dispatchEvent("compositionend");
+  await input.press("Enter");
+  await expect
+    .poll(async () => (await state()).world.commandHistory.length)
+    .toBe(beforeComposition + 1);
+  await command("levitate piano");
+  await expect(input).toHaveValue("levitate piano");
+  await command("phone");
+  const messageInput = page.getByRole("textbox", {
+    name: "MESSAGE",
+    exact: true,
+  });
+  await messageInput.fill("A message draft");
+  await page.getByRole("button", { name: "Close dialog" }).click();
+  await command("phone");
+  await expect(messageInput).toHaveValue("A message draft");
+  await page.getByRole("button", { name: "Close dialog" }).click();
+  await command("drop phone");
+  await page.getByRole("button", { name: "Toggle navigation" }).click();
+  await page
+    .getByRole("button", { name: /^Phone, .* unread messages$/ })
+    .click();
+  // The composer reports failure without erasing what the player wrote.
+  await page.getByRole("button", { name: "Send message", exact: true }).click();
+  await expect(page.getByRole("alert")).toContainText("phone isn't with you");
+  await expect(messageInput).toHaveValue("A message draft");
+  await audit("mobile phone failure and retained draft");
+  await page.getByRole("button", { name: "Close dialog" }).click();
+  await command("take phone");
+  await command("phone");
+  // A response from a panel must not steal the reader's place in an older transcript.
+  await page.getByRole("log").evaluate((el) => {
+    el.scrollTop = 0;
+    el.dispatchEvent(new Event("scroll"));
+  });
+  await page.getByRole("button", { name: "Send message", exact: true }).click();
+  await page.getByRole("button", { name: "Close dialog" }).click();
+  expect(
+    await page.getByRole("log").evaluate((el) => el.scrollTop),
+  ).toBeLessThan(30);
+  await page
+    .getByRole("button", { name: "Return to latest response ↓" })
+    .click();
+  await expect
+    .poll(async () =>
+      page
+        .getByRole("log")
+        .evaluate((el) => el.scrollHeight - el.clientHeight - el.scrollTop),
+    )
+    .toBeLessThan(5);
+  await page.setViewportSize({ width: 390, height: 450 });
+  await input.fill("think about the invitation");
+  await input.scrollIntoViewIfNeeded();
+  await input.focus();
+  const bounds = await input.boundingBox();
+  expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(450);
+  await audit("mobile reduced keyboard viewport");
+  await page.setViewportSize({ width: 320, height: 568 });
+  await input.scrollIntoViewIfNeeded();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await audit("small phone width");
+  await input.focus();
+  await page.screenshot({
+    path: "artifacts/parser-mobile-small.png",
+    fullPage: true,
+  });
+  // Deleting game data also clears this tab's command and phone drafts.
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByRole("button", { name: /^Delete local data/ }).click();
+  await page
+    .getByRole("button", { name: "Delete local game data", exact: true })
+    .click();
+  await expect(input).toHaveValue("");
+  expect(
+    await page.evaluate(() =>
+      Object.keys(sessionStorage).filter((k) => k.startsWith("freak-city:")),
+    ),
+  ).toEqual([]);
   expect(errors).toEqual([]);
   expect(audits.flatMap((a) => a.violations)).toEqual([]);
+  completed = true;
   console.log(
-    `Parser browser checks passed; ${audits.length} accessibility scans, desktop/mobile, history, completion, clarification, panels and reload.`,
+    `Parser browser checks passed; ${audits.length} accessibility scans, desktop/mobile, drafts, touch history/completion, IME, scroll retention, phone failures, narrow/keyboard viewports, clarification, panels and reload.`,
   );
+} catch (error) {
+  failure = error instanceof Error ? error.stack : String(error);
+  throw error;
 } finally {
   writeFileSync(
     "artifacts/parser-browser-report.json",
-    JSON.stringify({ errors, audits }, null, 2),
+    JSON.stringify(
+      { completed, target: url, failure, errors, audits },
+      null,
+      2,
+    ),
   );
   await browser.close();
 }

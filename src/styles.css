@@ -2605,3 +2605,77 @@ small {
     scroll-margin-bottom: 24px;
   }
 }
+
+/* Quiet transcript distinctions and touch-sized editing controls. */
+.transcript-phone {
+  margin: 20px 0 20px 14px;
+  padding: 14px 18px;
+  border-left: 2px solid #9caa9c;
+  background: #222722;
+  color: #d9ded5;
+  font-size: 14px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.transcript-phone p {
+  white-space: pre-line;
+  margin: 8px 0 0;
+}
+.transcript-system {
+  color: #b1b7aa;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.command-tools {
+  display: flex;
+  gap: 6px;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+.command-tools button,
+.transcript-latest {
+  min-height: 44px;
+  padding: 8px 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: #c5c9bd;
+  border: 1px solid #44483f;
+  border-radius: 3px;
+}
+.command-tools button:disabled {
+  opacity: 0.45;
+}
+.command-tools button:hover:not(:disabled),
+.transcript-latest:hover {
+  background: #2d3028;
+}
+.transcript-latest {
+  margin: 8px auto;
+  display: block;
+}
+.terminal-log {
+  overflow-anchor: none;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+}
+.transcript-command {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .command-form input {
+    font-size: 16px;
+  }
+  .command-tools {
+    justify-content: space-between;
+  }
+  .command-tools button {
+    padding-inline: 9px;
+  }
+  .command-terminal {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .transcript-phone {
+    margin-left: 0;
+    padding: 12px;
+  }
+}

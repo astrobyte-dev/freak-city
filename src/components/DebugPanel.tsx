@@ -1,3 +1,4 @@
+import { parserGapReport } from "../engine/parser-report";
 import { useState } from "react";
 import type { GameState } from "../engine/types";
 import { scenes } from "../content/scenes";
@@ -163,6 +164,18 @@ export function DebugPanel({
       <pre className="debug-json">
         {JSON.stringify(state[section as (typeof keys)[number]], null, 2)}
       </pre>
+      {state.world && (
+        <details>
+          <summary>Parser gap report</summary>
+          <p className="fine-print">
+            Local command diagnostics. Export the save to reproduce failures
+            with npm run parser:gaps.
+          </p>
+          <pre className="debug-json">
+            {JSON.stringify(parserGapReport([state]), null, 2)}
+          </pre>
+        </details>
+      )}
       <details>
         <summary>Current scene card</summary>
         <pre className="debug-json">
