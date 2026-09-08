@@ -1,6 +1,8 @@
 # Visual model strategy
 
-Use two explicit local backends with three separate visual products. **SDXL Turbo** remains the fast expressive model for scene illustrations, mood and atmosphere studies. **SDXL Base + structural ControlNet** is the first measured canonical-room production experiment. Simulation-driven overlays remain authored static assets and typed state; no model runs in the browser.
+The current approved investigation is **high-quality external / ChatGPT image editing for hero canonical rooms**. The next workstation will receive the strongest external Velvet candidate separately; none has been imported yet. See [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md) for the definitive next task and fresh-machine setup.
+
+The likely production split is external image creation/refinement for hero rooms, **SDXL Turbo** for expressive scene illustrations and rapid exploration, the runtime compositor for actual NPC/object/time/weather/state, and expected human cleanup before approval. The two implemented local backends remain available as historical tools. **SDXL Base + structural ControlNet** was the first measured canonical-room production experiment; its result is insufficient. No model runs in the browser.
 
 The Turbo text-only, img2img and regional canonical experiments are complete and preserved. Do not continue tiny Turbo canonical setting batches. The successful scene preset and scene candidate 02 from `cf0d1dd767d8` remain unchanged and unpromoted.
 
@@ -16,9 +18,9 @@ Prefer documented local/offline models with explicit identities, pinned revision
 
 Licences are checkpoint specific. This experiment uses SDXL Base's CreativeML Open RAIL++-M terms and the small ControlNet's declared Open RAIL++ licence; retain source/revision/licence records. Commercial asset potential does not imply a guarantee about any particular output. Turbo's licence remains a separate decision for any eventual scene promotion. [SDXL Base licence](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md), [Turbo model card](https://huggingface.co/stabilityai/sdxl-turbo).
 
-## One next family, pending explicit approval
+## Deferred local-model alternative
 
-Recommend an **FLUX.1 Kontext editing/refinement evaluation**, using the existing layout and a tightly scoped material/lighting edit, if another model experiment is authorized. Its image editing objective is better aligned with refining a supplied room than repeatedly resampling a blockout. This is a hypothesis, not evidence that it will solve geometry. The report documents hardware estimates and the separate non-commercial model licence/commercial-use review needed before a local download. No Kontext or Qwen weights were downloaded and no second family was tested. [Official Kontext model card](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev).
+The ControlNet report historically proposed FLUX.1 Kontext as a possible later editing-family comparison. That proposal is superseded by the user's external/ChatGPT hero-room direction. **Do not download FLUX, Qwen or another large model yet.** No such weights were downloaded or tested. The old report's hardware/licence estimates remain research context only; they are not authorization to install another backend.
 
 ## Adapter contract
 

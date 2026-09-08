@@ -10,7 +10,11 @@ The original two-step/guidance-zero SDXL Turbo workflow, configurable retro crun
 
 ## Setup and Windows environment
 
-Use Node 22 (`.nvmrc`) and Python 3.10+ in a virtual environment. Install a CUDA-enabled Torch wheel appropriate to the machine before the remaining requirements. Model packages are optional for normal game development; Pillow alone runs the Python pipeline tests.
+For a fresh laptop, start with [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md). The current next task imports a separately supplied external / ChatGPT canonical candidate; it does not require local model weights. The ignored `.visuals/setup/Activate.ps1` used in historical commands is specific to the previous workstation and will not exist in a fresh clone.
+
+Use Node 22 (`.nvmrc`) and Python 3.10+ in a virtual environment. `npm ci`, `npm run check`, `npm run build:playtest` and `npm run visuals:validate` require no Python or models. For the full Python tests, fixtures, pixel processing and dry runs, install only `tools/visual-gen/requirements-test.txt` (Pillow and pinned OpenCV/NumPy), then invoke `python -m unittest discover -s tools/visual-gen/tests -v`. Set `VISUAL_PYTHON` to the venv interpreter for the integrated npm command; on Windows this avoids the `python3` alias. Torch, Diffusers and the Hugging Face client are not needed for these tests.
+
+The following is **optional historical GPU setup**, not required or requested for the next external-image task. Select a CUDA-enabled Torch wheel appropriate to the actual machine before installing model requirements; the exact wheel below was validated on the old RTX 4070 only.
 
 ```powershell
 py -3.10 -m venv .venv
@@ -48,7 +52,7 @@ npm run visuals:validate
 python -m unittest discover -s tools/visual-gen/tests -v
 ```
 
-`velvet-bar` aliases canonical room ID `bar`. A generation request requires one explicit room. No whole-city generation is automatic. A room request without `--generate` or `--fixture` defaults to dry-run. Fixture mode remains explicitly procedural and is never represented as SDXL output. The optional illustration example above only prepares a plan; no real illustration batch was generated in this pass.
+`velvet-bar` aliases canonical room ID `bar`. A generation request requires one explicit room. No whole-city generation is automatic. A room request without `--generate` or `--fixture` defaults to dry-run. Fixture mode remains explicitly procedural and is never represented as SDXL output. The optional illustration example above only prepares a plan; completed real scene evidence is in the [production report](VISUAL-PRODUCTION-REPORT.md).
 
 `canonical-room` accepts only `--variant canonical` or no variant. One identity persists across time bands; lighting/state changes belong to runtime presentation. Seeds advance by candidate index modulo 2^32. A new CPU Torch random generator supplies each seed to CUDA inference; this is not CPU model generation. Reproducibility depends on the pinned model, packages, hardware and kernels, not just the seed.
 
@@ -70,7 +74,7 @@ The [official model card](https://huggingface.co/stabilityai/sdxl-turbo) describ
 
 Role presets live in the room manifest. Canonical defaults: 640 × 448 source, 320 × 224 pixel crunch, 48 colours, contrast 1.15, then exact 640 × 448 nearest-neighbour display output. Illustrations retain 512 × 358. Texture defaults preserve contrast 1.3 and display width 320. CLI options override presets, including `--display-width 512` for canonical images. Width 512 uses a rounded height and uneven pixel-block widths. No blur or crop is applied.
 
-When display width differs from pixel width, the original crunched master is retained under `pixels/`, with a hash in the display sidecar. Promotion verifies that the pixel master reproduces the reviewed display candidate exactly before using it to encode WebP. This avoids a second sampling of the uneven 320→512 grid. The uncrunched diffusion image is not separately retained in this version.
+When display width differs from pixel width, the original crunched master is retained under `pixels/`, with a hash in the display sidecar. Promotion verifies that the pixel master reproduces the reviewed display candidate exactly before using it to encode WebP. This avoids a second sampling of the uneven 320→512 grid. Early v2 did not retain uncrunched sources; current runs retain `sources/`, and ControlNet also retains `model-output/` before hard restoration.
 
 ```text
 .visuals/jobs/bar--canonical-room.json

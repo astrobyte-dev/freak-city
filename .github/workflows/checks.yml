@@ -17,5 +17,5 @@ jobs:
       - run: npm run format:check
       - run: npm run check
       - run: npm run visuals:validate
-      - run: python3 -m pip install "pillow>=10,<13" "opencv-python-headless==4.11.0.86"
+      - run: python3 -m pip install -r tools/visual-gen/requirements-test.txt
       - run: npm run test:visual-gen

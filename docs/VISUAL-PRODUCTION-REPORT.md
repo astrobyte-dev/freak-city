@@ -1,5 +1,7 @@
 # Visual production pivot and bounded proofs
 
+> Historical regional-mask and scene experiment. Subsequent ControlNet findings are in [the bake-off report](CONTROLNET-BAKEOFF-REPORT.md); the current external / ChatGPT hero-room direction and next task are in [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md). Preserve these results; do not restart Turbo canonical batches.
+
 Three products now guide production: **canonical gameplay rooms**, **cinematic scene illustrations**, and **dynamic simulation overlays**. Existing manifests, seeds, metadata, contact sheets, review/promotion and runtime state remain in use. See the complete [17-room asset plan](VISUAL-ASSET-PLAN.md), [art-direction families](VISUAL-STYLE.md), [model strategy](VISUAL-MODEL-STRATEGY.md) and [overlay roadmap](VISUAL-OVERLAY-ROADMAP.md).
 
 The first production order is bar, street, office, loading bay, salon, stage and apartment (Tier A), then five supporting spaces and five simpler transitional spaces. This is a production recommendation, not measured dwell time. No new locations, scenes or gameplay content are added.

@@ -69,7 +69,7 @@ No open-source licence has been assigned to the original game, story or artwork.
 
 ## Visual-system development preview
 
-The `feature/state-driven-visuals` branch adds a simulation-driven pixel viewport and a local collaborator-generator pipeline. It is not merged into the linked Pages playtest. Start with the [visual pass report](docs/VISUAL-PASS-REPORT.md), [architecture](docs/VISUAL-ARCHITECTURE.md), [style guide](docs/VISUAL-STYLE.md) and [local generation workflow](docs/GENERATIVE-ASSET-PIPELINE.md). The story and parser remain the existing blind-playtest baseline.
+The `feature/state-driven-visuals` branch adds a simulation-driven pixel viewport and a local collaborator-generator pipeline. It is not merged into the linked Pages playtest. **Continuing on another machine? Start with [WORKSTATION-HANDOFF.md](docs/WORKSTATION-HANDOFF.md)** for current decisions, portable evidence and setup without model weights. Then read the [architecture](docs/VISUAL-ARCHITECTURE.md), [style guide](docs/VISUAL-STYLE.md) and [local generation workflow](docs/GENERATIVE-ASSET-PIPELINE.md). The story and parser remain the existing blind-playtest baseline.
 
 ## Run the development build
 

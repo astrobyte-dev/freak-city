@@ -1,5 +1,7 @@
 # Velvet structural SDXL bake-off
 
+> Historical experiment, preserved. The current user-approved next direction is external / ChatGPT hero-room editing, documented in [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md). The later Kontext proposal in this report is deferred; do not download another model family.
+
 **Result: C — still insufficient for production canonical rooms.** Three real SDXL Base + small Canny ControlNet candidates were generated on the RTX 4070. All preserve the protected blockout pixels, but material rendering remains crude and editable walls acquire false recesses/window-like shapes. No candidate is approved or promoted. This is an assessment of this bounded configuration, not all possible SDXL checkpoints.
 
 ![Three unapproved structural-control candidates](visuals/controlnet-bakeoff/contact-sheet.webp)
