@@ -13,7 +13,8 @@ from generator import VERSION, fixture_image, retro_crunch, display_upscale
 from contact_sheet import contact_sheet
 from layout_reference import load_reference
 from backends import BACKENDS, backend_definition
-from regions import mask_bundle, regional_generate, union_mask, protected_difference, restore_pixel_structure
+from regions import mask_bundle, regional_generate, union_mask, protected_difference, restore_pixel_structure, composite_region
+from structural_control import control_bundle, control_settings
 
 
 def reference_settings(options):
@@ -61,10 +62,12 @@ def generate(manifest, options):
     if not options.pixel_width <= options.display_width <= 2048:
         raise ValueError("Display width must be between pixel width and 2048")
     seed_for(options.seed, 0)
+    control_scales = control_settings(options)
     strengths = reference_settings(options)
     reference, reference_files = None, None
     masks = None
     mask_files = {}
+    control, control_files = None, {}
     regions = getattr(options,"regions",None)
     if regions and not getattr(options,"reference",None):
         raise ValueError("Regional generation requires the authoritative layout --reference")
@@ -76,6 +79,13 @@ def generate(manifest, options):
         if regions:
             masks, mask_record, mask_files = mask_bundle(manifest,regions.split(","))
             spec["conditioning"].update(mode="regional-inpaint",mask=mask_record)
+    if control_scales is not None:
+        from controlnet_backend import PRODUCTION_PROMPT, NEGATIVE_PROMPT, BASE_REVISION, CONTROL_MODEL, CONTROL_REVISION
+        control, control_record, control_files = control_bundle(reference,spec["conditioning"]["reference"])
+        spec["conditioning"].update(mode="controlnet-inpaint",control=control_record)
+        spec.update(modelPrompt=PRODUCTION_PROMPT,negativeModelPrompt=NEGATIVE_PROMPT,structuralControlReviewRequired=True)
+        options.revision=BASE_REVISION
+        matrix=True
     if spec["conditioning"]["mode"] not in definition.modes:
         raise ValueError("Selected backend does not support this conditioning mode")
     settings = {"width": options.width, "height": options.height, "steps": options.steps, "guidanceScale": options.guidance_scale,
@@ -85,6 +95,10 @@ def generate(manifest, options):
     if strengths is not None:
         settings.update(strengths=strengths, seedStrategy="shared-matrix" if matrix else "incrementing",
                         strengthMeaning="denoising; higher means less reference retention")
+    if control_scales is not None:
+        settings.update(controlScales=control_scales,controlModel=CONTROL_MODEL,controlRevision=CONTROL_REVISION,
+                        controlGuidanceStart=0.0,controlGuidanceEnd=1.0,maskStrategy="union of existing protected regional masks",
+                        controlMeaning="ControlNet residual multiplier; larger is stronger structural guidance")
     identity = {"spec": spec, "settings": settings, "seed": options.seed, "count": options.count, "backend": options.backend, "version": VERSION}
     run_id = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:12]
     root = Path(options.output).resolve()
@@ -99,7 +113,7 @@ def generate(manifest, options):
             target = stage / "reference" / filename
             target.parent.mkdir(parents=True,exist_ok=True)
             target.write_bytes(data)
-    for filename,data in mask_files.items():
+    for filename,data in {**mask_files,**control_files}.items():
         target=stage/filename
         target.parent.mkdir(parents=True,exist_ok=True)
         target.write_bytes(data)
@@ -115,13 +129,28 @@ def generate(manifest, options):
         candidate_settings = dict(settings)
         if strengths is not None:
             candidate_settings.update(strength=strengths[index], effectiveSteps=int(options.steps*strengths[index]))
+        if control_scales is not None:
+            candidate_settings["controlnetConditioningScale"]=control_scales[index]
         name = f"{spec['roomId']}__{spec['role']}__{spec['variantId']}__candidate-{index+1:02}"
         path = stage / f"{name}.png"
         passes = []
-        if masks:
+        inference_started=time.perf_counter()
+        model_output=None
+        if control is not None:
+            raw=backend.generate(spec,candidate_settings,seed,reference=reference,mask=union_mask(masks),control=control)
+            inference_seconds=round(time.perf_counter()-inference_started,3)
+            model_path=stage/"model-output"/f"{name}.png"
+            model_path.parent.mkdir(exist_ok=True); raw.save(model_path,"PNG")
+            model_output={"file":f"model-output/{name}.png","sha256":hashlib.sha256(model_path.read_bytes()).hexdigest()}
+            raw=composite_region(raw,reference,union_mask(masks))
+            passes=[{"regions":list(masks),"seed":seed,"strength":strengths[index],"controlnetConditioningScale":control_scales[index],
+                     "effectiveSteps":candidate_settings["effectiveSteps"],"modelPrompt":spec["modelPrompt"]}]
+        elif masks:
             raw,passes = regional_generate(backend,spec,candidate_settings,seed,reference,masks)
         else:
             raw = backend.generate(spec, candidate_settings, seed) if backend else fixture_image(seed, options.width, options.height)
+        if control is None:
+            inference_seconds=round(time.perf_counter()-inference_started,3)
         pixels = retro_crunch(raw, options.pixel_width, options.colors, options.contrast)
         preservation = None
         if masks:
@@ -155,6 +184,7 @@ def generate(manifest, options):
                     "sourceImage":{"file":f"sources/{name}.png","sha256":hashlib.sha256(source_path.read_bytes()).hexdigest()},
                     "provenance":{"origin":"model" if backend else "fixture","manualEdits":[]},
                     "regionPasses":passes,"structurePreservation":preservation,
+                    "uncompositedModelOutput":model_output,"inferenceSeconds":inference_seconds,
                     "candidateSeconds":round(time.perf_counter()-candidate_started,3)}
         path.with_suffix(".json").write_text(json.dumps(metadata, indent=2) + "\n")
         candidates.append({"path": str(path), "seed": seed, "backend": options.backend, "metadata": metadata})
@@ -187,6 +217,7 @@ def arguments(argv=None):
     parser.add_argument("--strength", type=float, help="Img2img denoising strength: higher retains less geometry")
     parser.add_argument("--strengths", help="Comma-separated comparison matrix; one shared seed, count must match")
     parser.add_argument("--regions", help="Comma-separated surface regions for masked inpainting with protected structure")
+    parser.add_argument("--control-scales", help="Comma-separated ControlNet residual strengths; fixed denoising and shared seed")
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args(argv)

@@ -106,7 +106,7 @@ Promotion preserves draft files and sidecars, writes reviewed provenance locally
 
 The current production strategy is defined in [the 17-room asset plan](VISUAL-ASSET-PLAN.md) and [staged production report](VISUAL-PRODUCTION-REPORT.md). Canonical rooms use fixed layouts, bounded surfaces and optional honest manual corrections; scene illustrations use their own expressive preset; dynamic overlays remain simulation-driven. Historical whole-image commands below/above remain reproducibility records, not the recommended final-room method.
 
-An external trusted adapter still receives `--manifest ABSOLUTE_JSON --output ABSOLUTE_DIRECTORY` without a shell. It must honor the manifest role. Internally a backend implements `generate(spec, options, seed) -> PIL.Image`. The integrated adapter supports text-only and optional validated layout img2img using the same SDXL Turbo weights. `conditioning` records reference/layout hashes and reserves masks for future structural guidance. No ControlNet dependency was installed.
+An external trusted adapter still receives `--manifest ABSOLUTE_JSON --output ABSOLUTE_DIRECTORY` without a shell. It must honor the manifest role. Internally a backend implements `generate(spec, options, seed) -> PIL.Image`. The integrated adapter supports text-only and optional validated layout img2img using the same SDXL Turbo weights. `conditioning` records reference/layout/mask hashes. The separate `sdxl-controlnet` backend adds deterministic Canny and structural guidance; see the bounded command below.
 
 ## Fixed Velvet layout and controlled img2img
 
@@ -126,6 +126,29 @@ All new candidates retain the pre-crunch PNG in `sources/`, including freely gen
 
 Use `python tools/visual-gen/review_page.py --batch BATCH_DIRECTORY --output REVIEW_DIRECTORY` for role-specific review. Canonical pages show layout/facts, candidate, masks and runtime snapshots when available; absent snapshots are explicitly marked pending. With local Vite on 5182, `npx tsx scripts/visual-review-composite.ts --batch BATCH_DIRECTORY --output REVIEW_DIRECTORY` creates actual `LocationVisual` composites with clearly labelled, unapproved in-memory test bindings. It also checks late/dawn and mobile. Run the page builder afterward. Neither tool writes a shipping registry entry.
 
-The scene preset is 320 pixels / 64 colours / contrast 1.10 / configurable 512 display, with family-appropriate cinematic prompts. Canonical remains 320 / 48 / 1.15 / exact 640 display. `--backend` selects an explicit registration in `backends.py`; only Turbo and a non-ML fixture are currently registered. Future production models require their own capability limits and an approved download. See [model strategy](VISUAL-MODEL-STRATEGY.md).
+The scene preset is 320 pixels / 64 colours / contrast 1.10 / configurable 512 display, with family-appropriate cinematic prompts. Canonical remains 320 / 48 / 1.15 / exact 640 display. `--backend` selects an explicit registration in `backends.py`; Turbo, a non-ML fixture and the pinned SDXL ControlNet canonical experiment are registered. Additional production models require their own capability limits and an approved download. See [model strategy](VISUAL-MODEL-STRATEGY.md).
 
 Run full JS checks, Python tests, normal/Pages builds, visual validation and formatting. With preview on port 5181 and development Vite on 5182, run the existing visual browser suite with `PLAYTEST_URL`/`VISUAL_DEV_URL`, then `npm run test:visuals:roles:browser`. The latter verifies reviewed geometry, mobile framing, scene illustration/return, Off/Reduced and failure fallback using isolated nonshipping test images. See [v2 results](VISUAL-V2-REPORT.md) and the [architecture](VISUAL-ARCHITECTURE.md).
+
+## SDXL ControlNet canonical bake-off
+
+See [the measured result and model/licence inventory](CONTROLNET-BAKEOFF-REPORT.md). The Turbo scene preset is unchanged. This is a separate production backend; historical Turbo canonical commands above are reproduction records.
+
+In the existing GPU virtual environment:
+
+```powershell
+. .\.visuals\setup\Activate.ps1
+python -m pip install -r tools/visual-gen/requirements-controlnet.txt
+python tools/visual-gen/prepare_controlnet.py --download --report .visuals/setup/controlnet-download.json
+npm run visuals -- --room velvet-bar --role canonical-room --backend sdxl-controlnet --reference docs/visuals/velvet-bar-layout/layout.json --regions walls,floor,counter,shelves,stairs --count 3 --seed 51863 --steps 30 --strength 0.85 --guidance-scale 5 --control-scales 0.35,0.65,1.0 --offline --generate
+```
+
+The example run already exists; a repeat refuses overwrite. Use an explicitly separate `--output` directory for intentional reproduction, not another exploratory batch. Substitute `--dry-run` for `--generate` to validate the control bundle without model loading.
+
+The pinned FP16 loader always requires cached weights and CUDA. Explicit model CPU offload moves components between host and GPU while inference executes on CUDA. The original VAE uses its native float32 upcast; no additional VAE/refiner is downloaded. Canny uses the unchanged 640 ? 448 reference, RGB-to-gray, thresholds 20/40, aperture 3 and L1 gradient. These lower thresholds retain the dark opening/wall boundaries. There is no learned depth annotator or new layout.
+
+`--control-scales` is the ControlNet residual multiplier, distinct from denoising `--strength`. The matrix fixes prompt/seed/denoising and rejects simultaneous `--strengths`. All selected existing regions form one inpainting mask for coherent room material treatment; hard restoration and protected palette restoration still guard the original boundaries. The canonical master/display contract is exactly 320 ? 640 nearest-neighbour.
+
+Sidecars include model/control revisions, control PNG/hash/pixel hash/algorithm/source-reference hash, mask provenance, control schedule, union-mask strategy, inference time, peak allocated/reserved CUDA memory and explicit memory policy. `model-output/` preserves the pipeline output before hard restoration; `sources/` is the restored pre-crunch input; `pixels/` contains masters. None is an approved asset.
+
+Generate actual runtime composites and the review page with the existing commands above. The page includes reference, control, candidate, composite, canonical facts and settings together. Promotion and manual-edit import validate the control's source hash and deterministic decoded pixels as well as existing reference/mask checks. Geometry review attests the reference AND control comparison; no automatic approval is inferred from a zero changed-pixel count.

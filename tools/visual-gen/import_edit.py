@@ -32,13 +32,19 @@ def import_edit(parent, edited, output, editor, tool, notes):
     if image.mode in ("RGBA","LA") and image.getextrema()[-1]!=(255,255):
         raise ValueError("Room/scene sources must be opaque")
     records=[]
-    for key in ("reference","layout","mask"):
+    if source.get("conditioning",{}).get("mode")=="controlnet-inpaint":
+        from structural_control import validate_control_provenance
+        validate_control_provenance(parent.parent,source["conditioning"])
+    for key in ("reference","layout","mask","control"):
         record=source.get("conditioning",{}).get(key)
         if record:
             records.append((record,checked_file(parent.parent,record)))
             if key=="mask":
                 for mask in json.loads(records[-1][1].read_text())["regions"]:
                     records.append((mask,checked_file(parent.parent,mask)))
+    if source.get("uncompositedModelOutput"):
+        record=source["uncompositedModelOutput"]
+        records.append((record,checked_file(parent.parent,record)))
     identity={"parent":source["sha256"],"parentMetadata":digest(metadata_path.read_bytes()),"edited":digest(edited.read_bytes()),"editor":editor,"tool":tool,"notes":notes}
     run_id=digest(json.dumps(identity,sort_keys=True).encode())[:12]
     stage=Path(output).resolve()/"raw"/run_id

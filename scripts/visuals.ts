@@ -32,6 +32,7 @@ const { values, positionals } = parseArgs({
     regions: { type: "string" },
     backend: { type: "string" },
     "guidance-scale": { type: "string" },
+    "control-scales": { type: "string" },
     layout: { type: "boolean" },
     adapter: { type: "string" },
     output: { type: "string" },
@@ -68,6 +69,8 @@ if (values.validate) {
       values.strength ||
       values.strengths ||
       values.regions ||
+      values["control-scales"] ||
+      values["guidance-scale"] ||
       values.backend)
   )
     throw new Error(
@@ -171,6 +174,7 @@ if (values.validate) {
         "regions",
         "backend",
         "guidance-scale",
+        "control-scales",
       ] as const)
         if (values[key]) args.push(`--${key}`, values[key]!);
       if (values.fixture) args.push("--backend", "fixture");

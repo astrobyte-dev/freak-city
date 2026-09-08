@@ -21,7 +21,9 @@ def contact_sheet(candidates, destination):
         label = f"{index+1:02} / seed {candidate['seed']} / {candidate['backend']}"
         draw.text((x, y + 177), label, fill=(225, 215, 190))
         settings = candidate.get("metadata", {}).get("generationSettings", {})
-        if "strength" in settings:
+        if "controlnetConditioningScale" in settings:
+            draw.text((x, y + 192), f"control {settings['controlnetConditioningScale']:.2f} / denoise {settings['strength']:.2f}", fill=(156,188,176))
+        elif "strength" in settings:
             draw.text((x, y + 192), f"denoise {settings['strength']:.2f} / {settings['effectiveSteps']} effective steps", fill=(156, 188, 176))
     destination = Path(destination)
     destination.parent.mkdir(parents=True, exist_ok=True)

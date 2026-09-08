@@ -1,0 +1,24 @@
+{
+  "classification": "C",
+  "approvedCandidates": [],
+  "scope": "SDXL Base + small Canny ControlNet, union masks, 640x448, seed 51863",
+  "global": "Protected geometry unchanged mechanically; surface detail remains crude and semantic inventions appear inside editable walls. Not a general verdict on every SDXL checkpoint.",
+  "candidates": [
+    {
+      "candidate": 1,
+      "control": 0.35,
+      "finding": "False large back-wall panels/recesses, luminous thin trim beside high window, drab olive floor, little material depth."
+    },
+    {
+      "candidate": 2,
+      "control": 0.65,
+      "finding": "More lighting variation but false black window-like square left of stair, two light-like marks below high window, streak/leg-like floor marks, weak cyan mood."
+    },
+    {
+      "candidate": 3,
+      "control": 1.0,
+      "finding": "Same false black square and recessed panels; blocky reflections and flat materials. Stronger control does not remove semantic inventions."
+    }
+  ],
+  "nextFamily": "FLUX.1 Kontext image editing, requires explicit separate authorization/licence/hardware review; no weights downloaded"
+}

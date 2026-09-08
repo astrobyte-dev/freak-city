@@ -9,6 +9,11 @@ def sdxl_factory(*args, **kwargs):
     return SDXLTurbo(*args, **kwargs)
 
 
+def controlnet_factory(*args, **kwargs):
+    from controlnet_backend import SDXLControlNet
+    return SDXLControlNet(*args, **kwargs)
+
+
 @dataclass(frozen=True)
 class BackendDefinition:
     model: str
@@ -19,6 +24,7 @@ class BackendDefinition:
 
 
 BACKENDS = {
+    "sdxl-controlnet": BackendDefinition("stabilityai/stable-diffusion-xl-base-1.0", controlnet_factory, ("controlnet-inpaint",), 50, None),
     "sdxl": BackendDefinition(MODEL, sdxl_factory, ("text-only", "img2img", "regional-inpaint"), 4, 0),
     "fixture": BackendDefinition("procedural-fixture (NOT SDXL)", None, ("text-only", "img2img", "regional-inpaint"), 4, 0),
 }

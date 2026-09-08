@@ -47,7 +47,19 @@ def role_review(source, *, architecture=False, composition=None, non_explicit=Fa
         if not architecture or source["variantId"] != "canonical" or source.get("authoritativeArchitecture") is not False:
             raise ValueError("Canonical architecture approval required; time variants cannot become room plates")
         conditioning = source.get("conditioning", {})
-        guided = conditioning.get("mode") in ("img2img", "regional-inpaint")
+        guided = conditioning.get("mode") in ("img2img", "regional-inpaint", "controlnet-inpaint")
+        controlled = conditioning.get("mode")=="controlnet-inpaint"
+        if source.get("backend")=="sdxl-controlnet" and not controlled:
+            raise ValueError("ControlNet backend cannot discard structural review requirements")
+        if controlled:
+            from controlnet_backend import BASE_MODEL, BASE_REVISION, CONTROL_MODEL, CONTROL_REVISION
+            settings=source.get("generationSettings",{})
+            scale=settings.get("controlnetConditioningScale")
+            if (source.get("backend")!="sdxl-controlnet" or source.get("model")!=BASE_MODEL or settings.get("revision")!=BASE_REVISION
+                or settings.get("controlModel")!=CONTROL_MODEL or settings.get("controlRevision")!=CONTROL_REVISION
+                or not source.get("structuralControlReviewRequired") or not conditioning.get("control",{}).get("sha256")
+                or not conditioning.get("mask") or not isinstance(scale,(float,int)) or isinstance(scale,bool) or not math.isfinite(scale) or not 0 < scale <= 2):
+                raise ValueError("ControlNet model/settings/provenance review metadata is incomplete")
         if guided and (not reference_geometry or not source.get("referenceGeometryReviewRequired") or not conditioning.get("layout", {}).get("sha256") or not conditioning.get("reference", {}).get("sha256")):
             raise ValueError("Reference geometry approval required: inspect the layout AND compare staircase, boundaries, every exit, counter, shelves and high window")
         facts = source["reviewContract"]["staticArchitecture"] + source["reviewContract"]["fixedFurniture"]
@@ -57,6 +69,8 @@ def role_review(source, *, architecture=False, composition=None, non_explicit=Fa
         review = {"architectureChecked": True, "compositionChecked": True, "nonExplicit": True}
         if guided:
             review.update(referenceGeometryChecked=True, layoutSha256=conditioning["layout"]["sha256"], referenceSha256=conditioning["reference"]["sha256"])
+        if controlled:
+            review.update(structuralControlChecked=True,controlSha256=conditioning["control"]["sha256"])
         return {"role": role, "authoritativeArchitecture": True, "bakedEntities": source["bakedEntities"],
                 "composition": composition_review(source, composition)}, review
     if source.get("authoritativeGeometry") is not False or not isinstance(illustration, dict):

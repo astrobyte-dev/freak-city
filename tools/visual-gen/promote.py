@@ -34,8 +34,8 @@ def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_ar
         checked_file(candidate.parent,source["sourceImage"])
         if not source["provenance"].get("manualEdits"):
             raise ValueError("Manual corrections require edit provenance")
-    if source.get("conditioning", {}).get("mode") in ("img2img", "regional-inpaint"):
-        keys = ("layout", "reference", "mask") if source["conditioning"]["mode"] == "regional-inpaint" else ("layout", "reference")
+    if source.get("conditioning", {}).get("mode") in ("img2img", "regional-inpaint", "controlnet-inpaint"):
+        keys = ("layout", "reference", "mask") if source["conditioning"]["mode"] in ("regional-inpaint","controlnet-inpaint") else ("layout", "reference")
         for key in keys:
             record = source["conditioning"][key]
             reference_path = (candidate.parent / record["file"]).resolve()
@@ -46,6 +46,9 @@ def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_ar
                     mask_path=(candidate.parent/region["file"]).resolve()
                     if not mask_path.is_relative_to(candidate.parent) or hashlib.sha256(mask_path.read_bytes()).hexdigest()!=region["sha256"]:
                         raise ValueError("Regional mask differs from candidate provenance")
+        if source["conditioning"]["mode"]=="controlnet-inpaint":
+            from structural_control import validate_control_provenance
+            validate_control_provenance(candidate.parent,source["conditioning"])
     role_fields, review_fields = role_review(source, architecture=approve_architecture, composition=composition, non_explicit=non_explicit, illustration=illustration, reference_geometry=approve_reference_geometry)
     role = role_fields["role"]
     pixel_source = candidate
@@ -102,7 +105,7 @@ if __name__ == "__main__":
     parser.add_argument("--approve-world-facts", action="store_true", help="I inspected required/forbidden facts and confirmed this is an empty texture plate")
     parser.add_argument("--allow-fixture", action="store_true")
     parser.add_argument("--approve-architecture", action="store_true")
-    parser.add_argument("--approve-reference-geometry", action="store_true", help="I approved the layout and checked this image against its fixed geometry, including all exits")
+    parser.add_argument("--approve-reference-geometry", action="store_true", help="I approved the layout and checked the candidate and any structural control image against its fixed geometry, including all exits")
     parser.add_argument("--composition", help="Human-adjusted 320 x 224 overlay placement JSON")
     parser.add_argument("--non-explicit", action="store_true")
     parser.add_argument("--illustration", help="Authored scene binding JSON; existing scene ID, caption, timeBands, requiredNPCs, themes")
