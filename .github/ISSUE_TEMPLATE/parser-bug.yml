@@ -1,0 +1,67 @@
+name: Parser or game problem
+description: A command was misunderstood, or the playtest did not behave as expected.
+title: "[Playtest] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing this PRE-ALPHA HUMAN PLAYTEST BUILD.
+        Keep titles spoiler-free. Do not include sensitive personal adult preferences or exported saves. Review screenshots for private information. Send private feedback through the channel by which the developer invited you.
+  - type: input
+    id: build
+    attributes:
+      label: Build version
+      description: Copy the version and short build identifier from Settings.
+      placeholder: 0.1.0-playtest.1 · build …
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: Phone, tablet or computer; model/OS if known
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: Browser name and version if known
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location in game
+      description: The location heading is enough; avoid unnecessary story spoilers.
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command typed
+      description: Preserve spelling and punctuation. Omit private personal content.
+      render: text
+  - type: textarea
+    id: expected
+    attributes:
+      label: What I expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Include the response or minimal steps needed to reproduce it.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Optional screenshot
+      description: Check for personal information and major spoilers first. Do not attach a save file.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before posting
+      options:
+        - label: This report contains no exported save or sensitive personal adult-preference information.
+          required: true

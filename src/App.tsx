@@ -406,6 +406,14 @@ export default function App() {
       case "settings":
         return (
           <>
+            <p className="fine-print" data-testid="playtest-build">
+              <strong>PRE-ALPHA HUMAN PLAYTEST BUILD</strong>
+              <br />
+              {__PLAYTEST_VERSION__} · build {__BUILD_COMMIT__}
+              <br />
+              An early parser and systems prototype. The UI, story, adult
+              content, art direction and features will continue to evolve.
+            </p>
             <div className="settings-actions">
               <button onClick={() => setPanel("boundaries")}>
                 <ShieldCheck />

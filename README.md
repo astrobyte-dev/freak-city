@@ -1,102 +1,107 @@
 # FREAK//CITY
 
-**The city keeps receipts.** A local-first, mature noir parser interactive-fiction RPG. This playable first-night prototype follows an unsigned invitation into Velvet and asks who gets to hold the record of what happened there.
+> **PRE-ALPHA / ACTIVE DEVELOPMENT**
+>
+> The current browser snapshot is a **PRE-ALPHA HUMAN PLAYTEST BUILD**.
+>
+> This is an early parser, narrative-simulation and interaction prototype.
+> The UI, story, adult tone, parser, art, systems and scope are all expected to change substantially. This is not a finished game, beta, release candidate or promise of the final product.
 
-## Play locally
+**[PLAY NOW →](https://astrobyte-dev.github.io/freak-city/)** · **[First-play instructions](PLAYTEST.md)** · **[Report a parser problem](https://github.com/astrobyte-dev/freak-city/issues/new?template=parser-bug.yml)**
 
-Node 22+ is recommended.
+![Rain outside Velvet, at the beginning of the night](screenshots/01-opening.png)
+
+An invitation. A borrowed name. A city that keeps receipts.
+
+FREAK//CITY is an adults-only neo-noir interactive-fiction RPG built around a modern parser, persistent locations, NPC memory, misinformation, relationships and scheduled events. The evening continues while you decide where to spend your attention.
+
+**Development happens in public in this repository.** Source, full history, checkpoints, tests, architecture notes, design documents and debug tooling are available here. **Spoiler note:** source, `docs/`, tests and generated QA artifacts reveal story structure, hidden conditions and solutions. Play once before exploring them if you want a blind first experience. **Build: 0.1.0-playtest.1**. Find the same identifier in Settings when reporting a problem.
+
+## One night, in your own words
+
+Type what you want to try. You do not need to learn a command dictionary first:
+
+```text
+look around
+ask Mara about the envelope
+check my phone
+listen at the door
+```
+
+`HELP` explains how to communicate with the game. `HINT` offers a little guidance when requested. The parser is authored and deterministic; it will sometimes misunderstand you. Those moments are especially useful feedback.
+
+![The parser at Velvet](screenshots/02-velvet.png)
+
+<details>
+<summary>A few more views of this build — no solution spoilers</summary>
+
+![An ordinary interaction in the transcript](screenshots/03-transcript.png)
+![The phone overlay](screenshots/04-phone.png)
+![What you carry](screenshots/05-belongings.png)
+
+</details>
+
+## What this playtest is for
+
+We are testing whether natural commands are understood, locations feel responsive, conversations make sense, people seem to have their own lives, and time and consequences are understandable. We also want to hear where the reading, phone interface or mobile input becomes tiring or confusing. Stopping early is useful feedback.
+
+**Please play once before reading development information or other players' reports.** Follow [PLAYTEST.md](PLAYTEST.md) after your first attempt. There is no need to explore every route or find every feature.
+
+## Adults 18+
+
+FREAK//CITY is intended for adults aged 18+. It contains mature adult themes, kink/fetish culture, sexual tension, strong language and morally complicated situations. This prototype does not contain graphic sexual scenes. Adulthood confirmation and content-boundary controls are available in the game; audio starts only if you enable it.
+
+## Browser and device notes
+
+Use a current desktop or mobile browser with JavaScript and local storage enabled. Chromium is the primary automated test target; reports from Safari, Firefox and real phones are welcome. No installation or account is needed. On a phone, history and completion controls edit the words you type; they do not choose your actions.
+
+<img src="screenshots/06-mobile.png" alt="The parser on a phone-sized screen" width="330" />
+
+## Privacy and feedback
+
+There are **no game accounts, analytics, external model calls or preference transmissions**. Saves remain in your browser. Unsent drafts stay in the current browser tab's session storage, including reloads. Delete local game data in Settings clears the game's stored state and drafts. GitHub hosts the files and public issue tracker and handles web requests under its own privacy policy.
+
+**Exported saves contain private game state and preferences. Do not upload them to public issues.** Do not post sensitive personal adult preferences publicly. If you want to discuss adult-theme reactions or private feedback, contact the developer through the private channel by which you received the playtest invitation.
+
+For a parser problem, [open a bug report](https://github.com/astrobyte-dev/freak-city/issues/new?template=parser-bug.yml) with the build, device/browser, location, exact command, expected result and actual result. Check screenshots for personal information and spoilers before attaching them. Keep public issue titles spoiler-free.
+
+No open-source licence has been assigned to the original game, story or artwork. Third-party component and font notices are included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The current artwork is generated environment art; no image or model service runs during play.
+
+## Run the development build
+
+Use Node.js 22 LTS (see `.nvmrc`) and npm:
 
 ```sh
+git clone https://github.com/astrobyte-dev/freak-city.git
+cd freak-city
 npm ci
 npm run dev
 ```
 
-Open the localhost URL printed by Vite (normally http://localhost:5173). The server also binds to your local network for phone testing. Nothing is published automatically.
+Open the local URL printed by Vite. The dev build includes the inspector (**Ctrl+Shift+D**); it exposes spoilers and can create non-canonical states. The public Pages build uses production assets and keeps the inspector out of the normal player interface. Its implementation remains in the public source.
 
 ```sh
-npm run build
-npm run preview
-```
-
-The production output is in `dist/` and can be served by any static host at its root. No backend, keys, database, accounts, external fonts, analytics, or live model are needed. Fonts, artwork and all narrative data are bundled locally. The development inspector is excluded from the production UI/bundle.
-
-## The playable night
-
-- 117 preserved authored encounters, conversation/relationship beats and outcomes, four major adult characters, three coherent invitation variants and four custody endings.
-- Persistent rooms, connected exits, physical evidence, containers, doors and wearables. A typed command prompt drives exploration.
-- Four extended relationship arcs, two substantial companions per night, closing returns and delayed personal callbacks.
-- Taxi opening and alias; Velvet, side streets, apartment, and a Motel 27 continuation hook.
-- Two competing deadlines. The exchange and the departing witness each proceed without you.
-- Verified evidence, incomplete knowledge, NPC memories, mistaken beliefs, interpersonal relationships and a separate NPC relationship matrix.
-- Moral dilemmas, emerging traits, explicit immediate/delayed effects, mutating/disputable rumours, and a persistent command/response transcript.
-- In-world phone, belongings, wardrobe, district map and evidence journal.
-- Optional romance, negotiated social rituals, mature fashion/context classification, boundaries and reflection. Everything is non-graphic.
-- THE PULL privately models narrative interest, attraction context, chemistry and thematic engagement. HEAT expresses interpersonal intensity.
-- Responsive interface, original noir artwork, local fonts, synthesized opt-in rain/bass, keyboard navigation, adjustable reading size and reduced-motion support.
-
-The legacy branching-route benchmarks encountered approximately **10,900–12,800 words across 57–66 choices**, from about 24,100 words of authored scene text. At 200 words/minute plus 15 seconds per choice, the modeled duration is **69–80 minutes**. Faster readers can finish in approximately 53–62 minutes; shorter departures remain available. These are transparent estimates, not measured human play durations. The [blind feedback form](docs/BLIND-PLAYTEST.md) is ready for a first external playtest.
-
-## Playing
-
-Type what you want to do at the prompt. Choose an alias and confirm adulthood on your first command. Your commands and the city’s responses remain in a scrollable transcript. No numbered action menus are shown.
-
-```text
-look around
-pick up the black envelope
-open it
-get invitation
-put it in my coat
-go outside
-go inside
-go bar
-ask Mara about the invitation
-ask her why she recognised it
-```
-
-The parser supports synonyms, conservative typo correction, contextual nouns, pronouns, prepositions and chained actions (`then` or `;`). Up/Down recall commands; Tab completes words, repeated Tab cycles, and Escape dismisses completion. `HELP` explains the language; `HINT` offers encounter help on request. Optional accessibility shortcuts are off by default in Settings.
-
-`LOOK`, `HELP`, `INVENTORY`, `JOURNAL` and `MAP` cost no time. Travel, investigation, conversation and waiting do. NPCs follow their schedules; the exchange and bus departure happen independently. Rooms stay available for revisits, and evidence remains where you leave it. `SLEEP` at home ends the night, including an early departure without solving the invitation.
-
-Use `PHONE`, `INVENTORY`, `JOURNAL` and `MAP` or the toolbar to open diegetic panels. Phone messages use a text composer. Wear clothing you physically carry. Escape closes dialogs. Boundaries and optional audio remain available from the sidebar. There is no runtime LLM and no communication with real people.
-
-Normal mode has an autosave and one bookmark. Settings provides bookmark/restore and JSON import/export. **Live Wire** has one autosave and disables manual rewind/import. Its export is archival, not restorable within Live Wire. Changing the seed starts a fresh run, carrying explicit boundaries but clearing learned interests.
-
-Try `NIGHT-0`, `NIGHT-1`, and `NIGHT-2` for three different invitation explanations. Same seed + same commands + same explicit preferences produce the same simulation.
-
-## Privacy
-
-Game state uses this browser's `freak-city:v1:autosave` and `freak-city:v1:bookmark` keys. Command and phone drafts use session storage under `freak-city:command:`, `freak-city:message:` and `freak-city:recipient:` prefixes, scoped by seed. Preferences stay inside the local save; there is no transmission or analytics. Exported files contain the full private state, which the export UI explicitly states. Settings → THE PULL clears interests or disables adaptation; Settings → Delete local data removes this game's storage keys. Drafts are also removed by Delete local data. Other applications' storage is untouched. Local saves are not encrypted against someone who can access your browser profile.
-
-Explicit boundaries apply immediately. `SKIP` overrides interest and compatibility; `IMPLIED ONLY` uses equivalent summaries. The phone, current descriptions, transcript passages and authored interactions and surveillance decoration honor the applicable boundaries. Some taxonomy categories are architecture for future authored material, not a promise of scenes already present.
-
-## Validate
-
-```sh
-npm run check       # production build, simulation tests, narrative QA, scripted + fuzz runs
-npx playwright install chromium
-npm run dev        # leave this running on port 5173
-npm run test:browser
+npm run check          # build, unit/regression tests, narrative QA and command campaigns
 npm run format:check
+npx playwright install chromium
+npm run test:browser   # with the local dev server running; PLAYTEST_URL overrides its URL
+npm run build:playtest # production assets for the /freak-city/ Pages path
+npm run preview:playtest # preview that same subpath locally
 ```
 
-Generated evidence is in `artifacts/` (including a machine-readable canon ledger, scene cards and scene graph from `npm run content`): narrative QA, playtest reports, browser report and desktop/mobile screenshots. Reports contain synthetic test identities only. The tests cover complete routes on different seeds, knowledge propagation, missed events, delayed effects, boundaries, cue cooldowns, saves, Live Wire and corrupt-save handling. Parser playtests run 12 complete command campaigns across the three seeds and four custody outcomes, validating each saved state. An additional 60 campaigns exercise five natural-language player styles across the same seeds and outcomes. Browser checks exercise typed commands, touch history/completion, draft persistence, IME, scroll retention, clarification, panels, deletion and mobile/desktop accessibility. Legacy scene-based simulation tests remain as regression coverage.
+## Ideas, feedback and contributions
 
-Development only: **Ctrl+Shift+D** opens the inspector. View state, canonical secrets, scene cards and transcripts; jump scenes, change composure, advance time, change seed or simulate a choice. Scene jumps intentionally bypass entry logic and can create non-canonical debug states.
+Constructive feedback and ideas are welcome. Your friend does not need to know the codebase to point out a confusing interaction or suggest a better one. Describe the experience you wanted, give a concrete example, and separate a bug from a proposed change. Use [issues](https://github.com/astrobyte-dev/freak-city/issues) for public feedback and [CONTRIBUTING.md](CONTRIBUTING.md) for development guidance. Please discuss substantial changes before investing in a large pull request.
 
-## Documentation
+Spoiler-labelled development starting points:
 
-- [Autonomous interaction pass, validation and gap reporting](docs/INTERACTION-PASS.md)
-- [Parser pivot audit, implementation and authoring](docs/PARSER-PIVOT.md)
-
-- [Expansion results and duration evidence](docs/EXPANSION-REPORT.md)
-- [Blind human-playtest form](docs/BLIND-PLAYTEST.md)
-- [Build decisions](docs/BUILD-PLAN.md)
 - [Architecture and consequence propagation](docs/ARCHITECTURE.md)
-- [Story bible](docs/STORY-BIBLE.md)
-- [Character and voice bibles](docs/CHARACTERS.md)
-- [THE PULL, boundaries and pacing](docs/THE-PULL.md)
-- [Narrative authoring and expansion examples](docs/AUTHORING.md)
-- [Editorial review and known limitations](docs/QA-AND-LIMITATIONS.md)
-- [Artwork provenance and prompt](docs/ASSETS.md)
+- [Parser design and authoring](docs/PARSER-PIVOT.md)
+- [Interaction pass and parser gap reports](docs/INTERACTION-PASS.md)
+- [Narrative authoring](docs/AUTHORING.md)
+- [Story bible — major spoilers](docs/STORY-BIBLE.md)
+- [Character bible — major spoilers](docs/CHARACTERS.md)
+- [QA and known limitations](docs/QA-AND-LIMITATIONS.md)
+- [Asset provenance](docs/ASSETS.md)
 
-Next: complete the first blind human parser playtest, then use its actual commands and pacing feedback to guide revisions. Keep the central story and Motel hook stable until that feedback is reviewed.
+The original parser checkpoint is tagged `parser-pivot-checkpoint`; this human-playtest snapshot is tagged `v0.1.0-playtest.1`. GitHub Actions builds and deploys Pages from `main`. The history is preserved without squashing.

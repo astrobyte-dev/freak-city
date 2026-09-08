@@ -1,0 +1,21 @@
+name: Constructive idea or feedback
+description: Suggest an improvement to this evolving pre-alpha prototype.
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: Keep titles spoiler-free. Do not share private adult preferences or exported saves. Please play once before reading development material if you want a blind first experience.
+  - type: textarea
+    id: experience
+    attributes:
+      label: What experience could be better?
+      description: A concrete example helps. Mark story spoilers in the body if needed.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: Ideas are welcome; you do not need to know how to implement them.
+    validations:
+      required: true

@@ -92,7 +92,7 @@ export function PhonePanel({
                 (!m.theme || state.boundaries[m.theme] === "allowed") && (
                   <img
                     className="message-image"
-                    src="/velvet-exterior.png"
+                    src={`${import.meta.env.BASE_URL}velvet-exterior.png`}
                     alt="Velvet's lit entrance on the wet street"
                   />
                 )}

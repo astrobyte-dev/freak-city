@@ -12,13 +12,16 @@
     "playtest": "tsx scripts/playtest.ts",
     "check": "npm run build && npm run test && npm run qa && npm run playtest && npm run content && npm run playtest:parser && npm run playtest:natural && npm run audit:embodiment",
     "test:browser": "tsx scripts/browser-playtest.ts",
-    "format": "prettier --write src scripts tests docs README.md package.json tsconfig.json vite.config.ts",
-    "format:check": "prettier --check src scripts tests docs README.md package.json tsconfig.json vite.config.ts",
+    "format": "prettier --write src scripts tests docs README.md PLAYTEST.md CONTRIBUTING.md THIRD_PARTY_NOTICES.md .github package.json tsconfig.json vite.config.ts",
+    "format:check": "prettier --check src scripts tests docs README.md PLAYTEST.md CONTRIBUTING.md THIRD_PARTY_NOTICES.md .github package.json tsconfig.json vite.config.ts",
     "content": "tsx scripts/content-index.ts",
     "playtest:parser": "tsx scripts/parser-playtest.ts",
     "playtest:natural": "tsx scripts/parser-natural-playtest.ts",
     "parser:gaps": "tsx scripts/parser-gap-report.ts",
-    "audit:embodiment": "tsx scripts/embodiment-audit.ts"
+    "audit:embodiment": "tsx scripts/embodiment-audit.ts",
+    "build:playtest": "tsc -b && vite build --base=/freak-city/",
+    "test:publication": "tsx scripts/publication-browser.ts",
+    "preview:playtest": "vite preview --host 0.0.0.0 --base=/freak-city/"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
@@ -41,5 +44,6 @@
     "typescript": "^5.7.0",
     "vite": "^6.0.0",
     "vitest": "^3.0.0"
-  }
+  },
+  "playtestVersion": "0.1.0-playtest.1"
 }
