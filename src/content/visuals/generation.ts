@@ -2,6 +2,7 @@
 import { rooms } from "../spaces";
 import { visualManifests } from "./manifest";
 import barLayout from "./layouts/bar.json";
+import productionPlan from "../../../tools/visual-gen/production-plan.json";
 import { deriveVisualState } from "../../visuals/derive";
 import type { GameState } from "../../engine/types";
 import { assetRoles, type AssetRole } from "../../visuals/types";
@@ -29,6 +30,7 @@ export function generationDefinition(
   const state = structuredClone(initializedState);
   state.world!.room = roomId;
   const manifest = visualManifests[roomId];
+  const artFamily = productionPlan.find((p) => p.room === roomId)!.family;
   const visual = deriveVisualState(state);
   const fixed = [
     ...manifest.staticArchitecture,
@@ -113,6 +115,16 @@ export function generationDefinition(
       "Current hidden facts, solved-mystery clues or state inferred from plot summaries.",
     ],
     styleGuide: {
+      artDirectionFamily: artFamily,
+      sceneModel: artFamily.startsWith("Apartment")
+        ? "Grungy PS1 pixel art, muted cold practical light, lonely shadow"
+        : artFamily.startsWith("Service")
+          ? "Grungy PS1 pixel art, dirty concrete, harsh practical light, restrained cyan spill"
+          : artFamily.startsWith("Backstage")
+            ? "Grungy PS1 pixel art, fluorescent work light, pink spill, worn surfaces"
+            : artFamily.startsWith("Private")
+              ? "Grungy PS1 pixel art, crimson, warm pink, intimate deep shadow"
+              : "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
       core: styleGuide.core,
       family: styleGuide.families[manifest.family],
       roomModel:

@@ -66,4 +66,12 @@ Canonical output now prefers 320 × 224 masters and exact 640 × 448 nearest-nei
 
 Before alternate views ship, record reference hashes/model revisions, lock the geometry source and review layout/occlusion for each view. Stateful architecture needs removable masks or layers; free text-to-image regeneration is not a controlled variant mechanism.
 
+## Three-product production strategy
+
+Canonical rooms now follow geometry → regional masks → surface work → lighting treatment → optional manual cleanup → pixel crunch → human review → actual runtime composite validation. `regional-inpaint` uses the cached Turbo checkpoint through the installed inpainting API. Hard masks and protected-palette restoration preserve structural pixels; semantic inventions inside editable regions still require rejection. All pre-crunch sources are retained for correction. Manual imports preserve the parent hash chain and create new unapproved drafts without claiming another model run.
+
+Scene illustrations use an expressive, separate 64-colour preset and `authoritativeGeometry: false`; their review is about style, characters, boundaries and scene fit. They remain sparse, conditional punctuation rather than repeated room art. Dynamic overlays continue using the existing runtime descriptor and compositor. No new character sprite system, material interactions or parser behavior is implemented.
+
+The explicit backend registry separates model capabilities from common manifest/provenance/pixel/review operations. Current registrations remain SDXL Turbo and fixtures. See [the complete asset plan](VISUAL-ASSET-PLAN.md), [bounded proofs](VISUAL-PRODUCTION-REPORT.md) and [future model criteria](VISUAL-MODEL-STRATEGY.md). No additional multi-GB checkpoint or ControlNet has been installed.
+
 The separate future [material/property/affordance roadmap](MATERIAL-PROPERTY-AFFORDANCE-ROADMAP.md) does not change this pass's parser or simulation.

@@ -38,7 +38,10 @@ class LayoutTests(unittest.TestCase):
         m = layout_manifest()
         first = render_bundle(m)
         self.assertEqual(first, render_bundle(copy.deepcopy(m)))
-        self.assertEqual(first["reference.png"], (ROOT / "docs/visuals/velvet-bar-layout/reference.png").read_bytes())
+        from PIL import Image
+        with Image.open(io.BytesIO(first["reference.png"])) as actual, Image.open(ROOT / "docs/visuals/velvet-bar-layout/reference.png") as expected:
+            self.assertEqual(actual.size, expected.size)
+            self.assertEqual(actual.convert("RGB").tobytes(), expected.convert("RGB").tobytes())
         bundle = json.loads(first["layout.json"])
         self.assertEqual(bundle["worldFactsSha256"], digest(encoded(bundle["worldFacts"])))
         self.assertEqual(bundle["reference"]["sha256"], digest(first["reference.png"]))
@@ -86,7 +89,7 @@ class LayoutTests(unittest.TestCase):
             changed = copy.deepcopy(m); changed["canonicalArchitecture"] += " Updated geometry."
             with self.assertRaisesRegex(ValueError, "Stale"): load_reference(changed, path, 640,448)
             (Path(directory)/"reference.png").write_bytes(b"changed")
-            with patch("adapter.SDXLTurbo") as loader, self.assertRaisesRegex(ValueError, "pixels"):
+            with patch("generator.SDXLTurbo") as loader, self.assertRaisesRegex(ValueError, "pixels"):
                 generate(m, options("--reference", str(path), "--output", str(Path(directory)/"drafts")))
             loader.assert_not_called()
             with self.assertRaisesRegex(ValueError, "differs"): write_bundle(m, directory)

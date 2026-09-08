@@ -100,7 +100,7 @@ class RoleTests(unittest.TestCase):
             self.assertEqual(custom.display_width, 640)
 
     def test_invalid_upscale_fails_before_loading(self):
-        with patch("adapter.SDXLTurbo") as loader, self.assertRaises(ValueError):
+        with patch("generator.SDXLTurbo") as loader, self.assertRaises(ValueError):
             generate(role_manifest(), arguments(["--manifest", "unused", "--role", "canonical-room", "--display-width", "128"]))
         loader.assert_not_called()
 

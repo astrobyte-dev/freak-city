@@ -67,7 +67,7 @@ export const fixedFurniture: Record<string, ArchitectureFact[]> = {
 };
 export const illustrationHints: Record<string, string[]> = {
   bar: [
-    "Wide view of Velvet's bar during a slow shift, anonymous adult patrons in distant silhouette, non-explicit nightlife",
+    "Velvet bar slow shift, distant adult bartender and two anonymous adult patrons, rain beyond high window, reflective floor",
   ],
   street: [
     "Anonymous adults waiting beneath the awning in rain, old-city nightlife, non-explicit",

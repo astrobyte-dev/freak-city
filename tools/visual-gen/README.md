@@ -30,3 +30,16 @@ Pillow is sufficient for fixture/tests. Torch and the other model dependencies a
 The adapter supports `texture` (the original default), `canonical-room`, `scene-illustration` and draft `overlay` studies. Canonical identity uses one `canonical` variant across all time bands. V3 adds optional validated layout img2img and strength matrices with the existing SDXL weights. See the [geometry report](../../docs/VISUAL-GEOMETRY-REPORT.md), including model pin/offline commands. Earlier batches remain preserved and unpromoted. Nothing is promoted automatically.
 
 The supplied package's source has no separate licence notice. Original files and their provenance are preserved; no additional licence or authorship claim has been invented.
+
+## Production pivot
+
+See [the 17-room plan](../../docs/VISUAL-ASSET-PLAN.md) and [current production workflow/proof commands](../../docs/VISUAL-PRODUCTION-REPORT.md). V4 adds:
+
+- `backends.py`: explicit model/capability registration, retaining `sdxl` and `fixture` only.
+- `regions.py`: visible-surface masks, per-region inpainting, protected-pixel and palette restoration. Use `--reference ... --regions walls,floor,counter,shelves,stairs`.
+- Retained `sources/` images, region seeds/prompts, mask hashes, GPU memory and timing metadata.
+- `import_edit.py`: import a manually corrected source with editor/tool/notes and immutable parent provenance; create a fresh draft.
+- `review_page.py`: canonical facts/layout/candidate/composite review or separate scene-style review. `scripts/visual-review-composite.ts` renders actual nonshipping composite studies.
+- A separate expressive 64-colour scene preset, six documented art families, and a future production-model evaluation contract.
+
+Masks constrain pixel regions; they do not prove that the model has avoided invented features within a region. No automatic promotion, model replacement or additional model download occurs.

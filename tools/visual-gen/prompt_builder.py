@@ -85,11 +85,12 @@ def build_prompt(manifest, variant=None, role="texture"):
         if not manifest["sceneIllustrationHints"]:
             raise ValueError("Scene illustration requires an authored hint")
         hint = manifest["sceneIllustrationHints"][0]
-        model_prompt = f"{room_style}. {hint}. {state['lighting']} light. Cinematic depth, non-explicit, no text or evidence."
+        model_prompt = f"{style.get('sceneModel', room_style)}. {hint}. Cinematic framing, non-explicit, no text or logos."
         required = ["Illustrative view, not a parser map. Match major established world facts.",
                     "Adults only, non-explicit; scene, character presence and boundary review required."]
         forbidden = ["Contradictory major architecture, invented evidence, hidden discoveries or legible story text.",
-                     "Explicit sexual activity, nudity or minors."]
+                     "Explicit sexual activity, nudity, minors, branded logos or distracting fake text.",
+                     "Obvious malformed anatomy; named character likeness or presence without scene review."]
     else:
         model_prompt = f"{room_style}. Isolated atmospheric haze layer study, dark field, no architecture, people, props or text."
         required = ["Atmospheric layer study only. A reviewed alpha mask and state binding are needed before shipping."]

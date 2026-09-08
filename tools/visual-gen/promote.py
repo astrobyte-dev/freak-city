@@ -27,12 +27,25 @@ def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_ar
         raise ValueError("This is a procedural test fixture, not SDXL output. Use --allow-fixture only for an intentional fixture review.")
     if hashlib.sha256(candidate.read_bytes()).hexdigest() != source["sha256"]:
         raise ValueError("Candidate differs from its generated sidecar; inspect the change before reviewing")
-    if source.get("conditioning", {}).get("mode") == "img2img":
-        for key in ("layout", "reference"):
+    if source.get("provenance",{}).get("origin")=="human-edit":
+        from import_edit import checked_file
+        for key in ("parentCandidate","parentMetadata"):
+            checked_file(candidate.parent,source["provenance"][key])
+        checked_file(candidate.parent,source["sourceImage"])
+        if not source["provenance"].get("manualEdits"):
+            raise ValueError("Manual corrections require edit provenance")
+    if source.get("conditioning", {}).get("mode") in ("img2img", "regional-inpaint"):
+        keys = ("layout", "reference", "mask") if source["conditioning"]["mode"] == "regional-inpaint" else ("layout", "reference")
+        for key in keys:
             record = source["conditioning"][key]
             reference_path = (candidate.parent / record["file"]).resolve()
             if not reference_path.is_relative_to(candidate.parent) or hashlib.sha256(reference_path.read_bytes()).hexdigest() != record["sha256"]:
                 raise ValueError("Reference bundle differs from the candidate provenance")
+            if key == "mask":
+                for region in json.loads(reference_path.read_text())["regions"]:
+                    mask_path=(candidate.parent/region["file"]).resolve()
+                    if not mask_path.is_relative_to(candidate.parent) or hashlib.sha256(mask_path.read_bytes()).hexdigest()!=region["sha256"]:
+                        raise ValueError("Regional mask differs from candidate provenance")
     role_fields, review_fields = role_review(source, architecture=approve_architecture, composition=composition, non_explicit=non_explicit, illustration=illustration, reference_geometry=approve_reference_geometry)
     role = role_fields["role"]
     pixel_source = candidate

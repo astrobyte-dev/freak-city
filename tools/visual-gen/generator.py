@@ -4,7 +4,7 @@ import os
 import shutil
 from pathlib import Path
 
-VERSION = "freak-city-visual-gen/3"
+VERSION = "freak-city-visual-gen/4"
 MODEL = "stabilityai/sdxl-turbo"
 
 
@@ -45,10 +45,10 @@ def cache_space_check():
 
 
 class SDXLTurbo:
-    def __init__(self, device="cuda", allow_cpu=False, revision=None, offline=False, reference=None):
+    def __init__(self, device="cuda", allow_cpu=False, revision=None, offline=False, reference=None, inpaint=False):
         try:
             import torch
-            from diffusers import AutoPipelineForText2Image, AutoPipelineForImage2Image
+            from diffusers import AutoPipelineForText2Image, AutoPipelineForImage2Image, AutoPipelineForInpainting
         except ImportError as error:
             raise RuntimeError("Missing local model dependencies. Install tools/visual-gen/requirements.txt in a virtual environment; dry-run and fixture modes do not need them.") from error
         if device == "cuda" and not torch.cuda.is_available():
@@ -61,7 +61,7 @@ class SDXLTurbo:
         self.device = device
         self.reference = reference
         try:
-            pipeline_type = AutoPipelineForImage2Image if reference is not None else AutoPipelineForText2Image
+            pipeline_type = AutoPipelineForInpainting if inpaint else AutoPipelineForImage2Image if reference is not None else AutoPipelineForText2Image
             self.pipeline = pipeline_type.from_pretrained(MODEL, **model_load_options(device, torch, revision, offline)).to(device)
         except Exception as error:
             text = str(error).lower()
@@ -78,7 +78,12 @@ class SDXLTurbo:
                             "pipeline": type(self.pipeline).__name__, "scheduler": type(self.pipeline.scheduler).__name__,
                             "timestepSpacing": self.pipeline.scheduler.config.timestep_spacing}
 
-    def generate(self, spec, options, seed):
+    def metrics(self):
+        return {"peakAllocatedMiB":round(self.torch.cuda.max_memory_allocated()/1024**2,1),
+                "peakReservedMiB":round(self.torch.cuda.max_memory_reserved()/1024**2,1),
+                "unetChannels":self.pipeline.unet.config.in_channels} if self.device=="cuda" else {"unetChannels":self.pipeline.unet.config.in_channels}
+
+    def generate(self, spec, options, seed, *, reference=None, mask=None):
         prompt = spec["modelPrompt"]
         # Prevent silent truncation of the actual compact prompt.
         for name in ("tokenizer", "tokenizer_2"):
@@ -86,7 +91,10 @@ class SDXLTurbo:
             if tokenizer and len(tokenizer(prompt).input_ids) > tokenizer.model_max_length:
                 raise ValueError("Model prompt exceeds CLIP context; shorten it. Full review facts remain in the sidecar.")
         try:
-            inputs = {"image": self.reference.copy(), "strength": options["strength"]} if self.reference is not None else {"width": options["width"], "height": options["height"]}
+            source = reference if reference is not None else self.reference
+            inputs = {"image": source.copy(), "strength": options["strength"]} if source is not None else {"width": options["width"], "height": options["height"]}
+            if mask is not None:
+                inputs.update(mask_image=mask, width=options["width"], height=options["height"])
             with self.torch.inference_mode():
                 return self.pipeline(prompt=prompt, generator=self.torch.Generator(device="cpu").manual_seed(seed),
                                      num_inference_steps=options["steps"], guidance_scale=0.0,

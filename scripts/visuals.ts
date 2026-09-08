@@ -29,6 +29,9 @@ const { values, positionals } = parseArgs({
     reference: { type: "string" },
     strength: { type: "string" },
     strengths: { type: "string" },
+    regions: { type: "string" },
+    backend: { type: "string" },
+    "guidance-scale": { type: "string" },
     layout: { type: "boolean" },
     adapter: { type: "string" },
     output: { type: "string" },
@@ -61,7 +64,11 @@ if (values.validate) {
 } else {
   if (
     values.adapter &&
-    (values.reference || values.strength || values.strengths)
+    (values.reference ||
+      values.strength ||
+      values.strengths ||
+      values.regions ||
+      values.backend)
   )
     throw new Error(
       "Reference options require the integrated adapter; they cannot be silently discarded by an external adapter.",
@@ -161,6 +168,9 @@ if (values.validate) {
         "reference",
         "strength",
         "strengths",
+        "regions",
+        "backend",
+        "guidance-scale",
       ] as const)
         if (values[key]) args.push(`--${key}`, values[key]!);
       if (values.fixture) args.push("--backend", "fixture");

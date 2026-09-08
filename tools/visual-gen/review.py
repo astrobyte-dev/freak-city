@@ -47,7 +47,7 @@ def role_review(source, *, architecture=False, composition=None, non_explicit=Fa
         if not architecture or source["variantId"] != "canonical" or source.get("authoritativeArchitecture") is not False:
             raise ValueError("Canonical architecture approval required; time variants cannot become room plates")
         conditioning = source.get("conditioning", {})
-        guided = conditioning.get("mode") == "img2img"
+        guided = conditioning.get("mode") in ("img2img", "regional-inpaint")
         if guided and (not reference_geometry or not source.get("referenceGeometryReviewRequired") or not conditioning.get("layout", {}).get("sha256") or not conditioning.get("reference", {}).get("sha256")):
             raise ValueError("Reference geometry approval required: inspect the layout AND compare staircase, boundaries, every exit, counter, shelves and high window")
         facts = source["reviewContract"]["staticArchitecture"] + source["reviewContract"]["fixedFurniture"]

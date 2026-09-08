@@ -51,7 +51,7 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(model_load_options("cpu",torch)["torch_dtype"],"full")
 
     def test_dry_run_imports_no_model(self):
-        with tempfile.TemporaryDirectory() as directory, patch("adapter.SDXLTurbo") as model, contextlib.redirect_stdout(io.StringIO()):
+        with tempfile.TemporaryDirectory() as directory, patch("generator.SDXLTurbo") as model, contextlib.redirect_stdout(io.StringIO()):
             opts=arguments(["--manifest","unused","--output",directory,"--dry-run"])
             self.assertEqual(generate(manifest(),opts),[]);model.assert_not_called()
             data=json.loads(next(Path(directory).rglob("dry-run.json")).read_text())
@@ -65,7 +65,7 @@ class PipelineTests(unittest.TestCase):
             first=generate(manifest(),arguments([*args,"--output",str(root/"a")]))
             second=generate(manifest(),arguments([*args,"--output",str(root/"b")]))
             self.assertEqual([c["metadata"]["sha256"] for c in first],[c["metadata"]["sha256"] for c in second])
-            self.assertEqual(len(list((root/"a").rglob("*.png"))),3)
+            self.assertEqual(len(list((root/"a").rglob("*.png"))),6)  # Three candidates plus retained pre-crunch sources.
             self.assertEqual(len(list((root/"a").rglob("contact-sheet.webp"))),1)
             self.assertEqual(first[0]["metadata"]["reviewStatus"],"draft")
             self.assertFalse(first[0]["metadata"]["modelExecuted"])
@@ -98,7 +98,7 @@ class PipelineTests(unittest.TestCase):
 
     def test_invalid_options_fail_before_model_loading(self):
         for flags in (["--count","0"],["--steps","8"],["--seed","-1"],["--colors","999"],["--guidance-scale","7.5"],["--width","513"]):
-            with self.assertRaises(ValueError),patch("adapter.SDXLTurbo") as model:
+            with self.assertRaises(ValueError),patch("generator.SDXLTurbo") as model:
                 generate(manifest(),arguments(["--manifest","unused",*flags]))
             model.assert_not_called()
 

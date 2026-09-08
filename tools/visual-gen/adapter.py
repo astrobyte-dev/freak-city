@@ -5,12 +5,15 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import math
+import time
 from pathlib import Path
 import sys
 from prompt_builder import build_prompt, ROLES
-from generator import VERSION, MODEL, SDXLTurbo, fixture_image, retro_crunch, display_upscale
+from generator import VERSION, fixture_image, retro_crunch, display_upscale
 from contact_sheet import contact_sheet
 from layout_reference import load_reference
+from backends import BACKENDS, backend_definition
+from regions import mask_bundle, regional_generate, union_mask, protected_difference, restore_pixel_structure
 
 
 def reference_settings(options):
@@ -39,31 +42,43 @@ def seed_for(base, index):
 
 
 def generate(manifest, options):
+    started=time.perf_counter()
+    definition = backend_definition(options.backend)
     spec = build_prompt(manifest, options.variant, options.role)
     preset = {"pixelWidth": 320, "colors": 48, "contrast": 1.3, "displayWidth": 320,
               **manifest.get("generationPresets", {}).get(options.role, {})}
     for field, key in (("pixel_width", "pixelWidth"), ("colors", "colors"), ("contrast", "contrast"), ("display_width", "displayWidth")):
         if getattr(options, field) is None:
             setattr(options, field, preset[key])
-    if not 1 <= options.count <= 32 or not 1 <= options.steps <= 4:
-        raise ValueError("Count must be 1..32 and SDXL Turbo steps 1..4")
+    if not 1 <= options.count <= 32 or not 1 <= options.steps <= definition.max_steps:
+        raise ValueError(f"Count must be 1..32 and {options.backend} steps 1..{definition.max_steps}")
     if options.width % 64 or options.height % 64 or not 256 <= options.width <= 1024 or not 256 <= options.height <= 1024:
         raise ValueError("Dimensions must be multiples of 64, between 256 and 1024")
     if not 32 <= options.pixel_width <= 640 or not 2 <= options.colors <= 256 or not 0.5 <= options.contrast <= 2:
         raise ValueError("Invalid pixel-width, palette or contrast settings")
-    if options.guidance_scale != 0:
+    if definition.guidance is not None and options.guidance_scale != definition.guidance:
         raise ValueError("SDXL Turbo requires --guidance-scale 0; negative prompts are not enforced")
     if not options.pixel_width <= options.display_width <= 2048:
         raise ValueError("Display width must be between pixel width and 2048")
     seed_for(options.seed, 0)
     strengths = reference_settings(options)
     reference, reference_files = None, None
+    masks = None
+    mask_files = {}
+    regions = getattr(options,"regions",None)
+    if regions and not getattr(options,"reference",None):
+        raise ValueError("Regional generation requires the authoritative layout --reference")
     matrix = getattr(options, "strengths", None) is not None
     if strengths is not None:
         reference, conditioning, reference_files = load_reference(manifest, options.reference, options.width, options.height)
         spec["conditioning"] = conditioning
         spec["referenceGeometryReviewRequired"] = True
-    settings = {"width": options.width, "height": options.height, "steps": options.steps, "guidanceScale": 0,
+        if regions:
+            masks, mask_record, mask_files = mask_bundle(manifest,regions.split(","))
+            spec["conditioning"].update(mode="regional-inpaint",mask=mask_record)
+    if spec["conditioning"]["mode"] not in definition.modes:
+        raise ValueError("Selected backend does not support this conditioning mode")
+    settings = {"width": options.width, "height": options.height, "steps": options.steps, "guidanceScale": options.guidance_scale,
                 "pixelWidth": options.pixel_width, "colors": options.colors, "contrast": options.contrast,
                 "displayWidth": options.display_width, "resampling": "nearest",
                 "revision": options.revision, "requestedDevice": options.device}
@@ -81,22 +96,43 @@ def generate(manifest, options):
     if reference_files:
         (stage / "reference").mkdir()
         for filename, data in reference_files.items():
-            (stage / "reference" / filename).write_bytes(data)
+            target = stage / "reference" / filename
+            target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes(data)
+    for filename,data in mask_files.items():
+        target=stage/filename
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_bytes(data)
     if options.dry_run:
         (stage / "dry-run.json").write_text(json.dumps({**identity, "reviewStatus": "draft", "modelExecuted": False}, indent=2) + "\n")
         print(f"Dry run: {stage}. No image model was imported or executed.")
         return []
-    backend = SDXLTurbo(options.device, options.allow_cpu, options.revision, options.offline, reference=reference) if options.backend == "sdxl" else None
+    backend = definition.factory(options.device, options.allow_cpu, options.revision, options.offline, reference=reference, inpaint=bool(masks)) if definition.factory else None
     candidates = []
     for index in range(options.count):
+        candidate_started=time.perf_counter()
         seed = seed_for(options.seed, 0 if matrix else index)
         candidate_settings = dict(settings)
         if strengths is not None:
             candidate_settings.update(strength=strengths[index], effectiveSteps=int(options.steps*strengths[index]))
         name = f"{spec['roomId']}__{spec['role']}__{spec['variantId']}__candidate-{index+1:02}"
         path = stage / f"{name}.png"
-        raw = backend.generate(spec, candidate_settings, seed) if backend else fixture_image(seed, options.width, options.height)
+        passes = []
+        if masks:
+            raw,passes = regional_generate(backend,spec,candidate_settings,seed,reference,masks)
+        else:
+            raw = backend.generate(spec, candidate_settings, seed) if backend else fixture_image(seed, options.width, options.height)
         pixels = retro_crunch(raw, options.pixel_width, options.colors, options.contrast)
+        preservation = None
+        if masks:
+            mask=union_mask(masks)
+            base_pixels=retro_crunch(reference,options.pixel_width,options.colors,options.contrast)
+            pixels=restore_pixel_structure(pixels,base_pixels,mask,options.colors)
+            preservation={"sourceChangedProtectedPixels":protected_difference(raw,reference,mask),
+                          "masterChangedProtectedPixels":protected_difference(pixels,base_pixels,mask.resize(pixels.size,resample=0)),
+                          "method":"hard surface masks plus protected palette restoration", "semanticGeometryApproved":False}
+            if preservation["sourceChangedProtectedPixels"] or preservation["masterChangedProtectedPixels"]:
+                raise RuntimeError("Protected structure changed; refusing to publish a review candidate")
         image = display_upscale(pixels, options.display_width)
         image.save(path, "PNG")
         pixel_source = None
@@ -105,17 +141,25 @@ def generate(manifest, options):
             pixel_path.parent.mkdir(exist_ok=True)
             pixels.save(pixel_path, "PNG")
             pixel_source = {"file": f"pixels/{name}.png", "sha256": hashlib.sha256(pixel_path.read_bytes()).hexdigest()}
-        metadata = {**spec, "seed": seed, "model": MODEL if backend else "procedural-fixture (NOT SDXL)",
+        source_path=stage/"sources"/f"{name}.png"
+        source_path.parent.mkdir(exist_ok=True); raw.save(source_path,"PNG")
+        if backend and hasattr(backend,"metrics"):
+            backend.environment.update(backend.metrics())
+        metadata = {**spec, "seed": seed, "model": definition.model,
                     "generationSettings": candidate_settings, "dimensions": {"width": image.width, "height": image.height},
                     "pixelDimensions": {"width": pixels.width, "height": pixels.height}, "pixelSource": pixel_source,
                     "createdAt": datetime.now(timezone.utc).isoformat(), "sourceGeneratorVersion": VERSION,
                     "reviewStatus": "draft", "backend": options.backend, "modelExecuted": bool(backend),
                     "environment": backend.environment if backend else {"device": "cpu", "purpose": "pipeline test"},
-                    "sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "rawBytes": path.stat().st_size, "runId": run_id}
+                    "sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "rawBytes": path.stat().st_size, "runId": run_id,
+                    "sourceImage":{"file":f"sources/{name}.png","sha256":hashlib.sha256(source_path.read_bytes()).hexdigest()},
+                    "provenance":{"origin":"model" if backend else "fixture","manualEdits":[]},
+                    "regionPasses":passes,"structurePreservation":preservation,
+                    "candidateSeconds":round(time.perf_counter()-candidate_started,3)}
         path.with_suffix(".json").write_text(json.dumps(metadata, indent=2) + "\n")
         candidates.append({"path": str(path), "seed": seed, "backend": options.backend, "metadata": metadata})
     sheet = contact_sheet(candidates, root / "review" / run_id / "contact-sheet.webp")
-    print(json.dumps({"runId": run_id, "candidates": len(candidates), "contactSheet": str(sheet), "modelExecuted": bool(backend)}, indent=2))
+    print(json.dumps({"runId": run_id, "candidates": len(candidates), "contactSheet": str(sheet), "modelExecuted": bool(backend),"elapsedSeconds":round(time.perf_counter()-started,3)}, indent=2))
     return candidates
 
 
@@ -135,13 +179,14 @@ def arguments(argv=None):
     parser.add_argument("--display-width", type=int)
     parser.add_argument("--colors", type=int)
     parser.add_argument("--contrast", type=float)
-    parser.add_argument("--backend", choices=["sdxl", "fixture"], default="sdxl")
+    parser.add_argument("--backend", choices=list(BACKENDS), default="sdxl")
     parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda")
     parser.add_argument("--allow-cpu", action="store_true")
     parser.add_argument("--revision", help="Pin a model revision for stronger reproducibility")
     parser.add_argument("--reference", help="Validated deterministic layout.json bundle; canonical-room only")
     parser.add_argument("--strength", type=float, help="Img2img denoising strength: higher retains less geometry")
     parser.add_argument("--strengths", help="Comma-separated comparison matrix; one shared seed, count must match")
+    parser.add_argument("--regions", help="Comma-separated surface regions for masked inpainting with protected structure")
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args(argv)

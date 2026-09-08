@@ -78,16 +78,17 @@ def project(x, y, z=0):
     return (round(160 + (x - 160) * scale), round(218 - 110 * y / 224 - z * scale))
 
 
-def geometry(layout):
+def geometry(layout, with_regions=False):
     """One projection for conditioning and labelled perspective. No random textures."""
     polygons = []
-    def poly(points, color):
-        polygons.append(([project(*p) for p in points], color))
+    def poly(points, color, region="protected"):
+        projected = [project(*p) for p in points]
+        polygons.append((projected, color, region) if with_regions else (projected, color))
     h = layout["wallHeight"]
-    poly([(0, 0, 0), (320, 0, 0), (320, 224, 0), (0, 224, 0)], "#38282c")
-    poly([(0, 224, 0), (320, 224, 0), (320, 224, h), (0, 224, h)], "#42252d")
-    poly([(0, 0, 0), (0, 224, 0), (0, 224, h), (0, 0, h)], "#552c36")
-    poly([(320, 224, 0), (320, 0, 0), (320, 0, h), (320, 224, h)], "#351d27")
+    poly([(0, 0, 0), (320, 0, 0), (320, 224, 0), (0, 224, 0)], "#38282c", "floor")
+    poly([(0, 224, 0), (320, 224, 0), (320, 224, h), (0, 224, h)], "#42252d", "walls")
+    poly([(0, 0, 0), (0, 224, 0), (0, 224, h), (0, 0, h)], "#552c36", "walls")
+    poly([(320, 224, 0), (320, 0, 0), (320, 0, h), (320, 224, h)], "#351d27", "walls")
     for route in layout["routes"]:
         if route.get("offCamera") or route["to"] == "landing":
             continue  # Upstairs is the stair endpoint, never a second floor/balcony.
@@ -101,23 +102,24 @@ def geometry(layout):
         kind = element["kind"]
         if kind == "staircase":
             # One solid flight, no rail/gallery/extra steps outside this footprint.
-            poly([(x1, y0, 0), (x1, y1, z), (x1, y1, 0)], "#241c24")
+            poly([(x1, y0, 0), (x1, y1, z), (x1, y1, 0)], "#241c24", "stairs")
             for step in reversed(range(element["steps"])):
                 near = y0 + (y1-y0) * step / element["steps"]
                 far = y0 + (y1-y0) * (step+1) / element["steps"]
                 low, high = z * step / element["steps"], z * (step+1) / element["steps"]
-                poly([(x0, near, low), (x1, near, low), (x1, near, high), (x0, near, high)], "#593840")
-                poly([(x0, near, high), (x1, near, high), (x1, far, high), (x0, far, high)], "#967b70")
+                poly([(x0, near, low), (x1, near, low), (x1, near, high), (x0, near, high)], "#593840", "stairs")
+                poly([(x0, near, high), (x1, near, high), (x1, far, high), (x0, far, high)], "#967b70", "stairs")
         elif kind in ("counter", "stage-view"):
-            poly([(x0, y0, 0), (x1, y0, 0), (x1, y0, z), (x0, y0, z)], "#653442")
-            poly([(x1, y0, 0), (x1, y1, 0), (x1, y1, z), (x1, y0, z)], "#492935")
-            poly([(x0, y0, z), (x1, y0, z), (x1, y1, z), (x0, y1, z)], "#947269")
+            region = "counter" if kind == "counter" else "protected"
+            poly([(x0, y0, 0), (x1, y0, 0), (x1, y0, z), (x0, y0, z)], "#653442", region)
+            poly([(x1, y0, 0), (x1, y1, 0), (x1, y1, z), (x1, y0, z)], "#492935", region)
+            poly([(x0, y0, z), (x1, y0, z), (x1, y1, z), (x0, y1, z)], "#947269", region)
         elif kind == "window":
             poly([(320, y0, element["bottom"]), (320, y1, element["bottom"]), (320, y1, z), (320, y0, z)], "#776671")
         elif kind == "shelves":
-            poly([(0, y0, element["bottom"]), (0, y1, element["bottom"]), (0, y1, z), (0, y0, z)], "#231a23")
+            poly([(0, y0, element["bottom"]), (0, y1, element["bottom"]), (0, y1, z), (0, y0, z)], "#231a23", "shelves")
             for height in (element["bottom"], (z + element["bottom"])/2, z):
-                poly([(0, y0, height), (10, y0, height), (10, y1, height), (0, y1, height)], "#95776b")
+                poly([(0, y0, height), (10, y0, height), (10, y1, height), (0, y1, height)], "#95776b", "shelves")
     return polygons
 
 
@@ -208,17 +210,26 @@ def load_reference(manifest, source, width, height):
     bundle = json.loads(source.read_text(encoding="utf-8"))
     expected = render_bundle(manifest)
     # Re-rendering checks provenance and actual pixels, not just a self-claimed hash.
-    if bundle != json.loads(expected["layout.json"]):
+    expected_bundle = json.loads(expected["layout.json"])
+    expected_bundle["reference"]["sha256"] = bundle["reference"]["sha256"]
+    if bundle != expected_bundle:
         raise ValueError("Stale or altered layout reference; regenerate from the current manifest and blueprint")
     path = (source.parent / bundle["reference"]["file"]).resolve()
-    if not path.is_relative_to(source.parent) or path.read_bytes() != expected["reference.png"]:
+    if not path.is_relative_to(source.parent) or digest(path.read_bytes()) != bundle["reference"]["sha256"]:
         raise ValueError("Reference pixels do not match the deterministic layout")
     image = Image.open(path).convert("RGB")
+    with Image.open(io.BytesIO(expected["reference.png"])) as rendered:
+        if image.size != rendered.size or image.tobytes() != rendered.convert("RGB").tobytes():
+            raise ValueError("Reference pixels do not match the deterministic layout")
     if image.size != (width,height):
         raise ValueError("Reference dimensions must match generation exactly; no cropping or silent resizing")
     conditioning = {"mode": "img2img", "reference": {**bundle["reference"], "file": "reference/reference.png"},
                     "layout": {"id": bundle["layoutId"], "version": bundle["layoutVersion"], "file": "reference/layout.json",
                                "sha256": digest(encoded(bundle)), "blueprintSha256": bundle["blueprintSha256"], "worldFactsSha256": bundle["worldFactsSha256"], "reviewStatus": bundle["reviewStatus"]}, "mask": None}
+    # Preserve the exact source bytes. PNG encoders can differ across platforms;
+    # decoded pixels define geometry, while file hashes still bind provenance.
+    expected["reference.png"] = path.read_bytes()
+    expected["layout.json"] = encoded(bundle)
     return image, conditioning, expected
 
 
