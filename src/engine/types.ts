@@ -98,6 +98,8 @@ export type Effect =
     }
   | { type: "lock" | "unlock"; scene: string };
 export interface Passage {
+  kind?: "world" | "speech" | "phone" | "system";
+  from?: string;
   text: string;
   speaker?: NPCId;
   when?: Condition;

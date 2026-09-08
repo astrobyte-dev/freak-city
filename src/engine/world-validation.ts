@@ -1,8 +1,23 @@
+import { installActivity } from "./activity";
+import { ambientEntities } from "../content/affordances";
 import type { GameState } from "./types";
 import { npcIds } from "./types";
 import { createEntities, rooms } from "../content/spaces";
 import { scenes } from "../content/scenes";
 
+export function upgradeWorld(s: GameState): void {
+  const w = s.world;
+  if (!w) return;
+  if ((w.revision ?? 1) < 2) {
+    for (const entity of ambientEntities()) w.entities[entity.id] ??= entity;
+    installActivity(s);
+    w.revision = 2;
+  }
+  w.references ??= {};
+  w.observations ??= {};
+  w.hints ??= {};
+  w.subMinute ??= 0;
+}
 export function validateWorld(s: GameState): void {
   const w = s.world;
   if (!w) return;
@@ -64,6 +79,23 @@ export function validateWorld(s: GameState): void {
   for (const entry of w.transcript)
     if (!rooms[entry.room] || entry.at > s.time)
       throw new Error("Save contains an invalid transcript location or time.");
+  for (const ref of Object.values(w.references)) {
+    if (
+      (!w.entities[ref.id] &&
+        !npcIds.includes(ref.id as (typeof npcIds)[number])) ||
+      !rooms[ref.room] ||
+      ref.at < 0 ||
+      ref.at > s.time
+    )
+      throw new Error("Save contains an invalid discourse reference.");
+  }
+  if (
+    w.lastStatement &&
+    (!rooms[w.lastStatement.room] ||
+      w.lastStatement.at < 0 ||
+      w.lastStatement.at > s.time)
+  )
+    throw new Error("Save contains an invalid remembered statement.");
   if (
     w.pending &&
     w.pending.candidates.some(

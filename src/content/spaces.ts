@@ -1,3 +1,4 @@
+import { ambientEntities } from "./affordances";
 import {
   entitySchema,
   type Entity,
@@ -523,7 +524,9 @@ export function createEntities(s: GameState): Record<string, Entity> {
         },
       ),
     );
-  return Object.fromEntries(list.map((e) => [e.id, e]));
+  return Object.fromEntries(
+    [...list, ...ambientEntities()].map((e) => [e.id, e]),
+  );
 }
 export const defaultRoom: Record<string, string> = {
   taxi: "taxi",

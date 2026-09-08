@@ -1,9 +1,15 @@
+import { surfaceCommand } from "./natural-language";
 export interface Command {
   verb: string;
   direct: string;
   indirect: string;
   topic: string;
   raw: string;
+  negated?: boolean;
+  tentative?: boolean;
+  duration?: number;
+  until?: string;
+  manner?: string;
 }
 export const verbs = [
   "look",
@@ -52,6 +58,21 @@ export const verbs = [
   "flirt",
   "redact",
   "sleep",
+  "check",
+  "peek",
+  "touch",
+  "lean",
+  "deny",
+  "agree",
+  "thank",
+  "reassure",
+  "challenge",
+  "tease",
+  "joke",
+  "change",
+  "smile",
+  "sigh",
+  "stretch",
 ];
 export const normalize = (s: string) =>
   s
@@ -92,10 +113,20 @@ export function distance(a: string, b: string): number {
 }
 export const cleanNoun = (s: string) =>
   normalize(s)
-    .replace(/^(?:the|a|an|my|your) /, "")
+    .replace(/^(?:the|a|an|my|your|this|that|these|those) /, "")
     .trim();
 const aliases: Record<string, string> = {
   "look around": "look",
+  "check out": "examine",
+  "have a look at": "examine",
+  pick: "take",
+  "sit beside": "sit",
+  "sit next to": "sit",
+  "lean against": "lean",
+  "lean on": "lean",
+  feel: "touch",
+  pat: "touch",
+  "peer at": "peek",
   "look at": "examine",
   "look under": "search",
   "look in": "search",
@@ -143,6 +174,7 @@ const aliases: Record<string, string> = {
 const personPattern =
   "(?:mara(?: venn)?|celeste(?: ardent)?|luca(?: serrin)?|inez(?: vale)?|her|him|them|she|he)";
 export function splitCommands(raw: string): string[] {
+  if (surfaceCommand(raw).negated) return [raw.trim()];
   const result: string[] = [];
   let quote = "",
     part = "";
@@ -166,7 +198,8 @@ export function splitCommands(raw: string): string[] {
     .slice(0, 12);
 }
 export function parseCommand(raw: string): Command {
-  let line = normalize(raw).replace(
+  const surface = surfaceCommand(raw);
+  let line = normalize(surface.text).replace(
     /^(?:please |quietly |carefully |gently )+/,
     "",
   );
@@ -216,6 +249,8 @@ export function parseCommand(raw: string): Command {
     topic = direct === "about" ? topic : `${direct} ${topic}`;
     direct = "";
   }
+  if (["ask", "tell"].includes(verb) && /^(?:me |you )?about /.test(topic))
+    topic = topic.replace(/^(?:me |you )?about /, "");
   if (verb === "say") {
     const recipient = direct.match(new RegExp(`^(.*) to (${personPattern})$`));
     if (recipient) {
@@ -223,7 +258,21 @@ export function parseCommand(raw: string): Command {
       indirect = recipient[2];
     }
   }
-  if (["accuse", "apologise", "flirt"].includes(verb)) {
+  if (
+    [
+      "accuse",
+      "apologise",
+      "flirt",
+      "thank",
+      "reassure",
+      "challenge",
+      "tease",
+      "joke",
+      "deny",
+      "agree",
+      "change",
+    ].includes(verb)
+  ) {
     const parts = direct.split(/\s+(?:of|for|about)\s+/);
     direct = parts[0];
     topic = parts.slice(1).join(" ");
@@ -260,5 +309,10 @@ export function parseCommand(raw: string): Command {
     indirect: cleanNoun(indirect),
     topic,
     raw,
+    negated: surface.negated,
+    tentative: surface.tentative,
+    duration: surface.duration,
+    until: surface.until,
+    manner: surface.manner,
   };
 }

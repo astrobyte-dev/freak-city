@@ -109,6 +109,14 @@ export const items: Record<
   },
 };
 export const factLabels: Record<string, string> = {
+  observed_mara_routine:
+    "You watched Mara photograph chipped glasses for the supplier.",
+  observed_celeste_routine:
+    "You watched Celeste move an unfinished dinner out of her paperwork's way.",
+  observed_luca_routine:
+    "You watched Luca reread a message and leave it unsent.",
+  observed_inez_routine:
+    "You watched Inez check an entry against another page.",
   header: "23:41 is a delivery header, not the print time.",
   signature: "Your old delivery signature was reused as witness authorization.",
   tenantRisk: "The ledger includes identifiable tenant names.",

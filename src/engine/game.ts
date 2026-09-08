@@ -1,4 +1,4 @@
-import { validateWorld } from "./world-validation";
+import { validateWorld, upgradeWorld } from "./world-validation";
 import {
   stateSchema,
   npcIds,
@@ -672,6 +672,7 @@ export function validateSave(raw: unknown): GameState {
   for (const id of npcIds)
     if (s.npcs[id].knowledge.some((x) => typeof x !== "string"))
       throw new Error("Invalid knowledge record.");
+  upgradeWorld(s);
   validateWorld(s);
   return s;
 }

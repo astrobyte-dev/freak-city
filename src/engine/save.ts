@@ -46,6 +46,17 @@ export function restoreBookmark(
 export function eraseLocal(storage: StorageLike = localStorage) {
   storage.removeItem(SAVE_KEY);
   storage.removeItem(BOOKMARK_KEY);
+  try {
+    if (typeof sessionStorage !== "undefined") {
+      for (const key of Object.keys(sessionStorage))
+        if (/^freak-city:(command|message|recipient):/.test(key))
+          sessionStorage.removeItem(key);
+    }
+    if (typeof window !== "undefined")
+      window.dispatchEvent(new Event("freak-city:erase-drafts"));
+  } catch {
+    /* Session storage may be unavailable. */
+  }
 }
 export function exportSave(s: GameState) {
   return JSON.stringify(s, null, 2);

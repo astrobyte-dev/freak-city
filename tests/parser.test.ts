@@ -533,6 +533,7 @@ describe("remaining relationship routes and ending consequences", () => {
     s = run(s, [
       "ask Inez about company",
       "ask for something ordinary accept the chair",
+      "take mitten",
       "put mitten on ledge",
       "tell her you like familiar voices in the background",
       "say I trust the correction more than I trusted the certainty",

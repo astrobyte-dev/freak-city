@@ -31,6 +31,8 @@ export const entitySchema = z.object({
 export type Entity = z.infer<typeof entitySchema>;
 export const transcriptPassageSchema = z.object({
   text: z.string(),
+  kind: z.enum(["world", "speech", "phone", "system"]).optional(),
+  from: z.string().optional(),
   speaker: z.enum(["mara", "celeste", "luca", "inez"]).optional(),
   theme: z
     .enum([
@@ -52,6 +54,24 @@ export const transcriptPassageSchema = z.object({
 });
 export const worldSchema = z.object({
   version: z.literal(1),
+  revision: z.number().int().min(1).max(2).default(1),
+  subMinute: z.number().int().min(0).max(59).default(0),
+  references: z
+    .record(z.object({ id: z.string(), at: z.number(), room: z.string() }))
+    .default({}),
+  lastStatement: z
+    .object({
+      npc: z.enum(["mara", "celeste", "luca", "inez"]),
+      text: z.string(),
+      at: z.number(),
+      room: z.string(),
+      theme: transcriptPassageSchema.shape.theme,
+      safe: z.string().optional(),
+      implied: z.string().optional(),
+    })
+    .optional(),
+  observations: z.record(z.number().nonnegative()).default({}),
+  hints: z.record(z.number().int().nonnegative()).default({}),
   room: z.string(),
   previousRoom: z.string().optional(),
   entities: z.record(entitySchema),
@@ -78,6 +98,20 @@ export const worldSchema = z.object({
       room: z.string(),
       passages: z.array(transcriptPassageSchema),
       failed: z.boolean().optional(),
+      outcome: z
+        .enum([
+          "handled",
+          "fallback",
+          "refusal",
+          "ambiguous",
+          "unsupported-verb",
+          "missing-noun",
+          "unsupported-topic",
+          "blocked",
+        ])
+        .optional(),
+      verb: z.string().optional(),
+      seconds: z.number().nonnegative().optional(),
     }),
   ),
   commandHistory: z.array(z.string().max(500)),
