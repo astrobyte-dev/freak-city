@@ -1,6 +1,7 @@
 // Development-side definitions. This module is never imported by the shipping app.
 import { rooms } from "../spaces";
 import { visualManifests } from "./manifest";
+import barLayout from "./layouts/bar.json";
 import { deriveVisualState } from "../../visuals/derive";
 import type { GameState } from "../../engine/types";
 import { assetRoles, type AssetRole } from "../../visuals/types";
@@ -62,6 +63,7 @@ export function generationDefinition(
     roomId,
     roomIdentity: rooms[roomId].name,
     canonicalArchitecture: rooms[roomId].description,
+    layoutBlueprint: roomId === "bar" ? structuredClone(barLayout) : null,
     exits: rooms[roomId].exits,
     staticArchitecture: manifest.staticArchitecture,
     fixedFurniture: manifest.fixedFurniture,
@@ -78,7 +80,7 @@ export function generationDefinition(
       const e = state.world!.entities[id];
       return { id, location: e.location, open: e.open, locked: e.locked };
     }),
-    // Optional adapter inputs are recorded explicitly; no reference-guidance dependency yet.
+    // The adapter validates an optional layout bundle before enabling img2img.
     conditioning: {
       mode: "text-only",
       reference: null,

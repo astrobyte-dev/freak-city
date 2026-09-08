@@ -33,7 +33,7 @@ The compact model styles, fuller audit styles and role presets live in `src/cont
 
 ## Pixel treatment
 
-Generation → nearest-neighbour downscale → palette crunch → contrast → nearest-neighbour display upscale. The v2 canonical/illustration preset generates 640 × 448, crunches to 320 × 224 / 48 colours / contrast 1.15, then displays at 512 × 358. Height is rounded from the original aspect ratio; 512 is not an integer multiple of 320, so pixel blocks have uneven widths. Nothing is blurred or cropped. Use display width 640 for exact 2× pixels.
+Generation → nearest-neighbour downscale → palette crunch → contrast → nearest-neighbour display upscale. The canonical preset generates 640 × 448, crunches to 320 × 224 / 48 colours / contrast 1.15, then displays at 640 × 448 with exact 2× pixels. Illustrations retain 512 × 358; canonical output also supports `--display-width 512`. That option rounds height and produces unequal pixel-block widths. Nothing is blurred or cropped. See the [fixed Velvet reference and strength experiment](VISUAL-GEOMETRY-REPORT.md): crimson, black, worn materials and PS1 character remain the style target, while geometry has priority.
 
 `--pixel-width`, `--colors`, `--contrast` and `--display-width` override the role preset. Original texture defaults remain 320 pixels / 48 colours / contrast 1.3 / display width 320. Keep the pixel master when upscaling so later WebP encoding does not resample an already uneven grid.
 

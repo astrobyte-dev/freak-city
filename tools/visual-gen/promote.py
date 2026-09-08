@@ -13,7 +13,7 @@ from prompt_builder import safe_id
 from review import role_review
 
 
-def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_architecture=False, composition=None, non_explicit=False, illustration=None):
+def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_architecture=False, composition=None, non_explicit=False, illustration=None, approve_reference_geometry=False):
     root, candidate = Path(root).resolve(), Path(candidate).resolve()
     source = json.loads(candidate.with_suffix(".json").read_text())
     room, variant = safe_id(source["roomId"]), safe_id(source["variantId"])
@@ -27,7 +27,13 @@ def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_ar
         raise ValueError("This is a procedural test fixture, not SDXL output. Use --allow-fixture only for an intentional fixture review.")
     if hashlib.sha256(candidate.read_bytes()).hexdigest() != source["sha256"]:
         raise ValueError("Candidate differs from its generated sidecar; inspect the change before reviewing")
-    role_fields, review_fields = role_review(source, architecture=approve_architecture, composition=composition, non_explicit=non_explicit, illustration=illustration)
+    if source.get("conditioning", {}).get("mode") == "img2img":
+        for key in ("layout", "reference"):
+            record = source["conditioning"][key]
+            reference_path = (candidate.parent / record["file"]).resolve()
+            if not reference_path.is_relative_to(candidate.parent) or hashlib.sha256(reference_path.read_bytes()).hexdigest() != record["sha256"]:
+                raise ValueError("Reference bundle differs from the candidate provenance")
+    role_fields, review_fields = role_review(source, architecture=approve_architecture, composition=composition, non_explicit=non_explicit, illustration=illustration, reference_geometry=approve_reference_geometry)
     role = role_fields["role"]
     pixel_source = candidate
     if source.get("pixelSource"):
@@ -83,6 +89,7 @@ if __name__ == "__main__":
     parser.add_argument("--approve-world-facts", action="store_true", help="I inspected required/forbidden facts and confirmed this is an empty texture plate")
     parser.add_argument("--allow-fixture", action="store_true")
     parser.add_argument("--approve-architecture", action="store_true")
+    parser.add_argument("--approve-reference-geometry", action="store_true", help="I approved the layout and checked this image against its fixed geometry, including all exits")
     parser.add_argument("--composition", help="Human-adjusted 320 x 224 overlay placement JSON")
     parser.add_argument("--non-explicit", action="store_true")
     parser.add_argument("--illustration", help="Authored scene binding JSON; existing scene ID, caption, timeBands, requiredNPCs, themes")
@@ -91,7 +98,7 @@ if __name__ == "__main__":
         parser.error("Human inspection and --approve-world-facts are required; generation does not grant approval")
     try:
         print(json.dumps(promote(args.candidate, args.reviewer, args.notes, Path(__file__).resolve().parents[2], args.allow_fixture,
-              approve_architecture=args.approve_architecture, composition=json.loads(Path(args.composition).read_text()) if args.composition else None,
+              approve_architecture=args.approve_architecture, approve_reference_geometry=args.approve_reference_geometry, composition=json.loads(Path(args.composition).read_text()) if args.composition else None,
               non_explicit=args.non_explicit, illustration=json.loads(Path(args.illustration).read_text()) if args.illustration else None), indent=2))
     except (ValueError, OSError, KeyError) as error:
         print(f"Promotion failed: {error}", file=sys.stderr)

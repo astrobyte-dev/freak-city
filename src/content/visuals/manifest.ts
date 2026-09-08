@@ -127,7 +127,7 @@ export const visualManifests: Record<string, RoomVisualManifest> =
             pixelWidth: 320,
             colors: 48,
             contrast: 1.15,
-            displayWidth: 512,
+            displayWidth: 640,
           },
           "scene-illustration": {
             pixelWidth: 320,

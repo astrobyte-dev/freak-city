@@ -4,7 +4,7 @@ import os
 import shutil
 from pathlib import Path
 
-VERSION = "freak-city-visual-gen/2"
+VERSION = "freak-city-visual-gen/3"
 MODEL = "stabilityai/sdxl-turbo"
 
 
@@ -45,10 +45,10 @@ def cache_space_check():
 
 
 class SDXLTurbo:
-    def __init__(self, device="cuda", allow_cpu=False, revision=None, offline=False):
+    def __init__(self, device="cuda", allow_cpu=False, revision=None, offline=False, reference=None):
         try:
             import torch
-            from diffusers import AutoPipelineForText2Image
+            from diffusers import AutoPipelineForText2Image, AutoPipelineForImage2Image
         except ImportError as error:
             raise RuntimeError("Missing local model dependencies. Install tools/visual-gen/requirements.txt in a virtual environment; dry-run and fixture modes do not need them.") from error
         if device == "cuda" and not torch.cuda.is_available():
@@ -59,8 +59,10 @@ class SDXLTurbo:
         print(f"Loading {MODEL} on {device}; {'FP16 weights' if device == 'cuda' else 'FP32 default weights; CPU may be very slow'}.")
         self.torch = torch
         self.device = device
+        self.reference = reference
         try:
-            self.pipeline = AutoPipelineForText2Image.from_pretrained(MODEL, **model_load_options(device, torch, revision, offline)).to(device)
+            pipeline_type = AutoPipelineForImage2Image if reference is not None else AutoPipelineForText2Image
+            self.pipeline = pipeline_type.from_pretrained(MODEL, **model_load_options(device, torch, revision, offline)).to(device)
         except Exception as error:
             text = str(error).lower()
             if "out of memory" in text:
@@ -72,7 +74,9 @@ class SDXLTurbo:
                             "weightVariant": "fp16" if device == "cuda" else "default",
                             "torch": importlib.metadata.version("torch"), "diffusers": importlib.metadata.version("diffusers"),
                             "modelRevision": revision or "un-pinned", "cuda": torch.version.cuda,
-                            "gpu": torch.cuda.get_device_name(0) if device == "cuda" else None}
+                            "gpu": torch.cuda.get_device_name(0) if device == "cuda" else None,
+                            "pipeline": type(self.pipeline).__name__, "scheduler": type(self.pipeline.scheduler).__name__,
+                            "timestepSpacing": self.pipeline.scheduler.config.timestep_spacing}
 
     def generate(self, spec, options, seed):
         prompt = spec["modelPrompt"]
@@ -82,10 +86,11 @@ class SDXLTurbo:
             if tokenizer and len(tokenizer(prompt).input_ids) > tokenizer.model_max_length:
                 raise ValueError("Model prompt exceeds CLIP context; shorten it. Full review facts remain in the sidecar.")
         try:
+            inputs = {"image": self.reference.copy(), "strength": options["strength"]} if self.reference is not None else {"width": options["width"], "height": options["height"]}
             with self.torch.inference_mode():
                 return self.pipeline(prompt=prompt, generator=self.torch.Generator(device="cpu").manual_seed(seed),
                                      num_inference_steps=options["steps"], guidance_scale=0.0,
-                                     width=options["width"], height=options["height"]).images[0]
+                                     **inputs).images[0]
         except self.torch.cuda.OutOfMemoryError as error:
             raise RuntimeError("Generation ran out of GPU memory. Free memory or lower dimensions; no silent CPU fallback.") from error
 

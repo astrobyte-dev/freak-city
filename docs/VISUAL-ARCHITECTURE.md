@@ -58,9 +58,11 @@ Images are ordinary reviewed static files, never model calls in the browser. Off
 
 WebP promotion preserves nearest-neighbour pixels and the 150,000-byte asset cap. Output dimensions are configurable; height is the rounded 10:7 ratio. The 512-wide preset is 512 × 358. Canonical plates and illustrations are contained rather than cropped on narrow screens. Text remains modern, legible and available independently of the images.
 
-## Future reference-guided generation
+## Reference-guided generation
 
-The PromptSpec includes `conditioning` (`mode`, `reference`, `mask`, `layout`) and its layer review contract. Today only text-only SDXL Turbo is implemented. A future backend can consume a fixed layout, approved reference image, img2img strength, ControlNet-like structure or mask through `generate(spec, options, seed)`, while preserving candidate sidecars, source hashes, seed records and human review. No conditioning library or model dependency was added for this extension point.
+The PromptSpec includes `conditioning` (`mode`, `reference`, `mask`, `layout`) and its layer review contract. Optional `--reference` enables SDXL Turbo img2img using the existing weights. A development-only Velvet blueprint creates deterministic labelled top-down and perspective references plus an unlabelled conditioning PNG. Its routes and permanent facts are checked against the actual manifest. It fixes drawing coordinates without changing parser geography. The adapter validates hashes, current facts and exact dimensions before model loading; raw manifest conditioning cannot bypass validation. Reference copies, denoising strengths and effective steps accompany every candidate. No ControlNet dependency was added. Masks and other structural modes remain future extensions through `generate(spec, options, seed)`.
+
+Canonical output now prefers 320 × 224 masters and exact 640 × 448 nearest-neighbour displays; 512 remains configurable. Guided promotion requires explicit approval of both the reference layout and the candidate's geometry, in addition to the existing composition review. These references never update runtime anchors automatically. See the [layout, matrix and escalation report](VISUAL-GEOMETRY-REPORT.md).
 
 Before alternate views ship, record reference hashes/model revisions, lock the geometry source and review layout/occlusion for each view. Stateful architecture needs removable masks or layers; free text-to-image regeneration is not a controlled variant mechanism.
 

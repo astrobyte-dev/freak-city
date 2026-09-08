@@ -26,6 +26,10 @@ const { values, positionals } = parseArgs({
     contrast: { type: "string" },
     device: { type: "string" },
     revision: { type: "string" },
+    reference: { type: "string" },
+    strength: { type: "string" },
+    strengths: { type: "string" },
+    layout: { type: "boolean" },
     adapter: { type: "string" },
     output: { type: "string" },
     generate: { type: "boolean" },
@@ -55,6 +59,13 @@ if (values.validate) {
     "Visual assets and canonical anchors validated. No model or network required.",
   );
 } else {
+  if (
+    values.adapter &&
+    (values.reference || values.strength || values.strengths)
+  )
+    throw new Error(
+      "Reference options require the integrated adapter; they cannot be silently discarded by an external adapter.",
+    );
   const role = (values.role ?? "texture") as AssetRole;
   if (!assetRoles.includes(role))
     throw new Error(`Unknown asset role: ${role}`);
@@ -70,7 +81,7 @@ if (values.validate) {
   const selected = requested
     ? [requested === "velvet-bar" ? "bar" : requested]
     : Object.keys(rooms);
-  if ((values.generate || values.fixture) && !requested)
+  if ((values.generate || values.fixture || values.layout) && !requested)
     throw new Error(
       "Select one --room for candidate generation. Whole-city batches are intentionally not automatic.",
     );
@@ -96,7 +107,25 @@ if (values.validate) {
     );
     writeFileSync(path, JSON.stringify(job, null, 2) + "\n");
     console.log(`Prepared ${room} / ${role}: ${path}`);
-    if (values.adapter) {
+    if (values.layout) {
+      if (values.generate || values.fixture || values.adapter)
+        throw new Error(
+          "Create and validate the layout separately before generation.",
+        );
+      const result = spawnSync(
+        process.env.VISUAL_PYTHON ?? "python3",
+        [
+          "tools/visual-gen/layout_reference.py",
+          "--manifest",
+          path,
+          "--output",
+          values.output ?? `.visuals/layouts/${room}/v1`,
+        ],
+        { stdio: "inherit", shell: false },
+      );
+      if (result.error || result.status !== 0)
+        throw new Error("Layout validation failed");
+    } else if (values.adapter) {
       const output = resolve(values.output ?? `.visuals/generated/${room}`);
       mkdirSync(output, { recursive: true });
       const result = spawnSync(
@@ -129,6 +158,9 @@ if (values.validate) {
         "contrast",
         "device",
         "revision",
+        "reference",
+        "strength",
+        "strengths",
       ] as const)
         if (values[key]) args.push(`--${key}`, values[key]!);
       if (values.fixture) args.push("--backend", "fixture");

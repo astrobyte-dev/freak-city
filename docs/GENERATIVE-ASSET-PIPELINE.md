@@ -68,7 +68,7 @@ The [official model card](https://huggingface.co/stabilityai/sdxl-turbo) describ
 
 ## Pixels, output and provenance
 
-Role presets live in the room manifest. Canonical/illustration defaults: 640 × 448 source, 320 × 224 pixel crunch, 48 colours, contrast 1.15, then 512 × 358 nearest-neighbour display output. Texture defaults preserve contrast 1.3 and display width 320. CLI options override presets. Width 512 uses a rounded height and uneven pixel-block widths; use 640 for an exact integer 2× upscale. No blur or crop is applied.
+Role presets live in the room manifest. Canonical defaults: 640 × 448 source, 320 × 224 pixel crunch, 48 colours, contrast 1.15, then exact 640 × 448 nearest-neighbour display output. Illustrations retain 512 × 358. Texture defaults preserve contrast 1.3 and display width 320. CLI options override presets, including `--display-width 512` for canonical images. Width 512 uses a rounded height and uneven pixel-block widths. No blur or crop is applied.
 
 When display width differs from pixel width, the original crunched master is retained under `pixels/`, with a hash in the display sidecar. Promotion verifies that the pixel master reproduces the reviewed display candidate exactly before using it to encode WebP. This avoids a second sampling of the uneven 320→512 grid. The uncrunched diffusion image is not separately retained in this version.
 
@@ -104,6 +104,16 @@ Promotion preserves draft files and sidecars, writes reviewed provenance locally
 
 ## Extension point and checks
 
-An external trusted adapter still receives `--manifest ABSOLUTE_JSON --output ABSOLUTE_DIRECTORY` without a shell. It must honor the manifest role. Internally a backend implements `generate(spec, options, seed) -> PIL.Image`. `conditioning` reserves reference/mask/layout inputs for future img2img or structural guidance. Text-only SDXL Turbo is the current implementation; no ControlNet or reference-conditioning dependency was installed.
+An external trusted adapter still receives `--manifest ABSOLUTE_JSON --output ABSOLUTE_DIRECTORY` without a shell. It must honor the manifest role. Internally a backend implements `generate(spec, options, seed) -> PIL.Image`. The integrated adapter supports text-only and optional validated layout img2img using the same SDXL Turbo weights. `conditioning` records reference/layout hashes and reserves masks for future structural guidance. No ControlNet dependency was installed.
+
+## Fixed Velvet layout and controlled img2img
+
+Use the [geometry report](VISUAL-GEOMETRY-REPORT.md) for the current four-candidate experiment, exact integrated commands, labelled references and review findings. The earlier eight-candidate commands above document historical V2 reproduction; they are not the current next step.
+
+`npm run visuals -- --room velvet-bar --role canonical-room --layout` creates `.visuals/layouts/bar/v1/layout.json`, `reference.png`, `top-down.svg`, `perspective.png` and `facts.md`. This deterministic bundle fixes art coordinates grounded in all seven actual routes. Regeneration is idempotent; differing output in the same directory is refused. The adapter's `--reference PATH/layout.json` verifies current blueprint/facts, pixels and dimensions, then copies the bundle into the batch's `reference/` folder. No cropping, downloaded control model or implicit CPU fallback occurs.
+
+`--strength 0.5` uses one denoising setting with incrementing seeds. `--strengths 0.25,0.5,0.75,1 --steps 4 --count 4` instead shares the exact base seed and prompt across four distinct effective schedules. Higher denoising strength retains less reference structure. Invalid/NaN strengths, zero effective steps and redundant effective schedules fail before model loading. Metadata and contact-sheet labels record each candidate's setting. Fixture mode verifies plumbing only; its procedural images do not simulate img2img conditioning.
+
+Guided canonical promotion additionally requires `--approve-reference-geometry`: human approval of the layout and comparison of the actual image to its staircase, boundaries, exits, fixed furniture and window. All existing approval flags and reviewed runtime composition remain required. Modified reference files block promotion. Beautiful images that change geometry must be rejected.
 
 Run full JS checks, Python tests, normal/Pages builds, visual validation and formatting. With preview on port 5181 and development Vite on 5182, run the existing visual browser suite with `PLAYTEST_URL`/`VISUAL_DEV_URL`, then `npm run test:visuals:roles:browser`. The latter verifies reviewed geometry, mobile framing, scene illustration/return, Off/Reduced and failure fallback using isolated nonshipping test images. See [v2 results](VISUAL-V2-REPORT.md) and the [architecture](VISUAL-ARCHITECTURE.md).

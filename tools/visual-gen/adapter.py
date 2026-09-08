@@ -4,11 +4,32 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
+import math
 from pathlib import Path
 import sys
 from prompt_builder import build_prompt, ROLES
 from generator import VERSION, MODEL, SDXLTurbo, fixture_image, retro_crunch, display_upscale
 from contact_sheet import contact_sheet
+from layout_reference import load_reference
+
+
+def reference_settings(options):
+    reference = getattr(options, "reference", None)
+    matrix, strength = getattr(options, "strengths", None), getattr(options, "strength", None)
+    if not reference:
+        if matrix is not None or strength is not None:
+            raise ValueError("Strength settings require --reference")
+        return None
+    if options.role != "canonical-room":
+        raise ValueError("Layout img2img currently supports canonical-room only")
+    if matrix is not None and strength is not None:
+        raise ValueError("Use --strength or --strengths, not both")
+    values = [float(v) for v in matrix.split(",")] if matrix is not None else [0.5 if strength is None else strength] * options.count
+    if len(values) != options.count or any(not math.isfinite(v) or not 0 < v <= 1 or int(options.steps*v) < 1 for v in values):
+        raise ValueError("One strength per candidate required, within (0,1], with steps * strength >= 1")
+    if matrix is not None and len({int(options.steps*v) for v in values}) != len(values):
+        raise ValueError("Matrix strengths must produce distinct effective step counts")
+    return values
 
 
 def seed_for(base, index):
@@ -35,10 +56,20 @@ def generate(manifest, options):
     if not options.pixel_width <= options.display_width <= 2048:
         raise ValueError("Display width must be between pixel width and 2048")
     seed_for(options.seed, 0)
+    strengths = reference_settings(options)
+    reference, reference_files = None, None
+    matrix = getattr(options, "strengths", None) is not None
+    if strengths is not None:
+        reference, conditioning, reference_files = load_reference(manifest, options.reference, options.width, options.height)
+        spec["conditioning"] = conditioning
+        spec["referenceGeometryReviewRequired"] = True
     settings = {"width": options.width, "height": options.height, "steps": options.steps, "guidanceScale": 0,
                 "pixelWidth": options.pixel_width, "colors": options.colors, "contrast": options.contrast,
                 "displayWidth": options.display_width, "resampling": "nearest",
                 "revision": options.revision, "requestedDevice": options.device}
+    if strengths is not None:
+        settings.update(strengths=strengths, seedStrategy="shared-matrix" if matrix else "incrementing",
+                        strengthMeaning="denoising; higher means less reference retention")
     identity = {"spec": spec, "settings": settings, "seed": options.seed, "count": options.count, "backend": options.backend, "version": VERSION}
     run_id = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:12]
     root = Path(options.output).resolve()
@@ -47,17 +78,24 @@ def generate(manifest, options):
         raise ValueError(f"Run {run_id} already exists. Use another output directory or seed; original candidates are never overwritten.")
     stage.mkdir(parents=True)
     (stage / "prompt-spec.json").write_text(json.dumps(spec, indent=2) + "\n")
+    if reference_files:
+        (stage / "reference").mkdir()
+        for filename, data in reference_files.items():
+            (stage / "reference" / filename).write_bytes(data)
     if options.dry_run:
         (stage / "dry-run.json").write_text(json.dumps({**identity, "reviewStatus": "draft", "modelExecuted": False}, indent=2) + "\n")
         print(f"Dry run: {stage}. No image model was imported or executed.")
         return []
-    backend = SDXLTurbo(options.device, options.allow_cpu, options.revision, options.offline) if options.backend == "sdxl" else None
+    backend = SDXLTurbo(options.device, options.allow_cpu, options.revision, options.offline, reference=reference) if options.backend == "sdxl" else None
     candidates = []
     for index in range(options.count):
-        seed = seed_for(options.seed, index)
+        seed = seed_for(options.seed, 0 if matrix else index)
+        candidate_settings = dict(settings)
+        if strengths is not None:
+            candidate_settings.update(strength=strengths[index], effectiveSteps=int(options.steps*strengths[index]))
         name = f"{spec['roomId']}__{spec['role']}__{spec['variantId']}__candidate-{index+1:02}"
         path = stage / f"{name}.png"
-        raw = backend.generate(spec, settings, seed) if backend else fixture_image(seed, options.width, options.height)
+        raw = backend.generate(spec, candidate_settings, seed) if backend else fixture_image(seed, options.width, options.height)
         pixels = retro_crunch(raw, options.pixel_width, options.colors, options.contrast)
         image = display_upscale(pixels, options.display_width)
         image.save(path, "PNG")
@@ -68,7 +106,7 @@ def generate(manifest, options):
             pixels.save(pixel_path, "PNG")
             pixel_source = {"file": f"pixels/{name}.png", "sha256": hashlib.sha256(pixel_path.read_bytes()).hexdigest()}
         metadata = {**spec, "seed": seed, "model": MODEL if backend else "procedural-fixture (NOT SDXL)",
-                    "generationSettings": settings, "dimensions": {"width": image.width, "height": image.height},
+                    "generationSettings": candidate_settings, "dimensions": {"width": image.width, "height": image.height},
                     "pixelDimensions": {"width": pixels.width, "height": pixels.height}, "pixelSource": pixel_source,
                     "createdAt": datetime.now(timezone.utc).isoformat(), "sourceGeneratorVersion": VERSION,
                     "reviewStatus": "draft", "backend": options.backend, "modelExecuted": bool(backend),
@@ -101,6 +139,9 @@ def arguments(argv=None):
     parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda")
     parser.add_argument("--allow-cpu", action="store_true")
     parser.add_argument("--revision", help="Pin a model revision for stronger reproducibility")
+    parser.add_argument("--reference", help="Validated deterministic layout.json bundle; canonical-room only")
+    parser.add_argument("--strength", type=float, help="Img2img denoising strength: higher retains less geometry")
+    parser.add_argument("--strengths", help="Comma-separated comparison matrix; one shared seed, count must match")
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args(argv)

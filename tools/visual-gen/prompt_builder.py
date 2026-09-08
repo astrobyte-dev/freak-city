@@ -19,7 +19,7 @@ def validate_manifest(manifest, role):
         raise ValueError("Requested role differs from prepared manifest")
     conditioning = manifest.get("conditioning", {"mode": "text-only"})
     if conditioning.get("mode") != "text-only" or any(conditioning.get(k) is not None for k in ("reference", "mask", "layout")):
-        raise ValueError("Reference/mask/layout conditioning is an extension point, not implemented by this text-only adapter")
+        raise ValueError("Manifest conditioning must start text-only; use --reference for a validated layout bundle. Masks and other modes are not implemented.")
     for field in ("requiredVisualFacts", "forbiddenVisualFacts"):
         if not isinstance(manifest.get(field), list) or not manifest[field]:
             raise ValueError(f"Manifest must provide {field}")
