@@ -8,7 +8,7 @@ Simulation assertions cover six complete archetypes across seeded campaigns, det
 
 The playtest script also covers all six companion pairs across three seeds, including guarded choices, exclusions and a rare overlap. It performs 250 deterministic randomized walks, rejects dead ends and overlong loops, validates saves after every choice, and reports coverage. It uses higher PRNG bits for action selection: the initial low-bit modulo implementation correlated with branch counts and only sampled two endings. That was a test-harness weakness, corrected before final reporting.
 
-Browser checks play a complete route with all optional mature themes skipped, reload the final state, exercise phone/journal/inventory/map/people/boundaries, check for horizontal overflow, collect runtime errors and external requests, and run axe at desktop/mobile sizes. Passing axe is not a claim of universal accessibility or a substitute for assistive-technology testing.
+Parser browser checks exercise typed commands, physical navigation, phone drafts and failures, journal/inventory/map/boundaries, history/completion, reloads, transcript reading position, composition, local deletion, and narrow/reduced-height phone viewports. They collect runtime errors and run axe across desktop/mobile screens. Full endings are covered by deterministic command campaigns. Passing axe is not a claim of universal accessibility or a substitute for assistive-technology testing. See [the interaction pass](INTERACTION-PASS.md) for current parser coverage and remaining human-playtest questions.
 
 ## Narrative QA
 

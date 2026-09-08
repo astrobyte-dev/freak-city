@@ -1,0 +1,32 @@
+{
+  "checkpoint": "6d0bbfa",
+  "checkpointTag": "parser-pivot-checkpoint",
+  "validationDate": "2026-09-08",
+  "unitAndRegressionTests": 908,
+  "testFiles": 5,
+  "originalParserCampaigns": 12,
+  "naturalParserCampaigns": 60,
+  "naturalCommands": 1470,
+  "naturalCommandFailures": 0,
+  "preservedScenes": 117,
+  "parserPresentationEditedScenes": 24,
+  "existingRooms": 17,
+  "newAmbientAndClothingEntities": 93,
+  "browserTarget": "production preview http://localhost:4174",
+  "browserCompleted": true,
+  "browserAccessibilityScans": 11,
+  "browserRuntimeErrors": 0,
+  "browserAccessibilityViolations": 0,
+  "largestProductionJavaScriptKB": 404.76,
+  "checks": [
+    "npm run check",
+    "npm run format:check",
+    "PLAYTEST_URL=http://localhost:4174 npm run test:browser",
+    "git diff --check"
+  ],
+  "remainingValidation": [
+    "blind human parser playthrough",
+    "real iOS/Android keyboard and assistive technology",
+    "Firefox/Safari"
+  ]
+}

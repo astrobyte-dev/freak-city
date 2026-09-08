@@ -10,12 +10,15 @@
     "test": "vitest run",
     "qa": "tsx scripts/narrative-qa.ts",
     "playtest": "tsx scripts/playtest.ts",
-    "check": "npm run build && npm run test && npm run qa && npm run playtest && npm run content && npm run playtest:parser",
+    "check": "npm run build && npm run test && npm run qa && npm run playtest && npm run content && npm run playtest:parser && npm run playtest:natural && npm run audit:embodiment",
     "test:browser": "tsx scripts/browser-playtest.ts",
     "format": "prettier --write src scripts tests docs README.md package.json tsconfig.json vite.config.ts",
     "format:check": "prettier --check src scripts tests docs README.md package.json tsconfig.json vite.config.ts",
     "content": "tsx scripts/content-index.ts",
-    "playtest:parser": "tsx scripts/parser-playtest.ts"
+    "playtest:parser": "tsx scripts/parser-playtest.ts",
+    "playtest:natural": "tsx scripts/parser-natural-playtest.ts",
+    "parser:gaps": "tsx scripts/parser-gap-report.ts",
+    "audit:embodiment": "tsx scripts/embodiment-audit.ts"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

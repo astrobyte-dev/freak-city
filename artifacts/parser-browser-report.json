@@ -1,4 +1,6 @@
 {
+  "completed": true,
+  "target": "http://localhost:4174",
   "errors": [],
   "audits": [
     {
@@ -31,6 +33,18 @@
     },
     {
       "screen": "mobile transcript",
+      "violations": []
+    },
+    {
+      "screen": "mobile phone failure and retained draft",
+      "violations": []
+    },
+    {
+      "screen": "mobile reduced keyboard viewport",
+      "violations": []
+    },
+    {
+      "screen": "small phone width",
       "violations": []
     }
   ]

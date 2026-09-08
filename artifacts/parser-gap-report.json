@@ -1,0 +1,662 @@
+{
+  "runs": 60,
+  "commands": 1470,
+  "failures": 0,
+  "outcomes": {
+    "handled": 1458,
+    "fallback": 12
+  },
+  "fallbackFrequency": 0.00816326530612245,
+  "failedVerbs": {},
+  "failedNouns": {},
+  "failedTopics": {},
+  "ambiguous": [],
+  "unsupported": [],
+  "roomCoverage": [
+    {
+      "room": "taxi",
+      "commands": 324,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "street",
+      "commands": 120,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "search",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "vestibule",
+      "commands": 60,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "bar",
+      "commands": 486,
+      "authoredDetails": 7,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "cloakroom",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "washroom",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "listen",
+        "search",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "kitchen",
+      "commands": 0,
+      "authoredDetails": 6,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "stage",
+      "commands": 30,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "salon",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "landing",
+      "commands": 45,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "office",
+      "commands": 30,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "exchange-room",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "archive",
+      "commands": 255,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "loading-bay",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "kiosk",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "apartment",
+      "commands": 120,
+      "authoredDetails": 6,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    },
+    {
+      "room": "motel",
+      "commands": 0,
+      "authoredDetails": 5,
+      "verbs": [
+        "check",
+        "examine",
+        "lean",
+        "listen",
+        "read",
+        "search",
+        "sit",
+        "smell",
+        "touch"
+      ]
+    }
+  ],
+  "lowAffordanceRooms": [],
+  "genericOnlyObjects": [
+    {
+      "id": "detail_taxi_meter",
+      "name": "taxi meter",
+      "location": "taxi",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_taxi_light",
+      "name": "ceiling light",
+      "location": "taxi",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_street_window",
+      "name": "club window",
+      "location": "street",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_vestibule_bag",
+      "name": "paper bag",
+      "location": "vestibule",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_bar_shelves",
+      "name": "bottle shelves",
+      "location": "bar",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_bar_light",
+      "name": "pendant light",
+      "location": "bar",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_bar_window",
+      "name": "high window",
+      "location": "bar",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_bar_clock",
+      "name": "bar clock",
+      "location": "bar",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_cloakroom_rack",
+      "name": "coat rack",
+      "location": "cloakroom",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_cloakroom_mirror",
+      "name": "long mirror",
+      "location": "cloakroom",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_cloakroom_basket",
+      "name": "umbrella basket",
+      "location": "cloakroom",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_stage_keyboard",
+      "name": "keyboard",
+      "location": "stage",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_salon_light",
+      "name": "shaded lamp",
+      "location": "salon",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_landing_light",
+      "name": "landing light",
+      "location": "landing",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_landing_window",
+      "name": "landing window",
+      "location": "landing",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_office_window",
+      "name": "office window",
+      "location": "office",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_office_lamp",
+      "name": "desk lamp",
+      "location": "office",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_exchange-room_stain",
+      "name": "water stain",
+      "location": "exchange-room",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_exchange-room_window",
+      "name": "exchange window",
+      "location": "exchange-room",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_archive_lamp",
+      "name": "service lamp",
+      "location": "archive",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_archive_tray",
+      "name": "paper tray",
+      "location": "archive",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_loading-bay_light",
+      "name": "security light",
+      "location": "loading-bay",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_kiosk_napkin",
+      "name": "paper napkin",
+      "location": "kiosk",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_kiosk_window",
+      "name": "steamed glass",
+      "location": "kiosk",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_apartment_window",
+      "name": "apartment window",
+      "location": "apartment",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_motel_carpet",
+      "name": "motel carpet",
+      "location": "motel",
+      "verbs": [
+        "examine",
+        "check",
+        "touch",
+        "search",
+        "smell",
+        "listen"
+      ]
+    },
+    {
+      "id": "detail_mara_boots",
+      "name": "Mara's work boots",
+      "location": "mara",
+      "verbs": [
+        "examine",
+        "check",
+        "watch"
+      ]
+    },
+    {
+      "id": "detail_celeste_coat",
+      "name": "Celeste's coat",
+      "location": "celeste",
+      "verbs": [
+        "examine",
+        "check",
+        "watch"
+      ]
+    },
+    {
+      "id": "detail_luca_jacket",
+      "name": "Luca's repaired jacket",
+      "location": "luca",
+      "verbs": [
+        "examine",
+        "check",
+        "watch"
+      ]
+    },
+    {
+      "id": "detail_inez_keys",
+      "name": "Inez's key ring",
+      "location": "inez",
+      "verbs": [
+        "examine",
+        "check",
+        "watch"
+      ]
+    }
+  ]
+}

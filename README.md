@@ -65,7 +65,7 @@ Try `NIGHT-0`, `NIGHT-1`, and `NIGHT-2` for three different invitation explanati
 
 ## Privacy
 
-Only this browser's `freak-city:v1:autosave` and `freak-city:v1:bookmark` keys are used. Preferences stay inside the local save; there is no transmission or analytics. Exported files contain the full private state, which the export UI explicitly states. Settings → THE PULL clears interests or disables adaptation; Settings → Delete local data removes this game's storage keys. Other applications' storage is untouched. Local saves are not encrypted against someone who can access your browser profile.
+Game state uses this browser's `freak-city:v1:autosave` and `freak-city:v1:bookmark` keys. Command and phone drafts use session storage under `freak-city:command:`, `freak-city:message:` and `freak-city:recipient:` prefixes, scoped by seed. Preferences stay inside the local save; there is no transmission or analytics. Exported files contain the full private state, which the export UI explicitly states. Settings → THE PULL clears interests or disables adaptation; Settings → Delete local data removes this game's storage keys. Drafts are also removed by Delete local data. Other applications' storage is untouched. Local saves are not encrypted against someone who can access your browser profile.
 
 Explicit boundaries apply immediately. `SKIP` overrides interest and compatibility; `IMPLIED ONLY` uses equivalent summaries. The phone, current descriptions, transcript passages and authored interactions and surveillance decoration honor the applicable boundaries. Some taxonomy categories are architecture for future authored material, not a promise of scenes already present.
 
@@ -79,12 +79,13 @@ npm run test:browser
 npm run format:check
 ```
 
-Generated evidence is in `artifacts/` (including a machine-readable canon ledger, scene cards and scene graph from `npm run content`): narrative QA, playtest reports, browser report and desktop/mobile screenshots. Reports contain synthetic test identities only. The tests cover complete routes on different seeds, knowledge propagation, missed events, delayed effects, boundaries, cue cooldowns, saves, Live Wire and corrupt-save handling. Parser playtests run 12 complete command campaigns across the three seeds and four custody outcomes, validating each saved state. Browser checks exercise typed commands, history, completion, clarification, reload, panels and mobile/desktop accessibility. Legacy scene-based simulation tests remain as regression coverage.
+Generated evidence is in `artifacts/` (including a machine-readable canon ledger, scene cards and scene graph from `npm run content`): narrative QA, playtest reports, browser report and desktop/mobile screenshots. Reports contain synthetic test identities only. The tests cover complete routes on different seeds, knowledge propagation, missed events, delayed effects, boundaries, cue cooldowns, saves, Live Wire and corrupt-save handling. Parser playtests run 12 complete command campaigns across the three seeds and four custody outcomes, validating each saved state. An additional 60 campaigns exercise five natural-language player styles across the same seeds and outcomes. Browser checks exercise typed commands, touch history/completion, draft persistence, IME, scroll retention, clarification, panels, deletion and mobile/desktop accessibility. Legacy scene-based simulation tests remain as regression coverage.
 
 Development only: **Ctrl+Shift+D** opens the inspector. View state, canonical secrets, scene cards and transcripts; jump scenes, change composure, advance time, change seed or simulate a choice. Scene jumps intentionally bypass entry logic and can create non-canonical debug states.
 
 ## Documentation
 
+- [Autonomous interaction pass, validation and gap reporting](docs/INTERACTION-PASS.md)
 - [Parser pivot audit, implementation and authoring](docs/PARSER-PIVOT.md)
 
 - [Expansion results and duration evidence](docs/EXPANSION-REPORT.md)
@@ -98,4 +99,4 @@ Development only: **Ctrl+Shift+D** opens the inspector. View state, canonical se
 - [Editorial review and known limitations](docs/QA-AND-LIMITATIONS.md)
 - [Artwork provenance and prompt](docs/ASSETS.md)
 
-Next: expand the current relationships into a measured 60–90-minute chapter; commission human editorial/playtest passes; deepen NPC-to-NPC faction decisions; then develop the Motel 27 records thread. The other districts and DEJA//VU are future work.
+Next: complete the first blind human parser playtest, then use its actual commands and pacing feedback to guide revisions. Keep the central story and Motel hook stable until that feedback is reviewed.

@@ -1,0 +1,2406 @@
+{
+  "scenes": 117,
+  "scenesWithPresentationEdits": 24,
+  "policy": "Original manuscript preserved. Parser requires explicit movement and custody; ordinary reciprocal questions remain conversation texture. This audit is a review aid, not proof that prose never implies an action.",
+  "audit": [
+    {
+      "scene": "arrival",
+      "kind": "environment / event sequence",
+      "room": "taxi",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "door",
+      "kind": "authored conversation",
+      "room": "street",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 3,
+          "original": "She notices the invitation when you turn your phone around. Stops pressing the tape.",
+          "parser": "Her attention moves between the arrivals book and the doorway. The tape sticks to her thumb.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 4,
+          "original": "That says delivery. Not printing.",
+          "parser": "If yours is a delivery, keep its timestamp. Printing and delivery aren't the same thing.",
+          "disposition": "parser presentation corrected",
+          "reveals": [
+            "header"
+          ]
+        },
+        {
+          "index": 5,
+          "original": "Her finger taps 23:41 once. She returns to the bag, but she has lost her place.",
+          "parser": "She taps the book once, then returns to the bag.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "vestibule",
+      "kind": "authored conversation",
+      "room": "vestibule",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "bar",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask if she always starts this late.",
+          "parser": "You ask if she always starts this late.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "coat",
+      "kind": "environment / event sequence",
+      "room": "cloakroom",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "floor",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [
+        {
+          "type": "message",
+          "from": "VELVET / SERVICE",
+          "text": "Witness reception. Upstairs. 00:20. Attendance is not compulsory."
+        },
+        {
+          "type": "message",
+          "from": "UNKNOWN",
+          "text": "Loading bay. Last bus at 00:26. You cannot make this if you attend the exchange."
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "mara",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 1,
+          "original": "You keep hold of it while she reads the invitation. She does not ask to touch the screen. For a moment she seems about to say something she has already rehearsed. Then an order comes in and she writes it on her wrist instead.",
+          "parser": "She leaves room on the dry end of the counter. She does not ask to touch your phone. For a moment she seems about to say something she has already rehearsed. Then an order comes in and she writes it on her wrist instead.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "You ask who would do that.",
+          "parser": "You ask who would do that.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "kitchen",
+      "kind": "authored conversation",
+      "room": "kitchen",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 0,
+          "original": "Mara takes you through a door marked DRY STORE. The room behind it is neither dry nor a store. A fan stands dismantled on a table, its screws laid out on a takeaway lid.",
+          "parser": "The door is marked DRY STORE. The room behind it is neither dry nor a store. A fan stands dismantled on a table, its screws laid out on a takeaway lid.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 2,
+          "original": "You find the eighth under your shoe. She takes it with an expression of disproportionate relief.",
+          "parser": "The eighth screw glints under the table. Mara retrieves it with an expression of disproportionate relief.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "Thank you. Honestly. I was going to have to move the fridge.",
+          "parser": "There it is. Honestly. I thought I was going to have to move the fridge.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 6,
+          "original": "For a little while the only decisions are whether to use the salt and which of you should hold the casing steady. Mara tells you about a neighbour who keeps leaving an entire exercise bike in the stairwell. You cannot work out how the bike gets used.",
+          "parser": "The chips and the loose fan casing leave two modest possibilities open. Mara tells you about a neighbour who keeps leaving an entire exercise bike in the stairwell. You cannot work out how the bike gets used.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 8,
+          "original": "The fan starts. Both of you stop talking to hear whether it will stay started.",
+          "parser": "She checks the fan's loose casing, then leaves it waiting for another pair of hands.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "quiet",
+      "kind": "authored conversation",
+      "room": "kitchen",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You sit close enough to hear her over the noise from the hall. She asks whether she can use your alias, even though she already heard it at the door.",
+          "parser": "The empty chair is close enough for conversation over the noise from the hall. She asks whether she can use your alias, even though she already heard it at the door.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste",
+      "kind": "authored conversation",
+      "room": "landing",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You tell her that it was not.",
+          "parser": "She lets the question stand without supplying your answer.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "terms",
+      "kind": "special interaction",
+      "room": "office",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 5,
+          "original": "You ask whether insufficient means the transfer stops.",
+          "parser": "You ask whether insufficient means the transfer stops.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca",
+      "kind": "authored conversation",
+      "room": "stage",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "radio",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask whether publishing the original means publishing those names.",
+          "parser": "You ask whether publishing the original means publishing those names.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez",
+      "kind": "special interaction",
+      "room": "vestibule",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You ask why someone would schedule an invitation through an obsolete printer.",
+          "parser": "You ask why someone would schedule an invitation through an obsolete printer.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "register",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 5,
+          "original": "You ask whether it belongs to the person who invited you.",
+          "parser": "You ask whether it belongs to the person who invited you.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "washroom",
+      "kind": "environment / event sequence",
+      "room": "washroom",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "overhear",
+      "kind": "environment / event sequence",
+      "room": "washroom",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "street",
+      "kind": "environment / event sequence",
+      "room": "street",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "There are ordinary explanations for ordinary objects. You take a photograph anyway. The corner of the frame catches a clock above the shutter.",
+          "parser": "There are ordinary explanations for ordinary objects. The clock above the shutter would fit into a photograph of the ramp.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "kiosk",
+      "kind": "environment / event sequence",
+      "room": "kiosk",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask about the night bus. The vendor points with a spoon.",
+          "parser": "You ask about the night bus. The vendor points with a spoon.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "decision",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "exchange",
+      "kind": "authored conversation",
+      "room": "exchange-room",
+      "entryEffects": [
+        {
+          "type": "schedule",
+          "id": "exchange-close",
+          "delay": 1,
+          "effects": [
+            {
+              "type": "message",
+              "from": "VELVET / SERVICE",
+              "text": "The loading-bay witness has left. Upstairs attendance has been entered in the transfer record."
+            }
+          ]
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "objection",
+      "kind": "authored conversation",
+      "room": "exchange-room",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 4,
+          "original": "There is a duplicate with the board. Before you ask: I did not approve that either.",
+          "parser": "There is a duplicate with the board. Before you ask: I did not approve that either.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": [
+            "boardCopy"
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "bay",
+      "kind": "special interaction",
+      "room": "loading-bay",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "bus",
+      "kind": "environment / event sequence",
+      "room": "loading-bay",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "missed",
+      "kind": "environment / event sequence",
+      "room": "street",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "aftermath",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [
+        {
+          "type": "rumour",
+          "id": "outside-witness",
+          "text": "The outside witness has chosen a side. Nobody agrees which side.",
+          "faction": "umbrella"
+        }
+      ],
+      "passages": [
+        {
+          "index": 4,
+          "original": "Don’t read that here. Half of them are looking to see whether you read it.",
+          "parser": "Don’t read that here. Half of them are looking to see whether you read it.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "She is carrying the ledger in a brown service envelope. You ask why she has it.",
+          "parser": "She is carrying the ledger in a brown service envelope. You ask why she has it.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "contradiction",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "confession",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You tell him that is fair. The conversation becomes briefly awkward in an ordinary way. Neither of you has a particularly good next line.",
+          "parser": "He waits to see whether you think that is fair. The conversation becomes briefly awkward in an ordinary way. Neither of you has a particularly good next line.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "archive",
+      "kind": "special interaction",
+      "room": "archive",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "hidden",
+      "kind": "authored conversation",
+      "room": "kitchen",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You ask who decided which names to remove.",
+          "parser": "You ask who decided which names to remove.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "proof",
+      "kind": "environment / event sequence",
+      "room": "archive",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 6,
+          "original": "You read it a second time, looking for something that would make the sender less responsible for your being here. The signature stays the same.",
+          "parser": "You read it a second time, looking for something that would make the sender less responsible for your being here. The signature stays the same.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "sender",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 0,
+          "original": "You put the routing record on the table. For the first time tonight, the question is small enough to answer: why involve you without asking?",
+          "parser": "The routing record gives you something specific to ask about. For the first time tonight, the question is small enough to answer: why involve you without asking?",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "ledger",
+      "kind": "environment / event sequence",
+      "room": "archive",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "redact",
+      "kind": "special interaction",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 1,
+          "original": "Luca checks the dates left visible. Twice he asks for one to stay. Twice you ask whether it identifies someone. Once he agrees to remove it. The other time you remove it anyway.",
+          "parser": "Luca checks the dates left visible. Twice he asks for one to stay. Twice you ask whether it identifies someone. Once he agrees to remove it. The other time you remove it anyway.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "publish",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "bargain",
+      "kind": "authored conversation",
+      "room": "landing",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 0,
+          "original": "Celeste reads the terms you propose. She asks for one change: access to current board records, not personnel files. You agree on a date. She writes it herself.",
+          "parser": "Celeste reads the terms you propose. She asks for one change: access to current board records, not personnel files. You agree on a date. She writes it herself.",
+          "disposition": "retained within explicitly chosen authored outcome; review granularity during human playtest",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "You ask if she will correct it when people call it approval.",
+          "parser": "You ask if she will correct it when people call it approval.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "withhold",
+      "kind": "environment / event sequence",
+      "room": "street",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "mirror",
+      "kind": "phone content",
+      "room": "street",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "walk",
+      "kind": "environment / event sequence",
+      "room": "street",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "apartment",
+      "kind": "environment / event sequence",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "reflection",
+      "kind": "environment / event sequence",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "dawn",
+      "kind": "environment / event sequence",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "motel",
+      "kind": "phone content",
+      "room": "motel",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask where “there” is.",
+          "parser": "You ask where “there” is.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 6,
+          "original": "You tell her that sounds like another invitation without an explanation.",
+          "parser": "You tell her that sounds like another invitation without an explanation.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "end_protect",
+      "kind": "consequence outcome",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "end_public",
+      "kind": "consequence outcome",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "end_power",
+      "kind": "consequence outcome",
+      "room": "landing",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "end_ghost",
+      "kind": "consequence outcome",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "salon",
+      "kind": "authored conversation",
+      "room": "salon",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 6,
+          "original": "You ask whether the arrangement always works that smoothly.",
+          "parser": "You ask whether the arrangement always works that smoothly.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "reversal",
+      "kind": "authored conversation",
+      "room": "salon",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "listening",
+      "kind": "authored conversation",
+      "room": "stage",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "He holds out the headphones without moving closer. You take them. The first sound is someone opening a window. Then drums that seem to be recorded in the room you are standing in, until the song finally begins.",
+          "parser": "He holds out the headphones without moving closer. He holds one earcup outward; the first audible sound is someone opening a window. Then drums that seem to be recorded in the room you are standing in, until the song finally begins.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 7,
+          "original": "You ask whether he is joking. He takes the player back, opens a tiny text file, and shows you the credits. He is not.",
+          "parser": "You ask whether he is joking. He takes the player back, opens a tiny text file, and shows you the credits. He is not.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "casework",
+      "kind": "special interaction",
+      "room": "archive",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "carbon_case",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask what they did.",
+          "parser": "You ask what they did.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "proxy_case",
+      "kind": "authored conversation",
+      "room": "landing",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask whether anyone had prepared that separate consent.",
+          "parser": "You ask whether anyone had prepared that separate consent.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 6,
+          "original": "You ask whether the missing signature would have stopped anyone using your name.",
+          "parser": "You ask whether the missing signature would have stopped anyone using your name.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "letter_case",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask about the previous tenant. Whether they are alive. Whether they still want the invitation. Whether any of this was supposed to happen to you.",
+          "parser": "You ask about the previous tenant. Whether they are alive. Whether they still want the invitation. Whether any of this was supposed to happen to you.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 7,
+          "original": "You ask whether she can put you in contact.",
+          "parser": "You ask whether she can put you in contact.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "source_call",
+      "kind": "authored conversation",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 1,
+          "original": "The person agrees to a short call. They choose the name Ellis, say they are thirty-seven, and ask if anyone is recording. You put your phone away. Mara says hers is only on speaker because she asked permission to use it that way.",
+          "parser": "The person agrees to a short call. They choose the name Ellis, say they are thirty-seven, and ask if anyone is recording. They wait for an answer about recording. Mara says hers is only on speaker because she asked permission to use it that way.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "You tell them dates can be checked. The problem is that the records used the old address, so the most useful piece of corroboration would connect their current identity to an address they left deliberately.",
+          "parser": "You tell them dates can be checked. The problem is that the records used the old address, so the most useful piece of corroboration would connect their current identity to an address they left deliberately.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "assembly",
+      "kind": "special interaction",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "mara_r1",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 0,
+          "original": "Mara is counting clean glasses into groups of twelve. You ask whether there is anything you can do. She looks at the glasses, then at you, as if both have become slightly less predictable.",
+          "parser": "Mara is counting clean glasses into groups of twelve. You ask whether there is anything you can do. She looks at the glasses, then at you, as if both have become slightly less predictable.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "You ask how she remembers everyone's things. She says she doesn't. She remembers where they stand while thinking they've lost them. The scarf man always stands next to his own scarf.",
+          "parser": "You ask how she remembers everyone's things. She says she doesn't. She remembers where they stand while thinking they've lost them. The scarf man always stands next to his own scarf.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r2",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You tell her whether that's an apology you need. She says people get strangely intense about crisp flavours. A customer once asked her to wash the seasoning off. She had thought he was making a joke and laughed. He had thought she was refusing a reasonable request and written to management.",
+          "parser": "You tell her whether that's an apology you need. She says people get strangely intense about crisp flavours. A customer once asked her to wash the seasoning off. She had thought he was making a joke and laughed. He had thought she was refusing a reasonable request and written to management.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r3",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask whether she likes where she lives. She starts with the rent, stops, and tries again. The window opens. The shower takes a while. A person across the courtyard grows tomatoes in an old bath and gives them away when they get too many. Those are the parts she likes.",
+          "parser": "You ask whether she likes where she lives. She starts with the rent, stops, and tries again. The window opens. The shower takes a while. A person across the courtyard grows tomatoes in an old bath and gives them away when they get too many. Those are the parts she likes.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r4",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You haven't touched anything. You tell her that. She apologises too quickly, then spoils the apology by explaining what she thinks you were about to do. Someone always arrives late in her shift, discovers something broken, and begins announcing how it should have been maintained. Sometimes they are right. That has never made the announcement less exhausting.",
+          "parser": "You haven't touched anything. She notices that herself. She apologises too quickly, then spoils the apology by explaining what she thinks you were about to do. Someone always arrives late in her shift, discovers something broken, and begins announcing how it should have been maintained. Sometimes they are right. That has never made the announcement less exhausting.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r5",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You ask whether Celeste could pay the hours as emergency leave. Mara says she could. Asking requires telling her why Sera left. Sera specifically asked that the clinic visit remain private because it is not the first this month. A fairer record would cost somebody a confidence.",
+          "parser": "You ask whether Celeste could pay the hours as emergency leave. Mara says she could. Asking requires telling her why Sera left. Sera specifically asked that the clinic visit remain private because it is not the first this month. A fairer record would cost somebody a confidence.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r6",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 0,
+          "original": "Mara takes the bins to the service door. You follow with the smaller bag because she actually asks. The street smells of damp cardboard and the last food being cooked at the kiosk. Rain falls from the awning after the sky has finished with it.",
+          "parser": "Mara leaves the bins beside the service door. A smaller bag is tied and ready beside them. The street smells of damp cardboard and the last food being cooked at the kiosk. Rain falls from the awning after the sky has finished with it.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "You ask what staying would look like when there isn't something to fix. She thinks about it. Sitting down, probably. Talking about something neither of you can change tonight. She makes no promise that she will be particularly charming after this shift.",
+          "parser": "You ask what staying would look like when there isn't something to fix. She thinks about it. Sitting down, probably. Talking about something neither of you can change tonight. She makes no promise that she will be particularly charming after this shift.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r7",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        },
+        {
+          "type": "schedule",
+          "id": "mara-break-plan",
+          "delay": 95,
+          "effects": [
+            {
+              "type": "when",
+              "condition": {
+                "not": {
+                  "flag": "mara_closed"
+                }
+              },
+              "then": [
+                {
+                  "type": "flag",
+                  "key": "maraOtherPlan",
+                  "value": true
+                },
+                {
+                  "type": "message",
+                  "from": "Mara",
+                  "text": "taking the break with the cleaner. don’t rush on my account. cups are still there."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "schedule",
+          "id": "mara-phone-invite",
+          "delay": 8,
+          "effects": [
+            {
+              "type": "message",
+              "from": "MARA",
+              "text": "I should get a break later. Are you hoping to talk again, or should I make other plans?",
+              "replyKey": "mara-break"
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask whether she usually gets the break. She says sometimes. Once she spent it answering a delivery driver who had arrived at the wrong building, which she considers an impressive use of the word “break”. Tonight she intends to sit down, even if the counter has not become morally perfect.",
+          "parser": "You ask whether she usually gets the break. She says sometimes. Once she spent it answering a delivery driver who had arrived at the wrong building, which she considers an impressive use of the word “break”. Tonight she intends to sit down, even if the counter has not become morally perfect.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r8",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "maraOtherPlan"
+          },
+          "then": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "had the ten minutes. you can still have a cup. those aren’t the same appointment."
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You put it on the hook she points to. The remembered routine is small but immediate. She no longer has to explain where the dangerous cupboard is, and you no longer mistake the staff kettle for the one customers are allowed to use.",
+          "parser": "She points to the hook. The remembered routine is small but immediate. She no longer has to explain where the dangerous cupboard is, and you no longer mistake the staff kettle for the one customers are allowed to use.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 7,
+          "original": "You ask whether she wants advice. She looks up, almost smiles, and says no. Not yet. The question itself has done something useful.",
+          "parser": "You ask whether she wants advice. She looks up, almost smiles, and says no. Not yet. The question itself has done something useful.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r9",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "maraFood",
+            "value": "vinegar"
+          },
+          "then": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "vinegar packet by your cup. the good brand this time."
+            }
+          ]
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "maraFood",
+            "value": "salt"
+          },
+          "then": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "plain salt. no mouth injuries on company time."
+            }
+          ]
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "homeDetail",
+            "value": "fridge"
+          },
+          "then": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "my fridge does the clicking too. i put a folded menu under one foot. didn’t help. now it clicks over a menu."
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "The kettle clicks off before it has boiled. Mara presses the switch again with the patient hostility people reserve for appliances they cannot afford to replace. You tell her about a thing in your apartment that does something equally pointless. The comparison becomes an argument over which machine is more irritating, then wanders into stories about landlords who answer the wrong question.",
+          "parser": "The kettle clicks off before it has boiled. Mara presses the switch again with the patient hostility people reserve for appliances they cannot afford to replace. She invites a comparison from your apartment, then complains about landlords who answer the wrong question.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 4,
+          "original": "She tells you about a man who inspected her shower pressure while fully dressed and managed to wet one entire sleeve. For the rest of the visit he behaved as though she had arranged it deliberately. You ask whether she had. She looks hurt that you think she would waste an opportunity so inefficiently.",
+          "parser": "She tells you about a man who inspected her shower pressure while fully dressed and managed to wet one entire sleeve. For the rest of the visit he behaved as though she had arranged it deliberately. You ask whether she had. She looks hurt that you think she would waste an opportunity so inefficiently.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r10",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "mara_r11",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "ending",
+            "value": "public"
+          },
+          "then": [
+            {
+              "type": "relationship",
+              "npc": "mara",
+              "axis": "trust",
+              "amount": -2
+            },
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "one of the people named has called three times. i’m going to answer. this conversation may have to wait."
+            }
+          ]
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "ending",
+            "value": "protect"
+          },
+          "then": [
+            {
+              "type": "message",
+              "from": "Mara",
+              "text": "one person said yes to being asked tomorrow. one said no. both got to answer. that matters to me."
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 4,
+          "original": "You ask whether that is a warning about the friendship, or whatever this has become. She says she does not know yet. It is an answer with less comfort than a promise and more room than a verdict.",
+          "parser": "You ask whether that is a warning about the friendship, or whatever this has become. She says she does not know yet. It is an answer with less comfort than a promise and more room than a verdict.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r12",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You tell her what the moment felt like. She listens, asks one question, then admits she had heard a different intention. The admission is not dramatic. Neither of you has discovered a terrible secret. You are learning that company requires correction even when both people would prefer to be naturally good at it.",
+          "parser": "She asks what the moment felt like to you, then admits she may have heard a different intention. The admission is not dramatic. Neither of you has discovered a terrible secret. You are learning that company requires correction even when both people would prefer to be naturally good at it.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "mara_r13",
+      "kind": "relationship beat",
+      "room": "kitchen",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "mara",
+          "location": "kitchen"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "maraArc",
+            "value": "repaired"
+          },
+          "then": [
+            {
+              "type": "schedule",
+              "id": "mara-tomorrow",
+              "delay": 30,
+              "effects": [
+                {
+                  "type": "message",
+                  "from": "Mara",
+                  "text": "got home. not asking you to fix anything. just saying goodnight."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "celeste_r1",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "celeste_r2",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask whether this was her first choice of dinner. She says she ordered something sensible and then changed her mind while the person on the telephone was already reading the order back. The sensible thing probably arrived hot at somebody else's house.",
+          "parser": "You ask whether this was her first choice of dinner. She says she ordered something sensible and then changed her mind while the person on the telephone was already reading the order back. The sensible thing probably arrived hot at somebody else's house.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r3",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "celeste_r4",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": [
+        {
+          "index": 1,
+          "original": "When the member leaves, she says she should have let you answer. You ask what she thought when you first came in. She begins with the letter, then stops. That was what made you relevant. It was not the first thing she noticed.",
+          "parser": "When the member leaves, she says she should have let you answer. You ask what she thought when you first came in. She begins with the letter, then stops. That was what made you relevant. It was not the first thing she noticed.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r5",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask why she is telling you. She says because you have spent an evening hearing people describe her decisions after she has made them. This one is still undecided. She would like to know whether the advice sounds simpler from your side of the counter.",
+          "parser": "You ask why she is telling you. She says because you have spent an evening hearing people describe her decisions after she has made them. This one is still undecided. She would like to know whether the advice sounds simpler from your side of the counter.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r6",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "The table is slightly too small for a conversation that pretends to be formal. You move a water glass to make room for her notebook. She leaves the notebook shut. Beyond the screen, people pass in fragments: an elbow, a laugh, somebody looking for a chair. Here, being listened to feels less public.",
+          "parser": "The table is slightly too small for a conversation that pretends to be formal. You move a water glass to make room for her notebook. She leaves the notebook shut. Beyond the screen, people pass in fragments: an elbow, a laugh, somebody looking for a chair. Here, being listened to feels less public.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "You ask whether she ever comes to Velvet when she is not working. She says yes, but people remember that she can solve their problems. Once somebody asked her about an invoice in the middle of a goodbye. She had been angry enough to remember the invoice and embarrassed enough to forget what she had meant to say.",
+          "parser": "You ask whether she ever comes to Velvet when she is not working. She says yes, but people remember that she can solve their problems. Once somebody asked her about an invoice in the middle of a goodbye. She had been angry enough to remember the invoice and embarrassed enough to forget what she had meant to say.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r7",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        },
+        {
+          "type": "schedule",
+          "id": "celeste-phone-invite",
+          "delay": 8,
+          "effects": [
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "I enjoyed having a conversation without an agenda for a few minutes. We can finish it later if time allows.",
+              "replyKey": "celeste-later"
+            }
+          ]
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "celeste_r8",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": [
+        {
+          "index": 5,
+          "original": "You ask what happened while you were elsewhere. She says she made the staffing decision, dealt with the immediate consequences, and called her sister back. None of those actions solved the other two. She has written tomorrow's follow-up on her hand because the notebook has become a place to forget things efficiently.",
+          "parser": "You ask what happened while you were elsewhere. She says she made the staffing decision, dealt with the immediate consequences, and called her sister back. None of those actions solved the other two. She has written tomorrow's follow-up on her hand because the notebook has become a place to forget things efficiently.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r9",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "celeste_r10",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "celeste_r11",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "ending",
+            "value": "public"
+          },
+          "then": [
+            {
+              "type": "relationship",
+              "npc": "celeste",
+              "axis": "trust",
+              "amount": -2
+            },
+            {
+              "type": "message",
+              "from": "CELESTE",
+              "text": "The desk has the published account. Tomorrow I will answer it in writing. Tonight I can still speak to you."
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask whether she can separate the two. She says not immediately. She can try to behave as though she knows the difference while the rest catches up.",
+          "parser": "You ask whether she can separate the two. She says not immediately. She can try to behave as though she knows the difference while the rest catches up.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r12",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        }
+      ],
+      "passages": [
+        {
+          "index": 5,
+          "original": "When you hand back the glasses, your fingers do not quite meet. The gap is brief and noticeable. She puts them in their case, shuts it, and gives you time to choose an answer that belongs to you.",
+          "parser": "She opens the glasses case and gives you time to choose an answer that belongs to you.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "celeste_r13",
+      "kind": "relationship beat",
+      "room": "office",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "celeste",
+          "location": "office"
+        },
+        {
+          "type": "schedule",
+          "id": "celeste-goodnight",
+          "delay": 25,
+          "effects": [
+            {
+              "type": "when",
+              "condition": {
+                "flag": "celesteDog"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "CELESTE",
+                  "text": "My sister says the dog returns in episode six. This is the only information I am prepared to call reassuring tonight."
+                }
+              ]
+            },
+            {
+              "type": "when",
+              "condition": {
+                "flag": "celesteMeal",
+                "value": "toast"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "CELESTE",
+                  "text": "Toast was the correct answer. The pickle has lost its appeal."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 5,
+          "original": "You take one last look at the closed glasses case. Tomorrow she will have three intact pairs available and will probably still misplace the one she wants. You know that about her now. It is not leverage. It is simply part of the person you will picture when her name appears on your phone.",
+          "parser": "You take one last look at the closed glasses case. Tomorrow she will have three intact pairs available and will probably still misplace the one she wants. You know that about her now. It is not leverage. It is simply part of the person you will picture when her name appears on your phone.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r1",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 6,
+          "original": "You ask whether he prefers this part of the work. He says sometimes. A cable can be wrong without taking the criticism personally. Then he looks at the adapter and admits he did spend several minutes blaming it for being in the place he himself had put it.",
+          "parser": "You ask whether he prefers this part of the work. He says sometimes. A cable can be wrong without taking the criticism personally. Then he looks at the adapter and admits he did spend several minutes blaming it for being in the place he himself had put it.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r2",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You tell him what you want. He begins to hand you the wrong sandwich, catches himself, and asks you to repeat it. The correction is so immediate that it is almost easier to pretend the mistake did not happen. You resist helping him that way.",
+          "parser": "He begins to offer a sandwich, catches himself, and asks what you would prefer. The correction is so immediate that it is almost easier to pretend the mistake did not happen. You resist helping him that way.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "You ask whether he apologised. He says yes, though for years he told the story as if everybody else's expectation had been the ridiculous part. He is trying to stop improving anecdotes at the expense of people who were actually hungry.",
+          "parser": "You ask whether he apologised. He says yes, though for years he told the story as if everybody else's expectation had been the ridiculous part. He is trying to stop improving anecdotes at the expense of people who were actually hungry.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r3",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask what he kept. Something old enough to know without concentrating; something his downstairs neighbour calls unlistenable; a song his father liked which he used to dislike on principle. He does not name the absent person. You leave that part unrequested.",
+          "parser": "You ask what he kept. Something old enough to know without concentrating; something his downstairs neighbour calls unlistenable; a song his father liked which he used to dislike on principle. He does not name the absent person. You leave that part unrequested.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 4,
+          "original": "When he asks what you want to hear on the way home, the answer can stay a preference. You do not have to provide an origin story. He seems grateful when you give him something ordinary to remember.",
+          "parser": "When he asks what you want to hear on the way home, the answer can stay a preference. You do not have to provide an origin story. He seems willing to remember something ordinary, if you choose to tell him.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r4",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask what, exactly, he told them. He repeats it. The wording is friendly, inaccurate and useful to him. It makes his unfinished plan sound as if another person already believes in it. You recognise the temptation without appreciating being made into supporting evidence.",
+          "parser": "You ask what, exactly, he told them. He repeats it. The wording is friendly, inaccurate and useful to him. It makes his unfinished plan sound as if another person already believes in it. You recognise the temptation without appreciating being made into supporting evidence.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "He begins to explain that he did not intend to commit you. You tell him the member heard a commitment. He stops explaining his intention and asks whether you want him to correct it now.",
+          "parser": "He begins to explain that he did not intend to commit you. He seems to hear the commitment in his own account. He stops explaining his intention and asks whether you want him to correct it now.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r5",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask what Celeste agreed to. A gift toward the repair, with no approval over his work. It was generous. He accepted it gratefully. Neither fact prevents him from wanting to minimise it now that generosity has become inconvenient to explain.",
+          "parser": "You ask what Celeste agreed to. A gift toward the repair, with no approval over his work. It was generous. He accepted it gratefully. Neither fact prevents him from wanting to minimise it now that generosity has become inconvenient to explain.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r6",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask whether the jokes make it easier. He says they make it faster. Sometimes faster is useful. Sometimes it means he reaches the laugh before deciding what he actually wanted to say.",
+          "parser": "You ask whether the jokes make it easier. He says they make it faster. Sometimes faster is useful. Sometimes it means he reaches the laugh before deciding what he actually wanted to say.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r7",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        },
+        {
+          "type": "schedule",
+          "id": "luca-availability",
+          "delay": 26,
+          "effects": [
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "Case returned. I am helping the cleaner label the spare keys. If you want another conversation, find me after you finish yours."
+            },
+            {
+              "type": "flag",
+              "key": "lucaInvited",
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "schedule",
+          "id": "luca-phone-invite",
+          "delay": 8,
+          "effects": [
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "Back near the keys when you are done. A message, not a booking. I am learning.",
+              "replyKey": "luca-later"
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 0,
+          "original": "Luca needs to return the equipment case to a storage room. He asks if he can message you when he is done. You ask whether he means a message or another rounded-up commitment. He accepts the question with a wince.",
+          "parser": "Luca needs to return the equipment case to a storage room. He asks if he can message you when he is done. You ask whether he means a message or another rounded-up commitment. He accepts the question with a wince.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r8",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        },
+        {
+          "type": "message",
+          "from": "LUCA",
+          "format": "voice",
+          "text": "There are now labels on all the keys. One label says UNKNOWN, which I maintain is progress. I am leaving the recorder here; the rest of tonight can remain a conversation."
+        }
+      ],
+      "passages": [
+        {
+          "index": 7,
+          "original": "You ask how the rest of his evening went. He begins with the key, then remembers the funding conversation, then looks at you to see which kind of answer you meant. Both, you tell him. You came back to a person, not just the most dramatic thing that happened to him. He puts the marker down and starts again.",
+          "parser": "You ask how the rest of his evening went. He begins with the key, then remembers the funding conversation, then looks at you to see which kind of answer you meant. Both, you tell him. You came back to a person, not just the most dramatic thing that happened to him. He puts the marker down and starts again.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r9",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        },
+        {
+          "type": "when",
+          "condition": {
+            "flag": "ending",
+            "value": "power"
+          },
+          "then": [
+            {
+              "type": "relationship",
+              "npc": "luca",
+              "axis": "trust",
+              "amount": -2
+            },
+            {
+              "type": "message",
+              "from": "LUCA",
+              "text": "Using the document as leverage changes what I can trust you with. It does not mean I have nothing left to say."
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask which consequence he is worried about. He names the people who will have to explain themselves tomorrow, and the people who may still be unable to. He does not claim to know what every person in the room privately wanted. He knows what a few asked him to do, which is already enough to make agreement complicated.",
+          "parser": "You ask which consequence he is worried about. He names the people who will have to explain themselves tomorrow, and the people who may still be unable to. He does not claim to know what every person in the room privately wanted. He knows what a few asked him to do, which is already enough to make agreement complicated.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r10",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask why he needs a polished explanation. He says because a small, plain admission feels disproportionately large when he types it. He has been deleting the same nine words for several minutes.",
+          "parser": "You ask why he needs a polished explanation. He says because a small, plain admission feels disproportionately large when he types it. He has been deleting the same nine words for several minutes.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r11",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask what will be different. He says he will ask before describing your availability, show you wording that concerns you, and stop using a warm conversation as evidence of an agreement. They are small enough changes to be observable. They are also things he should already have been doing.",
+          "parser": "You ask what will be different. He says he will ask before describing your availability, show you wording that concerns you, and stop using a warm conversation as evidence of an agreement. They are small enough changes to be observable. They are also things he should already have been doing.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r12",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        }
+      ],
+      "passages": [
+        {
+          "index": 1,
+          "original": "You ask whether that would delay his own plans. He says a little. He has promised to call his father before sleeping; the time difference makes the window narrow. He can offer the corner, not the whole walk. You like knowing the shape of the offer before deciding what to put inside it.",
+          "parser": "You ask whether that would delay his own plans. He says a little. He has promised to call his father before sleeping; the time difference makes the window narrow. He can offer the corner, not the whole walk. You like knowing the shape of the offer before deciding what to put inside it.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "luca_r13",
+      "kind": "relationship beat",
+      "room": "stage",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "luca",
+          "location": "main room"
+        },
+        {
+          "type": "schedule",
+          "id": "luca-track",
+          "delay": 23,
+          "effects": [
+            {
+              "type": "when",
+              "condition": {
+                "flag": "lucaMusic",
+                "value": "new"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "LUCA",
+                  "text": "The neighbour’s hated track is called Slow Repairs. I found a live version with a terrible introduction. Start after the talking."
+                }
+              ]
+            },
+            {
+              "type": "when",
+              "condition": {
+                "flag": "lucaMusic",
+                "value": "familiar"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "LUCA",
+                  "text": "Sent myself a reminder to find the old recording. You wanted something familiar, so I am resisting the urge to improve the recommendation."
+                }
+              ]
+            },
+            {
+              "type": "when",
+              "condition": {
+                "flag": "lucaMusic",
+                "value": "silence"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "LUCA",
+                  "text": "No playlist. Remembered you wanted quiet. This message is the last administrative obstacle to that."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "index": 0,
+          "original": "Luca folds the receipt rather than handing it back. He says he will send the recommendation when he finds the right recording. You tell him he can also forget until tomorrow. He appears to consider this a useful amendment.",
+          "parser": "Luca folds the receipt rather than handing it back. He says he will send the recommendation when he finds the right recording. You tell him he can also forget until tomorrow. He appears to consider this a useful amendment.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r1",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "She gives you a chair that seems to have been designed to discourage conversation. You sit anyway. The street has changed since you arrived. Delivery vans have replaced the taxis at the far kerb, and somebody has finally collected the collapsed umbrella beside the drain.",
+          "parser": "She offers a chair that seems to have been designed to discourage conversation. It is there if you want it. The street has changed since you arrived. Delivery vans have replaced the taxis at the far kerb, and somebody has finally collected the collapsed umbrella beside the drain.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "You ask whether she minds returning. She says yes. That is why she asked to be paid for it. Caring that a colleague has a problem does not make her time cease to be time.",
+          "parser": "You ask whether she minds returning. She says yes. That is why she asked to be paid for it. Caring that a colleague has a problem does not make her time cease to be time.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r2",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You suggest a sign. She asks what the sign should say beyond MITTEN. Neither of you finds a useful answer. The book has a page folded over at a recipe involving lemons. You resist the urge to decide that makes it a clue about the person who lost it.",
+          "parser": "You suggest a sign. She asks what the sign should say beyond MITTEN. Neither of you finds a useful answer. The book has a page folded over at a recipe involving lemons. You resist the urge to decide that makes it a clue about the person who lost it.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 4,
+          "original": "You ask whether she ever loses things. She holds up a glove from her own pocket. It is not the partner to the one on her other hand. She noticed an hour ago and has been hoping nobody would ask.",
+          "parser": "You ask whether she ever loses things. She holds up a glove from her own pocket. It is not the partner to the one on her other hand. She noticed an hour ago and has been hoping nobody would ask.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "The confession changes the lost-property box from a display of other people's failures into a shared practical inconvenience. You move the mitten where its owner might actually see it. Inez tries on the mismatched glove again, decides it is warm enough and lets the issue rest.",
+          "parser": "The confession changes the lost-property box from a display of other people's failures into a shared practical inconvenience. The mitten is still in the box, waiting for a decision about where its owner might see it. Inez tries on the mismatched glove again, decides it is warm enough and lets the issue rest.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r3",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask whether she cooks. She says she can feed herself and three other people without enjoying an audience. Her sister watches cooking competitions and shouts at contestants for using bowls inefficiently. Inez prefers the radio because she can disagree while doing something else.",
+          "parser": "You ask whether she cooks. She says she can feed herself and three other people without enjoying an audience. Her sister watches cooking competitions and shouts at contestants for using bowls inefficiently. Inez prefers the radio because she can disagree while doing something else.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "She asks what you put on when a room feels too quiet. Music, familiar voices, nothing at all: she seems interested in the scale of the answer, not what it reveals about your childhood. You find yourself wanting to answer accurately because she is giving the question such a modest amount of space.",
+          "parser": "She asks what you put on when a room feels too quiet. Music, familiar voices, nothing at all: she seems interested in the scale of the answer, not what it reveals about your childhood. You find yourself wanting to answer accurately because she is giving the question such a modest amount of space.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 5,
+          "original": "When you ask what happened to the cake, she says they never found out. The caller disconnected. There are unresolved mysteries she is entirely happy to leave unresolved.",
+          "parser": "When you ask what happened to the cake, she says they never found out. The caller disconnected. There are unresolved mysteries she is entirely happy to leave unresolved.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r4",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You ask whether that happens often. She says it happens to everybody. What matters is whether people feel able to bring the grey trolley back and tell her. Being known as accurate can make correction feel like an accusation, which is a foolish arrangement if accuracy is what you actually want.",
+          "parser": "You ask whether that happens often. She says it happens to everybody. What matters is whether people feel able to bring the grey trolley back and tell her. Being known as accurate can make correction feel like an accusation, which is a foolish arrangement if accuracy is what you actually want.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r5",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "inez_r6",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You ask why she said yes to covering. Money, she says first. Then habit. Then because she remembers being the person who needed someone to answer. The reasons can coexist without turning the decision into an act of sainthood.",
+          "parser": "You ask why she said yes to covering. Money, she says first. Then habit. Then because she remembers being the person who needed someone to answer. The reasons can coexist without turning the decision into an act of sainthood.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        },
+        {
+          "index": 4,
+          "original": "A bus goes past in the wrong direction. Inez checks the display anyway. You tell her that seems optimistic. She says sometimes a useful bus is having a bad day too.",
+          "parser": "A bus goes past in the wrong direction. Inez checks the display anyway. You tell her that seems optimistic. She says sometimes a useful bus is having a bad day too.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r7",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        },
+        {
+          "type": "schedule",
+          "id": "inez-phone-invite",
+          "delay": 8,
+          "effects": [
+            {
+              "type": "message",
+              "from": "INEZ",
+              "text": "Would you welcome one later check-in? Leaving your travel private is fine too.",
+              "replyKey": "inez-check"
+            }
+          ]
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "inez_r8",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 5,
+          "original": "You ask whether she regrets replying. She says regret is too large a word for this stage. She has made one part of the problem clearer and another part less comfortable. Tomorrow may reveal whether that was useful.",
+          "parser": "You ask whether she regrets replying. She says regret is too large a word for this stage. She has made one part of the problem clearer and another part less comfortable. Tomorrow may reveal whether that was useful.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r9",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "inez_r10",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "inez_r11",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 0,
+          "original": "When Inez returns, she asks how you are getting home. The question is practical. Her second question, about whether you know the route, makes you feel younger than you are. You tell her you know where you live.",
+          "parser": "When Inez returns, she asks how you are getting home. The question is practical. Her second question, about whether you know the route, makes you feel younger than you are. She waits for your answer.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        },
+        {
+          "index": 3,
+          "original": "You ask whether she finds that easy. She says no. It is why she tries to stop after asking once. Tonight she did not stop. The admission is small and unadorned, which makes it easier to say that the second question bothered you without escalating it into a fight.",
+          "parser": "You ask whether she finds that easy. She says no. It is why she tries to stop after asking once. Tonight she did not stop. The admission is small and unadorned, which makes it easier to say that the second question bothered you without escalating it into a fight.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r12",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        }
+      ],
+      "passages": [
+        {
+          "index": 3,
+          "original": "You hand over the cup if it is still on the ledge. The sister puts it into the bag with more care than its appearance seems to warrant. It may be a favourite. You do not need to know why.",
+          "parser": "The sister retrieves the cup from the ledge and puts it into the bag with more care than its appearance seems to warrant. It may be a favourite. You do not need to know why.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "inez_r13",
+      "kind": "relationship beat",
+      "room": "vestibule",
+      "entryEffects": [
+        {
+          "type": "presence",
+          "npc": "inez",
+          "location": "door"
+        },
+        {
+          "type": "schedule",
+          "id": "inez-home",
+          "delay": 22,
+          "effects": [
+            {
+              "type": "when",
+              "condition": {
+                "flag": "inezCheck"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "INEZ",
+                  "text": "Home. One check-in, as agreed: I hope you found what you needed before leaving. No reply required."
+                }
+              ]
+            },
+            {
+              "type": "when",
+              "condition": {
+                "flag": "inezRadio",
+                "value": "voices"
+              },
+              "then": [
+                {
+                  "type": "message",
+                  "from": "INEZ",
+                  "text": "The recipe programme is Second Helpings. Afternoon repeats. The mysterious egg substitute remains unidentified."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "late_room",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [
+        {
+          "type": "flag",
+          "key": "lateExpanded",
+          "value": true
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "late_second",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "late_table",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [
+        {
+          "type": "when",
+          "condition": {
+            "not": {
+              "flag": "arc_mara"
+            }
+          },
+          "then": [
+            {
+              "type": "schedule",
+              "id": "unchosen-mara",
+              "delay": 24,
+              "effects": [
+                {
+                  "type": "message",
+                  "from": "MARA",
+                  "text": "Taking my break with the cleaner. If I miss you leaving, have a good walk home."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "when",
+          "condition": {
+            "not": {
+              "flag": "arc_celeste"
+            }
+          },
+          "then": [
+            {
+              "type": "schedule",
+              "id": "unchosen-celeste",
+              "delay": 24,
+              "effects": [
+                {
+                  "type": "message",
+                  "from": "CELESTE",
+                  "text": "I have a family call to finish. The desk can take any practical questions until morning."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "when",
+          "condition": {
+            "not": {
+              "flag": "arc_luca"
+            }
+          },
+          "then": [
+            {
+              "type": "schedule",
+              "id": "unchosen-luca",
+              "delay": 24,
+              "effects": [
+                {
+                  "type": "message",
+                  "from": "LUCA",
+                  "text": "Helping label the spare keys. Another night for the long conversation, perhaps."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "when",
+          "condition": {
+            "not": {
+              "flag": "arc_inez"
+            }
+          },
+          "then": [
+            {
+              "type": "schedule",
+              "id": "unchosen-inez",
+              "delay": 24,
+              "effects": [
+                {
+                  "type": "message",
+                  "from": "INEZ",
+                  "text": "My sister is collecting me after handover. Leave anything unfinished with the desk."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "message",
+          "from": "VELVET DESK",
+          "text": "The side entrance will be locked at closing. Use the lit front door when you leave.",
+          "attachment": "velvetExterior"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "scene": "late_accounts",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 4,
+          "original": "Across the room somebody checks a booking for tomorrow. The building is already beginning the next day while you are still choosing the shape of this one. You sit at the clear table, read the terms again and let the decision become yours.",
+          "parser": "Across the room somebody checks a booking for tomorrow. The building is already beginning the next day while you are still choosing the shape of this one. The clear table leaves space to read the terms again before deciding.",
+          "disposition": "parser presentation corrected",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "crossed_shift",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "closing_room",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "closing_second",
+      "kind": "environment / event sequence",
+      "room": "bar",
+      "entryEffects": [],
+      "passages": []
+    },
+    {
+      "scene": "closing_table",
+      "kind": "environment / event sequence",
+      "room": "street",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 0,
+          "original": "The last departures happen in an untidy cluster. Somebody cannot find a coat they have put on. Somebody returns a borrowed charger with the gravity of a person settling an old debt. You move aside for a cleaner taking a bag through the doorway.",
+          "parser": "The last departures happen in an untidy cluster. Somebody cannot find a coat they have put on. Somebody returns a borrowed charger with the gravity of a person settling an old debt. You move aside for a cleaner taking a bag through the doorway.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    },
+    {
+      "scene": "home_callback",
+      "kind": "environment / event sequence",
+      "room": "apartment",
+      "entryEffects": [],
+      "passages": [
+        {
+          "index": 2,
+          "original": "You read what has arrived, if you want to. A remembered preference feels different on this side of the door. It no longer has to share the table with the evidence. There is room to like that somebody paid attention and still be angry with them about another part of the evening.",
+          "parser": "You read what has arrived, if you want to. A remembered preference feels different on this side of the door. It no longer has to share the table with the evidence. There is room to like that somebody paid attention and still be angry with them about another part of the evening.",
+          "disposition": "retained reciprocal conversation / trivial presentation",
+          "reveals": []
+        }
+      ]
+    }
+  ]
+}
