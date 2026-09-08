@@ -63,6 +63,7 @@ These are fixture results, not predictions of SDXL image complexity or savings.
 ## Validation
 
 - Full `npm run check`: **963 tests**, narrative QA with zero errors, deterministic/fuzz routes, 12 parser campaigns, 60 natural-language campaigns and embodiment audit. The pre-existing Motel conditional-exit review note remains.
+- The existing thirty-campaign seed-coverage test has a 20-second timeout for shared CI runners; its assertions and campaign count are unchanged.
 - Python pipeline: **9 tests**, including deterministic seed/image output, prompt facts, CPU/CUDA weight options, dry runs without ML imports, sidecars, contact sheets, changed-source rejection, no-overwrite protection and promotion in a temporary repository.
 - Existing browser suite: **11 accessibility scans**, parser input, IME, drafts, history/completion, panels, save/reload, narrow layouts and keyboard viewports.
 - Publication browser suite against the production `/freak-city/` preview: **5 accessibility scans**, working assets, adulthood confirmation, parser, local saves, optional audio and production debugger exclusion; no unexpected requests or runtime errors.

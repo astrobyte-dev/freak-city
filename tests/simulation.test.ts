@@ -55,6 +55,7 @@ describe("deterministic campaigns and paths", () => {
       });
   it("same seed and actions have byte-identical state", () =>
     expect(playRoute("honest").state).toEqual(playRoute("honest").state));
+  // Thirty full campaigns can exceed the default five seconds on shared CI CPUs.
   it("seeds cover three coherent authored truths", () => {
     const variants = new Set(
       Array.from({ length: 30 }, (_, i) => newGame(`seed-${i}`).variant),
@@ -67,7 +68,7 @@ describe("deterministic campaigns and paths", () => {
         s.inventory.filter((x) => ["carbon", "token", "register"].includes(x)),
       ).toHaveLength(1);
     }
-  });
+  }, 20_000);
   it("contrasting play styles finish with materially distinct worlds", () => {
     const runs = Object.keys(routes).map((x) => playRoute(x).state);
     expect(new Set(runs.map((s) => s.scene)).size).toBe(4);
