@@ -16,3 +16,6 @@ jobs:
       - run: npm ci
       - run: npm run format:check
       - run: npm run check
+      - run: npm run visuals:validate
+      - run: python3 -m pip install "pillow>=10,<13"
+      - run: npm run test:visual-gen

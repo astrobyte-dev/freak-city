@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+"""Manifest -> PromptSpec -> CandidateAsset[]. No implicit promotion."""
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path
+import sys
+from prompt_builder import build_prompt
+from generator import VERSION, MODEL, SDXLTurbo, fixture_image, retro_crunch
+from contact_sheet import contact_sheet
+
+
+def seed_for(base, index):
+    if not 0 <= base <= 2**32 - 1 or index < 0:
+        raise ValueError("Seed must be an integer in 0..4294967295")
+    return (base + index) % 2**32
+
+
+def generate(manifest, options):
+    spec = build_prompt(manifest, options.variant)
+    if not 1 <= options.count <= 32 or not 1 <= options.steps <= 4:
+        raise ValueError("Count must be 1..32 and SDXL Turbo steps 1..4")
+    if options.width % 64 or options.height % 64 or not 256 <= options.width <= 1024 or not 256 <= options.height <= 1024:
+        raise ValueError("Dimensions must be multiples of 64, between 256 and 1024")
+    if not 32 <= options.pixel_width <= 640 or not 2 <= options.colors <= 256 or not 0.5 <= options.contrast <= 2:
+        raise ValueError("Invalid pixel-width, palette or contrast settings")
+    if options.guidance_scale != 0:
+        raise ValueError("SDXL Turbo requires --guidance-scale 0; negative prompts are not enforced")
+    seed_for(options.seed, 0)
+    settings = {"width": options.width, "height": options.height, "steps": options.steps, "guidanceScale": 0,
+                "pixelWidth": options.pixel_width, "colors": options.colors, "contrast": options.contrast,
+                "revision": options.revision, "requestedDevice": options.device}
+    identity = {"spec": spec, "settings": settings, "seed": options.seed, "count": options.count, "backend": options.backend, "version": VERSION}
+    run_id = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:12]
+    root = Path(options.output).resolve()
+    stage = root / ("plans" if options.dry_run else "raw") / run_id
+    if stage.exists():
+        raise ValueError(f"Run {run_id} already exists. Use another output directory or seed; original candidates are never overwritten.")
+    stage.mkdir(parents=True)
+    (stage / "prompt-spec.json").write_text(json.dumps(spec, indent=2) + "\n")
+    if options.dry_run:
+        (stage / "dry-run.json").write_text(json.dumps({**identity, "reviewStatus": "draft", "modelExecuted": False}, indent=2) + "\n")
+        print(f"Dry run: {stage}. No image model was imported or executed.")
+        return []
+    backend = SDXLTurbo(options.device, options.allow_cpu, options.revision, options.offline) if options.backend == "sdxl" else None
+    candidates = []
+    for index in range(options.count):
+        seed = seed_for(options.seed, index)
+        name = f"{spec['roomId']}__{spec['variantId']}__{spec['state'].get('weather', 'rain')}__candidate-{index+1:02}"
+        path = stage / f"{name}.png"
+        raw = backend.generate(spec, settings, seed) if backend else fixture_image(seed, options.width, options.height)
+        image = retro_crunch(raw, options.pixel_width, options.colors, options.contrast)
+        image.save(path, "PNG")
+        metadata = {**spec, "seed": seed, "model": MODEL if backend else "procedural-fixture (NOT SDXL)",
+                    "generationSettings": settings, "dimensions": {"width": image.width, "height": image.height},
+                    "createdAt": datetime.now(timezone.utc).isoformat(), "sourceGeneratorVersion": VERSION,
+                    "reviewStatus": "draft", "backend": options.backend, "modelExecuted": bool(backend),
+                    "environment": backend.environment if backend else {"device": "cpu", "purpose": "pipeline test"},
+                    "sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "rawBytes": path.stat().st_size, "runId": run_id}
+        path.with_suffix(".json").write_text(json.dumps(metadata, indent=2) + "\n")
+        candidates.append({"path": str(path), "seed": seed, "backend": options.backend, "metadata": metadata})
+    sheet = contact_sheet(candidates, root / "review" / run_id / "contact-sheet.webp")
+    print(json.dumps({"runId": run_id, "candidates": len(candidates), "contactSheet": str(sheet), "modelExecuted": bool(backend)}, indent=2))
+    return candidates
+
+
+def arguments(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest", required=True)
+    parser.add_argument("--output", default=".visuals/generated")
+    parser.add_argument("--variant")
+    parser.add_argument("--count", type=int, default=4)
+    parser.add_argument("--seed", type=int, default=2741)
+    parser.add_argument("--steps", type=int, default=2)
+    parser.add_argument("--guidance-scale", type=float, default=0)
+    parser.add_argument("--width", type=int, default=640)
+    parser.add_argument("--height", type=int, default=448)
+    parser.add_argument("--pixel-width", type=int, default=320)
+    parser.add_argument("--colors", type=int, default=48)
+    parser.add_argument("--contrast", type=float, default=1.3)
+    parser.add_argument("--backend", choices=["sdxl", "fixture"], default="sdxl")
+    parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda")
+    parser.add_argument("--allow-cpu", action="store_true")
+    parser.add_argument("--revision", help="Pin a model revision for stronger reproducibility")
+    parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
+    return parser.parse_args(argv)
+
+
+if __name__ == "__main__":
+    try:
+        opts = arguments()
+        generate(json.loads(Path(opts.manifest).read_text()), opts)
+    except (ValueError, RuntimeError, OSError, ImportError, KeyError) as error:
+        print(f"Visual generation failed: {error}", file=sys.stderr)
+        sys.exit(1)

@@ -20,3 +20,16 @@ Thumbs.db
 
 # Per-machine browser publication reports (regenerated locally)
 /artifacts/publication-browser-*.json
+
+# Local generator jobs, candidates and browser performance measurements
+.visuals/
+/artifacts/visual-browser-*.json
+
+# Development-only Python environments, bytecode and model weights
+.venv/
+__pycache__/
+*.pyc
+*.safetensors
+*.ckpt
+*.pt
+*.pth

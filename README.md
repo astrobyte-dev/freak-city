@@ -67,6 +67,10 @@ For a parser problem, [open a bug report](https://github.com/astrobyte-dev/freak
 
 No open-source licence has been assigned to the original game, story or artwork. Third-party component and font notices are included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The current artwork is generated environment art; no image or model service runs during play.
 
+## Visual-system development preview
+
+The `feature/state-driven-visuals` branch adds a simulation-driven pixel viewport and a local collaborator-generator pipeline. It is not merged into the linked Pages playtest. Start with the [visual pass report](docs/VISUAL-PASS-REPORT.md), [architecture](docs/VISUAL-ARCHITECTURE.md), [style guide](docs/VISUAL-STYLE.md) and [local generation workflow](docs/GENERATIVE-ASSET-PIPELINE.md). The story and parser remain the existing blind-playtest baseline.
+
 ## Run the development build
 
 Use Node.js 22 LTS (see `.nvmrc`) and npm:
