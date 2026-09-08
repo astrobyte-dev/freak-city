@@ -25,6 +25,7 @@
     "visuals": "tsx scripts/visuals.ts",
     "visuals:validate": "tsx scripts/visuals.ts --validate",
     "test:visuals:browser": "tsx scripts/visual-browser.ts",
+    "test:visuals:roles:browser": "tsx scripts/visual-role-browser.ts",
     "visuals:promote": "python3 tools/visual-gen/promote.py",
     "test:visual-gen": "python3 -m unittest discover -s tools/visual-gen/tests -v"
   },

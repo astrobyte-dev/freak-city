@@ -1,0 +1,81 @@
+{
+  "runId": "54fd0e217eac",
+  "role": "canonical-room",
+  "modelExecuted": true,
+  "verified": true,
+  "candidates": [
+    {
+      "candidate": 1,
+      "seed": 8317,
+      "pngBytes": 74875,
+      "pixelBytes": 64032,
+      "sidecarBytes": 12432,
+      "webpBytes": 29432,
+      "sha256": "480fd728578f15d785fa7c813686b39f3d5b10e42e5a5e7faac709206d163558"
+    },
+    {
+      "candidate": 2,
+      "seed": 8318,
+      "pngBytes": 82357,
+      "pixelBytes": 70184,
+      "sidecarBytes": 12432,
+      "webpBytes": 31146,
+      "sha256": "9c57c03521812d3df8284089b4d1dc9522298a81dbc7d44de53556e5065d1752"
+    },
+    {
+      "candidate": 3,
+      "seed": 8319,
+      "pngBytes": 67788,
+      "pixelBytes": 57271,
+      "sidecarBytes": 12432,
+      "webpBytes": 25692,
+      "sha256": "665dfe0704d081ff46c6f076178f04b6d69fd3b1b08f080112cc6141671761e8"
+    },
+    {
+      "candidate": 4,
+      "seed": 8320,
+      "pngBytes": 74423,
+      "pixelBytes": 63928,
+      "sidecarBytes": 12432,
+      "webpBytes": 28350,
+      "sha256": "f984c0e5c49a06710e779cba6d9f35b620b6ee52b2dc3604489b22d6dc2fa61f"
+    },
+    {
+      "candidate": 5,
+      "seed": 8321,
+      "pngBytes": 81951,
+      "pixelBytes": 70099,
+      "sidecarBytes": 12432,
+      "webpBytes": 31076,
+      "sha256": "095b4d06d9935d17e80228a5142be6721827ca8ae5f9752a5420f586a9c244f9"
+    },
+    {
+      "candidate": 6,
+      "seed": 8322,
+      "pngBytes": 92342,
+      "pixelBytes": 77364,
+      "sidecarBytes": 12432,
+      "webpBytes": 36272,
+      "sha256": "4649e073d188b60d753a64832acae051b1ec79758f1c8a3b742bec0ce3deb920"
+    },
+    {
+      "candidate": 7,
+      "seed": 8323,
+      "pngBytes": 66295,
+      "pixelBytes": 56348,
+      "sidecarBytes": 12432,
+      "webpBytes": 27458,
+      "sha256": "f54b19d33ae0d4d1ad477e0fcc603517a05b3866cb946de66a3368b4bb915c01"
+    },
+    {
+      "candidate": 8,
+      "seed": 8324,
+      "pngBytes": 70291,
+      "pixelBytes": 59590,
+      "sidecarBytes": 12432,
+      "webpBytes": 26126,
+      "sha256": "af4bd939f4b6130f71cd8949d4945f4409ad04373bae1e637661df42a2bf3c59"
+    }
+  ],
+  "contactSheetBytes": 129884
+}

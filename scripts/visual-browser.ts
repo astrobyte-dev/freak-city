@@ -210,6 +210,21 @@ try {
     await expect(
       page.locator(".visual-debug-preview [data-variant]"),
     ).toHaveAttribute("data-variant", "dawn");
+    await page
+      .getByText("Required / forbidden visual facts", { exact: true })
+      .click();
+    await page
+      .getByLabel("Asset role", { exact: true })
+      .selectOption("scene-illustration");
+    await expect(page.getByTestId("visual-inspector")).toContainText(
+      "Non-explicit authored illustration",
+    );
+    await page
+      .getByLabel("Asset role", { exact: true })
+      .selectOption("canonical-room");
+    await expect(page.getByTestId("visual-inspector")).toContainText(
+      "One stable room identity",
+    );
     expect(
       await page.evaluate((key) => localStorage.getItem(key), SAVE_KEY),
     ).toBe(saved);

@@ -281,15 +281,62 @@ export const LocationVisual = memo(function LocationVisual({
 }) {
   const id = useId().replaceAll(":", "");
   const viewport = useRef<HTMLDivElement>(null);
-  const paused = useAmbientMotion(mode, viewport, d.roomId);
   useEffect(
     () => scheduleNeighbourPreload(d.roomId, d.visualVariant, mode),
     [d.roomId, d.visualVariant, mode],
   );
-  const [failed, setFailed] = useState<string>();
-  const asset = d.baseArt && failed !== d.baseArt.file ? d.baseArt : undefined;
+  const [failed, setFailed] = useState<string[]>([]);
+  const eligibleScene =
+    mode !== "off" && d.sceneArt && !failed.includes(d.sceneArt.file)
+      ? d.sceneArt
+      : undefined;
+  const cue = eligibleScene?.file;
+  const [presentation, setPresentation] = useState(() => ({
+    active: cue,
+    seen: cue ? [cue] : [],
+  }));
+  useEffect(() => {
+    setPresentation((previous) => {
+      if (!cue || previous.seen.includes(cue))
+        return previous.active === cue
+          ? previous
+          : { ...previous, active: undefined };
+      return { active: cue, seen: [...previous.seen, cue] };
+    });
+    if (!cue) return;
+    const timer = window.setTimeout(
+      () =>
+        setPresentation((previous) =>
+          previous.active === cue
+            ? { ...previous, active: undefined }
+            : previous,
+        ),
+      6000,
+    );
+    return () => window.clearTimeout(timer);
+  }, [cue]);
+  const scene = presentation.active === cue ? eligibleScene : undefined;
+  const asset =
+    scene ??
+    (d.baseArt && !failed.includes(d.baseArt.file) ? d.baseArt : undefined);
+  const viewKey = `${d.roomId}:${scene?.file ?? "environment"}`;
+  const paused = useAmbientMotion(mode, viewport, viewKey);
+  const baked =
+    asset?.role === "canonical-room"
+      ? new Set(asset.bakedEntities?.map((e) => e.id))
+      : new Set<string>();
+  const composition =
+    asset?.role === "canonical-room" ? asset.composition : undefined;
+  const atmosphere = (composition?.atmosphereZones ??
+    d.manifest.atmosphereZones)[0];
   const anchored = d.canonicalObjects
-    .filter((e) => e.anchor)
+    .map((e) =>
+      composition &&
+      (e.location === d.roomId || d.doors.some((door) => door.id === e.id))
+        ? { ...e, anchor: composition.anchors[e.id] }
+        : e,
+    )
+    .filter((e) => e.anchor && !baked.has(e.id))
     .sort(
       (a, b) =>
         Number(b.anchor?.glyph === "wall") - Number(a.anchor?.glyph === "wall"),
@@ -303,13 +350,14 @@ export const LocationVisual = memo(function LocationVisual({
       data-variant={d.visualVariant}
       data-paused={paused}
       data-base={asset?.file ?? "procedural"}
+      data-asset-role={asset?.role ?? (asset ? "texture" : "procedural")}
     >
       {mode !== "off" && (
         <div
           ref={viewport}
           className="visual-viewport"
           aria-hidden="true"
-          key={d.roomId}
+          key={viewKey}
         >
           {asset && (
             <img
@@ -320,7 +368,7 @@ export const LocationVisual = memo(function LocationVisual({
               alt=""
               decoding="async"
               loading="eager"
-              onError={() => setFailed(asset.file)}
+              onError={() => setFailed((files) => [...files, asset.file])}
             />
           )}
           <svg
@@ -376,53 +424,65 @@ export const LocationVisual = memo(function LocationVisual({
                 <rect width="320" height="224" fill={`url(#${id}-grit)`} />
               </g>
             )}
-            <g data-layer="objects">
-              {anchored.map((e) => (
-                <ObjectSprite object={e} key={e.id} />
-              ))}
-            </g>
-            <g data-layer="anonymous-atmosphere" opacity=".22">
-              {Array.from(
-                {
-                  length:
-                    d.crowdLevel === "busy"
-                      ? 5
-                      : d.crowdLevel === "sparse"
-                        ? 2
-                        : 0,
-                },
-                (_, i) => (
-                  <path
-                    key={i}
-                    d={`M${43 + i * 51} 116h7v9h-7zM${39 + i * 51} 127h15v31h-15z`}
-                    fill="#777472"
-                  />
-                ),
-              )}
-            </g>
-            <g data-layer="npcs">
-              {d.npcPresence.map((n) => (
-                <g
-                  key={n.id}
-                  data-visual-npc={n.id}
-                  transform={`translate(${n.x} ${n.y})`}
-                >
-                  <path
-                    d="M-5-48H5V-37H-5ZM-9-34H9L14-4H-14ZM-9-4H-1V16H-9ZM2-4H10V16H2Z"
-                    fill="#10171e"
-                  />
-                  <path
-                    d="M-5-47H5V-43H-5M-9-33V-10"
-                    stroke="#9b8a79"
-                    strokeWidth="2"
-                  />
-                  <text textAnchor="middle" y="27" fill="#e4d8be" fontSize="8">
-                    {n.name.split(" ")[0]}
-                  </text>
-                </g>
-              ))}
-            </g>
-            {d.overlays.includes("reflection") && (
+            {!scene && (
+              <g data-layer="objects">
+                {anchored.map((e) => (
+                  <ObjectSprite object={e} key={e.id} />
+                ))}
+              </g>
+            )}
+            {!scene && (
+              <g data-layer="anonymous-atmosphere" opacity=".22">
+                {Array.from(
+                  {
+                    length:
+                      d.crowdLevel === "busy"
+                        ? 5
+                        : d.crowdLevel === "sparse"
+                          ? 2
+                          : 0,
+                  },
+                  (_, i) => (
+                    <path
+                      key={i}
+                      transform={`translate(${atmosphere.x + ((i + 0.5) * atmosphere.width) / 5} ${atmosphere.y})`}
+                      d="M0 0h7v9H0zM-4 11h15v31H-4z"
+                      fill="#777472"
+                    />
+                  ),
+                )}
+              </g>
+            )}
+            {!scene && (
+              <g data-layer="npcs">
+                {d.npcPresence.map((n, index) => (
+                  <g
+                    key={n.id}
+                    data-visual-npc={n.id}
+                    transform={`translate(${composition?.npcZones[index]?.x ?? n.x} ${composition?.npcZones[index]?.y ?? n.y})`}
+                  >
+                    <path
+                      d="M-5-48H5V-37H-5ZM-9-34H9L14-4H-14ZM-9-4H-1V16H-9ZM2-4H10V16H2Z"
+                      fill="#10171e"
+                    />
+                    <path
+                      d="M-5-47H5V-43H-5M-9-33V-10"
+                      stroke="#9b8a79"
+                      strokeWidth="2"
+                    />
+                    <text
+                      textAnchor="middle"
+                      y="27"
+                      fill="#e4d8be"
+                      fontSize="8"
+                    >
+                      {n.name.split(" ")[0]}
+                    </text>
+                  </g>
+                ))}
+              </g>
+            )}
+            {!scene && d.overlays.includes("reflection") && (
               <g
                 data-layer="reflection"
                 className="pixel-reflection"
@@ -440,27 +500,34 @@ export const LocationVisual = memo(function LocationVisual({
               data-layer="lighting"
             />
             {mode === "on" && d.overlays.includes("grain") && (
-              <rect
-                width="320"
-                height="224"
-                fill={`url(#${id}-grit)`}
-                data-layer="foreground"
-              />
+              <g data-layer="foreground" fill={`url(#${id}-grit)`}>
+                {(
+                  composition?.foregroundZones ?? d.manifest.foregroundZones
+                ).map((zone, index) => (
+                  <rect {...zone} key={index} />
+                ))}
+              </g>
             )}
           </svg>
-          {mode === "on" && d.overlays.includes("rain") && (
+          {!scene && mode === "on" && d.overlays.includes("rain") && (
             <div className="pixel-rain" data-layer="rain" />
           )}
-          {mode === "on" && d.overlays.includes("haze") && (
+          {!scene && mode === "on" && d.overlays.includes("haze") && (
             <div className="pixel-haze" data-layer="haze" />
           )}
           <div className="visual-edge" />
           <span className="visual-stamp">
-            {preview ? "ART PREVIEW" : "THE QUARTER"} / {d.timeBand}
+            {scene ? "ILLUSTRATION" : preview ? "ART PREVIEW" : "THE QUARTER"} /{" "}
+            {d.timeBand}
           </span>
         </div>
       )}
       <figcaption>
+        {scene && (
+          <p className="visual-presence">
+            {scene.illustration?.caption} · Illustrated moment
+          </p>
+        )}
         <div className="visual-caption-line">
           <span>{d.roomName}</span>
           <span>

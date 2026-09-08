@@ -2897,3 +2897,26 @@ small {
     transition: none !important;
   }
 }
+
+/* Reviewed geometry stays fully in frame on mobile; never crop away an exit. */
+@media (max-width: 740px) {
+  .location-visual[data-asset-role="canonical-room"] .visual-viewport,
+  .location-visual[data-asset-role="scene-illustration"] .visual-viewport {
+    aspect-ratio: 10 / 7;
+    max-height: 250px;
+  }
+  .location-visual[data-asset-role="canonical-room"] .visual-base,
+  .location-visual[data-asset-role="canonical-room"] .visual-world,
+  .location-visual[data-asset-role="scene-illustration"] .visual-base,
+  .location-visual[data-asset-role="scene-illustration"] .visual-world {
+    height: 100%;
+    top: 0;
+    object-fit: contain;
+  }
+}
+.visual-reduced .visual-viewport {
+  animation: none;
+}
+.visual-reduced .visual-light {
+  transition: none;
+}

@@ -1,0 +1,7 @@
+# Keep Windows checkouts compatible with Prettier and the original source hashes.
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.avif binary
+*.woff binary
+*.woff2 binary

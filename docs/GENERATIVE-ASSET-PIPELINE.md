@@ -1,91 +1,109 @@
-# Local visual generation and review
+﻿# Local visual generation and human review
 
-**Development spoilers · PRE-ALPHA / ACTIVE DEVELOPMENT.** Python and model weights are development tools only. The browser receives ordinary reviewed image files. No inference service, Torch, Diffusers, Transformers, Python runtime or model download is added to the game or Pages deployment.
+**Development spoilers · PRE-ALPHA / ACTIVE DEVELOPMENT.** Python, Torch and model weights remain local development tools. The browser receives only reviewed static art. No model, inference API or Python dependency enters the game bundle or Pages deployment.
 
-## Collaborator package and corrections
+## Preserved collaborator package
 
-All four supplied files are preserved byte-for-byte in `tools/visual-gen/original/`. No earlier collaborator git history was supplied. The original implementation is `imagegrouptool.py`; both original guides incorrectly invoke `imagegentoo.py`. Use the new `adapter.py` entry point or npm commands below. The original files remain reference material, not setup instructions for the integrated workflow.
+The four original files remain under `tools/visual-gen/original/`; `ORIGINAL-SHA256SUMS` records their source bytes. Older Windows Git checkouts may convert LF to CRLF; v2 adds `.gitattributes` to preserve LF and the original source hashes. Do not run the old module on import: it loads a model at module scope. Both old guides refer to `imagegentoo.py`, but the actual original is `imagegrouptool.py`. The integrated entry point is `adapter.py`.
 
-The original script parses style, repeatable prompt, prompt-file, count and output-directory options; prompt-file takes precedence. It cycles a 20-concept pool, loads `stabilityai/sdxl-turbo`, runs two steps at guidance zero, downscales with nearest neighbour, quantizes to 48 colours, boosts contrast 1.3 and writes generic numbered PNGs. It runs at import time, imports model libraries before help, has no seed or metadata, and always asks for `variant="fp16"` even when selecting float32 CPU execution. The guides describe CUDA well but do not explain that CPU branch. They do not pin generation dimensions or randomness. `G:\LLMModels` is only their example cache location, not a requirement.
+The original two-step/guidance-zero SDXL Turbo workflow, configurable retro crunch and seed handling remain intact. V2 adds role-aware prompts, reviewed architecture composition, illustration cues and display upscaling. The first real texture batch is preserved locally as a **texture-role experiment**, seeds 2741–2748, run `49ad3f1999c7`; its original candidates and sidecars are unchanged and unpromoted.
 
-The integrated modules preserve the crunch concept, use manifests instead of an unrelated cyberpunk concept pool, add deterministic per-candidate seeds, explicit device selection, error diagnostics, safe names, sidecars, contact sheets, draft isolation, optimization and human promotion. CUDA requests FP16 weights; explicitly authorized CPU execution requests default FP32 weights. Imports are lazy, so dry runs work without Torch. Model generation never silently falls back to CPU.
+## Setup and Windows environment
 
-## Local setup
+Use Node 22 (`.nvmrc`) and Python 3.10+ in a virtual environment. Install a CUDA-enabled Torch wheel appropriate to the machine before the remaining requirements. Model packages are optional for normal game development; Pillow alone runs the Python pipeline tests.
 
-Use Python 3.10+ and a virtual environment. Pillow alone is enough for fixtures, optimization and Python tests. Actual generation additionally needs the model packages and a compatible GPU/Torch installation.
-
-```sh
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install 'pillow>=10,<13'
-# For model generation, install the Torch wheel appropriate for your hardware first,
-# then the remaining local requirements:
+```powershell
+py -3.10 -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+# Verified on the current RTX 4070 / NVIDIA 610.47 workstation:
+python -m pip install torch==2.11.0+cu128 --index-url https://download.pytorch.org/whl/cu128
 python -m pip install -r tools/visual-gen/requirements.txt
+$env:VISUAL_PYTHON = (Resolve-Path .venv\Scripts\python.exe).Path
+$env:PYTHONUTF8 = '1'
 ```
 
-On Windows, activate `.venv\Scripts\Activate.ps1`. If npm cannot find the active Python, set `VISUAL_PYTHON` to its executable for `npm run visuals`; promotion/tests can also be run directly with `python` instead of `python3`.
+Respect `HF_HOME` and normal Hugging Face cache settings. On this workstation the existing cache is `C:\Users\thr3e\.cache\huggingface`, outside the repository. Do not hard-code the collaborator's example `G:\LLMModels`. Allow room for multi-GB weights and temporary downloads. The loader checks critically low free space, unavailable CUDA, missing packages, model-load errors and GPU memory exhaustion. It never silently switches to CPU. CPU requires both `--device cpu --allow-cpu`; none of the real batches used CPU inference.
 
-The loader respects Hugging Face cache configuration, including `HF_HOME`; nothing hard-codes a drive. Set a cache location with enough free space before downloading. The old guide's 15–20 GB is a planning allowance, not an exact size guaranteed by this implementation. The loader checks for critically low free space but cannot predict every temporary download requirement. `--offline` requires cached weights. Missing dependencies, unavailable CUDA, model download/loading failures, weight variant/dtype errors and memory exhaustion produce actionable errors. No model install/download happens during `npm ci` or a browser build.
+The local ignored `.visuals/setup/Activate.ps1` restores Node 22, the venv, `VISUAL_PYTHON`, UTF-8 I/O and the existing cache. Exact installed versions are in `.visuals/setup/requirements-lock.txt`. Python 3.10.11, Torch 2.11.0+cu128, Diffusers 0.39.0, Transformers 4.57.6, Accelerate 1.14.0 and Pillow 12.3.0 ran the v2 batch successfully.
 
-SDXL Turbo was **not run in this development environment**: model packages were absent and NVIDIA's driver query failed. The complete non-ML pipeline was exercised with explicitly labelled deterministic fixtures.
+## Roles
 
-## Commands
+| CLI role             | Prompt/content                                                                 | Promotion contract                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| `texture` (default)  | Original empty abstract material plate                                         | Human background-only/world-fact review; v1 metadata supported                                     |
+| `canonical-room`     | Grounded permanent room architecture and fixed furniture                       | Single `canonical` variant, architecture review, adjusted overlay composition, non-explicit review |
+| `scene-illustration` | Cinematic authored hint; anonymous adults and non-explicit nightlife permitted | Existing scene/room binding, caption, time bands, required NPCs and boundary themes                |
+| `overlay`            | Isolated atmospheric layer study                                               | Draft only until a mask and simulation binding contract is implemented                             |
+
+Named NPCs, plot props, evidence, temporary damage, player belongings and stateful doors cannot be baked into a canonical room plate. Scene illustrations explicitly have `authoritativeGeometry: false`. A draft canonical candidate has `authoritativeArchitecture: false`; only reviewed canonical provenance and the shipping registry set it to true.
+
+## Integrated commands
 
 ```sh
-npm run visuals                              # prepare manifests for existing rooms only
 npm run visuals -- --room velvet-bar --variant late --count 8 --seed 2741 --dry-run
-npm run visuals -- --room velvet-bar --variant late --count 8 --seed 2741 --fixture
-npm run visuals -- --room velvet-bar --variant late --count 8 --seed 2741 --generate
+npm run visuals -- --room velvet-bar --role canonical-room --count 8 --seed 8317 --pixel-width 320 --display-width 512 --revision 71153311d3dbb46851df1931d3ca6e939de83304 --dry-run
+npm run visuals -- --room velvet-bar --role canonical-room --count 8 --seed 8317 --pixel-width 320 --display-width 512 --revision 71153311d3dbb46851df1931d3ca6e939de83304 --generate --device cuda --offline
+npm run visuals -- --room velvet-bar --role scene-illustration --variant late --count 2 --seed 9451 --dry-run
 npm run visuals:validate
-npm run test:visual-gen
+python -m unittest discover -s tools/visual-gen/tests -v
 ```
 
-`velvet-bar` is a CLI alias for canonical room ID `bar`. The other proof-of-concept IDs are `street`, `loading-bay`, and `apartment`. The generation flag requires an explicit room; it cannot accidentally generate the city. A room request without `--generate` or `--fixture` defaults to a dry run. Dry-run plans and real candidate runs occupy separate directories. Reusing an identical candidate configuration refuses to overwrite its run; inspect the existing run or use another output directory.
+`velvet-bar` aliases canonical room ID `bar`. A generation request requires one explicit room. No whole-city generation is automatic. A room request without `--generate` or `--fixture` defaults to dry-run. Fixture mode remains explicitly procedural and is never represented as SDXL output. The optional illustration example above only prepares a plan; no real illustration batch was generated in this pass.
 
-Useful options: `--steps 2`, `--width 640 --height 448`, `--pixel-width 320`, `--colors 48`, `--contrast 1.3`, `--revision MODEL_COMMIT`, `--offline`, and `--output .visuals/my-experiment`. CPU requires both `--device cpu` and `--allow-cpu`. A seed is an unsigned 32-bit integer; candidate N uses `(seed + N - 1) mod 2^32`. Each call creates a fresh CPU Torch generator for that seed. Identical fixtures are byte-reproducible. SDXL reproducibility also depends on pinned model revision, library versions, hardware and kernels; cross-device equality is not promised. See [Diffusers reproducibility guidance](https://huggingface.co/docs/diffusers/main/using-diffusers/reproducibility).
+`canonical-room` accepts only `--variant canonical` or no variant. One identity persists across time bands; lighting/state changes belong to runtime presentation. Seeds advance by candidate index modulo 2^32. A new CPU Torch random generator supplies each seed to CUDA inference; this is not CPU model generation. Reproducibility depends on the pinned model, packages, hardware and kernels, not just the seed.
 
-The chosen 640 × 448 frame matches the compositor but is an untested model-quality tradeoff: Turbo was trained around 512 × 512. The adapter accepts other supported dimensions for experiments, while promotion rejects a mismatched aspect ratio instead of silently cropping. [The official model card](https://huggingface.co/stabilityai/sdxl-turbo) and [pipeline documentation](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/sdxl_turbo) describe its generation constraints. Turbo does not enforce negative prompts at guidance zero. The full forbidden-fact list is review evidence, **not a model guarantee**.
+Other controls: `--steps 1..4`, `--width`, `--height`, `--pixel-width`, `--display-width`, `--colors`, `--contrast`, `--revision`, `--offline`, and `--output`. Reusing an identical configuration refuses to overwrite the existing run. Use an explicitly different experiment output directory if a repeat is intended; do not delete history to bypass the guard.
 
-## Manifest → prompt → candidates
+## Manifest and prompt contract
 
-The TypeScript manifest producer references canonical room descriptions, exits, entities, aliases, current state, NPC locations, time bands, lighting, weather, composition anchors and required/forbidden facts. Requested bands prepare a simulation snapshot by advancing the existing clock and scheduler. This never affects the player's save.
+The TypeScript producer validates the role, initializes a separate simulation snapshot and records real room descriptions, exits, entities, explicit permanent facts, an exhaustive dynamic entity/door partition, placement zones and review facts. It never modifies a player save. Nonportable objects are not automatically fixed: they need an explicit authoring declaration. Evidence, doors, owned objects, portable items and closable containers cannot become fixed room furniture.
 
-`prompt_builder.py` produces an engine-neutral PromptSpec: room/variant, complete audit prompt, compact model prompt, style, required/forbidden facts, state and layer. For this first compositor, only empty texture plates can ship. Recognizable architecture, objects, crowds and NPCs are excluded from the generated plate and supplied separately by runtime state. The compact style fields `model` and `familyModel` let a district change the actual model prompt without pasting an entire bible into CLIP. The actual model prompt is deliberately shorter than the full review document; the adapter rejects CLIP truncation instead of silently losing requirements.
+The canonical prompt uses actual architecture fields and a compact district style. It no longer begins with “Empty abstract texture plate.” The full audit includes all required/forbidden facts and exits; the compact prompt fits CLIP without silently truncating. The v2 bar prompt uses 60 of 77 tokens in both tokenizers:
 
-An example is [bar-late-prompt.json](visuals/bar-late-prompt.json). Its audit prompt includes the real bar description and scheduled state. Its model prompt begins “Empty abstract texture plate” and requests only palette, lighting, texture and empty object zones. It does not add the sample brief's east-wall bar, booths or front windows to the game's geography.
+> 32-bit pixel art, PS1, crimson noir. Velvet / the bar interior. single staircase beside salon, distant small stage, high street window, fixed bar counter, bottle shelves. Wide deep establishing view, clear overlay space. No people, props, extra stairs or exits.
 
-`adapter.generate(manifest, options)` returns CandidateAsset records containing a PNG path, seed, backend and metadata. Every PNG has a JSON sidecar: roomId, variantId, full/model prompt, style, required/forbidden facts, state, seed, model, generation settings, final dimensions, creation time, generator version, review status, environment and source hash. Model-backed output records Torch/Diffusers versions, hardware class, dtype and requested revision. It records no tokens or personal cache paths.
+The bar's red booths were an example in the brief, not established source facts, and are not added to its manifest. Negative wording is review guidance, not an enforcement mechanism. SDXL Turbo at guidance zero does not enforce negative prompts; the real v2 sheet includes architectural contradictions that require rejection or further controlled authoring.
+
+The [official model card](https://huggingface.co/stabilityai/sdxl-turbo) describes Turbo's generation constraints. Its typical training resolution is 512 × 512; this pipeline's 640 × 448 is a compositor-oriented experiment, not a guarantee of geometry quality. See [Diffusers reproducibility guidance](https://huggingface.co/docs/diffusers/main/using-diffusers/reproducibility).
+
+## Pixels, output and provenance
+
+Role presets live in the room manifest. Canonical/illustration defaults: 640 × 448 source, 320 × 224 pixel crunch, 48 colours, contrast 1.15, then 512 × 358 nearest-neighbour display output. Texture defaults preserve contrast 1.3 and display width 320. CLI options override presets. Width 512 uses a rounded height and uneven pixel-block widths; use 640 for an exact integer 2× upscale. No blur or crop is applied.
+
+When display width differs from pixel width, the original crunched master is retained under `pixels/`, with a hash in the display sidecar. Promotion verifies that the pixel master reproduces the reviewed display candidate exactly before using it to encode WebP. This avoids a second sampling of the uneven 320→512 grid. The uncrunched diffusion image is not separately retained in this version.
 
 ```text
-.visuals/jobs/<room>.json
-.visuals/generated/<room>/plans/<configuration-hash>/dry-run.json
-.visuals/generated/<room>/raw/<configuration-hash>/<room>__<variant>__rain__candidate-01.png
-.visuals/generated/<room>/raw/<configuration-hash>/<room>__<variant>__rain__candidate-01.json
-.visuals/generated/<room>/review/<configuration-hash>/contact-sheet.webp
-.visuals/generated/canonical/<approved-file>.webp + provenance.json
-public/visuals/generated/<room>--<variant>--<hash>.webp
+.visuals/jobs/bar--canonical-room.json
+.visuals/generated/bar/plans/<run>/prompt-spec.json + dry-run.json
+.visuals/generated/bar/raw/<run>/prompt-spec.json
+.visuals/generated/bar/raw/<run>/bar__canonical-room__canonical__candidate-01.png
+.visuals/generated/bar/raw/<run>/bar__canonical-room__canonical__candidate-01.json
+.visuals/generated/bar/raw/<run>/pixels/<candidate>.png
+.visuals/generated/bar/review/<run>/contact-sheet.webp
 ```
 
-`.visuals/`, virtual environments, bytecode and model weights are ignored. Raw candidates are never automatically deleted or published. Contact sheets label candidate number, seed and backend; fixture sheets explicitly say `fixture`.
+Each sidecar records role, layer, audit/model prompt, required/forbidden facts, review contract, seed, pinned model revision, backend, execution flag, CUDA/GPU/package details, source/pixel/display dimensions, nearest-neighbour settings, hashes, timestamp and draft status. No tokens or personal cache paths are recorded. Contact sheets label role, candidate, seed and backend. Canonical run IDs and prompts exclude the simulation clock/NPC snapshot so clock changes cannot redefine room identity.
 
 ## Human review and promotion
 
-Compare the contact sheet, individual candidate, required/forbidden facts and runtime composite. Reject any recognizable door, prop, character, evidence, damage, sign or route baked into a texture plate. Inspect pixels at mobile and desktop scale: even abstract marks can accidentally resemble an interactable object. Verify palette, aspect ratio, boundaries, pixel readability and existing overlays. No computer-vision claim replaces this inspection.
+Inspect the contact sheet and original candidate against required/forbidden facts, then test the proposed overlay placement at desktop/mobile scale. For architecture, check all entrances/exits, exactly one established staircase, fixed-furniture placement, window geometry and absence of changing props. A reviewer must edit a composition JSON for the selected image; generation's schematic layout is only a starting reference.
 
-After that review, a human may explicitly run:
+Canonical composition JSON contains `anchors`, `npcZones`, `atmosphereZones` and `foregroundZones`, using the same 320 × 224 schema as the manifest. Required dynamic anchors and all stateful doors must be covered, with no invented entity IDs. Four NPC positions and nonempty atmosphere/foreground zones are required. The chosen plate's actual geometry must be assessed by a human; bounds validation cannot do that.
+
+After explicit human approval, the separate canonical promotion command is:
 
 ```sh
-npm run visuals:promote -- --candidate .visuals/generated/bar/raw/RUN/bar__late__rain__candidate-03.png --reviewer "public-alias" --notes "Inspected empty texture plate and runtime overlays against required/forbidden facts" --approve-world-facts
-npm run visuals:validate
-npm run build:playtest
+python tools/visual-gen/promote.py --candidate EXACT_DRAFT.png --reviewer PUBLIC_ALIAS --notes "Inspected architecture and actual overlays" --approve-world-facts --approve-architecture --composition REVIEWED_LAYOUT.json --non-explicit
 ```
 
-Use the actual path printed by generation. The reviewer name and notes are intentional review input. Never put credentials or personal data there. Promotion checks the source hash, preserves the raw candidate/sidecar, optimizes by nearest-neighbour doubling and lossless WebP, records size/reduction, writes local canonical provenance and updates `src/content/visuals/assets.json` with human approval and the optimized hash. It refuses to overwrite an already approved room variant. Fixture promotion additionally requires `--allow-fixture`; tests exercise that only in a temporary repository. **No generated fixture has been promoted into this game's shipping registry.**
+Texture promotion retains the original `--approve-world-facts` flow. Illustration promotion additionally requires `--non-explicit --illustration SCENE_BINDING.json`. The binding contains `sceneId`, `caption`, `timeBands`, `requiredNPCs` and `themes`; the scene must already exist and match the room, and all depicted named NPCs/themes must be declared. Build validation checks bindings; runtime checks scene, time, actual presence and boundary settings. Overlay-study promotion is intentionally blocked pending alpha-mask and simulation-binding support.
 
-Build-time validation rejects draft/unregistered files, missing reviews, changed hashes, unsupported paths/formats, oversized assets and missing files. Human approval is bound to bytes by SHA-256; altering a plate requires another review. Native browser decode failure still falls back to the procedural scene. The optimizer emits WebP; reviewed AVIF is allowed in the registry, but no AVIF encoder workflow is included yet.
+Promotion preserves draft files and sidecars, writes reviewed provenance locally, encodes lossless WebP and adds a hash-bound registry entry. It refuses existing room/role/variant ownership (illustrations also distinguish scene ID) and enforces the 150 KB cap. Build checks reject drafts, missing role-specific approval, invalid composition/bindings, unsupported paths, missing files, bad dimensions, changed hashes and unregistered shipping files. Runtime decode failure still falls back safely.
 
-## Another generator
+**No candidate from either real batch has been promoted.** Nothing under `.visuals/` is automatically shipped or uploaded.
 
-An external executable can implement `--manifest ABSOLUTE_JSON --output ABSOLUTE_DIRECTORY` and return zero on success. Invoke it with `npm run visuals -- --room bar --adapter /path/to/trusted-adapter`. Arguments are passed without a shell. This is deliberately a trusted local program, not a sandboxed plugin.
+## Extension point and checks
 
-Inside Python, replace the SDXLTurbo class with another `generate(spec, options, seed) -> PIL.Image` backend; retain PromptSpec, CandidateAsset sidecars, deterministic naming, review and promotion. Do not import a model into `src/`, add an inference endpoint to the app, or allow a generator to modify room/entity data. An external tool supplies candidates and metadata; humans supply approval; the browser supplies stateful composition.
+An external trusted adapter still receives `--manifest ABSOLUTE_JSON --output ABSOLUTE_DIRECTORY` without a shell. It must honor the manifest role. Internally a backend implements `generate(spec, options, seed) -> PIL.Image`. `conditioning` reserves reference/mask/layout inputs for future img2img or structural guidance. Text-only SDXL Turbo is the current implementation; no ControlNet or reference-conditioning dependency was installed.
+
+Run full JS checks, Python tests, normal/Pages builds, visual validation and formatting. With preview on port 5181 and development Vite on 5182, run the existing visual browser suite with `PLAYTEST_URL`/`VISUAL_DEV_URL`, then `npm run test:visuals:roles:browser`. The latter verifies reviewed geometry, mobile framing, scene illustration/return, Off/Reduced and failure fallback using isolated nonshipping test images. See [v2 results](VISUAL-V2-REPORT.md) and the [architecture](VISUAL-ARCHITECTURE.md).

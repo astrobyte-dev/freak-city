@@ -6,12 +6,15 @@ import { activityDescription } from "../engine/activity";
 import {
   selectVisualAsset,
   visualManifests,
+  visualAssets,
 } from "../content/visuals/manifest";
+import { approvedAsset } from "./asset-contract";
 import type {
   Lighting,
   TimeBand,
   VisualDescriptor,
   VisualOverrides,
+  VisualAsset,
 } from "./types";
 export function timeBandAt(minutes: number): TimeBand {
   const clock = ((minutes % 1440) + 1440) % 1440;
@@ -34,6 +37,7 @@ const lightByTime: Record<TimeBand, Lighting> = {
 export function deriveVisualState(
   state: GameState,
   preview: VisualOverrides = {},
+  registry: VisualAsset[] = visualAssets,
 ): VisualDescriptor {
   const world = state.world;
   if (!world || !rooms[world.room])
@@ -43,6 +47,41 @@ export function deriveVisualState(
   const timeBand = preview.timeBand ?? timeBandAt(state.time);
   // The authored night is rainy. No weather simulation exists; do not invent a change.
   const weather = preview.weather ?? "rain";
+  const visualVariant = preview.visualVariant ?? timeBand;
+  let baseArt = selectVisualAsset(room.id, visualVariant, registry);
+  if (baseArt?.role === "canonical-room") {
+    const fixedIds = [
+      ...manifest.staticArchitecture,
+      ...manifest.fixedFurniture,
+    ].flatMap((f) => (f.entityId ? [f.entityId] : []));
+    const baked = baseArt.bakedEntities ?? [];
+    const consistent =
+      fixedIds.length === baked.length &&
+      fixedIds.every((id) => baked.some((b) => b.id === id)) &&
+      baked.every((b) => {
+        const e = world.entities[b.id];
+        return (
+          e &&
+          !e.destroyed &&
+          !e.properties.damaged &&
+          !e.portable &&
+          !e.owner &&
+          e.kind !== "Door" &&
+          e.kind !== "Evidence" &&
+          isVisible(state, e.id) &&
+          !isCarried(state, e.id) &&
+          e.location === b.location &&
+          e.open === b.open &&
+          e.locked === b.locked
+        );
+      });
+    if (!consistent)
+      baseArt = selectVisualAsset(
+        room.id,
+        visualVariant,
+        registry.filter((a) => a.role !== "canonical-room"),
+      );
+  }
   const canonicalObjects = Object.values(world.entities)
     .filter(
       (e) =>
@@ -65,13 +104,24 @@ export function deriveVisualState(
           ? manifest.anchors[e.id]
           : undefined,
     }));
-  const visualVariant = preview.visualVariant ?? timeBand;
   const overlays: VisualDescriptor["overlays"] = ["grain"];
   if (weather === "rain" && manifest.exposure !== "inside")
     overlays.push("rain", "reflection");
   // Haze is non-semantic atmosphere, never a depiction of drug use or a named character.
   if (["bar", "loading-bay"].includes(room.id)) overlays.push("haze");
   const people = presentNPCs(state);
+  const sceneArt = registry.find(
+    (a) =>
+      a.roomId === room.id &&
+      a.role === "scene-illustration" &&
+      approvedAsset(a) &&
+      a.illustration?.sceneId === state.scene &&
+      a.illustration.timeBands.includes(timeBand) &&
+      a.illustration.requiredNPCs.every((id) => people.includes(id)) &&
+      a.illustration.themes.every(
+        (theme) => state.boundaries[theme] === "allowed",
+      ),
+  );
   return {
     roomId: room.id,
     roomName: room.name,
@@ -109,7 +159,8 @@ export function deriveVisualState(
     ),
     specialEventState: activityDescription(state, room.id),
     visualVariant,
-    baseArt: selectVisualAsset(room.id, visualVariant),
+    baseArt,
+    sceneArt,
     overlays:
       preview.overlay === "none"
         ? []

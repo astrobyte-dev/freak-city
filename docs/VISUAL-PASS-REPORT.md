@@ -1,4 +1,6 @@
-# State-driven visual pass and collaborator integration
+﻿# State-driven visual pass and collaborator integration
+
+> Historical v1 report. Its empty-texture-only shipping contract and statement that SDXL did not run describe the original implementation environment. See [the v2 report](VISUAL-V2-REPORT.md) for the real Windows CUDA batches and current role-based architecture.
 
 **PRE-ALPHA / ACTIVE DEVELOPMENT · development spoilers.** Work is isolated on `feature/state-driven-visuals`. The original public build is preserved by `pre-state-driven-visuals` at `f9487c4`, alongside `v0.1.0-playtest.1` and the earlier parser checkpoint. Main/Pages have not been replaced by this preview.
 

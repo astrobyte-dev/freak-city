@@ -11,7 +11,8 @@ def contact_sheet(candidates, destination):
     rows = math.ceil(len(candidates) / columns)
     sheet = Image.new("RGB", (columns * 260, rows * 213 + 30), (19, 23, 30))
     draw = ImageDraw.Draw(sheet)
-    draw.text((12, 9), "DRAFT CANDIDATES / HUMAN REVIEW REQUIRED", fill=(225, 215, 190))
+    role = candidates[0].get("metadata", {}).get("role", "texture")
+    draw.text((12, 9), f"DRAFT / {role.upper()} / HUMAN REVIEW REQUIRED", fill=(225, 215, 190))
     for index, candidate in enumerate(candidates):
         x, y = (index % columns) * 260 + 8, (index // columns) * 213 + 35
         with Image.open(candidate["path"]) as raw:

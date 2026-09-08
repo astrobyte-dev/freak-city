@@ -8,10 +8,12 @@ import { visualManifests } from "../src/content/visuals/manifest";
 import { newGame, advanceTime } from "../src/engine/game";
 import { ensureWorld } from "../src/engine/parser";
 import { assetProblems } from "./visual-assets";
+import { assetRoles, type AssetRole } from "../src/visuals/types";
 const { values, positionals } = parseArgs({
   allowPositionals: true,
   options: {
     room: { type: "string" },
+    role: { type: "string" },
     variant: { type: "string" },
     count: { type: "string" },
     seed: { type: "string" },
@@ -19,6 +21,7 @@ const { values, positionals } = parseArgs({
     width: { type: "string" },
     height: { type: "string" },
     "pixel-width": { type: "string" },
+    "display-width": { type: "string" },
     colors: { type: "string" },
     contrast: { type: "string" },
     device: { type: "string" },
@@ -52,6 +55,17 @@ if (values.validate) {
     "Visual assets and canonical anchors validated. No model or network required.",
   );
 } else {
+  const role = (values.role ?? "texture") as AssetRole;
+  if (!assetRoles.includes(role))
+    throw new Error(`Unknown asset role: ${role}`);
+  if (
+    role === "canonical-room" &&
+    values.variant &&
+    values.variant !== "canonical"
+  )
+    throw new Error(
+      "Canonical rooms have one identity: use --variant canonical or omit --variant; time belongs to runtime lighting.",
+    );
   const requested = values.room ?? positionals[0];
   const selected = requested
     ? [requested === "velvet-bar" ? "bar" : requested]
@@ -70,16 +84,18 @@ if (values.validate) {
     day: 1900,
     base: 1428,
   };
-  if (values.variant) {
+  if (values.variant && values.variant !== "canonical") {
     if (at[values.variant] === undefined) throw new Error("Unknown variant");
     advanceTime(state, at[values.variant] - state.time);
   }
   mkdirSync(".visuals/jobs", { recursive: true });
   for (const room of selected) {
-    const job = generationDefinition(room, state);
-    const path = resolve(`.visuals/jobs/${room}.json`);
+    const job = generationDefinition(room, state, role);
+    const path = resolve(
+      `.visuals/jobs/${room}${role === "texture" ? "" : `--${role}`}.json`,
+    );
     writeFileSync(path, JSON.stringify(job, null, 2) + "\n");
-    console.log(`Prepared ${room}: .visuals/jobs/${room}.json`);
+    console.log(`Prepared ${room} / ${role}: ${path}`);
     if (values.adapter) {
       const output = resolve(values.output ?? `.visuals/generated/${room}`);
       mkdirSync(output, { recursive: true });
@@ -95,6 +111,8 @@ if (values.validate) {
         "tools/visual-gen/adapter.py",
         "--manifest",
         path,
+        "--role",
+        role,
         "--output",
         values.output ?? `.visuals/generated/${room}`,
       ];
@@ -106,6 +124,7 @@ if (values.validate) {
         "width",
         "height",
         "pixel-width",
+        "display-width",
         "colors",
         "contrast",
         "device",

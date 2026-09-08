@@ -1,5 +1,29 @@
 import type { Entity } from "../engine/world-types";
-import type { NPCId } from "../engine/types";
+import type { NPCId, Theme } from "../engine/types";
+export const assetRoles = [
+  "texture",
+  "canonical-room",
+  "scene-illustration",
+  "overlay",
+] as const;
+export type AssetRole = (typeof assetRoles)[number];
+export interface ArchitectureFact {
+  text: string;
+  model?: string;
+  entityId?: string;
+}
+export interface VisualZone {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+export interface VisualComposition {
+  anchors: Record<string, Anchor>;
+  npcZones: readonly { x: number; y: number }[];
+  atmosphereZones: readonly VisualZone[];
+  foregroundZones: readonly VisualZone[];
+}
 export const timeBands = [
   "early",
   "night",
@@ -39,6 +63,8 @@ export interface Anchor {
     | "wall";
 }
 export interface VisualAsset {
+  /** Missing role means the original v1 texture contract. */
+  role?: AssetRole;
   roomId: string;
   variant: string;
   status: "draft" | "reviewed" | "canonical";
@@ -46,11 +72,30 @@ export interface VisualAsset {
   sha256: string;
   width: number;
   height: number;
+  authoritativeArchitecture?: boolean;
+  authoritativeGeometry?: boolean;
+  bakedEntities?: {
+    id: string;
+    location: string;
+    open?: boolean;
+    locked?: boolean;
+  }[];
+  composition?: VisualComposition;
+  illustration?: {
+    sceneId: string;
+    caption: string;
+    timeBands: TimeBand[];
+    requiredNPCs: NPCId[];
+    themes: Theme[];
+  };
   review?: {
     by: string;
     at: string;
-    backgroundOnly: true;
+    backgroundOnly?: true;
     worldFactsChecked: true;
+    architectureChecked?: true;
+    compositionChecked?: true;
+    nonExplicit?: true;
   };
 }
 export interface RoomVisualManifest {
@@ -59,6 +104,24 @@ export interface RoomVisualManifest {
   proofOfConcept: boolean;
   exposure: "outside" | "sheltered" | "inside";
   anchors: Record<string, Anchor>;
+  staticArchitecture: readonly ArchitectureFact[];
+  fixedFurniture: readonly ArchitectureFact[];
+  dynamicObjects: readonly string[];
+  dynamicDoors: readonly string[];
+  atmosphereZones: readonly VisualZone[];
+  foregroundZones: readonly VisualZone[];
+  sceneIllustrationHints: readonly string[];
+  requiredFacts: readonly string[];
+  forbiddenFacts: readonly string[];
+  generationPresets: Record<
+    AssetRole,
+    {
+      pixelWidth: number;
+      colors: number;
+      contrast: number;
+      displayWidth: number;
+    }
+  >;
   npcZones: readonly { x: number; y: number }[];
   variants: readonly TimeBand[];
   decorativeLayers: readonly Overlay[];
@@ -90,6 +153,7 @@ export interface VisualDescriptor {
   specialEventState: string;
   visualVariant: string;
   baseArt?: VisualAsset;
+  sceneArt?: VisualAsset;
   overlays: Overlay[];
   manifest: RoomVisualManifest;
 }

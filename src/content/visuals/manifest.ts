@@ -6,6 +6,13 @@ import type {
 } from "../../visuals/types";
 import { timeBands } from "../../visuals/types";
 import assets from "./assets.json";
+import {
+  architecture,
+  fixedFurniture,
+  illustrationHints,
+} from "./architecture";
+import { roomAffordances } from "../affordances";
+import { approvedAsset } from "../../visuals/asset-contract";
 const a = (
   glyph: Anchor["glyph"],
   x: number,
@@ -68,6 +75,73 @@ export const visualManifests: Record<string, RoomVisualManifest> =
             ? "sheltered"
             : "inside",
         anchors: anchors[room.id] ?? {},
+        staticArchitecture: architecture[room.id] ?? [],
+        fixedFurniture: fixedFurniture[room.id] ?? [],
+        dynamicObjects: [
+          ...new Set([
+            ...Object.keys(anchors[room.id] ?? {}),
+            ...(roomAffordances[room.id] ?? []).map(
+              ([key]) => `detail_${room.id}_${key}`,
+            ),
+          ]),
+        ].filter(
+          (id) =>
+            ![
+              ...(architecture[room.id] ?? []),
+              ...(fixedFurniture[room.id] ?? []),
+            ].some((fact) => fact.entityId === id) &&
+            anchors[room.id]?.[id]?.glyph !== "door",
+        ),
+        dynamicDoors: [
+          ...new Set([
+            ...room.exits.flatMap((exit) => (exit.door ? [exit.door] : [])),
+            ...Object.entries(anchors[room.id] ?? {})
+              .filter(([, a]) => a.glyph === "door")
+              .map(([id]) => id),
+          ]),
+        ],
+        atmosphereZones: [{ x: 30, y: 100, width: 260, height: 64 }],
+        foregroundZones: [{ x: 0, y: 180, width: 320, height: 44 }],
+        sceneIllustrationHints: illustrationHints[room.id] ?? [
+          `Quiet environmental introduction to ${room.name}; no invented event or hidden discovery`,
+        ],
+        requiredFacts: [
+          "One stable room identity across all time bands; preserve established exit relationships.",
+          "Leave named characters, stateful doors and movable objects to runtime layers.",
+          "Keep overlay placement zones usable at desktop and mobile sizes.",
+        ],
+        forbiddenFacts: [
+          "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+          "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+          "Invented booth seating or altered window placement not supported by this room's reference.",
+          "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts.",
+        ],
+        generationPresets: {
+          texture: {
+            pixelWidth: 320,
+            colors: 48,
+            contrast: 1.3,
+            displayWidth: 320,
+          },
+          "canonical-room": {
+            pixelWidth: 320,
+            colors: 48,
+            contrast: 1.15,
+            displayWidth: 512,
+          },
+          "scene-illustration": {
+            pixelWidth: 320,
+            colors: 48,
+            contrast: 1.15,
+            displayWidth: 512,
+          },
+          overlay: {
+            pixelWidth: 320,
+            colors: 48,
+            contrast: 1.0,
+            displayWidth: 512,
+          },
+        },
         npcZones: [
           { x: 260, y: 160 },
           { x: 143, y: 140 },
@@ -89,11 +163,13 @@ export function selectVisualAsset(
   const approved = registry.filter(
     (a) =>
       a.roomId === roomId &&
-      a.status !== "draft" &&
-      a.review?.backgroundOnly &&
-      a.review.worldFactsChecked,
+      approvedAsset(a) &&
+      ["texture", "canonical-room"].includes(a.role ?? "texture"),
   );
   return (
+    approved.find(
+      (a) => a.role === "canonical-room" && a.variant === "canonical",
+    ) ??
     approved.find((a) => a.variant === variant) ??
     approved.find((a) => a.variant === "base")
   );

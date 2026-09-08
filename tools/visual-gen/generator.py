@@ -4,7 +4,7 @@ import os
 import shutil
 from pathlib import Path
 
-VERSION = "freak-city-visual-gen/1"
+VERSION = "freak-city-visual-gen/2"
 MODEL = "stabilityai/sdxl-turbo"
 
 
@@ -14,6 +14,14 @@ def retro_crunch(image, width=320, colors=48, contrast=1.3):
         raise ValueError("Crunch bounds: width 32..640, colors 2..256, contrast 0.5..2")
     small = image.convert("RGB").resize((width, max(1, round(width * image.height / image.width))), Image.Resampling.NEAREST)
     return ImageEnhance.Contrast(small.quantize(colors=colors, method=Image.Quantize.MEDIANCUT).convert("RGB")).enhance(contrast)
+
+
+def display_upscale(image, width):
+    """Nearest neighbour only; rounded height preserves aspect within one pixel."""
+    from PIL import Image
+    if not isinstance(width, int) or not image.width <= width <= 2048:
+        raise ValueError("Display width must be between pixel width and 2048")
+    return image.resize((width, round(width * image.height / image.width)), Image.Resampling.NEAREST)
 
 
 def model_load_options(device, torch, revision=None, offline=False):
