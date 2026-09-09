@@ -1,5 +1,18 @@
 # Workstation handoff
 
+## Latest continuation: external Velvet evaluation completed
+
+**2026-09-09:** The separately supplied external ChatGPT Velvet candidate has now been received and evaluated. Read [EXTERNAL-EDIT-REVIEW.md](EXTERNAL-EDIT-REVIEW.md) for the current result and next task. The original handoff below is retained as the earlier checkpoint record; statements below that the source is missing or no standalone importer exists are historical.
+
+- Source: `neon_noir_nightclub_lobby.png`, 1448 × 1086, SHA-256 `58dd60c77b8ff01dc38a723f2a2ef33a49073128b258d62de07e01d2be1d88b2`. Exactly one built-in image-edit cleanup removed loose bottles/vessels and counter taps. No local inference or model download.
+- Both sources were imported as **draft/unpromoted** `external-reviewed-edit` canonical-room candidates. The new `tools/visual-gen/import_external.py` retains original bytes, honest unknown model provenance, optional actual parent source, explicit framing, unquantized 320 master, 48/64 masters, exact 640 displays and hashes. Promotion guards remain enforced.
+- Portable evidence and working review pages: [docs/visuals/external-edit/cleanup-review/index.html](visuals/external-edit/cleanup-review/index.html), [original comparison](visuals/external-edit/original-review/index.html). Complete imported batches are preserved under `original/` and `cleanup/`; JSON bytes are excluded from formatting/line-ending conversion to retain provenance. No evidence file is shipping art.
+- **Classification B.** The cleaned 64-colour source is preferred for further review; 48 retains the atmosphere. Remaining geometry work: east opening/distant-stage relationship, rear door-like panel, ambiguous left glazing and fixture/emission separation. No human architecture approval has been granted.
+- Actual isolated composites show Mara at early/23:55 and mobile, no named NPCs at late/02:40 or dawn/05:15. Both palettes have all four snapshots plus a plate-only reference. Overlay material, scale, contact/reflection and lighting findings are in the report and updated overlay plan; no sprite library was built.
+- New next task: bounded correction of those recorded geometry issues against the unchanged layout, then human review of source and runtime composition. Do not repeat the completed model experiments or download another model. Keep PR #1 draft; do not promote, merge or alter the public blind playtest.
+
+## Original checkpoint record
+
 **Start here on the next machine.** Checkpoint prepared 2026-09-09. This document records the user's current direction and supersedes older reports' “next step” recommendations. No chat history, old activation script, GPU cache or access to the previous workstation is required to continue development.
 
 ## Branch, commit and public build

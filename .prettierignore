@@ -2,3 +2,6 @@ node_modules
 dist
 artifacts
 package-lock.json
+
+# Byte-preserved external experiment provenance and generated review pages.
+docs/visuals/external-edit/

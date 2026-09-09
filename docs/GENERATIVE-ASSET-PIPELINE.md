@@ -32,6 +32,8 @@ The local ignored `.visuals/setup/Activate.ps1` restores Node 22, the venv, `VIS
 
 ## Roles
 
+The first external canonical review is now complete: [Velvet source, one cleanup and 48/64/runtime evidence](EXTERNAL-EDIT-REVIEW.md). The standalone import path below complements the preserved local-model workflow.
+
 | CLI role             | Prompt/content                                                                 | Promotion contract                                                                                 |
 | -------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
 | `texture` (default)  | Original empty abstract material plate                                         | Human background-only/world-fact review; v1 metadata supported                                     |
@@ -89,6 +91,16 @@ When display width differs from pixel width, the original crunched master is ret
 Each sidecar records role, layer, audit/model prompt, required/forbidden facts, review contract, seed, pinned model revision, backend, execution flag, CUDA/GPU/package details, source/pixel/display dimensions, nearest-neighbour settings, hashes, timestamp and draft status. No tokens or personal cache paths are recorded. Contact sheets label role, candidate, seed and backend. Canonical run IDs and prompts exclude the simulation clock/NPC snapshot so clock changes cannot redefine room identity.
 
 ## Human review and promotion
+
+### Standalone external canonical imports
+
+`tools/visual-gen/import_external.py` imports a real source without requiring a generated parent. Prepare the current `canonical-room` manifest with the existing dry-run command, then supply `--manifest`, `--source`, `--output`, `--editor`, `--service`, `--notes` and `--framing-notes`. `--crop LEFT TOP RIGHT BOTTOM` is explicit, checked against oriented source dimensions and must yield exact 10:7; mismatched sources are never silently stretched or cropped. An already exact-ratio source can omit `--crop`. Sources must be opaque, single-frame PNG/JPEG/WebP. Original bytes are always retained separately from the EXIF-oriented/framed derivative.
+
+The default bounded comparison is `--colors 48 64`, 320 × 224 masters, contrast 1.15 and exact 640 × 448 displays. It retains the unquantized 320 master as well as each processed master/display. This does not change the canonical default or Turbo scene preset. `--parent-source` and `--edit-prompt-file` record an actual external correction's parent and prompt; unknown source model/version/creation date remain null. The source type `external-reviewed-edit` never implies approval. Drafts have no architecture authority and require human review.
+
+Promotion verifies the source, parent, manifest and derivative hashes, reproduces framing and master/display pixels, and applies the existing human architecture/composition/non-explicit gates. Reproduction uses the recorded Pillow pipeline; retain that version when validating old outputs. External corrections must use this importer with their real parent source; `import_edit.py` rejects them to avoid inheriting stale source/framing fields.
+
+For an isolated Velvet runtime study, `scripts/visual-review-composite.ts` accepts `--composition DRAFT_LAYOUT.json`. It snapshots every palette at early/late/dawn/mobile plus a plate-only reference, records actual simulation NPCs and verifies the shipping registry remains byte-identical. The `review_page.py` output displays source/master/framing/provenance and available runtime evidence. Neither command approves art. [Current example and exact crop rationale](EXTERNAL-EDIT-REVIEW.md).
 
 Inspect the contact sheet and original candidate against required/forbidden facts, then test the proposed overlay placement at desktop/mobile scale. For architecture, check all entrances/exits, exactly one established staircase, fixed-furniture placement, window geometry and absence of changing props. A reviewer must edit a composition JSON for the selected image; generation's schematic layout is only a starting reference.
 

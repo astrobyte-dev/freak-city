@@ -1,0 +1,91 @@
+{
+  "status": "draft-unpromoted",
+  "rows": [
+    {
+      "source": "original",
+      "palette": 48,
+      "originalBytes": 2544767,
+      "framedBytes": 2428551,
+      "unquantized320Bytes": 155687,
+      "masterBytes": 104892,
+      "displayPngBytes": 120149,
+      "displayWebpBytes": 52640,
+      "actualColours": 48,
+      "rgbMaeVersusUnquantizedSameContrast": 5.336,
+      "originalSha256": "58dd60c77b8ff01dc38a723f2a2ef33a49073128b258d62de07e01d2be1d88b2",
+      "framedSha256": "4d4f493696a1103d2c0dbf99a3d3bb05b3e3950b1ff73bb186a79f678d191e94",
+      "unquantizedSha256": "b9695051c17a4587fc443dc7f16940b6d4e9d658318432956d9856d17893f978",
+      "masterSha256": "a08400e637f3f51ec7ab99b894382a86609faec3fce532d7da5175d3f5f65b0f",
+      "displaySha256": "2fa263fc4e6c816d54ff649140461f66fd789d2888245cf7130905cb8017fb38"
+    },
+    {
+      "source": "original",
+      "palette": 64,
+      "originalBytes": 2544767,
+      "framedBytes": 2428551,
+      "unquantized320Bytes": 155687,
+      "masterBytes": 109305,
+      "displayPngBytes": 127072,
+      "displayWebpBytes": 55680,
+      "actualColours": 61,
+      "rgbMaeVersusUnquantizedSameContrast": 4.979,
+      "originalSha256": "58dd60c77b8ff01dc38a723f2a2ef33a49073128b258d62de07e01d2be1d88b2",
+      "framedSha256": "4d4f493696a1103d2c0dbf99a3d3bb05b3e3950b1ff73bb186a79f678d191e94",
+      "unquantizedSha256": "b9695051c17a4587fc443dc7f16940b6d4e9d658318432956d9856d17893f978",
+      "masterSha256": "b1a74db80e2be24f491ac53d46baf1f21b2420506db67467cc862a502a448a70",
+      "displaySha256": "0e506b7f234bbd7c1da321b3a8fe221729908a92424489b753771f9f7737199e"
+    },
+    {
+      "source": "cleanup",
+      "palette": 48,
+      "originalBytes": 2349328,
+      "framedBytes": 2244442,
+      "unquantized320Bytes": 149007,
+      "masterBytes": 95402,
+      "displayPngBytes": 110310,
+      "displayWebpBytes": 48340,
+      "actualColours": 47,
+      "rgbMaeVersusUnquantizedSameContrast": 5.19,
+      "originalSha256": "af70facbd4f79b75cca2160b9ff0cb5514d5560d952fe5e66a9114ee4602cd6c",
+      "framedSha256": "3c06993f1148ac96159443b664296ba22784ecfe8cdca920eaaa8050d053d96b",
+      "unquantizedSha256": "b30e2599f30411268ae016320eff0fcf52115d0da8385a35158a21ac80c930de",
+      "masterSha256": "3910c73a12e6a6c81e75b16106435abc5cdf1f318e264ec1d730fc58d1f16bd0",
+      "displaySha256": "cb57bcd847312bbbdfbb527aa6be4f71f43ec6e5579063dac76a3b5089768452"
+    },
+    {
+      "source": "cleanup",
+      "palette": 64,
+      "originalBytes": 2349328,
+      "framedBytes": 2244442,
+      "unquantized320Bytes": 149007,
+      "masterBytes": 103041,
+      "displayPngBytes": 121011,
+      "displayWebpBytes": 52948,
+      "actualColours": 61,
+      "rgbMaeVersusUnquantizedSameContrast": 4.978,
+      "originalSha256": "af70facbd4f79b75cca2160b9ff0cb5514d5560d952fe5e66a9114ee4602cd6c",
+      "framedSha256": "3c06993f1148ac96159443b664296ba22784ecfe8cdca920eaaa8050d053d96b",
+      "unquantizedSha256": "b30e2599f30411268ae016320eff0fcf52115d0da8385a35158a21ac80c930de",
+      "masterSha256": "86742edd872b8fa97b024627cfcac48da79326d3a8e6221df29424380ba66b4c",
+      "displaySha256": "f24f191a10b1ffaf9970a1c7976b092ed4391ff1adc755d6fba4ebd4acdbd207"
+    }
+  ],
+  "editDifference": {
+    "sameDimensions": true,
+    "changedPixelPercent": 99.06,
+    "rgbMeanAbsoluteDifference": 5.806,
+    "note": "Whole-image byte/pixel difference is not semantic geometry drift; no hard-mask invariance claimed."
+  },
+  "crop": {
+    "bounds": [
+      4,
+      0,
+      1444,
+      1008
+    ],
+    "removedSidePixelsEach": 4,
+    "removedBottomPixels": 78,
+    "retainedAreaPercent": 92.3
+  },
+  "metricNote": "RGB error is a bounded palette diagnostic against the same nearest-neighbour 320 master with contrast 1.15, not a perceptual-quality verdict."
+}

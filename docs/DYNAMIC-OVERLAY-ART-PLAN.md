@@ -64,3 +64,15 @@ After one room plate and its geometry are approved, author a Velvet pilot: one a
 Review the real `LocationVisual` composites at 320 and 640, mobile, early/late/dawn, empty/crowded, present/absent NPC, moved/held/removed object, and Off/Reduced. Check foot contact, counter occlusion, stable identity, room exits, evidence readability and absence of invented narrative information. Art approval and reviewed anchor data precede any replacement of the current fallback glyphs.
 
 The shipping pipeline remains ordinary static WebP/PNG assets, source rectangles, masks and typed state. No generator, model weights, random face synthesis or network inference enters the browser.
+
+## Evidence from the external Velvet plate, 2026-09-09
+
+The [external-edit review](EXTERNAL-EDIT-REVIEW.md) now supplies actual 48/64-colour early/late/dawn/mobile composites against a much richer glossy neon room. These establish several concrete pilot requirements beyond the earlier schematic blockout:
+
+- **Separate emission from material.** Bright baked tubes, lamp pools, window colour and their floor streaks survive the dawn wash. A general tint cannot control them independently. Prepare bounded emission/reflection masks or an albedo/emission split for the existing lighting presentation; do not invent new gameplay light states. Audit all baked fixtures against the dynamic lamp before approval.
+- **Make contact/reflections part of the actor asset contract.** The glossy floor makes their absence conspicuous. Ground shadow and optional vertically attenuated reflection must share the actor/prop's existence, pose, depth, clipping and visibility. A reflection cannot remain after its source leaves or changes custody.
+- **Migrate the current NPC origin explicitly.** Today's schematic glyph has feet at `npcZone.y + 16`, not at the zone origin, and its head begins at `y - 48`. Converting to bottom-centre origins without adjusting composition data would move every character. Record that migration when the first real sprite lands.
+- **Review actual surface scale.** The current 11 × 17 glass and 23 × 36 lamp are oversized against this plate. Use the smaller sprite budgets above with reviewed counter/mounting contacts; merely moving the old glyphs is insufficient. Keep the text register authoritative for tiny or unanchored details.
+- **Require a counter occlusion proof.** The new floor placement works as a presence demonstration, but the renderer has no counter mask to hide a bartender's lower body. Include a separate behind-counter placement test before claiming the pilot supports that staging.
+
+The stronger plate remains draft; these are requirements for the later small overlay pilot. No sprite library, lighting-mask implementation, simulation change or shipping anchor replacement was made in this evaluation.

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "source": "original",
+      "images": 6,
+      "overflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "source": "cleanup",
+      "images": 16,
+      "overflow": false,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}
