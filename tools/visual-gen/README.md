@@ -1,5 +1,7 @@
 # FREAK//CITY local visual tools
 
+Current production entry point: [provider-neutral source pipeline](../../docs/PROVIDER-NEUTRAL-ART-PIPELINE.md). `export_art.py` exports portable source/contract bundles; `import_external.py` accepts external/manual/local/hosted images; `source_provenance.py` validates optional authoring metadata and workflow portability. These paths require no model, provider or ComfyUI. [Contracts](../../docs/art-contracts/README.md) · [ComfyUI plan](../../docs/COMFYUI-VISUAL-WORKFLOW.md).
+
 Development-only Python tools. **No model is bundled with the game.** See [the full pipeline guide](../../docs/GENERATIVE-ASSET-PIPELINE.md) for setup, commands, cache, review, limitations and the external adapter contract.
 
 | File                  | Responsibility                                                                                            |

@@ -1,5 +1,13 @@
 # Velvet overlay pilot
 
+## Human approval and activation — 2026-09-09
+
+**A- / APPROVED DIRECTION.** The project owner approved this bounded pilot and authorized activation in ordinary `feature/state-driven-visuals` play. [Exact approval](visuals/velvet-overlay-pilot/human-approval.json) binds the unchanged source provenance, plate and sprite/reflection hashes. The principles and four known polish items are recorded there; polish is backlog, not a blocker. The compact runtime registry is `src/content/visuals/velvet-overlay.json`, with exact PNG copies under `public/visuals/velvet-overlay/sprites/`.
+
+Default `LocationVisual` rendering now selects the approved overlays when the exact canonical Velvet plate matches. Mara/anonymous occupancy/props/grounding still derive only from the simulation descriptor. [Activation evidence](visuals/velvet-overlay-activation/runtime.json) adds fresh compositor and ordinary-app mobile/desktop checks. [Provider-neutral pipeline](PROVIDER-NEUTRAL-ART-PIPELINE.md), [Velvet contract](art-contracts/rooms/bar.md), [Mara contract](art-contracts/characters/mara.md). PR #1 remains draft. No merge/deployment or wider art production.
+
+The original creation/review report below is preserved as history. Its pending-review/default-off statements and old review screenshots describe the earlier draft, superseded by this approval and activation.
+
 **2026-09-09 · DRAFT OVERLAY ART / HUMAN REVIEW PENDING.** The room is approved and canonical on the feature branch. This bounded pilot adds one stable Mara sprite, two anonymous figures and five existing-object sprites to an opt-in review path in the real `LocationVisual`. Ordinary play uses the approved plate and retains schematic overlays until the pilot receives separate art approval.
 
 [Open the focused review](visuals/velvet-overlay-pilot/review/index.html) · [Sprite sheet](visuals/velvet-overlay-pilot/sprite-sheet.png) · [Runtime evidence](visuals/velvet-overlay-pilot/review/runtime.json) · [Art provenance](visuals/velvet-overlay-pilot/art-provenance.json) · [Prompts](visuals/velvet-overlay-pilot/prompts.json).

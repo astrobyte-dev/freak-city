@@ -1,5 +1,17 @@
 # Workstation handoff
 
+## Owner-approved architecture checkpoint
+
+The owner approved the provider-neutral pass on 2026-09-09 and authorized committing/pushing it on `feature/state-driven-visuals`. After that checkpoint, inspect the existing shared ComfyUI workstation read-only, prepare a portable Kontext workflow and exact download/licence/resource proposal, then stop before downloads or inference. Do not update ComfyUI, add custom nodes, modify other projects, merge PR #1 or deploy. This instruction supersedes the earlier pending-review handoff below.
+
+## Current handoff: approved overlay active; provider-neutral authoring
+
+The owner approved the bounded Velvet overlay direction **A- on 2026-09-09**. Ordinary play on `feature/state-driven-visuals` now uses the exact retained Mara/two-patron/five-prop sprites and entity-owned reflections. [Hash-bound approval](visuals/velvet-overlay-pilot/human-approval.json). Known pencil/variety/prop/reflection polish is accepted backlog.
+
+Read [PROVIDER-NEUTRAL-ART-PIPELINE.md](PROVIDER-NEUTRAL-ART-PIPELINE.md), [room and character contracts](art-contracts/README.md), and [COMFYUI-VISUAL-WORKFLOW.md](COMFYUI-VISUAL-WORKFLOW.md) before continuing. Manual, external, local and hosted images share import/review processing; provider/model details are optional provenance. Source/master/display/workflow retention is repository-owned. No original model or conversation memory is needed for maintenance.
+
+PR #1 stays draft. Stop for human review of this architecture/tooling pass. Do not regenerate Mara/Velvet, expand art production, download models, merge or deploy. The local bake-off is only planned; before any future model download provide the exact payload/licence/disk/memory proposal and wait for approval. All earlier next-step instructions below are historical and superseded by this section.
+
 ## Latest result: canonical Velvet promoted; overlay pilot ready for review
 
 Correction/approval checkpoint `fdb3f4b` was pushed before promotion. Promotion commit `288ef7e` binds the owner-approved 64-colour plate to ordinary feature-branch runtime. [Canonical lock and workflow](VELVET-CANONICAL-APPROVAL.md). The bounded [Velvet overlay pilot](VELVET-OVERLAY-PILOT.md) is complete as draft art with a [focused review](visuals/velvet-overlay-pilot/review/index.html): one Mara, two anonymous figures, five existing objects, contacts/masks/reflections and actual parser-state composites. Normal play has no draft sprite binding; activating or expanding these assets requires the next human art review. Do not regenerate the room, create further library assets, merge PR #1 or deploy Pages. Read this section before the historical instructions below.

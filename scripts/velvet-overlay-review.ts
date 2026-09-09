@@ -1,24 +1,25 @@
-// Real LocationVisual + parser-state review. Draft sprites never enter the shipping registry.
+// Approved shipping sprites in the real compositor and ordinary parser UI.
 import { chromium, expect } from "@playwright/test";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { createHash } from "node:crypto";
-import { velvetPilot } from "./velvet-pilot-fixture";
+import { approvedVelvetPilot as velvetPilot } from "../src/content/visuals/velvet-overlay";
 import {
   pilotProblems,
   velvetContacts,
   velvetCounter,
   velvetFloor,
 } from "../src/visuals/velvet-pilot";
-const output = resolve("docs/visuals/velvet-overlay-pilot/review");
+const output = resolve("docs/visuals/velvet-overlay-activation");
 mkdirSync(output, { recursive: true });
+mkdirSync(".visuals", { recursive: true });
 const registry = readFileSync("src/content/visuals/assets.json");
 const hash = (v: Buffer) => createHash("sha256").update(v).digest("hex");
 if (pilotProblems(velvetPilot).length)
   throw new Error(pilotProblems(velvetPilot).join("\n"));
 writeFileSync(
   ".visuals/velvet-pilot.html",
-  '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Velvet overlay pilot · draft review</title><main id="root"></main><script type="module" src="/.visuals/velvet-pilot.tsx"></script></html>',
+  '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Velvet overlay pilot · approved activation</title><main id="root"></main><script type="module" src="/.visuals/velvet-pilot.tsx"></script></html>',
 );
 writeFileSync(
   ".visuals/velvet-pilot.tsx",
@@ -27,7 +28,8 @@ import React from 'react'; import {createRoot} from 'react-dom/client';
 import {LocationVisual} from '../src/components/LocationVisual';
 import {deriveVisualState} from '../src/visuals/derive';
 import {deriveVelvetPilot,hasPilotReflection} from '../src/visuals/velvet-pilot';
-import {velvetPilot,velvetState} from '../scripts/velvet-pilot-fixture';
+import {velvetState} from '../scripts/velvet-pilot-fixture';
+import {approvedVelvetPilot as velvetPilot} from '../src/content/visuals/velvet-overlay';
 import '../src/styles.css';
 const root=createRoot(document.getElementById('root'));
 window.pilotReview=(options={})=>{
@@ -36,7 +38,7 @@ window.pilotReview=(options={})=>{
  const pilot={...velvetPilot,maraStaging:staging};const entities=deriveVelvetPilot(d,pilot);
  root.render(<section id="pilot-review" data-label={label} style={{width,maxWidth:'100%',margin:'0 auto'}}>
  <style>{'.location-visual{margin:0;width:100%;border:0}.visual-viewport{animation:none}.visual-light{transition:none}body{margin:0;padding:16px;background:#110e17;box-sizing:border-box}*{box-sizing:border-box}'}</style>
- <p style={{font:'12px monospace',color:'#bd9dae'}}>DRAFT OVERLAY REVIEW / {label}</p>
+ <p style={{font:'12px monospace',color:'#bd9dae'}}>APPROVED OVERLAY / FEATURE BRANCH / {label}</p>
  <LocationVisual descriptor={d} mode={mode} overlayPilot={enabled?pilot:undefined}/></section>);
  return {label,band,time:state.time,lighting:d.lighting,crowd:d.crowdLevel,npcs:d.npcPresence.map(n=>n.id),commands,
   envelopeLocation:state.world.entities.envelope.location,base:d.baseArt?.file,baseSha256:d.baseArt?.sha256,
@@ -179,6 +181,46 @@ try {
   await expect(page.locator('[data-sprite-id="mara"]')).toHaveCount(0);
   await expect(page.locator('[data-reflection-owner="mara"]')).toHaveCount(0);
   await expect(page.locator(".visual-presence")).toContainText("Mara");
+  await page.unroute("**/sprites/mara.png");
+  // Enter through the ordinary application: no injected descriptor or overlay prop.
+  await page.goto(process.env.VISUAL_DEV_URL ?? "http://127.0.0.1:5182");
+  const command = async (text: string) => {
+    const input = page.getByRole("textbox", { name: "Command", exact: true });
+    await input.fill(text);
+    await input.press("Enter");
+  };
+  await command("take envelope");
+  await page.getByRole("textbox", { name: "YOUR ALIAS" }).fill("Ash");
+  await page.getByRole("checkbox", { name: /18 or older/ }).check();
+  await page.getByRole("button", { name: "Enter as Ash", exact: true }).click();
+  for (const text of ["go outside", "go inside", "go bar", "drop envelope"])
+    await command(text);
+  await expect(
+    page.locator('[data-review-status="approved-direction"]'),
+  ).toBeVisible();
+  await expect(page.locator('[data-sprite-id="mara"]')).toBeVisible();
+  await expect(page.locator('[data-reflection-owner="envelope"]')).toHaveCount(
+    1,
+  );
+  await page.screenshot({
+    path: resolve(output, "ordinary-play-mobile.png"),
+    fullPage: true,
+  });
+  await command("take envelope");
+  await expect(page.locator('[data-sprite-id="envelope"]')).toHaveCount(0);
+  await expect(page.locator('[data-reflection-owner="envelope"]')).toHaveCount(
+    0,
+  );
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
+  await page.setViewportSize({ width: 1440, height: 1100 });
+  await page.screenshot({
+    path: resolve(output, "ordinary-play-desktop.png"),
+    fullPage: true,
+  });
   if (errors.length) throw new Error(errors.join("\n"));
   expect(readFileSync("src/content/visuals/assets.json").equals(registry)).toBe(
     true,
@@ -187,7 +229,7 @@ try {
     resolve(output, "runtime.json"),
     JSON.stringify(
       {
-        status: "draft overlay; canonical plate approved",
+        status: "approved-direction; active in ordinary feature play",
         registrySha256: hash(registry),
         checks: [
           "actual parser movement/custody",
@@ -200,6 +242,7 @@ try {
           "Off",
           "Reduced",
           "sprite failure removes owned reflection; text retained",
+          "ordinary application mobile/desktop parser play with default approved sprites",
         ],
         records,
         contacts: velvetContacts,

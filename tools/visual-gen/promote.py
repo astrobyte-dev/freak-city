@@ -11,6 +11,7 @@ import tempfile
 from optimizer import optimize
 from prompt_builder import safe_id
 from review import role_review
+from source_provenance import is_source_import
 
 
 def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_architecture=False, composition=None, non_explicit=False, illustration=None, approve_reference_geometry=False):
@@ -27,7 +28,7 @@ def promote(candidate, reviewer, notes, root, allow_fixture=False, *, approve_ar
         raise ValueError("This is a procedural test fixture, not SDXL output. Use --allow-fixture only for an intentional fixture review.")
     if hashlib.sha256(candidate.read_bytes()).hexdigest() != source["sha256"]:
         raise ValueError("Candidate differs from its generated sidecar; inspect the change before reviewing")
-    if source.get("sourceType") == "external-reviewed-edit" or source.get("backend") == "external-reviewed-edit" or source.get("provenance", {}).get("origin") == "external-reviewed-edit":
+    if is_source_import(source):
         from import_external import validate_external_provenance
         from PIL import Image
         expected = validate_external_provenance(candidate.parent, source)

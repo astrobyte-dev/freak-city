@@ -1,5 +1,6 @@
 import { scheduleNeighbourPreload } from "../visuals/preload";
 import { VelvetOverlayPilot } from "./VelvetOverlayPilot";
+import { approvedVelvetPilot } from "../content/visuals/velvet-overlay";
 import {
   pilotEnabled,
   deriveVelvetPilot,
@@ -280,7 +281,7 @@ export const LocationVisual = memo(function LocationVisual({
   descriptor: d,
   mode,
   preview = false,
-  overlayPilot,
+  overlayPilot = approvedVelvetPilot,
 }: {
   descriptor: VisualDescriptor;
   mode: VisualMode;

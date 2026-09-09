@@ -1,6 +1,6 @@
 import type { VisualDescriptor } from "./types";
 
-/** Review-only art input. Never a save field, NPC schedule, or gameplay location. */
+/** Reviewed art input. Never a save field, NPC schedule, or gameplay location. */
 export interface PilotSprite {
   file: string;
   width: number;
@@ -9,7 +9,7 @@ export interface PilotSprite {
   reflection: { file: string; width: number; height: number; sha256: string };
 }
 export interface VelvetPilot {
-  status: "draft";
+  status: "draft" | "approved-direction";
   plateSha256: string;
   assets: Record<string, PilotSprite>;
   /** Both positions are staging proofs of the same present Mara, never simultaneous. */

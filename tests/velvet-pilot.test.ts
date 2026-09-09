@@ -12,6 +12,7 @@ import {
   velvetContacts,
 } from "../src/visuals/velvet-pilot";
 import { LocationVisual } from "../src/components/LocationVisual";
+import { approvedVelvetPilot } from "../src/content/visuals/velvet-overlay";
 const descriptor = (...args: Parameters<typeof velvetState>) =>
   deriveVisualState(velvetState(...args).state);
 const render = (d = descriptor(), p = velvetPilot) =>
@@ -22,7 +23,40 @@ const render = (d = descriptor(), p = velvetPilot) =>
       overlayPilot: p,
     }),
   );
-describe("Velvet draft overlay pilot", () => {
+describe("Velvet approved overlay pilot", () => {
+  it("ships the exact owner-approved sprites and reflections without authoring metadata", () => {
+    const approval = JSON.parse(
+      readFileSync(
+        "docs/visuals/velvet-overlay-pilot/human-approval.json",
+        "utf8",
+      ),
+    );
+    expect(approval.assets).toEqual(approvedVelvetPilot.assets);
+    expect(approval.plateSha256).toBe(approvedVelvetPilot.plateSha256);
+    expect(
+      createHash("sha256")
+        .update(
+          readFileSync("docs/visuals/velvet-overlay-pilot/art-provenance.json"),
+        )
+        .digest("hex"),
+    ).toBe(approval.provenanceSha256);
+    for (const [id, a] of Object.entries(approvedVelvetPilot.assets)) {
+      expect(a.sha256).toBe(velvetPilot.assets[id].sha256);
+      for (const r of [a, a.reflection])
+        expect(
+          createHash("sha256")
+            .update(readFileSync("public/" + r.file))
+            .digest("hex"),
+        ).toBe(r.sha256);
+      expect(Object.keys(a).sort()).toEqual([
+        "file",
+        "height",
+        "reflection",
+        "sha256",
+        "width",
+      ]);
+    }
+  });
   it("validates source bindings and every actual sprite/reflection hash", () => {
     expect(pilotProblems(velvetPilot)).toEqual([]);
     for (const a of Object.values(velvetPilot.assets))
@@ -98,13 +132,13 @@ describe("Velvet draft overlay pilot", () => {
     )!;
     expect(hasPilotReflection(lamp)).toBe(false);
   });
-  it("does not activate draft art by default, against another plate, or in Off mode", () => {
+  it("activates approved art by default, but never against another plate or in Off mode", () => {
     const d = descriptor();
     expect(
       renderToStaticMarkup(
         createElement(LocationVisual, { descriptor: d, mode: "on" }),
       ),
-    ).not.toContain("velvet-overlay-pilot");
+    ).toContain('data-review-status="approved-direction"');
     expect(
       render(d, { ...velvetPilot, plateSha256: "0".repeat(64) }),
     ).not.toContain("data-sprite-id");

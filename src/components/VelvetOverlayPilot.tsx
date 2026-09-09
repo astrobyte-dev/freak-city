@@ -9,7 +9,7 @@ import {
   type VelvetPilot,
 } from "../visuals/velvet-pilot";
 
-/** Opt-in, pending-review art. The regular runtime has no draft sprite binding. */
+/** Approved environment art; presence and grounding belong to descriptor entities. */
 export function VelvetOverlayPilot({
   descriptor: d,
   pilot,
@@ -32,7 +32,7 @@ export function VelvetOverlayPilot({
           : [0.98, 1, 1];
   const href = (file: string) => `${import.meta.env.BASE_URL}${file}`;
   return (
-    <g data-layer="velvet-overlay-pilot" data-review-status="draft">
+    <g data-layer="velvet-overlay-pilot" data-review-status={pilot.status}>
       <defs>
         <mask
           id={`${uid}-counter`}

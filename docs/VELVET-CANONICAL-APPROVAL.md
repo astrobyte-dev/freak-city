@@ -1,5 +1,9 @@
 # Velvet canonical approval
 
+## Current authoring and overlay status
+
+The room remains locked and byte-identical. The owner separately approved the bounded Velvet overlay direction A- on 2026-09-09, and the existing sprites are now active in ordinary feature play. [Overlay approval](visuals/velvet-overlay-pilot/human-approval.json). The production authoring contract is [provider-neutral](PROVIDER-NEUTRAL-ART-PIPELINE.md); ChatGPT was one historical source, not a room role or runtime requirement.
+
 The project owner approved the corrected Velvet room on 2026-09-09 and authorized promotion on `feature/state-driven-visuals`. The useful correction evidence was committed and pushed first at `fdb3f4b05dd6845d5038ef8bb1c941cdfdbda800`; origin matched local HEAD.
 
 The existing `promote.py` workflow validated retained source, parent, manifest, framing, palette master and exact display pixels before writing the canonical registry entry. It records `status: canonical`, `authoritativeArchitecture: true`, and the existing typed human review flags. The source candidate stays immutable with its original draft metadata; the separate [hash-bound human approval](visuals/velvet-architecture-cleanup/human-approval.json) records the subsequent decision.
@@ -10,8 +14,8 @@ The camera, one central stair, fixed left bar, shelving, high right window, east
 
 ## Provisional hero-room production workflow
 
-Authoritative world facts → authoritative layout → high-quality ChatGPT/external image edit → targeted architecture correction → human review → 320-pixel master → 64-colour treatment → exact 2× 640 display → runtime compositor.
+Authoritative world facts → authoritative layout → provider-neutral art contract → high-quality source image from any authoring tool → targeted architecture correction → human review → 320-pixel master → 64-colour treatment → exact 2× 640 display → runtime compositor.
 
 Velvet proves one successful room. Repeatability across rooms remains provisional. SDXL Turbo remains useful for scene illustrations, mood exploration and rapid concepts. Earlier experiments are evidence for this evolution and must stay intact.
 
-The separately requested Mara/two-patron/core-prop overlay pilot needs human art review before production activation or expansion. The retained composition is the plate-review baseline; new sprite contacts and masks are a separate art proposal. PR #1 stays draft. No merge, main update or public Pages deployment is authorized.
+The separately approved Mara/two-patron/core-prop overlay pilot is active on the feature branch; further expansion needs its own authorization and review. The retained composition is the plate-review baseline; new sprite contacts and masks are a separate art proposal. PR #1 stays draft. No merge, main update or public Pages deployment is authorized.

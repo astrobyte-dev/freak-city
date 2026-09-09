@@ -4,6 +4,7 @@ import html
 import json
 import os
 from pathlib import Path
+from source_provenance import is_source_import
 
 
 def review_page(batch, output):
@@ -30,7 +31,8 @@ def review_page(batch, output):
         parts += ['<p>Review style, mood, adult silhouettes/anatomy, NPC correctness, boundaries and existing scene compatibility. Geometry is non-authoritative. These images have no approved shipping scene binding.</p>']
     for index,(path,meta) in enumerate(candidates,1):
         settings=meta["generationSettings"]
-        label = f'{settings["colors"]} colours / external edit' if meta.get("sourceType")=="external-reviewed-edit" else f'seed {meta["seed"]}'
+        source_label = meta.get("sourceType", "source image").replace("external-reviewed-edit", "external edit")
+        label = f'{settings["colors"]} colours / {source_label}' if is_source_import(meta) else f'seed {meta["seed"]}'
         parts.append(f'<article><h2>{index:02} / {text(label)}'+(f' / denoise {settings["strength"]}' if "strength" in settings else '')+'</h2><div class="grid">')
         if meta.get("originalSource"):
             for key,label in (("originalSource","High-resolution source; original bytes"),("unquantizedMaster","320 master before palette and contrast")):

@@ -1,5 +1,9 @@
 ﻿# Local visual generation and human review
 
+## Current production entry point
+
+Use [PROVIDER-NEUTRAL-ART-PIPELINE.md](PROVIDER-NEUTRAL-ART-PIPELINE.md) for source imports, manual maintenance, provenance and retention, [art contracts](art-contracts/README.md) for authoring intent, and [the optional ComfyUI plan](COMFYUI-VISUAL-WORKFLOW.md) for local experiments. The approved Velvet room and overlay pilot are active on the feature branch. Older model-specific setup and experiment commands below remain historical tools, not required production dependencies or authorization to generate/download.
+
 **Current hero-room result:** [Velvet is human-approved and promoted on the feature branch](VELVET-CANONICAL-APPROVAL.md). Facts ? layout ? high-quality external edit ? targeted architecture correction ? human review ? 320 master ? 64 colours ? exact 640 display ? compositor is now the provisional hero-room workflow. Turbo remains for scenes, mood and concepts. Older experiment descriptions below are retained as history.
 
 **Development spoilers · PRE-ALPHA / ACTIVE DEVELOPMENT.** Python, Torch and model weights remain local development tools. The browser receives only reviewed static art. No model, inference API or Python dependency enters the game bundle or Pages deployment.
@@ -12,7 +16,7 @@ The original two-step/guidance-zero SDXL Turbo workflow, configurable retro crun
 
 ## Setup and Windows environment
 
-For a fresh laptop, start with [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md). The current next task imports a separately supplied external / ChatGPT canonical candidate; it does not require local model weights. The ignored `.visuals/setup/Activate.ps1` used in historical commands is specific to the previous workstation and will not exist in a fresh clone.
+For a fresh laptop, start with [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md). The current production path imports reviewed source images from any authoring tool; it does not require local model weights. The ignored `.visuals/setup/Activate.ps1` used in historical commands is specific to the previous workstation and will not exist in a fresh clone.
 
 Use Node 22 (`.nvmrc`) and Python 3.10+ in a virtual environment. `npm ci`, `npm run check`, `npm run build:playtest` and `npm run visuals:validate` require no Python or models. For the full Python tests, fixtures, pixel processing and dry runs, install only `tools/visual-gen/requirements-test.txt` (Pillow and pinned OpenCV/NumPy), then invoke `python -m unittest discover -s tools/visual-gen/tests -v`. Set `VISUAL_PYTHON` to the venv interpreter for the integrated npm command; on Windows this avoids the `python3` alias. Torch, Diffusers and the Hugging Face client are not needed for these tests.
 
@@ -28,7 +32,7 @@ $env:VISUAL_PYTHON = (Resolve-Path .venv\Scripts\python.exe).Path
 $env:PYTHONUTF8 = '1'
 ```
 
-Respect `HF_HOME` and normal Hugging Face cache settings. On this workstation the existing cache is `C:\Users\thr3e\.cache\huggingface`, outside the repository. Do not hard-code the collaborator's example `G:\LLMModels`. Allow room for multi-GB weights and temporary downloads. The loader checks critically low free space, unavailable CUDA, missing packages, model-load errors and GPU memory exhaustion. It never silently switches to CPU. CPU requires both `--device cpu --allow-cpu`; none of the real batches used CPU inference.
+Respect `HF_HOME` and normal Hugging Face cache settings. The default cache is `.cache/huggingface` under the user's home directory, outside the repository. Do not hard-code workstation-specific model directories. Allow room for multi-GB weights and temporary downloads. The loader checks critically low free space, unavailable CUDA, missing packages, model-load errors and GPU memory exhaustion. It never silently switches to CPU. CPU requires both `--device cpu --allow-cpu`; none of the real batches used CPU inference.
 
 The local ignored `.visuals/setup/Activate.ps1` restores Node 22, the venv, `VISUAL_PYTHON`, UTF-8 I/O and the existing cache. Exact installed versions are in `.visuals/setup/requirements-lock.txt`. Python 3.10.11, Torch 2.11.0+cu128, Diffusers 0.39.0, Transformers 4.57.6, Accelerate 1.14.0 and Pillow 12.3.0 ran the v2 batch successfully.
 

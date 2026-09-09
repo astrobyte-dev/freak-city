@@ -8,6 +8,7 @@ from PIL import Image
 from generator import VERSION, retro_crunch, display_upscale
 from layout_reference import digest
 from contact_sheet import contact_sheet
+from source_provenance import is_source_import
 
 
 def checked_file(root, record):
@@ -23,7 +24,7 @@ def import_edit(parent, edited, output, editor, tool, notes):
     parent,edited=Path(parent).resolve(),Path(edited).resolve()
     metadata_path=parent.with_suffix(".json")
     source=json.loads(metadata_path.read_text(encoding="utf-8"))
-    if source.get("sourceType") == "external-reviewed-edit":
+    if is_source_import(source):
         raise ValueError("Use import_external.py with --parent-source for external edits; preserve the full-resolution original and explicitly review framing")
     if source["reviewStatus"] not in ("draft","reviewed") or digest(parent.read_bytes())!=source["sha256"]:
         raise ValueError("Import from an unchanged reviewable parent draft")

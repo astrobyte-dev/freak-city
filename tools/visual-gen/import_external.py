@@ -1,4 +1,4 @@
-"""Import an external canonical source and palette comparisons as unapproved drafts.
+"""Import a canonical source from any authoring tool as unapproved drafts.
 
 No inference, implicit framing, shipping writes, or fabricated generation settings.
 """
@@ -14,6 +14,7 @@ from generator import VERSION, retro_crunch, display_upscale
 from layout_reference import digest
 from prompt_builder import build_prompt
 from contact_sheet import contact_sheet
+from source_provenance import SOURCE_TYPES, IMPORT_BACKEND, authoring_metadata, workflow_bytes
 
 SOURCE_TYPE = "external-reviewed-edit"
 
@@ -54,13 +55,26 @@ def checked_record(stage, item):
 def validate_external_provenance(stage, meta):
     """Check the retained input and reproduce framing/master/display before review."""
     stage = Path(stage).resolve()
-    if (meta.get("sourceType") != SOURCE_TYPE or meta.get("backend") != SOURCE_TYPE
+    source_type = meta.get("sourceType")
+    legacy = meta.get("sourceSchemaVersion") is None
+    if (source_type not in SOURCE_TYPES
+            or (legacy and (source_type != SOURCE_TYPE or meta.get("backend") != SOURCE_TYPE))
+            or (not legacy and (meta.get("sourceSchemaVersion") != 1 or meta.get("backend") != IMPORT_BACKEND))
             or meta.get("modelExecuted") is not False or meta.get("model") is not None
             or meta.get("seed") is not None or not meta.get("architectureReviewRequired")):
         raise ValueError("External draft must retain honest source identity and architecture review requirements")
     provenance = meta["provenance"]
-    if provenance.get("origin") != SOURCE_TYPE or not all(provenance.get(k, "").strip() for k in ("editor", "service", "notes")):
-        raise ValueError("External editor, service and notes are required")
+    required = ("editor", "service", "notes") if legacy else ("editor", "notes")
+    if provenance.get("origin") != source_type or not all(isinstance(provenance.get(k), str) and provenance[k].strip() for k in required):
+        raise ValueError("Source editor and notes are required (legacy sources also retain service)")
+    if not legacy:
+        authoring_metadata(provenance.get("authoring"))
+        if provenance.get("modelExecutedDuringImport") is not False:
+            raise ValueError("Import must not claim inference")
+        if provenance.get("workflow"):
+            workflow_bytes(checked_record(stage, provenance["workflow"]).read_bytes())
+        if provenance.get("artContract"):
+            checked_record(stage, provenance["artContract"])
     for key in ("originalSource", "sourceImage", "unquantizedMaster", "pixelSource", "worldManifest"):
         checked_record(stage, meta[key])
     if provenance.get("parentSource"):
@@ -99,10 +113,22 @@ def validate_external_provenance(stage, meta):
     return display_upscale(expected["pixelSource"], 640)
 
 
-def import_external(manifest, source, output, editor, service, notes, framing_notes,
-                    crop=None, colors=(48, 64), contrast=1.15, parent_source=None, edit_prompt=None):
-    if not all(isinstance(v, str) and v.strip() for v in (editor, service, notes, framing_notes)):
-        raise ValueError("Editor, service, source notes and framing notes are required")
+def import_external(manifest, source, output, editor, service=None, notes=None, framing_notes=None,
+                    crop=None, colors=(48, 64), contrast=1.15, parent_source=None, edit_prompt=None,
+                    source_type=SOURCE_TYPE, authoring=None, workflow=None, art_contract=None):
+    if source_type not in SOURCE_TYPES:
+        raise ValueError("Unsupported source type")
+    if not all(isinstance(v, str) and v.strip() for v in (editor, notes, framing_notes)):
+        raise ValueError("Editor, source notes and framing notes are required")
+    authoring = authoring_metadata(authoring)
+    if service is not None:
+        if not isinstance(service, str) or not service.strip():
+            raise ValueError("Service must be nonempty when supplied")
+        authoring.setdefault("authoringTool", service)
+    workflow_data = workflow_bytes(Path(workflow).read_bytes()) if workflow else None
+    contract_data = Path(art_contract).read_bytes() if art_contract else None
+    if contract_data is not None and not contract_data.strip():
+        raise ValueError("Art contract must not be empty")
     if (not colors or any(type(c) is not int or c not in (48, 64) for c in colors)
             or len(set(colors)) != len(colors) or not math.isfinite(contrast) or not 0.5 <= contrast <= 2):
         raise ValueError("Use distinct 48/64 palettes and finite contrast 0.5..2")
@@ -119,7 +145,9 @@ def import_external(manifest, source, output, editor, service, notes, framing_no
                 "colors": list(colors), "contrast": contrast, "editor": editor, "service": service,
                 "notes": notes, "framingNotes": framing_notes, "editPrompt": edit_prompt,
                 "parent": digest(parent_bytes) if parent_bytes else None, "pipeline": VERSION,
-                "pillow": pillow_version}
+                "pillow": pillow_version, "sourceType": source_type, "authoring": authoring,
+                "workflow": digest(workflow_data) if workflow_data else None,
+                "artContract": digest(contract_data) if contract_data else None}
     run_id = digest(json.dumps(identity, sort_keys=True).encode())[:12]
     stage = Path(output).resolve() / "raw" / run_id
     stage.mkdir(parents=True, exist_ok=False)  # Never overwrite original or earlier experiments.
@@ -135,6 +163,12 @@ def import_external(manifest, source, output, editor, service, notes, framing_no
         parent_path = stage / "provenance" / ("parent-source" + Path(parent_source).suffix.lower())
         parent_path.write_bytes(parent_bytes)
         parent_record = record(stage, parent_path)
+    retained = {}
+    for key, filename, data in (("workflow", "workflow.json", workflow_data), ("artContract", "art-contract.md", contract_data)):
+        if data is not None:
+            path = stage / "provenance" / filename
+            path.write_bytes(data)
+            retained[key] = record(stage, path)
     created_at = datetime.now(timezone.utc).isoformat()
     results = []
     for palette in colors:
@@ -144,10 +178,10 @@ def import_external(manifest, source, output, editor, service, notes, framing_no
         candidate = stage / f"{spec['roomId']}__canonical-room__canonical__{palette}-colours.png"
         display_upscale(master, 640).save(candidate)
         meta = {**spec, "prompt": edit_prompt, "modelPrompt": None, "reviewBrief": spec["prompt"],
-                "sourceType": SOURCE_TYPE, "backend": SOURCE_TYPE, "model": None, "seed": None,
+                "sourceSchemaVersion": 1, "sourceType": source_type, "backend": IMPORT_BACKEND, "model": None, "seed": None,
                 "modelExecuted": False, "sourceGeneratorVersion": VERSION, "runId": run_id,
                 "createdAt": created_at, "reviewStatus": "draft", "architectureReviewState": "pending-human-review",
-                "conditioning": {"mode": "external-edit", "reference": None, "mask": None, "layout": None},
+                "conditioning": {"mode": "source-image-import", "reference": None, "mask": None, "layout": None},
                 "originalSource": record(stage, original), "sourceImage": record(stage, stage / "sources/framed.png"),
                 "unquantizedMaster": record(stage, stage / "pixels/unquantized.png"),
                 "pixelSource": record(stage, pixel_path), "worldManifest": record(stage, stage / "provenance/world-manifest.json"),
@@ -159,20 +193,26 @@ def import_external(manifest, source, output, editor, service, notes, framing_no
                 "generationSettings": {"operation": "pixel-processing-only", "width": framed.width, "height": framed.height,
                                        "pixelWidth": 320, "displayWidth": 640, "colors": palette, "contrast": contrast,
                                        "resampling": "nearest-neighbour", "quantization": "Pillow MEDIANCUT", "pillowVersion": pillow_version},
-                "provenance": {"origin": SOURCE_TYPE, "editor": editor, "service": service, "notes": notes,
+                "provenance": {"origin": source_type, "editor": editor, "service": service, "notes": notes,
+                               "authoring": authoring, **retained,
                                "modelVersion": None, "sourceCreatedAt": None, "parentSource": parent_record,
                                "editPrompt": edit_prompt, "modelExecutedDuringImport": False}}
         candidate.with_suffix(".json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
         validate_external_provenance(stage, meta)
-        results.append({"path": str(candidate), "metadata": meta, "seed": None, "backend": SOURCE_TYPE})
+        results.append({"path": str(candidate), "metadata": meta, "seed": None, "backend": IMPORT_BACKEND})
     contact_sheet(results, Path(output).resolve() / "review" / run_id / "contact-sheet.webp")
     return results
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    for name in ("manifest", "source", "output", "editor", "service", "notes", "framing-notes"):
+    for name in ("manifest", "source", "output", "editor", "notes", "framing-notes"):
         parser.add_argument("--" + name, required=True)
+    parser.add_argument("--service", help="Legacy alias for authoring tool; optional")
+    parser.add_argument("--source-type", choices=SOURCE_TYPES, default=SOURCE_TYPE)
+    parser.add_argument("--authoring-json", help="Optional provider/model/settings/manual history JSON")
+    parser.add_argument("--workflow", help="Optional portable ComfyUI workflow JSON retained with hash")
+    parser.add_argument("--art-contract", help="Retain the provider-neutral Markdown brief with hash")
     parser.add_argument("--crop", type=int, nargs=4, metavar=("LEFT", "TOP", "RIGHT", "BOTTOM"))
     parser.add_argument("--colors", type=int, nargs="+", default=[48, 64])
     parser.add_argument("--contrast", type=float, default=1.15)
@@ -180,5 +220,7 @@ if __name__ == "__main__":
     parser.add_argument("--edit-prompt-file")
     args = vars(parser.parse_args())
     prompt_file = args.pop("edit_prompt_file")
+    authoring_file = args.pop("authoring_json")
+    args["authoring"] = json.loads(Path(authoring_file).read_text(encoding="utf-8")) if authoring_file else None
     args["edit_prompt"] = Path(prompt_file).read_text(encoding="utf-8") if prompt_file else None
     print(json.dumps([{"candidate": r["path"], "reviewStatus": "draft"} for r in import_external(**args)], indent=2))

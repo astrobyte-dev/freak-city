@@ -1,5 +1,6 @@
 """A labelled local comparison sheet; never a canonical room image."""
 import math
+from source_provenance import is_source_import
 from pathlib import Path
 
 
@@ -18,8 +19,9 @@ def contact_sheet(candidates, destination):
         with Image.open(candidate["path"]) as raw:
             raw.thumbnail((244, 171), Image.Resampling.NEAREST)
             sheet.paste(raw.convert("RGB"), (x, y))
-        external = candidate.get("metadata", {}).get("sourceType") == "external-reviewed-edit"
-        label = (f"{index+1:02} / {candidate['metadata']['generationSettings']['colors']} colours / external edit" if external
+        external = is_source_import(candidate.get("metadata", {}))
+        source_label = candidate.get("metadata", {}).get("sourceType", "source image").replace("external-reviewed-edit", "external edit")
+        label = (f"{index+1:02} / {candidate['metadata']['generationSettings']['colors']} colours / {source_label}" if external
                  else f"{index+1:02} / seed {candidate['seed']} / {candidate['backend']}")
         draw.text((x, y + 177), label, fill=(225, 215, 190))
         settings = candidate.get("metadata", {}).get("generationSettings", {})

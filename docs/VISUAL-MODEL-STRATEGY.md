@@ -1,5 +1,9 @@
 # Visual model strategy
 
+## Current policy
+
+[Provider-neutral source authoring](PROVIDER-NEUTRAL-ART-PIPELINE.md) supersedes provider preferences in earlier experiments below. Keep approved Velvet/Mara; the [ComfyUI bake-off](COMFYUI-VISUAL-WORKFLOW.md) is prepared but not run. Model choice is an optional workstation decision, never part of game architecture. No downloads or further art generation are authorized by this document.
+
 The current direction is **high-quality external / ChatGPT image editing for hero canonical rooms**. The supplied Velvet candidate and exactly one targeted cleanup have now been evaluated: **B, strong with specified correction/manual cleanup still required**. The source, 48/64-colour comparison and real runtime evidence are in [EXTERNAL-EDIT-REVIEW.md](EXTERNAL-EDIT-REVIEW.md). No plate is promoted, and one source/edit does not establish repeatability across rooms. See [WORKSTATION-HANDOFF.md](WORKSTATION-HANDOFF.md) for the definitive next task and fresh-machine setup.
 
 The likely production split is external image creation/refinement for hero rooms, **SDXL Turbo** for expressive scene illustrations and rapid exploration, the runtime compositor for actual NPC/object/time/weather/state, and expected human cleanup before approval. The two implemented local backends remain available as historical tools. **SDXL Base + structural ControlNet** was the first measured canonical-room production experiment; its result is insufficient. No model runs in the browser.
