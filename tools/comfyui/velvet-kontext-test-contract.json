@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "velvet-kontext-surgical-edit-v1",
+  "status": "prepared-not-run",
+  "purpose": "Evaluation-only disposable edit; no change to canonical art or geography",
+  "source": "docs/visuals/velvet-architecture-cleanup/candidate/sources/original.png",
+  "sourceSha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2",
+  "sourceDimensions": [1448, 1086],
+  "roomContract": "docs/art-contracts/rooms/bar.md",
+  "inputFilename": "freak-city/velvet-kontext-v1-source.png",
+  "crop": {
+    "bounds": [4, 0, 1444, 1008],
+    "dimensions": [1440, 1008],
+    "reason": "Existing human-approved frame; no new composition"
+  },
+  "modelInputDimensions": [1120, 784],
+  "normalization": {
+    "resampling": "ComfyUI ImageScale lanczos",
+    "crop": "disabled",
+    "keepAspect": true
+  },
+  "target": {
+    "description": "Small wall poster immediately right of the salon opening",
+    "sourceBounds": [923, 312, 1007, 422],
+    "boundsConvention": "left/top inclusive, right/bottom exclusive",
+    "maskPurpose": "Evaluation ROI only, including cleanup margin; not a generation mask",
+    "normalizedBounds": [714, 242, 781, 329]
+  },
+  "instruction": "Remove only the small rectangular wall poster immediately to the right of the dark salon doorway beside the central staircase. Fill only that patch with the surrounding distressed wall texture. Preserve the camera, stairs, bar, shelving, all openings, high right window, neon tubes, floor, perspective, colours, lighting and every other detail. Add nothing.",
+  "settings": {
+    "seed": 19421,
+    "controlAfterGenerate": "fixed",
+    "steps": 20,
+    "cfg": 1.0,
+    "fluxGuidance": 2.5,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "batchSize": 1
+  },
+  "runPlan": {
+    "firstRunSeed": 19421,
+    "repeatSeed": 19421,
+    "additionalSeedsAfterHumanReview": [19422, 19423],
+    "firstRunThenStopForHumanReview": true
+  },
+  "pixelProcessing": {
+    "crop": [0, 0, 1120, 784],
+    "pixelWidth": 320,
+    "colors": 64,
+    "contrast": 1.15,
+    "displayWidth": 640,
+    "resampling": "nearest-neighbour"
+  },
+  "metrics": {
+    "editAccuracy": "Human 0-5, clean removal within target, no invented feature",
+    "geometry": "Landmark displacement for stair/counter/openings/window; reject new or lost routes",
+    "style": "Human 0-5 at raw and 320/640 display sizes",
+    "locality": "Outside ROI: mean/max absolute RGB difference and fraction of pixels with any channel delta > 8, versus saved normalized control",
+    "pixelCompatibility": "Same crop/320/64/contrast1.15/640 pipeline for raw result and no-edit control",
+    "reproducibility": "Keep workflow/API exports, seed/settings, component hashes, software/device versions; compare repeated raw-output SHA-256 and pixels",
+    "performance": "Cold load vs warm inference seconds separately; peak dedicated VRAM and host/process RAM if measurable",
+    "portability": "Only core nodes and relative filenames; matching UI/API graph",
+    "licensing": "Record evaluation-only restrictions independently of technical score"
+  },
+  "approval": {
+    "download": null,
+    "inference": null,
+    "productionPromotion": false
+  },
+  "successTargets": {
+    "minimumHumanEditScore": 4,
+    "minimumHumanStyleScore": 4,
+    "maximumLandmarkDisplacementPixels": 2,
+    "maximumOutsideRoiMeanRgbError": 3,
+    "maximumOutsideRoiChangedFractionAtChannelDeltaOver8": 0.05,
+    "noTopologyChanges": true,
+    "productionPromotionAllowed": false
+  }
+}

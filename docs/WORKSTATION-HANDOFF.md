@@ -2,6 +2,8 @@
 
 ## Owner-approved architecture checkpoint
 
+Checkpoint `fe10c7fe754c64bdea9f73b00814949f875f5044` was pushed and verified clean/equal to origin; its GitHub checks passed. Subsequent [Kontext preparation](KONTEXT-LOCAL-EVALUATION-PROPOSAL.md) found the shared workstation compatible, verified reuse of the existing T5, and prepared a three-file 12.486 GB download proposal and portable graph. **Next decision: owner download approval.** No ComfyUI update, source upload, model download or inference has occurred.
+
 The owner approved the provider-neutral pass on 2026-09-09 and authorized committing/pushing it on `feature/state-driven-visuals`. After that checkpoint, inspect the existing shared ComfyUI workstation read-only, prepare a portable Kontext workflow and exact download/licence/resource proposal, then stop before downloads or inference. Do not update ComfyUI, add custom nodes, modify other projects, merge PR #1 or deploy. This instruction supersedes the earlier pending-review handoff below.
 
 ## Current handoff: approved overlay active; provider-neutral authoring

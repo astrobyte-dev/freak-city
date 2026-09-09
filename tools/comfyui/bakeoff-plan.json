@@ -1,14 +1,18 @@
 {
   "schemaVersion": 1,
-  "status": "planned-not-run",
+  "status": "prepared-not-run",
   "purpose": "Surgical edit evaluation only; no production replacement",
   "source": "docs/visuals/velvet-architecture-cleanup/candidate/sources/original.png",
   "sourceSha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2",
   "sourceDimensions": [1448, 1086],
   "target": "Small rectangular wall poster immediately right of salon opening",
   "provisionalTargetBounds": [923, 312, 1007, 422],
-  "maskStatus": "Must be traced and frozen before the future run",
-  "hardware": { "gpu": "RTX 4070", "vramGB": 12, "hostRamGB": 32 },
+  "maskStatus": "Fixed evaluation ROI documented in the active test contract",
+  "hardware": {
+    "gpu": "RTX 4070",
+    "vramGB": 12,
+    "hostRamGB": 32
+  },
   "candidateFamilies": [
     "FLUX.1 Kontext dev",
     "Qwen Image Edit",
@@ -19,6 +23,9 @@
   "includeNoEditProcessingControl": true,
   "downloadApproval": null,
   "executionApproval": null,
-  "workflow": null,
-  "results": null
+  "workflow": "tools/comfyui/workflows/velvet-kontext-dev-fp8-v1.json",
+  "results": null,
+  "activeTestContract": "tools/comfyui/velvet-kontext-test-contract.json",
+  "modelProposal": "tools/comfyui/kontext-model-proposal.json",
+  "nextDecision": "Owner approval before the three model downloads; no inference yet"
 }

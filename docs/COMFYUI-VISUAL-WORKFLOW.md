@@ -1,5 +1,7 @@
 # Optional ComfyUI visual workstation
 
+Current preparation: [exact Kontext package, shared-workstation findings and download proposal](KONTEXT-LOCAL-EVALUATION-PROPOSAL.md). The [portable UI/API workflow](../tools/comfyui/workflows/velvet-kontext-dev-fp8-v1.md) has been statically validated against available core nodes. No model has been downloaded or run; this concrete preparation supersedes the earlier reserved-workflow/payload-not-yet-selected statements below.
+
 ComfyUI is a first-class optional authoring tool. It is never a game build step, runtime service or required dependency. Its only interchange with the production pipeline is a retained image plus provenance and optional workflow JSON. Manual tools, hosted tools and other local models use the same source-import/review path.
 
 Current workstation: NVIDIA RTX 4070, **12 GB VRAM**, **32 GB host RAM**; ComfyUI already installed. This task prepares the workflow only. No workstation installation/update, model download or inference is authorized here.
