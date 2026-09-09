@@ -1,5 +1,9 @@
 # Workstation handoff
 
+## Latest result: canonical Velvet promoted; overlay pilot ready for review
+
+Correction/approval checkpoint `fdb3f4b` was pushed before promotion. Promotion commit `288ef7e` binds the owner-approved 64-colour plate to ordinary feature-branch runtime. [Canonical lock and workflow](VELVET-CANONICAL-APPROVAL.md). The bounded [Velvet overlay pilot](VELVET-OVERLAY-PILOT.md) is complete as draft art with a [focused review](visuals/velvet-overlay-pilot/review/index.html): one Mara, two anonymous figures, five existing objects, contacts/masks/reflections and actual parser-state composites. Normal play has no draft sprite binding; activating or expanding these assets requires the next human art review. Do not regenerate the room, create further library assets, merge PR #1 or deploy Pages. Read this section before the historical instructions below.
+
 ## Current direction: approved Velvet, feature promotion and small overlay pilot
 
 The owner has approved the corrected 64-colour Velvet canonical plate. [Exact approval and locked features](visuals/velvet-architecture-cleanup/human-approval.json). Commit/push the portable correction, promote through the existing workflow on `feature/state-driven-visuals`, then complete a bounded Mara/two-patron/core-prop overlay pilot for human review. Do not regenerate the room, add simulation facts, scale to other rooms, merge PR #1 or deploy Pages. Earlier pending-approval statements below are historical.

@@ -1,4 +1,10 @@
 import { scheduleNeighbourPreload } from "../visuals/preload";
+import { VelvetOverlayPilot } from "./VelvetOverlayPilot";
+import {
+  pilotEnabled,
+  deriveVelvetPilot,
+  type VelvetPilot,
+} from "../visuals/velvet-pilot";
 import {
   memo,
   useEffect,
@@ -274,10 +280,12 @@ export const LocationVisual = memo(function LocationVisual({
   descriptor: d,
   mode,
   preview = false,
+  overlayPilot,
 }: {
   descriptor: VisualDescriptor;
   mode: VisualMode;
   preview?: boolean;
+  overlayPilot?: VelvetPilot;
 }) {
   const id = useId().replaceAll(":", "");
   const viewport = useRef<HTMLDivElement>(null);
@@ -327,6 +335,14 @@ export const LocationVisual = memo(function LocationVisual({
       : new Set<string>();
   const composition =
     asset?.role === "canonical-room" ? asset.composition : undefined;
+  const pilot =
+    !scene && asset === d.baseArt && pilotEnabled(d, overlayPilot)
+      ? overlayPilot
+      : undefined;
+  const pilotEntities = pilot ? deriveVelvetPilot(d, pilot) : [];
+  const pilotObjects = new Set(
+    pilotEntities.filter((e) => e.kind === "object").map((e) => e.id),
+  );
   const atmosphere = (composition?.atmosphereZones ??
     d.manifest.atmosphereZones)[0];
   const anchored = d.canonicalObjects
@@ -426,12 +442,14 @@ export const LocationVisual = memo(function LocationVisual({
             )}
             {!scene && (
               <g data-layer="objects">
-                {anchored.map((e) => (
-                  <ObjectSprite object={e} key={e.id} />
-                ))}
+                {anchored
+                  .filter((e) => !pilotObjects.has(e.id))
+                  .map((e) => (
+                    <ObjectSprite object={e} key={e.id} />
+                  ))}
               </g>
             )}
-            {!scene && (
+            {!scene && !pilot && (
               <g data-layer="anonymous-atmosphere" opacity=".22">
                 {Array.from(
                   {
@@ -455,34 +473,38 @@ export const LocationVisual = memo(function LocationVisual({
             )}
             {!scene && (
               <g data-layer="npcs">
-                {d.npcPresence.map((n, index) => (
-                  <g
-                    key={n.id}
-                    data-visual-npc={n.id}
-                    transform={`translate(${composition?.npcZones[index]?.x ?? n.x} ${composition?.npcZones[index]?.y ?? n.y})`}
-                  >
-                    <path
-                      d="M-5-48H5V-37H-5ZM-9-34H9L14-4H-14ZM-9-4H-1V16H-9ZM2-4H10V16H2Z"
-                      fill="#10171e"
-                    />
-                    <path
-                      d="M-5-47H5V-43H-5M-9-33V-10"
-                      stroke="#9b8a79"
-                      strokeWidth="2"
-                    />
-                    <text
-                      textAnchor="middle"
-                      y="27"
-                      fill="#e4d8be"
-                      fontSize="8"
+                {d.npcPresence.map((n, index) =>
+                  pilotEntities.some(
+                    (e) => e.kind === "npc" && e.id === n.id,
+                  ) ? null : (
+                    <g
+                      key={n.id}
+                      data-visual-npc={n.id}
+                      transform={`translate(${composition?.npcZones[index]?.x ?? n.x} ${composition?.npcZones[index]?.y ?? n.y})`}
                     >
-                      {n.name.split(" ")[0]}
-                    </text>
-                  </g>
-                ))}
+                      <path
+                        d="M-5-48H5V-37H-5ZM-9-34H9L14-4H-14ZM-9-4H-1V16H-9ZM2-4H10V16H2Z"
+                        fill="#10171e"
+                      />
+                      <path
+                        d="M-5-47H5V-43H-5M-9-33V-10"
+                        stroke="#9b8a79"
+                        strokeWidth="2"
+                      />
+                      <text
+                        textAnchor="middle"
+                        y="27"
+                        fill="#e4d8be"
+                        fontSize="8"
+                      >
+                        {n.name.split(" ")[0]}
+                      </text>
+                    </g>
+                  ),
+                )}
               </g>
             )}
-            {!scene && d.overlays.includes("reflection") && (
+            {!scene && !pilot && d.overlays.includes("reflection") && (
               <g
                 data-layer="reflection"
                 className="pixel-reflection"
@@ -499,6 +521,7 @@ export const LocationVisual = memo(function LocationVisual({
               className="visual-light"
               data-layer="lighting"
             />
+            {pilot && <VelvetOverlayPilot descriptor={d} pilot={pilot} />}
             {mode === "on" && d.overlays.includes("grain") && (
               <g data-layer="foreground" fill={`url(#${id}-grit)`}>
                 {(

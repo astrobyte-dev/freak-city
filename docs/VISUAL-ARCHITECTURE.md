@@ -1,5 +1,7 @@
 ﻿# Visual world architecture
 
+**Current implementation:** [Velvet canonical approval](VELVET-CANONICAL-APPROVAL.md) records the first approved and promoted hero-room plate. The [bounded overlay pilot](VELVET-OVERLAY-PILOT.md) adds an opt-in draft sprite compositor with stable identity bindings, master-grid contacts, counter masking and entity-owned reflections. Simulation and save schemas remain unchanged. Older production status below is historical.
+
 **PRE-ALPHA / ACTIVE DEVELOPMENT.** Visual authoring v2 is isolated on `feature/state-driven-visuals`. Main and its public blind-playtest build remain preserved. Story, parser semantics, NPC writing, relationships, THE PULL and the mystery are unchanged.
 
 ## One simulation, several views

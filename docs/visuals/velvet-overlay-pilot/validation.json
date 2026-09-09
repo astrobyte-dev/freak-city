@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "jsTests": 1008,
+  "pythonTests": 57,
+  "fullCheck": "passed",
+  "normalBuild": "passed",
+  "pagesPathBuild": "passed; local build only",
+  "format": "passed",
+  "visualAssetValidation": "passed",
+  "runtimeComposites": 11,
+  "browser": "Playwright",
+  "reviewPage": {
+    "images": "decoded",
+    "selector": "passed",
+    "mobileOverflow": false
+  },
+  "canonicalDisplay": "exact nearest 2x of approved master",
+  "spriteAlpha": "binary",
+  "spriteAndReflectionHashes": "passed",
+  "portableLinks": "passed",
+  "spriteBytes": 3292,
+  "reflectionBytes": 2118,
+  "humanPlateApproval": "approved",
+  "humanOverlayApproval": "pending",
+  "overlayShippingBinding": false,
+  "mergeOrDeploy": false
+}

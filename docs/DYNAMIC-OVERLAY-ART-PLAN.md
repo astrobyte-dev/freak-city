@@ -1,5 +1,7 @@
 # Dynamic overlay art plan
 
+**Current implementation:** [Velvet overlay pilot](VELVET-OVERLAY-PILOT.md) now provides one draft Mara identity, two anonymous sprites, five existing-object sprites, integer contacts, polygon counter occlusion, bounded lighting and entity-owned reflections. The room is approved; overlay art remains pending human review and is opt-in in the review harness. This plan below is retained as the starting contract, with its earlier future-tense status now historical.
+
 Status: art and integration plan only. No sprites, character likenesses, new simulation states or shipping bindings are created by this task.
 
 Canonical rooms establish permanent structure. Cinematic illustrations may frame selected moments freely. Overlays express the existing simulation on top of a stable room. The current schematic overlays demonstrate synchronization but lack the material, palette and silhouette treatment needed beside richer plates.
