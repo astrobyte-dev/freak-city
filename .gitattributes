@@ -8,3 +8,4 @@
 
 # Preserve exact imported provenance bytes as well as image hashes across workstations.
 docs/visuals/external-edit/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/visuals/velvet-architecture-cleanup/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

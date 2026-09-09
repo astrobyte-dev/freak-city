@@ -10,6 +10,7 @@ const { values } = parseArgs({
     output: { type: "string" },
     url: { type: "string" },
     composition: { type: "string" },
+    minimal: { type: "boolean" },
   },
 });
 if (!values.batch || !values.output)
@@ -175,43 +176,47 @@ try {
       ),
     ).toBe(true);
   }
-  await page.setViewportSize({ width: 760, height: 900 });
-  for (let index = 0; index < candidates.length; index++) {
-    await page.evaluate((i) => (window as any).productionReference(i), index);
-    await expect(page.locator("#review-composite")).toHaveAttribute(
-      "data-band",
-      "reference",
+  if (!values.minimal) {
+    await page.setViewportSize({ width: 760, height: 900 });
+    for (let index = 0; index < candidates.length; index++) {
+      await page.evaluate((i) => (window as any).productionReference(i), index);
+      await expect(page.locator("#review-composite")).toHaveAttribute(
+        "data-band",
+        "reference",
+      );
+      await expect(page.locator("#review-composite")).toHaveAttribute(
+        "data-candidate",
+        String(index),
+      );
+      await page.waitForFunction(() =>
+        Array.from(document.images).every(
+          (i) => i.complete && i.naturalWidth > 0,
+        ),
+      );
+      await page.locator("#review-composite").screenshot({
+        path: resolve(
+          output,
+          `runtime-${String(index + 1).padStart(2, "0")}-reference.png`,
+        ),
+      });
+    }
+    await page.evaluate(() =>
+      (window as any).productionReview(0, "early", "off"),
     );
-    await expect(page.locator("#review-composite")).toHaveAttribute(
-      "data-candidate",
-      String(index),
+    await expect(page.locator(".visual-off")).toBeVisible();
+    await expect(
+      page.locator("#review-composite img, #review-composite svg"),
+    ).toHaveCount(0);
+    await page.evaluate(() =>
+      (window as any).productionReview(0, "early", "reduced"),
     );
+    await expect(page.locator(".visual-reduced")).toBeVisible();
     await page.waitForFunction(() =>
       Array.from(document.images).every(
         (i) => i.complete && i.naturalWidth > 0,
       ),
     );
-    await page.locator("#review-composite").screenshot({
-      path: resolve(
-        output,
-        `runtime-${String(index + 1).padStart(2, "0")}-reference.png`,
-      ),
-    });
   }
-  await page.evaluate(() =>
-    (window as any).productionReview(0, "early", "off"),
-  );
-  await expect(page.locator(".visual-off")).toBeVisible();
-  await expect(
-    page.locator("#review-composite img, #review-composite svg"),
-  ).toHaveCount(0);
-  await page.evaluate(() =>
-    (window as any).productionReview(0, "early", "reduced"),
-  );
-  await expect(page.locator(".visual-reduced")).toBeVisible();
-  await page.waitForFunction(() =>
-    Array.from(document.images).every((i) => i.complete && i.naturalWidth > 0),
-  );
   if (errors.length) throw new Error(errors.join("\n"));
   expect(
     readFileSync("src/content/visuals/assets.json").equals(registryBefore),
@@ -223,13 +228,15 @@ try {
         status: "unapproved-test-bindings",
         registrySha256: sha256(registryBefore),
         records,
-        displayChecks: [
-          "desktop early/late/dawn",
-          "mobile early for every palette",
-          "plate-only reference",
-          "Off",
-          "Reduced",
-        ],
+        displayChecks: values.minimal
+          ? ["desktop early/late/dawn", "mobile early for every palette"]
+          : [
+              "desktop early/late/dawn",
+              "mobile early for every palette",
+              "plate-only reference",
+              "Off",
+              "Reduced",
+            ],
         errors,
       },
       null,

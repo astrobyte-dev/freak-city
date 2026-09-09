@@ -1,0 +1,340 @@
+{
+  "roomId": "bar",
+  "variantId": "canonical",
+  "role": "canonical-room",
+  "prompt": "Use case: precise-object-edit.\nAsset type: FREAK//CITY Velvet Bar canonical-room draft, ARCHITECTURE CORRECTION ONLY.\nInput Image 1 is the EDIT TARGET: the rich magenta/cyan 1448x1086 room with empty shelving. Preserve its aesthetic and material richness exactly.\nInput Image 2 is GEOMETRY REFERENCE ONLY: a crude blockout showing the east opening with a tiny distant stage edge. Do NOT copy its flat surfaces, low detail, palette, counter shape, or camera. Apply only the four localized corrections below to Image 1.\n\nA. EAST STAGE RELATIONSHIP: The low bench/platform currently running along the interior right wall is wrong. Remove this entire in-room platform (approximately x1165..1448, y515..622) and continue the existing wall-to-floor junction and original floor tiles where it was. In the RIGHT SIDE WALL near its REAR corner, to the LEFT/rear of the existing high right window, create exactly ONE open, unglazed, doorless passage to the already established adjoining small stage space. Approximate correction zone x1150..1280, y285..585 in Image 1; fit the opening naturally to that right wall's existing perspective. It must turn east through the SIDE wall, not be another opening on the rear wall. Through that opening show ONLY a modest, distant, very low stage edge recessed BEYOND the threshold, with its dim magenta material reflection. Keep that stage wholly inside the adjoining space, with open floor to the passage. No stage or bench projects into the main bar; no wide performance hall, grand proscenium, extra stairs, curtains, equipment or people. This passage represents the existing east/stage route, not a newly invented exit. Keep the high right window in precisely its current position, dimensions and shape.\n\nB. FALSE REAR DOOR PANEL: On the REAR wall immediately LEFT of the central stair, approximately x502..597,y312..545, remove the tall rectangular door-like panel and its frame/seams. Fill with seamless worn magenta/black opaque wall plaster matching its neighbours. Do not turn it into another dark recess, door, window or niche. Do NOT change the real dark salon opening immediately RIGHT of the stair. Preserve the dark west-side service recess behind the bar.\n\nC. FALSE LEFT GLAZING: At the extreme LEFT image edge behind/alongside the shelving, approximately x0..52,y287..411, replace the bright rectangular blue glass/window/mirror inset with opaque continuous grungy wall matching the existing shelving wall, still catching cyan spill. Remove the glazed rectangle/frame/reflected exterior appearance. Preserve every empty shelf, their placement and cyan/magenta reflected light. Do not fill any actual dark service opening or add bottles.\n\nD. DISCRETE LAMPS: Remove the three small shaded hanging/wall lamp objects: cyan-topped lamp above left shelving near x123,y201; small magenta shaded lamp over left rear recess near x352,y277; small magenta wall lamp near x1191,y272 (the east-opening region). Heal only their mounts/shades into the existing wall/beam. Retain the surrounding mood and light spill. Keep ALL existing integrated linear cyan/magenta neon strips, stair-edge illumination, their brightness relationships and floor reflections: these are part of the locked visual language. Do not add a replacement pendant; the actual game's single pendant will be a runtime overlay.\n\nINVARIANTS: same exact 4:3 framing, ideally same 1448x1086 pixels; same camera, perspective and ceiling; exactly one unchanged central staircase, upper opening, tread count, rails and footprint; same dark salon opening immediately to its right; same left fixed counter footprint, silhouette and bare surface; same empty shelving; same high right window; same broad open central floor, tile perspective, rich glossy reflections, grime, texture detail, saturated magenta/cyan relationship and deep shadows. Change only the four identified regions. No global smoothing, repainting, recolouring, relighting, compositional shift or crop. This is a local repair of a successful room.\nDo not add people, stools, bottles, faucets, loose props, signs, text, logos, a second stair, extra windows, unsupported doors or exits, balconies, mezzanines, booths, or different architecture elsewhere. The east/stage passage is the ONLY opening being restored.\n",
+  "modelPrompt": null,
+  "style": {
+    "artDirectionFamily": "Public Velvet",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes.",
+    "One staircase beside the salon; main floor toward a small stage",
+    "High street-facing window",
+    "Fixed bar counter, bare surface",
+    "Fixed bottle shelving, no loose cups or readable labels",
+    "One canonical image across the night; no time-specific architecture variants.",
+    "Human must check all exits, staircase count, fixed placement and overlay composition."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "state": {
+    "timeBand": "canonical",
+    "lighting": "neutral practical",
+    "weather": "base"
+  },
+  "layer": "background-architecture",
+  "authoritativeGeometry": false,
+  "authoritativeArchitecture": false,
+  "architectureReviewRequired": true,
+  "bakedEntities": [
+    {
+      "id": "detail_bar_window",
+      "location": "bar"
+    },
+    {
+      "id": "counter",
+      "location": "bar",
+      "open": true
+    },
+    {
+      "id": "detail_bar_shelves",
+      "location": "bar"
+    }
+  ],
+  "reviewContract": {
+    "staticArchitecture": [
+      {
+        "text": "One staircase beside the salon; main floor toward a small stage",
+        "model": "single staircase beside salon, distant small stage"
+      },
+      {
+        "text": "High street-facing window",
+        "model": "high street window",
+        "entityId": "detail_bar_window"
+      }
+    ],
+    "fixedFurniture": [
+      {
+        "text": "Fixed bar counter, bare surface",
+        "model": "fixed bar counter",
+        "entityId": "counter"
+      },
+      {
+        "text": "Fixed bottle shelving, no loose cups or readable labels",
+        "model": "bottle shelves",
+        "entityId": "detail_bar_shelves"
+      }
+    ],
+    "dynamicObjects": [
+      "detail_bar_stool",
+      "detail_bar_glass",
+      "detail_bar_light",
+      "detail_bar_bin",
+      "detail_bar_clock"
+    ],
+    "dynamicDoors": [],
+    "exits": [
+      {
+        "name": "vestibule",
+        "to": "vestibule",
+        "minutes": 1,
+        "aliases": [
+          "south",
+          "entrance"
+        ]
+      },
+      {
+        "name": "outside",
+        "to": "street",
+        "minutes": 2,
+        "aliases": [
+          "out",
+          "leave",
+          "front door"
+        ]
+      },
+      {
+        "name": "upstairs",
+        "to": "landing",
+        "minutes": 2,
+        "aliases": [
+          "up",
+          "stairs"
+        ]
+      },
+      {
+        "name": "kitchen",
+        "to": "kitchen",
+        "minutes": 1,
+        "aliases": [
+          "service door",
+          "west"
+        ]
+      },
+      {
+        "name": "stage",
+        "to": "stage",
+        "minutes": 1,
+        "aliases": [
+          "luca",
+          "east",
+          "floor"
+        ]
+      },
+      {
+        "name": "salon",
+        "to": "salon",
+        "minutes": 1,
+        "aliases": []
+      },
+      {
+        "name": "archive",
+        "to": "archive",
+        "minutes": 1,
+        "aliases": [
+          "service table",
+          "envelope",
+          "documents"
+        ]
+      }
+    ],
+    "composition": {
+      "anchors": {
+        "detail_bar_window": {
+          "glyph": "window",
+          "x": 253,
+          "y": 29,
+          "width": 47,
+          "height": 27
+        },
+        "detail_bar_shelves": {
+          "glyph": "shelf",
+          "x": 29,
+          "y": 69,
+          "width": 117,
+          "height": 28
+        },
+        "detail_bar_light": {
+          "glyph": "light",
+          "x": 167,
+          "y": 19,
+          "width": 23,
+          "height": 36
+        },
+        "counter": {
+          "glyph": "counter",
+          "x": 12,
+          "y": 148,
+          "width": 229,
+          "height": 36
+        },
+        "detail_bar_glass": {
+          "glyph": "glass",
+          "x": 94,
+          "y": 131,
+          "width": 11,
+          "height": 17
+        },
+        "detail_bar_stool": {
+          "glyph": "stool",
+          "x": 166,
+          "y": 172,
+          "width": 26,
+          "height": 35
+        },
+        "detail_bar_bin": {
+          "glyph": "bin",
+          "x": 17,
+          "y": 184,
+          "width": 18,
+          "height": 21
+        }
+      },
+      "npcZones": [
+        {
+          "x": 260,
+          "y": 160
+        },
+        {
+          "x": 143,
+          "y": 140
+        },
+        {
+          "x": 78,
+          "y": 152
+        },
+        {
+          "x": 297,
+          "y": 135
+        }
+      ],
+      "atmosphereZones": [
+        {
+          "x": 30,
+          "y": 100,
+          "width": 260,
+          "height": 64
+        }
+      ],
+      "foregroundZones": [
+        {
+          "x": 0,
+          "y": 180,
+          "width": 320,
+          "height": 44
+        }
+      ]
+    }
+  },
+  "conditioning": {
+    "mode": "external-edit",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "reviewBrief": "ROLE: canonical-room\n\nSTYLE: 32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography. Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.\n\nROOM REFERENCE: Velvet / the bar\nA folded towel protects the counter. Two pencils wait beside mismatched cups. The main floor opens toward a small stage; stairs rise beside a quieter salon. A service door leads to the kitchen.\n\nREQUIRED:\nOne stable room identity across all time bands; preserve established exit relationships.\nLeave named characters, stateful doors and movable objects to runtime layers.\nKeep overlay placement zones usable at desktop and mobile sizes.\nOne staircase beside the salon; main floor toward a small stage\nHigh street-facing window\nFixed bar counter, bare surface\nFixed bottle shelving, no loose cups or readable labels\nOne canonical image across the night; no time-specific architecture variants.\nHuman must check all exits, staircase count, fixed placement and overlay composition.\n\nFORBIDDEN:\nExtra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.\nNamed NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.\nInvented booth seating or altered window placement not supported by this room's reference.\nExplicit sexual activity, nudity, minors, branded logos or hidden mystery facts.\n\nLAYER CONTRACT: {'staticArchitecture': [{'text': 'One staircase beside the salon; main floor toward a small stage', 'model': 'single staircase beside salon, distant small stage'}, {'text': 'High street-facing window', 'model': 'high street window', 'entityId': 'detail_bar_window'}], 'fixedFurniture': [{'text': 'Fixed bar counter, bare surface', 'model': 'fixed bar counter', 'entityId': 'counter'}, {'text': 'Fixed bottle shelving, no loose cups or readable labels', 'model': 'bottle shelves', 'entityId': 'detail_bar_shelves'}], 'dynamicObjects': ['detail_bar_stool', 'detail_bar_glass', 'detail_bar_light', 'detail_bar_bin', 'detail_bar_clock'], 'dynamicDoors': [], 'exits': [{'name': 'vestibule', 'to': 'vestibule', 'minutes': 1, 'aliases': ['south', 'entrance']}, {'name': 'outside', 'to': 'street', 'minutes': 2, 'aliases': ['out', 'leave', 'front door']}, {'name': 'upstairs', 'to': 'landing', 'minutes': 2, 'aliases': ['up', 'stairs']}, {'name': 'kitchen', 'to': 'kitchen', 'minutes': 1, 'aliases': ['service door', 'west']}, {'name': 'stage', 'to': 'stage', 'minutes': 1, 'aliases': ['luca', 'east', 'floor']}, {'name': 'salon', 'to': 'salon', 'minutes': 1, 'aliases': []}, {'name': 'archive', 'to': 'archive', 'minutes': 1, 'aliases': ['service table', 'envelope', 'documents']}], 'composition': {'anchors': {'detail_bar_window': {'glyph': 'window', 'x': 253, 'y': 29, 'width': 47, 'height': 27}, 'detail_bar_shelves': {'glyph': 'shelf', 'x': 29, 'y': 69, 'width': 117, 'height': 28}, 'detail_bar_light': {'glyph': 'light', 'x': 167, 'y': 19, 'width': 23, 'height': 36}, 'counter': {'glyph': 'counter', 'x': 12, 'y': 148, 'width': 229, 'height': 36}, 'detail_bar_glass': {'glyph': 'glass', 'x': 94, 'y': 131, 'width': 11, 'height': 17}, 'detail_bar_stool': {'glyph': 'stool', 'x': 166, 'y': 172, 'width': 26, 'height': 35}, 'detail_bar_bin': {'glyph': 'bin', 'x': 17, 'y': 184, 'width': 18, 'height': 21}}, 'npcZones': [{'x': 260, 'y': 160}, {'x': 143, 'y': 140}, {'x': 78, 'y': 152}, {'x': 297, 'y': 135}], 'atmosphereZones': [{'x': 30, 'y': 100, 'width': 260, 'height': 64}], 'foregroundZones': [{'x': 0, 'y': 180, 'width': 320, 'height': 44}]}}\n\nSTATE (runtime layers): {'timeBand': 'canonical', 'lighting': 'neutral practical', 'weather': 'base'}\n\nCONCEPT: canonical-room\n\nCOMPOSITOR: dynamic objects, stateful doors, evidence, named NPCs and time lighting remain simulation-driven.",
+  "sourceType": "external-reviewed-edit",
+  "backend": "external-reviewed-edit",
+  "model": null,
+  "seed": null,
+  "modelExecuted": false,
+  "sourceGeneratorVersion": "freak-city-visual-gen/4",
+  "runId": "b0ab62fb3b0f",
+  "createdAt": "2026-09-09T09:16:45.967167+00:00",
+  "reviewStatus": "draft",
+  "architectureReviewState": "pending-human-review",
+  "originalSource": {
+    "file": "sources/original.png",
+    "sha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2",
+    "bytes": 2279015
+  },
+  "sourceImage": {
+    "file": "sources/framed.png",
+    "sha256": "953ce02f701e37194703f108d03209ed23db5724a0c552152cf5a33c9eca95e4",
+    "bytes": 2183222
+  },
+  "unquantizedMaster": {
+    "file": "pixels/unquantized.png",
+    "sha256": "6730f5c295a29a851ac4b29b95faf6daeebed6d2f18e3ef37c8a588163245634",
+    "bytes": 145096
+  },
+  "pixelSource": {
+    "file": "pixels/64-colours.png",
+    "sha256": "57421d7fe6a1f64843a5323c96c44776a483e996e47c8f442abdc5f32aa8ff0a",
+    "bytes": 100656
+  },
+  "worldManifest": {
+    "file": "provenance/world-manifest.json",
+    "sha256": "d37ffbf241d17513143020c8f94a97ca3fa2de60027f5a5a2ab808cf5e9c8edd",
+    "bytes": 17890
+  },
+  "sha256": "cc6cc436469c34bcb7593cc7fa89bf6376e668d18dc8c648a2ab2e4a34bb85e1",
+  "rawBytes": 119579,
+  "dimensions": {
+    "width": 640,
+    "height": 448
+  },
+  "pixelDimensions": {
+    "width": 320,
+    "height": 224
+  },
+  "framing": {
+    "method": "explicit-crop",
+    "crop": [
+      4,
+      0,
+      1444,
+      1008
+    ],
+    "orientedSourceDimensions": [
+      1448,
+      1086
+    ],
+    "framedDimensions": [
+      1440,
+      1008
+    ],
+    "notes": "Same reviewed [4,0,1444,1008] crop as parent: four pixels from each side and 78 bottom floor pixels. Checked the corrected east threshold and distant stage remain fully inside frame. No stretch, canvas extension or camera change.",
+    "orientation": "EXIF transpose before coordinates; original bytes retained"
+  },
+  "generationSettings": {
+    "operation": "pixel-processing-only",
+    "width": 1440,
+    "height": 1008,
+    "pixelWidth": 320,
+    "displayWidth": 640,
+    "colors": 64,
+    "contrast": 1.15,
+    "resampling": "nearest-neighbour",
+    "quantization": "Pillow MEDIANCUT",
+    "pillowVersion": "12.3.0"
+  },
+  "provenance": {
+    "origin": "external-reviewed-edit",
+    "editor": "Codex directing built-in image_gen",
+    "service": "Built-in image_gen image editing; underlying model/version not exposed",
+    "notes": "One architecture-only correction after checkpoint bbb7693f0f6632a1a8dabbc1a24c43a805a64ee2. Removed false rear panel, far-left glazing, three discrete shades and in-room platform; restored existing east opening with distant small stage. Image 2 was geometry reference docs/visuals/velvet-bar-layout/reference.png, SHA256 b836b6374e0e3fa9d9852b8eb42fc3f43f83b19a4f60a6f5ebf2b05c7be77ea8; it was not a style reference. The actual request and input roles are retained in edit-context.json. No human architecture approval or hard pixel-preservation claim.",
+    "modelVersion": null,
+    "sourceCreatedAt": null,
+    "parentSource": {
+      "file": "provenance/parent-source.png",
+      "sha256": "af70facbd4f79b75cca2160b9ff0cb5514d5560d952fe5e66a9114ee4602cd6c",
+      "bytes": 2349328
+    },
+    "editPrompt": "Use case: precise-object-edit.\nAsset type: FREAK//CITY Velvet Bar canonical-room draft, ARCHITECTURE CORRECTION ONLY.\nInput Image 1 is the EDIT TARGET: the rich magenta/cyan 1448x1086 room with empty shelving. Preserve its aesthetic and material richness exactly.\nInput Image 2 is GEOMETRY REFERENCE ONLY: a crude blockout showing the east opening with a tiny distant stage edge. Do NOT copy its flat surfaces, low detail, palette, counter shape, or camera. Apply only the four localized corrections below to Image 1.\n\nA. EAST STAGE RELATIONSHIP: The low bench/platform currently running along the interior right wall is wrong. Remove this entire in-room platform (approximately x1165..1448, y515..622) and continue the existing wall-to-floor junction and original floor tiles where it was. In the RIGHT SIDE WALL near its REAR corner, to the LEFT/rear of the existing high right window, create exactly ONE open, unglazed, doorless passage to the already established adjoining small stage space. Approximate correction zone x1150..1280, y285..585 in Image 1; fit the opening naturally to that right wall's existing perspective. It must turn east through the SIDE wall, not be another opening on the rear wall. Through that opening show ONLY a modest, distant, very low stage edge recessed BEYOND the threshold, with its dim magenta material reflection. Keep that stage wholly inside the adjoining space, with open floor to the passage. No stage or bench projects into the main bar; no wide performance hall, grand proscenium, extra stairs, curtains, equipment or people. This passage represents the existing east/stage route, not a newly invented exit. Keep the high right window in precisely its current position, dimensions and shape.\n\nB. FALSE REAR DOOR PANEL: On the REAR wall immediately LEFT of the central stair, approximately x502..597,y312..545, remove the tall rectangular door-like panel and its frame/seams. Fill with seamless worn magenta/black opaque wall plaster matching its neighbours. Do not turn it into another dark recess, door, window or niche. Do NOT change the real dark salon opening immediately RIGHT of the stair. Preserve the dark west-side service recess behind the bar.\n\nC. FALSE LEFT GLAZING: At the extreme LEFT image edge behind/alongside the shelving, approximately x0..52,y287..411, replace the bright rectangular blue glass/window/mirror inset with opaque continuous grungy wall matching the existing shelving wall, still catching cyan spill. Remove the glazed rectangle/frame/reflected exterior appearance. Preserve every empty shelf, their placement and cyan/magenta reflected light. Do not fill any actual dark service opening or add bottles.\n\nD. DISCRETE LAMPS: Remove the three small shaded hanging/wall lamp objects: cyan-topped lamp above left shelving near x123,y201; small magenta shaded lamp over left rear recess near x352,y277; small magenta wall lamp near x1191,y272 (the east-opening region). Heal only their mounts/shades into the existing wall/beam. Retain the surrounding mood and light spill. Keep ALL existing integrated linear cyan/magenta neon strips, stair-edge illumination, their brightness relationships and floor reflections: these are part of the locked visual language. Do not add a replacement pendant; the actual game's single pendant will be a runtime overlay.\n\nINVARIANTS: same exact 4:3 framing, ideally same 1448x1086 pixels; same camera, perspective and ceiling; exactly one unchanged central staircase, upper opening, tread count, rails and footprint; same dark salon opening immediately to its right; same left fixed counter footprint, silhouette and bare surface; same empty shelving; same high right window; same broad open central floor, tile perspective, rich glossy reflections, grime, texture detail, saturated magenta/cyan relationship and deep shadows. Change only the four identified regions. No global smoothing, repainting, recolouring, relighting, compositional shift or crop. This is a local repair of a successful room.\nDo not add people, stools, bottles, faucets, loose props, signs, text, logos, a second stair, extra windows, unsupported doors or exits, balconies, mezzanines, booths, or different architecture elsewhere. The east/stage passage is the ONLY opening being restored.\n",
+    "modelExecutedDuringImport": false
+  }
+}

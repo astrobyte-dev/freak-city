@@ -1,6 +1,16 @@
 # Workstation handoff
 
-## Latest continuation: external Velvet evaluation completed
+## Current direction: approved Velvet, feature promotion and small overlay pilot
+
+The owner has approved the corrected 64-colour Velvet canonical plate. [Exact approval and locked features](visuals/velvet-architecture-cleanup/human-approval.json). Commit/push the portable correction, promote through the existing workflow on `feature/state-driven-visuals`, then complete a bounded Mara/two-patron/core-prop overlay pilot for human review. Do not regenerate the room, add simulation facts, scale to other rooms, merge PR #1 or deploy Pages. Earlier pending-approval statements below are historical.
+
+## Latest continuation: architecture correction ready for human review
+
+The accepted external-edit experiment is committed and pushed at **`bbb7693f0f6632a1a8dabbc1a24c43a805a64ee2`** on `feature/state-driven-visuals`; its GitHub checks passed and PR #1 remains draft. After that clean checkpoint, exactly one architecture-only image edit removed the false rear panel, far-left glazing, three discrete lamps and in-room platform, and restored the existing east passage with a small stage beyond it. Read [VELVET-ARCHITECTURE-CLEANUP.md](VELVET-ARCHITECTURE-CLEANUP.md) and the [new review page](visuals/velvet-architecture-cleanup/review/index.html).
+
+The new plate assessment is **A: ready for human visual approval**, still draft/unpromoted. The workflow's earlier B classification remains a separate judgment about production repeatability. New import `b0ab62fb3b0f` uses only 64 colours with the existing 320 → 640 treatment. Four real runtime screenshots cover early/Mara, late, dawn and mobile; no overlay art was built. The corrected source and review are separate local work after the checkpoint. **Wait for the owner's visual approval. Do not promote, merge, deploy or perform another correction automatically.**
+
+## Earlier external Velvet evaluation
 
 **2026-09-09:** The separately supplied external ChatGPT Velvet candidate has now been received and evaluated. Read [EXTERNAL-EDIT-REVIEW.md](EXTERNAL-EDIT-REVIEW.md) for the current result and next task. The original handoff below is retained as the earlier checkpoint record; statements below that the source is missing or no standalone importer exists are historical.
 

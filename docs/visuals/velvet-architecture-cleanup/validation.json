@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checkpoint": "bbb7693f0f6632a1a8dabbc1a24c43a805a64ee2",
+  "checkpointChecks": {
+    "jsTests": 1000,
+    "pythonTests": 57,
+    "normalBuild": "passed",
+    "format": "passed",
+    "assets": "passed",
+    "githubCI": "passed"
+  },
+  "correctionChecks": {
+    "sourceParentManifestFramingMasterDisplay": "passed",
+    "exact2xDisplay": "passed",
+    "runtimeScreenshots": 4,
+    "actualNpcs": "Mara early/mobile; none late/dawn",
+    "imageBinding": "passed",
+    "mobileOverflow": false,
+    "reviewPageLinks": "passed",
+    "reportLinks": "passed",
+    "format": "passed",
+    "assets": "passed"
+  },
+  "newImageEdits": 1,
+  "new48ColourOutputs": 0,
+  "sourceType": "external-reviewed-edit",
+  "assessment": "A - ready for human visual approval",
+  "humanApproval": false,
+  "promoted": false,
+  "shippingChanges": false,
+  "checkpointPushed": true,
+  "correctionPushed": false,
+  "pr1Draft": true
+}
