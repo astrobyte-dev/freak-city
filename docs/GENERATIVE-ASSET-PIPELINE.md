@@ -1,5 +1,7 @@
 ﻿# Local visual generation and human review
 
+**Current hero-room result:** [Velvet is human-approved and promoted on the feature branch](VELVET-CANONICAL-APPROVAL.md). Facts ? layout ? high-quality external edit ? targeted architecture correction ? human review ? 320 master ? 64 colours ? exact 640 display ? compositor is now the provisional hero-room workflow. Turbo remains for scenes, mood and concepts. Older experiment descriptions below are retained as history.
+
 **Development spoilers · PRE-ALPHA / ACTIVE DEVELOPMENT.** Python, Torch and model weights remain local development tools. The browser receives only reviewed static art. No model, inference API or Python dependency enters the game bundle or Pages deployment.
 
 ## Preserved collaborator package
