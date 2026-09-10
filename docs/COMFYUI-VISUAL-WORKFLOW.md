@@ -1,10 +1,10 @@
 # Optional ComfyUI visual workstation
 
-Current preparation: [exact Kontext package, shared-workstation findings and download proposal](KONTEXT-LOCAL-EVALUATION-PROPOSAL.md). The [portable UI/API workflow](../tools/comfyui/workflows/velvet-kontext-dev-fp8-v1.md) has been statically validated against available core nodes. No model has been downloaded or run; this concrete preparation supersedes the earlier reserved-workflow/payload-not-yet-selected statements below.
+Current decision (2026-09-10): [Kontext is DEFERRED / NOT EXECUTED](KONTEXT-EVALUATION-STATUS.md). Acquisition, full hashes and model discovery passed; no inference was submitted. Preserve the [proposal](KONTEXT-LOCAL-EVALUATION-PROPOSAL.md) and [exact UI/API workflow](../tools/comfyui/workflows/velvet-kontext-dev-fp8-v1.md). The [Qwen Q4 investigation recommends postponement (B)](QWEN-LOCAL-EVALUATION-ASSESSMENT.md), with no download or installation. Earlier candidate-selection and preparation statements below are historical and superseded by these records.
 
 ComfyUI is a first-class optional authoring tool. It is never a game build step, runtime service or required dependency. Its only interchange with the production pipeline is a retained image plus provenance and optional workflow JSON. Manual tools, hosted tools and other local models use the same source-import/review path.
 
-Current workstation: NVIDIA RTX 4070, **12 GB VRAM**, **32 GB host RAM**; ComfyUI already installed. This task prepares the workflow only. No workstation installation/update, model download or inference is authorized here.
+Workstation class: NVIDIA RTX 4070, **12 GB VRAM**, **32 GB host RAM**; ComfyUI already installed. No new installation/update, model download or inference is authorized by this guide. Local ML must never block development, runtime, asset processing or manual maintenance.
 
 ## Round trip
 
@@ -86,7 +86,7 @@ Use the identical source, target mask, prompt intent and baseline processing for
 
 Do not silently stretch mismatched output back to the input. Report changed resolution as a result; use a separately recorded normalization for comparisons. Canonical import still requires an explicit reviewed 10:7 crop. Keep raw outputs, masks, metrics and review under a separate experiment directory; never overwrite Velvet or promote a bake-off result.
 
-## First candidate and hardware strategy
+## Original candidate-selection rationale (historical; deferred)
 
 Recommended first **evaluation** baseline: **FLUX.1 Kontext [dev], Comfy-Org `flux1-dev-kontext_fp8_scaled.safetensors`**, using the official native image-edit workflow. It has a documented ComfyUI path and explicit FP8 diffusion/text-encoder options. This recommendation is a testable starting point, not a claim that it outperforms alternatives. [Official workflow and component list](https://docs.comfy.org/tutorials/flux/flux-1-kontext-dev), [Comfy-Org checkpoint listing](https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/tree/main/split_files/diffusion_models).
 

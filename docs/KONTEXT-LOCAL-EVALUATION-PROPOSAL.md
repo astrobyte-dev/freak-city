@@ -1,5 +1,11 @@
 # Local Kontext evaluation / download proposal
 
+**Current status (2026-09-10): DEFERRED / NOT EXECUTED.** Acquisition and full hash verification succeeded; ComfyUI discovered the models. No inference was ever submitted, so image quality and runtime fit remain unknown. Keep the weights and workflow for future reconsideration, especially after a possible 64 GB RAM upgrade. See the [closure record](KONTEXT-EVALUATION-STATUS.md) and [Qwen assessment](QWEN-LOCAL-EVALUATION-ASSESSMENT.md).
+
+## Original preparation record (2026-09-09)
+
+The remainder preserves the original proposal, including its then-pending approval language. It does not describe current acquisition status or authorize resuming the deferred test.
+
 **Status: prepared, not downloaded, not executed. Awaiting owner approval.** Architecture checkpoint [`fe10c7f`](https://github.com/astrobyte-dev/freak-city/commit/fe10c7fe754c64bdea9f73b00814949f875f5044) was pushed first on `feature/state-driven-visuals`, with local/origin equality and a clean working tree verified. PR #1 remains draft. Remote `main` and the public Pages deployment remain at `f9487c4d0deba800b1dd86617b3bd2eb5216992b` (deployment ID `6318687403`). GitHub development checks passed for the architecture checkpoint.
 
 ## Shared workstation discovery

@@ -1,6 +1,6 @@
 # Velvet surgical-edit evaluation / Kontext dev FP8 v1
 
-**Prepared and statically validated; not executed. Download and inference approval are pending.** This is an optional R&D workflow, not a production backend or permission to change the approved room.
+**DEFERRED / NOT EXECUTED (2026-09-10).** Acquisition and full hash verification succeeded; ComfyUI discovered all required models. No inference was submitted. Keep this exact graph for possible future use; do not resume it under the superseded single-run authorization. See the [closure record](../../../docs/KONTEXT-EVALUATION-STATUS.md). The historical preparation/use instructions below are retained, not an instruction to download or execute now.
 
 Open [the UI workflow](velvet-kontext-dev-fp8-v1.json) in ComfyUI after approval. [The API export](velvet-kontext-dev-fp8-v1.api.json) encodes the same 15 core nodes and 17 links. [Model manifest](../kontext-model-proposal.json), [test contract](../velvet-kontext-test-contract.json), [download proposal](../../../docs/KONTEXT-LOCAL-EVALUATION-PROPOSAL.md).
 

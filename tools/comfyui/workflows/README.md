@@ -1,6 +1,6 @@
 # Portable optional ComfyUI workflows
 
-Portable workflow storage. The [Kontext v1 UI/API graph](velvet-kontext-dev-fp8-v1.md) is now prepared and statically checked against the shared workstation's core node schemas. It has not been executed or adopted as a production backend. Download and inference approvals remain pending. See [the exact proposal](../../../docs/KONTEXT-LOCAL-EVALUATION-PROPOSAL.md) and [the integration plan](../../../docs/COMFYUI-VISUAL-WORKFLOW.md).
+Portable workflow storage. The [Kontext v1 UI/API graph](velvet-kontext-dev-fp8-v1.md) is **DEFERRED / NOT EXECUTED**. Acquisition, full hashes and model discovery passed; no inference was submitted and no image-quality conclusion exists. Preserve the graph and downloaded weights. See [the closure record](../../../docs/KONTEXT-EVALUATION-STATUS.md), [retained proposal](../../../docs/KONTEXT-LOCAL-EVALUATION-PROPOSAL.md), and [Qwen research / recommendation B](../../../docs/QWEN-LOCAL-EVALUATION-ASSESSMENT.md). No Qwen workflow has been executed or installed.
 
 For each future `<purpose>-v1.json`, retain a companion `<purpose>-v1.md` with purpose, contract link, input/output names, ComfyUI commit/version, custom-node URLs/revisions, model basenames and source/licence/component inventory. Keep actual workflow exports rather than screenshots alone; retain API-format execution JSON separately if used. A candidate stores its own immutable workflow copy and SHA-256.
 

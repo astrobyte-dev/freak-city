@@ -6,6 +6,8 @@ This is the current production architecture, superseding provider-specific recom
 
 ## Source architecture and provenance
 
+Local ML availability must never block game development, runtime, deterministic asset processing or manual maintenance. The [Kontext evaluation is deferred without execution](KONTEXT-EVALUATION-STATUS.md); the [Qwen investigation recommends postponement](QWEN-LOCAL-EVALUATION-ASSESSMENT.md). External/hosted editors, manual tools, local ComfyUI models and future providers remain interchangeable authoring options. None is a required production backend.
+
 The existing room importer `tools/visual-gen/import_external.py` now accepts these source types through the same processing and approval path:
 
 | `sourceType`             | Meaning                                                                |
