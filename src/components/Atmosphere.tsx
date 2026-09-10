@@ -1,67 +1,23 @@
-import { MapPin, ScanLine, ArrowUpRight } from "lucide-react";
-import { formatTime } from "../engine/game";
+import { MapPin, ArrowUpRight } from "lucide-react";
+import { LocationVisual } from "./LocationVisual";
+import type { VisualDescriptor, VisualMode } from "../visuals/types";
 import type { GameState } from "../engine/types";
-const names: Record<string, string> = {
-  taxi: "VELVET QUARTER",
-  street: "THE SERVICE ROAD",
-  velvet: "INSIDE VELVET",
-  upstairs: "ABOVE THE NOISE",
-  apartment: "YOUR APARTMENT",
-  motel: "MOTEL 27",
-};
 export function Atmosphere({
   state,
   location,
   onMap,
+  descriptor,
+  visualMode,
 }: {
   state: GameState;
   location: string;
   onMap: () => void;
+  descriptor: VisualDescriptor;
+  visualMode: VisualMode;
 }) {
-  const camera = state.boundaries.surveillance === "allowed";
   return (
     <aside className="atmosphere">
-      <div
-        className={`scene-image location-${location}`}
-        role="img"
-        aria-label={
-          location === "apartment"
-            ? "A quiet apartment window at night"
-            : location === "motel"
-              ? "A red motel doorway in the dark"
-              : "Velvet’s side entrance on a rain-dark street"
-        }
-      >
-        <div className="image-vignette" />
-        <div className="camera-top">
-          <span>
-            <i className="red-dot" />{" "}
-            {camera ? "LIVE FROM THE QUARTER" : "A NIGHT IN THE QUARTER"}
-          </span>
-          {camera && <ScanLine size={17} />}
-        </div>
-        {camera && (
-          <>
-            <div className="camera-cross cross-one" />
-            <div className="camera-cross cross-two" />
-          </>
-        )}
-        <div className="image-caption">
-          <span className="eyebrow">YOU ARE HERE</span>
-          <h2>{names[location]}</h2>
-          <span className="coordinates">
-            42° 53′ S &nbsp; / &nbsp; 147° 19′ E
-          </span>
-        </div>
-        <div className="camera-bottom">
-          <span>
-            {camera ? "CAM 04 · " : ""}
-            {formatTime(state.time)}
-            {camera ? ":08" : ""}
-          </span>
-          <span>{camera ? "REC ●" : "FIRST NIGHT"}</span>
-        </div>
-      </div>
+      <LocationVisual descriptor={descriptor} mode={visualMode} />
       <div className="aside-under">
         <button className="location-link" onClick={onMap}>
           <span>

@@ -1,0 +1,1659 @@
+{
+  "status": "approved-direction; active in ordinary feature play",
+  "registrySha256": "f525badec035f96d5d9d6bbef503e83257b9ab65601b3eb7f6ee2235297cc6f0",
+  "checks": [
+    "actual parser movement/custody",
+    "actual early/late/dawn schedules",
+    "exact 320 and 640 viewport",
+    "nearest-neighbour sprite rendering",
+    "entity-owned reflection presence/absence",
+    "counter staging",
+    "mobile without overflow",
+    "Off",
+    "Reduced",
+    "sprite failure removes owned reflection; text retained",
+    "ordinary application mobile/desktop parser play with default approved sprites"
+  ],
+  "records": [
+    {
+      "label": "early-640",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "late-anonymous",
+      "band": "late",
+      "time": 1600,
+      "lighting": "low",
+      "crowd": "sparse",
+      "npcs": [],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "dawn-empty",
+      "band": "dawn",
+      "time": 1755,
+      "lighting": "morning",
+      "crowd": "quiet",
+      "npcs": [],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "envelope-present",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": [
+        "take envelope",
+        "go outside",
+        "go inside",
+        "go bar",
+        "drop envelope"
+      ],
+      "envelopeLocation": "bar",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "envelope",
+          "kind": "object",
+          "spriteId": "envelope",
+          "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+          "contact": {
+            "x": 194,
+            "y": 201,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "envelope-retaken",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": [
+        "take envelope",
+        "go outside",
+        "go inside",
+        "go bar",
+        "drop envelope",
+        "take envelope"
+      ],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "behind-counter",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 77,
+            "y": 134,
+            "surface": "floor",
+            "depthBand": 0,
+            "occlusion": "counter"
+          },
+          "reflection": false
+        },
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "early-320",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 320,
+      "enabled": true,
+      "viewport": {
+        "x": 240,
+        "y": 30,
+        "width": 320,
+        "height": 224
+      }
+    },
+    {
+      "label": "mara-low-light-study",
+      "band": "early",
+      "time": 1435,
+      "lighting": "low",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": true,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "mara-morning-light-study",
+      "band": "early",
+      "time": 1435,
+      "lighting": "morning",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": true,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "canonical-runtime",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": false,
+      "viewport": {
+        "x": 80,
+        "y": 30,
+        "width": 640,
+        "height": 448
+      }
+    },
+    {
+      "label": "mobile-390",
+      "band": "early",
+      "time": 1435,
+      "lighting": "amber",
+      "crowd": "busy",
+      "npcs": ["mara"],
+      "commands": ["take envelope", "go outside", "go inside", "go bar"],
+      "envelopeLocation": "player",
+      "base": "visuals/generated/bar--canonical-room--canonical--8b5c100cebc6.webp",
+      "baseSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+      "entities": [
+        {
+          "id": "anonymous-0",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 191,
+            "y": 140,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-1",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 219,
+            "y": 147,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-2",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 246,
+            "y": 152,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-3",
+          "kind": "anonymous",
+          "spriteId": "patron-b",
+          "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+          "contact": {
+            "x": 277,
+            "y": 161,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_stool",
+          "kind": "object",
+          "spriteId": "stool",
+          "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+          "contact": {
+            "x": 132,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "mara",
+          "kind": "npc",
+          "spriteId": "mara",
+          "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+          "contact": {
+            "x": 174,
+            "y": 167,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "anonymous-4",
+          "kind": "anonymous",
+          "spriteId": "patron-a",
+          "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+          "contact": {
+            "x": 300,
+            "y": 174,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_bin",
+          "kind": "object",
+          "spriteId": "bin",
+          "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+          "contact": {
+            "x": 47,
+            "y": 194,
+            "surface": "floor",
+            "depthBand": 1
+          },
+          "reflection": true
+        },
+        {
+          "id": "detail_bar_light",
+          "kind": "object",
+          "spriteId": "lamp",
+          "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+          "contact": {
+            "x": 91,
+            "y": 46,
+            "surface": "fixture",
+            "depthBand": 2
+          },
+          "reflection": false
+        },
+        {
+          "id": "detail_bar_glass",
+          "kind": "object",
+          "spriteId": "glass",
+          "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+          "contact": {
+            "x": 92,
+            "y": 108,
+            "surface": "counter",
+            "depthBand": 2
+          },
+          "reflection": true
+        }
+      ],
+      "lightingStudy": false,
+      "mode": "on",
+      "width": 640,
+      "enabled": true,
+      "viewport": {
+        "x": 16,
+        "y": 30,
+        "width": 357.140625,
+        "height": 249.984375
+      },
+      "mobileNoOverflow": true
+    }
+  ],
+  "contacts": {
+    "mara": {
+      "x": 174,
+      "y": 167,
+      "surface": "floor",
+      "depthBand": 1
+    },
+    "mara-behind": {
+      "x": 77,
+      "y": 134,
+      "surface": "floor",
+      "depthBand": 0,
+      "occlusion": "counter"
+    },
+    "detail_bar_stool": {
+      "x": 132,
+      "y": 167,
+      "surface": "floor",
+      "depthBand": 1
+    },
+    "detail_bar_glass": {
+      "x": 92,
+      "y": 108,
+      "surface": "counter",
+      "depthBand": 2
+    },
+    "detail_bar_light": {
+      "x": 91,
+      "y": 46,
+      "surface": "fixture",
+      "depthBand": 2
+    },
+    "detail_bar_bin": {
+      "x": 47,
+      "y": 194,
+      "surface": "floor",
+      "depthBand": 1
+    },
+    "envelope": {
+      "x": 194,
+      "y": 201,
+      "surface": "floor",
+      "depthBand": 1
+    }
+  },
+  "counterPolygon": "0,104 39,112 121,103 121,131 39,193 0,199",
+  "floorPolygon": "0,204 39,194 123,131 134,123 320,123 320,224 0,224",
+  "errors": []
+}

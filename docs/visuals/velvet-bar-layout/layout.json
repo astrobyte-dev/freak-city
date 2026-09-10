@@ -1,0 +1,216 @@
+{
+  "authority": "generation-geometry-contract",
+  "blueprint": {
+    "boundary": [0, 0, 320, 224],
+    "coordinatePolicy": "Non-metric art coordinates: x west to east, y front/south to back/north. Rectangle, dimensions and unspecified route positions are composition choices, not additional parser geography. Front wall is a camera cutaway, not an exit.",
+    "elements": [
+      {
+        "beside": "salon",
+        "box": [132, 146, 176, 224],
+        "facts": ["staticArchitecture:0"],
+        "height": 140,
+        "id": "stairs",
+        "kind": "staircase",
+        "label": "One staircase / upstairs",
+        "route": "landing",
+        "steps": 8
+      },
+      {
+        "box": [14, 18, 80, 139],
+        "entityId": "counter",
+        "facts": ["fixedFurniture:0"],
+        "height": 44,
+        "id": "counter",
+        "kind": "counter",
+        "label": "Fixed counter / bare surface"
+      },
+      {
+        "bottom": 75,
+        "box": [0, 98, 10, 157],
+        "entityId": "detail_bar_shelves",
+        "facts": ["fixedFurniture:1"],
+        "height": 122,
+        "id": "shelves",
+        "kind": "shelves",
+        "label": "Fixed bottle shelving / empty"
+      },
+      {
+        "bottom": 99,
+        "box": [316, 45, 320, 103],
+        "entityId": "detail_bar_window",
+        "facts": ["staticArchitecture:1"],
+        "height": 134,
+        "id": "window",
+        "kind": "window",
+        "label": "High street-facing window"
+      },
+      {
+        "box": [307, 166, 320, 217],
+        "facts": ["staticArchitecture:0"],
+        "height": 7,
+        "id": "stage-view",
+        "kind": "stage-view",
+        "label": "Distant small stage beyond east route",
+        "route": "stage"
+      }
+    ],
+    "frame": [320, 224],
+    "id": "velvet-bar-layout",
+    "reservations": [
+      {
+        "box": [97, 24, 235, 130],
+        "id": "npc-floor",
+        "purpose": "NPCs and movable objects; no figures baked in"
+      },
+      {
+        "box": [244, 34, 300, 137],
+        "id": "right-floor",
+        "purpose": "Additional dynamic object / NPC space"
+      },
+      {
+        "box": [86, 0, 307, 20],
+        "id": "foreground",
+        "purpose": "Foreground overlays / transient clutter"
+      }
+    ],
+    "roomId": "bar",
+    "routes": [
+      {
+        "height": 90,
+        "label": "Vestibule / south",
+        "offCamera": true,
+        "span": [100, 145],
+        "to": "vestibule",
+        "wall": "south"
+      },
+      {
+        "height": 90,
+        "label": "Outside / front door",
+        "offCamera": true,
+        "span": [235, 280],
+        "to": "street",
+        "wall": "south"
+      },
+      {
+        "height": 140,
+        "label": "Upstairs via the single staircase",
+        "span": [132, 176],
+        "to": "landing",
+        "wall": "north"
+      },
+      {
+        "height": 92,
+        "label": "Kitchen / service opening",
+        "span": [30, 72],
+        "to": "kitchen",
+        "wall": "west"
+      },
+      {
+        "height": 92,
+        "label": "Stage / east",
+        "span": [164, 219],
+        "to": "stage",
+        "wall": "east"
+      },
+      {
+        "height": 92,
+        "label": "Salon / beside stairs",
+        "span": [186, 230],
+        "to": "salon",
+        "wall": "north"
+      },
+      {
+        "height": 92,
+        "label": "Archive / service-table route",
+        "span": [175, 216],
+        "to": "archive",
+        "wall": "west"
+      }
+    ],
+    "version": 1,
+    "wallHeight": 144
+  },
+  "blueprintSha256": "506e793b87d0b4fb6414c9402661edf1e95bde20ffcdd3b94f51be5ab90ccbfb",
+  "layoutId": "velvet-bar-layout",
+  "layoutVersion": 1,
+  "reference": {
+    "file": "reference.png",
+    "height": 448,
+    "sha256": "b836b6374e0e3fa9d9852b8eb42fc3f43f83b19a4f60a6f5ebf2b05c7be77ea8",
+    "width": 640
+  },
+  "reviewStatus": "pending-human-layout-review",
+  "schemaVersion": 1,
+  "worldFacts": {
+    "canonicalArchitecture": "A folded towel protects the counter. Two pencils wait beside mismatched cups. The main floor opens toward a small stage; stairs rise beside a quieter salon. A service door leads to the kitchen.",
+    "exits": [
+      {
+        "aliases": ["south", "entrance"],
+        "minutes": 1,
+        "name": "vestibule",
+        "to": "vestibule"
+      },
+      {
+        "aliases": ["out", "leave", "front door"],
+        "minutes": 2,
+        "name": "outside",
+        "to": "street"
+      },
+      {
+        "aliases": ["up", "stairs"],
+        "minutes": 2,
+        "name": "upstairs",
+        "to": "landing"
+      },
+      {
+        "aliases": ["service door", "west"],
+        "minutes": 1,
+        "name": "kitchen",
+        "to": "kitchen"
+      },
+      {
+        "aliases": ["luca", "east", "floor"],
+        "minutes": 1,
+        "name": "stage",
+        "to": "stage"
+      },
+      {
+        "aliases": [],
+        "minutes": 1,
+        "name": "salon",
+        "to": "salon"
+      },
+      {
+        "aliases": ["service table", "envelope", "documents"],
+        "minutes": 1,
+        "name": "archive",
+        "to": "archive"
+      }
+    ],
+    "fixedFurniture": [
+      {
+        "entityId": "counter",
+        "model": "fixed bar counter",
+        "text": "Fixed bar counter, bare surface"
+      },
+      {
+        "entityId": "detail_bar_shelves",
+        "model": "bottle shelves",
+        "text": "Fixed bottle shelving, no loose cups or readable labels"
+      }
+    ],
+    "roomId": "bar",
+    "staticArchitecture": [
+      {
+        "model": "single staircase beside salon, distant small stage",
+        "text": "One staircase beside the salon; main floor toward a small stage"
+      },
+      {
+        "entityId": "detail_bar_window",
+        "model": "high street window",
+        "text": "High street-facing window"
+      }
+    ]
+  },
+  "worldFactsSha256": "59aa33f22dd4202015646fc00d8b31ec0d04cc3da7b282272cea3d96fa5b9fcf"
+}

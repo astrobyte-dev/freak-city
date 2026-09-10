@@ -2679,3 +2679,244 @@ small {
     padding: 12px;
   }
 }
+
+/* A view of the parser world, with no interactive hotspots. */
+.location-visual {
+  margin: 0;
+  border: 1px solid #414247;
+  background: #161b21;
+  overflow: hidden;
+}
+.visual-viewport {
+  position: relative;
+  aspect-ratio: 10 / 7;
+  overflow: hidden;
+  isolation: isolate;
+  animation: visual-arrive 160ms ease-out;
+}
+.visual-world,
+.visual-base {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  object-fit: fill;
+}
+.visual-world text {
+  font-family: "IBM Plex Mono", monospace;
+}
+.visual-edge {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 45px 8px #080e1680;
+  pointer-events: none;
+}
+.visual-light {
+  fill: #dea065;
+  opacity: 0.07;
+  transition:
+    fill 160ms,
+    opacity 160ms;
+}
+.lighting-low .visual-light {
+  fill: #0b1f3a;
+  opacity: 0.25;
+}
+.lighting-cold .visual-light {
+  fill: #78aab1;
+  opacity: 0.13;
+}
+.lighting-work .visual-light {
+  fill: #d9ddd0;
+  opacity: 0.13;
+}
+.lighting-morning .visual-light {
+  fill: #9bbec4;
+  opacity: 0.21;
+}
+.visual-stamp {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  color: #e1d8c4;
+  font:
+    9px "IBM Plex Mono",
+    monospace;
+  letter-spacing: 1.7px;
+  background: #10151dcc;
+  padding: 5px 7px;
+}
+.pixel-rain {
+  position: absolute;
+  inset: -12px;
+  opacity: 0.12;
+  background-image: repeating-linear-gradient(
+    103deg,
+    transparent 0 28px,
+    #bdd8db 29px 30px,
+    transparent 31px 59px
+  );
+  mask-image: repeating-linear-gradient(
+    0deg,
+    #000 0 9px,
+    transparent 10px 31px
+  );
+  animation: pixel-rain 2.8s linear infinite;
+  pointer-events: none;
+}
+.pixel-reflection {
+  animation: pixel-reflection 8s ease-in-out infinite alternate;
+}
+.pixel-haze {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 110%;
+  height: 35%;
+  background: radial-gradient(ellipse at 70% 100%, #96a4a41c, transparent 65%);
+  animation: pixel-haze 16s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.location-visual[data-paused="true"] *,
+.visual-reduced * {
+  animation: none !important;
+  transition: none !important;
+}
+.location-visual figcaption {
+  padding: 13px 14px;
+}
+.visual-caption-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #ded8cb;
+  font-size: 12px;
+}
+.visual-caption-line span:last-child {
+  color: #b8b2a7;
+  font:
+    8px "IBM Plex Mono",
+    monospace;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.visual-presence {
+  color: #bcbdb5;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 9px 0;
+}
+.visual-context {
+  font-size: 11px;
+  color: #bfc1b9;
+  line-height: 1.65;
+}
+.visual-context summary {
+  cursor: pointer;
+  min-height: 24px;
+}
+.visual-context ul {
+  padding-left: 18px;
+}
+.visual-object-register {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+}
+.visual-object-register span {
+  border-left: 2px solid #786b62;
+  padding: 2px 6px;
+  background: #23282d;
+  color: #cbc8bd;
+  font-size: 9px;
+  line-height: 1.5;
+}
+.visual-off {
+  border-width: 0 0 1px;
+}
+.visual-debug-preview {
+  max-width: 450px;
+  margin: 18px auto;
+}
+@keyframes pixel-rain {
+  to {
+    transform: translate(-6px, 10px);
+  }
+}
+@keyframes pixel-reflection {
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes pixel-haze {
+  to {
+    transform: translateX(4%);
+    opacity: 0.65;
+  }
+}
+@keyframes visual-arrive {
+  from {
+    opacity: 0.65;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 740px) {
+  .visual-viewport {
+    aspect-ratio: 20 / 7;
+  }
+  .visual-world,
+  .visual-base {
+    height: 160%;
+    top: -36%;
+  }
+  .visual-stamp {
+    top: 7px;
+    left: 7px;
+    font-size: 8px;
+  }
+  .location-visual figcaption {
+    padding: 9px 11px;
+  }
+  .visual-object-register {
+    display: none;
+  }
+  .visual-presence {
+    margin: 4px 0;
+  }
+  .pixel-haze {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .location-visual * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Reviewed geometry stays fully in frame on mobile; never crop away an exit. */
+@media (max-width: 740px) {
+  .location-visual[data-asset-role="canonical-room"] .visual-viewport,
+  .location-visual[data-asset-role="scene-illustration"] .visual-viewport {
+    aspect-ratio: 10 / 7;
+    max-height: 250px;
+  }
+  .location-visual[data-asset-role="canonical-room"] .visual-base,
+  .location-visual[data-asset-role="canonical-room"] .visual-world,
+  .location-visual[data-asset-role="scene-illustration"] .visual-base,
+  .location-visual[data-asset-role="scene-illustration"] .visual-world {
+    height: 100%;
+    top: 0;
+    object-fit: contain;
+  }
+}
+.visual-reduced .visual-viewport {
+  animation: none;
+}
+.visual-reduced .visual-light {
+  transition: none;
+}

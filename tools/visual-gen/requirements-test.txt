@@ -1,0 +1,4 @@
+# Non-ML tests, fixtures, pixel processing and deterministic Canny only.
+# No Torch, Diffusers, Hugging Face client or model download is required.
+pillow>=10,<13
+opencv-python-headless==4.11.0.86

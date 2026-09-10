@@ -21,7 +21,13 @@
     "audit:embodiment": "tsx scripts/embodiment-audit.ts",
     "build:playtest": "tsc -b && vite build --base=/freak-city/",
     "test:publication": "tsx scripts/publication-browser.ts",
-    "preview:playtest": "vite preview --host 0.0.0.0 --base=/freak-city/"
+    "preview:playtest": "vite preview --host 0.0.0.0 --base=/freak-city/",
+    "visuals": "tsx scripts/visuals.ts",
+    "visuals:validate": "tsx scripts/visuals.ts --validate",
+    "test:visuals:browser": "tsx scripts/visual-browser.ts",
+    "test:visuals:roles:browser": "tsx scripts/visual-role-browser.ts",
+    "visuals:promote": "python3 tools/visual-gen/promote.py",
+    "test:visual-gen": "python3 -m unittest discover -s tools/visual-gen/tests -v"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

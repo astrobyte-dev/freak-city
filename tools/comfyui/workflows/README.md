@@ -1,0 +1,7 @@
+# Portable optional ComfyUI workflows
+
+Portable workflow storage. The [Kontext v1 UI/API graph](velvet-kontext-dev-fp8-v1.md) is **DEFERRED / NOT EXECUTED**. Acquisition, full hashes and model discovery passed; no inference was submitted and no image-quality conclusion exists. Preserve the graph and downloaded weights. See [the closure record](../../../docs/KONTEXT-EVALUATION-STATUS.md), [retained proposal](../../../docs/KONTEXT-LOCAL-EVALUATION-PROPOSAL.md), and [Qwen research / recommendation B](../../../docs/QWEN-LOCAL-EVALUATION-ASSESSMENT.md). No Qwen workflow has been executed or installed.
+
+For each future `<purpose>-v1.json`, retain a companion `<purpose>-v1.md` with purpose, contract link, input/output names, ComfyUI commit/version, custom-node URLs/revisions, model basenames and source/licence/component inventory. Keep actual workflow exports rather than screenshots alone; retain API-format execution JSON separately if used. A candidate stores its own immutable workflow copy and SHA-256.
+
+Use portable relative filenames. Never include user-specific absolute paths, credentials, API tokens, weights, environments, downloads or caches. Review widget/prompt values and node configuration manually before committing. Model weights stay outside the repository. Do not add ComfyUI or node packages to game dependencies or CI. Installation, custom-node changes and model downloads belong to a separately approved workstation experiment.

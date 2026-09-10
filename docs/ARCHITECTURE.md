@@ -1,5 +1,9 @@
 # Architecture
 
+## Reviewed art boundary
+
+The [provider-neutral art pipeline](PROVIDER-NEUTRAL-ART-PIPELINE.md) separates authoring provenance from the runtime registry. Static reviewed source images and repository art contracts survive any authoring tool or assistant. The game consumes only reviewed files and simulation-derived visual state. ComfyUI/ML/providers are optional development workstations and are absent from build/runtime dependencies.
+
 THE PULL is a private narrative-interest, attraction-context, chemistry and thematic-engagement model; it is not an arousal-prediction or arousal-optimisation system.
 
 ## Modules and ownership

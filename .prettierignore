@@ -2,3 +2,10 @@ node_modules
 dist
 artifacts
 package-lock.json
+
+# Byte-preserved external experiment provenance and generated review pages.
+docs/visuals/external-edit/
+docs/visuals/velvet-architecture-cleanup/
+
+docs/visuals/velvet-overlay-pilot/
+docs/visuals/reviewed-sources/

@@ -1,0 +1,124 @@
+{
+  "status": "approved-direction",
+  "grade": "A-",
+  "by": "project owner (user)",
+  "at": "2026-09-09",
+  "scope": "Velvet overlay pilot in ordinary feature/state-driven-visuals play; PR #1 draft; no merge or deployment",
+  "plateSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+  "provenanceSha256": "2e6983ec07a72bc3c4c45f977f8e339e2e899972d7205064ed169af1fa1237b7",
+  "principles": [
+    "stable named-character identity",
+    "anonymous patrons subordinate to named NPCs",
+    "pixel-art environmental sprites",
+    "room-aware cyan/magenta edge lighting",
+    "authored foot/surface anchors",
+    "depth sorting",
+    "polygon counter occlusion",
+    "restrained entity-owned reflections",
+    "simulation-driven presence/absence"
+  ],
+  "acceptedPolishBacklog": [
+    "Mara pencil faint at mobile scale",
+    "small anonymous patron variety",
+    "some props cleaner than room",
+    "approximate reflections"
+  ],
+  "assets": {
+    "mara": {
+      "width": 24,
+      "height": 52,
+      "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+      "file": "visuals/velvet-overlay/sprites/mara.png",
+      "reflection": {
+        "width": 24,
+        "height": 17,
+        "sha256": "3da37debd92588406d79500befe785f187ff6e95d486862387cb030c6ce6e19e",
+        "file": "visuals/velvet-overlay/sprites/mara-reflection.png"
+      }
+    },
+    "patron-a": {
+      "width": 18,
+      "height": 40,
+      "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+      "file": "visuals/velvet-overlay/sprites/patron-a.png",
+      "reflection": {
+        "width": 18,
+        "height": 13,
+        "sha256": "743b409345858647afc9e503b8f5e3420f40c04ecc95ea01a94ae8982749d4cc",
+        "file": "visuals/velvet-overlay/sprites/patron-a-reflection.png"
+      }
+    },
+    "patron-b": {
+      "width": 18,
+      "height": 40,
+      "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+      "file": "visuals/velvet-overlay/sprites/patron-b.png",
+      "reflection": {
+        "width": 18,
+        "height": 13,
+        "sha256": "32113f3d7823f41a9b6757f75c315b3d9e60ddd51d3682f63f57851a459e0d5c",
+        "file": "visuals/velvet-overlay/sprites/patron-b-reflection.png"
+      }
+    },
+    "stool": {
+      "width": 18,
+      "height": 24,
+      "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+      "file": "visuals/velvet-overlay/sprites/stool.png",
+      "reflection": {
+        "width": 18,
+        "height": 8,
+        "sha256": "6b8ead1194c141a8f55f24e3ae0aae3f6e4bce60adf4b6674151fb65c066edc0",
+        "file": "visuals/velvet-overlay/sprites/stool-reflection.png"
+      }
+    },
+    "glass": {
+      "width": 9,
+      "height": 10,
+      "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+      "file": "visuals/velvet-overlay/sprites/glass.png",
+      "reflection": {
+        "width": 9,
+        "height": 3,
+        "sha256": "cf585305185c098d283b3cccbcdcbfbcb8f5c34e2770a9b161aefeab4e1bfefa",
+        "file": "visuals/velvet-overlay/sprites/glass-reflection.png"
+      }
+    },
+    "lamp": {
+      "width": 14,
+      "height": 24,
+      "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+      "file": "visuals/velvet-overlay/sprites/lamp.png",
+      "reflection": {
+        "width": 14,
+        "height": 8,
+        "sha256": "09a207a51df6e1eca5ece59f1c8258f20df0222424b57bd02ca4eac4bf994064",
+        "file": "visuals/velvet-overlay/sprites/lamp-reflection.png"
+      }
+    },
+    "bin": {
+      "width": 14,
+      "height": 18,
+      "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+      "file": "visuals/velvet-overlay/sprites/bin.png",
+      "reflection": {
+        "width": 14,
+        "height": 6,
+        "sha256": "ac854c511473e3e753695f8d58ab1097d6f05f07406ce83ba2acd36df2a66688",
+        "file": "visuals/velvet-overlay/sprites/bin-reflection.png"
+      }
+    },
+    "envelope": {
+      "width": 10,
+      "height": 6,
+      "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+      "file": "visuals/velvet-overlay/sprites/envelope.png",
+      "reflection": {
+        "width": 10,
+        "height": 3,
+        "sha256": "1ead375d732498bb0727bcc994da1cf4079e393fbb62aae43a7834bf8868a20a",
+        "file": "visuals/velvet-overlay/sprites/envelope-reflection.png"
+      }
+    }
+  }
+}

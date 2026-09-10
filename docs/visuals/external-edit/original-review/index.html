@@ -1,0 +1,188 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FREAK//CITY / canonical-room review</title>
+<style>body{background:#15151c;color:#e7dbd5;font:16px/1.5 system-ui;margin:24px auto;padding:0 20px;max-width:1600px}h1,h2{font-weight:500}a{color:#a4d7cc}img{max-width:100%;height:auto;image-rendering:pixelated}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}figure{margin:0}article{padding:20px 0;border-top:1px solid #64444e}summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}.warning{color:#f3c2d7}figcaption{font-size:14px}button,input{font:inherit}</style>
+<h1>canonical-room / draft review</h1><p class="warning">No image or runtime test binding on this page grants approval.</p>
+<p>Review the authoritative layout and facts, protected masks, candidate, and actual runtime composite. Reject invented geometry or props even inside editable surface regions. Runtime images are isolated tests with draft placements, not shipping assets.</p>
+<article><h2>01 / 48 colours / external edit</h2><div class="grid">
+<figure><a href="../original/sources/original.png"><img src="../original/sources/original.png" alt="High-resolution source; original bytes"></a><figcaption>High-resolution source; original bytes</figcaption></figure>
+<figure><a href="../original/pixels/unquantized.png"><img src="../original/pixels/unquantized.png" alt="320 master before palette and contrast"></a><figcaption>320 master before palette and contrast</figcaption></figure>
+<figure><a href="../original/bar__canonical-room__canonical__48-colours.png"><img src="../original/bar__canonical-room__canonical__48-colours.png" alt="Draft candidate 1"></a><figcaption>Generated / edited candidate</figcaption></figure>
+<p class="warning">Runtime composite pending; this page cannot satisfy the runtime review gate.</p>
+<div><h3>Control / generation settings</h3><pre>{
+  &quot;backend&quot;: &quot;external-reviewed-edit&quot;,
+  &quot;model&quot;: null,
+  &quot;seed&quot;: null,
+  &quot;pixelWidth&quot;: 320,
+  &quot;displayWidth&quot;: 640,
+  &quot;inferenceSeconds&quot;: null
+}</pre></div>
+<div><h3>Canonical facts</h3><ul><li>One staircase beside the salon; main floor toward a small stage</li><li>High street-facing window</li><li>Fixed bar counter, bare surface</li><li>Fixed bottle shelving, no loose cups or readable labels</li></ul><p>Routes: vestibule, street, landing, kitchen, stage, salon, archive</p></div>
+</div>
+<a href="../original/sources/original.png">Original file</a> ·
+<a href="../original/sources/framed.png">Framed source</a> ·
+<a href="../original/pixels/unquantized.png">Unquantized master</a> ·
+<a href="../original/pixels/48-colours.png">Pixel master</a> ·
+<a href="../original/bar__canonical-room__canonical__48-colours.json">Original sidecar</a>
+<details><summary>Review criteria and provenance</summary><pre>{
+  &quot;sourceType&quot;: &quot;external-reviewed-edit&quot;,
+  &quot;architectureReviewState&quot;: &quot;pending-human-review&quot;,
+  &quot;framing&quot;: {
+    &quot;method&quot;: &quot;explicit-crop&quot;,
+    &quot;crop&quot;: [
+      4,
+      0,
+      1444,
+      1008
+    ],
+    &quot;orientedSourceDimensions&quot;: [
+      1448,
+      1086
+    ],
+    &quot;framedDimensions&quot;: [
+      1440,
+      1008
+    ],
+    &quot;notes&quot;: &quot;Visual review: trim 4 px from each side and 78 px of foreground floor from bottom. Keep top edge unchanged. All stairs, counter base, right window and platform retained; no stretch, extension or camera change. Crop 1440x1008, then nearest-neighbour 320x224.&quot;,
+    &quot;orientation&quot;: &quot;EXIF transpose before coordinates; original bytes retained&quot;
+  },
+  &quot;generationSettings&quot;: {
+    &quot;operation&quot;: &quot;pixel-processing-only&quot;,
+    &quot;width&quot;: 1440,
+    &quot;height&quot;: 1008,
+    &quot;pixelWidth&quot;: 320,
+    &quot;displayWidth&quot;: 640,
+    &quot;colors&quot;: 48,
+    &quot;contrast&quot;: 1.15,
+    &quot;resampling&quot;: &quot;nearest-neighbour&quot;,
+    &quot;quantization&quot;: &quot;Pillow MEDIANCUT&quot;,
+    &quot;pillowVersion&quot;: &quot;12.3.0&quot;
+  },
+  &quot;environment&quot;: null,
+  &quot;requiredFacts&quot;: [
+    &quot;One stable room identity across all time bands; preserve established exit relationships.&quot;,
+    &quot;Leave named characters, stateful doors and movable objects to runtime layers.&quot;,
+    &quot;Keep overlay placement zones usable at desktop and mobile sizes.&quot;,
+    &quot;One staircase beside the salon; main floor toward a small stage&quot;,
+    &quot;High street-facing window&quot;,
+    &quot;Fixed bar counter, bare surface&quot;,
+    &quot;Fixed bottle shelving, no loose cups or readable labels&quot;,
+    &quot;One canonical image across the night; no time-specific architecture variants.&quot;,
+    &quot;Human must check all exits, staircase count, fixed placement and overlay composition.&quot;
+  ],
+  &quot;forbiddenFacts&quot;: [
+    &quot;Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.&quot;,
+    &quot;Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.&quot;,
+    &quot;Invented booth seating or altered window placement not supported by this room&#x27;s reference.&quot;,
+    &quot;Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts.&quot;
+  ],
+  &quot;conditioning&quot;: {
+    &quot;mode&quot;: &quot;external-edit&quot;,
+    &quot;reference&quot;: null,
+    &quot;mask&quot;: null,
+    &quot;layout&quot;: null
+  },
+  &quot;structurePreservation&quot;: null,
+  &quot;provenance&quot;: {
+    &quot;origin&quot;: &quot;external-reviewed-edit&quot;,
+    &quot;editor&quot;: &quot;External creator unknown; supplied by project owner&quot;,
+    &quot;service&quot;: &quot;ChatGPT image editing, as reported by project owner; exact model/version unavailable&quot;,
+    &quot;notes&quot;: &quot;Original supplied file neon_noir_nightclub_lobby.png, byte-preserved. Creation date, upstream prompt, parent source and model/version not supplied. Imported as a draft; architecture review required.&quot;,
+    &quot;modelVersion&quot;: null,
+    &quot;sourceCreatedAt&quot;: null,
+    &quot;parentSource&quot;: null,
+    &quot;editPrompt&quot;: null,
+    &quot;modelExecutedDuringImport&quot;: false
+  }
+}</pre></details></article>
+<article><h2>02 / 64 colours / external edit</h2><div class="grid">
+<figure><a href="../original/sources/original.png"><img src="../original/sources/original.png" alt="High-resolution source; original bytes"></a><figcaption>High-resolution source; original bytes</figcaption></figure>
+<figure><a href="../original/pixels/unquantized.png"><img src="../original/pixels/unquantized.png" alt="320 master before palette and contrast"></a><figcaption>320 master before palette and contrast</figcaption></figure>
+<figure><a href="../original/bar__canonical-room__canonical__64-colours.png"><img src="../original/bar__canonical-room__canonical__64-colours.png" alt="Draft candidate 2"></a><figcaption>Generated / edited candidate</figcaption></figure>
+<p class="warning">Runtime composite pending; this page cannot satisfy the runtime review gate.</p>
+<div><h3>Control / generation settings</h3><pre>{
+  &quot;backend&quot;: &quot;external-reviewed-edit&quot;,
+  &quot;model&quot;: null,
+  &quot;seed&quot;: null,
+  &quot;pixelWidth&quot;: 320,
+  &quot;displayWidth&quot;: 640,
+  &quot;inferenceSeconds&quot;: null
+}</pre></div>
+<div><h3>Canonical facts</h3><ul><li>One staircase beside the salon; main floor toward a small stage</li><li>High street-facing window</li><li>Fixed bar counter, bare surface</li><li>Fixed bottle shelving, no loose cups or readable labels</li></ul><p>Routes: vestibule, street, landing, kitchen, stage, salon, archive</p></div>
+</div>
+<a href="../original/sources/original.png">Original file</a> ·
+<a href="../original/sources/framed.png">Framed source</a> ·
+<a href="../original/pixels/unquantized.png">Unquantized master</a> ·
+<a href="../original/pixels/64-colours.png">Pixel master</a> ·
+<a href="../original/bar__canonical-room__canonical__64-colours.json">Original sidecar</a>
+<details><summary>Review criteria and provenance</summary><pre>{
+  &quot;sourceType&quot;: &quot;external-reviewed-edit&quot;,
+  &quot;architectureReviewState&quot;: &quot;pending-human-review&quot;,
+  &quot;framing&quot;: {
+    &quot;method&quot;: &quot;explicit-crop&quot;,
+    &quot;crop&quot;: [
+      4,
+      0,
+      1444,
+      1008
+    ],
+    &quot;orientedSourceDimensions&quot;: [
+      1448,
+      1086
+    ],
+    &quot;framedDimensions&quot;: [
+      1440,
+      1008
+    ],
+    &quot;notes&quot;: &quot;Visual review: trim 4 px from each side and 78 px of foreground floor from bottom. Keep top edge unchanged. All stairs, counter base, right window and platform retained; no stretch, extension or camera change. Crop 1440x1008, then nearest-neighbour 320x224.&quot;,
+    &quot;orientation&quot;: &quot;EXIF transpose before coordinates; original bytes retained&quot;
+  },
+  &quot;generationSettings&quot;: {
+    &quot;operation&quot;: &quot;pixel-processing-only&quot;,
+    &quot;width&quot;: 1440,
+    &quot;height&quot;: 1008,
+    &quot;pixelWidth&quot;: 320,
+    &quot;displayWidth&quot;: 640,
+    &quot;colors&quot;: 64,
+    &quot;contrast&quot;: 1.15,
+    &quot;resampling&quot;: &quot;nearest-neighbour&quot;,
+    &quot;quantization&quot;: &quot;Pillow MEDIANCUT&quot;,
+    &quot;pillowVersion&quot;: &quot;12.3.0&quot;
+  },
+  &quot;environment&quot;: null,
+  &quot;requiredFacts&quot;: [
+    &quot;One stable room identity across all time bands; preserve established exit relationships.&quot;,
+    &quot;Leave named characters, stateful doors and movable objects to runtime layers.&quot;,
+    &quot;Keep overlay placement zones usable at desktop and mobile sizes.&quot;,
+    &quot;One staircase beside the salon; main floor toward a small stage&quot;,
+    &quot;High street-facing window&quot;,
+    &quot;Fixed bar counter, bare surface&quot;,
+    &quot;Fixed bottle shelving, no loose cups or readable labels&quot;,
+    &quot;One canonical image across the night; no time-specific architecture variants.&quot;,
+    &quot;Human must check all exits, staircase count, fixed placement and overlay composition.&quot;
+  ],
+  &quot;forbiddenFacts&quot;: [
+    &quot;Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.&quot;,
+    &quot;Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.&quot;,
+    &quot;Invented booth seating or altered window placement not supported by this room&#x27;s reference.&quot;,
+    &quot;Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts.&quot;
+  ],
+  &quot;conditioning&quot;: {
+    &quot;mode&quot;: &quot;external-edit&quot;,
+    &quot;reference&quot;: null,
+    &quot;mask&quot;: null,
+    &quot;layout&quot;: null
+  },
+  &quot;structurePreservation&quot;: null,
+  &quot;provenance&quot;: {
+    &quot;origin&quot;: &quot;external-reviewed-edit&quot;,
+    &quot;editor&quot;: &quot;External creator unknown; supplied by project owner&quot;,
+    &quot;service&quot;: &quot;ChatGPT image editing, as reported by project owner; exact model/version unavailable&quot;,
+    &quot;notes&quot;: &quot;Original supplied file neon_noir_nightclub_lobby.png, byte-preserved. Creation date, upstream prompt, parent source and model/version not supplied. Imported as a draft; architecture review required.&quot;,
+    &quot;modelVersion&quot;: null,
+    &quot;sourceCreatedAt&quot;: null,
+    &quot;parentSource&quot;: null,
+    &quot;editPrompt&quot;: null,
+    &quot;modelExecutedDuringImport&quot;: false
+  }
+}</pre></details></article>
+</html>

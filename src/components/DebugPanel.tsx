@@ -1,3 +1,4 @@
+import { VisualInspector } from "./VisualInspector";
 import { parserGapReport } from "../engine/parser-report";
 import { useState } from "react";
 import type { GameState } from "../engine/types";
@@ -41,6 +42,7 @@ export function DebugPanel({
         Development only. Contains objective truths and spoilers. Mutations can
         create non-canonical states.
       </p>
+      {state.world && <VisualInspector state={state} />}
       <div className="debug-controls">
         <label>
           Jump to scene
