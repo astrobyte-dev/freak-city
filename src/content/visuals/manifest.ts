@@ -154,7 +154,9 @@ export const visualManifests: Record<string, RoomVisualManifest> =
       } satisfies RoomVisualManifest,
     ]),
   );
-export const visualAssets = assets as VisualAsset[];
+// JSON infers absent keys in different rooms' anchor maps as optional undefined.
+// approvedAsset and visuals:validate check the registry's runtime contract.
+export const visualAssets = assets as unknown as VisualAsset[];
 export function selectVisualAsset(
   roomId: string,
   variant: string,

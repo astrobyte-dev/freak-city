@@ -1,5 +1,13 @@
 # Workstation handoff
 
+## Current continuation — 2026-09-14: approved street active on the feature branch
+
+The owner has accepted Velvet's background validation as complete. Personal visual review remains pending, and the accepted minor polish backlog stays deferred. The validation ran through background commands and isolated headless browsers; its local screenshots were saved without display. All 9 focused unit tests passed, all 13 repeated screenshots matched retained evidence byte-for-byte, and the ordinary-UI gameplay checks passed.
+
+The owner approved **street draft-v2-polish for activation**, accepted the current envelope readability and authorized committing/pushing the completed work to `feature/state-driven-visuals` after checks. [Approval, activation report and screenshots](visuals/street-activation/REPORT.md). The exact reviewed background and overlays now appear in ordinary development play with state-owned effects. Six integrated composites match the approved draft pixel-for-pixel; six ordinary-play Velvet captures remain byte-identical. Headless checks cover doors, the alternate front entrance after the 02:40 side-door lock, custody/reflections, save/reload, visual modes and mobile failures. The [reviewed draft](visuals/reviewed-sources/street/draft-v2-polish/REPORT.md) retains its original historical status and bytes; the newer approval supersedes it. **Further polish remains deferred; choose the next improvement with the owner.**
+
+Continue entirely in the background: no mouse/keyboard control, focus changes, visible windows/tabs or navigation of the owner's existing browser. Keep `feature/state-driven-visuals`; local AI experiments remain parked, and merging/public deployment remain on hold. The newer [Kontext deferred status](KONTEXT-EVALUATION-STATUS.md) supersedes historical download/preflight instructions below. This section supersedes earlier next-step directions; those remain historical records.
+
 ## Owner-approved architecture checkpoint
 
 Checkpoint `fe10c7fe754c64bdea9f73b00814949f875f5044` was pushed and verified clean/equal to origin; its GitHub checks passed. Subsequent [Kontext preparation](KONTEXT-LOCAL-EVALUATION-PROPOSAL.md) found the shared workstation compatible, verified reuse of the existing T5, and prepared a three-file 12.486 GB download proposal and portable graph. **Next decision: owner download approval.** No ComfyUI update, source upload, model download or inference has occurred.

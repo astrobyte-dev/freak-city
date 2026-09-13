@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 2,
+  "role": "canonical-room",
+  "roomId": "street",
+  "roomIdentity": "Velvet / side entrance",
+  "canonicalArchitecture": "Rain writes over the taxi's tyre marks. Velvet's side entrance glows beneath a narrow awning. The loading bay runs behind the building; a soup kiosk stays lit across the road.",
+  "layoutBlueprint": null,
+  "exits": [
+    {
+      "name": "inside",
+      "to": "vestibule",
+      "minutes": 1,
+      "aliases": [
+        "in",
+        "velvet",
+        "entrance",
+        "side entrance"
+      ],
+      "door": "side_door"
+    },
+    {
+      "name": "loading bay",
+      "to": "loading-bay",
+      "minutes": 4,
+      "aliases": [
+        "bay",
+        "loading door",
+        "behind",
+        "east"
+      ]
+    },
+    {
+      "name": "kiosk",
+      "to": "kiosk",
+      "minutes": 2,
+      "aliases": [
+        "across street"
+      ]
+    },
+    {
+      "name": "home",
+      "to": "apartment",
+      "minutes": 18,
+      "aliases": [
+        "apartment",
+        "west"
+      ]
+    },
+    {
+      "name": "front door",
+      "to": "bar",
+      "minutes": 2,
+      "aliases": [
+        "front",
+        "front entrance"
+      ]
+    }
+  ],
+  "staticArchitecture": [
+    {
+      "text": "Old brick exterior",
+      "entityId": "detail_street_wall"
+    },
+    {
+      "text": "Frosted club window",
+      "entityId": "detail_street_window"
+    },
+    {
+      "text": "Narrow awning above the side entrance",
+      "entityId": "detail_street_awning"
+    }
+  ],
+  "fixedFurniture": [],
+  "dynamicObjects": [
+    "detail_street_sign",
+    "detail_street_bin"
+  ],
+  "dynamicDoors": [
+    "side_door"
+  ],
+  "npcZones": [
+    {
+      "x": 260,
+      "y": 160
+    },
+    {
+      "x": 143,
+      "y": 140
+    },
+    {
+      "x": 78,
+      "y": 152
+    },
+    {
+      "x": 297,
+      "y": 135
+    }
+  ],
+  "atmosphereZones": [
+    {
+      "x": 30,
+      "y": 100,
+      "width": 260,
+      "height": 64
+    }
+  ],
+  "foregroundZones": [
+    {
+      "x": 0,
+      "y": 180,
+      "width": 320,
+      "height": 44
+    }
+  ],
+  "sceneIllustrationHints": [
+    "Anonymous adults waiting beneath the awning in rain, old-city nightlife, non-explicit"
+  ],
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "generationPresets": {
+    "texture": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1.3,
+      "displayWidth": 320
+    },
+    "canonical-room": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1.15,
+      "displayWidth": 640
+    },
+    "scene-illustration": {
+      "pixelWidth": 320,
+      "colors": 64,
+      "contrast": 1.1,
+      "displayWidth": 512
+    },
+    "overlay": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1,
+      "displayWidth": 512
+    }
+  },
+  "bakedEntities": [
+    {
+      "id": "detail_street_wall",
+      "location": "street"
+    },
+    {
+      "id": "detail_street_window",
+      "location": "street"
+    },
+    {
+      "id": "detail_street_awning",
+      "location": "street"
+    }
+  ],
+  "conditioning": {
+    "mode": "text-only",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "canonicalEntities": [
+    {
+      "id": "side_door",
+      "name": "side door",
+      "aliases": [
+        "door",
+        "side door",
+        "entrance"
+      ],
+      "description": "The closer coughs when the side door moves.",
+      "kind": "Door",
+      "portable": false,
+      "open": true,
+      "properties": {
+        "otherSide": "vestibule"
+      }
+    },
+    {
+      "id": "detail_street_awning",
+      "name": "narrow awning",
+      "aliases": [
+        "awning",
+        "narrow awning"
+      ],
+      "description": "The awning catches most of the rain. The exception has found your collar.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "touch": "Water gathers along its metal edge."
+      }
+    },
+    {
+      "id": "detail_street_window",
+      "name": "club window",
+      "aliases": [
+        "window",
+        "club window"
+      ],
+      "description": "Frosted glass admits shapes and light, but no clear faces.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true
+      }
+    },
+    {
+      "id": "detail_street_sign",
+      "name": "velvet sign",
+      "aliases": [
+        "sign",
+        "velvet sign"
+      ],
+      "description": "VELVET. One letter hums louder than the others.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "listen": "The transformer buzzes between passing cars."
+      }
+    },
+    {
+      "id": "detail_street_bin",
+      "name": "street bin",
+      "aliases": [
+        "bin",
+        "street bin"
+      ],
+      "description": "An umbrella has been folded into the bin with unreasonable determination.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "search": "Flyers, a broken umbrella, a paper cup. Nothing identifying."
+      }
+    },
+    {
+      "id": "detail_street_wall",
+      "name": "brick wall",
+      "aliases": [
+        "wall",
+        "brick wall"
+      ],
+      "description": "Brick polished at shoulder height by people waiting.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "lean": true,
+        "touch": "Cool, rough brick; damp mortar."
+      }
+    }
+  ],
+  "requiredVisualFacts": [
+    "Background texture plate only: muted material, colour and ambient light.",
+    "Reserve all canonical object and NPC zones for runtime compositing.",
+    "Composition uses the 320 x 224 reference frame without cropping."
+  ],
+  "forbiddenVisualFacts": [
+    "Any identifiable object, evidence, NPC, silhouette, door, window, staircase, sign or damage baked into the plate.",
+    "Additional architecture or routes not represented in the canonical reference.",
+    "Legible text, faces, nudity, sexual activity, branded logos or personal data.",
+    "Current hidden facts, solved-mystery clues or state inferred from plot summaries."
+  ],
+  "styleGuide": {
+    "artDirectionFamily": "Exteriors",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "sceneConcept": "velvet material study for Velvet / side entrance; flat texture and lighting only. Runtime sprites supply all recognizable world facts.",
+  "lighting": "amber",
+  "state": {
+    "time": 1428,
+    "timeBand": "early",
+    "weather": "rain",
+    "lighting": "amber",
+    "crowd": "quiet",
+    "npcPresence": [],
+    "canonicalObjects": [
+      {
+        "id": "side_door",
+        "name": "side door",
+        "aliases": [
+          "door",
+          "side door",
+          "entrance"
+        ],
+        "kind": "Door",
+        "location": "street",
+        "open": true,
+        "locked": false,
+        "damaged": false,
+        "anchor": {
+          "glyph": "door",
+          "x": 197,
+          "y": 65,
+          "width": 54,
+          "height": 112
+        }
+      },
+      {
+        "id": "detail_street_awning",
+        "name": "narrow awning",
+        "aliases": [
+          "awning",
+          "narrow awning"
+        ],
+        "kind": "Object",
+        "location": "street",
+        "damaged": false,
+        "anchor": {
+          "glyph": "shelf",
+          "x": 180,
+          "y": 58,
+          "width": 90,
+          "height": 8
+        }
+      },
+      {
+        "id": "detail_street_window",
+        "name": "club window",
+        "aliases": [
+          "window",
+          "club window"
+        ],
+        "kind": "Object",
+        "location": "street",
+        "damaged": false,
+        "anchor": {
+          "glyph": "window",
+          "x": 51,
+          "y": 74,
+          "width": 87,
+          "height": 54
+        }
+      },
+      {
+        "id": "detail_street_sign",
+        "name": "velvet sign",
+        "aliases": [
+          "sign",
+          "velvet sign"
+        ],
+        "kind": "Object",
+        "location": "street",
+        "damaged": false,
+        "anchor": {
+          "glyph": "sign",
+          "x": 167,
+          "y": 35,
+          "width": 108,
+          "height": 21
+        }
+      },
+      {
+        "id": "detail_street_bin",
+        "name": "street bin",
+        "aliases": [
+          "bin",
+          "street bin"
+        ],
+        "kind": "Object",
+        "location": "street",
+        "damaged": false,
+        "anchor": {
+          "glyph": "bin",
+          "x": 282,
+          "y": 149,
+          "width": 22,
+          "height": 33
+        }
+      },
+      {
+        "id": "detail_street_wall",
+        "name": "brick wall",
+        "aliases": [
+          "wall",
+          "brick wall"
+        ],
+        "kind": "Object",
+        "location": "street",
+        "damaged": false,
+        "anchor": {
+          "glyph": "wall",
+          "x": 0,
+          "y": 15,
+          "width": 320,
+          "height": 125
+        }
+      }
+    ],
+    "openClosedState": {
+      "side_door": true
+    },
+    "specialEvents": ""
+  },
+  "timeVariants": [
+    "early",
+    "night",
+    "late",
+    "closing",
+    "dawn",
+    "day"
+  ],
+  "weatherCompatibility": "outside",
+  "canonicalVisualAnchors": {
+    "detail_street_wall": {
+      "glyph": "wall",
+      "x": 0,
+      "y": 15,
+      "width": 320,
+      "height": 125
+    },
+    "side_door": {
+      "glyph": "door",
+      "x": 197,
+      "y": 65,
+      "width": 54,
+      "height": 112
+    },
+    "detail_street_window": {
+      "glyph": "window",
+      "x": 51,
+      "y": 74,
+      "width": 87,
+      "height": 54
+    },
+    "detail_street_sign": {
+      "glyph": "sign",
+      "x": 167,
+      "y": 35,
+      "width": 108,
+      "height": 21
+    },
+    "detail_street_awning": {
+      "glyph": "shelf",
+      "x": 180,
+      "y": 58,
+      "width": 90,
+      "height": 8
+    },
+    "detail_street_bin": {
+      "glyph": "bin",
+      "x": 282,
+      "y": 149,
+      "width": 22,
+      "height": 33
+    }
+  },
+  "npcPlacementZones": [
+    {
+      "x": 260,
+      "y": 160
+    },
+    {
+      "x": 143,
+      "y": 140
+    },
+    {
+      "x": 78,
+      "y": 152
+    },
+    {
+      "x": 297,
+      "y": 135
+    }
+  ],
+  "output": {
+    "formats": [
+      "webp",
+      "avif"
+    ],
+    "width": 640,
+    "height": 448,
+    "maximumBytes": 150000,
+    "directory": "public/visuals/generated",
+    "initialStatus": "draft"
+  }
+}

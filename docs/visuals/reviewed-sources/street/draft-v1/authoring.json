@@ -1,0 +1,7 @@
+{
+  "authoringTool": "OpenAI built-in imagegen",
+  "provider": "OpenAI",
+  "model": null,
+  "seed": null,
+  "settings": {"requestedDimensions": [1440, 1008], "intent": "new source using exterior mood, approved bar style and authored layout references", "promptFile": "authoring-prompt.txt"}
+}

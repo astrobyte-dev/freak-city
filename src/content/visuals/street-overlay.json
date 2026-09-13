@@ -1,0 +1,97 @@
+{
+  "status": "approved",
+  "plateSha256": "3c1f1659d965d7d5f2ca02292174a100e56f63364ce09d1f9cecca798b1fd8ae",
+  "layers": {
+    "bin-effect": {
+      "file": "visuals/street-overlay/bin-effect.png",
+      "sha256": "3e04ce3e4b7394fbe4c16cd16840a5e07bf9d5cd08cac2b57cc8b1e16032ee8a",
+      "width": 320,
+      "height": 224
+    },
+    "bin": {
+      "file": "visuals/street-overlay/bin.png",
+      "sha256": "0d64df58134d748aae82d3be6678e374c085451c8b7e366f4a6afa879b20e829",
+      "width": 320,
+      "height": 224
+    },
+    "door-closed": {
+      "file": "visuals/street-overlay/door-closed.png",
+      "sha256": "1c894f1f71c192d5193c0393dbaa9f1650f5e44e34e1fed224892f945ff926ab",
+      "width": 320,
+      "height": 224
+    },
+    "door-open-effect": {
+      "file": "visuals/street-overlay/door-open-effect.png",
+      "sha256": "8060ca086e9f59d4b927733eca6b36d566c83a15d420d7fed4743c7ec735a560",
+      "width": 320,
+      "height": 224
+    },
+    "door-open": {
+      "file": "visuals/street-overlay/door-open.png",
+      "sha256": "f3c377caf025f5b87a89de64cf1e71a00025be56173b79bffc0bc9e9891e3234",
+      "width": 320,
+      "height": 224
+    },
+    "envelope-effect": {
+      "file": "visuals/street-overlay/envelope-effect.png",
+      "sha256": "cd8e48f95894d4ae06d51a64f2ff4780ce1e54c22f11e855cad22457acabbb9a",
+      "width": 320,
+      "height": 224
+    },
+    "envelope": {
+      "file": "visuals/street-overlay/envelope.png",
+      "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+      "width": 10,
+      "height": 6
+    },
+    "rain": {
+      "file": "visuals/street-overlay/rain.png",
+      "sha256": "dee7a52e2ec2ba21dcbe4bdd7a7225e65898787d91d4cb7bb6df79d31cac6d1c",
+      "width": 320,
+      "height": 224
+    },
+    "sign-effect": {
+      "file": "visuals/street-overlay/sign-effect.png",
+      "sha256": "99838c709f40c22a22839b51e9912ee32a8d0e85f39949d1fab9ed930b9e3f9c",
+      "width": 320,
+      "height": 224
+    },
+    "sign": {
+      "file": "visuals/street-overlay/sign.png",
+      "sha256": "caf54ac44311fcb4e1100e163016cf2f5329f18b2dd28b7d61d905f872b56a58",
+      "width": 320,
+      "height": 224
+    }
+  },
+  "composition": {
+    "pavementPolygon": [
+      [0, 161],
+      [320, 161],
+      [320, 224],
+      [0, 224]
+    ],
+    "shelterPolygon": [
+      [169, 61],
+      [249, 61],
+      [255, 173],
+      [165, 173]
+    ],
+    "windowPolygon": [
+      [37, 57],
+      [144, 57],
+      [144, 115],
+      [37, 115]
+    ],
+    "contacts": {
+      "side_door": [207, 156],
+      "detail_street_bin": [290, 174],
+      "envelope": [163, 180]
+    }
+  },
+  "envelope": {
+    "x": 158,
+    "y": 174,
+    "width": 10,
+    "height": 6
+  }
+}

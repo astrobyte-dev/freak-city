@@ -193,7 +193,8 @@ describe("visual state is a view of the parser world", () => {
     );
   });
   it("supports missing art, reduced and off while retaining text context", () => {
-    const descriptor = deriveVisualState(at());
+    // Missing-art behavior must not depend on which rooms have approved assets.
+    const descriptor = deriveVisualState(at(), {}, []);
     const off = renderToStaticMarkup(
       createElement(LocationVisual, { descriptor, mode: "off" }),
     );

@@ -1,5 +1,6 @@
 import { MapPin, ArrowUpRight } from "lucide-react";
 import { LocationVisual } from "./LocationVisual";
+import { StreetLocationVisual } from "./StreetLocationVisual";
 import type { VisualDescriptor, VisualMode } from "../visuals/types";
 import type { GameState } from "../engine/types";
 export function Atmosphere({
@@ -17,7 +18,11 @@ export function Atmosphere({
 }) {
   return (
     <aside className="atmosphere">
-      <LocationVisual descriptor={descriptor} mode={visualMode} />
+      {descriptor.roomId === "street" ? (
+        <StreetLocationVisual descriptor={descriptor} mode={visualMode} />
+      ) : (
+        <LocationVisual descriptor={descriptor} mode={visualMode} />
+      )}
       <div className="aside-under">
         <button className="location-link" onClick={onMap}>
           <span>

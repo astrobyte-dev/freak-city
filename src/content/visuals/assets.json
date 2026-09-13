@@ -119,5 +119,118 @@
         }
       ]
     }
+  },
+  {
+    "roomId": "street",
+    "variant": "canonical",
+    "status": "canonical",
+    "file": "visuals/generated/street--canonical-room--canonical--3c1f1659d965.webp",
+    "sha256": "3c1f1659d965d7d5f2ca02292174a100e56f63364ce09d1f9cecca798b1fd8ae",
+    "width": 640,
+    "height": 448,
+    "review": {
+      "by": "project owner (user)",
+      "at": "2026-09-14",
+      "worldFactsChecked": true,
+      "architectureChecked": true,
+      "compositionChecked": true,
+      "nonExplicit": true
+    },
+    "role": "canonical-room",
+    "authoritativeArchitecture": true,
+    "bakedEntities": [
+      {
+        "id": "detail_street_wall",
+        "location": "street"
+      },
+      {
+        "id": "detail_street_window",
+        "location": "street"
+      },
+      {
+        "id": "detail_street_awning",
+        "location": "street"
+      }
+    ],
+    "composition": {
+      "anchors": {
+        "detail_street_wall": {
+          "glyph": "wall",
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 161
+        },
+        "detail_street_window": {
+          "glyph": "window",
+          "x": 33,
+          "y": 54,
+          "width": 114,
+          "height": 65
+        },
+        "detail_street_awning": {
+          "glyph": "shelf",
+          "x": 169,
+          "y": 40,
+          "width": 80,
+          "height": 23
+        },
+        "side_door": {
+          "glyph": "door",
+          "x": 183,
+          "y": 64,
+          "width": 48,
+          "height": 92
+        },
+        "detail_street_sign": {
+          "glyph": "sign",
+          "x": 171,
+          "y": 19,
+          "width": 82,
+          "height": 18
+        },
+        "detail_street_bin": {
+          "glyph": "bin",
+          "x": 278,
+          "y": 142,
+          "width": 23,
+          "height": 32
+        }
+      },
+      "npcZones": [
+        {
+          "x": 155,
+          "y": 161
+        },
+        {
+          "x": 270,
+          "y": 160
+        },
+        {
+          "x": 111,
+          "y": 170
+        },
+        {
+          "x": 305,
+          "y": 166
+        }
+      ],
+      "atmosphereZones": [
+        {
+          "x": 0,
+          "y": 190,
+          "width": 320,
+          "height": 34
+        }
+      ],
+      "foregroundZones": [
+        {
+          "x": 0,
+          "y": 190,
+          "width": 320,
+          "height": 34
+        }
+      ]
+    }
   }
 ]

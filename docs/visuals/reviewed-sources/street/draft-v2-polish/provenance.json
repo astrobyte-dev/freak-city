@@ -1,0 +1,165 @@
+{
+  "status": "draft-unactivated",
+  "scope": "one focused polish pass; no new generation, source edits, placement changes or gameplay",
+  "parent": "docs/visuals/reviewed-sources/street/draft-v1",
+  "unchangedSource": {
+    "file": "docs/visuals/reviewed-sources/street/draft-v1/candidate/street__canonical-room__canonical__64-colours.png",
+    "sha256": "340321a8a59fbd57c25f9e76889580b9e5055c11ad383f28f90e6fe586e52f78"
+  },
+  "composition": {
+    "file": "docs/visuals/reviewed-sources/street/draft-v1/composition.json",
+    "sha256": "8fd4a15f31008bb6900dbe1f871b5e8a9a01dfa8b8c5973e9e9d64fe6cff87c0"
+  },
+  "changedLayers": [
+    "bin",
+    "bin-effect",
+    "door-open",
+    "door-open-effect",
+    "envelope-effect"
+  ],
+  "envelope": {
+    "file": "layers/envelope.png",
+    "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+    "nativeSize": [
+      10,
+      6
+    ],
+    "contact": [
+      163,
+      180
+    ],
+    "position": [
+      158,
+      174
+    ],
+    "identityUnchanged": true
+  },
+  "assets": {
+    "bin-effect": {
+      "file": "layers/bin-effect.svg",
+      "sha256": "fe3530c9f9231720e77f4baf93dd2327bfe26097fe7353eeead32816ef1d5228",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/bin-effect.svg",
+      "parentSha256": "1ff94eb25baf3a10534e15ceebfbf75956a97a073e4667a89b668a4a47500cfd",
+      "changed": true,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "3e04ce3e4b7394fbe4c16cd16840a5e07bf9d5cd08cac2b57cc8b1e16032ee8a",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "bin": {
+      "file": "layers/bin.svg",
+      "sha256": "63bcac5034e319190a58003a58760ece3a8fee7f6cf9694a3b6a3cfa238b6aa6",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/bin.svg",
+      "parentSha256": "a586859fff048abf0e112b8d41c2015ab57cd1124997c096ef10b2eb53a69333",
+      "changed": true,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "0d64df58134d748aae82d3be6678e374c085451c8b7e366f4a6afa879b20e829",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "door-closed": {
+      "file": "layers/door-closed.svg",
+      "sha256": "d3d1b08a267bd7b5f12ab49d71180d76a523112895b092f58e3c28b1be1cd83d",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/door-closed.svg",
+      "parentSha256": "d3d1b08a267bd7b5f12ab49d71180d76a523112895b092f58e3c28b1be1cd83d",
+      "changed": false,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "1c894f1f71c192d5193c0393dbaa9f1650f5e44e34e1fed224892f945ff926ab",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "door-open-effect": {
+      "file": "layers/door-open-effect.svg",
+      "sha256": "cac0e09e0d96e4e5e20e47264677d0d217ef0f07b804f284264c957645168672",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/door-open-effect.svg",
+      "parentSha256": "888ef47fc0255aa38a481b8eb62df578378506c896294aff6807db4b48a9789d",
+      "changed": true,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "8060ca086e9f59d4b927733eca6b36d566c83a15d420d7fed4743c7ec735a560",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "door-open": {
+      "file": "layers/door-open.svg",
+      "sha256": "ef26ad75beef148025fbcb6e47ad1069e55a499922838d63646484393ed2dfe6",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/door-open.svg",
+      "parentSha256": "fe1f9bd8fcc1d0d526b0dfcebdcd98ef953984e2d00ced8cdd4fc33302512d19",
+      "changed": true,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "f3c377caf025f5b87a89de64cf1e71a00025be56173b79bffc0bc9e9891e3234",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "envelope-effect": {
+      "file": "layers/envelope-effect.svg",
+      "sha256": "2d2427261ab5da3d5dfb3e906acbf8cfd6ba83f6f697accd5dc8751f870caf6c",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/envelope-effect.svg",
+      "parentSha256": "603da06d5f27362301fa814781af93339f0d717d5f626b70f4cea54590850924",
+      "changed": true,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "cd8e48f95894d4ae06d51a64f2ff4780ce1e54c22f11e855cad22457acabbb9a",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "rain": {
+      "file": "layers/rain.svg",
+      "sha256": "7a1c98cff567c6d48c814ffc6af2df66ca1958ed851b144bf2e5e4705359b4bd",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/rain.svg",
+      "parentSha256": "7a1c98cff567c6d48c814ffc6af2df66ca1958ed851b144bf2e5e4705359b4bd",
+      "changed": false,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "dee7a52e2ec2ba21dcbe4bdd7a7225e65898787d91d4cb7bb6df79d31cac6d1c",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "sign-effect": {
+      "file": "layers/sign-effect.svg",
+      "sha256": "e0cd0abc8c2a945926dab8180fbe31e99a7ad6406d99a8bc1d876d5da6932870",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/sign-effect.svg",
+      "parentSha256": "e0cd0abc8c2a945926dab8180fbe31e99a7ad6406d99a8bc1d876d5da6932870",
+      "changed": false,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "99838c709f40c22a22839b51e9912ee32a8d0e85f39949d1fab9ed930b9e3f9c",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    },
+    "sign": {
+      "file": "layers/sign.svg",
+      "sha256": "2af6f8b08f52e7913ec152818f3e1d31c0ce1c72cf47d0f82e2de04516043b17",
+      "parentFile": "docs/visuals/reviewed-sources/street/draft-v1/layers/sign.svg",
+      "parentSha256": "2af6f8b08f52e7913ec152818f3e1d31c0ce1c72cf47d0f82e2de04516043b17",
+      "changed": false,
+      "authoringTool": "native SVG pixel-shape editing",
+      "status": "draft-unactivated",
+      "rasterSha256": "caf54ac44311fcb4e1100e163016cf2f5329f18b2dd28b7d61d905f872b56a58",
+      "rasterDimensions": [
+        320,
+        224
+      ]
+    }
+  }
+}

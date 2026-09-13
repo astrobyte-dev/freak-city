@@ -6,7 +6,7 @@ World/simulation → art contract → any authoring tool → reviewed source ima
 
 Contracts complement `src/content/world.ts`, room/layout manifests, composition anchors and schedules. They cannot add exits, entities, biography, custody or presence. Resolve conflicts against those authoritative files and the locked approved source; record intentional design changes explicitly before changing art. Separate story facts from approved visual choices and provisional staging.
 
-Current contracts: [Velvet / bar](rooms/bar.md), [Mara](characters/mara.md). No other room or character production is authorized. Current approval applies to the retained Velvet room and bounded overlay direction only.
+Current contracts: [Velvet / bar](rooms/bar.md), [Mara](characters/mara.md), and the [approved side-entrance brief](rooms/street.md). The owner approved street draft-v2-polish on 2026-09-14; its [exact background, overlays and state-owned effects are active in ordinary feature play](../visuals/street-activation/REPORT.md). Current envelope readability is accepted and further polish deferred. The retained Velvet room and bounded overlay approval remain unchanged. Merging and public deployment remain on hold.
 
 Keep contracts provider-neutral. Retain source type, authoring tool, model and workflow facts in the [source provenance](../PROVIDER-NEUTRAL-ART-PIPELINE.md). The importer snapshots the contract and its SHA-256; edits to the live brief cannot silently rewrite a candidate's review basis. Existing historical candidates retain their original world contracts and do not require a destructive metadata migration.
 

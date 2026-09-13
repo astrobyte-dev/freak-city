@@ -1,0 +1,162 @@
+{
+  "status": "draft-unactivated",
+  "notes": "Native SVG masters extend the existing procedural glyph style. No local model executed. Effects remain separate from architecture and primary objects.",
+  "assets": {
+    "door-closed": {
+      "file": "layers/door-closed.svg",
+      "sha256": "d3d1b08a267bd7b5f12ab49d71180d76a523112895b092f58e3c28b1be1cd83d",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/door-closed.png",
+        "sha256": "1c894f1f71c192d5193c0393dbaa9f1650f5e44e34e1fed224892f945ff926ab",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "door-open": {
+      "file": "layers/door-open.svg",
+      "sha256": "fe1f9bd8fcc1d0d526b0dfcebdcd98ef953984e2d00ced8cdd4fc33302512d19",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/door-open.png",
+        "sha256": "6c0196993e076ed0499acb2664bbd14c6f7275575b942bb3f1c9293902d4bcda",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "door-open-effect": {
+      "file": "layers/door-open-effect.svg",
+      "sha256": "888ef47fc0255aa38a481b8eb62df578378506c896294aff6807db4b48a9789d",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/door-open-effect.png",
+        "sha256": "f13033fb0f03ac7273da32ee2374db6fbcbf6a9ff9541b3ae6d1b37db551d59b",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "sign": {
+      "file": "layers/sign.svg",
+      "sha256": "2af6f8b08f52e7913ec152818f3e1d31c0ce1c72cf47d0f82e2de04516043b17",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/sign.png",
+        "sha256": "caf54ac44311fcb4e1100e163016cf2f5329f18b2dd28b7d61d905f872b56a58",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "sign-effect": {
+      "file": "layers/sign-effect.svg",
+      "sha256": "e0cd0abc8c2a945926dab8180fbe31e99a7ad6406d99a8bc1d876d5da6932870",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/sign-effect.png",
+        "sha256": "99838c709f40c22a22839b51e9912ee32a8d0e85f39949d1fab9ed930b9e3f9c",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "bin": {
+      "file": "layers/bin.svg",
+      "sha256": "a586859fff048abf0e112b8d41c2015ab57cd1124997c096ef10b2eb53a69333",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/bin.png",
+        "sha256": "9b46c5c092e82bb110c526aeda2459fc463501150e0e4f1ded8ef5f0e267f524",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "bin-effect": {
+      "file": "layers/bin-effect.svg",
+      "sha256": "1ff94eb25baf3a10534e15ceebfbf75956a97a073e4667a89b668a4a47500cfd",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/bin-effect.png",
+        "sha256": "ce57633f8feaf4e9804967723550c43eb5759155ffc0bb13015f226975cd46fc",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "envelope-effect": {
+      "file": "layers/envelope-effect.svg",
+      "sha256": "603da06d5f27362301fa814781af93339f0d717d5f626b70f4cea54590850924",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/envelope-effect.png",
+        "sha256": "a28c2de9b636e2dd736195683f211a10b12bb9bc559db28c7dbc0125b91cb5b2",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "rain": {
+      "file": "layers/rain.svg",
+      "sha256": "7a1c98cff567c6d48c814ffc6af2df66ca1958ed851b144bf2e5e4705359b4bd",
+      "sourceType": "manual-edit",
+      "authoringTool": "code-authored SVG pixel shapes",
+      "frame": [
+        320,
+        224
+      ],
+      "status": "draft",
+      "raster": {
+        "file": "layers/rain.png",
+        "sha256": "dee7a52e2ec2ba21dcbe4bdd7a7225e65898787d91d4cb7bb6df79d31cac6d1c",
+        "method": "headless Chromium SVG screenshot at native 320x224"
+      }
+    },
+    "envelope": {
+      "file": "layers/envelope.png",
+      "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+      "parentFile": "public/visuals/velvet-overlay/sprites/envelope.png",
+      "sourceType": "retained approved sprite, new draft contact/effect",
+      "status": "draft-street-binding",
+      "raster": {
+        "file": "layers/envelope.png",
+        "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+        "method": "exact unchanged approved PNG"
+      }
+    }
+  }
+}
