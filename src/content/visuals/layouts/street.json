@@ -1,0 +1,113 @@
+{
+  "id": "velvet-street-layout",
+  "version": 2,
+  "roomId": "street",
+  "status": "approved-2026-09-14",
+  "frame": [320, 224],
+  "coordinatePolicy": "Non-metric image coordinates, x left to right and y top to bottom. Near-frontal facade with shallow depth; no new simulation geography. Off-camera routes stay in parser/text.",
+  "permanent": [
+    {
+      "id": "detail_street_wall",
+      "box": [0, 0, 320, 161],
+      "role": "old brick facade",
+      "fact": "staticArchitecture:0"
+    },
+    {
+      "id": "detail_street_window",
+      "box": [33, 54, 147, 119],
+      "role": "frosted club window without faces",
+      "fact": "staticArchitecture:1"
+    },
+    {
+      "id": "detail_street_awning",
+      "polygon": [
+        [172, 40],
+        [243, 40],
+        [249, 61],
+        [169, 61]
+      ],
+      "role": "narrow awning above side entrance",
+      "fact": "staticArchitecture:2"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "side_door",
+      "box": [183, 64, 231, 156],
+      "kind": "door",
+      "bake": false
+    },
+    {
+      "id": "detail_street_sign",
+      "box": [171, 19, 253, 37],
+      "kind": "sign",
+      "bake": false
+    },
+    {
+      "id": "detail_street_bin",
+      "box": [278, 142, 301, 174],
+      "kind": "object",
+      "bake": false
+    },
+    {
+      "id": "envelope",
+      "box": [158, 174, 168, 180],
+      "kind": "dropped-object",
+      "bake": false
+    }
+  ],
+  "pavementPolygon": [
+    [0, 161],
+    [320, 161],
+    [320, 224],
+    [0, 224]
+  ],
+  "shelterPolygon": [
+    [169, 61],
+    [249, 61],
+    [255, 173],
+    [165, 173]
+  ],
+  "routes": [
+    {
+      "to": "vestibule",
+      "command": "go inside",
+      "doorEntity": "side_door",
+      "placement": "visible opening under awning",
+      "offCamera": false
+    },
+    {
+      "to": "loading-bay",
+      "command": "go loading bay",
+      "placement": "off-camera continuation behind building/east",
+      "offCamera": true
+    },
+    {
+      "to": "kiosk",
+      "command": "go kiosk",
+      "placement": "across road behind camera",
+      "offCamera": true
+    },
+    {
+      "to": "apartment",
+      "command": "go home",
+      "placement": "off-camera west street continuation",
+      "offCamera": true
+    },
+    {
+      "to": "bar",
+      "command": "go front door",
+      "placement": "off-camera route along facade to front entrance",
+      "offCamera": true,
+      "availableAfterSideDoorLocks": true
+    }
+  ],
+  "notes": [
+    "One visible side-entry opening; no invented second stateful door, doorway, lamp, street furniture or character.",
+    "Bare source excludes door leaf, VELVET sign, bin, envelope and their emission, shadows and reflections.",
+    "Pavement wetness and diffuse frost-window light are scenery; sign/door/bin effects belong to overlays.",
+    "Door lock is conveyed by simulation text, not an invented padlock.",
+    "Geometry may be refined to the source's actual pixels in a separate composition record before composites. This does not approve a source or alter gameplay."
+  ],
+  "alignment": "Final draft layout measured against the imported master. Version 1 and its guide were generation references; shifted image positions are disclosed, not treated as exact reference adherence."
+}

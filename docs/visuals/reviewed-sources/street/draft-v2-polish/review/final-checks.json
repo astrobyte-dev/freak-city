@@ -1,0 +1,16 @@
+{
+  "status": "passed-draft-unactivated",
+  "productionBuild": "passed",
+  "focusedVelvetTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "productionDraftReferences": 0,
+  "reportAndGalleryLinks": "passed",
+  "preservedFileHashes": 76,
+  "branch": "feature/state-driven-visuals",
+  "visualReview": "pending",
+  "activation": false,
+  "localAIExperiments": "parked",
+  "mergeAndDeployment": "on hold"
+}

@@ -1,0 +1,161 @@
+{
+  "runId": "9fd505aa2cdf",
+  "elapsedSeconds": 11.66,
+  "candidateCount": 4,
+  "model": "stabilityai/sdxl-turbo",
+  "environment": {
+    "device": "cuda",
+    "dtype": "float16",
+    "weightVariant": "fp16",
+    "torch": "2.11.0+cu128",
+    "diffusers": "0.39.0",
+    "modelRevision": "71153311d3dbb46851df1931d3ca6e939de83304",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "pipeline": "StableDiffusionXLImg2ImgPipeline",
+    "scheduler": "EulerAncestralDiscreteScheduler",
+    "timestepSpacing": "trailing"
+  },
+  "conditioning": {
+    "mode": "img2img",
+    "reference": {
+      "file": "reference/reference.png",
+      "height": 448,
+      "sha256": "b836b6374e0e3fa9d9852b8eb42fc3f43f83b19a4f60a6f5ebf2b05c7be77ea8",
+      "width": 640
+    },
+    "layout": {
+      "id": "velvet-bar-layout",
+      "version": 1,
+      "file": "reference/layout.json",
+      "sha256": "f660183d0a1ceff9484259724fa85db69c96c0db5a5c52cbfee6e3faa53b4174",
+      "blueprintSha256": "506e793b87d0b4fb6414c9402661edf1e95bde20ffcdd3b94f51be5ab90ccbfb",
+      "worldFactsSha256": "59aa33f22dd4202015646fc00d8b31ec0d04cc3da7b282272cea3d96fa5b9fcf",
+      "reviewStatus": "pending-human-layout-review"
+    },
+    "mask": null
+  },
+  "pixelDimensions": {
+    "width": 320,
+    "height": 224
+  },
+  "displayDimensions": {
+    "width": 640,
+    "height": 448
+  },
+  "contactSheetBytes": 100334,
+  "candidates": [
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-01.png",
+      "seed": 19421,
+      "strength": 0.25,
+      "effectiveSteps": 1,
+      "pngBytes": 50306,
+      "pixelBytes": 40343,
+      "displayComparison": {
+        "512": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-01--512.webp",
+          "bytes": 24010,
+          "stats": {
+            "rawBytes": 40343,
+            "optimizedBytes": 24010,
+            "reductionPercent": 40.49
+          }
+        },
+        "640": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-01--640.webp",
+          "bytes": 24460,
+          "stats": {
+            "rawBytes": 40343,
+            "optimizedBytes": 24460,
+            "reductionPercent": 39.37
+          }
+        }
+      }
+    },
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-02.png",
+      "seed": 19421,
+      "strength": 0.5,
+      "effectiveSteps": 2,
+      "pngBytes": 51110,
+      "pixelBytes": 40780,
+      "displayComparison": {
+        "512": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-02--512.webp",
+          "bytes": 23612,
+          "stats": {
+            "rawBytes": 40780,
+            "optimizedBytes": 23612,
+            "reductionPercent": 42.1
+          }
+        },
+        "640": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-02--640.webp",
+          "bytes": 24176,
+          "stats": {
+            "rawBytes": 40780,
+            "optimizedBytes": 24176,
+            "reductionPercent": 40.72
+          }
+        }
+      }
+    },
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-03.png",
+      "seed": 19421,
+      "strength": 0.75,
+      "effectiveSteps": 3,
+      "pngBytes": 54155,
+      "pixelBytes": 44051,
+      "displayComparison": {
+        "512": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-03--512.webp",
+          "bytes": 24050,
+          "stats": {
+            "rawBytes": 44051,
+            "optimizedBytes": 24050,
+            "reductionPercent": 45.4
+          }
+        },
+        "640": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-03--640.webp",
+          "bytes": 24212,
+          "stats": {
+            "rawBytes": 44051,
+            "optimizedBytes": 24212,
+            "reductionPercent": 45.04
+          }
+        }
+      }
+    },
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-04.png",
+      "seed": 19421,
+      "strength": 1.0,
+      "effectiveSteps": 4,
+      "pngBytes": 58856,
+      "pixelBytes": 48357,
+      "displayComparison": {
+        "512": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-04--512.webp",
+          "bytes": 26246,
+          "stats": {
+            "rawBytes": 48357,
+            "optimizedBytes": 26246,
+            "reductionPercent": 45.72
+          }
+        },
+        "640": {
+          "file": ".visuals\\generated\\bar\\review\\9fd505aa2cdf\\size-comparison\\bar__canonical-room__canonical__candidate-04--640.webp",
+          "bytes": 26422,
+          "stats": {
+            "rawBytes": 48357,
+            "optimizedBytes": 26422,
+            "reductionPercent": 45.36
+          }
+        }
+      }
+    }
+  ]
+}

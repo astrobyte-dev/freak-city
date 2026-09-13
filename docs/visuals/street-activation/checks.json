@@ -1,0 +1,21 @@
+{
+  "status": "passed-active-feature-only",
+  "ordinaryUI": true,
+  "requestInjection": false,
+  "headless": true,
+  "velvetPixelIdenticalViewports": 6,
+  "protectedHashes": 188,
+  "checks": [
+    "desktop/mobile open, closed and dropped",
+    "door UI commands and 02:40 lock",
+    "alternate front entrance",
+    "drop/return/take custody and owned effects",
+    "full save/reload equality",
+    "On/Reduced/Off and preference persistence",
+    "absent/damaged owners remove effects",
+    "mobile failures: bin, sign, both door states, envelope and background",
+    "shipping layer hashes equal approved masters",
+    "Velvet before/after pixel equality"
+  ],
+  "errors": []
+}

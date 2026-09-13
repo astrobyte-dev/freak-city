@@ -1,0 +1,162 @@
+[
+  {
+    "runId": "130222c57cd7",
+    "elapsedSeconds": 14.425,
+    "environment": {
+      "device": "cuda",
+      "dtype": "float16",
+      "weightVariant": "fp16",
+      "torch": "2.11.0+cu128",
+      "diffusers": "0.39.0",
+      "modelRevision": "71153311d3dbb46851df1931d3ca6e939de83304",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "pipeline": "StableDiffusionXLInpaintPipeline",
+      "scheduler": "EulerAncestralDiscreteScheduler",
+      "timestepSpacing": "trailing",
+      "peakAllocatedMiB": 7946.8,
+      "peakReservedMiB": 9060.0,
+      "unetChannels": 4
+    },
+    "model": "stabilityai/sdxl-turbo",
+    "contactSheetBytes": 12212,
+    "candidates": [
+      {
+        "candidate": "bar__canonical-room__canonical__candidate-01.png",
+        "seed": 36271,
+        "role": "canonical-room",
+        "strength": 0.5,
+        "candidateSeconds": 3.442,
+        "pngBytes": 16592,
+        "sourceBytes": 97458,
+        "pixelBytes": 12794,
+        "paletteColors": 35,
+        "webpBytes": 7372,
+        "display": {
+          "width": 640,
+          "height": 448
+        },
+        "protectedPixels": {
+          "sourceChangedProtectedPixels": 0,
+          "masterChangedProtectedPixels": 0,
+          "method": "hard surface masks plus protected palette restoration",
+          "semanticGeometryApproved": false
+        }
+      },
+      {
+        "candidate": "bar__canonical-room__canonical__candidate-02.png",
+        "seed": 36271,
+        "role": "canonical-room",
+        "strength": 0.75,
+        "candidateSeconds": 3.198,
+        "pngBytes": 20539,
+        "sourceBytes": 130569,
+        "pixelBytes": 16112,
+        "paletteColors": 41,
+        "webpBytes": 8530,
+        "display": {
+          "width": 640,
+          "height": 448
+        },
+        "protectedPixels": {
+          "sourceChangedProtectedPixels": 0,
+          "masterChangedProtectedPixels": 0,
+          "method": "hard surface masks plus protected palette restoration",
+          "semanticGeometryApproved": false
+        }
+      }
+    ]
+  },
+  {
+    "runId": "cf0d1dd767d8",
+    "elapsedSeconds": 10.254,
+    "environment": {
+      "device": "cuda",
+      "dtype": "float16",
+      "weightVariant": "fp16",
+      "torch": "2.11.0+cu128",
+      "diffusers": "0.39.0",
+      "modelRevision": "71153311d3dbb46851df1931d3ca6e939de83304",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "pipeline": "StableDiffusionXLPipeline",
+      "scheduler": "EulerAncestralDiscreteScheduler",
+      "timestepSpacing": "trailing",
+      "peakAllocatedMiB": 7946.5,
+      "peakReservedMiB": 8918.0,
+      "unetChannels": 4
+    },
+    "model": "stabilityai/sdxl-turbo",
+    "contactSheetBytes": 83774,
+    "candidates": [
+      {
+        "candidate": "bar__scene-illustration__early__candidate-01.png",
+        "seed": 42781,
+        "role": "scene-illustration",
+        "strength": null,
+        "candidateSeconds": 1.092,
+        "pngBytes": 103022,
+        "sourceBytes": 450584,
+        "pixelBytes": 85226,
+        "paletteColors": 64,
+        "webpBytes": 38562,
+        "display": {
+          "width": 512,
+          "height": 358
+        },
+        "protectedPixels": null
+      },
+      {
+        "candidate": "bar__scene-illustration__early__candidate-02.png",
+        "seed": 42782,
+        "role": "scene-illustration",
+        "strength": null,
+        "candidateSeconds": 0.581,
+        "pngBytes": 74370,
+        "sourceBytes": 390343,
+        "pixelBytes": 61497,
+        "paletteColors": 64,
+        "webpBytes": 29418,
+        "display": {
+          "width": 512,
+          "height": 358
+        },
+        "protectedPixels": null
+      },
+      {
+        "candidate": "bar__scene-illustration__early__candidate-03.png",
+        "seed": 42783,
+        "role": "scene-illustration",
+        "strength": null,
+        "candidateSeconds": 0.535,
+        "pngBytes": 99226,
+        "sourceBytes": 431989,
+        "pixelBytes": 82849,
+        "paletteColors": 64,
+        "webpBytes": 38634,
+        "display": {
+          "width": 512,
+          "height": 358
+        },
+        "protectedPixels": null
+      },
+      {
+        "candidate": "bar__scene-illustration__early__candidate-04.png",
+        "seed": 42784,
+        "role": "scene-illustration",
+        "strength": null,
+        "candidateSeconds": 0.533,
+        "pngBytes": 100411,
+        "sourceBytes": 443958,
+        "pixelBytes": 84738,
+        "paletteColors": 64,
+        "webpBytes": 38484,
+        "display": {
+          "width": 512,
+          "height": 358
+        },
+        "protectedPixels": null
+      }
+    ]
+  }
+]

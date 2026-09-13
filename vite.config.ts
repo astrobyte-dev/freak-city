@@ -1,3 +1,4 @@
+import { assetProblems } from "./scripts/visual-assets";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import packageInfo from "./package.json";
@@ -13,6 +14,13 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    {
+      name: "reviewed-visual-assets-only",
+      buildStart() {
+        const problems = assetProblems();
+        if (problems.length) this.error(problems.join("\n"));
+      },
+    },
     {
       name: "playtest-build-identification",
       apply: "build",

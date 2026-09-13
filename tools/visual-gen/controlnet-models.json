@@ -1,0 +1,110 @@
+[
+  {
+    "repo": "stabilityai/stable-diffusion-xl-base-1.0",
+    "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+    "license": "openrail++",
+    "files": [
+      {
+        "file": "LICENSE.md",
+        "bytes": 14109
+      },
+      {
+        "file": "README.md",
+        "bytes": 8668
+      },
+      {
+        "file": "model_index.json",
+        "bytes": 609
+      },
+      {
+        "file": "scheduler/scheduler_config.json",
+        "bytes": 479
+      },
+      {
+        "file": "text_encoder/config.json",
+        "bytes": 565
+      },
+      {
+        "file": "text_encoder/model.fp16.safetensors",
+        "bytes": 246144152
+      },
+      {
+        "file": "text_encoder_2/config.json",
+        "bytes": 575
+      },
+      {
+        "file": "text_encoder_2/model.fp16.safetensors",
+        "bytes": 1389382176
+      },
+      {
+        "file": "tokenizer/merges.txt",
+        "bytes": 524619
+      },
+      {
+        "file": "tokenizer/special_tokens_map.json",
+        "bytes": 472
+      },
+      {
+        "file": "tokenizer/tokenizer_config.json",
+        "bytes": 737
+      },
+      {
+        "file": "tokenizer/vocab.json",
+        "bytes": 1059962
+      },
+      {
+        "file": "tokenizer_2/merges.txt",
+        "bytes": 524619
+      },
+      {
+        "file": "tokenizer_2/special_tokens_map.json",
+        "bytes": 460
+      },
+      {
+        "file": "tokenizer_2/tokenizer_config.json",
+        "bytes": 725
+      },
+      {
+        "file": "tokenizer_2/vocab.json",
+        "bytes": 1059962
+      },
+      {
+        "file": "unet/config.json",
+        "bytes": 1680
+      },
+      {
+        "file": "unet/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 5135149760
+      },
+      {
+        "file": "vae/config.json",
+        "bytes": 642
+      },
+      {
+        "file": "vae/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 167335342
+      }
+    ],
+    "selectedBytes": 6941210313
+  },
+  {
+    "repo": "diffusers/controlnet-canny-sdxl-1.0-small",
+    "revision": "edd85f64c5f87dfb6d73762949d9daca16389518",
+    "license": "openrail++",
+    "files": [
+      {
+        "file": "README.md",
+        "bytes": 4520
+      },
+      {
+        "file": "config.json",
+        "bytes": 1259
+      },
+      {
+        "file": "diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 320237179
+      }
+    ],
+    "selectedBytes": 320242958
+  }
+]

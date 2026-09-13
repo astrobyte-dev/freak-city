@@ -34,3 +34,7 @@ PLAYTEST_URL=http://localhost:5173 npm run test:browser
 For the hosted asset layout, use `npm run build:playtest` and `npm run preview:playtest`. The base path is `/freak-city/`. `PLAYTEST_URL=https://astrobyte-dev.github.io/freak-city/ npm run test:publication` checks the deployed production snapshot. Screenshots can be regenerated from a local production preview using `CAPTURE_SCREENSHOTS=1`; review them for spoilers before committing.
 
 No open-source licence has been selected for the original project. Public availability does not by itself assign one. Third-party licences are documented separately. Discuss permissions with the maintainer before reusing original story or artwork outside this project.
+
+## Visual development
+
+The state-driven visual preview lives on `feature/state-driven-visuals`. See [visual architecture](docs/VISUAL-ARCHITECTURE.md) and [the local generator pipeline](docs/GENERATIVE-ASSET-PIPELINE.md). `npm run visuals` prepares room jobs without model inference. `npm run test:visual-gen` needs Python and Pillow; it never downloads weights. Keep raw candidates and models in ignored local directories. Only human-reviewed texture plates can enter `public/visuals/generated/`.

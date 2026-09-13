@@ -1,0 +1,264 @@
+{
+  "runId": "319346d00a51",
+  "classification": "C",
+  "approvedCandidates": [],
+  "download": {
+    "selectedBytes": 7261453271,
+    "uncachedFileBytes": 7261453271,
+    "byteMeaning": "Selected file payload; excludes HTTP overhead and cache deduplication",
+    "downloaded": true,
+    "elapsedSeconds": 134.859
+  },
+  "batchSeconds": 24.223,
+  "generationSettings": {
+    "width": 640,
+    "height": 448,
+    "steps": 30,
+    "guidanceScale": 5.0,
+    "pixelWidth": 320,
+    "colors": 48,
+    "contrast": 1.15,
+    "displayWidth": 640,
+    "resampling": "nearest",
+    "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+    "requestedDevice": "cuda",
+    "strengths": [0.85, 0.85, 0.85],
+    "seedStrategy": "shared-matrix",
+    "strengthMeaning": "denoising; higher means less reference retention",
+    "controlScales": [0.35, 0.65, 1.0],
+    "controlModel": "diffusers/controlnet-canny-sdxl-1.0-small",
+    "controlRevision": "edd85f64c5f87dfb6d73762949d9daca16389518",
+    "controlGuidanceStart": 0.0,
+    "controlGuidanceEnd": 1.0,
+    "maskStrategy": "union of existing protected regional masks",
+    "controlMeaning": "ControlNet residual multiplier; larger is stronger structural guidance",
+    "strength": 0.85,
+    "effectiveSteps": 25,
+    "controlnetConditioningScale": 0.35
+  },
+  "modelPrompt": "PS1 pixel art, empty underground bar interior, worn plaster and dark wood, magenta ambient light, cyan contrast, black shadows, reflective floor. One staircase beside salon opening, bare counter, empty shelves, high street window, distant small stage. Quiet open floor for sprites, restrained texture, fixed architecture.",
+  "negativeModelPrompt": "people, figures, stools, chairs, glasses, bottles, lamps, bins, props, text, logos, extra stairs, extra doors, balconies, galleries, ornate furniture",
+  "conditioning": {
+    "mode": "controlnet-inpaint",
+    "reference": {
+      "file": "reference/reference.png",
+      "height": 448,
+      "sha256": "b836b6374e0e3fa9d9852b8eb42fc3f43f83b19a4f60a6f5ebf2b05c7be77ea8",
+      "width": 640
+    },
+    "layout": {
+      "id": "velvet-bar-layout",
+      "version": 1,
+      "file": "reference/layout.json",
+      "sha256": "f660183d0a1ceff9484259724fa85db69c96c0db5a5c52cbfee6e3faa53b4174",
+      "blueprintSha256": "506e793b87d0b4fb6414c9402661edf1e95bde20ffcdd3b94f51be5ab90ccbfb",
+      "worldFactsSha256": "59aa33f22dd4202015646fc00d8b31ec0d04cc3da7b282272cea3d96fa5b9fcf",
+      "reviewStatus": "pending-human-layout-review"
+    },
+    "mask": {
+      "file": "masks/regions.json",
+      "sha256": "6299abe884eaa85676f65239f97a4636e73eeee1ca995db75d41a1aaeafe0715",
+      "version": 1,
+      "mode": "regional-inpaint",
+      "white": "editable surface interior",
+      "black": "protected; restored exactly",
+      "edgeInsetMasterPixels": 2,
+      "regions": [
+        {
+          "region": "walls",
+          "file": "masks/walls.png",
+          "sha256": "547669809a91bf44a9810980691455a0ac51a44f71cfa2ee8a252e9173564256",
+          "editablePixels": 58200
+        },
+        {
+          "region": "floor",
+          "file": "masks/floor.png",
+          "sha256": "87e9bd41bb32ba7f6a83180a4f685c7f683541d078f60084e8ad22b5f0876531",
+          "editablePixels": 65876
+        },
+        {
+          "region": "counter",
+          "file": "masks/counter.png",
+          "sha256": "ca99ad9b9b532cd237783e9297871a343aedab0f762fd9d15ae527b8056c6cdb",
+          "editablePixels": 17512
+        },
+        {
+          "region": "shelves",
+          "file": "masks/shelves.png",
+          "sha256": "06d3052a6d0c5a8331a1cbae8f5535aa764b96700f2dea878a1146b60d6becaf",
+          "editablePixels": 1068
+        },
+        {
+          "region": "stairs",
+          "file": "masks/stairs.png",
+          "sha256": "eb303f141c5c4bbc6e2ea9b0296db6c87deb04b443d5231939006dff65b18dfa",
+          "editablePixels": 2324
+        }
+      ],
+      "protectedFeatures": [
+        "room boundary",
+        "all routes",
+        "stair face edges and silhouette",
+        "counter footprint",
+        "window footprint and glass",
+        "stage relationship"
+      ]
+    },
+    "control": {
+      "file": "control/canny.png",
+      "sha256": "e832e81ca08a1c1e949c8c25a91b87d1e78a7702f6bebc96bb19bef868927acf",
+      "pixelSha256": "f7678e0bfad038d7a9e63f2400ed0350d3538c5bd0d27ecf0a01fd9d88a6e8d6",
+      "width": 640,
+      "height": 448,
+      "algorithm": "opencv-canny-rgb-v1",
+      "opencv": "4.11.0",
+      "lowThreshold": 20,
+      "highThreshold": 40,
+      "apertureSize": 3,
+      "L2gradient": false,
+      "sourceReferenceSha256": "b836b6374e0e3fa9d9852b8eb42fc3f43f83b19a4f60a6f5ebf2b05c7be77ea8",
+      "dynamicEntitiesEncoded": false
+    }
+  },
+  "candidates": [
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-01.png",
+      "seed": 51863,
+      "controlScale": 0.35,
+      "candidatePNGBytes": 13831,
+      "optimizedWebPBytes": 5450,
+      "inferenceSeconds": 7.925,
+      "candidateSeconds": 8.032,
+      "environment": {
+        "device": "cuda",
+        "dtype": "float16",
+        "weightVariant": "fp16",
+        "torch": "2.11.0+cu128",
+        "diffusers": "0.39.0",
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4070",
+        "modelRevision": "462165984030d82259a11f4367a4eed129e94a7b",
+        "controlModel": "diffusers/controlnet-canny-sdxl-1.0-small",
+        "controlRevision": "edd85f64c5f87dfb6d73762949d9daca16389518",
+        "pipeline": "StableDiffusionXLControlNetInpaintPipeline",
+        "scheduler": "EulerDiscreteScheduler",
+        "timestepSpacing": "leading",
+        "memoryPolicy": "model-cpu-offload; CUDA inference; VAE tiling",
+        "offlineLoad": true,
+        "vaePolicy": "base model VAE with native force_upcast",
+        "selectedWeightBytes": 7258248609,
+        "peakAllocatedMiB": 5673.5,
+        "peakReservedMiB": 5910.0,
+        "unetChannels": 4
+      },
+      "preservation": {
+        "sourceChangedProtectedPixels": 0,
+        "masterChangedProtectedPixels": 0,
+        "method": "hard surface masks plus protected palette restoration",
+        "semanticGeometryApproved": false
+      }
+    },
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-02.png",
+      "seed": 51863,
+      "controlScale": 0.65,
+      "candidatePNGBytes": 16801,
+      "optimizedWebPBytes": 6752,
+      "inferenceSeconds": 5.851,
+      "candidateSeconds": 6.017,
+      "environment": {
+        "device": "cuda",
+        "dtype": "float16",
+        "weightVariant": "fp16",
+        "torch": "2.11.0+cu128",
+        "diffusers": "0.39.0",
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4070",
+        "modelRevision": "462165984030d82259a11f4367a4eed129e94a7b",
+        "controlModel": "diffusers/controlnet-canny-sdxl-1.0-small",
+        "controlRevision": "edd85f64c5f87dfb6d73762949d9daca16389518",
+        "pipeline": "StableDiffusionXLControlNetInpaintPipeline",
+        "scheduler": "EulerDiscreteScheduler",
+        "timestepSpacing": "leading",
+        "memoryPolicy": "model-cpu-offload; CUDA inference; VAE tiling",
+        "offlineLoad": true,
+        "vaePolicy": "base model VAE with native force_upcast",
+        "selectedWeightBytes": 7258248609,
+        "peakAllocatedMiB": 5673.5,
+        "peakReservedMiB": 5910.0,
+        "unetChannels": 4
+      },
+      "preservation": {
+        "sourceChangedProtectedPixels": 0,
+        "masterChangedProtectedPixels": 0,
+        "method": "hard surface masks plus protected palette restoration",
+        "semanticGeometryApproved": false
+      }
+    },
+    {
+      "candidate": "bar__canonical-room__canonical__candidate-03.png",
+      "seed": 51863,
+      "controlScale": 1.0,
+      "candidatePNGBytes": 14426,
+      "optimizedWebPBytes": 5876,
+      "inferenceSeconds": 5.629,
+      "candidateSeconds": 5.757,
+      "environment": {
+        "device": "cuda",
+        "dtype": "float16",
+        "weightVariant": "fp16",
+        "torch": "2.11.0+cu128",
+        "diffusers": "0.39.0",
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4070",
+        "modelRevision": "462165984030d82259a11f4367a4eed129e94a7b",
+        "controlModel": "diffusers/controlnet-canny-sdxl-1.0-small",
+        "controlRevision": "edd85f64c5f87dfb6d73762949d9daca16389518",
+        "pipeline": "StableDiffusionXLControlNetInpaintPipeline",
+        "scheduler": "EulerDiscreteScheduler",
+        "timestepSpacing": "leading",
+        "memoryPolicy": "model-cpu-offload; CUDA inference; VAE tiling",
+        "offlineLoad": true,
+        "vaePolicy": "base model VAE with native force_upcast",
+        "selectedWeightBytes": 7258248609,
+        "peakAllocatedMiB": 5673.5,
+        "peakReservedMiB": 5910.0,
+        "unetChannels": 4
+      },
+      "preservation": {
+        "sourceChangedProtectedPixels": 0,
+        "masterChangedProtectedPixels": 0,
+        "method": "hard surface masks plus protected palette restoration",
+        "semanticGeometryApproved": false
+      }
+    }
+  ],
+  "preservedExperiments": [
+    {
+      "runId": "49ad3f1999c7",
+      "candidatesHashVerified": 8
+    },
+    {
+      "runId": "54fd0e217eac",
+      "candidatesHashVerified": 8
+    },
+    {
+      "runId": "9fd505aa2cdf",
+      "candidatesHashVerified": 4
+    },
+    {
+      "runId": "130222c57cd7",
+      "candidatesHashVerified": 2
+    },
+    {
+      "runId": "cf0d1dd767d8",
+      "candidatesHashVerified": 4
+    }
+  ],
+  "reviewBrowser": {
+    "images": 28,
+    "overflow": false,
+    "mobileOverflow": false,
+    "errors": []
+  }
+}

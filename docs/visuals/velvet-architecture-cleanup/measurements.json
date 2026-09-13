@@ -1,0 +1,34 @@
+{
+  "status": "draft-unpromoted",
+  "assessment": "A - ready for human visual approval; not approval itself",
+  "paletteBudget": 64,
+  "actualColoursAfterContrast": 63,
+  "sourceDimensions": [
+    1448,
+    1086
+  ],
+  "sourceBytes": 2279015,
+  "sourceSha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2",
+  "parentSourceSha256": "af70facbd4f79b75cca2160b9ff0cb5514d5560d952fe5e66a9114ee4602cd6c",
+  "crop": [
+    4,
+    0,
+    1444,
+    1008
+  ],
+  "unquantized320Bytes": 145096,
+  "masterBytes": 100656,
+  "masterSha256": "57421d7fe6a1f64843a5323c96c44776a483e996e47c8f442abdc5f32aa8ff0a",
+  "displayPngBytes": 119579,
+  "displaySha256": "cc6cc436469c34bcb7593cc7fa89bf6376e668d18dc8c648a2ab2e4a34bb85e1",
+  "displayWebpBytes": 52040,
+  "displayWebpSha256": "8b5c100cebc6b363a02a0891970e3b92e596f4b6a4b7b862ea0462fc895130b1",
+  "differenceFromParent": {
+    "changedPixelPercent": 98.98,
+    "meanAbsoluteRgbDifference": 5.111,
+    "note": "Semantic preservation was visually reviewed. The edit is not pixel-locked outside its target regions."
+  },
+  "runtimeSnapshots": 4,
+  "new48ColourOutputs": 0,
+  "shippingBytesAdded": 0
+}

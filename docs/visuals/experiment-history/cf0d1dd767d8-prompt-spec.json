@@ -1,0 +1,328 @@
+{
+  "roomId": "bar",
+  "variantId": "early",
+  "role": "scene-illustration",
+  "prompt": "ROLE: scene-illustration\n\nSTYLE: 32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography. Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.\n\nROOM REFERENCE: Velvet / the bar\nA folded towel protects the counter. Two pencils wait beside mismatched cups. The main floor opens toward a small stage; stairs rise beside a quieter salon. A service door leads to the kitchen.\n\nREQUIRED:\nIllustrative view, not a parser map. Match major established world facts.\nAdults only, non-explicit; scene, character presence and boundary review required.\n\nFORBIDDEN:\nContradictory major architecture, invented evidence, hidden discoveries or legible story text.\nExplicit sexual activity, nudity, minors, branded logos or distracting fake text.\nObvious malformed anatomy; named character likeness or presence without scene review.\n\nLAYER CONTRACT: {'staticArchitecture': [{'text': 'One staircase beside the salon; main floor toward a small stage', 'model': 'single staircase beside salon, distant small stage'}, {'text': 'High street-facing window', 'model': 'high street window', 'entityId': 'detail_bar_window'}], 'fixedFurniture': [{'text': 'Fixed bar counter, bare surface', 'model': 'fixed bar counter', 'entityId': 'counter'}, {'text': 'Fixed bottle shelving, no loose cups or readable labels', 'model': 'bottle shelves', 'entityId': 'detail_bar_shelves'}], 'dynamicObjects': ['detail_bar_stool', 'detail_bar_glass', 'detail_bar_light', 'detail_bar_bin', 'detail_bar_clock'], 'dynamicDoors': [], 'exits': [{'name': 'vestibule', 'to': 'vestibule', 'minutes': 1, 'aliases': ['south', 'entrance']}, {'name': 'outside', 'to': 'street', 'minutes': 2, 'aliases': ['out', 'leave', 'front door']}, {'name': 'upstairs', 'to': 'landing', 'minutes': 2, 'aliases': ['up', 'stairs']}, {'name': 'kitchen', 'to': 'kitchen', 'minutes': 1, 'aliases': ['service door', 'west']}, {'name': 'stage', 'to': 'stage', 'minutes': 1, 'aliases': ['luca', 'east', 'floor']}, {'name': 'salon', 'to': 'salon', 'minutes': 1, 'aliases': []}, {'name': 'archive', 'to': 'archive', 'minutes': 1, 'aliases': ['service table', 'envelope', 'documents']}], 'composition': {'anchors': {'detail_bar_window': {'glyph': 'window', 'x': 253, 'y': 29, 'width': 47, 'height': 27}, 'detail_bar_shelves': {'glyph': 'shelf', 'x': 29, 'y': 69, 'width': 117, 'height': 28}, 'detail_bar_light': {'glyph': 'light', 'x': 167, 'y': 19, 'width': 23, 'height': 36}, 'counter': {'glyph': 'counter', 'x': 12, 'y': 148, 'width': 229, 'height': 36}, 'detail_bar_glass': {'glyph': 'glass', 'x': 94, 'y': 131, 'width': 11, 'height': 17}, 'detail_bar_stool': {'glyph': 'stool', 'x': 166, 'y': 172, 'width': 26, 'height': 35}, 'detail_bar_bin': {'glyph': 'bin', 'x': 17, 'y': 184, 'width': 18, 'height': 21}}, 'npcZones': [{'x': 260, 'y': 160}, {'x': 143, 'y': 140}, {'x': 78, 'y': 152}, {'x': 297, 'y': 135}], 'atmosphereZones': [{'x': 30, 'y': 100, 'width': 260, 'height': 64}], 'foregroundZones': [{'x': 0, 'y': 180, 'width': 320, 'height': 44}]}}\n\nSTATE (runtime layers): {'time': 1435, 'timeBand': 'early', 'weather': 'rain', 'lighting': 'amber', 'crowd': 'busy', 'npcPresence': ['mara'], 'canonicalObjects': [{'id': 'counter', 'name': 'bar counter', 'aliases': ['counter', 'bar', 'on bar'], 'kind': 'Container', 'location': 'bar', 'open': True, 'damaged': False, 'anchor': {'glyph': 'counter', 'x': 12, 'y': 148, 'width': 229, 'height': 36}}, {'id': 'detail_bar_stool', 'name': 'bar stool', 'aliases': ['stool', 'bar stool'], 'kind': 'Object', 'location': 'bar', 'damaged': False, 'anchor': {'glyph': 'stool', 'x': 166, 'y': 172, 'width': 26, 'height': 35}}, {'id': 'detail_bar_shelves', 'name': 'bottle shelves', 'aliases': ['shelves', 'bottle shelves'], 'kind': 'Object', 'location': 'bar', 'damaged': False, 'anchor': {'glyph': 'shelf', 'x': 29, 'y': 69, 'width': 117, 'height': 28}}, {'id': 'detail_bar_glass', 'name': 'empty glass', 'aliases': ['glass', 'empty glass'], 'kind': 'Object', 'location': 'bar', 'damaged': False, 'anchor': {'glyph': 'glass', 'x': 94, 'y': 131, 'width': 11, 'height': 17}}, {'id': 'detail_bar_light', 'name': 'pendant light', 'aliases': ['light', 'pendant light'], 'kind': 'Object', 'location': 'bar', 'damaged': False, 'anchor': {'glyph': 'light', 'x': 167, 'y': 19, 'width': 23, 'height': 36}}, {'id': 'detail_bar_window', 'name': 'high window', 'aliases': ['window', 'high window'], 'kind': 'Object', 'location': 'bar', 'damaged': False, 'anchor': {'glyph': 'window', 'x': 253, 'y': 29, 'width': 47, 'height': 27}}, {'id': 'detail_bar_bin', 'name': 'bar bin', 'aliases': ['bin', 'bar bin'], 'kind': 'Object', 'location': 'bar', 'damaged': False, 'anchor': {'glyph': 'bin', 'x': 17, 'y': 184, 'width': 18, 'height': 21}}, {'id': 'detail_bar_clock', 'name': 'bar clock', 'aliases': ['clock', 'bar clock'], 'kind': 'Object', 'location': 'bar', 'damaged': False}], 'openClosedState': {'counter': True}, 'specialEvents': ''}\n\nCONCEPT: scene-illustration\n\nCOMPOSITOR: dynamic objects, stateful doors, evidence, named NPCs and time lighting remain simulation-driven.",
+  "modelPrompt": "Grungy PS1 pixel art, hot pink, cyan, deep shadow. Velvet bar slow shift, distant adult bartender and two anonymous adult patrons, rain beyond high window, reflective floor. Cinematic framing, non-explicit, no text or logos.",
+  "style": {
+    "artDirectionFamily": "Public Velvet",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "requiredFacts": [
+    "Illustrative view, not a parser map. Match major established world facts.",
+    "Adults only, non-explicit; scene, character presence and boundary review required."
+  ],
+  "forbiddenFacts": [
+    "Contradictory major architecture, invented evidence, hidden discoveries or legible story text.",
+    "Explicit sexual activity, nudity, minors, branded logos or distracting fake text.",
+    "Obvious malformed anatomy; named character likeness or presence without scene review."
+  ],
+  "state": {
+    "time": 1435,
+    "timeBand": "early",
+    "weather": "rain",
+    "lighting": "amber",
+    "crowd": "busy",
+    "npcPresence": ["mara"],
+    "canonicalObjects": [
+      {
+        "id": "counter",
+        "name": "bar counter",
+        "aliases": ["counter", "bar", "on bar"],
+        "kind": "Container",
+        "location": "bar",
+        "open": true,
+        "damaged": false,
+        "anchor": {
+          "glyph": "counter",
+          "x": 12,
+          "y": 148,
+          "width": 229,
+          "height": 36
+        }
+      },
+      {
+        "id": "detail_bar_stool",
+        "name": "bar stool",
+        "aliases": ["stool", "bar stool"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "stool",
+          "x": 166,
+          "y": 172,
+          "width": 26,
+          "height": 35
+        }
+      },
+      {
+        "id": "detail_bar_shelves",
+        "name": "bottle shelves",
+        "aliases": ["shelves", "bottle shelves"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "shelf",
+          "x": 29,
+          "y": 69,
+          "width": 117,
+          "height": 28
+        }
+      },
+      {
+        "id": "detail_bar_glass",
+        "name": "empty glass",
+        "aliases": ["glass", "empty glass"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "glass",
+          "x": 94,
+          "y": 131,
+          "width": 11,
+          "height": 17
+        }
+      },
+      {
+        "id": "detail_bar_light",
+        "name": "pendant light",
+        "aliases": ["light", "pendant light"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "light",
+          "x": 167,
+          "y": 19,
+          "width": 23,
+          "height": 36
+        }
+      },
+      {
+        "id": "detail_bar_window",
+        "name": "high window",
+        "aliases": ["window", "high window"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "window",
+          "x": 253,
+          "y": 29,
+          "width": 47,
+          "height": 27
+        }
+      },
+      {
+        "id": "detail_bar_bin",
+        "name": "bar bin",
+        "aliases": ["bin", "bar bin"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "bin",
+          "x": 17,
+          "y": 184,
+          "width": 18,
+          "height": 21
+        }
+      },
+      {
+        "id": "detail_bar_clock",
+        "name": "bar clock",
+        "aliases": ["clock", "bar clock"],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false
+      }
+    ],
+    "openClosedState": {
+      "counter": true
+    },
+    "specialEvents": ""
+  },
+  "layer": "illustration",
+  "authoritativeGeometry": false,
+  "authoritativeArchitecture": false,
+  "architectureReviewRequired": false,
+  "bakedEntities": [],
+  "reviewContract": {
+    "staticArchitecture": [
+      {
+        "text": "One staircase beside the salon; main floor toward a small stage",
+        "model": "single staircase beside salon, distant small stage"
+      },
+      {
+        "text": "High street-facing window",
+        "model": "high street window",
+        "entityId": "detail_bar_window"
+      }
+    ],
+    "fixedFurniture": [
+      {
+        "text": "Fixed bar counter, bare surface",
+        "model": "fixed bar counter",
+        "entityId": "counter"
+      },
+      {
+        "text": "Fixed bottle shelving, no loose cups or readable labels",
+        "model": "bottle shelves",
+        "entityId": "detail_bar_shelves"
+      }
+    ],
+    "dynamicObjects": [
+      "detail_bar_stool",
+      "detail_bar_glass",
+      "detail_bar_light",
+      "detail_bar_bin",
+      "detail_bar_clock"
+    ],
+    "dynamicDoors": [],
+    "exits": [
+      {
+        "name": "vestibule",
+        "to": "vestibule",
+        "minutes": 1,
+        "aliases": ["south", "entrance"]
+      },
+      {
+        "name": "outside",
+        "to": "street",
+        "minutes": 2,
+        "aliases": ["out", "leave", "front door"]
+      },
+      {
+        "name": "upstairs",
+        "to": "landing",
+        "minutes": 2,
+        "aliases": ["up", "stairs"]
+      },
+      {
+        "name": "kitchen",
+        "to": "kitchen",
+        "minutes": 1,
+        "aliases": ["service door", "west"]
+      },
+      {
+        "name": "stage",
+        "to": "stage",
+        "minutes": 1,
+        "aliases": ["luca", "east", "floor"]
+      },
+      {
+        "name": "salon",
+        "to": "salon",
+        "minutes": 1,
+        "aliases": []
+      },
+      {
+        "name": "archive",
+        "to": "archive",
+        "minutes": 1,
+        "aliases": ["service table", "envelope", "documents"]
+      }
+    ],
+    "composition": {
+      "anchors": {
+        "detail_bar_window": {
+          "glyph": "window",
+          "x": 253,
+          "y": 29,
+          "width": 47,
+          "height": 27
+        },
+        "detail_bar_shelves": {
+          "glyph": "shelf",
+          "x": 29,
+          "y": 69,
+          "width": 117,
+          "height": 28
+        },
+        "detail_bar_light": {
+          "glyph": "light",
+          "x": 167,
+          "y": 19,
+          "width": 23,
+          "height": 36
+        },
+        "counter": {
+          "glyph": "counter",
+          "x": 12,
+          "y": 148,
+          "width": 229,
+          "height": 36
+        },
+        "detail_bar_glass": {
+          "glyph": "glass",
+          "x": 94,
+          "y": 131,
+          "width": 11,
+          "height": 17
+        },
+        "detail_bar_stool": {
+          "glyph": "stool",
+          "x": 166,
+          "y": 172,
+          "width": 26,
+          "height": 35
+        },
+        "detail_bar_bin": {
+          "glyph": "bin",
+          "x": 17,
+          "y": 184,
+          "width": 18,
+          "height": 21
+        }
+      },
+      "npcZones": [
+        {
+          "x": 260,
+          "y": 160
+        },
+        {
+          "x": 143,
+          "y": 140
+        },
+        {
+          "x": 78,
+          "y": 152
+        },
+        {
+          "x": 297,
+          "y": 135
+        }
+      ],
+      "atmosphereZones": [
+        {
+          "x": 30,
+          "y": 100,
+          "width": 260,
+          "height": 64
+        }
+      ],
+      "foregroundZones": [
+        {
+          "x": 0,
+          "y": 180,
+          "width": 320,
+          "height": 44
+        }
+      ]
+    }
+  },
+  "conditioning": {
+    "mode": "text-only",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  }
+}

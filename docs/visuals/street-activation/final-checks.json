@@ -1,0 +1,19 @@
+{
+  "status": "passed-ready-for-feature-checkpoint",
+  "branch": "feature/state-driven-visuals",
+  "parentCommit": "0e761909be54e29985d93c5d25587fe0c9c2aef6",
+  "fullProjectCheck": "passed",
+  "javascriptTests": 1011,
+  "pythonPipelineTests": 64,
+  "formatCheck": "passed",
+  "registryValidation": "passed",
+  "headlessOrdinaryPlay": "passed",
+  "approvedCompositeMatches": 6,
+  "velvetUnchangedViewports": 6,
+  "preservedHashes": 188,
+  "reportLinks": "passed",
+  "knownNonFailingQAFlag": "existing motel conditional-exit review",
+  "localAIExperiments": "parked",
+  "publicDeployment": "not performed",
+  "merge": "not performed"
+}

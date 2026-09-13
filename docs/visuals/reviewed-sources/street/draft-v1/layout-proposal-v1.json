@@ -1,0 +1,181 @@
+{
+  "id": "velvet-street-layout",
+  "version": 1,
+  "roomId": "street",
+  "status": "draft-pending-human-review",
+  "frame": [
+    320,
+    224
+  ],
+  "coordinatePolicy": "Non-metric image coordinates, x left to right and y top to bottom. Near-frontal facade with shallow depth; no new simulation geography. Off-camera routes stay in parser/text.",
+  "permanent": [
+    {
+      "id": "detail_street_wall",
+      "box": [
+        0,
+        0,
+        320,
+        177
+      ],
+      "role": "old brick facade",
+      "fact": "staticArchitecture:0"
+    },
+    {
+      "id": "detail_street_window",
+      "box": [
+        42,
+        76,
+        135,
+        134
+      ],
+      "role": "frosted club window without faces",
+      "fact": "staticArchitecture:1"
+    },
+    {
+      "id": "detail_street_awning",
+      "polygon": [
+        [
+          184,
+          55
+        ],
+        [
+          249,
+          55
+        ],
+        [
+          259,
+          73
+        ],
+        [
+          179,
+          73
+        ]
+      ],
+      "role": "narrow awning above side entrance",
+      "fact": "staticArchitecture:2"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "side_door",
+      "box": [
+        193,
+        76,
+        248,
+        177
+      ],
+      "kind": "door",
+      "bake": false
+    },
+    {
+      "id": "detail_street_sign",
+      "box": [
+        177,
+        30,
+        257,
+        48
+      ],
+      "kind": "sign",
+      "bake": false
+    },
+    {
+      "id": "detail_street_bin",
+      "box": [
+        281,
+        150,
+        303,
+        184
+      ],
+      "kind": "object",
+      "bake": false
+    },
+    {
+      "id": "envelope",
+      "box": [
+        159,
+        190,
+        169,
+        197
+      ],
+      "kind": "dropped-object",
+      "bake": false
+    }
+  ],
+  "pavementPolygon": [
+    [
+      0,
+      177
+    ],
+    [
+      320,
+      177
+    ],
+    [
+      320,
+      224
+    ],
+    [
+      0,
+      224
+    ]
+  ],
+  "shelterPolygon": [
+    [
+      179,
+      73
+    ],
+    [
+      259,
+      73
+    ],
+    [
+      268,
+      184
+    ],
+    [
+      174,
+      184
+    ]
+  ],
+  "routes": [
+    {
+      "to": "vestibule",
+      "command": "go inside",
+      "doorEntity": "side_door",
+      "placement": "visible opening under awning",
+      "offCamera": false
+    },
+    {
+      "to": "loading-bay",
+      "command": "go loading bay",
+      "placement": "off-camera continuation behind building/east",
+      "offCamera": true
+    },
+    {
+      "to": "kiosk",
+      "command": "go kiosk",
+      "placement": "across road behind camera",
+      "offCamera": true
+    },
+    {
+      "to": "apartment",
+      "command": "go home",
+      "placement": "off-camera west street continuation",
+      "offCamera": true
+    },
+    {
+      "to": "bar",
+      "command": "go front door",
+      "placement": "off-camera route along facade to front entrance",
+      "offCamera": true,
+      "availableAfterSideDoorLocks": true
+    }
+  ],
+  "notes": [
+    "One visible side-entry opening; no invented second stateful door, doorway, lamp, street furniture or character.",
+    "Bare source excludes door leaf, VELVET sign, bin, envelope and their emission, shadows and reflections.",
+    "Pavement wetness and diffuse frost-window light are scenery; sign/door/bin effects belong to overlays.",
+    "Door lock is conveyed by simulation text, not an invented padlock.",
+    "Geometry may be refined to the source's actual pixels in a separate composition record before composites. This does not approve a source or alter gameplay."
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "model": null,
+  "modelVersion": null,
+  "seed": null,
+  "tool": "built-in image_gen (three figure references); no room regeneration",
+  "artStatus": "draft; pending human identity, sprite and placement review",
+  "authoredMara": "Rolled sleeves. A pencil behind one ear. Always halfway through a task.",
+  "identityScope": "Only existing description is story authority; unspecified reference appearance is a provisional visual choice, not biography.",
+  "assets": {
+    "mara": {
+      "method": "imagegen reference + deterministic alpha/pixel cleanup",
+      "source": "sources/mara.png",
+      "sourceSha256": "6345795611849ac72cd1838910136e2ba1bf2eb43c64471cebae6b5a29b7461c",
+      "sourceMode": "RGB (baked checkerboard)",
+      "alphaMethod": "neutral threshold + largest four-connected component",
+      "crop": [
+        281,
+        22,
+        746,
+        1511
+      ],
+      "reduction": "nearest",
+      "palette": [
+        "#110d19",
+        "#211625",
+        "#342335",
+        "#473047",
+        "#69404f",
+        "#98535c",
+        "#c27b77",
+        "#706078",
+        "#244455",
+        "#387486",
+        "#97305e",
+        "#dca45f"
+      ],
+      "file": "sprites/mara.png",
+      "width": 24,
+      "height": 52,
+      "bytes": 1026,
+      "sha256": "56136c2c3276d157c5edd9bd3d7b1d20945aaeae6d4c6e88c91afcf27435d534",
+      "colors": 12,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/mara-reflection.png",
+        "width": 24,
+        "height": 17,
+        "bytes": 563,
+        "sha256": "3da37debd92588406d79500befe785f187ff6e95d486862387cb030c6ce6e19e"
+      }
+    },
+    "patron-a": {
+      "method": "imagegen reference + deterministic alpha/pixel cleanup",
+      "source": "sources/patron-a.png",
+      "sourceSha256": "b0a361db4179eca19dcbacca012eb5a43b3a4d69304ecb016d48263dbed093b1",
+      "sourceMode": "RGB (baked checkerboard)",
+      "alphaMethod": "neutral threshold + largest four-connected component",
+      "crop": [
+        318,
+        190,
+        695,
+        1383
+      ],
+      "reduction": "nearest",
+      "palette": [
+        "#110d19",
+        "#211625",
+        "#342335",
+        "#473047",
+        "#69404f",
+        "#98535c",
+        "#c27b77",
+        "#706078",
+        "#244455",
+        "#387486",
+        "#97305e"
+      ],
+      "file": "sprites/patron-a.png",
+      "width": 18,
+      "height": 40,
+      "bytes": 622,
+      "sha256": "dda53b2a08d0abc918c7798b0bf1da42c75105b491239e352a34558089f0180d",
+      "colors": 8,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/patron-a-reflection.png",
+        "width": 18,
+        "height": 13,
+        "bytes": 383,
+        "sha256": "743b409345858647afc9e503b8f5e3420f40c04ecc95ea01a94ae8982749d4cc"
+      }
+    },
+    "patron-b": {
+      "method": "imagegen reference + deterministic alpha/pixel cleanup",
+      "source": "sources/patron-b.png",
+      "sourceSha256": "b7b494dd164f9df75d385773ebed448c6cb29e1594ac16a5b84f2cc383454a1f",
+      "sourceMode": "RGB (baked checkerboard)",
+      "alphaMethod": "neutral threshold + largest four-connected component",
+      "crop": [
+        237,
+        250,
+        604,
+        1660
+      ],
+      "reduction": "nearest",
+      "palette": [
+        "#110d19",
+        "#211625",
+        "#342335",
+        "#473047",
+        "#69404f",
+        "#98535c",
+        "#c27b77",
+        "#706078",
+        "#244455",
+        "#387486",
+        "#97305e"
+      ],
+      "file": "sprites/patron-b.png",
+      "width": 18,
+      "height": 40,
+      "bytes": 554,
+      "sha256": "40ead51bee3faf8c546cd9bb917199853c34e858295b8da3dba570df9a176902",
+      "colors": 9,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/patron-b-reflection.png",
+        "width": 18,
+        "height": 13,
+        "bytes": 332,
+        "sha256": "32113f3d7823f41a9b6757f75c315b3d9e60ddd51d3682f63f57851a459e0d5c"
+      }
+    },
+    "stool": {
+      "method": "manually authored native pixel clusters",
+      "source": "tools/visual-gen/velvet_overlay_art.py",
+      "file": "sprites/stool.png",
+      "width": 18,
+      "height": 24,
+      "bytes": 316,
+      "sha256": "52ec4fa572b3c8e7262a114d7378e2857ef96abcbbf976df1c28820ae79b1f37",
+      "colors": 11,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/stool-reflection.png",
+        "width": 18,
+        "height": 8,
+        "bytes": 270,
+        "sha256": "6b8ead1194c141a8f55f24e3ae0aae3f6e4bce60adf4b6674151fb65c066edc0"
+      }
+    },
+    "glass": {
+      "method": "manually authored native pixel clusters",
+      "source": "tools/visual-gen/velvet_overlay_art.py",
+      "file": "sprites/glass.png",
+      "width": 9,
+      "height": 10,
+      "bytes": 185,
+      "sha256": "7423634faf1ab556a520958a950c608d7a8de1fd6d2073a42cfcf9d029dc4f69",
+      "colors": 7,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/glass-reflection.png",
+        "width": 9,
+        "height": 3,
+        "bytes": 116,
+        "sha256": "cf585305185c098d283b3cccbcdcbfbcb8f5c34e2770a9b161aefeab4e1bfefa"
+      }
+    },
+    "lamp": {
+      "method": "manually authored native pixel clusters",
+      "source": "tools/visual-gen/velvet_overlay_art.py",
+      "file": "sprites/lamp.png",
+      "width": 14,
+      "height": 24,
+      "bytes": 223,
+      "sha256": "3e361de4615d2f42df6156eeb6f9cc6e73e36415d8209d6595a2576f6fb83e08",
+      "colors": 8,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/lamp-reflection.png",
+        "width": 14,
+        "height": 8,
+        "bytes": 161,
+        "sha256": "09a207a51df6e1eca5ece59f1c8258f20df0222424b57bd02ca4eac4bf994064"
+      }
+    },
+    "bin": {
+      "method": "manually authored native pixel clusters",
+      "source": "tools/visual-gen/velvet_overlay_art.py",
+      "file": "sprites/bin.png",
+      "width": 14,
+      "height": 18,
+      "bytes": 231,
+      "sha256": "555ef8ba8c5b7c9cafb2f2e241852ce73e4e2f1a3b9420c5fb642d29cda5e6fb",
+      "colors": 7,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/bin-reflection.png",
+        "width": 14,
+        "height": 6,
+        "bytes": 176,
+        "sha256": "ac854c511473e3e753695f8d58ab1097d6f05f07406ce83ba2acd36df2a66688"
+      }
+    },
+    "envelope": {
+      "method": "manually authored native pixel clusters",
+      "source": "tools/visual-gen/velvet_overlay_art.py",
+      "file": "sprites/envelope.png",
+      "width": 10,
+      "height": 6,
+      "bytes": 135,
+      "sha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+      "colors": 3,
+      "alpha": "binary 0/255",
+      "humanReviewStatus": "pending",
+      "reflection": {
+        "file": "sprites/envelope-reflection.png",
+        "width": 10,
+        "height": 3,
+        "bytes": 117,
+        "sha256": "1ead375d732498bb0727bcc994da1cf4079e393fbb62aae43a7834bf8868a20a"
+      }
+    }
+  }
+}

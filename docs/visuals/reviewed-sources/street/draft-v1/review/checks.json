@@ -1,0 +1,382 @@
+{
+  "status": "passed-draft-unactivated",
+  "headless": true,
+  "protectedHashes": {
+    "src/content/visuals/assets.json": "f525badec035f96d5d9d6bbef503e83257b9ab65601b3eb7f6ee2235297cc6f0",
+    "src/content/visuals/velvet-overlay.json": "04da56b4cbdee79bed88458a5b45af5a2e1fb0b28c4f95f215b75cece5983132",
+    "src/content/spaces.ts": "c4345172d75021b9cfd948fa3c2344d44d8e3878edc608d1e671fdb12df8b240",
+    "src/engine/parser.ts": "6d5436beeb6bce9535beda4702028f506d3e15bff3235cb99b4ec579c49cd7c1"
+  },
+  "records": [
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1430,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "01-open-door",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1431,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "label": "02-closed-door",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1433,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "03-dropped-envelope",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1435,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "04-return-envelope",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1436,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "05-retaken-envelope",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1436,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "06-master-320",
+      "mode": "on",
+      "width": 320,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1436,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "07-mobile-390",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1436,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "08-reduced",
+      "mode": "reduced",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1436,
+      "lighting": "amber",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "label": "09-off",
+      "mode": "off",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1600,
+      "lighting": "low",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": true
+      },
+      "label": "10-locked-0240",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope",
+        "wait 164 minutes",
+        "go inside"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1755,
+      "lighting": "morning",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": true
+      },
+      "label": "11-dawn",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope",
+        "wait 164 minutes",
+        "go inside",
+        "go front door",
+        "go outside",
+        "wait 151 minutes"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1755,
+      "lighting": "morning",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": true
+      },
+      "label": "12-sign-damaged-fallback",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope",
+        "wait 164 minutes",
+        "go inside",
+        "go front door",
+        "go outside",
+        "wait 151 minutes"
+      ]
+    },
+    {
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "time": 1755,
+      "lighting": "morning",
+      "weather": "rain",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": true
+      },
+      "label": "13-bin-absent",
+      "mode": "on",
+      "width": 640,
+      "commands": [
+        "take envelope",
+        "go outside",
+        "close side door",
+        "open side door",
+        "drop envelope",
+        "go inside",
+        "go outside",
+        "take envelope",
+        "wait 164 minutes",
+        "go inside",
+        "go front door",
+        "go outside",
+        "wait 151 minutes"
+      ]
+    }
+  ],
+  "rasterizedLayers": [
+    "bin-effect.svg",
+    "bin.svg",
+    "door-closed.svg",
+    "door-open-effect.svg",
+    "door-open.svg",
+    "envelope-effect.svg",
+    "rain.svg",
+    "sign-effect.svg",
+    "sign.svg"
+  ],
+  "checks": [
+    "open/closed door and owned spill",
+    "drop/return/take envelope and owned reflection",
+    "real parser 02:40 lock and front-entry success",
+    "native 320/640 and mobile containment",
+    "On/Reduced/Off",
+    "damaged sign and absent bin",
+    "failed primary removes owned effect with procedural/text fallback",
+    "base failure restores procedural renderer",
+    "ordinary UI isolated preview, save/reload and mobile",
+    "normal app unchanged without preview injection"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "externalRequests": [],
+  "deliberateFailedRequests": [
+    "/layers/bin.png",
+    "/candidate/street__canonical-room__canonical__64-colours.png"
+  ]
+}

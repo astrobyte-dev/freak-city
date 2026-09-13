@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-09-09T09:16:46.210224+00:00",
+  "checkpoint": "bbb7693f0f6632a1a8dabbc1a24c43a805a64ee2",
+  "tool": "built-in image_gen",
+  "modelVersion": null,
+  "invocations": 1,
+  "inputs": [
+    {
+      "role": "edit-target",
+      "file": "docs/visuals/external-edit/cleanup/sources/original.png",
+      "sha256": "af70facbd4f79b75cca2160b9ff0cb5514d5560d952fe5e66a9114ee4602cd6c"
+    },
+    {
+      "role": "geometry-reference-only",
+      "file": "docs/visuals/velvet-bar-layout/reference.png",
+      "sha256": "b836b6374e0e3fa9d9852b8eb42fc3f43f83b19a4f60a6f5ebf2b05c7be77ea8"
+    }
+  ],
+  "promptFile": "edit-prompt.txt",
+  "sourceSha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2",
+  "approval": "pending-human-visual-review",
+  "palette": 64
+}
