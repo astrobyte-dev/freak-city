@@ -118,6 +118,18 @@ export const trialSchema = z.object({
       }),
     )
     .default([]),
+  agreements: z
+    .array(
+      z.object({
+        id: z.string(),
+        at: instant,
+        observer: z.literal("sable"),
+        words: z.string(),
+        status: z.enum(["open", "kept"]),
+        keptAt: instant.optional(),
+      }),
+    )
+    .default([]),
   roleplay: z.enum(["allowed", "implied", "skip"]),
   treatment: z.array(
     z.object({
@@ -483,6 +495,27 @@ export function validateTrial(raw: unknown): TrialState {
     s.companyOffers.some((o) => o.at > s.time),
     "Future offer.",
   );
+  fail(
+    new Set(s.agreements.map((a) => a.id)).size !== s.agreements.length,
+    "Duplicate agreement.",
+  );
+  for (const a of s.agreements) {
+    fail(
+      a.at > s.time ||
+        (a.keptAt !== undefined) !== (a.status === "kept") ||
+        (a.keptAt ?? a.at) < a.at ||
+        (a.keptAt ?? 0) > s.time,
+      "Invalid agreement.",
+    );
+    fail(
+      a.status === "kept" &&
+        !s.observations.some(
+          (o) =>
+            o.actor === "vesper" && o.mode === "heard" && o.subject === a.id,
+        ),
+      "Kept agreement lacks Vesper's hearing.",
+    );
+  }
   fail(
     s.context?.question?.kind === "confirm-drink" &&
       !s.context.question.offered,

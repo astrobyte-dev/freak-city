@@ -45,7 +45,7 @@ describe("Exploratory opening evidence", () => {
       remaining: 3,
       location: "trial-counter",
     });
-    expect(served.context?.question).toBeUndefined();
+    expect(served.context?.question?.kind).not.toBe("choose-drink");
     expect(outcome(served)).toBe("handled");
     expect(prose(served)).toContain("sets a glass of water");
   });

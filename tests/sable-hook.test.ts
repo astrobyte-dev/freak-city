@@ -87,7 +87,9 @@ describe("The offer fires once, after the first ordinary exchange", () => {
     expect(s.context?.question?.kind).toBe("favour");
     expect(s.context?.topic).toBe("supplier");
     expect(s.agreements).toEqual([]);
-    expect(s.observations).toEqual(before.observations);
+    // The supplier answer records Sable hearing an opinion; the offer adds
+    // nothing.
+    expect(s.observations.map((o) => o.subject)).toEqual(["supplier"]);
     untouched(before, s);
   });
   it.each(["yes", "order coffee", "what's the octopus for"])(

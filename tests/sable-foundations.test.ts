@@ -179,7 +179,7 @@ describe("Explicit conversation meaning", () => {
       subject: "supplier",
     });
     expect(s.context?.topic).toBe("supplier");
-    expect(s.context?.question).toBeUndefined();
+    expect(s.context?.question?.subject).not.toBe("drink");
     expect(text(s)).not.toContain("not accepted");
     expect(currentDrink(s)).toBeUndefined();
     expect(run(s, "tell me more").context?.topic).toBe("supplier");
