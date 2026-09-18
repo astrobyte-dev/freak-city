@@ -9,6 +9,11 @@ import "@fontsource/cormorant-garamond/latin-500-italic.css";
 import "@fontsource/ibm-plex-mono/latin-400.css";
 import App from "./App";
 import "./styles.css";
+const SableTrial =
+  import.meta.env.DEV &&
+  new URLSearchParams(location.search).get("trial") === "sable"
+    ? React.lazy(() => import("./trial/TrialApp"))
+    : null;
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
   { error: boolean }
@@ -34,6 +39,12 @@ class ErrorBoundary extends React.Component<
 }
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <ErrorBoundary>
-    <App />
+    {SableTrial ? (
+      <React.Suspense fallback={<main>Opening the Sable trial…</main>}>
+        <SableTrial />
+      </React.Suspense>
+    ) : (
+      <App />
+    )}
   </ErrorBoundary>,
 );
