@@ -1,4 +1,14 @@
 import { installActivity, activityDescription } from "./activity";
+import { carriedBy, visibleAt } from "./custody";
+import { emptySocial } from "./commitment-types";
+import {
+  advanceCommitments,
+  socialTime,
+  careCallback,
+  careReminder,
+} from "./commitments";
+import { handleCommitment } from "./commitment-language";
+import { envelopeCare } from "../content/commitments/inez-envelope";
 import { parserPassages } from "../content/parser-passages";
 import {
   socialResponses,
@@ -78,7 +88,7 @@ function fail(
 const world = (s: GameState) => s.world!;
 export function ensureWorld(state: GameState): GameState {
   if (state.world) {
-    if (state.world.revision === 2) return state;
+    if (state.world.revision === 3) return state;
     const upgraded = structuredClone(state);
     upgradeWorld(upgraded);
     return upgraded;
@@ -88,7 +98,8 @@ export function ensureWorld(state: GameState): GameState {
   const current = sceneRooms[s.scene] ?? defaultRoom[scenes[s.scene].location];
   s.world = {
     version: 1,
-    revision: 2,
+    revision: 3,
+    social: emptySocial(),
     subMinute: 0,
     references: {},
     observations: {},
@@ -170,33 +181,15 @@ export function ensureWorld(state: GameState): GameState {
   return s;
 }
 export function isCarried(s: GameState, id: string): boolean {
-  let e = world(s).entities[id];
-  const seen = new Set<string>();
-  while (e && !seen.has(e.id)) {
-    seen.add(e.id);
-    if (e.destroyed) return false;
-    if (e.location === "player") return true;
-    e = world(s).entities[e.location];
-  }
-  return false;
+  return carriedBy(world(s).entities, id);
 }
 export function isVisible(s: GameState, id: string): boolean {
-  let e = world(s).entities[id];
-  const seen = new Set<string>();
-  if (!e || !e.visible || e.destroyed) return false;
-  if (e.properties.onPerson && npcIds.includes(e.location as NPCId))
-    return s.npcs[e.location as NPCId].location === world(s).room;
-  if (e.kind === "Door" && e.properties.otherSide === world(s).room)
-    return true;
-  while (e && !seen.has(e.id)) {
-    seen.add(e.id);
-    if (!e.visible || e.destroyed) return false;
-    if (e.location === world(s).room || e.location === "player") return true;
-    const parent = world(s).entities[e.location];
-    if (!parent || parent.open === false) return false;
-    e = parent;
-  }
-  return false;
+  return visibleAt(
+    world(s).entities,
+    id,
+    world(s).room,
+    Object.fromEntries(npcIds.map((npc) => [npc, s.npcs[npc].location])),
+  );
 }
 export function syncInventory(s: GameState) {
   s.inventory = Object.keys(world(s).entities).filter((id) => isCarried(s, id));
@@ -677,6 +670,7 @@ function tick(s: GameState, minutes: number, out: Passage[]) {
     }
   }
   const after = presentNPCs(s);
+  advanceCommitments(s, socialTime(s));
   for (const n of before.filter((n) => !after.includes(n)))
     out.push({
       text: `${characters[n].name.split(" ")[0]} leaves to get on with the night.`,
@@ -1071,6 +1065,26 @@ function conversation({ s, c, out }: Context): number {
     s,
     c.verb === "say" ? c.indirect || w.lastPerson || "" : c.direct,
   );
+  // A completed alias-only introduction must not restart the door scene or
+  // silently begin the service-corridor encounter on a bare greeting.
+  if (
+    n === "inez" &&
+    c.verb === "talk" &&
+    !c.topic &&
+    w.room === "vestibule" &&
+    s.npcs.inez.memories.chosenAlias &&
+    (!w.conversations.inez || w.conversations.inez === "door")
+  ) {
+    out.push({
+      speaker: n,
+      text: "I'm listening. What did you want to say about it?",
+    });
+    return 1;
+  }
+  if (c.verb === "flirt" && n === "inez") {
+    out.push({ speaker: n, text: envelopeCare.nonRomantic });
+    return 0;
+  }
   let topic = c.verb === "say" ? c.direct : c.topic;
   if (c.verb === "ask") {
     if (
@@ -2159,7 +2173,7 @@ actionHandlers.help = ({ c, out }) => {
       ? `For ${c.direct}: name the object or person. EXAMINE an object for detail; ASK someone ABOUT a topic; PUT an object IN a container. Ambiguous nouns will prompt a clarification.`
       : `Write what you want to do: “where am I”, “look at the envelope”, “ask Mara about it”, or “wait for two minutes”. Short sentences are enough. You can refer back to an object with IT or a person with HER, HIM or THEM. If the meaning is unclear, I'll ask you to name the person or thing.
 
-LOOK, THINK and REMEMBER help you reorient without spending time. Taking things, moving and patient observation spend time; people carry on with their evenings. ASK seeks information; TELL shares a claim; SAY replies to the person you're talking with. A greeting or a bare yes never gives away your belongings.
+LOOK, THINK and REMEMBER help you reorient without spending time. Taking things, moving and patient observation spend time; people carry on with their evenings. ASK seeks information; TELL shares a claim; SAY replies to the person you're talking with. A greeting creates no agreement. YES can accept clear terms just offered to you; ambiguous replies ask for clarification. You can ask Inez to watch your closed envelope while she is at the vestibule ledge.
 
 PHONE, INVENTORY, JOURNAL and MAP open your records. HINT offers a little more guidance when requested. Chain actions with THEN or a semicolon. Use the history and completion controls below the input, or ↑ ↓ and Tab on a keyboard.`,
   });
@@ -2188,6 +2202,23 @@ actionHandlers.hint = ({ s, out }) => {
   return 0;
 };
 export function executeCommand(state: GameState, raw: string): CommandResult {
+  return executeTransaction(state, raw);
+}
+
+/** Typed name data never enters command parsing or command-chain splitting.
+ * Uses the existing alias-only authored reply and the complete transaction. */
+export function executeAliasIntroduction(
+  state: GameState,
+  alias: string,
+): CommandResult {
+  return executeTransaction(state, "say just the alias to Inez", alias);
+}
+
+function executeTransaction(
+  state: GameState,
+  raw: string,
+  alias?: string,
+): CommandResult {
   const initial = ensureWorld(state),
     trimmed = raw.trim();
   if (!trimmed) return { state: initial, ok: false };
@@ -2209,7 +2240,35 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
     const base = structuredClone(s),
       out: Passage[] = [];
     let command = submitted;
+    let stopChain = false;
+    let timedFailure = false;
     try {
+      if (alias !== undefined) {
+        if (
+          world(s).pending ||
+          world(s).social?.offer ||
+          world(s).social?.clarification
+        )
+          fail("Finish or cancel the pending question before giving an alias.");
+        person(s, "inez");
+        if (
+          world(s).room !== "vestibule" ||
+          world(s).encounters.vestibule !== "door" ||
+          s.npcs.inez.memories.chosenAlias ||
+          world(s).consumed.includes("intent:door:private")
+        )
+          fail("Inez is not waiting for an introductory alias.");
+        // Same normalization and 1–24 character limit as the existing setup UI.
+        const cleaned = alias
+          .trim()
+          .replace(/[<>\x00-\x1f]/g, "")
+          .slice(0, 24);
+        if (!cleaned.trim()) fail("Choose an alias of 1–24 characters.");
+        s.alias = cleaned;
+        effects(s, [
+          { type: "memory", npc: "inez", key: "chosenAlias", value: cleaned },
+        ]);
+      }
       if (world(s).pending) {
         if (normalize(command) === "cancel") {
           delete world(s).pending;
@@ -2253,7 +2312,14 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
           fail(
             "You are considering an action. Nothing has happened yet. Describe the action directly when you decide, or use THINK to review what you know.",
           );
-        if (c.negated) {
+        const care = handleCommitment(s, c, command, out, {
+          tick,
+          object,
+          person,
+          syncInventory,
+          fail,
+        });
+        if (c.negated && !care) {
           out.push({
             text: "You leave that undone. Nothing changes hands, and no commitment is made.",
             kind: "system",
@@ -2321,7 +2387,12 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
           ? matchIntent(command, activeChoices(s))
           : undefined;
         let minutes: number;
-        if (
+        if (care) {
+          minutes = 0;
+          stopChain = !!care.stop;
+          timedFailure = !!care.failed;
+          if (timedFailure) ok = false;
+        } else if (
           authored &&
           ![
             "ask",
@@ -2378,6 +2449,14 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
             "unsupported-verb",
           );
         if (minutes! > 0) tick(s, minutes!, out);
+        if (
+          !care &&
+          ["talk", "ask"].includes(c.verb) &&
+          out.some((p) => p.speaker === "inez")
+        ) {
+          const callback = careCallback(s, "inez");
+          if (callback) out.push(callback);
+        }
         panel = ctx.panel ?? panel;
         if (
           s.time * 60 + world(s).subMinute >
@@ -2386,6 +2465,15 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
         )
           s.turn++;
         syncInventory(s);
+        if (
+          world(s).room !== world(base).room ||
+          ["text", "call"].includes(c.verb) ||
+          out.some((p) => p.speaker && p.speaker !== "inez")
+        ) {
+          world(s).social!.focus = false;
+          delete world(s).social!.offer;
+          delete world(s).social!.clarification;
+        }
       }
       for (const message of s.messages.filter(
         (m) => !base.messages.some((old) => old.id === m.id),
@@ -2401,8 +2489,16 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
             message.fallback ?? "Personal message omitted by your boundaries.",
         });
       }
+      const reminder = careReminder(s);
+      if (reminder) out.push(reminder);
       for (const p of out)
-        if (p.speaker)
+        if (p.speaker) {
+          world(s).social!.focus =
+            p.speaker === "inez" && p.from === "commitment";
+          if (!world(s).social!.focus) {
+            delete world(s).social!.offer;
+            delete world(s).social!.clarification;
+          }
           world(s).lastStatement = {
             npc: p.speaker,
             text: p.text,
@@ -2412,6 +2508,7 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
             safe: p.safe,
             implied: p.implied,
           };
+        }
       world(s).commandHistory.push(submitted);
       world(s).transcript.push({
         command: submitted,
@@ -2419,14 +2516,18 @@ export function executeCommand(state: GameState, raw: string): CommandResult {
         room: world(s).room,
         passages: out.map((p) => transcriptPassageSchema.parse(p)),
         verb: parseCommand(command).verb,
-        outcome: out.some((p) => p.kind === "system" && p.from === "atmosphere")
-          ? "fallback"
-          : "handled",
+        ...(timedFailure ? { failed: true } : {}),
+        outcome: timedFailure
+          ? "blocked"
+          : out.some((p) => p.kind === "system" && p.from === "atmosphere")
+            ? "fallback"
+            : "handled",
         seconds:
           (s.time - base.time) * 60 +
           world(s).subMinute -
           world(base).subMinute,
       });
+      if (stopChain) break;
     } catch (error) {
       if (!(error instanceof ActionError)) throw error;
       s = base;

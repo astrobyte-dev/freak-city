@@ -428,7 +428,7 @@ describe("observation, off-screen work, embodiment and saves", () => {
     delete old.world.observations;
     for (const e of ambientEntities()) delete old.world.entities[e.id];
     const migrated = validateSave(old);
-    expect(migrated.world!.revision).toBe(2);
+    expect(migrated.world!.revision).toBe(3);
     expect(migrated.world!.entities.envelope).toEqual(
       s.world!.entities.envelope,
     );
