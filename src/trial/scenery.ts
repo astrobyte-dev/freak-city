@@ -8,6 +8,12 @@ export interface Scenery {
 // Scenery is data: each noun the visible prose names, the aliases a player
 // might use for it, and one line for EXAMINE. Nothing here is portable or
 // recorded. Real objects live in createTrialEntities and always win.
+//
+// Forward rule (director, 18 Sep 2026): a new room gets ONE shared
+// decorative line for its background nouns. Individual lines are reserved
+// for foregrounded items: people, exits, and objects the prose invites the
+// player to act on. The per-noun lines below predate the rule and stand as
+// honest decorative responses; do not extend the list.
 export const scenery: Record<Room, Scenery[]> = {
   bar: [
     {

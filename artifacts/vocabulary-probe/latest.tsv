@@ -8,44 +8,44 @@ bar_opening	rejected	language-verb:not (handler detail not recorded)	not really	
 bar_opening	deferred	conversation:hesitation	maybe	Sable tilts the page towards the light. ‘Hard to tell without hearing it in their voice, isn't it? I'll sleep 
 bar_opening	clarified	conversation:opinion-clarify	I think it's fine	What do you mean about supplier?
 bar_opening	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_opening	handled	examine:scenery	examine pencil	A pencil, worn down by drafts of the supplier complaint.
+bar_opening	handled	examine:scenery	look at the pencil	A pencil, worn down by drafts of the supplier complaint.
 bar_opening	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_opening	handled	object:examine	x counter	A worn wooden serving counter. You can set a held object on it.
 bar_opening	handled	object:examine	look at the counter	A worn wooden serving counter. You can set a held object on it.
-bar_opening	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_opening	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
+bar_opening	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
+bar_opening	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
 bar_opening	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+bar_opening	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
+bar_opening	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_opening	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	handled	conversation:plans-response	listen	Sable smiles. ‘I'll take that under advisement. Possibly with chips.’
-bar_opening	clarified	conversation:opinion-clarify	listen to the music	What do you mean about music?
-bar_opening	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
+bar_opening	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
+bar_opening	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
+bar_opening	handled	examine:person	look at sable	Sable, pencil tucked behind one ear.
+bar_opening	handled	examine:person	examine sable	Sable, pencil tucked behind one ear.
+bar_opening	handled	examine:person	x sable	Sable, pencil tucked behind one ear.
+bar_opening	handled	examine:scenery	look at the bass line	A soft bass line from the speakers, low enough to talk over.
+bar_opening	handled	sense:listen	listen	A soft bass line from the speakers, and glass on wood.
+bar_opening	handled	sense:listen	listen to the music	A soft bass line from the speakers, and glass on wood.
+bar_opening	handled	sense:smell	smell	Coffee, citrus cordial and warm wood.
+bar_opening	handled	sense:smell	smell the coffee	Coffee, citrus cordial and warm wood.
+bar_opening	handled	sense:touch	touch the counter	You run a hand over the counter.
+bar_opening	handled	sense:sit	sit down	You take a stool at the counter.
+bar_opening	handled	sense:sit	sit at the counter	You take a stool at the counter.
+bar_opening	handled	sense:stand	stand up	You stand; the stool keeps your place.
 bar_opening	handled	object:examine	read menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
 bar_opening	handled	object:examine	read the menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_opening	handled	inspect:menu	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_opening	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	object:examine	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
+bar_opening	handled	language-verb:inventory (handler detail not recorded)	i	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 bar_opening	handled	language-verb:inventory (handler detail not recorded)	inventory	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 bar_opening	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-bar_opening	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
-bar_opening	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:the (handler detail not recorded)	the special with gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
+bar_opening	handled	conversation:order-drink	gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_opening	handled	conversation:order-drink	ask for gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_opening	handled	conversation:order-drink	a gin please	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_opening	handled	conversation:order-drink	the special with gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_opening	handled	conversation:order-drink	order the special	Sable sets a glass of alcohol-free special within reach. ‘Minor Administrative Disappointment: citrus cordial 
 bar_opening	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_opening	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
@@ -55,7 +55,7 @@ bar_opening	handled	conversation:order-drink	another coffee	Sable sets a cup of 
 bar_opening	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
 bar_opening	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_opening	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_opening	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -135,28 +135,28 @@ bar_opening	rejected	language-verb:i'm (handler detail not recorded)	I'm glad I 
 bar_opening	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
-bar_opening	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
-bar_opening	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner.
-bar_opening	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner.
+bar_opening	handled	language-verb:show (handler detail not recorded)	shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_opening	handled	language-verb:text (handler detail not recorded)	next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_opening	handled	language-verb:go (handler detail not recorded)	go next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_opening	handled	travel:outside	leave	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_opening	handled	travel:outside	go outside	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
 bar_opening	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_opening	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_opening	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_opening	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_opening	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_opening	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_opening	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_opening	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 bar_opening	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 bar_opening	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_opening	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-bar_opening	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	travel:outside	exit	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_opening	handled	travel:outside	out	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_opening	handled	travel:compass	n	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
+bar_opening	handled	travel:compass	north	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
 bar_opening	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 bar_opening	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 bar_opening	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties:
@@ -164,7 +164,7 @@ bar_opening	handled	think:private	think	Private: Three weeks here. The bar has s
 bar_opening	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	handled	language-verb:look (handler detail not recorded)	look	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
-bar_opening	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_opening	handled	language-verb:look (handler detail not recorded)	l	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
 bar_opening	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	clarified	conversation:missing-topic	tlak to sable	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_opening	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -181,44 +181,44 @@ bar_after_coffee	rejected	language-verb:not (handler detail not recorded)	not re
 bar_after_coffee	rejected	language-verb:maybe (handler detail not recorded)	maybe	No action taken. Say what you want to do when you've decided.
 bar_after_coffee	rejected	language-verb:inventory (handler detail not recorded)	I think it's fine	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_coffee	handled	examine:scenery	examine pencil	A pencil, worn down by drafts of the supplier complaint.
+bar_after_coffee	handled	examine:scenery	look at the pencil	A pencil, worn down by drafts of the supplier complaint.
 bar_after_coffee	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_coffee	handled	object:examine	x counter	A worn wooden serving counter. You can set a held object on it.
 bar_after_coffee	handled	object:examine	look at the counter	A worn wooden serving counter. You can set a held object on it.
-bar_after_coffee	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_coffee	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
+bar_after_coffee	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
+bar_after_coffee	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
 bar_after_coffee	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+bar_after_coffee	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
+bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_coffee	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	clarified	conversation:drink-ambiguity	listen	Do you mean the drink, or something Sable said earlier? Name the topic so they can answer you.
-bar_after_coffee	clarified	conversation:opinion-clarify	listen to the music	What do you mean about music?
-bar_after_coffee	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
+bar_after_coffee	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
+bar_after_coffee	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
+bar_after_coffee	handled	examine:person	look at sable	Sable, pencil tucked behind one ear.
+bar_after_coffee	handled	examine:person	examine sable	Sable, pencil tucked behind one ear.
+bar_after_coffee	handled	examine:person	x sable	Sable, pencil tucked behind one ear.
+bar_after_coffee	handled	examine:scenery	look at the bass line	A soft bass line from the speakers, low enough to talk over.
+bar_after_coffee	handled	sense:listen	listen	A soft bass line from the speakers, and glass on wood.
+bar_after_coffee	handled	sense:listen	listen to the music	A soft bass line from the speakers, and glass on wood.
+bar_after_coffee	handled	sense:smell	smell	Coffee, citrus cordial and warm wood.
+bar_after_coffee	handled	sense:smell	smell the coffee	Coffee, citrus cordial and warm wood.
+bar_after_coffee	handled	sense:touch	touch the counter	You run a hand over the counter.
+bar_after_coffee	handled	sense:sit	sit down	You take a stool at the counter.
+bar_after_coffee	handled	sense:sit	sit at the counter	You take a stool at the counter.
+bar_after_coffee	handled	sense:stand	stand up	You stand; the stool keeps your place.
 bar_after_coffee	handled	object:examine	read menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
 bar_after_coffee	handled	object:examine	read the menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_after_coffee	handled	inspect:menu	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_after_coffee	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	object:examine	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
+bar_after_coffee	handled	language-verb:inventory (handler detail not recorded)	i	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 bar_after_coffee	handled	language-verb:inventory (handler detail not recorded)	inventory	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 bar_after_coffee	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-bar_after_coffee	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
-bar_after_coffee	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:the (handler detail not recorded)	the special with gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
+bar_after_coffee	handled	conversation:order-drink	gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_after_coffee	handled	conversation:order-drink	ask for gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_after_coffee	handled	conversation:order-drink	a gin please	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_after_coffee	handled	conversation:order-drink	the special with gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_after_coffee	handled	conversation:order-drink	order the special	Sable sets a glass of alcohol-free special within reach. ‘Minor Administrative Disappointment: citrus cordial 
 bar_after_coffee	handled	conversation:order-drink	order coffee	Sable sets a glass of coffee within reach.
 bar_after_coffee	handled	conversation:order-drink	tea please	Sable sets a glass of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
@@ -228,7 +228,7 @@ bar_after_coffee	clarified	service:new-or-refill	another coffee	Would you like a
 bar_after_coffee	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
 bar_after_coffee	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	conversation:order-drink	one coffee	Sable sets a glass of coffee within reach.
 bar_after_coffee	handled	conversation:order-drink	coffee please	Sable sets a glass of coffee within reach.
 bar_after_coffee	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -308,28 +308,28 @@ bar_after_coffee	rejected	language-verb:i'm (handler detail not recorded)	I'm gl
 bar_after_coffee	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
-bar_after_coffee	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
-bar_after_coffee	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner.
-bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner.
+bar_after_coffee	handled	language-verb:show (handler detail not recorded)	shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_coffee	handled	language-verb:text (handler detail not recorded)	next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_coffee	handled	travel:outside	leave	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_after_coffee	handled	travel:outside	go outside	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_after_coffee	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_coffee	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_after_coffee	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 bar_after_coffee	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_after_coffee	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-bar_after_coffee	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_coffee	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_after_coffee	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	travel:outside	exit	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_after_coffee	handled	travel:outside	out	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_after_coffee	handled	travel:compass	n	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
+bar_after_coffee	handled	travel:compass	north	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
 bar_after_coffee	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 bar_after_coffee	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 bar_after_coffee	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties:
@@ -337,7 +337,7 @@ bar_after_coffee	handled	think:private	think	Private: Three weeks here. The bar 
 bar_after_coffee	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	handled	language-verb:look (handler detail not recorded)	look	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
-bar_after_coffee	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_coffee	handled	language-verb:look (handler detail not recorded)	l	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
 bar_after_coffee	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	clarified	conversation:missing-topic	tlak to sable	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_coffee	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -357,41 +357,41 @@ shop	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	I
 shop	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop	rejected	interaction:blocked	x counter	That object is not accessible here. Open its container or return to its actual location.
 shop	rejected	interaction:blocked	look at the counter	That object is not accessible here. Open its container or return to its actual location.
 shop	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop	handled	examine:scenery	look at the shelves	Shelves of secondhand oddments, priced in pencil.
 shop	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+shop	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop	rejected	vocabulary:not-here	look at sable	Sable isn't here.
+shop	rejected	vocabulary:not-here	examine sable	Sable isn't here.
+shop	rejected	vocabulary:not-here	x sable	Sable isn't here.
 shop	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	rejected	language-verb:listen (handler detail not recorded)	listen	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
-shop	clarified	conversation:absent	listen to the music	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
-shop	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	sense:listen	listen	Paper being sorted, and the street outside.
+shop	handled	sense:listen	listen to the music	Paper being sorted, and the street outside.
+shop	handled	sense:smell	smell	Old paper and dust.
+shop	handled	sense:smell	smell the coffee	Old paper and dust.
 shop	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	sense:sit	sit down	There is nowhere to sit among the boxes, so you lean.
+shop	handled	sense:sit	sit at the counter	There is nowhere to sit among the boxes, so you lean.
+shop	handled	sense:stand	stand up	You are on your feet already, between the boxes.
 shop	rejected	interaction:blocked	read menu	That object is not accessible here. Open its container or return to its actual location.
 shop	rejected	interaction:blocked	read the menu	That object is not accessible here. Open its container or return to its actual location.
-shop	rejected	language-verb:examine (handler detail not recorded)	x menu	The menu is at the Velvet Corner.
-shop	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	rejected	interaction:blocked	x menu	That object is not accessible here. Open its container or return to its actual location.
+shop	handled	language-verb:inventory (handler detail not recorded)	i	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 shop	handled	language-verb:inventory (handler detail not recorded)	inventory	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 shop	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-shop	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
-shop	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:the (handler detail not recorded)	the special with gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
+shop	rejected	interaction:blocked	gin	Vesper does not offer drink service.
+shop	rejected	interaction:blocked	ask for gin	Vesper does not offer drink service.
+shop	rejected	interaction:blocked	a gin please	Vesper does not offer drink service.
+shop	rejected	interaction:blocked	the special with gin	Vesper does not offer drink service.
 shop	rejected	interaction:blocked	order the special	Vesper does not offer drink service.
 shop	rejected	interaction:blocked	order coffee	Vesper does not offer drink service.
 shop	rejected	interaction:blocked	tea please	Vesper does not offer drink service.
@@ -401,7 +401,7 @@ shop	rejected	interaction:blocked	another coffee	Vesper does not offer drink ser
 shop	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	interaction:blocked	I'll have a water	Vesper does not offer drink service.
 shop	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	rejected	interaction:blocked	one coffee	Vesper does not offer drink service.
 shop	rejected	interaction:blocked	coffee please	Vesper does not offer drink service.
 shop	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -481,28 +481,28 @@ shop	rejected	language-verb:i'm (handler detail not recorded)	I'm glad I came	I 
 shop	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop.
-shop	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
+shop	handled	travel:here	shop	You're already at the secondhand shop.
+shop	handled	language-verb:text (handler detail not recorded)	next door	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop	handled	language-verb:go (handler detail not recorded)	go next door	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 shop	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 shop	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-shop	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-shop	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop.
 shop	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 shop	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
-shop	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-shop	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	language-verb:go (handler detail not recorded)	go back	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop	handled	language-verb:leave (handler detail not recorded)	exit	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop	handled	language-verb:put (handler detail not recorded)	out	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop	handled	travel:compass	n	No compass directions here. You can go to the Velvet Corner or your apartment.
+shop	handled	travel:compass	north	No compass directions here. You can go to the Velvet Corner or your apartment.
 shop	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 shop	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 shop	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties:
@@ -510,7 +510,7 @@ shop	handled	think:private	think	Private: Three weeks here. The bar has started 
 shop	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	handled	language-verb:look (handler detail not recorded)	look	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
-shop	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop	handled	language-verb:look (handler detail not recorded)	l	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
 shop	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	clarified	conversation:absent	tlak to sable	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -518,8 +518,8 @@ shop	rejected	language-verb:watre (handler detail not recorded)	watre	I couldn't
 shop	rejected	language-verb:help (handler detail not recorded)	helo	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	clarified	conversation:absent	hi sabel	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop	handled	language-verb:look (handler detail not recorded)	look	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
-shop	clarified	action:unknown-object	x vesper	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop	clarified	action:unknown-object	look at vesper	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop	handled	examine:person	x vesper	Vesper, sorting a photographer's clearance lot.
+shop	handled	examine:person	look at vesper	Vesper, sorting a photographer's clearance lot.
 shop	handled	language-verb:talk (handler detail not recorded)	talk to vesper	Vesper: ‘The print came with that photographer's clearance lot. Read the separate event listing too. Looking a
 shop	handled	language-verb:hi (handler detail not recorded)	hi vesper	Vesper: ‘The print came with that photographer's clearance lot. Read the separate event listing too. Looking a
 shop	clarified	conversation:absent	hello	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
@@ -527,7 +527,7 @@ shop	rejected	language-verb:what's (handler detail not recorded)	what's this	I c
 shop	rejected	language-verb:examine (handler detail not recorded)	what is this place	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:browse (handler detail not recorded)	browse	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	handled	language-verb:look (handler detail not recorded)	look around	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
-shop	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop	handled	examine:scenery	look at the shelves	Shelves of secondhand oddments, priced in pencil.
 shop	handled	object:examine	look at the photo	A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five ye
 shop	handled	object:examine	look at the photograph	A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five ye
 shop	handled	conversation:photo	who's in the photo	‘Can I see the photograph?’ Vesper asks.
@@ -563,8 +563,8 @@ shop	clarified	conversation:absent	do you know sable	Sable isn't here to continu
 shop	rejected	language-verb:thank (handler detail not recorded)	thanks vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:bye (handler detail not recorded)	bye vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	handled	language-verb:go (handler detail not recorded)	go back to the bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
-shop	rejected	language-verb:bar (handler detail not recorded)	bar	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	rejected	language-verb:back (handler detail not recorded)	back	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	language-verb:bar (handler detail not recorded)	bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop	handled	language-verb:back (handler detail not recorded)	back	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop	handled	language-verb:go (handler detail not recorded)	go to the bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop_seen_evidence	rejected	language-verb:no (handler detail not recorded)	no	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
@@ -580,41 +580,41 @@ shop_seen_evidence	rejected	language-verb:it's (handler detail not recorded)	it'
 shop_seen_evidence	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop_seen_evidence	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop_seen_evidence	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop_seen_evidence	rejected	interaction:blocked	x counter	That object is not accessible here. Open its container or return to its actual location.
 shop_seen_evidence	rejected	interaction:blocked	look at the counter	That object is not accessible here. Open its container or return to its actual location.
 shop_seen_evidence	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop_seen_evidence	handled	examine:scenery	look at the shelves	Shelves of secondhand oddments, priced in pencil.
 shop_seen_evidence	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop_seen_evidence	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop_seen_evidence	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop_seen_evidence	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop_seen_evidence	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop_seen_evidence	rejected	vocabulary:not-here	look at sable	Sable isn't here.
+shop_seen_evidence	rejected	vocabulary:not-here	examine sable	Sable isn't here.
+shop_seen_evidence	rejected	vocabulary:not-here	x sable	Sable isn't here.
 shop_seen_evidence	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	rejected	language-verb:listen (handler detail not recorded)	listen	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
-shop_seen_evidence	clarified	conversation:absent	listen to the music	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
-shop_seen_evidence	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	sense:listen	listen	Paper being sorted, and the street outside.
+shop_seen_evidence	handled	sense:listen	listen to the music	Paper being sorted, and the street outside.
+shop_seen_evidence	handled	sense:smell	smell	Old paper and dust.
+shop_seen_evidence	handled	sense:smell	smell the coffee	Old paper and dust.
 shop_seen_evidence	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	sense:sit	sit down	There is nowhere to sit among the boxes, so you lean.
+shop_seen_evidence	handled	sense:sit	sit at the counter	There is nowhere to sit among the boxes, so you lean.
+shop_seen_evidence	handled	sense:stand	stand up	You are on your feet already, between the boxes.
 shop_seen_evidence	rejected	interaction:blocked	read menu	That object is not accessible here. Open its container or return to its actual location.
 shop_seen_evidence	rejected	interaction:blocked	read the menu	That object is not accessible here. Open its container or return to its actual location.
-shop_seen_evidence	rejected	language-verb:examine (handler detail not recorded)	x menu	The menu is at the Velvet Corner.
-shop_seen_evidence	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	rejected	interaction:blocked	x menu	That object is not accessible here. Open its container or return to its actual location.
+shop_seen_evidence	handled	language-verb:inventory (handler detail not recorded)	i	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 shop_seen_evidence	handled	language-verb:inventory (handler detail not recorded)	inventory	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 shop_seen_evidence	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-shop_seen_evidence	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
-shop_seen_evidence	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:the (handler detail not recorded)	the special with gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
+shop_seen_evidence	rejected	interaction:blocked	gin	Vesper does not offer drink service.
+shop_seen_evidence	rejected	interaction:blocked	ask for gin	Vesper does not offer drink service.
+shop_seen_evidence	rejected	interaction:blocked	a gin please	Vesper does not offer drink service.
+shop_seen_evidence	rejected	interaction:blocked	the special with gin	Vesper does not offer drink service.
 shop_seen_evidence	rejected	interaction:blocked	order the special	Vesper does not offer drink service.
 shop_seen_evidence	rejected	interaction:blocked	order coffee	Vesper does not offer drink service.
 shop_seen_evidence	rejected	interaction:blocked	tea please	Vesper does not offer drink service.
@@ -624,7 +624,7 @@ shop_seen_evidence	rejected	interaction:blocked	another coffee	Vesper does not o
 shop_seen_evidence	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	interaction:blocked	I'll have a water	Vesper does not offer drink service.
 shop_seen_evidence	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	rejected	interaction:blocked	one coffee	Vesper does not offer drink service.
 shop_seen_evidence	rejected	interaction:blocked	coffee please	Vesper does not offer drink service.
 shop_seen_evidence	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -704,28 +704,28 @@ shop_seen_evidence	rejected	language-verb:i'm (handler detail not recorded)	I'm 
 shop_seen_evidence	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop.
-shop_seen_evidence	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
+shop_seen_evidence	handled	travel:here	shop	You're already at the secondhand shop.
+shop_seen_evidence	handled	language-verb:text (handler detail not recorded)	next door	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go next door	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop_seen_evidence	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-shop_seen_evidence	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop_seen_evidence	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-shop_seen_evidence	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop.
 shop_seen_evidence	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
-shop_seen_evidence	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-shop_seen_evidence	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go back	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop_seen_evidence	handled	language-verb:leave (handler detail not recorded)	exit	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop_seen_evidence	handled	language-verb:put (handler detail not recorded)	out	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop_seen_evidence	handled	travel:compass	n	No compass directions here. You can go to the Velvet Corner or your apartment.
+shop_seen_evidence	handled	travel:compass	north	No compass directions here. You can go to the Velvet Corner or your apartment.
 shop_seen_evidence	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 shop_seen_evidence	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 shop_seen_evidence	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties: | A clearance print from a venue photographer's lot. Sa
@@ -733,7 +733,7 @@ shop_seen_evidence	handled	think:private	think	Private: Three weeks here. The ba
 shop_seen_evidence	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	handled	language-verb:look (handler detail not recorded)	look	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
-shop_seen_evidence	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop_seen_evidence	handled	language-verb:look (handler detail not recorded)	l	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
 shop_seen_evidence	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	clarified	conversation:absent	tlak to sable	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop_seen_evidence	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -741,8 +741,8 @@ shop_seen_evidence	rejected	language-verb:watre (handler detail not recorded)	wa
 shop_seen_evidence	rejected	language-verb:help (handler detail not recorded)	helo	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	clarified	conversation:absent	hi sabel	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop_seen_evidence	handled	language-verb:look (handler detail not recorded)	look	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
-shop_seen_evidence	clarified	action:unknown-object	x vesper	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-shop_seen_evidence	clarified	action:unknown-object	look at vesper	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop_seen_evidence	handled	examine:person	x vesper	Vesper, sorting a photographer's clearance lot.
+shop_seen_evidence	handled	examine:person	look at vesper	Vesper, sorting a photographer's clearance lot.
 shop_seen_evidence	handled	language-verb:talk (handler detail not recorded)	talk to vesper	Vesper: ‘The print came with that photographer's clearance lot. Read the separate event listing too. Looking a
 shop_seen_evidence	handled	language-verb:hi (handler detail not recorded)	hi vesper	Vesper: ‘The print came with that photographer's clearance lot. Read the separate event listing too. Looking a
 shop_seen_evidence	clarified	conversation:absent	hello	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
@@ -750,7 +750,7 @@ shop_seen_evidence	rejected	language-verb:what's (handler detail not recorded)	w
 shop_seen_evidence	rejected	language-verb:examine (handler detail not recorded)	what is this place	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:browse (handler detail not recorded)	browse	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	handled	language-verb:look (handler detail not recorded)	look around	Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take 
-shop_seen_evidence	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+shop_seen_evidence	handled	examine:scenery	look at the shelves	Shelves of secondhand oddments, priced in pencil.
 shop_seen_evidence	handled	object:examine	look at the photo	A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five ye
 shop_seen_evidence	handled	object:examine	look at the photograph	A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five ye
 shop_seen_evidence	handled	conversation:photo	who's in the photo	‘Can I see the photograph?’ Vesper asks.
@@ -786,8 +786,8 @@ shop_seen_evidence	clarified	conversation:absent	do you know sable	Sable isn't h
 shop_seen_evidence	rejected	language-verb:thank (handler detail not recorded)	thanks vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:bye (handler detail not recorded)	bye vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go back to the bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
-shop_seen_evidence	rejected	language-verb:bar (handler detail not recorded)	bar	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	rejected	language-verb:back (handler detail not recorded)	back	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	language-verb:bar (handler detail not recorded)	bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+shop_seen_evidence	handled	language-verb:back (handler detail not recorded)	back	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop_seen_evidence	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go to the bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 bar_holding_evidence	clarified	conversation:missing-topic	no	That conversation has been interrupted. Name the person and topic so they can answer what you mean.
@@ -800,44 +800,44 @@ bar_holding_evidence	rejected	language-verb:not (handler detail not recorded)	no
 bar_holding_evidence	rejected	language-verb:maybe (handler detail not recorded)	maybe	No action taken. Say what you want to do when you've decided.
 bar_holding_evidence	rejected	language-verb:inventory (handler detail not recorded)	I think it's fine	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_holding_evidence	handled	examine:scenery	examine pencil	A pencil, worn down by drafts of the supplier complaint.
+bar_holding_evidence	handled	examine:scenery	look at the pencil	A pencil, worn down by drafts of the supplier complaint.
 bar_holding_evidence	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_holding_evidence	handled	object:examine	x counter	A worn wooden serving counter. You can set a held object on it.
 bar_holding_evidence	handled	object:examine	look at the counter	A worn wooden serving counter. You can set a held object on it.
-bar_holding_evidence	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_holding_evidence	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
+bar_holding_evidence	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
+bar_holding_evidence	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
 bar_holding_evidence	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+bar_holding_evidence	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
+bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_holding_evidence	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	clarified	conversation:missing-topic	listen	That conversation has been interrupted. Name the person and topic so they can answer what you mean.
-bar_holding_evidence	clarified	conversation:opinion-clarify	listen to the music	What do you mean about music?
-bar_holding_evidence	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
+bar_holding_evidence	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
+bar_holding_evidence	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
+bar_holding_evidence	handled	examine:person	look at sable	Sable, pencil tucked behind one ear.
+bar_holding_evidence	handled	examine:person	examine sable	Sable, pencil tucked behind one ear.
+bar_holding_evidence	handled	examine:person	x sable	Sable, pencil tucked behind one ear.
+bar_holding_evidence	handled	examine:scenery	look at the bass line	A soft bass line from the speakers, low enough to talk over.
+bar_holding_evidence	handled	sense:listen	listen	A soft bass line from the speakers, and glass on wood.
+bar_holding_evidence	handled	sense:listen	listen to the music	A soft bass line from the speakers, and glass on wood.
+bar_holding_evidence	handled	sense:smell	smell	Coffee, citrus cordial and warm wood.
+bar_holding_evidence	handled	sense:smell	smell the coffee	Coffee, citrus cordial and warm wood.
+bar_holding_evidence	handled	sense:touch	touch the counter	You run a hand over the counter.
+bar_holding_evidence	handled	sense:sit	sit down	You take a stool at the counter.
+bar_holding_evidence	handled	sense:sit	sit at the counter	You take a stool at the counter.
+bar_holding_evidence	handled	sense:stand	stand up	You stand; the stool keeps your place.
 bar_holding_evidence	handled	object:examine	read menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
 bar_holding_evidence	handled	object:examine	read the menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_holding_evidence	handled	inspect:menu	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_holding_evidence	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	object:examine	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
+bar_holding_evidence	handled	language-verb:inventory (handler detail not recorded)	i	photograph | provenance listing | satchel (open) | Contents of closed bags are carried but must be opened befo
 bar_holding_evidence	handled	language-verb:inventory (handler detail not recorded)	inventory	photograph | provenance listing | satchel (open) | Contents of closed bags are carried but must be opened befo
 bar_holding_evidence	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-bar_holding_evidence	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
-bar_holding_evidence	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:the (handler detail not recorded)	the special with gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
+bar_holding_evidence	handled	conversation:order-drink	gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_holding_evidence	handled	conversation:order-drink	ask for gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_holding_evidence	handled	conversation:order-drink	a gin please	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_holding_evidence	handled	conversation:order-drink	the special with gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_holding_evidence	handled	conversation:order-drink	order the special	Sable sets a glass of alcohol-free special within reach. ‘Minor Administrative Disappointment: citrus cordial 
 bar_holding_evidence	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_holding_evidence	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
@@ -847,7 +847,7 @@ bar_holding_evidence	handled	conversation:order-drink	another coffee	Sable sets 
 bar_holding_evidence	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
 bar_holding_evidence	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_holding_evidence	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_holding_evidence	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -927,28 +927,28 @@ bar_holding_evidence	rejected	language-verb:i'm (handler detail not recorded)	I'
 bar_holding_evidence	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
-bar_holding_evidence	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
-bar_holding_evidence	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner.
-bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner.
+bar_holding_evidence	handled	language-verb:show (handler detail not recorded)	shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_holding_evidence	handled	language-verb:text (handler detail not recorded)	next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_holding_evidence	handled	travel:outside	leave	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_holding_evidence	handled	travel:outside	go outside	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_holding_evidence	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_holding_evidence	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_holding_evidence	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 bar_holding_evidence	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
-bar_holding_evidence	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-bar_holding_evidence	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go back	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_holding_evidence	handled	travel:outside	exit	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_holding_evidence	handled	travel:outside	out	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_holding_evidence	handled	travel:compass	n	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
+bar_holding_evidence	handled	travel:compass	north	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
 bar_holding_evidence	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 bar_holding_evidence	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 bar_holding_evidence	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties: | A clearance print from a venue photographer's lot. Sa
@@ -956,7 +956,7 @@ bar_holding_evidence	handled	think:private	think	Private: Three weeks here. The 
 bar_holding_evidence	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	handled	language-verb:look (handler detail not recorded)	look	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
-bar_holding_evidence	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_holding_evidence	handled	language-verb:look (handler detail not recorded)	l	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
 bar_holding_evidence	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	clarified	conversation:missing-topic	tlak to sable	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_holding_evidence	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -973,44 +973,44 @@ bar_after_show	rejected	language-verb:not (handler detail not recorded)	not real
 bar_after_show	rejected	language-verb:maybe (handler detail not recorded)	maybe	No action taken. Say what you want to do when you've decided.
 bar_after_show	clarified	conversation:missing-topic	I think it's fine	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	it's a bit much	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_show	handled	examine:scenery	examine pencil	A pencil, worn down by drafts of the supplier complaint.
+bar_after_show	handled	examine:scenery	look at the pencil	A pencil, worn down by drafts of the supplier complaint.
 bar_after_show	clarified	conversation:missing-topic	tell me about the pencil	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_show	handled	object:examine	x counter	A worn wooden serving counter. You can set a held object on it.
 bar_after_show	handled	object:examine	look at the counter	A worn wooden serving counter. You can set a held object on it.
-bar_after_show	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_show	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
+bar_after_show	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
+bar_after_show	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
 bar_after_show	clarified	conversation:missing-topic	look behind the curtain	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+bar_after_show	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
+bar_after_show	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_show	clarified	conversation:missing-topic	look under the counter	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_show	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
+bar_after_show	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
+bar_after_show	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
+bar_after_show	handled	examine:person	look at sable	Sable, pencil tucked behind one ear.
+bar_after_show	handled	examine:person	examine sable	Sable, pencil tucked behind one ear.
+bar_after_show	handled	examine:person	x sable	Sable, pencil tucked behind one ear.
+bar_after_show	handled	examine:scenery	look at the bass line	A soft bass line from the speakers, low enough to talk over.
 bar_after_show	handled	language-verb:listen (handler detail not recorded)	listen	You leave room for silence. Sable puts the pencil down. ‘All right. We don't need to fill every second.’
-bar_after_show	clarified	conversation:opinion-clarify	listen to the music	What do you mean about music?
-bar_after_show	clarified	conversation:missing-topic	smell	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	smell the coffee	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	touch the counter	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	sit down	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	sit at the counter	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	stand up	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	sense:listen	listen to the music	A soft bass line from the speakers, and glass on wood.
+bar_after_show	handled	sense:smell	smell	Coffee, citrus cordial and warm wood.
+bar_after_show	handled	sense:smell	smell the coffee	Coffee, citrus cordial and warm wood.
+bar_after_show	handled	sense:touch	touch the counter	You run a hand over the counter.
+bar_after_show	handled	sense:sit	sit down	You take a stool at the counter.
+bar_after_show	handled	sense:sit	sit at the counter	You take a stool at the counter.
+bar_after_show	handled	sense:stand	stand up	You stand; the stool keeps your place.
 bar_after_show	handled	object:examine	read menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
 bar_after_show	handled	object:examine	read the menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_after_show	handled	inspect:menu	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-bar_after_show	clarified	conversation:missing-topic	i	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	object:examine	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
+bar_after_show	handled	language-verb:inventory (handler detail not recorded)	i	photograph | provenance listing | satchel (open) | Contents of closed bags are carried but must be opened befo
 bar_after_show	handled	language-verb:inventory (handler detail not recorded)	inventory	photograph | provenance listing | satchel (open) | Contents of closed bags are carried but must be opened befo
 bar_after_show	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes. | Sable: ‘I've decided. The photo and independent listing conflict with my hospital accou
-bar_after_show	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
-bar_after_show	clarified	conversation:missing-topic	gin	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	ask for gin	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	a gin please	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	the special with gin	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes. | Sable: ‘I've decided. The photo and independent listing conflict with my hospital accou
+bar_after_show	handled	conversation:order-drink	gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_after_show	handled	conversation:order-drink	ask for gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_after_show	handled	conversation:order-drink	a gin please	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
+bar_after_show	handled	conversation:order-drink	the special with gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_after_show	handled	conversation:order-drink	order the special	Sable sets a glass of alcohol-free special within reach. ‘Minor Administrative Disappointment: citrus cordial 
 bar_after_show	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_after_show	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
@@ -1020,7 +1020,7 @@ bar_after_show	handled	conversation:order-drink	another coffee	Sable sets a cup 
 bar_after_show	clarified	conversation:missing-topic	same again	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
 bar_after_show	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	conversation:missing-topic	one coffee	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_after_show	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
 bar_after_show	clarified	conversation:missing-topic	a cup of tea	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	what do you have	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
@@ -1100,28 +1100,28 @@ bar_after_show	clarified	conversation:missing-topic	I'm glad I came	Which subjec
 bar_after_show	clarified	conversation:missing-topic	I missed you	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	how was your day	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
-bar_after_show	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	conversation:missing-topic	next door	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
-bar_after_show	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner.
-bar_after_show	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner.
+bar_after_show	handled	language-verb:show (handler detail not recorded)	shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_show	handled	language-verb:text (handler detail not recorded)	next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_show	handled	language-verb:go (handler detail not recorded)	go next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_show	handled	travel:outside	leave	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_after_show	handled	travel:outside	go outside	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
 bar_after_show	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_after_show	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 bar_after_show	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_after_show	clarified	conversation:missing-topic	booth	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_show	clarified	conversation:missing-topic	curtain	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_after_show	clarified	conversation:missing-topic	sit in booth	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_show	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 bar_after_show	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 bar_after_show	clarified	conversation:missing-topic	visit vesper	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 bar_after_show	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
-bar_after_show	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-bar_after_show	clarified	conversation:missing-topic	exit	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_after_show	clarified	conversation:missing-topic	n	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	north	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	language-verb:go (handler detail not recorded)	go back	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+bar_after_show	handled	travel:outside	exit	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_after_show	handled	travel:outside	out	Outside is the secondhand shop next door and the way home. Say SHOP or HOME.
+bar_after_show	handled	travel:compass	n	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
+bar_after_show	handled	travel:compass	north	No compass directions here. You can go to the secondhand shop, the quiet booth or your apartment.
 bar_after_show	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 bar_after_show	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 bar_after_show	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties: | A clearance print from a venue photographer's lot. Sa
@@ -1129,7 +1129,7 @@ bar_after_show	handled	think:private	think	Private: The photograph has a date. S
 bar_after_show	clarified	conversation:missing-topic	save	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	quit	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	handled	language-verb:look (handler detail not recorded)	look	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
-bar_after_show	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+bar_after_show	handled	language-verb:look (handler detail not recorded)	l	The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line fro
 bar_after_show	clarified	conversation:missing-topic	lok	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	tlak to sable	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	coffe please	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
@@ -1179,7 +1179,7 @@ bar_after_show	clarified	conversation:missing-topic	you can trust me	Which subje
 bar_after_show	clarified	conversation:missing-topic	I believe you	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	rejected	language-verb:inventory (handler detail not recorded)	I don't know what to say	No action taken. Say what you want to do when you've decided.
 bar_after_show	clarified	conversation:missing-topic	that's a lot	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
-bar_after_show	clarified	conversation:missing-topic	sit down	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	sense:sit	sit down	You take a stool at the counter.
 bar_after_show	clarified	conversation:missing-topic	let's go to the booth	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	clarified	conversation:missing-topic	can we talk in the booth	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
 bar_after_show	handled	language-verb:let's (handler detail not recorded)	let's talk privately	Sable agrees to a few quiet minutes and joins you in the booth. | The quiet booth has a low table and a lamp t
@@ -1196,37 +1196,37 @@ booth	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	
 booth	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+booth	rejected	interaction:blocked	x counter	That object is not accessible here. Open its container or return to its actual location.
 booth	rejected	interaction:blocked	look at the counter	That object is not accessible here. Open its container or return to its actual location.
 booth	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+booth	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth.
 booth	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 booth	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+booth	rejected	vocabulary:not-here	look at sable	Sable isn't here.
+booth	rejected	vocabulary:not-here	examine sable	Sable isn't here.
+booth	rejected	vocabulary:not-here	x sable	Sable isn't here.
 booth	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	rejected	language-verb:listen (handler detail not recorded)	listen	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
-booth	clarified	conversation:absent	listen to the music	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
-booth	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	handled	sense:listen	listen	The bar, muffled by the curtain.
+booth	handled	sense:listen	listen to the music	The bar, muffled by the curtain.
+booth	handled	sense:smell	smell	Lamp warmth and old upholstery.
+booth	handled	sense:smell	smell the coffee	Lamp warmth and old upholstery.
 booth	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	handled	sense:sit	sit down	You settle into the booth.
+booth	handled	sense:sit	sit at the counter	You settle into the booth.
+booth	handled	sense:stand	stand up	You stand up from the booth.
 booth	rejected	interaction:blocked	read menu	That object is not accessible here. Open its container or return to its actual location.
 booth	rejected	interaction:blocked	read the menu	That object is not accessible here. Open its container or return to its actual location.
-booth	handled	inspect:menu	x menu	The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free 
-booth	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	rejected	interaction:blocked	x menu	That object is not accessible here. Open its container or return to its actual location.
+booth	handled	language-verb:inventory (handler detail not recorded)	i	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 booth	handled	language-verb:inventory (handler detail not recorded)	inventory	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 booth	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-booth	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
+booth	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
 booth	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -1240,7 +1240,7 @@ booth	rejected	language-verb:another (handler detail not recorded)	another coffe
 booth	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:i'll (handler detail not recorded)	I'll have a water	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	rejected	language-verb:one (handler detail not recorded)	one coffee	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
 booth	rejected	language-verb:coffee (handler detail not recorded)	coffee please	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
 booth	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -1320,28 +1320,28 @@ booth	rejected	language-verb:i'm (handler detail not recorded)	I'm glad I came	I
 booth	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
-booth	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
+booth	handled	language-verb:show (handler detail not recorded)	shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+booth	handled	language-verb:text (handler detail not recorded)	next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+booth	handled	language-verb:go (handler detail not recorded)	go next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 booth	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 booth	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 booth	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 booth	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
 booth	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth.
-booth	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	handled	travel:here	booth	You're already at the quiet booth.
 booth	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth.
-booth	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	handled	sense:sit	sit in booth	You settle into the booth.
 booth	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth.
 booth	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 booth	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 booth	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment. | Your apartment. The kettle has no theories. You can return to the bar or shop, or 
-booth	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-booth	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-booth	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	handled	language-verb:go (handler detail not recorded)	go back	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+booth	handled	language-verb:leave (handler detail not recorded)	exit	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+booth	handled	language-verb:put (handler detail not recorded)	out	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+booth	handled	travel:compass	n	No compass directions here. You can go to the Velvet Corner.
+booth	handled	travel:compass	north	No compass directions here. You can go to the Velvet Corner.
 booth	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 booth	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 booth	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties:
@@ -1349,7 +1349,7 @@ booth	handled	think:private	think	Private: Three weeks here. The bar has started
 booth	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	handled	language-verb:look (handler detail not recorded)	look	The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the bar to talk privately when th
-booth	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+booth	handled	language-verb:look (handler detail not recorded)	l	The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the bar to talk privately when th
 booth	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	clarified	conversation:absent	tlak to sable	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 booth	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -1399,7 +1399,7 @@ booth	rejected	language-verb:you (handler detail not recorded)	you can trust me	
 booth	rejected	language-verb:inventory (handler detail not recorded)	I believe you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:inventory (handler detail not recorded)	I don't know what to say	No action taken. Say what you want to do when you've decided.
 booth	rejected	language-verb:that's (handler detail not recorded)	that's a lot	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-booth	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+booth	handled	sense:sit	sit down	You settle into the booth.
 booth	rejected	language-verb:let's (handler detail not recorded)	let's go to the booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:can (handler detail not recorded)	can we talk in the booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 booth	rejected	language-verb:let's (handler detail not recorded)	let's talk privately	Ask Sable at the bar during a staffed evening. They aren't available here.
@@ -1416,37 +1416,37 @@ home	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	I
 home	clarified	action:unknown-object	examine pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	clarified	action:unknown-object	look at the pencil	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	rejected	language-verb:tell (handler detail not recorded)	tell me about the pencil	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	clarified	action:unknown-object	x counter	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+home	rejected	interaction:blocked	x counter	That object is not accessible here. Open its container or return to its actual location.
 home	rejected	interaction:blocked	look at the counter	That object is not accessible here. Open its container or return to its actual location.
 home	clarified	action:unknown-object	look at the glasses	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	clarified	action:unknown-object	look at the shelves	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	clarified	action:unknown-object	look at the speakers	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	clarified	action:unknown-object	examine curtain	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	rejected	language-verb:go (handler detail not recorded)	go through the curtain	You can go to the bar, shop, booth or home.
+home	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 home	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	clarified	action:unknown-object	look at the lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	clarified	action:unknown-object	examine the box	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 home	clarified	action:unknown-object	look at the box of lids	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	clarified	action:unknown-object	look at sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	clarified	action:unknown-object	examine sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	clarified	action:unknown-object	x sable	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+home	rejected	vocabulary:not-here	look at sable	Sable isn't here.
+home	rejected	vocabulary:not-here	examine sable	Sable isn't here.
+home	rejected	vocabulary:not-here	x sable	Sable isn't here.
 home	clarified	action:unknown-object	look at the bass line	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	rejected	language-verb:listen (handler detail not recorded)	listen	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
-home	clarified	conversation:absent	listen to the music	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
-home	rejected	language-verb:smell (handler detail not recorded)	smell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	rejected	language-verb:smell (handler detail not recorded)	smell the coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	handled	sense:listen	listen	The kettle ticking as it cools, and nothing else.
+home	handled	sense:listen	listen to the music	The kettle ticking as it cools, and nothing else.
+home	handled	sense:smell	smell	Your own apartment, faintly of tea.
+home	handled	sense:smell	smell the coffee	Your own apartment, faintly of tea.
 home	rejected	language-verb:touch (handler detail not recorded)	touch the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	rejected	language-verb:sit (handler detail not recorded)	sit down	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	rejected	language-verb:sit (handler detail not recorded)	sit at the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	rejected	language-verb:stand (handler detail not recorded)	stand up	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	handled	sense:sit	sit down	You sit down at home.
+home	handled	sense:sit	sit at the counter	You sit down at home.
+home	handled	sense:stand	stand up	You get up again.
 home	rejected	interaction:blocked	read menu	That object is not accessible here. Open its container or return to its actual location.
 home	rejected	interaction:blocked	read the menu	That object is not accessible here. Open its container or return to its actual location.
-home	rejected	language-verb:examine (handler detail not recorded)	x menu	The menu is at the Velvet Corner.
-home	rejected	language-verb:inventory (handler detail not recorded)	i	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	rejected	interaction:blocked	x menu	That object is not accessible here. Open its container or return to its actual location.
+home	handled	language-verb:inventory (handler detail not recorded)	i	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 home	handled	language-verb:inventory (handler detail not recorded)	inventory	satchel (open) | Contents of closed bags are carried but must be opened before inspection or showing.
 home	handled	language-verb:wait (handler detail not recorded)	wait	You wait 10 minutes.
-home	rejected	language-verb:wait (handler detail not recorded)	z	Wait between one minute and one day, or rest until tomorrow at home.
+home	handled	language-verb:wait (handler detail not recorded)	z	You wait 10 minutes.
 home	rejected	language-verb:gin (handler detail not recorded)	gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:ask (handler detail not recorded)	ask for gin	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:a (handler detail not recorded)	a gin please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -1460,7 +1460,7 @@ home	rejected	language-verb:another (handler detail not recorded)	another coffee
 home	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:i'll (handler detail not recorded)	I'll have a water	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	rejected	language-verb:one (handler detail not recorded)	one coffee	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	rejected	language-verb:one (handler detail not recorded)	one coffee	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
 home	rejected	language-verb:coffee (handler detail not recorded)	coffee please	Sable isn't here to hear that. A private thought or an unspoken reply doesn't reach them.
 home	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -1540,28 +1540,28 @@ home	rejected	language-verb:i'm (handler detail not recorded)	I'm glad I came	I 
 home	rejected	language-verb:inventory (handler detail not recorded)	I missed you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:show (handler detail not recorded)	how was your day	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	handled	language-verb:go (handler detail not recorded)	go to shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
-home	clarified	action:unknown-object	shop	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	rejected	language-verb:text (handler detail not recorded)	next door	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	rejected	language-verb:go (handler detail not recorded)	go next door	You can go to the bar, shop, booth or home.
+home	handled	language-verb:show (handler detail not recorded)	shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+home	handled	language-verb:text (handler detail not recorded)	next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
+home	handled	language-verb:go (handler detail not recorded)	go next door	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 home	handled	language-verb:leave (handler detail not recorded)	leave	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 home	handled	language-verb:go (handler detail not recorded)	go outside	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
 home	handled	language-verb:go (handler detail not recorded)	go home	You go to Your apartment.
-home	handled	language-verb:go (handler detail not recorded)	home	You go to Your apartment.
+home	handled	travel:here	home	You're already at your apartment.
 home	handled	language-verb:go (handler detail not recorded)	go to booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-home	rejected	language-verb:booth (handler detail not recorded)	booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	handled	language-verb:booth (handler detail not recorded)	booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 home	rejected	language-verb:curtain (handler detail not recorded)	curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	handled	language-verb:enter (handler detail not recorded)	enter booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-home	rejected	language-verb:sit (handler detail not recorded)	sit in booth	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	handled	language-verb:sit (handler detail not recorded)	sit in booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 home	handled	language-verb:go (handler detail not recorded)	go to the quiet booth	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
 home	handled	language-verb:go (handler detail not recorded)	walk to the shop	You go to Secondhand shop. | Vesper is sorting a photographer's clearance lot. The photograph and provenance l
 home	rejected	language-verb:visit (handler detail not recorded)	visit vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:go (handler detail not recorded)	go see vesper	You can go to the bar, shop, booth or home.
 home	handled	language-verb:go (handler detail not recorded)	head home	You go to Your apartment.
-home	rejected	language-verb:go (handler detail not recorded)	go back	You can go to the bar, shop, booth or home.
-home	rejected	language-verb:leave (handler detail not recorded)	exit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	clarified	action:unknown-object	out	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-home	rejected	language-verb:go (handler detail not recorded)	n	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-home	rejected	language-verb:go (handler detail not recorded)	north	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+home	handled	language-verb:go (handler detail not recorded)	go back	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+home	handled	language-verb:leave (handler detail not recorded)	exit	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+home	handled	language-verb:put (handler detail not recorded)	out	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
+home	handled	travel:compass	n	No compass directions here. You can go to the Velvet Corner or the secondhand shop.
+home	handled	travel:compass	north	No compass directions here. You can go to the Velvet Corner or the secondhand shop.
 home	handled	help:controls	help	Type a short action or a reply in your own words. LOOK describes your surroundings; INVENTORY shows belongings
 home	handled	help:spoilers	hint	Optional puzzle guidance — contains spoilers: | Try TALK TO SABLE, ASK SABLE ABOUT THEIR MEMORIES, ORDER TEA, 
 home	handled	language-verb:journal (handler detail not recorded)	journal	Your notes — observations, accounts and uncertainties:
@@ -1569,7 +1569,7 @@ home	handled	think:private	think	Private: Three weeks here. The bar has started 
 home	rejected	language-verb:save (handler detail not recorded)	save	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	rejected	language-verb:quit (handler detail not recorded)	quit	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	handled	language-verb:look (handler detail not recorded)	look	Your apartment. The kettle has no theories. You can return to the bar or shop, or REST UNTIL TOMORROW: an opti
-home	clarified	action:unknown-object	l	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
+home	handled	language-verb:look (handler detail not recorded)	l	Your apartment. The kettle has no theories. You can return to the bar or shop, or REST UNTIL TOMORROW: an opti
 home	rejected	language-verb:lok (handler detail not recorded)	lok	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 home	clarified	conversation:absent	tlak to sable	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 home	rejected	language-verb:coffe (handler detail not recorded)	coffe please	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
