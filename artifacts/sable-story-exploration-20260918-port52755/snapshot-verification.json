@@ -1,0 +1,54 @@
+{
+  "exactMarkdownMatch": true,
+  "exactDiagnosticMatch": true,
+  "build": "sable-evening-4",
+  "submissions": 64,
+  "diagnosticOutcomes": {
+    "deferred": 1,
+    "handled": 42,
+    "rejected": 13,
+    "clarified": 8
+  },
+  "note": "Handled is an execution label, not proof of a relevant or satisfying response.",
+  "helpUses": 1,
+  "hintUses": 0,
+  "semicolonSubmissions": 0,
+  "end": {
+    "room": "booth",
+    "time": 6848,
+    "completed": {
+      "at": 5438,
+      "course": "formal"
+    }
+  },
+  "events": [
+    {
+      "id": "sable:decide",
+      "at": 1118,
+      "status": "fired"
+    },
+    {
+      "id": "sable:medical-start",
+      "at": 5378,
+      "status": "fired"
+    },
+    {
+      "id": "sable:medical",
+      "at": 5438,
+      "status": "fired"
+    },
+    {
+      "id": "sable:return",
+      "at": 5498,
+      "status": "fired"
+    }
+  ],
+  "companyOffers": [
+    {
+      "at": 1120,
+      "observer": "sable",
+      "words": "Could I come with you to the appointment?",
+      "status": "offered"
+    }
+  ]
+}

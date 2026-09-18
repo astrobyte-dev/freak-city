@@ -543,10 +543,14 @@ export function handleInteraction(
     /\b(new|fresh|different) (?:one|cup|glass|drink|coffee|tea|water)\b/.test(
       body,
     );
-  const requestDrink =
+  const orderingWords =
     /^(?:ask for|request|order|refill|top up|(?:a )?(?:new|fresh) (?:one|drink|coffee|tea|water)|(?:can|could|may) i (?:have|try|get|order)|i(?:'d| would) like|i(?:'ll| will) have|yes\b.*(?:have|get|coffee|tea|water)|another (?:drink|coffee|tea|water)|more (?:coffee|tea|water))\b/.test(
       body,
-    ) ||
+    );
+  // Ordering words alone are not an order: the request must name a drink,
+  // an explicit refill or fresh drink, or say "drink".
+  const requestDrink =
+    (orderingWords && (namedDrinks.length > 0 || /\bdrink\b/.test(body))) ||
     explicitRefill ||
     explicitNew ||
     host.beverages.some((d) =>
@@ -672,13 +676,17 @@ export function handleInteraction(
     );
   const activeDrink =
     context?.question?.subject === "drink" && context.interlocutor === actor.id;
+  // While Sable's offer is pending, ordering words without a named drink
+  // accept it, as a bare yes does.
+  const modalAcceptance = activeDrink && orderingWords && !requestDrink;
   if (activeDrink && /^that sounds\b/.test(body) && !bareAnswer)
     return attach(
       clarified("Do you mean the drink, or what we were talking about before?"),
     );
   if (
     requestDrink ||
-    (activeDrink && (bareAnswer || accepting || response === "uncertain"))
+    (activeDrink &&
+      (bareAnswer || modalAcceptance || accepting || response === "uncertain"))
   ) {
     meaning.subject = "drink";
     meaning.kind = requestDrink
@@ -687,19 +695,6 @@ export function handleInteraction(
         ? "decline"
         : "accept";
     meaning.polarity = response;
-    if (
-      requestDrink &&
-      !namedDrinks.length &&
-      !explicitRefill &&
-      !explicitNew &&
-      !/\bdrink\b/.test(body)
-    )
-      return attach(
-        clarified(
-          `Trial limitation: that request is not available here. You can order a drink from the menu.`,
-          "conversation:unsupported",
-        ),
-      );
     if (!actor.service)
       return attach(rejected(`${actor.name} does not offer drink service.`));
     if (!host.present(actor.id))
@@ -721,7 +716,7 @@ export function handleInteraction(
     if (
       activeDrink &&
       context!.question!.kind === "service-choice" &&
-      bareAnswer &&
+      (bareAnswer || modalAcceptance) &&
       response !== "negative"
     )
       return attach(
