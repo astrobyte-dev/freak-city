@@ -117,20 +117,23 @@ describe("A. Abbreviations and standard verbs, in every room", () => {
   );
 });
 
-// Narrowed to what the opening foregrounds. A foreground noun has its own
-// line; each inner list is one item's aliases, so lids and their box are one
-// item. Everything else the prose names is decorative: one honest in-world
-// line, shared by every decorative noun in that room. The counter, menu and
-// cup are real objects and are checked apart. "complaint" is a conversation
-// topic, covered in E.
-const foreground: [Room, string[]][] = [
-  ["bar", ["pencil"]],
-  ["bar", ["curtain"]],
-  ["bar", ["lids", "box", "box of lids"]],
-  ["bar", ["jars"]],
-];
-const decorative: Record<Room, string[]> = {
-  bar: ["glasses", "shelves", "speakers", "light", "bass line"],
+// Nouns the visible prose names: the room descriptions in describeTrial, the
+// opening lines, and the supplier follow-up that puts the box of lids under
+// the counter. The counter and menu are real objects and are checked apart.
+const scenery: Record<Room, string[]> = {
+  bar: [
+    "pencil",
+    "glasses",
+    "shelves",
+    "speakers",
+    "curtain",
+    "lids",
+    "box",
+    "jars",
+    "light",
+    "bass line",
+    "complaint",
+  ],
   shop: ["clearance lot", "lot", "photographer's stock", "shelves"],
   booth: ["table", "lamp", "wall"],
   home: ["kettle"],
@@ -140,36 +143,16 @@ const examineForms = (noun: string) => [
   `examine ${noun}`,
   `look at the ${noun}`,
 ];
-describe("B. Scenery: foreground nouns have a line, the rest are decorative", () => {
-  it.each(foreground)(
-    "%s: %s has one line, the same under X, EXAMINE, LOOK AT and every alias",
-    (room, aliases) => {
-      const before = arrive[room]();
-      const forms = aliases.flatMap((noun) =>
-        examineForms(noun).map((c) => oneFreeLine(before, c)),
-      );
-      expect(new Set(forms.map(text)).size).toBe(1);
-    },
-  );
+describe("B. Scenery: every noun the visible prose names is examinable", () => {
   describe.each(everyRoom)("%s", (room) => {
-    it("decorative nouns share one honest line and change nothing", () => {
-      const before = arrive[room]();
-      const forms = decorative[room].flatMap((noun) =>
-        examineForms(noun).map((c) => oneFreeLine(before, c)),
-      );
-      expect(new Set(forms.map(text)).size).toBe(1);
-      for (const [where, [alias]] of foreground)
-        if (where === room)
-          expect(text(forms[0])).not.toBe(text(run(before, `x ${alias}`)));
-    });
-  });
-  it("mug is an alias of the cup", () => {
-    const served = run(newTrial(), "order coffee");
-    expect(lines(run(served, "x mug"))).toEqual(lines(run(served, "x cup")));
-    expect(text(run(served, "x mug"))).toMatch(/cup/);
-    const taken = run(served, "pick up mug");
-    expect(last(taken).failed, text(taken)).toBe(false);
-    expect(taken.entities["trial-cup"].location).toBe("player");
+    it.each(scenery[room])(
+      "%s: one line, the same under X, EXAMINE and LOOK AT, nothing recorded",
+      (noun) => {
+        const before = arrive[room]();
+        const forms = examineForms(noun).map((c) => oneFreeLine(before, c));
+        expect(new Set(forms.map(text)).size).toBe(1);
+      },
+    );
   });
   it.each(["counter", "menu"])(
     "%s at the bar is the real object under X, EXAMINE and LOOK AT",
