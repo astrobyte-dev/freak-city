@@ -1,0 +1,23 @@
+{
+  "status": "passed-draft-unactivated",
+  "branch": "feature/state-driven-visuals",
+  "sourceCheckpoint": "0128fe464f598ddef051441757ff11d747a053db",
+  "backgroundSourcesGenerated": 1,
+  "authoringTool": "OpenAI built-in imagegen; native SVG layers",
+  "mainDesktopMobileComposites": 16,
+  "statePixelComparisons": 16,
+  "mobileFailureCases": 10,
+  "protectedShippingFiles": 97,
+  "approvedRoomPixelMatches": 4,
+  "focusedRegressionTests": 11,
+  "build": "passed",
+  "registryValidation": "passed",
+  "formatCheck": "passed",
+  "productionDraftReferences": 0,
+  "chair": "explicitly off-camera; no fixture or artwork",
+  "inez": "existing procedural representation; new identity artwork deferred",
+  "activation": false,
+  "localAIExperiments": "parked",
+  "merge": "on hold",
+  "publicDeployment": "on hold"
+}

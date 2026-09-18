@@ -1,0 +1,119 @@
+> 
+Three weeks in the city. One genuine friend. Sable waves you into the Velvet Corner with a cocktail menu propped on the counter like a royal pardon.
+Sable: ‘Tonight's special is Minor Administrative Disappointment. Alcohol optional. The disappointment is locally sourced.’
+They are rehearsing a complaint to a supplier who sent twelve lids and no jars. Ask about their evening, order something, or just keep them company. The secondhand shop next door is open; your apartment is a short walk away.
+Sable lowers the supplier complaint. ‘Would you say “a lid implies a vessel” sounds threatening? I've spent half an hour making it less threatening.’
+This local chapter trial advances only when you act. LOOK, HELP, JOURNAL and private THINK are untimed. REST UNTIL TOMORROW at home is an optional jump to the next evening, with all intervening consequences preserved.
+
+> talk to Sable
+Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. The lids are waiting in a box under the counter.’
+Sable: ‘Tea, coffee or water? The spectacularly named drinks can wait.’
+They mention a dream that doesn't fit their hospital memories. You can ask about it, or keep the evening ordinary.
+
+> tea
+Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
+
+> ask Sable about roleplay
+Sable enjoys negotiated adult social play with clear terms. They mention a firm boundary: no recording or public disclosure without permission. Sharing an interest isn't an invitation.
+
+> wait for two hours
+You wait 120 minutes.
+
+> ask Sable about their memories
+Sable: ‘I remember being in hospital continuously that year. A whole year, five years back. Even the night the Cat's Cradle closed. Lately I dream about serving there instead. I don't know what to make of it.’
+
+> go shop
+You go to Secondhand shop.
+Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take if they are still here. The bar and home are nearby.
+Here: photograph.
+Here: provenance listing.
+
+> take photo
+You take the photograph. You haven't read it by taking it.
+
+> read photo
+A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.
+
+> take listing
+You take the provenance listing. You haven't read it by taking it.
+
+> read listing
+The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.
+
+> think
+Private: The photograph has a date. Sable has a different account. Those are things to compare, not yet an explanation.
+
+> journal
+Your notes — observations, accounts and uncertainties:
+Sable says they remember continuous hospitalization five years ago, including the closing-party night. [Sable directly told you; Day 0 · Friday 20:06]
+You take the photograph. [Player's present words or action; Day 0 · Friday 20:10]
+A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone. [Inspected photograph; Day 0 · Friday 20:11]
+You take the provenance listing. [Player's present words or action; Day 0 · Friday 20:11]
+The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture. [Inspected provenance listing; Day 0 · Friday 20:12]
+The print and dated listing contradict Sable's account. They establish neither coercion nor a perpetrator.
+
+> go bar
+You go to The Velvet Corner.
+The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside.
+Sable is behind the counter, pencil tucked behind one ear. Orders are gathering; they are keeping service moving.
+Here: cup.
+Here: counter.
+Here: menu.
+Your tea is in the cup; 3 of 3 portions remain.
+
+> show photo to Sable
+Sable inspects the photograph. You keep custody.
+
+> show listing to Sable
+Sable inspects the provenance listing. You keep custody.
+Sable studies the dates. ‘That contradicts what I remember. It doesn't tell me who did what.’ Their voice becomes very precise.
+‘Service is busy. I'm leaning toward writing things down first. That's useful work I can pace myself.’
+‘Give me a few minutes to decide. You can disagree, say nothing, offer company, or leave. It doesn't make this your responsibility.’
+
+> I disagree
+Sable: ‘I hear you. I want to decide this on what I can check and what I can manage, not on whether we agree.’
+
+> go home
+You go to Your apartment.
+Your apartment. The kettle has no theories. You can return to the bar or shop, or REST UNTIL TOMORROW: an optional jump to the next evening at 18:00.
+
+> rest until tomorrow
+You choose to rest until Day 1 · Saturday 18:00. The city continues during this optional time advance.
+
+> rest until tomorrow
+You choose to rest until Day 2 · Sunday 18:00. The city continues during this optional time advance.
+
+> rest until tomorrow
+You choose to rest until Day 3 · Monday 18:00. The city continues during this optional time advance.
+
+> rest until tomorrow
+You choose to rest until Day 4 · Tuesday 18:00. The city continues during this optional time advance.
+
+> wait for two hours
+You wait 120 minutes.
+
+> go bar
+You go to The Velvet Corner.
+The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside.
+Sable is behind the counter, pencil tucked behind one ear. Orders are gathering; they are keeping service moving. They have something to discuss when you can talk privately.
+Here: cup.
+Here: counter.
+Here: menu.
+Your tea is in the cup; 3 of 3 portions remain.
+
+> talk privately
+Sable agrees to a few quiet minutes and joins you in the booth.
+Sable: ‘It's been a few days since you showed me the closing-party photograph and the provenance listing. Here's what I did.’
+‘Tonight's service needs my attention; I prefer a task I can pace myself. A dated notebook can distinguish what I remember from what I can check.’
+‘I made three columns: what I remember, what I saw, what I can check. The listing gives me a next step: ask the photographer to authenticate the lot and the closing date. That isn't a recovered memory. It's a question someone might actually answer.’
+‘I set aside some time after stocktake to work on the notebook.’
+‘You disagreed. I heard you. The choice was still mine.’
+Sable talks through the date without laying a print on the table.
+‘You can ask to see the notebook. Please don't record or share it without asking.’
+The quiet booth has a low table and a lamp turned toward the wall. Sable is here for the private conversation you requested. The bar is just outside.
+
+> ask Sable to show the notebook
+Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.
+
+> ask Sable about the update
+Sable: ‘The notebook separates observations from memories; authenticating the photographer's lot is the next step. Where we go after that isn't settled.’

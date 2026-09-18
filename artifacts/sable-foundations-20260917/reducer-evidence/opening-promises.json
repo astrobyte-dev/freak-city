@@ -1,0 +1,112 @@
+[
+  {
+    "id": "complaint-question",
+    "kind": "question",
+    "actor": "sable",
+    "subject": "supplier",
+    "commands": [
+      "ask Sable about complaint",
+      "no it dosen't sound threatening"
+    ],
+    "intent": "conversation:opinion",
+    "response": "doesn't sound threatening"
+  },
+  {
+    "id": "drink-choice",
+    "kind": "question",
+    "actor": "sable",
+    "subject": "drink",
+    "commands": [
+      "talk",
+      "coffee"
+    ],
+    "intent": "conversation:order-drink",
+    "response": "coffee"
+  },
+  {
+    "id": "special",
+    "kind": "action",
+    "actor": "sable",
+    "commands": [
+      "order the special"
+    ],
+    "intent": "conversation:order-drink",
+    "response": "alcohol-free"
+  },
+  {
+    "id": "menu",
+    "kind": "object",
+    "entity": "trial-menu",
+    "commands": [
+      "read menu"
+    ],
+    "intent": "object:examine",
+    "response": "tea, coffee and water"
+  },
+  {
+    "id": "menu-reverse",
+    "kind": "object",
+    "entity": "trial-menu",
+    "commands": [
+      "read the back of the menu"
+    ],
+    "intent": "object:examine",
+    "response": "costume notes"
+  },
+  {
+    "id": "cup",
+    "kind": "object",
+    "entity": "trial-cup",
+    "commands": [
+      "order coffee",
+      "take cup",
+      "examine cup",
+      "take another sip of coffee",
+      "finish cup",
+      "put down the cup"
+    ],
+    "intent": "object:put",
+    "response": "put down"
+  },
+  {
+    "id": "refill",
+    "kind": "action",
+    "commands": [
+      "order coffee",
+      "finish cup",
+      "ask for another drink",
+      "yes ill have another coffee"
+    ],
+    "intent": "conversation:accept-offered-drink",
+    "response": "same cup"
+  },
+  {
+    "id": "photograph",
+    "kind": "object",
+    "entity": "trial-photo",
+    "commands": [
+      "go shop",
+      "read photograph"
+    ],
+    "intent": "object:examine",
+    "response": "neither dates"
+  },
+  {
+    "id": "shop",
+    "kind": "action",
+    "commands": [
+      "go shop"
+    ],
+    "intent": "language-verb:go",
+    "response": "Secondhand shop"
+  },
+  {
+    "id": "home",
+    "kind": "action",
+    "commands": [
+      "go home"
+    ],
+    "intent": "language-verb:go",
+    "response": "apartment"
+  }
+]

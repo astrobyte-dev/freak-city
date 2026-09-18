@@ -1,0 +1,989 @@
+{
+  "passed": false,
+  "error": "Error: sip water\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"handled\"\nReceived: \"clarified\"",
+  "commands": [
+    {
+      "command": "look",
+      "at": 1080,
+      "lines": [
+        "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside.",
+        "Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.",
+        "Here: counter.",
+        "Here: menu."
+      ],
+      "failed": false,
+      "room": "bar",
+      "startedAt": 1080,
+      "startRoom": "bar",
+      "diagnostics": [
+        {
+          "command": "look",
+          "intent": "language-verb:look (handler detail not recorded)",
+          "outcome": "handled",
+          "from": 1080,
+          "to": 1080,
+          "roomBefore": "bar",
+          "roomAfter": "bar",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "command": "talk with sable",
+      "at": 1082,
+      "lines": [
+        "Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. The lids are waiting in a box under the counter.’",
+        "Sable: ‘Tea, coffee or water? The spectacularly named drinks can wait.’",
+        "They mention a dream that doesn't fit their hospital memories. You can ask about it, or keep the evening ordinary."
+      ],
+      "failed": false,
+      "room": "bar",
+      "startedAt": 1080,
+      "startRoom": "bar",
+      "diagnostics": [
+        {
+          "command": "talk with sable",
+          "intent": "conversation:plans",
+          "outcome": "handled",
+          "from": 1080,
+          "to": 1082,
+          "roomBefore": "bar",
+          "roomAfter": "bar",
+          "changes": [
+            {
+              "field": "context",
+              "before": {
+                "kind": "social",
+                "room": "bar",
+                "at": 1080,
+                "interlocutor": "sable",
+                "topic": "supplier",
+                "references": [],
+                "question": {
+                  "kind": "opinion",
+                  "subject": "supplier"
+                }
+              },
+              "after": {
+                "interlocutor": "sable",
+                "kind": "drink",
+                "topic": "drink",
+                "question": {
+                  "kind": "choose-drink",
+                  "subject": "drink"
+                },
+                "references": [],
+                "at": 1080,
+                "room": "bar"
+              }
+            },
+            {
+              "field": "socialSeen",
+              "before": [
+                "supplier:question"
+              ],
+              "after": [
+                "supplier:question",
+                "supplier",
+                "dream-mentioned"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "command": "water please",
+      "at": 1084,
+      "lines": [
+        "Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’"
+      ],
+      "failed": false,
+      "room": "bar",
+      "startedAt": 1082,
+      "startRoom": "bar",
+      "diagnostics": [
+        {
+          "command": "water please",
+          "intent": "conversation:order-drink",
+          "outcome": "handled",
+          "from": 1082,
+          "to": 1084,
+          "roomBefore": "bar",
+          "roomAfter": "bar",
+          "meaning": {
+            "kind": "request",
+            "interlocutor": "sable",
+            "subject": "drink",
+            "entities": [
+              "trial-glass"
+            ]
+          },
+          "changes": [
+            {
+              "field": "entities",
+              "before": {
+                "trial-photo": {
+                  "id": "trial-photo",
+                  "kind": "Evidence",
+                  "name": "photograph",
+                  "aliases": [
+                    "photo",
+                    "print",
+                    "picture"
+                  ],
+                  "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-listing": {
+                  "id": "trial-listing",
+                  "kind": "Evidence",
+                  "name": "provenance listing",
+                  "aliases": [
+                    "listing",
+                    "provenance",
+                    "flyer"
+                  ],
+                  "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-bag": {
+                  "id": "trial-bag",
+                  "kind": "Container",
+                  "name": "satchel",
+                  "aliases": [
+                    "bag"
+                  ],
+                  "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                  "location": "player",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-report": {
+                  "id": "trial-report",
+                  "kind": "Evidence",
+                  "name": "medical report",
+                  "aliases": [
+                    "report",
+                    "medical record"
+                  ],
+                  "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-notebook": {
+                  "id": "trial-notebook",
+                  "kind": "Evidence",
+                  "name": "notebook",
+                  "aliases": [
+                    "notebook",
+                    "notes",
+                    "journal book"
+                  ],
+                  "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-cup": {
+                  "id": "trial-cup",
+                  "kind": "Container",
+                  "name": "cup",
+                  "aliases": [
+                    "cup"
+                  ],
+                  "description": "An ordinary cup.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 0
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-glass": {
+                  "id": "trial-glass",
+                  "kind": "Container",
+                  "name": "glass",
+                  "aliases": [
+                    "glass"
+                  ],
+                  "description": "An ordinary glass.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 0
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-counter": {
+                  "id": "trial-counter",
+                  "kind": "Container",
+                  "name": "counter",
+                  "aliases": [
+                    "bar counter"
+                  ],
+                  "description": "A worn wooden serving counter. You can set a held object on it.",
+                  "location": "bar",
+                  "visible": true,
+                  "portable": false,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "supporter": true
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-menu": {
+                  "id": "trial-menu",
+                  "kind": "Object",
+                  "name": "menu",
+                  "aliases": [
+                    "cocktail menu",
+                    "back of menu",
+                    "menu reverse",
+                    "costume notes",
+                    "theme night notes"
+                  ],
+                  "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": false,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                }
+              },
+              "after": {
+                "trial-photo": {
+                  "id": "trial-photo",
+                  "kind": "Evidence",
+                  "name": "photograph",
+                  "aliases": [
+                    "photo",
+                    "print",
+                    "picture"
+                  ],
+                  "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-listing": {
+                  "id": "trial-listing",
+                  "kind": "Evidence",
+                  "name": "provenance listing",
+                  "aliases": [
+                    "listing",
+                    "provenance",
+                    "flyer"
+                  ],
+                  "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-bag": {
+                  "id": "trial-bag",
+                  "kind": "Container",
+                  "name": "satchel",
+                  "aliases": [
+                    "bag"
+                  ],
+                  "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                  "location": "player",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-report": {
+                  "id": "trial-report",
+                  "kind": "Evidence",
+                  "name": "medical report",
+                  "aliases": [
+                    "report",
+                    "medical record"
+                  ],
+                  "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-notebook": {
+                  "id": "trial-notebook",
+                  "kind": "Evidence",
+                  "name": "notebook",
+                  "aliases": [
+                    "notebook",
+                    "notes",
+                    "journal book"
+                  ],
+                  "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-cup": {
+                  "id": "trial-cup",
+                  "kind": "Container",
+                  "name": "cup",
+                  "aliases": [
+                    "cup"
+                  ],
+                  "description": "An ordinary cup.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 0
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-glass": {
+                  "id": "trial-glass",
+                  "kind": "Container",
+                  "name": "glass",
+                  "aliases": [
+                    "glass"
+                  ],
+                  "description": "An ordinary glass.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 3,
+                    "beverage": "water",
+                    "servedAt": 1082
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-counter": {
+                  "id": "trial-counter",
+                  "kind": "Container",
+                  "name": "counter",
+                  "aliases": [
+                    "bar counter"
+                  ],
+                  "description": "A worn wooden serving counter. You can set a held object on it.",
+                  "location": "bar",
+                  "visible": true,
+                  "portable": false,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "supporter": true
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-menu": {
+                  "id": "trial-menu",
+                  "kind": "Object",
+                  "name": "menu",
+                  "aliases": [
+                    "cocktail menu",
+                    "back of menu",
+                    "menu reverse",
+                    "costume notes",
+                    "theme night notes"
+                  ],
+                  "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": false,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                }
+              }
+            },
+            {
+              "field": "observations",
+              "before": [],
+              "after": [
+                {
+                  "id": "sable:observation:1",
+                  "at": 1082,
+                  "actor": "sable",
+                  "mode": "heard",
+                  "subject": "preference",
+                  "detail": "Asked for water.",
+                  "source": "Player's present words or action",
+                  "evidence": [
+                    "trial-glass"
+                  ],
+                  "upstream": []
+                }
+              ]
+            },
+            {
+              "field": "context",
+              "before": {
+                "kind": "drink",
+                "room": "bar",
+                "at": 1080,
+                "interlocutor": "sable",
+                "topic": "drink",
+                "references": [],
+                "question": {
+                  "kind": "choose-drink",
+                  "subject": "drink"
+                }
+              },
+              "after": {
+                "interlocutor": "sable",
+                "kind": "drink",
+                "topic": "drink",
+                "references": [
+                  "trial-glass"
+                ],
+                "at": 1082,
+                "room": "bar"
+              }
+            },
+            {
+              "field": "preference",
+              "before": null,
+              "after": "water"
+            },
+            {
+              "field": "lastVesselId",
+              "before": null,
+              "after": "trial-glass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "command": "water",
+      "at": 1086,
+      "lines": [
+        "Sable sets a cup of water within reach. ‘Water. No garnish trying to escape into your nose.’"
+      ],
+      "failed": false,
+      "room": "bar",
+      "startedAt": 1084,
+      "startRoom": "bar",
+      "diagnostics": [
+        {
+          "command": "water",
+          "intent": "conversation:order-drink",
+          "outcome": "handled",
+          "from": 1084,
+          "to": 1086,
+          "roomBefore": "bar",
+          "roomAfter": "bar",
+          "meaning": {
+            "kind": "request",
+            "interlocutor": "sable",
+            "subject": "drink",
+            "entities": [
+              "trial-cup"
+            ]
+          },
+          "changes": [
+            {
+              "field": "entities",
+              "before": {
+                "trial-photo": {
+                  "id": "trial-photo",
+                  "kind": "Evidence",
+                  "name": "photograph",
+                  "aliases": [
+                    "photo",
+                    "print",
+                    "picture"
+                  ],
+                  "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-listing": {
+                  "id": "trial-listing",
+                  "kind": "Evidence",
+                  "name": "provenance listing",
+                  "aliases": [
+                    "listing",
+                    "provenance",
+                    "flyer"
+                  ],
+                  "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-bag": {
+                  "id": "trial-bag",
+                  "kind": "Container",
+                  "name": "satchel",
+                  "aliases": [
+                    "bag"
+                  ],
+                  "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                  "location": "player",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-report": {
+                  "id": "trial-report",
+                  "kind": "Evidence",
+                  "name": "medical report",
+                  "aliases": [
+                    "report",
+                    "medical record"
+                  ],
+                  "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-notebook": {
+                  "id": "trial-notebook",
+                  "kind": "Evidence",
+                  "name": "notebook",
+                  "aliases": [
+                    "notebook",
+                    "notes",
+                    "journal book"
+                  ],
+                  "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-cup": {
+                  "id": "trial-cup",
+                  "kind": "Container",
+                  "name": "cup",
+                  "aliases": [
+                    "cup"
+                  ],
+                  "description": "An ordinary cup.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 0
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-glass": {
+                  "id": "trial-glass",
+                  "kind": "Container",
+                  "name": "glass",
+                  "aliases": [
+                    "glass"
+                  ],
+                  "description": "An ordinary glass.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 3,
+                    "beverage": "water",
+                    "servedAt": 1082
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-counter": {
+                  "id": "trial-counter",
+                  "kind": "Container",
+                  "name": "counter",
+                  "aliases": [
+                    "bar counter"
+                  ],
+                  "description": "A worn wooden serving counter. You can set a held object on it.",
+                  "location": "bar",
+                  "visible": true,
+                  "portable": false,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "supporter": true
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-menu": {
+                  "id": "trial-menu",
+                  "kind": "Object",
+                  "name": "menu",
+                  "aliases": [
+                    "cocktail menu",
+                    "back of menu",
+                    "menu reverse",
+                    "costume notes",
+                    "theme night notes"
+                  ],
+                  "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": false,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                }
+              },
+              "after": {
+                "trial-photo": {
+                  "id": "trial-photo",
+                  "kind": "Evidence",
+                  "name": "photograph",
+                  "aliases": [
+                    "photo",
+                    "print",
+                    "picture"
+                  ],
+                  "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-listing": {
+                  "id": "trial-listing",
+                  "kind": "Evidence",
+                  "name": "provenance listing",
+                  "aliases": [
+                    "listing",
+                    "provenance",
+                    "flyer"
+                  ],
+                  "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                  "location": "shop",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-bag": {
+                  "id": "trial-bag",
+                  "kind": "Container",
+                  "name": "satchel",
+                  "aliases": [
+                    "bag"
+                  ],
+                  "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                  "location": "player",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-report": {
+                  "id": "trial-report",
+                  "kind": "Evidence",
+                  "name": "medical report",
+                  "aliases": [
+                    "report",
+                    "medical record"
+                  ],
+                  "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-notebook": {
+                  "id": "trial-notebook",
+                  "kind": "Evidence",
+                  "name": "notebook",
+                  "aliases": [
+                    "notebook",
+                    "notes",
+                    "journal book"
+                  ],
+                  "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                  "location": "unplaced",
+                  "visible": true,
+                  "portable": true,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-cup": {
+                  "id": "trial-cup",
+                  "kind": "Container",
+                  "name": "cup",
+                  "aliases": [
+                    "cup"
+                  ],
+                  "description": "An ordinary cup.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 3,
+                    "beverage": "water",
+                    "servedAt": 1084
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-glass": {
+                  "id": "trial-glass",
+                  "kind": "Container",
+                  "name": "glass",
+                  "aliases": [
+                    "glass"
+                  ],
+                  "description": "An ordinary glass.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": true,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "interaction": "vessel",
+                    "capacity": 3,
+                    "remaining": 3,
+                    "beverage": "water",
+                    "servedAt": 1082
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-counter": {
+                  "id": "trial-counter",
+                  "kind": "Container",
+                  "name": "counter",
+                  "aliases": [
+                    "bar counter"
+                  ],
+                  "description": "A worn wooden serving counter. You can set a held object on it.",
+                  "location": "bar",
+                  "visible": true,
+                  "portable": false,
+                  "open": true,
+                  "destroyed": false,
+                  "properties": {
+                    "supporter": true
+                  },
+                  "verbs": [],
+                  "facts": []
+                },
+                "trial-menu": {
+                  "id": "trial-menu",
+                  "kind": "Object",
+                  "name": "menu",
+                  "aliases": [
+                    "cocktail menu",
+                    "back of menu",
+                    "menu reverse",
+                    "costume notes",
+                    "theme night notes"
+                  ],
+                  "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                  "location": "trial-counter",
+                  "visible": true,
+                  "portable": false,
+                  "destroyed": false,
+                  "properties": {},
+                  "verbs": [],
+                  "facts": []
+                }
+              }
+            },
+            {
+              "field": "observations",
+              "before": [
+                {
+                  "id": "sable:observation:1",
+                  "at": 1082,
+                  "actor": "sable",
+                  "mode": "heard",
+                  "subject": "preference",
+                  "detail": "Asked for water.",
+                  "source": "Player's present words or action",
+                  "upstream": [],
+                  "evidence": [
+                    "trial-glass"
+                  ]
+                }
+              ],
+              "after": [
+                {
+                  "id": "sable:observation:1",
+                  "at": 1082,
+                  "actor": "sable",
+                  "mode": "heard",
+                  "subject": "preference",
+                  "detail": "Asked for water.",
+                  "source": "Player's present words or action",
+                  "upstream": [],
+                  "evidence": [
+                    "trial-glass"
+                  ]
+                },
+                {
+                  "id": "sable:observation:2",
+                  "at": 1084,
+                  "actor": "sable",
+                  "mode": "heard",
+                  "subject": "preference",
+                  "detail": "Asked for water.",
+                  "source": "Player's present words or action",
+                  "evidence": [
+                    "trial-cup"
+                  ],
+                  "upstream": []
+                }
+              ]
+            },
+            {
+              "field": "context",
+              "before": {
+                "kind": "drink",
+                "room": "bar",
+                "at": 1082,
+                "interlocutor": "sable",
+                "topic": "drink",
+                "references": [
+                  "trial-glass"
+                ]
+              },
+              "after": {
+                "interlocutor": "sable",
+                "kind": "drink",
+                "topic": "drink",
+                "references": [
+                  "trial-cup"
+                ],
+                "at": 1084,
+                "room": "bar"
+              }
+            },
+            {
+              "field": "lastVesselId",
+              "before": "trial-glass",
+              "after": "trial-cup"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audits": [],
+  "errors": [],
+  "externalRequests": []
+}

@@ -1,0 +1,66 @@
+{
+  "exactMatch": true,
+  "build": {
+    "campaign": "sable-trial",
+    "saveVersion": 1,
+    "saveRevision": 3,
+    "recordingFormat": 1,
+    "trialBuild": "sable-foundations-3",
+    "appVersion": "0.1.0-playtest.1",
+    "baseCommit": "0128fe4"
+  },
+  "entries": 46,
+  "outcomes": {
+    "handled": 39,
+    "clarified": 4,
+    "rejected": 2
+  },
+  "vessels": [
+    {
+      "id": "trial-cup",
+      "kind": "Container",
+      "name": "cup",
+      "aliases": [
+        "cup"
+      ],
+      "description": "An ordinary cup.",
+      "location": "player",
+      "visible": true,
+      "portable": true,
+      "open": true,
+      "destroyed": false,
+      "properties": {
+        "interaction": "vessel",
+        "capacity": 3,
+        "remaining": 3,
+        "beverage": "coffee",
+        "servedAt": 1129
+      },
+      "verbs": [],
+      "facts": []
+    },
+    {
+      "id": "trial-glass",
+      "kind": "Container",
+      "name": "glass",
+      "aliases": [
+        "glass"
+      ],
+      "description": "An ordinary glass.",
+      "location": "player",
+      "visible": true,
+      "portable": true,
+      "open": true,
+      "destroyed": false,
+      "properties": {
+        "interaction": "vessel",
+        "capacity": 3,
+        "remaining": 2,
+        "beverage": "water",
+        "servedAt": 1132
+      },
+      "verbs": [],
+      "facts": []
+    }
+  ]
+}

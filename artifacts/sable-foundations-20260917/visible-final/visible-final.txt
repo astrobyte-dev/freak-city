@@ -1,0 +1,305 @@
+- main:
+  - paragraph: FREAK // CITY · LOCAL CHAPTER TRIAL · 18+
+  - heading "A date that doesn't fit." [level=1]
+  - paragraph:
+    - text: Sable's story ·
+    - link "Original campaign":
+      - /url: /
+  - generic: Day 0 · Friday 18:55 · The Velvet Corner
+  - button "Export playtest"
+  - button "Trial settings"
+  - region "Export playtest":
+    - heading "Export this playtest" [level=2]
+    - paragraph: "Snapshot: Day 0 · Friday 18:55. Download each file locally. Nothing is uploaded, reset or advanced."
+    - generic: What I was trying to do / What went wrong (optional)
+    - textbox "What I was trying to do / What went wrong (optional)": Final compiled build on fresh localhost:52747. Agent-driven visible UI playtest, not a blind human evaluation. Reloaded while the identified coffee offer was pending; exercised explicit complaint replies, named and bare acceptance, multiple held vessels, remote refill, qualified claims, showing, inspection interruptions and honest limitations.
+    - paragraph:
+      - text: The Markdown transcript is readable playtest history. The separate diagnostic JSON contains
+      - strong: story spoilers and internal state
+      - text: ; it is not a restorable save. Export trial save in settings remains available for that.
+    - button "Download transcript (.md)"
+    - button "Download diagnostics (.json — spoilers)" [active]
+    - button "Close export"
+  - log "Story transcript":
+    - article:
+      - paragraph: Three weeks in the city. One genuine friend. Sable waves you into the Velvet Corner with a cocktail menu propped on the counter like a royal pardon.
+      - paragraph: "Sable: ‘Tonight's special is Minor Administrative Disappointment. Alcohol optional. The disappointment is locally sourced.’"
+      - paragraph: They are rehearsing a complaint to a supplier who sent twelve lids and no jars. Ask about their evening, order something, or just keep them company. The secondhand shop next door is open; your apartment is a short walk away.
+      - paragraph: Sable lowers the supplier complaint. ‘Would you say “a lid implies a vessel” sounds threatening? I've spent half an hour making it less threatening.’
+      - paragraph: This local chapter trial advances only when you act. LOOK, HELP, JOURNAL and private THINK are untimed. REST UNTIL TOMORROW at home is an optional jump to the next evening, with all intervening consequences preserved.
+    - article:
+      - paragraph:
+        - text: "> read the menu"
+        - generic: Day 0 · Friday 18:00
+      - paragraph: "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting."
+    - article:
+      - paragraph:
+        - text: "> no it dosen't sound threatening"
+        - generic: Day 0 · Friday 18:02
+      - paragraph: "Sable: ‘Fair. The supplier letter could be less theatrical. I'll take your point: it doesn't sound threatening to you.’"
+    - article:
+      - paragraph:
+        - text: "> talk"
+        - generic: Day 0 · Friday 18:04
+      - paragraph: "Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. The lids are waiting in a box under the counter.’"
+      - paragraph: "Sable: ‘Tea, coffee or water? The spectacularly named drinks can wait.’"
+      - paragraph: They mention a dream that doesn't fit their hospital memories. You can ask about it, or keep the evening ordinary.
+    - article:
+      - paragraph:
+        - text: "> yes very threatening"
+        - generic: Day 0 · Friday 18:06
+      - paragraph: "Sable: ‘Very threatening, then. I'll soften the supplier letter before it starts demanding a ransom.’"
+      - paragraph: You returned to that subject; the drink offer was not accepted.
+    - article:
+      - paragraph:
+        - text: "> tell me more"
+        - generic: Day 0 · Friday 18:08
+      - paragraph: "Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. The lids are waiting in a box under the counter.’"
+    - article:
+      - paragraph:
+        - text: "> order coffee"
+        - generic: Day 0 · Friday 18:10
+      - paragraph: Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
+    - article:
+      - paragraph:
+        - text: "> take cup"
+        - generic: Day 0 · Friday 18:11
+      - paragraph: You take the cup.
+    - article:
+      - paragraph:
+        - text: "> take another sip of coffee"
+        - generic: Day 0 · Friday 18:12
+      - paragraph: You take a sip of coffee from the cup.
+    - article:
+      - paragraph:
+        - text: "> finish cup"
+        - generic: Day 0 · Friday 18:13
+      - paragraph: You finish your coffee; the empty cup remains in your hand.
+    - article:
+      - paragraph:
+        - text: "> ask for another drink"
+        - generic: Day 0 · Friday 18:15
+      - paragraph: "Sable: Would you like your usual coffee? The offer is for the cup."
+    - article:
+      - paragraph:
+        - text: "> look"
+        - generic: Day 0 · Friday 18:15
+      - paragraph: "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside."
+      - paragraph: Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.
+      - paragraph: "Here: counter."
+      - paragraph: "Here: menu."
+      - paragraph: The cup is empty.
+    - article:
+      - paragraph:
+        - text: "> yes ill have another coffee"
+        - generic: Day 0 · Friday 18:17
+      - paragraph: Sable refills the same cup with coffee. ‘Coffee. Smells more awake than either of us.’
+    - article:
+      - paragraph:
+        - text: "> order water"
+        - generic: Day 0 · Friday 18:19
+      - paragraph: Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
+    - article:
+      - paragraph:
+        - text: "> take glass"
+        - generic: Day 0 · Friday 18:20
+      - paragraph: You take the glass.
+    - article:
+      - paragraph:
+        - text: "> sip drink"
+        - generic: Day 0 · Friday 18:20
+      - paragraph: "Which object do you mean: cup or glass? Please repeat the action with its name."
+    - article:
+      - paragraph:
+        - text: "> inventory"
+        - generic: Day 0 · Friday 18:20
+      - paragraph: satchel (open)
+      - paragraph: Your coffee is in the cup; 3 of 3 portions remain.
+      - paragraph: Your water is in the glass; 3 of 3 portions remain.
+      - paragraph: Contents of closed bags are carried but must be opened before inspection or showing.
+    - article:
+      - paragraph:
+        - text: "> finish cup"
+        - generic: Day 0 · Friday 18:21
+      - paragraph: You finish your coffee; the empty cup remains in your hand.
+    - article:
+      - paragraph:
+        - text: "> go home"
+        - generic: Day 0 · Friday 18:23
+      - paragraph: You go to Your apartment.
+      - paragraph: "Your apartment. The kettle has no theories. You can return to the bar or shop, or REST UNTIL TOMORROW: an optional jump to the next evening at 18:00."
+    - article:
+      - paragraph:
+        - text: "> put down the cup"
+        - generic: Day 0 · Friday 18:24
+      - paragraph: You put down the cup.
+    - article:
+      - paragraph:
+        - text: "> go bar"
+        - generic: Day 0 · Friday 18:26
+      - paragraph: You go to The Velvet Corner.
+      - paragraph: "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside."
+      - paragraph: Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.
+      - paragraph: "Here: counter."
+      - paragraph: "Here: menu."
+      - paragraph: Your water is in the glass; 3 of 3 portions remain.
+    - article:
+      - paragraph:
+        - text: "> order another coffee"
+        - generic: Day 0 · Friday 18:26
+      - paragraph: Bring the cup back within reach first. It has not moved or been refilled.
+    - article:
+      - paragraph:
+        - text: "> Sable, I came across a picture that might show you"
+        - generic: Day 0 · Friday 18:28
+      - paragraph: "Sable: ‘You found a photograph? I'd like to see it. Hearing about it isn't the same as inspecting it; let's keep the claim separate from what we can check.’"
+    - article:
+      - paragraph:
+        - text: "> tell me more"
+        - generic: Day 0 · Friday 18:30
+      - paragraph: "Sable: ‘I haven't seen the photograph. Can you show it to me? I can't judge its details from a question.’"
+    - article:
+      - paragraph:
+        - text: "> go shop"
+        - generic: Day 0 · Friday 18:32
+      - paragraph: You go to Secondhand shop.
+      - paragraph: Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take if they are still here. The bar and home are nearby.
+      - paragraph: "Here: photograph."
+      - paragraph: "Here: provenance listing."
+    - article:
+      - paragraph:
+        - text: "> take photo"
+        - generic: Day 0 · Friday 18:33
+      - paragraph: You take the photograph. You haven't read it by taking it.
+    - article:
+      - paragraph:
+        - text: "> go bar"
+        - generic: Day 0 · Friday 18:35
+      - paragraph: You go to The Velvet Corner.
+      - paragraph: "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside."
+      - paragraph: Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.
+      - paragraph: "Here: counter."
+      - paragraph: "Here: menu."
+      - paragraph: Your water is in the glass; 3 of 3 portions remain.
+    - article:
+      - paragraph:
+        - text: "> show photo to Sable"
+        - generic: Day 0 · Friday 18:37
+      - paragraph: Sable inspects the photograph. You keep custody.
+    - article:
+      - paragraph:
+        - text: "> read the back of the menu"
+        - generic: Day 0 · Friday 18:37
+      - paragraph: "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting."
+    - article:
+      - paragraph:
+        - text: "> what do you think of it?"
+        - generic: Day 0 · Friday 18:39
+      - paragraph: "Sable: ‘I can see the picture, but the occasion needs a separate dated source. The photograph alone doesn't settle it.’"
+    - article:
+      - paragraph:
+        - text: "> Sable, could you mend my coat?"
+        - generic: Day 0 · Friday 18:39
+      - paragraph: Sable has no implemented response to that request. Name a supported subject; no action was taken.
+    - article:
+      - paragraph:
+        - text: "> go home"
+        - generic: Day 0 · Friday 18:41
+      - paragraph: You go to Your apartment.
+      - paragraph: "Your apartment. The kettle has no theories. You can return to the bar or shop, or REST UNTIL TOMORROW: an optional jump to the next evening at 18:00."
+      - paragraph: "Here: cup."
+    - article:
+      - paragraph:
+        - text: "> take cup"
+        - generic: Day 0 · Friday 18:42
+      - paragraph: You take the cup.
+    - article:
+      - paragraph:
+        - text: "> go bar"
+        - generic: Day 0 · Friday 18:44
+      - paragraph: You go to The Velvet Corner.
+      - paragraph: "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside."
+      - paragraph: Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.
+      - paragraph: "Here: counter."
+      - paragraph: "Here: menu."
+      - paragraph: The cup is empty.
+      - paragraph: Your water is in the glass; 3 of 3 portions remain.
+    - article:
+      - paragraph:
+        - text: "> ask for another coffee"
+        - generic: Day 0 · Friday 18:46
+      - paragraph: Sable refills the same cup with coffee. ‘Coffee. Smells more awake than either of us.’
+    - article:
+      - paragraph:
+        - text: "> maybe"
+        - generic: Day 0 · Friday 18:46
+      - paragraph: No action taken. Say what you want to do when you've decided.
+    - article:
+      - paragraph:
+        - text: "> yes"
+        - generic: Day 0 · Friday 18:46
+      - paragraph: There is no pending drink offer to accept. Please name the drink you want.
+    - article:
+      - paragraph:
+        - text: "> inventory"
+        - generic: Day 0 · Friday 18:46
+      - paragraph: photograph
+      - paragraph: satchel (open)
+      - paragraph: Your coffee is in the cup; 3 of 3 portions remain.
+      - paragraph: Your water is in the glass; 3 of 3 portions remain.
+      - paragraph: Contents of closed bags are carried but must be opened before inspection or showing.
+    - article:
+      - paragraph:
+        - text: "> finish cup"
+        - generic: Day 0 · Friday 18:47
+      - paragraph: You finish your coffee; the empty cup remains in your hand.
+    - article:
+      - paragraph:
+        - text: "> ask for another drink"
+        - generic: Day 0 · Friday 18:49
+      - paragraph: "Sable: Would you like your usual coffee? The offer is for the cup."
+    - article:
+      - paragraph:
+        - text: "> perhaps"
+        - generic: Day 0 · Friday 18:49
+      - paragraph: Which drink or offer do you mean? Name one choice; nothing has been served.
+    - article:
+      - paragraph:
+        - text: "> yes"
+        - generic: Day 0 · Friday 18:51
+      - paragraph: Sable refills the same cup with coffee. ‘Coffee. Smells more awake than either of us.’
+    - article:
+      - paragraph:
+        - text: "> finish glass"
+        - generic: Day 0 · Friday 18:52
+      - paragraph: You finish your water; the empty glass remains in your hand.
+    - article:
+      - paragraph:
+        - text: "> ask for another water"
+        - generic: Day 0 · Friday 18:54
+      - paragraph: Sable refills the same glass with water. ‘Water. No garnish trying to escape into your nose.’
+    - article:
+      - paragraph:
+        - text: "> take another sip of water"
+        - generic: Day 0 · Friday 18:55
+      - paragraph: You take a sip of water from the glass.
+    - article:
+      - paragraph:
+        - text: "> inventory"
+        - generic: Day 0 · Friday 18:55
+      - paragraph: photograph
+      - paragraph: satchel (open)
+      - paragraph: Your coffee is in the cup; 3 of 3 portions remain.
+      - paragraph: Your water is in the glass; 2 of 3 portions remain.
+      - paragraph: Contents of closed bags are carried but must be opened before inspection or showing.
+  - generic: What do you do?
+  - textbox "Command"
+  - button "Enter"
+  - navigation "Untimed information":
+    - button "Look"
+    - button "Journal"
+    - button "Belongings"
+    - button "Help"
+  - paragraph: Reading and time away from this application never advance the story.
+  - text: Import a Sable trial save
+  - button "Import a Sable trial save"

@@ -1,0 +1,57 @@
+ M .prettierignore
+ M docs/VISUAL-ASSET-PLAN.md
+ M docs/VISUAL-STYLE.md
+ M docs/WORKSTATION-HANDOFF.md
+ M docs/art-contracts/README.md
+ M scripts/browser-playtest.ts
+ M src/components/CommandTerminal.tsx
+ M src/components/Panels.tsx
+ M src/engine/game.ts
+ M src/engine/parser.ts
+ M src/engine/world-types.ts
+ M src/engine/world-validation.ts
+ M src/main.tsx
+ M tests/natural-parser.test.ts
+?? artifacts/sable-connection-20260917-211633/
+?? artifacts/sable-exploratory-20260917-211228/
+?? artifacts/sable-exploratory-20260917-port52743/
+?? artifacts/sable-foundations-20260917/
+?? artifacts/sable-routing-repair-20260917/
+?? docs/CREATOR-SCENE-GUIDE.md
+?? docs/CREATOR-STORY-BIBLE.md
+?? docs/GAMEPLAY-DIRECTION-EXPLORATION.md
+?? docs/NEW-STORY-TRANSITION.md
+?? docs/SABLE-TRIAL-HANDOFF.md
+?? docs/TEXT-LED-TRANSITION.md
+?? docs/art-contracts/NEXT-ROOM-REVIEW.md
+?? docs/art-contracts/rooms/vestibule.md
+?? docs/design/
+?? docs/visuals/reviewed-sources/vestibule/
+?? experiments/
+?? prototype/
+?? scripts/command-input-browser.ts
+?? scripts/command-input-fixture.tsx
+?? scripts/human-opening-review.ts
+?? scripts/inez-envelope-browser.ts
+?? scripts/inez-envelope-review.ts
+?? scripts/sable-playtest-browser.ts
+?? scripts/sable-trial-browser.ts
+?? scripts/text-opening-transition-review.ts
+?? scripts/vestibule-draft-component.tsx
+?? scripts/vestibule-draft-gallery.ts
+?? scripts/vestibule-draft-review.ts
+?? scripts/vestibule-draft-setup.ts
+?? src/content/commitments/
+?? src/engine/commitment-language.ts
+?? src/engine/commitment-types.ts
+?? src/engine/commitments.ts
+?? src/engine/custody.ts
+?? src/engine/event-queue.ts
+?? src/trial/
+?? tests/alias-introduction.test.ts
+?? tests/commitments.test.ts
+?? tests/sable-playtest.test.ts
+?? tests/sable-routing.test.ts
+?? tests/sable-trial.test.ts
+?? tools/visual-gen/validate_vestibule_draft.py
+?? tools/visual-gen/vestibule_draft_layers.py

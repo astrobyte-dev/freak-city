@@ -1,0 +1,462 @@
+{
+  "status": "passed-draft-unactivated",
+  "sourceReplay": "exact",
+  "sourceCrop": [
+    3,
+    11,
+    1483,
+    1047
+  ],
+  "paletteMaster": [
+    320,
+    224
+  ],
+  "display": [
+    640,
+    448
+  ],
+  "layerBounds": [
+    {
+      "name": "bag-effect",
+      "owner": "detail_vestibule_bag",
+      "alphaBounds": [
+        290,
+        199,
+        314,
+        209
+      ],
+      "sha256": "435f0956bbea1abbc460be708dbd6431fb8340f54b704b2ce19be9b33b66c956"
+    },
+    {
+      "name": "bag",
+      "owner": "detail_vestibule_bag",
+      "alphaBounds": [
+        292,
+        177,
+        311,
+        207
+      ],
+      "sha256": "4b83086f587aeb4a2330c2c6f927642197e07df8b43b418615ea92927e434653"
+    },
+    {
+      "name": "bench-effect",
+      "owner": "detail_vestibule_bench",
+      "alphaBounds": [
+        48,
+        183,
+        105,
+        200
+      ],
+      "sha256": "99dcdd1219d23edaf8b2e87e4d71aea97da5b0357a50d069daad0217b0e2882a"
+    },
+    {
+      "name": "bench",
+      "owner": "detail_vestibule_bench",
+      "alphaBounds": [
+        50,
+        155,
+        102,
+        197
+      ],
+      "sha256": "7ee5bdcb7f54a8d5a355ada46c75433a76227ae125b4c1f8f335531b7ac1d9e9"
+    },
+    {
+      "name": "book-effect",
+      "owner": "detail_vestibule_book",
+      "alphaBounds": [
+        299,
+        160,
+        315,
+        166
+      ],
+      "sha256": "7f33f393498abe444dc1312ddce4b8ffaafb6bf001b6aaef842feff1c5830765"
+    },
+    {
+      "name": "book",
+      "owner": "detail_vestibule_book",
+      "alphaBounds": [
+        298,
+        155,
+        314,
+        165
+      ],
+      "sha256": "c85948632048be040a99d13cfb7c8ec764166fcea477ac76b2bfcb5a63e2e76f"
+    },
+    {
+      "name": "door-closed",
+      "owner": "side_door",
+      "alphaBounds": [
+        0,
+        18,
+        27,
+        185
+      ],
+      "sha256": "55c8f91d9ec0ffd414820e6209aac6ee0035a938fe4df26228a7365a32f63bfb"
+    },
+    {
+      "name": "door-open-effect",
+      "owner": "side_door",
+      "alphaBounds": [
+        0,
+        185,
+        63,
+        215
+      ],
+      "sha256": "d1c2e35eeff6a636f7f6d3ad34774d5312e38fdf9d639c06448d2d023906b55e"
+    },
+    {
+      "name": "door-open",
+      "owner": "side_door",
+      "alphaBounds": [
+        22,
+        25,
+        27,
+        184
+      ],
+      "sha256": "d9afdb6b3f19e1a5964fc0ee9b1fe758b8cc8b8f4fa610a94cb6dcdd767ec0e0"
+    },
+    {
+      "name": "envelope-floor-effect",
+      "owner": "envelopeFloor",
+      "alphaBounds": [
+        164,
+        194,
+        176,
+        198
+      ],
+      "sha256": "8a96cc51c807374b82493c09c380220c5856819b83dc9d898ee2da9464237115"
+    },
+    {
+      "name": "envelope-ledge-effect",
+      "owner": "envelopeLedge",
+      "alphaBounds": [
+        277,
+        159,
+        289,
+        163
+      ],
+      "sha256": "c7ae35d1101d0630b612ce52f0d58a3481dbc76e36b5beb5b51299ce34b95ff6"
+    },
+    {
+      "name": "heater-effect",
+      "owner": "detail_vestibule_heater",
+      "alphaBounds": [
+        105,
+        157,
+        148,
+        174
+      ],
+      "sha256": "d353242d1e350b72fd231bacf7486136b9e21415af2dade61e0c52cbe96bc040"
+    },
+    {
+      "name": "heater",
+      "owner": "detail_vestibule_heater",
+      "alphaBounds": [
+        116,
+        138,
+        136,
+        166
+      ],
+      "sha256": "2c663994be7f81fca16a88aa77f76c56aaed5976398ee57f0c5bc7cd4bc5d15f"
+    },
+    {
+      "name": "ledge-effect",
+      "owner": "ledge",
+      "alphaBounds": [
+        266,
+        165,
+        319,
+        179
+      ],
+      "sha256": "1e2139cde27e728865e59363cebf0268026b278f08cbcebcc22e680a923389b5"
+    },
+    {
+      "name": "ledge",
+      "owner": "ledge",
+      "alphaBounds": [
+        269,
+        153,
+        319,
+        175
+      ],
+      "sha256": "72938acd821266c49d3a4ded8e8d504964ec07dfab448c8975717eaefbf2c2b6"
+    },
+    {
+      "name": "notice-effect",
+      "owner": "detail_vestibule_notice",
+      "alphaBounds": [
+        66,
+        81,
+        92,
+        90
+      ],
+      "sha256": "fe706d69127278025e257100c12672a363e94f2e244d91bd6e57ac614d89efaa"
+    },
+    {
+      "name": "notice",
+      "owner": "detail_vestibule_notice",
+      "alphaBounds": [
+        65,
+        67,
+        91,
+        90
+      ],
+      "sha256": "70e0cf817bb513f4cce01e1dc9f5e174b287957e4ab91469e32a20b2329a5d2d"
+    }
+  ],
+  "statePixelChecks": [
+    {
+      "before": "open-present-floor-desktop-viewport.png",
+      "after": "closed-present-floor-desktop-viewport.png",
+      "changedPixels": 21878,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-present-ledge-desktop-viewport.png",
+      "after": "closed-present-ledge-desktop-viewport.png",
+      "changedPixels": 21878,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-absent-floor-desktop-viewport.png",
+      "after": "closed-absent-floor-desktop-viewport.png",
+      "changedPixels": 21878,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-absent-ledge-desktop-viewport.png",
+      "after": "closed-absent-ledge-desktop-viewport.png",
+      "changedPixels": 21878,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-present-floor-desktop-viewport.png",
+      "after": "open-present-ledge-desktop-viewport.png",
+      "changedPixels": 528,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          162,
+          189,
+          178,
+          201
+        ],
+        [
+          275,
+          154,
+          291,
+          167
+        ]
+      ]
+    },
+    {
+      "before": "open-present-floor-desktop-viewport.png",
+      "after": "open-absent-floor-desktop-viewport.png",
+      "changedPixels": 4662,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          186,
+          103,
+          229,
+          187
+        ]
+      ]
+    },
+    {
+      "before": "closed-present-floor-desktop-viewport.png",
+      "after": "closed-present-ledge-desktop-viewport.png",
+      "changedPixels": 528,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          162,
+          189,
+          178,
+          201
+        ],
+        [
+          275,
+          154,
+          291,
+          167
+        ]
+      ]
+    },
+    {
+      "before": "closed-present-floor-desktop-viewport.png",
+      "after": "closed-absent-floor-desktop-viewport.png",
+      "changedPixels": 4662,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          186,
+          103,
+          229,
+          187
+        ]
+      ]
+    },
+    {
+      "before": "open-present-floor-mobile-viewport.png",
+      "after": "closed-present-floor-mobile-viewport.png",
+      "changedPixels": 6728,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-present-ledge-mobile-viewport.png",
+      "after": "closed-present-ledge-mobile-viewport.png",
+      "changedPixels": 6728,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-absent-floor-mobile-viewport.png",
+      "after": "closed-absent-floor-mobile-viewport.png",
+      "changedPixels": 6728,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-absent-ledge-mobile-viewport.png",
+      "after": "closed-absent-ledge-mobile-viewport.png",
+      "changedPixels": 6728,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          0,
+          13,
+          68,
+          218
+        ]
+      ]
+    },
+    {
+      "before": "open-present-floor-mobile-viewport.png",
+      "after": "open-present-ledge-mobile-viewport.png",
+      "changedPixels": 159,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          162,
+          189,
+          178,
+          201
+        ],
+        [
+          275,
+          154,
+          291,
+          167
+        ]
+      ]
+    },
+    {
+      "before": "open-present-floor-mobile-viewport.png",
+      "after": "open-absent-floor-mobile-viewport.png",
+      "changedPixels": 1477,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          186,
+          103,
+          229,
+          187
+        ]
+      ]
+    },
+    {
+      "before": "closed-present-floor-mobile-viewport.png",
+      "after": "closed-present-ledge-mobile-viewport.png",
+      "changedPixels": 159,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          162,
+          189,
+          178,
+          201
+        ],
+        [
+          275,
+          154,
+          291,
+          167
+        ]
+      ]
+    },
+    {
+      "before": "closed-present-floor-mobile-viewport.png",
+      "after": "closed-absent-floor-mobile-viewport.png",
+      "changedPixels": 1477,
+      "outsideOwnerRegions": 0,
+      "regions": [
+        [
+          186,
+          103,
+          229,
+          187
+        ]
+      ]
+    }
+  ],
+  "envelopeMasterUnchanged": true,
+  "protectedShippingFiles": 97,
+  "approvedRoomPixelMatches": 4,
+  "chair": "explicit off-camera prose detail; no visual asset or entity",
+  "limitation": "Readability and final composition remain subject to owner visual review."
+}

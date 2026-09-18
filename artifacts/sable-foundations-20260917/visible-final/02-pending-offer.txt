@@ -1,0 +1,81 @@
+- main:
+  - paragraph: FREAK // CITY · LOCAL CHAPTER TRIAL · 18+
+  - heading "A date that doesn't fit." [level=1]
+  - paragraph:
+    - text: Sable's story ·
+    - link "Original campaign":
+      - /url: /
+  - generic: Day 0 · Friday 18:15 · The Velvet Corner
+  - button "Export playtest"
+  - button "Trial settings"
+  - log "Story transcript":
+    - article:
+      - paragraph: Three weeks in the city. One genuine friend. Sable waves you into the Velvet Corner with a cocktail menu propped on the counter like a royal pardon.
+      - paragraph: "Sable: ‘Tonight's special is Minor Administrative Disappointment. Alcohol optional. The disappointment is locally sourced.’"
+      - paragraph: They are rehearsing a complaint to a supplier who sent twelve lids and no jars. Ask about their evening, order something, or just keep them company. The secondhand shop next door is open; your apartment is a short walk away.
+      - paragraph: Sable lowers the supplier complaint. ‘Would you say “a lid implies a vessel” sounds threatening? I've spent half an hour making it less threatening.’
+      - paragraph: This local chapter trial advances only when you act. LOOK, HELP, JOURNAL and private THINK are untimed. REST UNTIL TOMORROW at home is an optional jump to the next evening, with all intervening consequences preserved.
+    - article:
+      - paragraph:
+        - text: "> read the menu"
+        - generic: Day 0 · Friday 18:00
+      - paragraph: "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting."
+    - article:
+      - paragraph:
+        - text: "> no it dosen't sound threatening"
+        - generic: Day 0 · Friday 18:02
+      - paragraph: "Sable: ‘Fair. The supplier letter could be less theatrical. I'll take your point: it doesn't sound threatening to you.’"
+    - article:
+      - paragraph:
+        - text: "> talk"
+        - generic: Day 0 · Friday 18:04
+      - paragraph: "Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. The lids are waiting in a box under the counter.’"
+      - paragraph: "Sable: ‘Tea, coffee or water? The spectacularly named drinks can wait.’"
+      - paragraph: They mention a dream that doesn't fit their hospital memories. You can ask about it, or keep the evening ordinary.
+    - article:
+      - paragraph:
+        - text: "> yes very threatening"
+        - generic: Day 0 · Friday 18:06
+      - paragraph: "Sable: ‘Very threatening, then. I'll soften the supplier letter before it starts demanding a ransom.’"
+      - paragraph: You returned to that subject; the drink offer was not accepted.
+    - article:
+      - paragraph:
+        - text: "> tell me more"
+        - generic: Day 0 · Friday 18:08
+      - paragraph: "Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. The lids are waiting in a box under the counter.’"
+    - article:
+      - paragraph:
+        - text: "> order coffee"
+        - generic: Day 0 · Friday 18:10
+      - paragraph: Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
+    - article:
+      - paragraph:
+        - text: "> take cup"
+        - generic: Day 0 · Friday 18:11
+      - paragraph: You take the cup.
+    - article:
+      - paragraph:
+        - text: "> take another sip of coffee"
+        - generic: Day 0 · Friday 18:12
+      - paragraph: You take a sip of coffee from the cup.
+    - article:
+      - paragraph:
+        - text: "> finish cup"
+        - generic: Day 0 · Friday 18:13
+      - paragraph: You finish your coffee; the empty cup remains in your hand.
+    - article:
+      - paragraph:
+        - text: "> ask for another drink"
+        - generic: Day 0 · Friday 18:15
+      - paragraph: "Sable: Would you like your usual coffee? The offer is for the cup."
+  - generic: What do you do?
+  - textbox "Command" [active]
+  - button "Enter"
+  - navigation "Untimed information":
+    - button "Look"
+    - button "Journal"
+    - button "Belongings"
+    - button "Help"
+  - paragraph: Reading and time away from this application never advance the story.
+  - text: Import a Sable trial save
+  - button "Import a Sable trial save"

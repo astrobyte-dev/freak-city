@@ -1,0 +1,2850 @@
+{
+  "kind": "freak-city-sable-playtest-diagnostic",
+  "reportSchema": 1,
+  "warning": "STORY SPOILERS AND INTERNAL STATE. Diagnostic report, not a directly importable save. The separate Export trial save control creates restorable saves.",
+  "identifiers": {
+    "campaign": "sable-trial",
+    "saveVersion": 1,
+    "saveRevision": 3,
+    "recordingFormat": 1,
+    "trialBuild": "sable-foundations-3",
+    "appVersion": "not supplied",
+    "baseCommit": "not supplied"
+  },
+  "note": "Synthetic reducer replay, not a human transcript. Validated save/reload after every command.",
+  "recordingLimits": "Per-command diagnostics and locations exist only where recorded. Missing older data has not been inferred. No unrelated storage or machine metadata is collected.",
+  "state": {
+    "campaign": "sable-trial",
+    "version": 1,
+    "revision": 3,
+    "seed": "SABLE-1",
+    "alias": "Foundation",
+    "adult": true,
+    "time": 1093,
+    "turn": 8,
+    "room": "bar",
+    "truth": {
+      "party": "Sable worked at the Cat's Cradle closing party five years ago.",
+      "donor": "Nessa voluntarily sold hospital memories four years ago; she does not know the scheme or Sable.",
+      "intervention": "Three years ago, during a short surgical admission, Silas stole party memories and implanted an edited hospital composite without consent.",
+      "construction": "Recorded source material, specialist equipment, editing and time are required. Source viewpoint persists in raw recordings; edited composites can reframe it. Arbitrary instant fabrication is impossible.",
+      "ghost": "Materially reorganized autobiographical continuity after non-consensual implantation; not a numerical majority of invented life.",
+      "failure": "Thursday 18:00 before opening: endorsement implantation failed, installing no usable memory and erasing no subsequent life. Older suppression destabilized.",
+      "friendship": "Sable is the player's first genuine friend in their three weeks here. The friendship formed after implantation and is real.",
+      "motive": "The Regulars want present-day community endorsement, not repaired historical testimony."
+    },
+    "entities": {
+      "trial-photo": {
+        "id": "trial-photo",
+        "kind": "Evidence",
+        "name": "photograph",
+        "aliases": [
+          "photo",
+          "print",
+          "picture"
+        ],
+        "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+        "location": "player",
+        "visible": true,
+        "portable": true,
+        "destroyed": false,
+        "properties": {},
+        "verbs": [],
+        "facts": []
+      },
+      "trial-listing": {
+        "id": "trial-listing",
+        "kind": "Evidence",
+        "name": "provenance listing",
+        "aliases": [
+          "listing",
+          "provenance",
+          "flyer"
+        ],
+        "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+        "location": "shop",
+        "visible": true,
+        "portable": true,
+        "destroyed": false,
+        "properties": {},
+        "verbs": [],
+        "facts": []
+      },
+      "trial-bag": {
+        "id": "trial-bag",
+        "kind": "Container",
+        "name": "satchel",
+        "aliases": [
+          "bag"
+        ],
+        "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+        "location": "player",
+        "visible": true,
+        "portable": true,
+        "open": true,
+        "destroyed": false,
+        "properties": {},
+        "verbs": [],
+        "facts": []
+      },
+      "trial-report": {
+        "id": "trial-report",
+        "kind": "Evidence",
+        "name": "medical report",
+        "aliases": [
+          "report",
+          "medical record"
+        ],
+        "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+        "location": "unplaced",
+        "visible": true,
+        "portable": true,
+        "destroyed": false,
+        "properties": {},
+        "verbs": [],
+        "facts": []
+      },
+      "trial-notebook": {
+        "id": "trial-notebook",
+        "kind": "Evidence",
+        "name": "notebook",
+        "aliases": [
+          "notebook",
+          "notes",
+          "journal book"
+        ],
+        "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+        "location": "unplaced",
+        "visible": true,
+        "portable": true,
+        "destroyed": false,
+        "properties": {},
+        "verbs": [],
+        "facts": []
+      },
+      "trial-cup": {
+        "id": "trial-cup",
+        "kind": "Container",
+        "name": "cup",
+        "aliases": [
+          "cup"
+        ],
+        "description": "An ordinary cup.",
+        "location": "unplaced",
+        "visible": true,
+        "portable": true,
+        "open": true,
+        "destroyed": false,
+        "properties": {
+          "interaction": "vessel",
+          "capacity": 3,
+          "remaining": 0
+        },
+        "verbs": [],
+        "facts": []
+      },
+      "trial-glass": {
+        "id": "trial-glass",
+        "kind": "Container",
+        "name": "glass",
+        "aliases": [
+          "glass"
+        ],
+        "description": "An ordinary glass.",
+        "location": "unplaced",
+        "visible": true,
+        "portable": true,
+        "open": true,
+        "destroyed": false,
+        "properties": {
+          "interaction": "vessel",
+          "capacity": 3,
+          "remaining": 0
+        },
+        "verbs": [],
+        "facts": []
+      },
+      "trial-counter": {
+        "id": "trial-counter",
+        "kind": "Container",
+        "name": "counter",
+        "aliases": [
+          "bar counter"
+        ],
+        "description": "A worn wooden serving counter. You can set a held object on it.",
+        "location": "bar",
+        "visible": true,
+        "portable": false,
+        "open": true,
+        "destroyed": false,
+        "properties": {
+          "supporter": true
+        },
+        "verbs": [],
+        "facts": []
+      },
+      "trial-menu": {
+        "id": "trial-menu",
+        "kind": "Object",
+        "name": "menu",
+        "aliases": [
+          "cocktail menu",
+          "back of menu",
+          "menu reverse",
+          "costume notes",
+          "theme night notes"
+        ],
+        "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+        "location": "trial-counter",
+        "visible": true,
+        "portable": false,
+        "destroyed": false,
+        "properties": {},
+        "verbs": [],
+        "facts": []
+      }
+    },
+    "observations": [
+      {
+        "id": "sable:observation:1",
+        "at": 1080,
+        "actor": "sable",
+        "mode": "claim",
+        "subject": "photo",
+        "detail": "Sable, I found a picture that might show you",
+        "source": "Player's unverified account",
+        "upstream": [],
+        "evidence": [
+          "trial-photo"
+        ]
+      },
+      {
+        "id": "sable:observation:2",
+        "at": 1086,
+        "actor": "player",
+        "mode": "custody",
+        "subject": "trial-photo",
+        "detail": "You take the photograph.",
+        "source": "Player's present words or action",
+        "upstream": [],
+        "evidence": [
+          "trial-photo"
+        ]
+      },
+      {
+        "id": "sable:observation:3",
+        "at": 1089,
+        "actor": "sable",
+        "mode": "inspected",
+        "subject": "trial-photo",
+        "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+        "source": "Player directly showed the accessible original",
+        "upstream": [],
+        "evidence": [
+          "trial-photo"
+        ]
+      },
+      {
+        "id": "sable:observation:4",
+        "at": 1091,
+        "actor": "player",
+        "mode": "inspected",
+        "subject": "trial-menu",
+        "detail": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+        "source": "Inspected menu",
+        "upstream": [],
+        "evidence": [
+          "trial-menu"
+        ]
+      }
+    ],
+    "nextId": 5,
+    "actors": {
+      "player": {
+        "knowledge": [
+          "trial-menu"
+        ],
+        "beliefs": {}
+      },
+      "sable": {
+        "knowledge": [
+          "trial-photo"
+        ],
+        "beliefs": {
+          "hospital": {
+            "text": "I was continuously hospitalized that year.",
+            "source": "implanted autobiographical account",
+            "at": 0
+          },
+          "sable:observation:1": {
+            "text": "Sable, I found a picture that might show you",
+            "source": "sable:observation:1",
+            "at": 1080
+          }
+        }
+      },
+      "vesper": {
+        "knowledge": [],
+        "beliefs": {}
+      },
+      "regulars": {
+        "knowledge": [],
+        "beliefs": {}
+      },
+      "silas": {
+        "knowledge": [],
+        "beliefs": {}
+      }
+    },
+    "events": [],
+    "objectFocus": [
+      "trial-menu"
+    ],
+    "saveMigrations": [],
+    "thoughtsShown": [],
+    "socialCount": 0,
+    "socialSeen": [
+      "supplier:question"
+    ],
+    "companyOffers": [],
+    "roleplay": "implied",
+    "treatment": [],
+    "away": false,
+    "needsTime": false,
+    "context": {
+      "kind": "evidence",
+      "room": "bar",
+      "at": 1091,
+      "interlocutor": "sable",
+      "topic": "photo",
+      "references": [
+        "trial-photo"
+      ]
+    },
+    "transcript": [
+      {
+        "command": "",
+        "at": 1080,
+        "lines": [
+          "Three weeks in the city. One genuine friend. Sable waves you into the Velvet Corner with a cocktail menu propped on the counter like a royal pardon.",
+          "Sable: ‘Tonight's special is Minor Administrative Disappointment. Alcohol optional. The disappointment is locally sourced.’",
+          "They are rehearsing a complaint to a supplier who sent twelve lids and no jars. Ask about their evening, order something, or just keep them company. The secondhand shop next door is open; your apartment is a short walk away.",
+          "Sable lowers the supplier complaint. ‘Would you say “a lid implies a vessel” sounds threatening? I've spent half an hour making it less threatening.’",
+          "This local chapter trial advances only when you act. LOOK, HELP, JOURNAL and private THINK are untimed. REST UNTIL TOMORROW at home is an optional jump to the next evening, with all intervening consequences preserved."
+        ],
+        "failed": false,
+        "room": "bar"
+      },
+      {
+        "command": "Sable, I found a picture that might show you",
+        "at": 1082,
+        "lines": [
+          "Sable: ‘You found a photograph? I'd like to see it. Hearing about it isn't the same as inspecting it; let's keep the claim separate from what we can check.’"
+        ],
+        "failed": false,
+        "room": "bar",
+        "startedAt": 1080,
+        "startRoom": "bar",
+        "diagnostics": [
+          {
+            "command": "Sable, I found a picture that might show you",
+            "intent": "conversation:photo-claim",
+            "outcome": "handled",
+            "from": 1080,
+            "to": 1082,
+            "roomBefore": "bar",
+            "roomAfter": "bar",
+            "meaning": {
+              "kind": "claim",
+              "interlocutor": "sable",
+              "subject": "photo",
+              "entities": [
+                "trial-photo"
+              ]
+            },
+            "changes": [
+              {
+                "field": "actors",
+                "before": {
+                  "player": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "sable": {
+                    "knowledge": [],
+                    "beliefs": {
+                      "hospital": {
+                        "text": "I was continuously hospitalized that year.",
+                        "source": "implanted autobiographical account",
+                        "at": 0
+                      }
+                    }
+                  },
+                  "vesper": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "regulars": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "silas": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  }
+                },
+                "after": {
+                  "player": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "sable": {
+                    "knowledge": [],
+                    "beliefs": {
+                      "hospital": {
+                        "text": "I was continuously hospitalized that year.",
+                        "source": "implanted autobiographical account",
+                        "at": 0
+                      },
+                      "sable:observation:1": {
+                        "text": "Sable, I found a picture that might show you",
+                        "source": "sable:observation:1",
+                        "at": 1080
+                      }
+                    }
+                  },
+                  "vesper": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "regulars": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "silas": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  }
+                }
+              },
+              {
+                "field": "observations",
+                "before": [],
+                "after": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "evidence": [
+                      "trial-photo"
+                    ],
+                    "upstream": []
+                  }
+                ]
+              },
+              {
+                "field": "context",
+                "before": {
+                  "kind": "social",
+                  "room": "bar",
+                  "at": 1080,
+                  "interlocutor": "sable",
+                  "topic": "supplier",
+                  "references": [],
+                  "question": {
+                    "kind": "opinion",
+                    "subject": "supplier"
+                  }
+                },
+                "after": {
+                  "interlocutor": "sable",
+                  "kind": "evidence",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ],
+                  "at": 1080,
+                  "room": "bar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "tell me more",
+        "at": 1084,
+        "lines": [
+          "Sable: ‘I haven't seen the photograph. Can you show it to me? I can't judge its details from a question.’"
+        ],
+        "failed": false,
+        "room": "bar",
+        "startedAt": 1082,
+        "startRoom": "bar",
+        "diagnostics": [
+          {
+            "command": "tell me more",
+            "intent": "conversation:photo",
+            "outcome": "handled",
+            "from": 1082,
+            "to": 1084,
+            "roomBefore": "bar",
+            "roomAfter": "bar",
+            "meaning": {
+              "kind": "followup",
+              "interlocutor": "sable",
+              "subject": "photo",
+              "entities": []
+            },
+            "changes": [
+              {
+                "field": "context",
+                "before": {
+                  "kind": "evidence",
+                  "room": "bar",
+                  "at": 1080,
+                  "interlocutor": "sable",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ]
+                },
+                "after": {
+                  "interlocutor": "sable",
+                  "kind": "evidence",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ],
+                  "at": 1082,
+                  "room": "bar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "go shop",
+        "at": 1086,
+        "lines": [
+          "You go to Secondhand shop.",
+          "Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take if they are still here. The bar and home are nearby.",
+          "Here: photograph.",
+          "Here: provenance listing."
+        ],
+        "failed": false,
+        "room": "shop",
+        "startedAt": 1084,
+        "startRoom": "bar",
+        "diagnostics": [
+          {
+            "command": "go shop",
+            "intent": "language-verb:go (handler detail not recorded)",
+            "outcome": "handled",
+            "from": 1084,
+            "to": 1086,
+            "roomBefore": "bar",
+            "roomAfter": "shop",
+            "changes": [
+              {
+                "field": "room",
+                "before": "bar",
+                "after": "shop"
+              },
+              {
+                "field": "context",
+                "before": {
+                  "kind": "evidence",
+                  "room": "bar",
+                  "at": 1082,
+                  "interlocutor": "sable",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ]
+                },
+                "after": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "take photo",
+        "at": 1087,
+        "lines": [
+          "You take the photograph. You haven't read it by taking it."
+        ],
+        "failed": false,
+        "room": "shop",
+        "startedAt": 1086,
+        "startRoom": "shop",
+        "diagnostics": [
+          {
+            "command": "take photo",
+            "intent": "object:take",
+            "outcome": "handled",
+            "from": 1086,
+            "to": 1087,
+            "roomBefore": "shop",
+            "roomAfter": "shop",
+            "meaning": {
+              "kind": "object",
+              "entities": [
+                "trial-photo"
+              ]
+            },
+            "changes": [
+              {
+                "field": "entities",
+                "before": {
+                  "trial-photo": {
+                    "id": "trial-photo",
+                    "kind": "Evidence",
+                    "name": "photograph",
+                    "aliases": [
+                      "photo",
+                      "print",
+                      "picture"
+                    ],
+                    "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                    "location": "shop",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-listing": {
+                    "id": "trial-listing",
+                    "kind": "Evidence",
+                    "name": "provenance listing",
+                    "aliases": [
+                      "listing",
+                      "provenance",
+                      "flyer"
+                    ],
+                    "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                    "location": "shop",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-bag": {
+                    "id": "trial-bag",
+                    "kind": "Container",
+                    "name": "satchel",
+                    "aliases": [
+                      "bag"
+                    ],
+                    "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                    "location": "player",
+                    "visible": true,
+                    "portable": true,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-report": {
+                    "id": "trial-report",
+                    "kind": "Evidence",
+                    "name": "medical report",
+                    "aliases": [
+                      "report",
+                      "medical record"
+                    ],
+                    "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-notebook": {
+                    "id": "trial-notebook",
+                    "kind": "Evidence",
+                    "name": "notebook",
+                    "aliases": [
+                      "notebook",
+                      "notes",
+                      "journal book"
+                    ],
+                    "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-cup": {
+                    "id": "trial-cup",
+                    "kind": "Container",
+                    "name": "cup",
+                    "aliases": [
+                      "cup"
+                    ],
+                    "description": "An ordinary cup.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {
+                      "interaction": "vessel",
+                      "capacity": 3,
+                      "remaining": 0
+                    },
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-glass": {
+                    "id": "trial-glass",
+                    "kind": "Container",
+                    "name": "glass",
+                    "aliases": [
+                      "glass"
+                    ],
+                    "description": "An ordinary glass.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {
+                      "interaction": "vessel",
+                      "capacity": 3,
+                      "remaining": 0
+                    },
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-counter": {
+                    "id": "trial-counter",
+                    "kind": "Container",
+                    "name": "counter",
+                    "aliases": [
+                      "bar counter"
+                    ],
+                    "description": "A worn wooden serving counter. You can set a held object on it.",
+                    "location": "bar",
+                    "visible": true,
+                    "portable": false,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {
+                      "supporter": true
+                    },
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-menu": {
+                    "id": "trial-menu",
+                    "kind": "Object",
+                    "name": "menu",
+                    "aliases": [
+                      "cocktail menu",
+                      "back of menu",
+                      "menu reverse",
+                      "costume notes",
+                      "theme night notes"
+                    ],
+                    "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                    "location": "trial-counter",
+                    "visible": true,
+                    "portable": false,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  }
+                },
+                "after": {
+                  "trial-photo": {
+                    "id": "trial-photo",
+                    "kind": "Evidence",
+                    "name": "photograph",
+                    "aliases": [
+                      "photo",
+                      "print",
+                      "picture"
+                    ],
+                    "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                    "location": "player",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-listing": {
+                    "id": "trial-listing",
+                    "kind": "Evidence",
+                    "name": "provenance listing",
+                    "aliases": [
+                      "listing",
+                      "provenance",
+                      "flyer"
+                    ],
+                    "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                    "location": "shop",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-bag": {
+                    "id": "trial-bag",
+                    "kind": "Container",
+                    "name": "satchel",
+                    "aliases": [
+                      "bag"
+                    ],
+                    "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                    "location": "player",
+                    "visible": true,
+                    "portable": true,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-report": {
+                    "id": "trial-report",
+                    "kind": "Evidence",
+                    "name": "medical report",
+                    "aliases": [
+                      "report",
+                      "medical record"
+                    ],
+                    "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-notebook": {
+                    "id": "trial-notebook",
+                    "kind": "Evidence",
+                    "name": "notebook",
+                    "aliases": [
+                      "notebook",
+                      "notes",
+                      "journal book"
+                    ],
+                    "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-cup": {
+                    "id": "trial-cup",
+                    "kind": "Container",
+                    "name": "cup",
+                    "aliases": [
+                      "cup"
+                    ],
+                    "description": "An ordinary cup.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {
+                      "interaction": "vessel",
+                      "capacity": 3,
+                      "remaining": 0
+                    },
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-glass": {
+                    "id": "trial-glass",
+                    "kind": "Container",
+                    "name": "glass",
+                    "aliases": [
+                      "glass"
+                    ],
+                    "description": "An ordinary glass.",
+                    "location": "unplaced",
+                    "visible": true,
+                    "portable": true,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {
+                      "interaction": "vessel",
+                      "capacity": 3,
+                      "remaining": 0
+                    },
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-counter": {
+                    "id": "trial-counter",
+                    "kind": "Container",
+                    "name": "counter",
+                    "aliases": [
+                      "bar counter"
+                    ],
+                    "description": "A worn wooden serving counter. You can set a held object on it.",
+                    "location": "bar",
+                    "visible": true,
+                    "portable": false,
+                    "open": true,
+                    "destroyed": false,
+                    "properties": {
+                      "supporter": true
+                    },
+                    "verbs": [],
+                    "facts": []
+                  },
+                  "trial-menu": {
+                    "id": "trial-menu",
+                    "kind": "Object",
+                    "name": "menu",
+                    "aliases": [
+                      "cocktail menu",
+                      "back of menu",
+                      "menu reverse",
+                      "costume notes",
+                      "theme night notes"
+                    ],
+                    "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                    "location": "trial-counter",
+                    "visible": true,
+                    "portable": false,
+                    "destroyed": false,
+                    "properties": {},
+                    "verbs": [],
+                    "facts": []
+                  }
+                }
+              },
+              {
+                "field": "observations",
+                "before": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:2",
+                    "at": 1086,
+                    "actor": "player",
+                    "mode": "custody",
+                    "subject": "trial-photo",
+                    "detail": "You take the photograph.",
+                    "source": "Player's present words or action",
+                    "evidence": [
+                      "trial-photo"
+                    ],
+                    "upstream": []
+                  }
+                ]
+              },
+              {
+                "field": "objectFocus",
+                "before": [],
+                "after": [
+                  "trial-photo"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "go bar",
+        "at": 1089,
+        "lines": [
+          "You go to The Velvet Corner.",
+          "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside.",
+          "Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.",
+          "Here: counter.",
+          "Here: menu."
+        ],
+        "failed": false,
+        "room": "bar",
+        "startedAt": 1087,
+        "startRoom": "shop",
+        "diagnostics": [
+          {
+            "command": "go bar",
+            "intent": "language-verb:go (handler detail not recorded)",
+            "outcome": "handled",
+            "from": 1087,
+            "to": 1089,
+            "roomBefore": "shop",
+            "roomAfter": "bar",
+            "changes": [
+              {
+                "field": "room",
+                "before": "shop",
+                "after": "bar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "show photo to Sable",
+        "at": 1091,
+        "lines": [
+          "Sable inspects the photograph. You keep custody."
+        ],
+        "failed": false,
+        "room": "bar",
+        "startedAt": 1089,
+        "startRoom": "bar",
+        "diagnostics": [
+          {
+            "command": "show photo to Sable",
+            "intent": "object:show",
+            "outcome": "handled",
+            "from": 1089,
+            "to": 1091,
+            "roomBefore": "bar",
+            "roomAfter": "bar",
+            "meaning": {
+              "kind": "object",
+              "interlocutor": "sable",
+              "entities": [
+                "trial-photo"
+              ]
+            },
+            "changes": [
+              {
+                "field": "actors",
+                "before": {
+                  "player": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "sable": {
+                    "knowledge": [],
+                    "beliefs": {
+                      "hospital": {
+                        "text": "I was continuously hospitalized that year.",
+                        "source": "implanted autobiographical account",
+                        "at": 0
+                      },
+                      "sable:observation:1": {
+                        "text": "Sable, I found a picture that might show you",
+                        "source": "sable:observation:1",
+                        "at": 1080
+                      }
+                    }
+                  },
+                  "vesper": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "regulars": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "silas": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  }
+                },
+                "after": {
+                  "player": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "sable": {
+                    "knowledge": [
+                      "trial-photo"
+                    ],
+                    "beliefs": {
+                      "hospital": {
+                        "text": "I was continuously hospitalized that year.",
+                        "source": "implanted autobiographical account",
+                        "at": 0
+                      },
+                      "sable:observation:1": {
+                        "text": "Sable, I found a picture that might show you",
+                        "source": "sable:observation:1",
+                        "at": 1080
+                      }
+                    }
+                  },
+                  "vesper": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "regulars": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "silas": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  }
+                }
+              },
+              {
+                "field": "observations",
+                "before": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:2",
+                    "at": 1086,
+                    "actor": "player",
+                    "mode": "custody",
+                    "subject": "trial-photo",
+                    "detail": "You take the photograph.",
+                    "source": "Player's present words or action",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:2",
+                    "at": 1086,
+                    "actor": "player",
+                    "mode": "custody",
+                    "subject": "trial-photo",
+                    "detail": "You take the photograph.",
+                    "source": "Player's present words or action",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:3",
+                    "at": 1089,
+                    "actor": "sable",
+                    "mode": "inspected",
+                    "subject": "trial-photo",
+                    "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                    "source": "Player directly showed the accessible original",
+                    "evidence": [
+                      "trial-photo"
+                    ],
+                    "upstream": []
+                  }
+                ]
+              },
+              {
+                "field": "context",
+                "before": null,
+                "after": {
+                  "interlocutor": "sable",
+                  "kind": "evidence",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ],
+                  "at": 1089,
+                  "room": "bar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "read menu",
+        "at": 1091,
+        "lines": [
+          "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting."
+        ],
+        "failed": false,
+        "room": "bar",
+        "startedAt": 1091,
+        "startRoom": "bar",
+        "diagnostics": [
+          {
+            "command": "read menu",
+            "intent": "object:examine",
+            "outcome": "handled",
+            "from": 1091,
+            "to": 1091,
+            "roomBefore": "bar",
+            "roomAfter": "bar",
+            "meaning": {
+              "kind": "object",
+              "entities": [
+                "trial-menu"
+              ]
+            },
+            "changes": [
+              {
+                "field": "actors",
+                "before": {
+                  "player": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "sable": {
+                    "knowledge": [
+                      "trial-photo"
+                    ],
+                    "beliefs": {
+                      "hospital": {
+                        "text": "I was continuously hospitalized that year.",
+                        "source": "implanted autobiographical account",
+                        "at": 0
+                      },
+                      "sable:observation:1": {
+                        "text": "Sable, I found a picture that might show you",
+                        "source": "sable:observation:1",
+                        "at": 1080
+                      }
+                    }
+                  },
+                  "vesper": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "regulars": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "silas": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  }
+                },
+                "after": {
+                  "player": {
+                    "knowledge": [
+                      "trial-menu"
+                    ],
+                    "beliefs": {}
+                  },
+                  "sable": {
+                    "knowledge": [
+                      "trial-photo"
+                    ],
+                    "beliefs": {
+                      "hospital": {
+                        "text": "I was continuously hospitalized that year.",
+                        "source": "implanted autobiographical account",
+                        "at": 0
+                      },
+                      "sable:observation:1": {
+                        "text": "Sable, I found a picture that might show you",
+                        "source": "sable:observation:1",
+                        "at": 1080
+                      }
+                    }
+                  },
+                  "vesper": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "regulars": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  },
+                  "silas": {
+                    "knowledge": [],
+                    "beliefs": {}
+                  }
+                }
+              },
+              {
+                "field": "observations",
+                "before": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:2",
+                    "at": 1086,
+                    "actor": "player",
+                    "mode": "custody",
+                    "subject": "trial-photo",
+                    "detail": "You take the photograph.",
+                    "source": "Player's present words or action",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:3",
+                    "at": 1089,
+                    "actor": "sable",
+                    "mode": "inspected",
+                    "subject": "trial-photo",
+                    "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                    "source": "Player directly showed the accessible original",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  }
+                ],
+                "after": [
+                  {
+                    "id": "sable:observation:1",
+                    "at": 1080,
+                    "actor": "sable",
+                    "mode": "claim",
+                    "subject": "photo",
+                    "detail": "Sable, I found a picture that might show you",
+                    "source": "Player's unverified account",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:2",
+                    "at": 1086,
+                    "actor": "player",
+                    "mode": "custody",
+                    "subject": "trial-photo",
+                    "detail": "You take the photograph.",
+                    "source": "Player's present words or action",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:3",
+                    "at": 1089,
+                    "actor": "sable",
+                    "mode": "inspected",
+                    "subject": "trial-photo",
+                    "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                    "source": "Player directly showed the accessible original",
+                    "upstream": [],
+                    "evidence": [
+                      "trial-photo"
+                    ]
+                  },
+                  {
+                    "id": "sable:observation:4",
+                    "at": 1091,
+                    "actor": "player",
+                    "mode": "inspected",
+                    "subject": "trial-menu",
+                    "detail": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                    "source": "Inspected menu",
+                    "evidence": [
+                      "trial-menu"
+                    ],
+                    "upstream": []
+                  }
+                ]
+              },
+              {
+                "field": "objectFocus",
+                "before": [
+                  "trial-photo"
+                ],
+                "after": [
+                  "trial-menu"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "command": "tell me more",
+        "at": 1093,
+        "lines": [
+          "Sable: ‘I can see the picture, but the occasion needs a separate dated source. The photograph alone doesn't settle it.’"
+        ],
+        "failed": false,
+        "room": "bar",
+        "startedAt": 1091,
+        "startRoom": "bar",
+        "diagnostics": [
+          {
+            "command": "tell me more",
+            "intent": "conversation:photo",
+            "outcome": "handled",
+            "from": 1091,
+            "to": 1093,
+            "roomBefore": "bar",
+            "roomAfter": "bar",
+            "meaning": {
+              "kind": "followup",
+              "interlocutor": "sable",
+              "subject": "photo",
+              "entities": []
+            },
+            "changes": [
+              {
+                "field": "context",
+                "before": {
+                  "kind": "evidence",
+                  "room": "bar",
+                  "at": 1089,
+                  "interlocutor": "sable",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ]
+                },
+                "after": {
+                  "interlocutor": "sable",
+                  "kind": "evidence",
+                  "topic": "photo",
+                  "references": [
+                    "trial-photo"
+                  ],
+                  "at": 1091,
+                  "room": "bar"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "events": {
+    "pending": [],
+    "completed": [],
+    "cancelled": []
+  },
+  "custody": [
+    {
+      "id": "trial-photo",
+      "location": "player",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-listing",
+      "location": "shop",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-bag",
+      "location": "player",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-report",
+      "location": "unplaced",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-notebook",
+      "location": "unplaced",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-cup",
+      "location": "unplaced",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-glass",
+      "location": "unplaced",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-counter",
+      "location": "bar",
+      "owner": null,
+      "destroyed": false
+    },
+    {
+      "id": "trial-menu",
+      "location": "trial-counter",
+      "owner": null,
+      "destroyed": false
+    }
+  ],
+  "knowledge": {
+    "actors": {
+      "player": {
+        "knowledge": [
+          "trial-menu"
+        ],
+        "beliefs": {}
+      },
+      "sable": {
+        "knowledge": [
+          "trial-photo"
+        ],
+        "beliefs": {
+          "hospital": {
+            "text": "I was continuously hospitalized that year.",
+            "source": "implanted autobiographical account",
+            "at": 0
+          },
+          "sable:observation:1": {
+            "text": "Sable, I found a picture that might show you",
+            "source": "sable:observation:1",
+            "at": 1080
+          }
+        }
+      },
+      "vesper": {
+        "knowledge": [],
+        "beliefs": {}
+      },
+      "regulars": {
+        "knowledge": [],
+        "beliefs": {}
+      },
+      "silas": {
+        "knowledge": [],
+        "beliefs": {}
+      }
+    },
+    "provenance": [
+      {
+        "id": "sable:observation:1",
+        "at": 1080,
+        "actor": "sable",
+        "mode": "claim",
+        "subject": "photo",
+        "detail": "Sable, I found a picture that might show you",
+        "source": "Player's unverified account",
+        "upstream": [],
+        "evidence": [
+          "trial-photo"
+        ]
+      },
+      {
+        "id": "sable:observation:2",
+        "at": 1086,
+        "actor": "player",
+        "mode": "custody",
+        "subject": "trial-photo",
+        "detail": "You take the photograph.",
+        "source": "Player's present words or action",
+        "upstream": [],
+        "evidence": [
+          "trial-photo"
+        ]
+      },
+      {
+        "id": "sable:observation:3",
+        "at": 1089,
+        "actor": "sable",
+        "mode": "inspected",
+        "subject": "trial-photo",
+        "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+        "source": "Player directly showed the accessible original",
+        "upstream": [],
+        "evidence": [
+          "trial-photo"
+        ]
+      },
+      {
+        "id": "sable:observation:4",
+        "at": 1091,
+        "actor": "player",
+        "mode": "inspected",
+        "subject": "trial-menu",
+        "detail": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+        "source": "Inspected menu",
+        "upstream": [],
+        "evidence": [
+          "trial-menu"
+        ]
+      }
+    ]
+  },
+  "conversation": {
+    "context": {
+      "kind": "evidence",
+      "room": "bar",
+      "at": 1091,
+      "interlocutor": "sable",
+      "topic": "photo",
+      "references": [
+        "trial-photo"
+      ]
+    },
+    "preference": null,
+    "servedDrink": null
+  },
+  "sable": {
+    "receipt": null,
+    "decision": null,
+    "completed": null,
+    "treatment": []
+  },
+  "history": {
+    "format": 1,
+    "segments": [
+      {
+        "id": 1,
+        "reason": "resume",
+        "alias": "Foundation",
+        "seed": "SABLE-1",
+        "at": 1093,
+        "room": "bar",
+        "inheritedEntries": 9,
+        "note": "Existing saved transcript recovered. Earlier restore/restart boundaries and history not present in this save are unavailable.",
+        "entries": [
+          {
+            "command": "",
+            "at": 1080,
+            "lines": [
+              "Three weeks in the city. One genuine friend. Sable waves you into the Velvet Corner with a cocktail menu propped on the counter like a royal pardon.",
+              "Sable: ‘Tonight's special is Minor Administrative Disappointment. Alcohol optional. The disappointment is locally sourced.’",
+              "They are rehearsing a complaint to a supplier who sent twelve lids and no jars. Ask about their evening, order something, or just keep them company. The secondhand shop next door is open; your apartment is a short walk away.",
+              "Sable lowers the supplier complaint. ‘Would you say “a lid implies a vessel” sounds threatening? I've spent half an hour making it less threatening.’",
+              "This local chapter trial advances only when you act. LOOK, HELP, JOURNAL and private THINK are untimed. REST UNTIL TOMORROW at home is an optional jump to the next evening, with all intervening consequences preserved."
+            ],
+            "failed": false,
+            "room": "bar"
+          },
+          {
+            "command": "Sable, I found a picture that might show you",
+            "at": 1082,
+            "lines": [
+              "Sable: ‘You found a photograph? I'd like to see it. Hearing about it isn't the same as inspecting it; let's keep the claim separate from what we can check.’"
+            ],
+            "failed": false,
+            "room": "bar",
+            "startedAt": 1080,
+            "startRoom": "bar",
+            "diagnostics": [
+              {
+                "command": "Sable, I found a picture that might show you",
+                "intent": "conversation:photo-claim",
+                "outcome": "handled",
+                "from": 1080,
+                "to": 1082,
+                "roomBefore": "bar",
+                "roomAfter": "bar",
+                "meaning": {
+                  "kind": "claim",
+                  "interlocutor": "sable",
+                  "subject": "photo",
+                  "entities": [
+                    "trial-photo"
+                  ]
+                },
+                "changes": [
+                  {
+                    "field": "actors",
+                    "before": {
+                      "player": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "sable": {
+                        "knowledge": [],
+                        "beliefs": {
+                          "hospital": {
+                            "text": "I was continuously hospitalized that year.",
+                            "source": "implanted autobiographical account",
+                            "at": 0
+                          }
+                        }
+                      },
+                      "vesper": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "regulars": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "silas": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      }
+                    },
+                    "after": {
+                      "player": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "sable": {
+                        "knowledge": [],
+                        "beliefs": {
+                          "hospital": {
+                            "text": "I was continuously hospitalized that year.",
+                            "source": "implanted autobiographical account",
+                            "at": 0
+                          },
+                          "sable:observation:1": {
+                            "text": "Sable, I found a picture that might show you",
+                            "source": "sable:observation:1",
+                            "at": 1080
+                          }
+                        }
+                      },
+                      "vesper": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "regulars": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "silas": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      }
+                    }
+                  },
+                  {
+                    "field": "observations",
+                    "before": [],
+                    "after": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "evidence": [
+                          "trial-photo"
+                        ],
+                        "upstream": []
+                      }
+                    ]
+                  },
+                  {
+                    "field": "context",
+                    "before": {
+                      "kind": "social",
+                      "room": "bar",
+                      "at": 1080,
+                      "interlocutor": "sable",
+                      "topic": "supplier",
+                      "references": [],
+                      "question": {
+                        "kind": "opinion",
+                        "subject": "supplier"
+                      }
+                    },
+                    "after": {
+                      "interlocutor": "sable",
+                      "kind": "evidence",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ],
+                      "at": 1080,
+                      "room": "bar"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "tell me more",
+            "at": 1084,
+            "lines": [
+              "Sable: ‘I haven't seen the photograph. Can you show it to me? I can't judge its details from a question.’"
+            ],
+            "failed": false,
+            "room": "bar",
+            "startedAt": 1082,
+            "startRoom": "bar",
+            "diagnostics": [
+              {
+                "command": "tell me more",
+                "intent": "conversation:photo",
+                "outcome": "handled",
+                "from": 1082,
+                "to": 1084,
+                "roomBefore": "bar",
+                "roomAfter": "bar",
+                "meaning": {
+                  "kind": "followup",
+                  "interlocutor": "sable",
+                  "subject": "photo",
+                  "entities": []
+                },
+                "changes": [
+                  {
+                    "field": "context",
+                    "before": {
+                      "kind": "evidence",
+                      "room": "bar",
+                      "at": 1080,
+                      "interlocutor": "sable",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ]
+                    },
+                    "after": {
+                      "interlocutor": "sable",
+                      "kind": "evidence",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ],
+                      "at": 1082,
+                      "room": "bar"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "go shop",
+            "at": 1086,
+            "lines": [
+              "You go to Secondhand shop.",
+              "Vesper is sorting a photographer's clearance lot. The photograph and provenance listing are available to take if they are still here. The bar and home are nearby.",
+              "Here: photograph.",
+              "Here: provenance listing."
+            ],
+            "failed": false,
+            "room": "shop",
+            "startedAt": 1084,
+            "startRoom": "bar",
+            "diagnostics": [
+              {
+                "command": "go shop",
+                "intent": "language-verb:go (handler detail not recorded)",
+                "outcome": "handled",
+                "from": 1084,
+                "to": 1086,
+                "roomBefore": "bar",
+                "roomAfter": "shop",
+                "changes": [
+                  {
+                    "field": "room",
+                    "before": "bar",
+                    "after": "shop"
+                  },
+                  {
+                    "field": "context",
+                    "before": {
+                      "kind": "evidence",
+                      "room": "bar",
+                      "at": 1082,
+                      "interlocutor": "sable",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ]
+                    },
+                    "after": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "take photo",
+            "at": 1087,
+            "lines": [
+              "You take the photograph. You haven't read it by taking it."
+            ],
+            "failed": false,
+            "room": "shop",
+            "startedAt": 1086,
+            "startRoom": "shop",
+            "diagnostics": [
+              {
+                "command": "take photo",
+                "intent": "object:take",
+                "outcome": "handled",
+                "from": 1086,
+                "to": 1087,
+                "roomBefore": "shop",
+                "roomAfter": "shop",
+                "meaning": {
+                  "kind": "object",
+                  "entities": [
+                    "trial-photo"
+                  ]
+                },
+                "changes": [
+                  {
+                    "field": "entities",
+                    "before": {
+                      "trial-photo": {
+                        "id": "trial-photo",
+                        "kind": "Evidence",
+                        "name": "photograph",
+                        "aliases": [
+                          "photo",
+                          "print",
+                          "picture"
+                        ],
+                        "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                        "location": "shop",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-listing": {
+                        "id": "trial-listing",
+                        "kind": "Evidence",
+                        "name": "provenance listing",
+                        "aliases": [
+                          "listing",
+                          "provenance",
+                          "flyer"
+                        ],
+                        "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                        "location": "shop",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-bag": {
+                        "id": "trial-bag",
+                        "kind": "Container",
+                        "name": "satchel",
+                        "aliases": [
+                          "bag"
+                        ],
+                        "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                        "location": "player",
+                        "visible": true,
+                        "portable": true,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-report": {
+                        "id": "trial-report",
+                        "kind": "Evidence",
+                        "name": "medical report",
+                        "aliases": [
+                          "report",
+                          "medical record"
+                        ],
+                        "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-notebook": {
+                        "id": "trial-notebook",
+                        "kind": "Evidence",
+                        "name": "notebook",
+                        "aliases": [
+                          "notebook",
+                          "notes",
+                          "journal book"
+                        ],
+                        "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-cup": {
+                        "id": "trial-cup",
+                        "kind": "Container",
+                        "name": "cup",
+                        "aliases": [
+                          "cup"
+                        ],
+                        "description": "An ordinary cup.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {
+                          "interaction": "vessel",
+                          "capacity": 3,
+                          "remaining": 0
+                        },
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-glass": {
+                        "id": "trial-glass",
+                        "kind": "Container",
+                        "name": "glass",
+                        "aliases": [
+                          "glass"
+                        ],
+                        "description": "An ordinary glass.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {
+                          "interaction": "vessel",
+                          "capacity": 3,
+                          "remaining": 0
+                        },
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-counter": {
+                        "id": "trial-counter",
+                        "kind": "Container",
+                        "name": "counter",
+                        "aliases": [
+                          "bar counter"
+                        ],
+                        "description": "A worn wooden serving counter. You can set a held object on it.",
+                        "location": "bar",
+                        "visible": true,
+                        "portable": false,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {
+                          "supporter": true
+                        },
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-menu": {
+                        "id": "trial-menu",
+                        "kind": "Object",
+                        "name": "menu",
+                        "aliases": [
+                          "cocktail menu",
+                          "back of menu",
+                          "menu reverse",
+                          "costume notes",
+                          "theme night notes"
+                        ],
+                        "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                        "location": "trial-counter",
+                        "visible": true,
+                        "portable": false,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      }
+                    },
+                    "after": {
+                      "trial-photo": {
+                        "id": "trial-photo",
+                        "kind": "Evidence",
+                        "name": "photograph",
+                        "aliases": [
+                          "photo",
+                          "print",
+                          "picture"
+                        ],
+                        "description": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                        "location": "player",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-listing": {
+                        "id": "trial-listing",
+                        "kind": "Evidence",
+                        "name": "provenance listing",
+                        "aliases": [
+                          "listing",
+                          "provenance",
+                          "flyer"
+                        ],
+                        "description": "The shop's lot record accompanies an independently printed closing-event listing. The date, venue layout, decorations and photographed headline agree. Together they credibly place Sable at that event. They identify an occasion, not the motives of the people in the picture.",
+                        "location": "shop",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-bag": {
+                        "id": "trial-bag",
+                        "kind": "Container",
+                        "name": "satchel",
+                        "aliases": [
+                          "bag"
+                        ],
+                        "description": "Your ordinary satchel. A pocket with delusions of being an archive.",
+                        "location": "player",
+                        "visible": true,
+                        "portable": true,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-report": {
+                        "id": "trial-report",
+                        "kind": "Evidence",
+                        "name": "medical report",
+                        "aliases": [
+                          "report",
+                          "medical record"
+                        ],
+                        "description": "An abnormal finding compatible with prior intervention; alternative causes remain unresolved. A specialist referral is recommended. The finding alone cannot establish what happened, when, or why.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-notebook": {
+                        "id": "trial-notebook",
+                        "kind": "Evidence",
+                        "name": "notebook",
+                        "aliases": [
+                          "notebook",
+                          "notes",
+                          "journal book"
+                        ],
+                        "description": "Sable has separated remembered images from observed details. The photograph's event listing gives an independently checkable next step: ask the venue photographer to authenticate the lot and event date. A staff-side detail in a dream is recorded as uncertain, not a confirmed memory.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-cup": {
+                        "id": "trial-cup",
+                        "kind": "Container",
+                        "name": "cup",
+                        "aliases": [
+                          "cup"
+                        ],
+                        "description": "An ordinary cup.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {
+                          "interaction": "vessel",
+                          "capacity": 3,
+                          "remaining": 0
+                        },
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-glass": {
+                        "id": "trial-glass",
+                        "kind": "Container",
+                        "name": "glass",
+                        "aliases": [
+                          "glass"
+                        ],
+                        "description": "An ordinary glass.",
+                        "location": "unplaced",
+                        "visible": true,
+                        "portable": true,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {
+                          "interaction": "vessel",
+                          "capacity": 3,
+                          "remaining": 0
+                        },
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-counter": {
+                        "id": "trial-counter",
+                        "kind": "Container",
+                        "name": "counter",
+                        "aliases": [
+                          "bar counter"
+                        ],
+                        "description": "A worn wooden serving counter. You can set a held object on it.",
+                        "location": "bar",
+                        "visible": true,
+                        "portable": false,
+                        "open": true,
+                        "destroyed": false,
+                        "properties": {
+                          "supporter": true
+                        },
+                        "verbs": [],
+                        "facts": []
+                      },
+                      "trial-menu": {
+                        "id": "trial-menu",
+                        "kind": "Object",
+                        "name": "menu",
+                        "aliases": [
+                          "cocktail menu",
+                          "back of menu",
+                          "menu reverse",
+                          "costume notes",
+                          "theme night notes"
+                        ],
+                        "description": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                        "location": "trial-counter",
+                        "visible": true,
+                        "portable": false,
+                        "destroyed": false,
+                        "properties": {},
+                        "verbs": [],
+                        "facts": []
+                      }
+                    }
+                  },
+                  {
+                    "field": "observations",
+                    "before": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      }
+                    ],
+                    "after": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:2",
+                        "at": 1086,
+                        "actor": "player",
+                        "mode": "custody",
+                        "subject": "trial-photo",
+                        "detail": "You take the photograph.",
+                        "source": "Player's present words or action",
+                        "evidence": [
+                          "trial-photo"
+                        ],
+                        "upstream": []
+                      }
+                    ]
+                  },
+                  {
+                    "field": "objectFocus",
+                    "before": [],
+                    "after": [
+                      "trial-photo"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "go bar",
+            "at": 1089,
+            "lines": [
+              "You go to The Velvet Corner.",
+              "The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched glasses and a soft bass line from the speakers. The quiet booth is beyond the curtain. The shop and the way home are outside.",
+              "Sable is behind the counter, pencil tucked behind one ear. They have a quieter stretch between orders.",
+              "Here: counter.",
+              "Here: menu."
+            ],
+            "failed": false,
+            "room": "bar",
+            "startedAt": 1087,
+            "startRoom": "shop",
+            "diagnostics": [
+              {
+                "command": "go bar",
+                "intent": "language-verb:go (handler detail not recorded)",
+                "outcome": "handled",
+                "from": 1087,
+                "to": 1089,
+                "roomBefore": "shop",
+                "roomAfter": "bar",
+                "changes": [
+                  {
+                    "field": "room",
+                    "before": "shop",
+                    "after": "bar"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "show photo to Sable",
+            "at": 1091,
+            "lines": [
+              "Sable inspects the photograph. You keep custody."
+            ],
+            "failed": false,
+            "room": "bar",
+            "startedAt": 1089,
+            "startRoom": "bar",
+            "diagnostics": [
+              {
+                "command": "show photo to Sable",
+                "intent": "object:show",
+                "outcome": "handled",
+                "from": 1089,
+                "to": 1091,
+                "roomBefore": "bar",
+                "roomAfter": "bar",
+                "meaning": {
+                  "kind": "object",
+                  "interlocutor": "sable",
+                  "entities": [
+                    "trial-photo"
+                  ]
+                },
+                "changes": [
+                  {
+                    "field": "actors",
+                    "before": {
+                      "player": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "sable": {
+                        "knowledge": [],
+                        "beliefs": {
+                          "hospital": {
+                            "text": "I was continuously hospitalized that year.",
+                            "source": "implanted autobiographical account",
+                            "at": 0
+                          },
+                          "sable:observation:1": {
+                            "text": "Sable, I found a picture that might show you",
+                            "source": "sable:observation:1",
+                            "at": 1080
+                          }
+                        }
+                      },
+                      "vesper": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "regulars": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "silas": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      }
+                    },
+                    "after": {
+                      "player": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "sable": {
+                        "knowledge": [
+                          "trial-photo"
+                        ],
+                        "beliefs": {
+                          "hospital": {
+                            "text": "I was continuously hospitalized that year.",
+                            "source": "implanted autobiographical account",
+                            "at": 0
+                          },
+                          "sable:observation:1": {
+                            "text": "Sable, I found a picture that might show you",
+                            "source": "sable:observation:1",
+                            "at": 1080
+                          }
+                        }
+                      },
+                      "vesper": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "regulars": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "silas": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      }
+                    }
+                  },
+                  {
+                    "field": "observations",
+                    "before": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:2",
+                        "at": 1086,
+                        "actor": "player",
+                        "mode": "custody",
+                        "subject": "trial-photo",
+                        "detail": "You take the photograph.",
+                        "source": "Player's present words or action",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      }
+                    ],
+                    "after": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:2",
+                        "at": 1086,
+                        "actor": "player",
+                        "mode": "custody",
+                        "subject": "trial-photo",
+                        "detail": "You take the photograph.",
+                        "source": "Player's present words or action",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:3",
+                        "at": 1089,
+                        "actor": "sable",
+                        "mode": "inspected",
+                        "subject": "trial-photo",
+                        "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                        "source": "Player directly showed the accessible original",
+                        "evidence": [
+                          "trial-photo"
+                        ],
+                        "upstream": []
+                      }
+                    ]
+                  },
+                  {
+                    "field": "context",
+                    "before": null,
+                    "after": {
+                      "interlocutor": "sable",
+                      "kind": "evidence",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ],
+                      "at": 1089,
+                      "room": "bar"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "read menu",
+            "at": 1091,
+            "lines": [
+              "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting."
+            ],
+            "failed": false,
+            "room": "bar",
+            "startedAt": 1091,
+            "startRoom": "bar",
+            "diagnostics": [
+              {
+                "command": "read menu",
+                "intent": "object:examine",
+                "outcome": "handled",
+                "from": 1091,
+                "to": 1091,
+                "roomBefore": "bar",
+                "roomAfter": "bar",
+                "meaning": {
+                  "kind": "object",
+                  "entities": [
+                    "trial-menu"
+                  ]
+                },
+                "changes": [
+                  {
+                    "field": "actors",
+                    "before": {
+                      "player": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "sable": {
+                        "knowledge": [
+                          "trial-photo"
+                        ],
+                        "beliefs": {
+                          "hospital": {
+                            "text": "I was continuously hospitalized that year.",
+                            "source": "implanted autobiographical account",
+                            "at": 0
+                          },
+                          "sable:observation:1": {
+                            "text": "Sable, I found a picture that might show you",
+                            "source": "sable:observation:1",
+                            "at": 1080
+                          }
+                        }
+                      },
+                      "vesper": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "regulars": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "silas": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      }
+                    },
+                    "after": {
+                      "player": {
+                        "knowledge": [
+                          "trial-menu"
+                        ],
+                        "beliefs": {}
+                      },
+                      "sable": {
+                        "knowledge": [
+                          "trial-photo"
+                        ],
+                        "beliefs": {
+                          "hospital": {
+                            "text": "I was continuously hospitalized that year.",
+                            "source": "implanted autobiographical account",
+                            "at": 0
+                          },
+                          "sable:observation:1": {
+                            "text": "Sable, I found a picture that might show you",
+                            "source": "sable:observation:1",
+                            "at": 1080
+                          }
+                        }
+                      },
+                      "vesper": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "regulars": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      },
+                      "silas": {
+                        "knowledge": [],
+                        "beliefs": {}
+                      }
+                    }
+                  },
+                  {
+                    "field": "observations",
+                    "before": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:2",
+                        "at": 1086,
+                        "actor": "player",
+                        "mode": "custody",
+                        "subject": "trial-photo",
+                        "detail": "You take the photograph.",
+                        "source": "Player's present words or action",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:3",
+                        "at": 1089,
+                        "actor": "sable",
+                        "mode": "inspected",
+                        "subject": "trial-photo",
+                        "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                        "source": "Player directly showed the accessible original",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      }
+                    ],
+                    "after": [
+                      {
+                        "id": "sable:observation:1",
+                        "at": 1080,
+                        "actor": "sable",
+                        "mode": "claim",
+                        "subject": "photo",
+                        "detail": "Sable, I found a picture that might show you",
+                        "source": "Player's unverified account",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:2",
+                        "at": 1086,
+                        "actor": "player",
+                        "mode": "custody",
+                        "subject": "trial-photo",
+                        "detail": "You take the photograph.",
+                        "source": "Player's present words or action",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:3",
+                        "at": 1089,
+                        "actor": "sable",
+                        "mode": "inspected",
+                        "subject": "trial-photo",
+                        "detail": "A clearance print from a venue photographer's lot. Sable is serving at the Cat's Cradle closing party, five years ago. A newspaper and event decorations are visible; neither dates the print conclusively alone.",
+                        "source": "Player directly showed the accessible original",
+                        "upstream": [],
+                        "evidence": [
+                          "trial-photo"
+                        ]
+                      },
+                      {
+                        "id": "sable:observation:4",
+                        "at": 1091,
+                        "actor": "player",
+                        "mode": "inspected",
+                        "subject": "trial-menu",
+                        "detail": "The menu: tea, coffee and water. Minor Administrative Disappointment is citrus cordial and soda, alcohol-free by default; ask for gin if you want the alcoholic version. Both versions come without a garnish. On the reverse: Deep Sea Prom costume notes, a borrowed smoke machine and a rubber octopus; snacks and a food budget still need sorting.",
+                        "source": "Inspected menu",
+                        "evidence": [
+                          "trial-menu"
+                        ],
+                        "upstream": []
+                      }
+                    ]
+                  },
+                  {
+                    "field": "objectFocus",
+                    "before": [
+                      "trial-photo"
+                    ],
+                    "after": [
+                      "trial-menu"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "command": "tell me more",
+            "at": 1093,
+            "lines": [
+              "Sable: ‘I can see the picture, but the occasion needs a separate dated source. The photograph alone doesn't settle it.’"
+            ],
+            "failed": false,
+            "room": "bar",
+            "startedAt": 1091,
+            "startRoom": "bar",
+            "diagnostics": [
+              {
+                "command": "tell me more",
+                "intent": "conversation:photo",
+                "outcome": "handled",
+                "from": 1091,
+                "to": 1093,
+                "roomBefore": "bar",
+                "roomAfter": "bar",
+                "meaning": {
+                  "kind": "followup",
+                  "interlocutor": "sable",
+                  "subject": "photo",
+                  "entities": []
+                },
+                "changes": [
+                  {
+                    "field": "context",
+                    "before": {
+                      "kind": "evidence",
+                      "room": "bar",
+                      "at": 1089,
+                      "interlocutor": "sable",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ]
+                    },
+                    "after": {
+                      "interlocutor": "sable",
+                      "kind": "evidence",
+                      "topic": "photo",
+                      "references": [
+                        "trial-photo"
+                      ],
+                      "at": 1091,
+                      "room": "bar"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

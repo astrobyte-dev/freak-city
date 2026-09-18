@@ -1,0 +1,1 @@
+The supplementary control checker initially expected the word HELP in help output and Journal in journal output. Inspection showed the authored text says LOOK describes and Your notes. Corrected those expected response fragments; no runtime or visible-build changes.
