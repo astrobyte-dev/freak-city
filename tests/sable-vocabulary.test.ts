@@ -105,16 +105,14 @@ describe("A. Abbreviations and standard verbs, in every room", () => {
       oneFreeLine(newTrial(), command);
     },
   );
-  // Assumption: leaving the bar with no destination named goes home. The
-  // bar's LOOK text puts both the shop and the way home outside; home is the
-  // one that ends the visit, which is what leaving a bar means.
+  // Leaving the bar without naming a destination names both outside
+  // destinations and stays put; bare SHOP or HOME then travels (section C).
   it.each(["exit", "out", "leave", "go outside"])(
-    "%s from the bar goes outside rather than back to the bar",
+    "%s from the bar names both outside destinations and stays put",
     (command) => {
-      const after = run(newTrial(), command);
-      expect(outcome(after)).toBe("handled");
-      expect(after.room).toBe("home");
-      expect(text(after)).toContain(rooms.home);
+      const after = oneFreeLine(newTrial(), command);
+      expect(text(after)).toMatch(/shop/);
+      expect(text(after)).toMatch(/home/);
     },
   );
 });
@@ -280,7 +278,33 @@ describe("D. Gin: the menu's promise is kept", () => {
   });
 });
 
+// The direct disclosure path from the other Sable suites: Sable's decision
+// question is pending afterwards.
+function disclosed() {
+  return run(
+    newTrial(),
+    "ask Sable about memories",
+    "go shop",
+    "read photograph",
+    "take photograph",
+    "read listing",
+    "take listing",
+    "go bar",
+    "show photograph to Sable",
+    "show listing to Sable",
+  );
+}
 describe("E. Negatives: real objects, existing travel and conversation", () => {
+  it("bare listen keeps its silence meaning while Sable's decision is pending", () => {
+    const pending = disclosed();
+    expect(pending.context?.kind).toBe("decision");
+    const listened = run(pending, "listen"),
+      silent = run(pending, "say nothing");
+    expect(lines(listened)).toEqual(lines(silent));
+    expect(outcome(listened)).toBe(outcome(silent));
+    expect(listened.treatment).toEqual(silent.treatment);
+    expect(listened.treatment.at(-1)?.value).toBe("silence");
+  });
   it("look at the photograph in the shop examines the real object", () => {
     const after = run(arrive.shop(), "look at the photograph");
     expect(text(after)).toMatch(/clearance print/);

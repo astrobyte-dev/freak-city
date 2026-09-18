@@ -2,6 +2,7 @@ import { openingInteraction } from "./interaction-content";
 import { z } from "zod";
 import {
   drinkKind,
+  failure,
   interactionContext,
   responseMeaning,
   interactionMemory,
@@ -54,6 +55,7 @@ export const commandDiagnostic = z.object({
   roomBefore: roomId,
   roomAfter: roomId,
   meaning: responseMeaning.optional(),
+  failure: failure.optional(),
   changes: z.array(
     z.object({ field: z.string(), before: z.unknown(), after: z.unknown() }),
   ),
