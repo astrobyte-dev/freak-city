@@ -1,0 +1,14 @@
+{
+  "name": "freak-city-room-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "check": "tsc -p tsconfig.json && vitest run --config vite.config.ts",
+    "test:browser": "tsx beat-browser-check.ts",
+    "test:beat": "tsx beat-browser-check.ts"
+  },
+  "dependencies": {
+    "phaser": "4.2.1"
+  }
+}

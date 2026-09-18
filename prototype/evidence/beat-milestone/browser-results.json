@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Natural head, torso and furniture-edge clicks select visible shapes; envelope wins its overlap with ledge.",
+    "Typed alias submits; repeated Talk respects introduction; Escape closes without a walking message.",
+    "Invitation opens, reads, discloses and leads to the authored routing-record objective; latest feedback stays visible at 1366×768.",
+    "Inventory and room-target changes cancel pending actions; Escape cancels approach without stale callbacks.",
+    "Zero storage API calls; synthetic normal-game autosave, bookmark and draft remain unchanged; zero desktop axe violations.",
+    "Reload resets isolated fixture; open-envelope safekeeping refuses; closed-envelope decline/accept/collection remains intact.",
+    "390px layout and scaled room input still work without horizontal overflow."
+  ],
+  "errors": [],
+  "headless": true
+}

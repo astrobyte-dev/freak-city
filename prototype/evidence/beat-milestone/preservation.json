@@ -1,0 +1,21 @@
+﻿{
+    "baselineFiles":  905,
+    "unchangedFiles":  898,
+    "changedFiles":  [
+                         "prototype/README.md",
+                         "prototype/main.ts",
+                         "prototype/package.json",
+                         "prototype/room.ts",
+                         "prototype/simulation.ts",
+                         "prototype/style.css",
+                         "src/engine/parser.ts"
+                     ],
+    "unexpectedChanges":  [
+
+                          ],
+    "missingFiles":  [
+
+                     ],
+    "passed":  true,
+    "checkpoint":  "C:/Users/thr3e/AppData/Local/Temp/freak-city-beat-83036410c16b4ee59275f2748652e491"
+}

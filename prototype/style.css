@@ -1,0 +1,365 @@
+@import "../node_modules/@fontsource/dm-sans/latin-400.css";
+@import "../node_modules/@fontsource/ibm-plex-mono/latin-400.css";
+:root {
+  color-scheme: dark;
+  font-family: "DM Sans", sans-serif;
+  background: #100f15;
+  color: #e7ded6;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+button,
+input {
+  font: inherit;
+  color: inherit;
+  background: #29252f;
+  border: 1px solid #655564;
+  border-radius: 5px;
+  padding: 9px 11px;
+  min-height: 40px;
+}
+button {
+  cursor: pointer;
+  text-align: left;
+}
+button:hover,
+button[aria-pressed="true"] {
+  background: #443442;
+  border-color: #dec396;
+}
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #85d7d2;
+  outline-offset: 2px;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #3c303d;
+  padding: 10px 24px;
+  flex: none;
+}
+header p {
+  margin: 0;
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.5;
+}
+header p span,
+footer,
+.hint,
+#belonging-note {
+  color: #b4a7b5;
+}
+h1 {
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  margin: 2px 0 0;
+}
+h1 em {
+  color: #e0b6c7;
+  font-style: normal;
+}
+h2 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+.eyebrow {
+  font:
+    11px "IBM Plex Mono",
+    monospace;
+  letter-spacing: 0.08em;
+  color: #c5ab92;
+}
+main {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 12px 20px;
+  padding: 12px 24px;
+}
+.objective {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.objective p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.room-panel {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.room-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.room-heading h2 {
+  margin: 0;
+}
+#clock {
+  font:
+    14px "IBM Plex Mono",
+    monospace;
+  color: #d6bb96;
+}
+#room {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  background: #17151d;
+  overflow: hidden;
+  border: 1px solid #4f394a;
+}
+#room canvas {
+  display: block;
+}
+.hint {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 7px 0 0;
+}
+aside {
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 4px;
+}
+aside section {
+  border-bottom: 1px solid #3c303d;
+  padding-bottom: 10px;
+}
+aside p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 6px 0 0;
+}
+.target-list,
+#actions,
+#inventory,
+#replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.target-list {
+  margin-top: 7px;
+}
+.target-list button,
+#inventory button {
+  font-size: 12px;
+}
+#actions button {
+  width: 100%;
+}
+#custody {
+  color: #dbbf97;
+}
+.belonging {
+  font-size: 12px;
+  color: #c8bdc8;
+  padding: 5px 0;
+  margin-right: 10px;
+}
+.response {
+  grid-column: 1/-1;
+  background: #211c26;
+  border-left: 2px solid #d6b991;
+  padding: 10px 14px;
+  display: flex;
+  gap: 24px;
+  min-height: 80px;
+  max-height: 130px;
+  overflow-y: auto;
+}
+.response > div {
+  flex: 1;
+}
+.response p {
+  margin: 5px 0 0;
+  line-height: 1.45;
+  font-size: 14px;
+  white-space: pre-line;
+}
+#private-response {
+  border-left: 1px solid #655564;
+  padding-left: 18px;
+}
+[hidden] {
+  display: none !important;
+}
+footer {
+  flex: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 0 24px 10px;
+  font-size: 12px;
+}
+.journal summary {
+  cursor: pointer;
+  color: #e7ded6;
+  padding: 6px;
+}
+#journal {
+  position: absolute;
+  z-index: 20;
+  bottom: 45px;
+  left: 24px;
+  right: 24px;
+  max-height: 45vh;
+  overflow-y: auto;
+  background: #100f15;
+  border: 1px solid #655564;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  box-shadow: 0 -10px 35px #0008;
+}
+article {
+  background: #1c1821;
+  padding: 12px;
+  border: 1px solid #342a39;
+}
+article h3 {
+  font:
+    12px "IBM Plex Mono",
+    monospace;
+  color: #d2b691;
+  margin: 0 0 8px;
+}
+article p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 4px 0;
+  white-space: pre-line;
+}
+footer summary {
+  white-space: nowrap;
+}
+dialog {
+  color: #e7ded6;
+  background: #211b27;
+  border: 1px solid #b79780;
+  border-radius: 8px;
+  width: min(560px, 90vw);
+  padding: 24px;
+  max-height: 90dvh;
+  overflow-y: auto;
+}
+dialog::backdrop {
+  background: #080810bb;
+}
+dialog h2 {
+  font-size: 25px;
+  margin: 8px 0;
+}
+dialog p {
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+#replies {
+  margin: 18px 0;
+}
+#replies form {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+}
+#alias-help,
+.alias-record {
+  font-size: 13px;
+  color: #d6bb96;
+}
+#alias-help {
+  margin: 0 0 5px;
+}
+#close-conversation {
+  width: 100%;
+  text-align: center;
+  background: #493746;
+}
+@media (max-width: 850px) {
+  #app {
+    min-height: 100dvh;
+    height: auto;
+    overflow: visible;
+  }
+  header {
+    padding: 12px;
+  }
+  header p {
+    display: none;
+  }
+  main {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  #room {
+    flex: none;
+    aspect-ratio: 1.5;
+  }
+  aside {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .response {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 180px;
+  }
+  #private-response {
+    border-left: 0;
+    padding-left: 0;
+  }
+  footer {
+    padding: 0 12px 10px;
+  }
+  #journal {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+  }
+}
+@media (max-width: 450px) {
+  aside {
+    display: flex;
+  }
+}
