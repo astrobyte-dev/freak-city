@@ -508,6 +508,16 @@ describe("Sable learns the message arrived, once, by one of two paths", () => {
     expect(delivered(s)).toEqual([]);
     untouched(before, s);
   });
+  it.each(["ask Vesper to tell Sable", "Vesper, thank you"])(
+    "(a) ignores %s, which is addressed to Vesper",
+    (command) => {
+      const k = passed(),
+        s = run(k, command);
+      expect(text(s)).not.toMatch(THANKS);
+      expect(delivered(s)).toEqual([]);
+      expect(s.agreements).toEqual(k.agreements);
+    },
+  );
 });
 
 describe("Goodnight", () => {
