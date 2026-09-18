@@ -3,6 +3,7 @@ import { currentDrink, describeVessel, isVessel } from "./vessels";
 import { trialInterlocutors, beverages } from "./interaction-content";
 import { isFollowup } from "./interaction-language";
 import { canonical, standardAction, unresolved } from "./vocabulary";
+import { agreementBeat, agreementReply } from "./agreements";
 import type { InteractionHost, InteractionResult } from "./interaction-model";
 import { carriedBy, visibleAt } from "../engine/custody";
 import { nextDueEvent, scheduleOnce } from "../engine/event-queue";
@@ -526,6 +527,8 @@ function respond(s: TrialState, raw: string): InteractionResult {
     return { lines: [privateThought(s)], intent: "think:private" };
   const standard = standardAction(s, text, (a) => present(s, a as Actor));
   if (standard) return standard;
+  const beat = agreementReply(s, raw, (a) => present(s, a as Actor), record);
+  if (beat) return beat;
   const interaction = handleInteraction(s, raw, interactionHost(s));
   if (interaction) return interaction;
   if (
@@ -1396,6 +1399,9 @@ export function executeTrial(state: TrialState, raw: string): TrialState {
       );
     }
     if (beforeRoom !== s.room) result.lines.push(...describeTrial(s));
+    result.lines.push(
+      ...agreementBeat(s, result, (a) => present(s, a as Actor), record),
+    );
     lines.push(...result.lines);
     const fields = [
       "room",
@@ -1417,6 +1423,7 @@ export function executeTrial(state: TrialState, raw: string): TrialState {
       "needsTime",
       "thoughtsShown",
       "companyOffers",
+      "agreements",
       "socialSeen",
     ] as const;
     diagnostics.push({

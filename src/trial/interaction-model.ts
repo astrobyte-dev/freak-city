@@ -33,6 +33,7 @@ export const interactionContext = z.object({
         "hospital-part",
         "opinion",
         "service-choice",
+        "favour",
       ]),
       subject: z.string(),
       offered: drinkKind.optional(),

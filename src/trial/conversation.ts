@@ -122,7 +122,9 @@ export function contextualHelp(s: TrialState) {
                   context.topic,
                 )
               ? "You can ask what Sable makes of the evidence or what remains uncertain. Asking about an object does not show or transfer it."
-              : "Name the person, object or topic if a short reply could mean more than one thing.",
+              : context?.question?.kind === "favour"
+                ? "Sable has asked a small favour: a message for Vesper next door. You can say yes, no, or let it drop; nothing is arranged until you answer."
+                : "Name the person, object or topic if a short reply could mean more than one thing.",
     "For explicitly spoiler-bearing puzzle guidance, type HINT. Export playtest downloads local records without moving the clock.",
   ];
 }

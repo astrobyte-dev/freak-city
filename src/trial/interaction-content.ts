@@ -387,3 +387,59 @@ export const openingInteraction = {
   room: "bar" as const,
   at: 1080,
 };
+
+// The opening's shop hook: Sable's borrowed smoke machine and one small
+// favour. Lines and phrase lists only; src/trial/agreements.ts holds the
+// logic. Vesper's line names neither the photograph, the print, the lot's
+// contents nor the past.
+export const favour = {
+  id: "smoke-machine-message",
+  // Observation subjects: Sable heard the acceptance; Sable heard it arrived.
+  accepted: "favour-accepted",
+  delivered: "message-delivered",
+  // What names the errand: to Vesper at the shop, or to Sable afterwards.
+  mention: /\b(?:sable|smoke machine|machine|message)\b/,
+  reminder: /\b(?:vesper|smoke machine|machine|message)\b/,
+  // Not a message: the photograph and its kin, or pointing at it.
+  notMessage:
+    /\b(?:photo|photograph|picture|print|listing|provenance|flyer|lot)\b|^(?:is (?:that|this)|that's|this (?:is|looks)|who)\b/,
+  // The relay request is Vesper's own business and keeps its handler.
+  relay:
+    /^(?:please )?(?:ask|tell) vesper to\b|^vesper (?:please )?tell sable\b/,
+  // Said to Vesper, not to Sable; checked on the words as typed.
+  toVesper:
+    /^\s*vesper\s*,|,\s*vesper\W*$|^\s*(?:please\s+)?(?:ask|tell|hi|hello|hey|thanks|thank you)\s+vesper\b/i,
+  // Said to Sable, who is not at the shop: greetings, goodbyes, ASK or TELL
+  // SABLE and TALK TO SABLE on the corrected text; the vocative as typed.
+  toSable:
+    /^(?:hi|hello|hey|thanks|thank you|cheers|goodnight|good night|goodbye|bye|see you|ask|tell) sable\b|^(?:talk|speak|chat|tlak) (?:to|with) sable\b|^sable (?:are you|can you|could you|do you|did you|will you|would you|what|where|when|why|how)\b/,
+  vocativeSable: /^\s*sable\s*,|,\s*sable\W*$/i,
+  // Object actions and travel keep their own handlers, whatever they name.
+  action:
+    /^(?:take|get|pick|give|show|drop|put|tear|read|examine|x|inspect|look|search|open|close|use|drink|sip|finish|go|walk|head|return|enter|leave|visit)\b/,
+  // Bare answers, whole reply: the yes and no families the shared layer
+  // knows, the acceptances it does not, and two idioms that read as
+  // negation if left to it. Anything longer keeps its own handler.
+  accept:
+    /^(?:yes|yeah|yep|sure(?: thing)?|absolutely|certainly|definitely|of course|ok|okay|alright|all right|fine|gladly|happy to|will do|i will|i can(?: do that)?|i(?:'ll| will) (?:tell|let|pass|do|say|mention)\b.*|i agree|(?:i )?accept|no problem|no worries)[.!]?$/,
+  decline:
+    /^(?:no|nope|no thanks|no thank you|i disagree|i(?:'d| would) rather not|i won't|i will not|i can't|i cannot|not (?:tonight|now|today|this time)|i'm not going (?:that way|next door|to the shop)|i don't think so)[.!]?$/,
+  lines: {
+    offer:
+      "Sable: ‘A small favour, if you happen to be going next door: would you tell Vesper the smoke machine comes back after Thursday? I'd write a note, but a note can't sound sorry.’",
+    accepted:
+      "Sable: ‘Thank you. Vesper takes a message better from a face than from a note, and I'd like this one taken well.’",
+    declined:
+      "Sable: ‘No matter. I'll tell Vesper myself, with the speech they were hoping to avoid.’",
+    hesitation: "‘No obligation,’ Sable says. ‘Only if you're passing.’",
+    vesper:
+      "Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after Thursday is fine; I lent it, I didn't lend a deadline.’",
+    vesperAgain:
+      "‘After Thursday. I heard,’ Vesper says, and goes back to the boxes.",
+    thanks:
+      "Sable: ‘Delivered, then. Thank you; that's one speech I don't have to give this week.’",
+    door: "‘Vesper put their head round the door,’ Sable says. ‘Message received, apparently in my voice. Thank you.’",
+    canWait:
+      "‘The message can wait,’ Sable adds. ‘Vesper will still be next door tomorrow; so will the smoke machine.’",
+  },
+};
