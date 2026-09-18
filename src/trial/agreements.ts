@@ -121,7 +121,9 @@ export function agreementReply(
     present("vesper") &&
     favour.mention.test(text) &&
     !favour.notMessage.test(text) &&
-    !favour.relay.test(text)
+    !favour.relay.test(text) &&
+    !favour.toSable.test(text) &&
+    !favour.vocativeSable.test(raw)
   ) {
     const first = !heardByVesper(s);
     if (first) {
@@ -189,10 +191,11 @@ export function agreementBeat(
   const memory = responseMemory(s);
   const context = activeInteraction(s);
   const offerKey = `sable:${favour.id}:offer`;
-  // Once, after the first ordinary exchange of the first evening, with no
-  // question open and Vesper not already answered.
+  // Once, after the first ordinary exchange of the first evening, before
+  // any disclosure, with no question open and Vesper not already answered.
   if (
     !memory.replies[offerKey] &&
+    !s.receipt &&
     !result.deferred &&
     /^(?:conversation|service):/.test(result.intent ?? "") &&
     day(s.time) === 0 &&

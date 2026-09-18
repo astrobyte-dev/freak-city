@@ -137,6 +137,34 @@ describe("The offer fires once, after the first ordinary exchange", () => {
       ),
     ).toBe(0);
   });
+  it("does not fire once the contradiction has been received", () => {
+    const shown = run(
+      newTrial(),
+      "go shop",
+      "take photo",
+      "read photo",
+      "take listing",
+      "read listing",
+      "go bar",
+      "ask Sable about their memories",
+      "show photo to Sable",
+      "show listing to Sable",
+    );
+    expect(shown.receipt).toBeDefined();
+    for (const command of ["tell me about the prom", "order tea"]) {
+      const s = run(shown, command);
+      expect(count(s, OFFER)).toBe(0);
+      expect(s.agreements).toEqual([]);
+    }
+    const decided = run(
+      shown,
+      "I disagree",
+      "wait for 15 minutes",
+      "order tea",
+    );
+    expect(decided.decision).toBeDefined();
+    expect(count(decided, OFFER)).toBe(0);
+  });
   it.each([
     ["accepted", accepted],
     ["declined", declined],
@@ -362,6 +390,24 @@ describe("Vesper answers the message", () => {
     expect(vesperHeard(s)).toEqual([]);
     expect(s.agreements).toEqual([]);
   });
+  it.each([
+    "hello sable",
+    "thanks sable",
+    "good night sable",
+    "talk to sable",
+    "ask sable about the party",
+    "Sable, are you there?",
+  ])(
+    "does not answer %s, which is said to Sable, who is not there",
+    (command) => {
+      const before = run(accepted(), "go shop"),
+        s = run(before, command);
+      expect(text(s)).not.toMatch(VESPER);
+      expect(text(s)).toMatch(/isn't here/);
+      expect(vesperHeard(s)).toEqual([]);
+      expect(s.agreements).toEqual(before.agreements);
+    },
+  );
   it("leaves the relay request and Vesper's general conversation alone", () => {
     const relay = run(
       newTrial(),

@@ -1,5 +1,5 @@
 bar_opening	handled	conversation:opinion	no	Sable lets their shoulders drop. ‘Good. If it doesn't sound threatening, I can send it as it is. I only want t
-bar_opening	handled	conversation:opinion	yes	Sable: ‘Very threatening, then. I'll soften the supplier letter before it starts demanding a ransom.’
+bar_opening	handled	conversation:opinion	yes	Sable: ‘Very threatening, then. I'll soften the supplier letter before it starts demanding a ransom.’ | Sable:
 bar_opening	handled	conversation:opinion	no it doesn't sound threatening	Sable lets their shoulders drop. ‘Good. If it doesn't sound threatening, I can send it as it is. I only want t
 bar_opening	rejected	language-verb:a (handler detail not recorded)	a little	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:sounds (handler detail not recorded)	sounds fine to me	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -47,16 +47,16 @@ bar_opening	handled	conversation:order-drink	ask for gin	Sable sets a glass of g
 bar_opening	handled	conversation:order-drink	a gin please	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_opening	handled	conversation:order-drink	the special with gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_opening	handled	conversation:order-drink	order the special	Sable sets a glass of alcohol-free special within reach. ‘Minor Administrative Disappointment: citrus cordial 
-bar_opening	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
-bar_opening	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
-bar_opening	handled	conversation:order-drink	can I get a tea	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
-bar_opening	handled	conversation:order-drink	can I have a coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
-bar_opening	handled	conversation:order-drink	another coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
+bar_opening	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
+bar_opening	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’ | Sabl
+bar_opening	handled	conversation:order-drink	can I get a tea	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’ | Sabl
+bar_opening	handled	conversation:order-drink	can I have a coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
+bar_opening	handled	conversation:order-drink	another coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
 bar_opening	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_opening	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
+bar_opening	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’ | Sable: ‘A sma
 bar_opening	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_opening	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
-bar_opening	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
+bar_opening	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
+bar_opening	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
 bar_opening	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:what's (handler detail not recorded)	what's good	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -119,11 +119,11 @@ bar_opening	handled	conversation:thanks	thanks	Sable smiles. ‘You're welcome.�
 bar_opening	handled	conversation:thanks	thank you	Sable smiles. ‘You're welcome.’
 bar_opening	handled	conversation:thanks	thanks sable	Sable smiles. ‘You're welcome.’
 bar_opening	handled	conversation:thanks	cheers	Sable smiles. ‘You're welcome.’
-bar_opening	handled	conversation:goodbye	bye	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_opening	handled	conversation:goodbye	goodbye	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_opening	handled	conversation:goodbye	see you	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_opening	handled	conversation:goodbye	goodnight	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_opening	handled	conversation:goodbye	good night sable	‘Get home all right,’ Sable says. ‘It was good to see you.’
+bar_opening	handled	conversation:goodbye	bye	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_opening	handled	conversation:goodbye	goodbye	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_opening	handled	conversation:goodbye	see you	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_opening	handled	conversation:goodbye	goodnight	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_opening	handled	conversation:goodbye	good night sable	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
 bar_opening	clarified	action:unknown-object	take care	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 bar_opening	rejected	language-verb:you're (handler detail not recorded)	you're funny	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:inventory (handler detail not recorded)	I like you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -171,14 +171,14 @@ bar_opening	rejected	language-verb:coffe (handler detail not recorded)	coffe ple
 bar_opening	rejected	language-verb:watre (handler detail not recorded)	watre	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	rejected	language-verb:help (handler detail not recorded)	helo	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_opening	handled	conversation:plans	hi sabel	Sable: ‘Twelve lids, no jars. I've asked the supplier to send the missing jars rather than another apology. Th
-bar_after_coffee	clarified	interaction:clarify	no	Did you want another drink, or were you answering something from earlier?
-bar_after_coffee	clarified	interaction:clarify	yes	Did you want another drink, or were you answering something from earlier?
+bar_after_coffee	handled	conversation:decline-favour	no	Sable: ‘No matter. I'll tell Vesper myself, with the speech they were hoping to avoid.’
+bar_after_coffee	handled	conversation:accept-favour	yes	Sable: ‘Thank you. Vesper takes a message better from a face than from a note, and I'd like this one taken wel
 bar_after_coffee	handled	conversation:opinion	no it doesn't sound threatening	Sable lets their shoulders drop. ‘Good. If it doesn't sound threatening, I can send it as it is. I only want t
 bar_after_coffee	rejected	language-verb:a (handler detail not recorded)	a little	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:sounds (handler detail not recorded)	sounds fine to me	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:it (handler detail not recorded)	it sounds fine	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:not (handler detail not recorded)	not really	No action taken. Say what you want to do when you've decided.
-bar_after_coffee	rejected	language-verb:maybe (handler detail not recorded)	maybe	No action taken. Say what you want to do when you've decided.
+bar_after_coffee	deferred	conversation:hesitation	maybe	‘No obligation,’ Sable says. ‘Only if you're passing.’
 bar_after_coffee	rejected	language-verb:inventory (handler detail not recorded)	I think it's fine	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	rejected	language-verb:it's (handler detail not recorded)	it's a bit much	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_after_coffee	handled	examine:scenery	examine pencil	A pencil, worn down by drafts of the supplier complaint.
@@ -534,7 +534,7 @@ shop	handled	conversation:photo	who's in the photo	‘Can I see the photograph?�
 shop	handled	conversation:photo	who is in the photograph	‘Can I see the photograph?’ Vesper asks.
 shop	handled	conversation:photo	ask vesper about the photo	‘Can I see the photograph?’ Vesper asks.
 shop	handled	conversation:photo	ask vesper about the photograph	‘Can I see the photograph?’ Vesper asks.
-shop	clarified	conversation:vesper-topic	ask vesper about sable	Are you asking Vesper about the clearance lot, the photograph, or its listing?
+shop	handled	conversation:message	ask vesper about sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
 shop	rejected	language-verb:vesper (handler detail not recorded)	vesper, who is this	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	clarified	conversation:absent	buy the photo	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop	handled	conversation:photo	how much is the photograph	‘Can I see the photograph?’ Vesper asks.
@@ -555,11 +555,11 @@ shop	rejected	language-verb:borrow (handler detail not recorded)	can I borrow th
 shop	clarified	action:unknown-object	can I take this	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop	clarified	conversation:absent	vesper, can I take the photograph	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop	rejected	language-verb:show (handler detail not recorded)	show vesper the photo	You need to be holding it first.
-shop	clarified	interaction:clarify	tell vesper about sable	There is more than one person or subject in that request. Please choose one; nothing has changed.
-shop	rejected	language-verb:does (handler detail not recorded)	does vesper know sable	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop	handled	conversation:message	tell vesper about sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
+shop	handled	conversation:message	does vesper know sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
 shop	rejected	language-verb:what (handler detail not recorded)	what do you sell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:what's (handler detail not recorded)	what's for sale	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop	clarified	conversation:absent	do you know sable	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
+shop	handled	conversation:message	do you know sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
 shop	rejected	language-verb:thank (handler detail not recorded)	thanks vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	rejected	language-verb:bye (handler detail not recorded)	bye vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop	handled	language-verb:go (handler detail not recorded)	go back to the bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
@@ -757,7 +757,7 @@ shop_seen_evidence	handled	conversation:photo	who's in the photo	‘Can I see th
 shop_seen_evidence	handled	conversation:photo	who is in the photograph	‘Can I see the photograph?’ Vesper asks.
 shop_seen_evidence	handled	conversation:photo	ask vesper about the photo	‘Can I see the photograph?’ Vesper asks.
 shop_seen_evidence	handled	conversation:photo	ask vesper about the photograph	‘Can I see the photograph?’ Vesper asks.
-shop_seen_evidence	clarified	conversation:vesper-topic	ask vesper about sable	Are you asking Vesper about the clearance lot, the photograph, or its listing?
+shop_seen_evidence	handled	conversation:message	ask vesper about sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
 shop_seen_evidence	rejected	language-verb:vesper (handler detail not recorded)	vesper, who is this	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	clarified	conversation:absent	buy the photo	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop_seen_evidence	handled	conversation:photo	how much is the photograph	‘Can I see the photograph?’ Vesper asks.
@@ -778,11 +778,11 @@ shop_seen_evidence	rejected	language-verb:borrow (handler detail not recorded)	c
 shop_seen_evidence	clarified	action:unknown-object	can I take this	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 shop_seen_evidence	clarified	conversation:absent	vesper, can I take the photograph	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
 shop_seen_evidence	rejected	language-verb:show (handler detail not recorded)	show vesper the photo	You need to be holding it first.
-shop_seen_evidence	clarified	interaction:clarify	tell vesper about sable	There is more than one person or subject in that request. Please choose one; nothing has changed.
-shop_seen_evidence	rejected	language-verb:does (handler detail not recorded)	does vesper know sable	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+shop_seen_evidence	handled	conversation:message	tell vesper about sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
+shop_seen_evidence	handled	conversation:message	does vesper know sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
 shop_seen_evidence	rejected	language-verb:what (handler detail not recorded)	what do you sell	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:what's (handler detail not recorded)	what's for sale	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-shop_seen_evidence	clarified	conversation:absent	do you know sable	Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their 
+shop_seen_evidence	handled	conversation:message	do you know sable	Vesper nods at the party wall without looking up. ‘Sable, next door. If this is about the smoke machine, after
 shop_seen_evidence	rejected	language-verb:thank (handler detail not recorded)	thanks vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	rejected	language-verb:bye (handler detail not recorded)	bye vesper	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 shop_seen_evidence	handled	language-verb:go (handler detail not recorded)	go back to the bar	You go to The Velvet Corner. | The Velvet Corner: warm light on a worn wooden counter, shelves of mismatched g
@@ -839,16 +839,16 @@ bar_holding_evidence	handled	conversation:order-drink	ask for gin	Sable sets a g
 bar_holding_evidence	handled	conversation:order-drink	a gin please	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_holding_evidence	handled	conversation:order-drink	the special with gin	Sable sets a glass of gin special within reach. ‘Minor Administrative Disappointment, with gin. The paperwork 
 bar_holding_evidence	handled	conversation:order-drink	order the special	Sable sets a glass of alcohol-free special within reach. ‘Minor Administrative Disappointment: citrus cordial 
-bar_holding_evidence	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
-bar_holding_evidence	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
-bar_holding_evidence	handled	conversation:order-drink	can I get a tea	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’
-bar_holding_evidence	handled	conversation:order-drink	can I have a coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
-bar_holding_evidence	handled	conversation:order-drink	another coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
+bar_holding_evidence	handled	conversation:order-drink	order coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
+bar_holding_evidence	handled	conversation:order-drink	tea please	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’ | Sabl
+bar_holding_evidence	handled	conversation:order-drink	can I get a tea	Sable sets a cup of tea within reach. ‘Tea. I'll give it a minute before asking it anything difficult.’ | Sabl
+bar_holding_evidence	handled	conversation:order-drink	can I have a coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
+bar_holding_evidence	handled	conversation:order-drink	another coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
 bar_holding_evidence	rejected	language-verb:same (handler detail not recorded)	same again	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’
+bar_holding_evidence	handled	conversation:order-drink	I'll have a water	Sable sets a glass of water within reach. ‘Water. No garnish trying to escape into your nose.’ | Sable: ‘A sma
 bar_holding_evidence	clarified	action:unknown-object	give me water	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
-bar_holding_evidence	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
-bar_holding_evidence	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’
+bar_holding_evidence	handled	conversation:order-drink	one coffee	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
+bar_holding_evidence	handled	conversation:order-drink	coffee please	Sable sets a cup of coffee within reach. ‘Coffee. Smells more awake than either of us.’ | Sable: ‘A small favo
 bar_holding_evidence	rejected	language-verb:a (handler detail not recorded)	a cup of tea	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:what (handler detail not recorded)	what do you have	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:what's (handler detail not recorded)	what's good	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
@@ -907,15 +907,15 @@ bar_holding_evidence	rejected	language-verb:nice (handler detail not recorded)	n
 bar_holding_evidence	rejected	language-verb:good (handler detail not recorded)	good one	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:sorry (handler detail not recorded)	sorry	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:i'm (handler detail not recorded)	I'm tired	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
-bar_holding_evidence	handled	conversation:thanks	thanks	Sable smiles. ‘You're welcome.’
-bar_holding_evidence	handled	conversation:thanks	thank you	Sable smiles. ‘You're welcome.’
-bar_holding_evidence	handled	conversation:thanks	thanks sable	Sable smiles. ‘You're welcome.’
-bar_holding_evidence	handled	conversation:thanks	cheers	Sable smiles. ‘You're welcome.’
-bar_holding_evidence	handled	conversation:goodbye	bye	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_holding_evidence	handled	conversation:goodbye	goodbye	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_holding_evidence	handled	conversation:goodbye	see you	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_holding_evidence	handled	conversation:goodbye	goodnight	‘Get home all right,’ Sable says. ‘It was good to see you.’
-bar_holding_evidence	handled	conversation:goodbye	good night sable	‘Get home all right,’ Sable says. ‘It was good to see you.’
+bar_holding_evidence	handled	conversation:thanks	thanks	Sable smiles. ‘You're welcome.’ | Sable: ‘A small favour, if you happen to be going next door: would you tell 
+bar_holding_evidence	handled	conversation:thanks	thank you	Sable smiles. ‘You're welcome.’ | Sable: ‘A small favour, if you happen to be going next door: would you tell 
+bar_holding_evidence	handled	conversation:thanks	thanks sable	Sable smiles. ‘You're welcome.’ | Sable: ‘A small favour, if you happen to be going next door: would you tell 
+bar_holding_evidence	handled	conversation:thanks	cheers	Sable smiles. ‘You're welcome.’ | Sable: ‘A small favour, if you happen to be going next door: would you tell 
+bar_holding_evidence	handled	conversation:goodbye	bye	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_holding_evidence	handled	conversation:goodbye	goodbye	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_holding_evidence	handled	conversation:goodbye	see you	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_holding_evidence	handled	conversation:goodbye	goodnight	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
+bar_holding_evidence	handled	conversation:goodbye	good night sable	‘Get home all right,’ Sable says. ‘It was good to see you.’ | Sable: ‘A small favour, if you happen to be goin
 bar_holding_evidence	clarified	action:unknown-object	take care	I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object ha
 bar_holding_evidence	rejected	language-verb:you're (handler detail not recorded)	you're funny	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
 bar_holding_evidence	rejected	language-verb:inventory (handler detail not recorded)	I like you	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t

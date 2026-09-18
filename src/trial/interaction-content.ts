@@ -409,6 +409,11 @@ export const favour = {
   // Said to Vesper, not to Sable; checked on the words as typed.
   toVesper:
     /^\s*vesper\s*,|,\s*vesper\W*$|^\s*(?:please\s+)?(?:ask|tell|hi|hello|hey|thanks|thank you)\s+vesper\b/i,
+  // Said to Sable, who is not at the shop: greetings, goodbyes, ASK or TELL
+  // SABLE and TALK TO SABLE on the corrected text; the vocative as typed.
+  toSable:
+    /^(?:hi|hello|hey|thanks|thank you|cheers|goodnight|good night|goodbye|bye|see you|ask|tell) sable\b|^(?:talk|speak|chat|tlak) (?:to|with) sable\b|^sable (?:are you|can you|could you|do you|did you|will you|would you|what|where|when|why|how)\b/,
+  vocativeSable: /^\s*sable\s*,|,\s*sable\W*$/i,
   // Object actions and travel keep their own handlers, whatever they name.
   action:
     /^(?:take|get|pick|give|show|drop|put|tear|read|examine|x|inspect|look|search|open|close|use|drink|sip|finish|go|walk|head|return|enter|leave|visit)\b/,
