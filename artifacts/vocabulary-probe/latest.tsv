@@ -16,10 +16,10 @@ bar_opening	handled	object:examine	look at the counter	A worn wooden serving cou
 bar_opening	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
 bar_opening	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
 bar_opening	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
-bar_opening	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	examine:scenery	look behind the curtain	A heavy curtain across the way through to the quiet booth.
 bar_opening	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
 bar_opening	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_opening	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_opening	handled	examine:glance	look under the counter	A worn wooden serving counter. You can set a held object on it.
 bar_opening	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
 bar_opening	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
 bar_opening	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
@@ -189,10 +189,10 @@ bar_after_coffee	handled	object:examine	look at the counter	A worn wooden servin
 bar_after_coffee	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
 bar_after_coffee	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
 bar_after_coffee	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
-bar_after_coffee	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	examine:scenery	look behind the curtain	A heavy curtain across the way through to the quiet booth.
 bar_after_coffee	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
 bar_after_coffee	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_after_coffee	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_after_coffee	handled	examine:glance	look under the counter	A worn wooden serving counter. You can set a held object on it.
 bar_after_coffee	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
 bar_after_coffee	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
 bar_after_coffee	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
@@ -808,10 +808,10 @@ bar_holding_evidence	handled	object:examine	look at the counter	A worn wooden se
 bar_holding_evidence	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
 bar_holding_evidence	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
 bar_holding_evidence	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
-bar_holding_evidence	rejected	language-verb:search (handler detail not recorded)	look behind the curtain	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	examine:scenery	look behind the curtain	A heavy curtain across the way through to the quiet booth.
 bar_holding_evidence	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
 bar_holding_evidence	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_holding_evidence	rejected	language-verb:search (handler detail not recorded)	look under the counter	I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning t
+bar_holding_evidence	handled	examine:glance	look under the counter	A worn wooden serving counter. You can set a held object on it.
 bar_holding_evidence	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
 bar_holding_evidence	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
 bar_holding_evidence	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
@@ -981,10 +981,10 @@ bar_after_show	handled	object:examine	look at the counter	A worn wooden serving 
 bar_after_show	handled	examine:scenery	look at the glasses	Mismatched glasses, no two from the same set, all clean.
 bar_after_show	handled	examine:scenery	look at the shelves	Shelves behind the counter, holding the mismatched glasses.
 bar_after_show	handled	examine:scenery	look at the speakers	Two speakers above the shelves, turned down to a soft bass line.
-bar_after_show	clarified	conversation:missing-topic	look behind the curtain	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	examine:scenery	look behind the curtain	A heavy curtain across the way through to the quiet booth.
 bar_after_show	handled	examine:scenery	examine curtain	A heavy curtain across the way through to the quiet booth.
 bar_after_show	handled	language-verb:go (handler detail not recorded)	go through the curtain	You go to The quiet booth. | The quiet booth has a low table and a shaded lamp. It is empty. Ask Sable at the 
-bar_after_show	clarified	conversation:missing-topic	look under the counter	Which subject do you mean? Name what you want to ask Sable about. Your previous question or offer is still ope
+bar_after_show	handled	examine:glance	look under the counter	A worn wooden serving counter. You can set a held object on it.
 bar_after_show	handled	examine:scenery	look at the lids	Twelve lids in a box under the counter, waiting for jars.
 bar_after_show	handled	examine:scenery	examine the box	A box under the counter holding twelve lids and no jars.
 bar_after_show	handled	examine:scenery	look at the box of lids	A box under the counter holding twelve lids and no jars.
