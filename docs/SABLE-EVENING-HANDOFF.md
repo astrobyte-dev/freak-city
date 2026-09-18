@@ -1,0 +1,57 @@
+# Sable opening: conversation and everyday behaviour
+
+Implemented locally on the accepted shared TypeScript foundation. This pass changes the isolated Sable opening, not the original campaign or the mystery. The Inform experiment and the previous foundation milestone remain completed and preserved.
+
+Launch **[the final build](http://localhost:52753/sable-trial.html)** (`sable-evening-4`). Its visible browser session is the separate final verification. The natural evening is preserved below on its own earlier build; it has not been relabelled as a clean final-build playthrough.
+
+## Behaviour and reuse
+
+- Shared handling distinguishes hesitation from competing interpretations. “Perhaps”, “maybe” and “I'm not sure” retain an identified offer without changing objects, time, observations or commitments. Diagnostics say `deferred`, separately from `clarified` and `handled`. Inspection and reload retain the offer; acceptance revalidates actual custody and contents.
+- New orders and refills use the existing entity/custody machinery and the same validated `fillVessel` action. A new order selects an available declared vessel; an explicit refill uses the existing one. “Another coffee” clarifies new versus refill when location, contents or multiple vessels make the distinction consequential.
+- Supply remains exactly the existing cup and glass. Unused vessels are available; an empty vessel on the accessible counter can be rinsed during service. A carried empty vessel is available for an explicit refill, not silently taken for a fresh order. Full, remote, inaccessible or destroyed vessels cannot be overwritten or teleported. No liquid or food simulation was added.
+- Explicit predicates and negation take precedence over yes/no particles. Opinion replies, hesitation, explicit teasing, changed opinions and repetition have distinct authored responses. More specific declared topic names own their phrase: “closing party” does not also select the separate party-planning topic. Unsupported explicit follow-ups cannot silently borrow the previous topic.
+- Sable's topics, detail responses and service wording live in authored declarations. Shared mechanics contain no Sable/Rowan/Kit parser branches. Presentation memory tracks prior replies, expressed opinions, served-drink jokes and declined offers; it is not authority for custody or evidence. The synthetic Rowan/Kit fixture exercises the same hesitation and acceptance code, alongside the existing second-vessel foundation tests. These characters remain non-canon.
+- Ordinary company, thanks, declining and leaving work without opening the investigation. Coffee's introductory joke appears once per beverage/server, not on every refill. Showing evidence describes looking and handing it back. Unsupported interface requests are labelled separately from character dialogue.
+
+## Frozen sessions and review
+
+All four exports were downloaded as matching Markdown/JSON snapshots before further repairs. Source copies/hashes and compiled hashes identify each build. The [snapshot verifier](../artifacts/sable-evening-20260918/verify-snapshots.ts) reproduces their Markdown exactly and compares diagnostic content, retaining each original build identifier.
+
+| Session                       | Readable export                                                                                                               | Matching diagnostic JSON                                                                                          | Purpose                                                                                                             |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `sable-evening-1`, port 52750 | [Ordinary evening, 22 submissions](../artifacts/sable-evening-20260918/exploratory/sable-playtest-transcript.md)              | [Diagnostics](../artifacts/sable-evening-20260918/exploratory/sable-playtest-diagnostics-SPOILERS.json)           | Natural, agent-driven exploration; no HELP or forced mystery completion. Frozen before repairs.                     |
+| `sable-evening-2`, port 52751 | [Repair verification, 16 submissions](../artifacts/sable-evening-20260918/repaired-verification/sable-playtest-transcript.md) | [Diagnostics](../artifacts/sable-evening-20260918/repaired-verification/sable-playtest-diagnostics-SPOILERS.json) | Separate scripted checks of missed meanings, offers, reload and vessel supply.                                      |
+| `sable-evening-3`, port 52752 | [Failed wording check, 2 submissions](../artifacts/sable-evening-20260918/wording-exploration/sable-playtest-transcript.md)   | [Diagnostics](../artifacts/sable-evening-20260918/wording-exploration/sable-playtest-diagnostics-SPOILERS.json)   | Preserved a further negation defect before fixing it.                                                               |
+| `sable-evening-4`, port 52753 | [Final verification, 12 submissions](../artifacts/sable-evening-20260918/delivery-verification/sable-playtest-transcript.md)  | [Diagnostics](../artifacts/sable-evening-20260918/delivery-verification/sable-playtest-diagnostics-SPOILERS.json) | Final build; denial, complaint, explicit topics, uncertainty/reload, remote refill, new order and exhausted supply. |
+
+The natural visit offered reasons to stay: music taste, a costume question and gentle company. “Sabel, what sort of music do you like?” handled the plausible name typo and received “Something with a bass line you notice before you notice yourself swaying,” followed by room for conversation. “Actually, no thanks. I'm happy just chatting” received “Company doesn't have a minimum order.” “Goodnight, Sable” received “Get home all right… It was good to see you.” The visit ended at home at 18:28, with no scheduled events or commitments. The coffee joke did not repeat; the hesitation response was quiet rather than comic.
+
+It also exposed real defects. “No, I think it sounds perfectly reasonable” was rejected; the repaired response now says the letter can be sent as it is. “Tell me more about the party” retained the music subject; it now discusses party preparations. “Have you sorted out the snacks?” unnecessarily clarified; it now admits the menu's snack line is blank. Those are implementation repairs, not successful original interactions. Of the original 18 `handled` outcomes, the party response was a meaning mismatch: diagnostic execution is not a quality score.
+
+The later wording check exposed “I found a photograph, but it isn't you” becoming a positive claim. Shared negation now recognises the missing contractions, with variants covered by regressions. The final response asks for clarification and records no claim. This is safe clarification, not full understanding of a negative photographic identification. The final diagnostic contains two clarifications, fourteen handled sub-actions, one deferred reply and two expected rejections, across twelve submissions. Both denials and hesitation leave state unchanged.
+
+Remaining limits are concrete. “I'd call it the assistant manager” cannot name the rubber octopus; this is unsupported scenery interaction, and the naming joke still suggests more freedom than exists. “Take cup and finish coffee” clarifies as competing object wording; semicolon-separated actions work. Conversation is finite and authored, including repeated replies; it does not provide unrestricted natural-language understanding or infer sarcasm. These limitations were retained in the exports, not disguised as success.
+
+## Verification and preservation
+
+The new evening suite has 35 cases; all six Sable suites pass **190 tests**. It covers opposite opinions, new order/refill distinctions, remote/full/held/multiple vessels, uncertainty versus ambiguity, actual pending-offer reload, refusals, qualifications and synthetic reuse. Additional wording was used after implementation and the natural exploration; this was agent-driven testing, not a blind human study. Earlier human transcripts and the engine-neutral comparison remain historical evidence. Their regressions were adapted only for intended differences: hesitation is deferred, explicit opinion resolves instead of clarifying, remote-refill checks explicitly request a refill, and natural prose replaces internal explanations. Two obsolete ambiguity cases were replaced by stronger opinion/state assertions in the new suite. Previous source and evidence remain available in `before/` and the earlier milestone artifacts.
+
+Final-build repository checks run in an isolated verification copy so generated reports cannot overwrite prior evidence:
+
+- `npm run check`: **1,297 tests / 19 files**, build, narrative QA, scripted/fuzz routes, 12 parser campaigns, 60 natural-language campaigns and all 117 existing scenes accounted for.
+- `npm run test:browser`: original campaign passed, including reload, drafts, desktop/mobile and 11 accessibility scans.
+- Sable browser gates: all four existing direct/Vesper × formal/document paths passed, eight accessibility scans, reload/bookmark/draft and legacy storage isolation; export/history gate passed with two scans.
+- `npm run format:check`: still fails only on the two pre-existing evidence files `docs/design/text-opening-transition/engine-review.json` and `verification.json`. They were preserved byte-for-byte. Changed files pass their separate formatting check.
+
+Logs and reports are in [the evidence folder](../artifacts/sable-evening-20260918/). Initial failures, intermediate checks and the final reruns have separate filenames. [Preservation audit](../artifacts/sable-evening-20260918/preservation-audit.json) compares the 1,489-file baseline; original campaign files, artwork, inactive prototype, Inform files and prior evidence are unchanged. No commits, pushes, deployments or new dependencies were made.
+
+Save revision remains 3. The additive `interactionMemory` schema supplies validated defaults for older revision-three saves without changing entities, context or transcript. Revision-one/two migration and raw backup behaviour are preserved. Invalid new memory is rejected; no save is silently deleted or reset. Browser work used new local origins and synthetic aliases; existing personal-save origins were not accessed.
+
+The running copy is recorded in [delivery-location.json](../artifacts/sable-evening-20260918/delivery-location.json), with [source hashes](../artifacts/sable-evening-20260918/delivery-source-hashes.json) and [compiled hashes](../artifacts/sable-evening-20260918/delivery-build-hashes.json). To launch from the repository with the existing dependencies, choose another unused port:
+
+```powershell
+node node_modules/vite/bin/vite.js build --config vite.sable.config.ts
+node node_modules/vite/bin/vite.js preview --config vite.sable.config.ts --host 127.0.0.1 --port 52754 --strictPort
+```
+
+Then open `http://localhost:52754/sable-trial.html`. No installation is needed. The normal campaign build remains separate.

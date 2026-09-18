@@ -1,4 +1,6 @@
 import { validateWorld, upgradeWorld } from "./world-validation";
+import { nextDueEvent, scheduleOnce } from "./event-queue";
+import { advanceCommitments, inspectCare } from "./commitments";
 import {
   stateSchema,
   npcIds,
@@ -238,13 +240,12 @@ export function applyEffects(
         s.factions[e.id] = (s.factions[e.id] ?? 0) + e.amount;
         break;
       case "schedule":
-        if (!s.events.some((x) => x.id === e.id))
-          s.events.push({
-            id: e.id,
-            at: s.time + e.delay,
-            status: "pending",
-            effects: structuredClone(e.effects),
-          });
+        scheduleOnce(s.events, {
+          id: e.id,
+          at: s.time + e.delay,
+          status: "pending",
+          effects: structuredClone(e.effects),
+        });
         break;
       case "cancel": {
         const event = s.events.find(
@@ -308,11 +309,10 @@ export function applyEffects(
 export function advanceTime(s: GameState, minutes: number, log: string[] = []) {
   const target = s.time + minutes;
   for (let guard = 0; guard < 100; guard++) {
-    const next = s.events
-      .filter((e) => e.status === "pending" && e.at <= target)
-      .sort((a, b) => a.at - b.at || a.id.localeCompare(b.id))[0];
+    const next = nextDueEvent(s.events, target);
     if (!next) break;
     s.time = Math.max(s.time, next.at);
+    advanceCommitments(s, next.at * 60);
     next.status = "fired";
     log.push(`EVENT ${next.id} at ${s.time}`);
     applyEffects(s, next.effects, log);
@@ -356,6 +356,8 @@ export function advanceTime(s: GameState, minutes: number, log: string[] = []) {
     }
   }
   s.time = target;
+  advanceCommitments(s, target * 60);
+  inspectCare(s, target * 60);
   for (const r of s.rumours) {
     if (!r.corrected && r.stage === 0 && s.time - r.at >= 14) {
       r.stage = 1;
@@ -596,6 +598,11 @@ export function replyMessage(s: GameState, id: string, responseId = "source") {
   const n = structuredClone(s),
     m = n.messages.find((x) => x.id === id)!;
   m.replied = true;
+  if (n.world?.social) {
+    n.world.social.focus = false;
+    delete n.world.social.offer;
+    delete n.world.social.clarification;
+  }
   m.read = true;
   n.messages.push({
     id: `reply-${id}`,

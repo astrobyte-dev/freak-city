@@ -1,0 +1,12 @@
+{
+  "authoringTool": "OpenAI built-in imagegen",
+  "provider": "OpenAI",
+  "model": null,
+  "seed": null,
+  "settings": {
+    "intent": "one architecture-only vestibule source using approved room material references and authored corridor guide",
+    "requestedDimensions": [1440, 1008],
+    "promptFile": "authoring-prompt.txt",
+    "references": ["approved Velvet source: style only", "approved street source: continuity only", "authored corridor guide: layout"]
+  }
+}

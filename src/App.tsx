@@ -1,5 +1,6 @@
 import {
   useEffect,
+  useMemo,
   useRef,
   useState,
   lazy,
@@ -32,6 +33,13 @@ import {
   Radio,
   Briefcase,
 } from "lucide-react";
+import { deriveVisualState } from "./visuals/derive";
+import {
+  readVisualMode,
+  storeVisualMode,
+  VISUAL_PREFERENCE_KEY,
+} from "./visuals/preferences";
+import type { VisualMode } from "./visuals/types";
 import { rooms } from "./content/spaces";
 import { ensureWorld, executeCommand } from "./engine/parser";
 import { CommandTerminal } from "./components/CommandTerminal";
@@ -104,6 +112,9 @@ export default function App() {
   const [sound, setSound] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   const [textSize, setTextSize] = useState(1);
+  const [visualMode, setVisualMode] = useState<VisualMode>(readVisualMode);
+  const visualDescriptor = useMemo(() => deriveVisualState(state), [state]);
+
   const [saveStatus, setSaveStatus] = useState("LOCAL AUTOSAVE");
   const [alias, setAlias] = useState("");
   const [seed, setSeed] = useState("");
@@ -341,6 +352,8 @@ export default function App() {
               onClick={() => {
                 try {
                   eraseLocal();
+                  localStorage.removeItem(VISUAL_PREFERENCE_KEY);
+                  setVisualMode("on");
                   skipSave.current = true;
                   preservedBadSave.current = false;
                   setState(ensureWorld(newGame()));
@@ -459,6 +472,28 @@ export default function App() {
                   })
                 }
               />
+            </label>
+            <label className="toggle-row">
+              <span>
+                <strong>Environmental visuals</strong>
+                <small>
+                  Room atmosphere. All gameplay information stays available in
+                  text.
+                </small>
+              </span>
+              <select
+                aria-label="Environmental visuals"
+                value={visualMode}
+                onChange={(e) => {
+                  const value = e.target.value as VisualMode;
+                  setVisualMode(value);
+                  storeVisualMode(value);
+                }}
+              >
+                <option value="on">On</option>
+                <option value="reduced">Reduced — still image</option>
+                <option value="off">Off — text only</option>
+              </select>
             </label>
             <label className="toggle-row">
               <span>
@@ -681,6 +716,8 @@ export default function App() {
             <Atmosphere
               state={state}
               location={currentRoom.location}
+              descriptor={visualDescriptor}
+              visualMode={visualMode}
               onMap={() => openPanel("map")}
             />
             <section

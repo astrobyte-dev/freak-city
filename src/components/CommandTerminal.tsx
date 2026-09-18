@@ -12,7 +12,7 @@ export function CommandTerminal({
   onCommand,
 }: {
   state: GameState;
-  onCommand: (command: string) => boolean;
+  onCommand: (command: string) => void;
 }) {
   const [input, setInput] = useDraft(`freak-city:command:${state.seed}`);
   const composing = useRef(false);
@@ -52,11 +52,14 @@ export function CommandTerminal({
     lastSubmission.current = { text: command, at: Date.now() };
     following.current = true;
     setUnread(false);
-    if (!onCommand(command)) return;
+    // Dispatch owns this text, even when the story cannot perform the action.
+    // Clear before calling out: a later response must not erase a newer draft.
     setInput("");
     setHistoryIndex(-1);
     setCompletion(null);
     draft.current = "";
+    inputRef.current?.focus({ preventScroll: true });
+    onCommand(command);
   }
   function recall(delta: number) {
     if (!w.commandHistory.length) return;

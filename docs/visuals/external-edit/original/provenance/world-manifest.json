@@ -1,0 +1,793 @@
+{
+  "schemaVersion": 2,
+  "role": "canonical-room",
+  "roomId": "bar",
+  "roomIdentity": "Velvet / the bar",
+  "canonicalArchitecture": "A folded towel protects the counter. Two pencils wait beside mismatched cups. The main floor opens toward a small stage; stairs rise beside a quieter salon. A service door leads to the kitchen.",
+  "layoutBlueprint": {
+    "id": "velvet-bar-layout",
+    "version": 1,
+    "roomId": "bar",
+    "frame": [
+      320,
+      224
+    ],
+    "boundary": [
+      0,
+      0,
+      320,
+      224
+    ],
+    "wallHeight": 144,
+    "coordinatePolicy": "Non-metric art coordinates: x west to east, y front/south to back/north. Rectangle, dimensions and unspecified route positions are composition choices, not additional parser geography. Front wall is a camera cutaway, not an exit.",
+    "elements": [
+      {
+        "id": "stairs",
+        "kind": "staircase",
+        "box": [
+          132,
+          146,
+          176,
+          224
+        ],
+        "height": 140,
+        "steps": 8,
+        "route": "landing",
+        "beside": "salon",
+        "facts": [
+          "staticArchitecture:0"
+        ],
+        "label": "One staircase / upstairs"
+      },
+      {
+        "id": "counter",
+        "kind": "counter",
+        "box": [
+          14,
+          18,
+          80,
+          139
+        ],
+        "height": 44,
+        "entityId": "counter",
+        "facts": [
+          "fixedFurniture:0"
+        ],
+        "label": "Fixed counter / bare surface"
+      },
+      {
+        "id": "shelves",
+        "kind": "shelves",
+        "box": [
+          0,
+          98,
+          10,
+          157
+        ],
+        "bottom": 75,
+        "height": 122,
+        "entityId": "detail_bar_shelves",
+        "facts": [
+          "fixedFurniture:1"
+        ],
+        "label": "Fixed bottle shelving / empty"
+      },
+      {
+        "id": "window",
+        "kind": "window",
+        "box": [
+          316,
+          45,
+          320,
+          103
+        ],
+        "bottom": 99,
+        "height": 134,
+        "entityId": "detail_bar_window",
+        "facts": [
+          "staticArchitecture:1"
+        ],
+        "label": "High street-facing window"
+      },
+      {
+        "id": "stage-view",
+        "kind": "stage-view",
+        "box": [
+          307,
+          166,
+          320,
+          217
+        ],
+        "height": 7,
+        "route": "stage",
+        "facts": [
+          "staticArchitecture:0"
+        ],
+        "label": "Distant small stage beyond east route"
+      }
+    ],
+    "routes": [
+      {
+        "to": "vestibule",
+        "wall": "south",
+        "span": [
+          100,
+          145
+        ],
+        "height": 90,
+        "label": "Vestibule / south",
+        "offCamera": true
+      },
+      {
+        "to": "street",
+        "wall": "south",
+        "span": [
+          235,
+          280
+        ],
+        "height": 90,
+        "label": "Outside / front door",
+        "offCamera": true
+      },
+      {
+        "to": "landing",
+        "wall": "north",
+        "span": [
+          132,
+          176
+        ],
+        "height": 140,
+        "label": "Upstairs via the single staircase"
+      },
+      {
+        "to": "kitchen",
+        "wall": "west",
+        "span": [
+          30,
+          72
+        ],
+        "height": 92,
+        "label": "Kitchen / service opening"
+      },
+      {
+        "to": "stage",
+        "wall": "east",
+        "span": [
+          164,
+          219
+        ],
+        "height": 92,
+        "label": "Stage / east"
+      },
+      {
+        "to": "salon",
+        "wall": "north",
+        "span": [
+          186,
+          230
+        ],
+        "height": 92,
+        "label": "Salon / beside stairs"
+      },
+      {
+        "to": "archive",
+        "wall": "west",
+        "span": [
+          175,
+          216
+        ],
+        "height": 92,
+        "label": "Archive / service-table route"
+      }
+    ],
+    "reservations": [
+      {
+        "id": "npc-floor",
+        "box": [
+          97,
+          24,
+          235,
+          130
+        ],
+        "purpose": "NPCs and movable objects; no figures baked in"
+      },
+      {
+        "id": "right-floor",
+        "box": [
+          244,
+          34,
+          300,
+          137
+        ],
+        "purpose": "Additional dynamic object / NPC space"
+      },
+      {
+        "id": "foreground",
+        "box": [
+          86,
+          0,
+          307,
+          20
+        ],
+        "purpose": "Foreground overlays / transient clutter"
+      }
+    ]
+  },
+  "exits": [
+    {
+      "name": "vestibule",
+      "to": "vestibule",
+      "minutes": 1,
+      "aliases": [
+        "south",
+        "entrance"
+      ]
+    },
+    {
+      "name": "outside",
+      "to": "street",
+      "minutes": 2,
+      "aliases": [
+        "out",
+        "leave",
+        "front door"
+      ]
+    },
+    {
+      "name": "upstairs",
+      "to": "landing",
+      "minutes": 2,
+      "aliases": [
+        "up",
+        "stairs"
+      ]
+    },
+    {
+      "name": "kitchen",
+      "to": "kitchen",
+      "minutes": 1,
+      "aliases": [
+        "service door",
+        "west"
+      ]
+    },
+    {
+      "name": "stage",
+      "to": "stage",
+      "minutes": 1,
+      "aliases": [
+        "luca",
+        "east",
+        "floor"
+      ]
+    },
+    {
+      "name": "salon",
+      "to": "salon",
+      "minutes": 1,
+      "aliases": []
+    },
+    {
+      "name": "archive",
+      "to": "archive",
+      "minutes": 1,
+      "aliases": [
+        "service table",
+        "envelope",
+        "documents"
+      ]
+    }
+  ],
+  "staticArchitecture": [
+    {
+      "text": "One staircase beside the salon; main floor toward a small stage",
+      "model": "single staircase beside salon, distant small stage"
+    },
+    {
+      "text": "High street-facing window",
+      "model": "high street window",
+      "entityId": "detail_bar_window"
+    }
+  ],
+  "fixedFurniture": [
+    {
+      "text": "Fixed bar counter, bare surface",
+      "model": "fixed bar counter",
+      "entityId": "counter"
+    },
+    {
+      "text": "Fixed bottle shelving, no loose cups or readable labels",
+      "model": "bottle shelves",
+      "entityId": "detail_bar_shelves"
+    }
+  ],
+  "dynamicObjects": [
+    "detail_bar_stool",
+    "detail_bar_glass",
+    "detail_bar_light",
+    "detail_bar_bin",
+    "detail_bar_clock"
+  ],
+  "dynamicDoors": [],
+  "npcZones": [
+    {
+      "x": 260,
+      "y": 160
+    },
+    {
+      "x": 143,
+      "y": 140
+    },
+    {
+      "x": 78,
+      "y": 152
+    },
+    {
+      "x": 297,
+      "y": 135
+    }
+  ],
+  "atmosphereZones": [
+    {
+      "x": 30,
+      "y": 100,
+      "width": 260,
+      "height": 64
+    }
+  ],
+  "foregroundZones": [
+    {
+      "x": 0,
+      "y": 180,
+      "width": 320,
+      "height": 44
+    }
+  ],
+  "sceneIllustrationHints": [
+    "Velvet bar slow shift, distant adult bartender and two anonymous adult patrons, rain beyond high window, reflective floor"
+  ],
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "generationPresets": {
+    "texture": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1.3,
+      "displayWidth": 320
+    },
+    "canonical-room": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1.15,
+      "displayWidth": 640
+    },
+    "scene-illustration": {
+      "pixelWidth": 320,
+      "colors": 64,
+      "contrast": 1.1,
+      "displayWidth": 512
+    },
+    "overlay": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1,
+      "displayWidth": 512
+    }
+  },
+  "bakedEntities": [
+    {
+      "id": "detail_bar_window",
+      "location": "bar"
+    },
+    {
+      "id": "counter",
+      "location": "bar",
+      "open": true
+    },
+    {
+      "id": "detail_bar_shelves",
+      "location": "bar"
+    }
+  ],
+  "conditioning": {
+    "mode": "text-only",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "canonicalEntities": [
+    {
+      "id": "counter",
+      "name": "bar counter",
+      "aliases": [
+        "counter",
+        "bar",
+        "on bar"
+      ],
+      "description": "A towel, a water ring, the small abrasions of people waiting.",
+      "kind": "Container",
+      "portable": false,
+      "open": true,
+      "properties": {
+        "surface": true
+      }
+    },
+    {
+      "id": "detail_bar_stool",
+      "name": "bar stool",
+      "aliases": [
+        "stool",
+        "bar stool"
+      ],
+      "description": "The seat turns a quarter revolution before deciding against it.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "sit": true,
+        "lean": true
+      }
+    },
+    {
+      "id": "detail_bar_shelves",
+      "name": "bottle shelves",
+      "aliases": [
+        "shelves",
+        "bottle shelves"
+      ],
+      "description": "Marker labels face outward. A chipped cup guards the end of the row.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true
+      }
+    },
+    {
+      "id": "detail_bar_glass",
+      "name": "empty glass",
+      "aliases": [
+        "glass",
+        "empty glass"
+      ],
+      "description": "A clean glass on a folded towel. A tiny chip has been marked for the supplier.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "touch": "The rim is dry; you avoid the marked chip."
+      }
+    },
+    {
+      "id": "detail_bar_light",
+      "name": "pendant light",
+      "aliases": [
+        "light",
+        "pendant light"
+      ],
+      "description": "An amber shade makes the counter look warmer than it is.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true
+      }
+    },
+    {
+      "id": "detail_bar_window",
+      "name": "high window",
+      "aliases": [
+        "window",
+        "high window"
+      ],
+      "description": "The glass is too high for anyone to watch the street without a ladder.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true
+      }
+    },
+    {
+      "id": "detail_bar_bin",
+      "name": "bar bin",
+      "aliases": [
+        "bin",
+        "bar bin"
+      ],
+      "description": "A lined bin under the counter.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "search": "Citrus peel, till paper and a broken plastic stirrer. No abandoned evidence."
+      }
+    },
+    {
+      "id": "detail_bar_clock",
+      "name": "bar clock",
+      "aliases": [
+        "clock",
+        "bar clock"
+      ],
+      "description": "The clock above the cups is readable from the whole counter.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true
+      }
+    }
+  ],
+  "requiredVisualFacts": [
+    "Background texture plate only: muted material, colour and ambient light.",
+    "Reserve all canonical object and NPC zones for runtime compositing.",
+    "Composition uses the 320 x 224 reference frame without cropping."
+  ],
+  "forbiddenVisualFacts": [
+    "Any identifiable object, evidence, NPC, silhouette, door, window, staircase, sign or damage baked into the plate.",
+    "Additional architecture or routes not represented in the canonical reference.",
+    "Legible text, faces, nudity, sexual activity, branded logos or personal data.",
+    "Current hidden facts, solved-mystery clues or state inferred from plot summaries."
+  ],
+  "styleGuide": {
+    "artDirectionFamily": "Public Velvet",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "sceneConcept": "velvet material study for Velvet / the bar; flat texture and lighting only. Runtime sprites supply all recognizable world facts.",
+  "lighting": "amber",
+  "state": {
+    "time": 1428,
+    "timeBand": "early",
+    "weather": "rain",
+    "lighting": "amber",
+    "crowd": "busy",
+    "npcPresence": [
+      "mara"
+    ],
+    "canonicalObjects": [
+      {
+        "id": "counter",
+        "name": "bar counter",
+        "aliases": [
+          "counter",
+          "bar",
+          "on bar"
+        ],
+        "kind": "Container",
+        "location": "bar",
+        "open": true,
+        "damaged": false,
+        "anchor": {
+          "glyph": "counter",
+          "x": 12,
+          "y": 148,
+          "width": 229,
+          "height": 36
+        }
+      },
+      {
+        "id": "detail_bar_stool",
+        "name": "bar stool",
+        "aliases": [
+          "stool",
+          "bar stool"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "stool",
+          "x": 166,
+          "y": 172,
+          "width": 26,
+          "height": 35
+        }
+      },
+      {
+        "id": "detail_bar_shelves",
+        "name": "bottle shelves",
+        "aliases": [
+          "shelves",
+          "bottle shelves"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "shelf",
+          "x": 29,
+          "y": 69,
+          "width": 117,
+          "height": 28
+        }
+      },
+      {
+        "id": "detail_bar_glass",
+        "name": "empty glass",
+        "aliases": [
+          "glass",
+          "empty glass"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "glass",
+          "x": 94,
+          "y": 131,
+          "width": 11,
+          "height": 17
+        }
+      },
+      {
+        "id": "detail_bar_light",
+        "name": "pendant light",
+        "aliases": [
+          "light",
+          "pendant light"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "light",
+          "x": 167,
+          "y": 19,
+          "width": 23,
+          "height": 36
+        }
+      },
+      {
+        "id": "detail_bar_window",
+        "name": "high window",
+        "aliases": [
+          "window",
+          "high window"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "window",
+          "x": 253,
+          "y": 29,
+          "width": 47,
+          "height": 27
+        }
+      },
+      {
+        "id": "detail_bar_bin",
+        "name": "bar bin",
+        "aliases": [
+          "bin",
+          "bar bin"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false,
+        "anchor": {
+          "glyph": "bin",
+          "x": 17,
+          "y": 184,
+          "width": 18,
+          "height": 21
+        }
+      },
+      {
+        "id": "detail_bar_clock",
+        "name": "bar clock",
+        "aliases": [
+          "clock",
+          "bar clock"
+        ],
+        "kind": "Object",
+        "location": "bar",
+        "damaged": false
+      }
+    ],
+    "openClosedState": {
+      "counter": true
+    },
+    "specialEvents": ""
+  },
+  "timeVariants": [
+    "early",
+    "night",
+    "late",
+    "closing",
+    "dawn",
+    "day"
+  ],
+  "weatherCompatibility": "inside",
+  "canonicalVisualAnchors": {
+    "detail_bar_window": {
+      "glyph": "window",
+      "x": 253,
+      "y": 29,
+      "width": 47,
+      "height": 27
+    },
+    "detail_bar_shelves": {
+      "glyph": "shelf",
+      "x": 29,
+      "y": 69,
+      "width": 117,
+      "height": 28
+    },
+    "detail_bar_light": {
+      "glyph": "light",
+      "x": 167,
+      "y": 19,
+      "width": 23,
+      "height": 36
+    },
+    "counter": {
+      "glyph": "counter",
+      "x": 12,
+      "y": 148,
+      "width": 229,
+      "height": 36
+    },
+    "detail_bar_glass": {
+      "glyph": "glass",
+      "x": 94,
+      "y": 131,
+      "width": 11,
+      "height": 17
+    },
+    "detail_bar_stool": {
+      "glyph": "stool",
+      "x": 166,
+      "y": 172,
+      "width": 26,
+      "height": 35
+    },
+    "detail_bar_bin": {
+      "glyph": "bin",
+      "x": 17,
+      "y": 184,
+      "width": 18,
+      "height": 21
+    }
+  },
+  "npcPlacementZones": [
+    {
+      "x": 260,
+      "y": 160
+    },
+    {
+      "x": 143,
+      "y": 140
+    },
+    {
+      "x": 78,
+      "y": 152
+    },
+    {
+      "x": 297,
+      "y": 135
+    }
+  ],
+  "output": {
+    "formats": [
+      "webp",
+      "avif"
+    ],
+    "width": 640,
+    "height": 448,
+    "maximumBytes": 150000,
+    "directory": "public/visuals/generated",
+    "initialStatus": "draft"
+  }
+}

@@ -1,4 +1,5 @@
 import { useDraft } from "./useDraft";
+import { clockLabel } from "../engine/commitments";
 import { useState } from "react";
 import { executeCommand } from "../engine/parser";
 import { rooms } from "../content/spaces";
@@ -209,14 +210,41 @@ export function JournalPanel({
             : "An unsigned message. An old signature. Somebody has made you part of their night."}
         </p>
       </div>
+      {!!state.world?.social?.agreements.length && <h4>WHAT YOU AGREED</h4>}
+      {state.world?.social?.agreements.map((a) => (
+        <div className="fact" key={a.id}>
+          <FileText size={17} />
+          <div>
+            <p>
+              Agreed with Inez: collect your closed envelope from the ledge
+              before {clockLabel(a.due)}.
+            </p>
+            <small>
+              Watching ends at {clockLabel(a.limit)}.{" "}
+              {a.status === "active"
+                ? "Collection still due."
+                : a.status === "fulfilled"
+                  ? "Collected on time."
+                  : a.status === "missed"
+                    ? "Agreed time missed; collection unfinished."
+                    : a.status === "collected-late"
+                      ? "Collected late; the missed time remains recorded."
+                      : "Arrangement cancelled."}{" "}
+              {a.repairAt !== undefined
+                ? "You acknowledged the miss and Inez has seen you have the envelope."
+                : a.apologyAt !== undefined
+                  ? "You acknowledged the missed time."
+                  : ""}
+            </small>
+          </div>
+        </div>
+      ))}
       <h4>
         WHAT YOU KNOW{" "}
         <span>{String(state.canon.player.length).padStart(2, "0")}</span>
       </h4>
       {state.canon.player.length === 0 ? (
-        <p className="muted">
-          Nothing verified yet. The invitation is in your belongings.
-        </p>
+        <p className="muted">Nothing verified yet.</p>
       ) : (
         state.canon.player.map((f) => (
           <div className="fact" key={f}>

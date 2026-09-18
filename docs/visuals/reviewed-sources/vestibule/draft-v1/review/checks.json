@@ -1,0 +1,1628 @@
+{
+  "status": "passed-draft-unactivated",
+  "records": [
+    {
+      "label": "open-present-floor",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "open-present-ledge",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "closed-present-floor",
+      "time": 1444,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "closed-present-ledge",
+      "time": 1444,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "open-absent-floor",
+      "time": 1456,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "open-absent-ledge",
+      "time": 1456,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "closed-absent-floor",
+      "time": 1457,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "closed-absent-ledge",
+      "time": 1457,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "open-present-floor",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "open-present-ledge",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "closed-present-floor",
+      "time": 1444,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "closed-present-ledge",
+      "time": 1444,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "open-absent-floor",
+      "time": 1456,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "open-absent-ledge",
+      "time": 1456,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "closed-absent-floor",
+      "time": 1457,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "closed-absent-ledge",
+      "time": 1457,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "held",
+      "time": 1431,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "other-object",
+      "time": 1432,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "phone",
+          "location": "vestibule"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "returned-ledge",
+      "time": 1445,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "retaken",
+      "time": 1446,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "locked",
+      "time": 1600,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "low",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "label": "inez-return",
+      "time": 1478,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "inez-departed",
+      "time": 1620,
+      "npcs": [],
+      "objects": [
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "low",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "reduced",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "reduced"
+    },
+    {
+      "label": "off",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "mobile",
+      "mode": "off"
+    },
+    {
+      "label": "ledge-absent",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "ledge-damaged",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_bench-absent",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_bench-damaged",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_notice-absent",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_notice-damaged",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_heater-absent",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_heater-damaged",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_book-absent",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_book-damaged",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_bag-absent",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "detail_vestibule_bag-damaged",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "envelope",
+          "location": "ledge"
+        },
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "label": "ledge-closed",
+      "time": 1443,
+      "npcs": [
+        "inez"
+      ],
+      "objects": [
+        {
+          "id": "side_door",
+          "location": "street"
+        },
+        {
+          "id": "ledge",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bench",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_notice",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_heater",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_book",
+          "location": "vestibule"
+        },
+        {
+          "id": "detail_vestibule_bag",
+          "location": "vestibule"
+        }
+      ],
+      "lighting": "amber",
+      "size": "desktop",
+      "mode": "on"
+    }
+  ],
+  "errors": [],
+  "protectedFileCount": 97,
+  "approvedRoomPixelMatches": 4,
+  "checks": [
+    "16 desktop/mobile door-presence-custody combinations",
+    "floor and ledge envelope contacts",
+    "shared door commands, 02:40 lock and bar escape",
+    "Inez procedural presence/absence/return/departure",
+    "all four routes",
+    "custody, leave/return/take and exact save/reload",
+    "all owner absence/damage, closed ledge hides contents",
+    "10 mobile image failures, no orphaned effects",
+    "On/Reduced/Off",
+    "ordinary UI via isolated response injection",
+    "street and Velvet pixel-identical; all src/public hashes unchanged",
+    "no chair artwork or new character image"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "humanReviewStatus": "approved",
+  "architectureReviewStatus": "approved",
+  "reviewer": "project owner (user)",
+  "date": "2026-09-09",
+  "scope": "Corrected Velvet canonical room, 64-colour treatment; promotion on feature/state-driven-visuals only",
+  "sourceSha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2",
+  "candidateSha256": "cc6cc436469c34bcb7593cc7fa89bf6376e668d18dc8c648a2ab2e4a34bb85e1",
+  "statement": "I APPROVE the corrected Velvet Bar canonical-room artwork.",
+  "locked": ["camera composition", "one central staircase", "fixed left bar", "shelving relationship", "high right window", "east passage / small-stage relationship", "broad open central floor", "room envelope", "magenta/cyan visual identity", "wet reflective floor treatment", "grungy material language"],
+  "futureChanges": "Deterministic/manual corrections tied to actual world-design changes. No further generative cleanup.",
+  "overlayArtApproval": "pending; separate pilot review",
+  "restrictions": ["PR #1 remains draft", "no merge", "no main changes", "no public Pages deployment"]
+}

@@ -1,0 +1,2387 @@
+[
+  {
+    "command": "ask Kit about the notice",
+    "result": {
+      "lines": [
+        "Kit: Does the notice sound severe?"
+      ],
+      "minutes": 2,
+      "intent": "conversation:notice",
+      "meaning": {
+        "kind": "topic",
+        "interlocutor": "kit",
+        "entities": [],
+        "subject": "notice"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 12,
+      "objectFocus": [],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "social",
+        "topic": "notice",
+        "question": {
+          "kind": "opinion",
+          "subject": "notice"
+        },
+        "references": [],
+        "at": 10,
+        "room": "bar"
+      }
+    },
+    "observations": []
+  },
+  {
+    "command": "no it doesn't sound severe",
+    "result": {
+      "lines": [
+        "Kit: You find the notice harmless."
+      ],
+      "minutes": 2,
+      "intent": "conversation:opinion",
+      "meaning": {
+        "kind": "opinion",
+        "interlocutor": "kit",
+        "entities": [],
+        "subject": "notice",
+        "polarity": "negative"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 14,
+      "objectFocus": [],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "social",
+        "topic": "notice",
+        "references": [],
+        "at": 12,
+        "room": "bar"
+      }
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      }
+    ]
+  },
+  {
+    "command": "tell me more",
+    "result": {
+      "lines": [
+        "Kit: The notice concerns missing spoons."
+      ],
+      "minutes": 2,
+      "intent": "conversation:notice",
+      "meaning": {
+        "kind": "followup",
+        "interlocutor": "kit",
+        "entities": [],
+        "subject": "notice"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 16,
+      "objectFocus": [],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "social",
+        "topic": "notice",
+        "references": [],
+        "at": 14,
+        "room": "bar"
+      }
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      }
+    ]
+  },
+  {
+    "command": "Kit, order coffee",
+    "result": {
+      "lines": [
+        "Kit sets a cup of coffee within reach. Coffee is ready."
+      ],
+      "minutes": 2,
+      "intent": "conversation:order-drink",
+      "meaning": {
+        "kind": "request",
+        "interlocutor": "kit",
+        "entities": [
+          "cup"
+        ],
+        "subject": "drink"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 18,
+      "objectFocus": [],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "unplaced",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "cup"
+        ],
+        "at": 16,
+        "room": "bar"
+      },
+      "lastVesselId": "cup",
+      "preference": "coffee"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "Kit, order tea",
+    "result": {
+      "lines": [
+        "Kit sets a mug of tea within reach. Tea is ready."
+      ],
+      "minutes": 2,
+      "intent": "conversation:order-drink",
+      "meaning": {
+        "kind": "request",
+        "interlocutor": "kit",
+        "entities": [
+          "mug"
+        ],
+        "subject": "drink"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 20,
+      "objectFocus": [],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "mug"
+        ],
+        "at": 18,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "sip drink",
+    "result": {
+      "lines": [
+        "Which object do you mean: cup or mug? Please repeat the action with its name."
+      ],
+      "failed": true,
+      "clarified": true,
+      "intent": "object:ambiguous",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "cup",
+          "mug"
+        ]
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 20,
+      "objectFocus": [],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "mug"
+        ],
+        "at": 18,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "take mug",
+    "result": {
+      "lines": [
+        "You take the mug."
+      ],
+      "minutes": 1,
+      "intent": "object:take",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "mug"
+        ]
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 21,
+      "objectFocus": [
+        "mug"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "mug"
+        ],
+        "at": 18,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "have one more sip of the mug",
+    "result": {
+      "lines": [
+        "You take a sip of tea from the mug."
+      ],
+      "minutes": 1,
+      "intent": "object:consume",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "mug"
+        ]
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 22,
+      "objectFocus": [
+        "mug"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 2,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "mug"
+        ],
+        "at": 18,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "finish mug",
+    "result": {
+      "lines": [
+        "You finish your tea; the empty mug remains in your hand."
+      ],
+      "minutes": 1,
+      "intent": "object:consume",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "mug"
+        ]
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 23,
+      "objectFocus": [
+        "mug"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "mug"
+        ],
+        "at": 18,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "put down mug",
+    "result": {
+      "lines": [
+        "You put down the mug."
+      ],
+      "minutes": 1,
+      "intent": "object:put",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "mug"
+        ]
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 24,
+      "objectFocus": [
+        "mug"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "drink",
+        "topic": "drink",
+        "references": [
+          "mug"
+        ],
+        "at": 18,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You put down the mug.",
+        "entities": [
+          "mug"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "Kit, I discovered a snapshot",
+    "result": {
+      "lines": [
+        "Kit: That's your account; I haven't inspected it."
+      ],
+      "minutes": 2,
+      "intent": "conversation:image-claim",
+      "meaning": {
+        "kind": "claim",
+        "interlocutor": "kit",
+        "entities": [
+          "snapshot"
+        ],
+        "subject": "image"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 26,
+      "objectFocus": [
+        "mug"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "evidence",
+        "topic": "image",
+        "references": [
+          "snapshot"
+        ],
+        "at": 24,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You put down the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "claim",
+        "subject": "image",
+        "words": "Kit, I discovered a snapshot",
+        "entities": [
+          "snapshot"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "take snapshot",
+    "result": {
+      "lines": [
+        "You take the snapshot. You haven't read it by taking it."
+      ],
+      "minutes": 1,
+      "intent": "object:take",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "snapshot"
+        ]
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 27,
+      "objectFocus": [
+        "snapshot"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "evidence",
+        "topic": "image",
+        "references": [
+          "snapshot"
+        ],
+        "at": 24,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You put down the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "claim",
+        "subject": "image",
+        "words": "Kit, I discovered a snapshot",
+        "entities": [
+          "snapshot"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "snapshot",
+        "words": "You take the snapshot.",
+        "entities": [
+          "snapshot"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "show snapshot to Kit",
+    "result": {
+      "lines": [
+        "Kit inspects the snapshot. You keep custody."
+      ],
+      "minutes": 2,
+      "intent": "object:show",
+      "meaning": {
+        "kind": "object",
+        "entities": [
+          "snapshot"
+        ],
+        "interlocutor": "kit"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 29,
+      "objectFocus": [
+        "snapshot"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "evidence",
+        "topic": "image",
+        "references": [
+          "snapshot"
+        ],
+        "at": 27,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You put down the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "claim",
+        "subject": "image",
+        "words": "Kit, I discovered a snapshot",
+        "entities": [
+          "snapshot"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "snapshot",
+        "words": "You take the snapshot.",
+        "entities": [
+          "snapshot"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "inspect",
+        "subject": "snapshot",
+        "words": "Inspected original",
+        "entities": [
+          "snapshot"
+        ]
+      }
+    ]
+  },
+  {
+    "command": "tell me more",
+    "result": {
+      "lines": [
+        "Kit: I inspected the snapshot, but it has no date."
+      ],
+      "minutes": 2,
+      "intent": "conversation:image",
+      "meaning": {
+        "kind": "followup",
+        "interlocutor": "kit",
+        "entities": [],
+        "subject": "image"
+      }
+    },
+    "state": {
+      "room": "bar",
+      "time": 31,
+      "objectFocus": [
+        "snapshot"
+      ],
+      "entities": {
+        "cup": {
+          "id": "cup",
+          "kind": "Container",
+          "name": "cup",
+          "aliases": [
+            "cup"
+          ],
+          "description": "An ordinary cup.",
+          "location": "counter",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 3,
+            "beverage": "coffee",
+            "servedAt": 16
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "mug": {
+          "id": "mug",
+          "kind": "Container",
+          "name": "mug",
+          "aliases": [
+            "mug"
+          ],
+          "description": "An ordinary mug.",
+          "location": "bar",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "interaction": "vessel",
+            "capacity": 3,
+            "remaining": 0,
+            "beverage": "tea",
+            "servedAt": 18
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "counter": {
+          "id": "counter",
+          "kind": "Container",
+          "name": "counter",
+          "aliases": [
+            "counter"
+          ],
+          "description": "A fixed counter.",
+          "location": "bar",
+          "visible": true,
+          "portable": false,
+          "open": true,
+          "destroyed": false,
+          "properties": {
+            "supporter": true
+          },
+          "verbs": [],
+          "facts": []
+        },
+        "bag": {
+          "id": "bag",
+          "kind": "Container",
+          "name": "bag",
+          "aliases": [
+            "bag"
+          ],
+          "description": "A bag.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "open": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        },
+        "snapshot": {
+          "id": "snapshot",
+          "kind": "Evidence",
+          "name": "snapshot",
+          "aliases": [
+            "snapshot",
+            "image"
+          ],
+          "description": "An undated snapshot.",
+          "location": "player",
+          "visible": true,
+          "portable": true,
+          "destroyed": false,
+          "properties": {},
+          "verbs": [],
+          "facts": []
+        }
+      },
+      "context": {
+        "interlocutor": "kit",
+        "kind": "evidence",
+        "topic": "image",
+        "references": [
+          "snapshot"
+        ],
+        "at": 29,
+        "room": "bar"
+      },
+      "lastVesselId": "mug",
+      "preference": "tea"
+    },
+    "observations": [
+      {
+        "actor": "kit",
+        "mode": "opinion",
+        "subject": "notice",
+        "words": "negative",
+        "entities": []
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for coffee.",
+        "entities": [
+          "cup"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "preference",
+        "subject": "preference",
+        "words": "Asked for tea.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You take the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "mug",
+        "words": "You put down the mug.",
+        "entities": [
+          "mug"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "claim",
+        "subject": "image",
+        "words": "Kit, I discovered a snapshot",
+        "entities": [
+          "snapshot"
+        ]
+      },
+      {
+        "actor": "player",
+        "mode": "custody",
+        "subject": "snapshot",
+        "words": "You take the snapshot.",
+        "entities": [
+          "snapshot"
+        ]
+      },
+      {
+        "actor": "kit",
+        "mode": "inspect",
+        "subject": "snapshot",
+        "words": "Inspected original",
+        "entities": [
+          "snapshot"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "status": "proposal-awaiting-download-approval",
+  "purpose": "R&D/evaluation only; not a production backend",
+  "verifiedAt": "2026-09-09",
+  "architectureCheckpoint": "fe10c7fe754c64bdea9f73b00814949f875f5044",
+  "files": [
+    {
+      "role": "diffusion",
+      "repo": "Comfy-Org/flux1-kontext-dev_ComfyUI",
+      "revision": "6799032a16e9c37154e5474d4a308e378e3359a8",
+      "file": "split_files/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors",
+      "filename": "flux1-dev-kontext_fp8_scaled.safetensors",
+      "destination": "models/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors",
+      "bytes": 11904640136,
+      "sha256": "630ba795ec64283b4230ea23cf79406c2c68b7c578229ed139f30043eadb30a2",
+      "license": "FLUX.1 [dev] Non-Commercial License v1.1.1",
+      "source": "https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/blob/6799032a16e9c37154e5474d4a308e378e3359a8/split_files/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors",
+      "downloadRequiredOnInspectedWorkstation": true,
+      "localHashVerified": false
+    },
+    {
+      "role": "text-encoder",
+      "repo": "comfyanonymous/flux_text_encoders",
+      "revision": "6af2a98e3f615bdfa612fbd85da93d1ed5f69ef5",
+      "file": "clip_l.safetensors",
+      "filename": "clip_l.safetensors",
+      "destination": "models/text_encoders/clip_l.safetensors",
+      "bytes": 246144152,
+      "sha256": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd",
+      "license": "Apache-2.0 (distribution model card)",
+      "source": "https://huggingface.co/comfyanonymous/flux_text_encoders/blob/6af2a98e3f615bdfa612fbd85da93d1ed5f69ef5/clip_l.safetensors",
+      "downloadRequiredOnInspectedWorkstation": true,
+      "localHashVerified": false
+    },
+    {
+      "role": "text-encoder",
+      "repo": "comfyanonymous/flux_text_encoders",
+      "revision": "6af2a98e3f615bdfa612fbd85da93d1ed5f69ef5",
+      "file": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "filename": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "destination": "models/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "bytes": 5157348688,
+      "sha256": "a498f0485dc9536735258018417c3fd7758dc3bccc0a645feaa472b34955557a",
+      "license": "Apache-2.0 (distribution model card)",
+      "source": "https://huggingface.co/comfyanonymous/flux_text_encoders/blob/6af2a98e3f615bdfa612fbd85da93d1ed5f69ef5/t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "downloadRequiredOnInspectedWorkstation": false,
+      "localHashVerified": true
+    },
+    {
+      "role": "vae",
+      "repo": "Comfy-Org/Lumina_Image_2.0_Repackaged",
+      "revision": "5b072540ef86570fecb8249c505f23d5bdeb88cd",
+      "file": "split_files/vae/ae.safetensors",
+      "filename": "ae.safetensors",
+      "destination": "models/vae/ae.safetensors",
+      "bytes": 335304388,
+      "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38",
+      "license": "Apache-2.0 (distribution model card)",
+      "source": "https://huggingface.co/Comfy-Org/Lumina_Image_2.0_Repackaged/blob/5b072540ef86570fecb8249c505f23d5bdeb88cd/split_files/vae/ae.safetensors",
+      "downloadRequiredOnInspectedWorkstation": true,
+      "localHashVerified": false
+    }
+  ],
+  "newDownloadBytes": 12486088676,
+  "totalRequiredModelBytes": 17643437364,
+  "additionalDiskReserveBytes": 30000000000,
+  "downloadApproval": null,
+  "inferenceApproval": null,
+  "results": null
+}

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { socialSchema } from "./commitment-types";
 
 export const entitySchema = z.object({
   id: z.string(),
@@ -54,7 +55,8 @@ export const transcriptPassageSchema = z.object({
 });
 export const worldSchema = z.object({
   version: z.literal(1),
-  revision: z.number().int().min(1).max(2).default(1),
+  revision: z.number().int().min(1).max(3).default(1),
+  social: socialSchema.optional(),
   subMinute: z.number().int().min(0).max(59).default(0),
   references: z
     .record(z.object({ id: z.string(), at: z.number(), room: z.string() }))

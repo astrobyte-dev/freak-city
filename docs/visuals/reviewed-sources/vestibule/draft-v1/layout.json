@@ -1,0 +1,218 @@
+{
+  "id": "velvet-vestibule-layout",
+  "version": 1,
+  "roomId": "vestibule",
+  "status": "draft",
+  "frame": [
+    320,
+    224
+  ],
+  "coordinatePolicy": "Non-metric image coordinates. View from just inside the entrance toward the bar; left/right follow room prose. Near-left side-door return is behind the corridor, not a second toilet route.",
+  "routes": [
+    {
+      "to": "street",
+      "name": "outside",
+      "position": "near-left foreground / behind",
+      "door": "side_door"
+    },
+    {
+      "to": "bar",
+      "name": "bar",
+      "position": "far center / ahead"
+    },
+    {
+      "to": "washroom",
+      "name": "washroom",
+      "position": "left wall / middle distance"
+    },
+    {
+      "to": "cloakroom",
+      "name": "cloakroom",
+      "position": "right wall / middle distance"
+    }
+  ],
+  "permanent": [
+    {
+      "role": "corridor shell and route voids",
+      "fact": "staticArchitecture:0"
+    }
+  ],
+  "bakedEntities": [],
+  "chairResolution": {
+    "mode": "off-camera prose detail",
+    "rendered": false,
+    "newEntity": false,
+    "notes": "The prose chair is acknowledged but outside this composition. No chair is baked, drawn, or tied to Inez disappearance. Existing procedural Inez is a presence marker, not a new seated pose or identity asset.",
+    "position": "Beyond the near-right camera edge, next to the book/ledge zone; no image, mask, effect, fixed fixture or new entity."
+  },
+  "openings": {
+    "side_door": [
+      [
+        0,
+        18
+      ],
+      [
+        27,
+        30
+      ],
+      [
+        27,
+        185
+      ],
+      [
+        0,
+        185
+      ]
+    ],
+    "washroom": [
+      [
+        99,
+        54
+      ],
+      [
+        110,
+        62
+      ],
+      [
+        110,
+        126
+      ],
+      [
+        99,
+        137
+      ]
+    ],
+    "bar": [
+      [
+        147,
+        58
+      ],
+      [
+        188,
+        58
+      ],
+      [
+        188,
+        117
+      ],
+      [
+        147,
+        117
+      ]
+    ],
+    "cloakroom": [
+      [
+        253,
+        46
+      ],
+      [
+        271,
+        37
+      ],
+      [
+        271,
+        143
+      ],
+      [
+        253,
+        140
+      ]
+    ]
+  },
+  "reserved": {
+    "side_door": {
+      "glyph": "door",
+      "x": 0,
+      "y": 18,
+      "width": 27,
+      "height": 168
+    },
+    "ledge": {
+      "glyph": "shelf",
+      "x": 268,
+      "y": 156,
+      "width": 50,
+      "height": 18
+    },
+    "detail_vestibule_bench": {
+      "glyph": "stool",
+      "x": 49,
+      "y": 157,
+      "width": 53,
+      "height": 38
+    },
+    "detail_vestibule_notice": {
+      "glyph": "sign",
+      "x": 65,
+      "y": 68,
+      "width": 26,
+      "height": 20
+    },
+    "detail_vestibule_heater": {
+      "glyph": "light",
+      "x": 116,
+      "y": 138,
+      "width": 20,
+      "height": 27
+    },
+    "detail_vestibule_book": {
+      "glyph": "table",
+      "x": 298,
+      "y": 156,
+      "width": 15,
+      "height": 7
+    },
+    "detail_vestibule_bag": {
+      "glyph": "bin",
+      "x": 292,
+      "y": 179,
+      "width": 19,
+      "height": 26
+    }
+  },
+  "references": [
+    "docs/visuals/velvet-architecture-cleanup/candidate/sources/original.png",
+    "docs/visuals/reviewed-sources/street/draft-v1/generated-source.png"
+  ],
+  "alignment": "Measured on imported 320x224 master; the source followed route order but changed perspective and aperture sizes. Proposal remains retained separately.",
+  "envelope": {
+    "floor": {
+      "x": 165,
+      "y": 191,
+      "width": 10,
+      "height": 6,
+      "contact": [
+        170,
+        197
+      ]
+    },
+    "ledge": {
+      "x": 278,
+      "y": 156,
+      "width": 10,
+      "height": 6,
+      "contact": [
+        283,
+        162
+      ]
+    }
+  },
+  "npcZones": [
+    {
+      "x": 206,
+      "y": 155
+    },
+    {
+      "x": 169,
+      "y": 145
+    },
+    {
+      "x": 233,
+      "y": 171
+    },
+    {
+      "x": 136,
+      "y": 164
+    }
+  ]
+}

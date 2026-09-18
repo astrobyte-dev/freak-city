@@ -1,0 +1,175 @@
+{
+  "id": "velvet-vestibule-layout",
+  "version": 1,
+  "roomId": "vestibule",
+  "status": "draft",
+  "frame": [
+    320,
+    224
+  ],
+  "coordinatePolicy": "Non-metric image coordinates. View from just inside the entrance toward the bar; left/right follow room prose. Near-left side-door return is behind the corridor, not a second toilet route.",
+  "routes": [
+    {
+      "to": "street",
+      "name": "outside",
+      "position": "near-left foreground / behind",
+      "door": "side_door"
+    },
+    {
+      "to": "bar",
+      "name": "bar",
+      "position": "far center / ahead"
+    },
+    {
+      "to": "washroom",
+      "name": "washroom",
+      "position": "left wall / middle distance"
+    },
+    {
+      "to": "cloakroom",
+      "name": "cloakroom",
+      "position": "right wall / middle distance"
+    }
+  ],
+  "permanent": [
+    {
+      "role": "corridor shell and route voids",
+      "fact": "staticArchitecture:0"
+    }
+  ],
+  "bakedEntities": [],
+  "chairResolution": {
+    "mode": "off-camera prose detail",
+    "rendered": false,
+    "newEntity": false,
+    "notes": "The prose chair is acknowledged but outside this composition. No chair is baked, drawn, or tied to Inez disappearance. Existing procedural Inez is a presence marker, not a new seated pose or identity asset."
+  },
+  "openings": {
+    "side_door": [
+      [
+        0,
+        45
+      ],
+      [
+        47,
+        64
+      ],
+      [
+        47,
+        202
+      ],
+      [
+        0,
+        224
+      ]
+    ],
+    "washroom": [
+      [
+        68,
+        68
+      ],
+      [
+        103,
+        82
+      ],
+      [
+        103,
+        144
+      ],
+      [
+        68,
+        163
+      ]
+    ],
+    "bar": [
+      [
+        138,
+        48
+      ],
+      [
+        181,
+        48
+      ],
+      [
+        181,
+        125
+      ],
+      [
+        138,
+        125
+      ]
+    ],
+    "cloakroom": [
+      [
+        226,
+        73
+      ],
+      [
+        263,
+        56
+      ],
+      [
+        263,
+        177
+      ],
+      [
+        226,
+        157
+      ]
+    ]
+  },
+  "reserved": {
+    "bench": [
+      55,
+      168,
+      117,
+      203
+    ],
+    "ledge": [
+      246,
+      145,
+      303,
+      172
+    ],
+    "heater": [
+      125,
+      152,
+      144,
+      183
+    ],
+    "notice": [
+      76,
+      48,
+      103,
+      67
+    ],
+    "book": [
+      259,
+      138,
+      273,
+      145
+    ],
+    "bag": [
+      284,
+      127,
+      298,
+      149
+    ],
+    "inezContact": [
+      204,
+      174
+    ],
+    "floorEnvelope": [
+      165,
+      199
+    ],
+    "ledgeEnvelope": [
+      250,
+      143
+    ]
+  },
+  "references": [
+    "docs/visuals/velvet-architecture-cleanup/candidate/sources/original.png",
+    "docs/visuals/reviewed-sources/street/draft-v1/generated-source.png"
+  ]
+}

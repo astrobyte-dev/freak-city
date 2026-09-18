@@ -1,5 +1,6 @@
 node_modules/
 dist/
+dist-sable/
 *.tsbuildinfo
 playwright-report/
 test-results/
@@ -20,3 +21,33 @@ Thumbs.db
 
 # Per-machine browser publication reports (regenerated locally)
 /artifacts/publication-browser-*.json
+
+# Local generator jobs, candidates and browser performance measurements
+.visuals/
+/artifacts/visual-browser-*.json
+
+# Development-only Python environments, bytecode and model weights
+.venv/
+__pycache__/
+*.pyc
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+
+# Inform comparison experiment: compiled story, vendored web interpreter and playtest evidence dumps
+/experiments/inform-comparison/build/story.ulx
+/experiments/inform-comparison/web/interpreter/
+/experiments/inform-comparison/evidence/
+
+# Per-run Sable playtest output; only the handoff-referenced foundations evidence is tracked
+/artifacts/sable-*-port*/
+/artifacts/sable-connection-*/
+/artifacts/sable-evening-*/
+/artifacts/sable-exploratory-*/
+/artifacts/sable-routing-repair-*/
+/artifacts/sable-story-exploration-*/
+
+# Local design review captures and notes
+/docs/design/

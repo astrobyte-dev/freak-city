@@ -1,0 +1,340 @@
+{
+  "roomId": "bar",
+  "variantId": "canonical",
+  "role": "canonical-room",
+  "prompt": "Use case: precise-object-edit. Asset type: unapproved canonical-room plate for FREAK//CITY. Image 1 is the edit target, not a style reference. Make one tightly bounded contents-cleanup pass: remove every loose bottle and drinking vessel from the shelving at the far left and behind the bar, and remove the small bar taps/faucets on the counter near the left-middle. Leave the shelving itself fixed in exactly the same place; shelves should be visibly empty and the counter surface bare. Fill only the removed contents with matching existing shelf/back-wall/counter surface texture and existing reflected magenta/cyan illumination. Preserve EVERYTHING ELSE: exact camera, perspective, framing, room envelope, single central staircase and every tread and rail, central rear openings, all wall panels, high right window, small right platform, left counter silhouette and footprint, floor tile grid, ceiling pipes, neon strips, lamps, texture density, deep shadows, saturated magenta/cyan palette, wet reflections, no stools or people. Do not repair other architecture, add features, relight the room, redesign materials, change aspect ratio, or crop. Retain original 4:3 composition, ideally original 1448x1086 dimensions. The goal is the same successful image with only loose shelf contents and taps removed.\n",
+  "modelPrompt": null,
+  "style": {
+    "artDirectionFamily": "Public Velvet",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes.",
+    "One staircase beside the salon; main floor toward a small stage",
+    "High street-facing window",
+    "Fixed bar counter, bare surface",
+    "Fixed bottle shelving, no loose cups or readable labels",
+    "One canonical image across the night; no time-specific architecture variants.",
+    "Human must check all exits, staircase count, fixed placement and overlay composition."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "state": {
+    "timeBand": "canonical",
+    "lighting": "neutral practical",
+    "weather": "base"
+  },
+  "layer": "background-architecture",
+  "authoritativeGeometry": false,
+  "authoritativeArchitecture": false,
+  "architectureReviewRequired": true,
+  "bakedEntities": [
+    {
+      "id": "detail_bar_window",
+      "location": "bar"
+    },
+    {
+      "id": "counter",
+      "location": "bar",
+      "open": true
+    },
+    {
+      "id": "detail_bar_shelves",
+      "location": "bar"
+    }
+  ],
+  "reviewContract": {
+    "staticArchitecture": [
+      {
+        "text": "One staircase beside the salon; main floor toward a small stage",
+        "model": "single staircase beside salon, distant small stage"
+      },
+      {
+        "text": "High street-facing window",
+        "model": "high street window",
+        "entityId": "detail_bar_window"
+      }
+    ],
+    "fixedFurniture": [
+      {
+        "text": "Fixed bar counter, bare surface",
+        "model": "fixed bar counter",
+        "entityId": "counter"
+      },
+      {
+        "text": "Fixed bottle shelving, no loose cups or readable labels",
+        "model": "bottle shelves",
+        "entityId": "detail_bar_shelves"
+      }
+    ],
+    "dynamicObjects": [
+      "detail_bar_stool",
+      "detail_bar_glass",
+      "detail_bar_light",
+      "detail_bar_bin",
+      "detail_bar_clock"
+    ],
+    "dynamicDoors": [],
+    "exits": [
+      {
+        "name": "vestibule",
+        "to": "vestibule",
+        "minutes": 1,
+        "aliases": [
+          "south",
+          "entrance"
+        ]
+      },
+      {
+        "name": "outside",
+        "to": "street",
+        "minutes": 2,
+        "aliases": [
+          "out",
+          "leave",
+          "front door"
+        ]
+      },
+      {
+        "name": "upstairs",
+        "to": "landing",
+        "minutes": 2,
+        "aliases": [
+          "up",
+          "stairs"
+        ]
+      },
+      {
+        "name": "kitchen",
+        "to": "kitchen",
+        "minutes": 1,
+        "aliases": [
+          "service door",
+          "west"
+        ]
+      },
+      {
+        "name": "stage",
+        "to": "stage",
+        "minutes": 1,
+        "aliases": [
+          "luca",
+          "east",
+          "floor"
+        ]
+      },
+      {
+        "name": "salon",
+        "to": "salon",
+        "minutes": 1,
+        "aliases": []
+      },
+      {
+        "name": "archive",
+        "to": "archive",
+        "minutes": 1,
+        "aliases": [
+          "service table",
+          "envelope",
+          "documents"
+        ]
+      }
+    ],
+    "composition": {
+      "anchors": {
+        "detail_bar_window": {
+          "glyph": "window",
+          "x": 253,
+          "y": 29,
+          "width": 47,
+          "height": 27
+        },
+        "detail_bar_shelves": {
+          "glyph": "shelf",
+          "x": 29,
+          "y": 69,
+          "width": 117,
+          "height": 28
+        },
+        "detail_bar_light": {
+          "glyph": "light",
+          "x": 167,
+          "y": 19,
+          "width": 23,
+          "height": 36
+        },
+        "counter": {
+          "glyph": "counter",
+          "x": 12,
+          "y": 148,
+          "width": 229,
+          "height": 36
+        },
+        "detail_bar_glass": {
+          "glyph": "glass",
+          "x": 94,
+          "y": 131,
+          "width": 11,
+          "height": 17
+        },
+        "detail_bar_stool": {
+          "glyph": "stool",
+          "x": 166,
+          "y": 172,
+          "width": 26,
+          "height": 35
+        },
+        "detail_bar_bin": {
+          "glyph": "bin",
+          "x": 17,
+          "y": 184,
+          "width": 18,
+          "height": 21
+        }
+      },
+      "npcZones": [
+        {
+          "x": 260,
+          "y": 160
+        },
+        {
+          "x": 143,
+          "y": 140
+        },
+        {
+          "x": 78,
+          "y": 152
+        },
+        {
+          "x": 297,
+          "y": 135
+        }
+      ],
+      "atmosphereZones": [
+        {
+          "x": 30,
+          "y": 100,
+          "width": 260,
+          "height": 64
+        }
+      ],
+      "foregroundZones": [
+        {
+          "x": 0,
+          "y": 180,
+          "width": 320,
+          "height": 44
+        }
+      ]
+    }
+  },
+  "conditioning": {
+    "mode": "external-edit",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "reviewBrief": "ROLE: canonical-room\n\nSTYLE: 32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography. Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.\n\nROOM REFERENCE: Velvet / the bar\nA folded towel protects the counter. Two pencils wait beside mismatched cups. The main floor opens toward a small stage; stairs rise beside a quieter salon. A service door leads to the kitchen.\n\nREQUIRED:\nOne stable room identity across all time bands; preserve established exit relationships.\nLeave named characters, stateful doors and movable objects to runtime layers.\nKeep overlay placement zones usable at desktop and mobile sizes.\nOne staircase beside the salon; main floor toward a small stage\nHigh street-facing window\nFixed bar counter, bare surface\nFixed bottle shelving, no loose cups or readable labels\nOne canonical image across the night; no time-specific architecture variants.\nHuman must check all exits, staircase count, fixed placement and overlay composition.\n\nFORBIDDEN:\nExtra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.\nNamed NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.\nInvented booth seating or altered window placement not supported by this room's reference.\nExplicit sexual activity, nudity, minors, branded logos or hidden mystery facts.\n\nLAYER CONTRACT: {'staticArchitecture': [{'text': 'One staircase beside the salon; main floor toward a small stage', 'model': 'single staircase beside salon, distant small stage'}, {'text': 'High street-facing window', 'model': 'high street window', 'entityId': 'detail_bar_window'}], 'fixedFurniture': [{'text': 'Fixed bar counter, bare surface', 'model': 'fixed bar counter', 'entityId': 'counter'}, {'text': 'Fixed bottle shelving, no loose cups or readable labels', 'model': 'bottle shelves', 'entityId': 'detail_bar_shelves'}], 'dynamicObjects': ['detail_bar_stool', 'detail_bar_glass', 'detail_bar_light', 'detail_bar_bin', 'detail_bar_clock'], 'dynamicDoors': [], 'exits': [{'name': 'vestibule', 'to': 'vestibule', 'minutes': 1, 'aliases': ['south', 'entrance']}, {'name': 'outside', 'to': 'street', 'minutes': 2, 'aliases': ['out', 'leave', 'front door']}, {'name': 'upstairs', 'to': 'landing', 'minutes': 2, 'aliases': ['up', 'stairs']}, {'name': 'kitchen', 'to': 'kitchen', 'minutes': 1, 'aliases': ['service door', 'west']}, {'name': 'stage', 'to': 'stage', 'minutes': 1, 'aliases': ['luca', 'east', 'floor']}, {'name': 'salon', 'to': 'salon', 'minutes': 1, 'aliases': []}, {'name': 'archive', 'to': 'archive', 'minutes': 1, 'aliases': ['service table', 'envelope', 'documents']}], 'composition': {'anchors': {'detail_bar_window': {'glyph': 'window', 'x': 253, 'y': 29, 'width': 47, 'height': 27}, 'detail_bar_shelves': {'glyph': 'shelf', 'x': 29, 'y': 69, 'width': 117, 'height': 28}, 'detail_bar_light': {'glyph': 'light', 'x': 167, 'y': 19, 'width': 23, 'height': 36}, 'counter': {'glyph': 'counter', 'x': 12, 'y': 148, 'width': 229, 'height': 36}, 'detail_bar_glass': {'glyph': 'glass', 'x': 94, 'y': 131, 'width': 11, 'height': 17}, 'detail_bar_stool': {'glyph': 'stool', 'x': 166, 'y': 172, 'width': 26, 'height': 35}, 'detail_bar_bin': {'glyph': 'bin', 'x': 17, 'y': 184, 'width': 18, 'height': 21}}, 'npcZones': [{'x': 260, 'y': 160}, {'x': 143, 'y': 140}, {'x': 78, 'y': 152}, {'x': 297, 'y': 135}], 'atmosphereZones': [{'x': 30, 'y': 100, 'width': 260, 'height': 64}], 'foregroundZones': [{'x': 0, 'y': 180, 'width': 320, 'height': 44}]}}\n\nSTATE (runtime layers): {'timeBand': 'canonical', 'lighting': 'neutral practical', 'weather': 'base'}\n\nCONCEPT: canonical-room\n\nCOMPOSITOR: dynamic objects, stateful doors, evidence, named NPCs and time lighting remain simulation-driven.",
+  "sourceType": "external-reviewed-edit",
+  "backend": "external-reviewed-edit",
+  "model": null,
+  "seed": null,
+  "modelExecuted": false,
+  "sourceGeneratorVersion": "freak-city-visual-gen/4",
+  "runId": "26e7ff28bcad",
+  "createdAt": "2026-09-09T08:47:53.126736+00:00",
+  "reviewStatus": "draft",
+  "architectureReviewState": "pending-human-review",
+  "originalSource": {
+    "file": "sources/original.png",
+    "sha256": "af70facbd4f79b75cca2160b9ff0cb5514d5560d952fe5e66a9114ee4602cd6c",
+    "bytes": 2349328
+  },
+  "sourceImage": {
+    "file": "sources/framed.png",
+    "sha256": "3c06993f1148ac96159443b664296ba22784ecfe8cdca920eaaa8050d053d96b",
+    "bytes": 2244442
+  },
+  "unquantizedMaster": {
+    "file": "pixels/unquantized.png",
+    "sha256": "b30e2599f30411268ae016320eff0fcf52115d0da8385a35158a21ac80c930de",
+    "bytes": 149007
+  },
+  "pixelSource": {
+    "file": "pixels/48-colours.png",
+    "sha256": "3910c73a12e6a6c81e75b16106435abc5cdf1f318e264ec1d730fc58d1f16bd0",
+    "bytes": 95402
+  },
+  "worldManifest": {
+    "file": "provenance/world-manifest.json",
+    "sha256": "d37ffbf241d17513143020c8f94a97ca3fa2de60027f5a5a2ab808cf5e9c8edd",
+    "bytes": 17890
+  },
+  "sha256": "cb57bcd847312bbbdfbb527aa6be4f71f43ec6e5579063dac76a3b5089768452",
+  "rawBytes": 110310,
+  "dimensions": {
+    "width": 640,
+    "height": 448
+  },
+  "pixelDimensions": {
+    "width": 320,
+    "height": 224
+  },
+  "framing": {
+    "method": "explicit-crop",
+    "crop": [
+      4,
+      0,
+      1444,
+      1008
+    ],
+    "orientedSourceDimensions": [
+      1448,
+      1086
+    ],
+    "framedDimensions": [
+      1440,
+      1008
+    ],
+    "notes": "Visual review: trim 4 px from each side and 78 px of foreground floor from bottom. Keep top edge unchanged. All stairs, counter base, right window and platform retained; no stretch, extension or camera change. Crop 1440x1008, then nearest-neighbour 320x224.",
+    "orientation": "EXIF transpose before coordinates; original bytes retained"
+  },
+  "generationSettings": {
+    "operation": "pixel-processing-only",
+    "width": 1440,
+    "height": 1008,
+    "pixelWidth": 320,
+    "displayWidth": 640,
+    "colors": 48,
+    "contrast": 1.15,
+    "resampling": "nearest-neighbour",
+    "quantization": "Pillow MEDIANCUT",
+    "pillowVersion": "12.3.0"
+  },
+  "provenance": {
+    "origin": "external-reviewed-edit",
+    "editor": "Codex directing built-in image_gen",
+    "service": "Built-in image_gen image editing; exact underlying model/version not exposed",
+    "notes": "One targeted cleanup invocation removed bottles/drinking vessels and counter taps. Other architecture deliberately preserved for review. Result is not human approved. Surface detail also softened slightly outside requested regions; no hard-mask preservation claim.",
+    "modelVersion": null,
+    "sourceCreatedAt": null,
+    "parentSource": {
+      "file": "provenance/parent-source.png",
+      "sha256": "58dd60c77b8ff01dc38a723f2a2ef33a49073128b258d62de07e01d2be1d88b2",
+      "bytes": 2544767
+    },
+    "editPrompt": "Use case: precise-object-edit. Asset type: unapproved canonical-room plate for FREAK//CITY. Image 1 is the edit target, not a style reference. Make one tightly bounded contents-cleanup pass: remove every loose bottle and drinking vessel from the shelving at the far left and behind the bar, and remove the small bar taps/faucets on the counter near the left-middle. Leave the shelving itself fixed in exactly the same place; shelves should be visibly empty and the counter surface bare. Fill only the removed contents with matching existing shelf/back-wall/counter surface texture and existing reflected magenta/cyan illumination. Preserve EVERYTHING ELSE: exact camera, perspective, framing, room envelope, single central staircase and every tread and rail, central rear openings, all wall panels, high right window, small right platform, left counter silhouette and footprint, floor tile grid, ceiling pipes, neon strips, lamps, texture density, deep shadows, saturated magenta/cyan palette, wet reflections, no stools or people. Do not repair other architecture, add features, relight the room, redesign materials, change aspect ratio, or crop. Retain original 4:3 composition, ideally original 1448x1086 dimensions. The goal is the same successful image with only loose shelf contents and taps removed.\n",
+    "modelExecutedDuringImport": false
+  }
+}

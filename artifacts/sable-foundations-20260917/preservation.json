@@ -1,0 +1,39 @@
+{
+  "baselineFiles": 1386,
+  "changed": [
+    ".gitignore",
+    "scripts/sable-playtest-browser.ts",
+    "scripts/sable-trial-browser.ts",
+    "src/trial/TrialApp.tsx",
+    "src/trial/content.ts",
+    "src/trial/conversation.ts",
+    "src/trial/engine.ts",
+    "src/trial/language.ts",
+    "src/trial/playtest.ts",
+    "src/trial/save.ts",
+    "src/trial/state.ts",
+    "tests/sable-playtest.test.ts",
+    "tests/sable-routing.test.ts"
+  ],
+  "missing": [],
+  "frozenSourceMismatches": [],
+  "informChanged": [],
+  "originalCampaignChanged": [],
+  "newOutsideEvidence": [
+    "docs/SABLE-FOUNDATIONS-HANDOFF.md",
+    "sable-trial.html",
+    "scripts/sable-foundations-evidence.ts",
+    "src/trial/interaction-content.ts",
+    "src/trial/interaction-language.ts",
+    "src/trial/interaction-model.ts",
+    "src/trial/interactions.ts",
+    "src/trial/main.tsx",
+    "src/trial/trial-migration.ts",
+    "src/trial/vessels.ts",
+    "tests/fixtures/interaction-fixture.ts",
+    "tests/sable-foundations-held-back.test.ts",
+    "tests/sable-foundations.test.ts",
+    "vite.sable.config.ts"
+  ],
+  "priorEvidenceChanged": []
+}

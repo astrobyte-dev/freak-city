@@ -1,0 +1,257 @@
+{
+  "roomId": "vestibule",
+  "variantId": "canonical",
+  "role": "canonical-room",
+  "prompt": "Use case: stylized-concept. Asset: FREAK//CITY vestibule architectural background, one new raster image for a layered pixel-art game. Create a landscape 10:7 image, ideally 1440 x 1008.\n\nReference 1 (approved Velvet): material roughness and sophisticated old-city nightclub painted colour only. Do NOT copy stairs, counter, window, lamps, furniture or wet floor. Reference 2 (approved street): subdued worn materials and continuity, NOT weather or facade geometry. Reference 3 (authored corridor guide): authoritative camera and opening arrangement. Retain the guide's perspective, broad framing and four dark openings as closely as possible.\n\nScene: a compact narrow corridor painted the colour of dried wine. Camera just inside the side entrance, looking along the corridor toward the bar ahead. Four routes: side entrance back to street in the near-left foreground (cropped at frame edge, physically behind the corridor); a smaller toilet opening farther along the left wall; bar opening centered at the far end; cloakroom opening on the right wall. Exactly these four plain openings, no others. Do not reverse left/right. Keep passage voids empty and very dark with no interior rooms visible. The near-left side entrance is an EMPTY APERTURE: absolutely no door leaf, knob, hardware or closer in this image. They will be separate overlays. All doorway frames/wall reveals are permanent architecture.\n\nRender old worn dried-wine paint over plaster, dark wood trim, scuffed DRY matte floor, restrained atmospheric warm burgundy illumination and subtle subdued magenta/cyan material colour compatible with Velvet. Keep usable midtones and elegant depth at small pixel size. Pixel-ready hand-painted environment with painterly texture and PS1-era material roughness, carefully composed; not clean vector art, not futuristic cyberpunk. Clear dry walkable negative space for later objects and procedural Inez. Floor must be matte and dry: no puddles, wet gloss, mirror reflections, rain streaks or rain indoors.\n\nARCHITECTURE ONLY. Do not draw ANY furniture or loose object: no bench, ledge, chair, desk, heater, notice, signs, book, bag, envelope, paper, vessels, light fixture, cables or props. No people, bodies, silhouettes, feet or character shadows. No windows, stairs, alcoves, arches, additional doors or new passages. No text/lettering or watermark. Do not draw orange heater light or exterior doorway spill: all object-specific light and shadows will be state-owned overlays. No light bars or neon fixtures. Render only the empty permanent corridor shell, its four empty openings, and dry material texture. Geometry and object separation take priority over embellishment.\n",
+  "modelPrompt": null,
+  "style": {
+    "artDirectionFamily": "Public Velvet",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes.",
+    "Dried-wine corridor; bar ahead, cloakroom right, toilets left",
+    "One canonical image across the night; no time-specific architecture variants.",
+    "Human must check all exits, staircase count, fixed placement and overlay composition."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "state": {
+    "timeBand": "canonical",
+    "lighting": "neutral practical",
+    "weather": "base"
+  },
+  "layer": "background-architecture",
+  "authoritativeGeometry": false,
+  "authoritativeArchitecture": false,
+  "architectureReviewRequired": true,
+  "bakedEntities": [],
+  "reviewContract": {
+    "staticArchitecture": [
+      {
+        "text": "Dried-wine corridor; bar ahead, cloakroom right, toilets left"
+      }
+    ],
+    "fixedFurniture": [],
+    "dynamicObjects": [
+      "ledge",
+      "detail_vestibule_bench",
+      "detail_vestibule_notice",
+      "detail_vestibule_heater",
+      "detail_vestibule_book",
+      "detail_vestibule_bag"
+    ],
+    "dynamicDoors": [
+      "side_door"
+    ],
+    "exits": [
+      {
+        "name": "bar",
+        "to": "bar",
+        "minutes": 1,
+        "aliases": [
+          "inside",
+          "in",
+          "ahead",
+          "north",
+          "floor"
+        ]
+      },
+      {
+        "name": "outside",
+        "to": "street",
+        "minutes": 1,
+        "aliases": [
+          "out",
+          "south"
+        ],
+        "door": "side_door"
+      },
+      {
+        "name": "cloakroom",
+        "to": "cloakroom",
+        "minutes": 1,
+        "aliases": [
+          "right",
+          "coat"
+        ]
+      },
+      {
+        "name": "washroom",
+        "to": "washroom",
+        "minutes": 1,
+        "aliases": [
+          "left",
+          "toilets"
+        ]
+      }
+    ],
+    "composition": {
+      "anchors": {},
+      "npcZones": [
+        {
+          "x": 260,
+          "y": 160
+        },
+        {
+          "x": 143,
+          "y": 140
+        },
+        {
+          "x": 78,
+          "y": 152
+        },
+        {
+          "x": 297,
+          "y": 135
+        }
+      ],
+      "atmosphereZones": [
+        {
+          "x": 30,
+          "y": 100,
+          "width": 260,
+          "height": 64
+        }
+      ],
+      "foregroundZones": [
+        {
+          "x": 0,
+          "y": 180,
+          "width": 320,
+          "height": 44
+        }
+      ]
+    }
+  },
+  "conditioning": {
+    "mode": "source-image-import",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "reviewBrief": "ROLE: canonical-room\n\nSTYLE: 32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography. Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.\n\nROOM REFERENCE: The vestibule\nWarm air. Wet wool. A corridor the colour of dried wine. A notice points left to the working toilets. The bar is ahead; a cloakroom opens on the right.\n\nREQUIRED:\nOne stable room identity across all time bands; preserve established exit relationships.\nLeave named characters, stateful doors and movable objects to runtime layers.\nKeep overlay placement zones usable at desktop and mobile sizes.\nDried-wine corridor; bar ahead, cloakroom right, toilets left\nOne canonical image across the night; no time-specific architecture variants.\nHuman must check all exits, staircase count, fixed placement and overlay composition.\n\nFORBIDDEN:\nExtra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.\nNamed NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.\nInvented booth seating or altered window placement not supported by this room's reference.\nExplicit sexual activity, nudity, minors, branded logos or hidden mystery facts.\n\nLAYER CONTRACT: {'staticArchitecture': [{'text': 'Dried-wine corridor; bar ahead, cloakroom right, toilets left'}], 'fixedFurniture': [], 'dynamicObjects': ['ledge', 'detail_vestibule_bench', 'detail_vestibule_notice', 'detail_vestibule_heater', 'detail_vestibule_book', 'detail_vestibule_bag'], 'dynamicDoors': ['side_door'], 'exits': [{'name': 'bar', 'to': 'bar', 'minutes': 1, 'aliases': ['inside', 'in', 'ahead', 'north', 'floor']}, {'name': 'outside', 'to': 'street', 'minutes': 1, 'aliases': ['out', 'south'], 'door': 'side_door'}, {'name': 'cloakroom', 'to': 'cloakroom', 'minutes': 1, 'aliases': ['right', 'coat']}, {'name': 'washroom', 'to': 'washroom', 'minutes': 1, 'aliases': ['left', 'toilets']}], 'composition': {'anchors': {}, 'npcZones': [{'x': 260, 'y': 160}, {'x': 143, 'y': 140}, {'x': 78, 'y': 152}, {'x': 297, 'y': 135}], 'atmosphereZones': [{'x': 30, 'y': 100, 'width': 260, 'height': 64}], 'foregroundZones': [{'x': 0, 'y': 180, 'width': 320, 'height': 44}]}}\n\nSTATE (runtime layers): {'timeBand': 'canonical', 'lighting': 'neutral practical', 'weather': 'base'}\n\nCONCEPT: canonical-room\n\nCOMPOSITOR: dynamic objects, stateful doors, evidence, named NPCs and time lighting remain simulation-driven.",
+  "sourceSchemaVersion": 1,
+  "sourceType": "hosted-generation",
+  "backend": "source-image-import",
+  "model": null,
+  "seed": null,
+  "modelExecuted": false,
+  "sourceGeneratorVersion": "freak-city-visual-gen/4",
+  "runId": "fe080aa514a5",
+  "createdAt": "2026-09-14T00:15:39.461290+00:00",
+  "reviewStatus": "draft",
+  "architectureReviewState": "pending-human-review",
+  "originalSource": {
+    "file": "sources/original.png",
+    "sha256": "4b96a95835aa499ad52d731e6c753871593713555f07d22385c2f17bbb5af498",
+    "bytes": 2325547
+  },
+  "sourceImage": {
+    "file": "sources/framed.png",
+    "sha256": "6c7979902fc0cd9adcbbbcce50a07f56bd97407f230ae861b74990d805b1bf86",
+    "bytes": 2315430
+  },
+  "unquantizedMaster": {
+    "file": "pixels/unquantized.png",
+    "sha256": "cecd56c61172307afe9a0fb7cf2a72a64a841de0a375ce7825142808dd32c74e",
+    "bytes": 137266
+  },
+  "pixelSource": {
+    "file": "pixels/64-colours.png",
+    "sha256": "27da1da79d4f188b10a9bb2f76955ac5446ce14120bd114510472ca3734a1b9e",
+    "bytes": 111893
+  },
+  "worldManifest": {
+    "file": "provenance/world-manifest.json",
+    "sha256": "8a5b3c170e1886ee34c8791f5e70ae690359405ed91e0014b3cd005d966d8adf",
+    "bytes": 10115
+  },
+  "sha256": "b0b4416031a8fe136c0281f0ee8184d7bc81203dd3f2549906d3a2fdbe21e87c",
+  "rawBytes": 135334,
+  "dimensions": {
+    "width": 640,
+    "height": 448
+  },
+  "pixelDimensions": {
+    "width": 320,
+    "height": 224
+  },
+  "framing": {
+    "method": "explicit-crop",
+    "crop": [
+      3,
+      11,
+      1483,
+      1047
+    ],
+    "orientedSourceDimensions": [
+      1487,
+      1058
+    ],
+    "framedDimensions": [
+      1480,
+      1036
+    ],
+    "notes": "Centered 1480 by 1036 crop removes 3/4 side pixels and 11 top/bottom pixels to obtain exact 10:7 without shifting the room composition.",
+    "orientation": "EXIF transpose before coordinates; original bytes retained"
+  },
+  "generationSettings": {
+    "operation": "pixel-processing-only",
+    "width": 1480,
+    "height": 1036,
+    "pixelWidth": 320,
+    "displayWidth": 640,
+    "colors": 64,
+    "contrast": 1.15,
+    "resampling": "nearest-neighbour",
+    "quantization": "Pillow MEDIANCUT",
+    "pillowVersion": "12.1.1"
+  },
+  "provenance": {
+    "origin": "hosted-generation",
+    "editor": "project authoring assistant",
+    "service": null,
+    "notes": "One built-in imagegen architecture source. Four empty route apertures, dry corridor, no dynamic props or characters. Draft only.",
+    "authoring": {
+      "authoringTool": "OpenAI built-in imagegen",
+      "provider": "OpenAI",
+      "model": null,
+      "seed": null,
+      "settings": {
+        "intent": "one architecture-only vestibule source using approved room material references and authored corridor guide",
+        "requestedDimensions": [
+          1440,
+          1008
+        ],
+        "promptFile": "authoring-prompt.txt",
+        "references": [
+          "approved Velvet source: style only",
+          "approved street source: continuity only",
+          "authored corridor guide: layout"
+        ]
+      }
+    },
+    "artContract": {
+      "file": "provenance/art-contract.md",
+      "sha256": "666cafc9140330920cda2b8ebc1fb891134e7ecc8f7281642a7980c4db07e9b1",
+      "bytes": 6704
+    },
+    "modelVersion": null,
+    "sourceCreatedAt": null,
+    "parentSource": null,
+    "editPrompt": "Use case: stylized-concept. Asset: FREAK//CITY vestibule architectural background, one new raster image for a layered pixel-art game. Create a landscape 10:7 image, ideally 1440 x 1008.\n\nReference 1 (approved Velvet): material roughness and sophisticated old-city nightclub painted colour only. Do NOT copy stairs, counter, window, lamps, furniture or wet floor. Reference 2 (approved street): subdued worn materials and continuity, NOT weather or facade geometry. Reference 3 (authored corridor guide): authoritative camera and opening arrangement. Retain the guide's perspective, broad framing and four dark openings as closely as possible.\n\nScene: a compact narrow corridor painted the colour of dried wine. Camera just inside the side entrance, looking along the corridor toward the bar ahead. Four routes: side entrance back to street in the near-left foreground (cropped at frame edge, physically behind the corridor); a smaller toilet opening farther along the left wall; bar opening centered at the far end; cloakroom opening on the right wall. Exactly these four plain openings, no others. Do not reverse left/right. Keep passage voids empty and very dark with no interior rooms visible. The near-left side entrance is an EMPTY APERTURE: absolutely no door leaf, knob, hardware or closer in this image. They will be separate overlays. All doorway frames/wall reveals are permanent architecture.\n\nRender old worn dried-wine paint over plaster, dark wood trim, scuffed DRY matte floor, restrained atmospheric warm burgundy illumination and subtle subdued magenta/cyan material colour compatible with Velvet. Keep usable midtones and elegant depth at small pixel size. Pixel-ready hand-painted environment with painterly texture and PS1-era material roughness, carefully composed; not clean vector art, not futuristic cyberpunk. Clear dry walkable negative space for later objects and procedural Inez. Floor must be matte and dry: no puddles, wet gloss, mirror reflections, rain streaks or rain indoors.\n\nARCHITECTURE ONLY. Do not draw ANY furniture or loose object: no bench, ledge, chair, desk, heater, notice, signs, book, bag, envelope, paper, vessels, light fixture, cables or props. No people, bodies, silhouettes, feet or character shadows. No windows, stairs, alcoves, arches, additional doors or new passages. No text/lettering or watermark. Do not draw orange heater light or exterior doorway spill: all object-specific light and shadows will be state-owned overlays. No light bars or neon fixtures. Render only the empty permanent corridor shell, its four empty openings, and dry material texture. Geometry and object separation take priority over embellishment.\n",
+    "modelExecutedDuringImport": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "approvedComposites": [
+    {
+      "state": "open",
+      "size": "desktop",
+      "pixelsIdentical": true
+    },
+    {
+      "state": "closed",
+      "size": "desktop",
+      "pixelsIdentical": true
+    },
+    {
+      "state": "dropped",
+      "size": "desktop",
+      "pixelsIdentical": true
+    },
+    {
+      "state": "open",
+      "size": "mobile",
+      "pixelsIdentical": true
+    },
+    {
+      "state": "closed",
+      "size": "mobile",
+      "pixelsIdentical": true
+    },
+    {
+      "state": "dropped",
+      "size": "mobile",
+      "pixelsIdentical": true
+    }
+  ],
+  "losslessPromotedPlateMatchesReviewedPNG": true,
+  "shippingOverlaysByteIdentical": true,
+  "velvetIdenticalViewports": 6,
+  "preservedFileHashes": 188
+}

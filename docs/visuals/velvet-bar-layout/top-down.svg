@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="650" viewBox="0 0 1120 650">
+<rect width="1120" height="650" fill="#14151c"/>
+<g font-family="sans-serif" fill="#e8dad0">
+<text x="24" y="30" font-size="20">VELVET / TOP-DOWN GEOMETRY CONTRACT v1</text>
+<text x="24" y="57" font-size="13">Non-metric. North/back at top. Placement choices do not add parser geography.</text>
+<rect x="30" y="100" width="640" height="448" fill="#38282c" stroke="#c1a195" stroke-width="3"/>
+<rect x="294" y="100" width="88" height="156" fill="#88636a" stroke="#d2b5a3"/>
+<text x="302" y="118">1</text>
+<text x="700" y="140" font-size="14">1. One staircase / upstairs</text>
+<path d="M 294 236.5 H 382" stroke="#d2b5a3"/>
+<path d="M 294 217.0 H 382" stroke="#d2b5a3"/>
+<path d="M 294 197.5 H 382" stroke="#d2b5a3"/>
+<path d="M 294 178.0 H 382" stroke="#d2b5a3"/>
+<path d="M 294 158.5 H 382" stroke="#d2b5a3"/>
+<path d="M 294 139.0 H 382" stroke="#d2b5a3"/>
+<path d="M 294 119.5 H 382" stroke="#d2b5a3"/>
+<rect x="58" y="270" width="132" height="242" fill="#88636a" stroke="#d2b5a3"/>
+<text x="66" y="288">2</text>
+<text x="700" y="168" font-size="14">2. Fixed counter / bare surface</text>
+<rect x="30" y="234" width="20" height="118" fill="#88636a" stroke="#d2b5a3"/>
+<text x="38" y="252">3</text>
+<text x="700" y="196" font-size="14">3. Fixed bottle shelving / empty</text>
+<rect x="662" y="342" width="8" height="116" fill="#88636a" stroke="#d2b5a3"/>
+<text x="670" y="360">4</text>
+<text x="700" y="224" font-size="14">4. High street-facing window</text>
+<rect x="644" y="114" width="26" height="102" fill="#88636a" stroke="#d2b5a3"/>
+<text x="652" y="132">5</text>
+<text x="700" y="252" font-size="14">5. Distant small stage beyond east route</text>
+<path d="M 230 548 L 320 548" stroke="#c6a761" stroke-width="7"/>
+<text x="280.0" y="539.0" font-size="13" fill="#fff0bb">A</text>
+<text x="700" y="310" font-size="14">A. Vestibule / south</text>
+<path d="M 500 548 L 590 548" stroke="#c6a761" stroke-width="7"/>
+<text x="550.0" y="539.0" font-size="13" fill="#fff0bb">B</text>
+<text x="700" y="337" font-size="14">B. Outside / front door</text>
+<path d="M 294 100 L 382 100" stroke="#c6a761" stroke-width="7"/>
+<text x="343.0" y="91.0" font-size="13" fill="#fff0bb">C</text>
+<text x="700" y="364" font-size="14">C. Upstairs via the single staircase</text>
+<path d="M 30 488 L 30 404" stroke="#c6a761" stroke-width="7"/>
+<text x="35.0" y="437.0" font-size="13" fill="#fff0bb">D</text>
+<text x="700" y="391" font-size="14">D. Kitchen / service opening</text>
+<path d="M 670 220 L 670 110" stroke="#c6a761" stroke-width="7"/>
+<text x="675.0" y="156.0" font-size="13" fill="#fff0bb">E</text>
+<text x="700" y="418" font-size="14">E. Stage / east</text>
+<path d="M 402 100 L 490 100" stroke="#c6a761" stroke-width="7"/>
+<text x="451.0" y="91.0" font-size="13" fill="#fff0bb">F</text>
+<text x="700" y="445" font-size="14">F. Salon / beside stairs</text>
+<path d="M 30 198 L 30 116" stroke="#c6a761" stroke-width="7"/>
+<text x="35.0" y="148.0" font-size="13" fill="#fff0bb">G</text>
+<text x="700" y="472" font-size="14">G. Archive / service-table route</text>
+<rect x="224" y="288" width="276" height="212" fill="none" stroke="#77b69d" stroke-dasharray="6 4"/>
+<rect x="518" y="274" width="112" height="206" fill="none" stroke="#77b69d" stroke-dasharray="6 4"/>
+<rect x="202" y="508" width="442" height="40" fill="none" stroke="#77b69d" stroke-dasharray="6 4"/>
+<text x="30" y="591" font-size="14" fill="#77b69d">Dashed green: NPC / object / foreground reservations. Reference image omits annotations.</text>
+<text x="30" y="619" font-size="14">Gold marks traversal routes, not seven stateful door leaves. Upstairs is the one staircase.</text>
+</g></svg>

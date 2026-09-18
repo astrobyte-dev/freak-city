@@ -1,0 +1,19 @@
+{
+  "trialBuild": "passed",
+  "focusedTests": 157,
+  "allTests": 1264,
+  "testFiles": 18,
+  "mainBrowserAccessibilityScans": 11,
+  "sablePaths": 4,
+  "sablePathAccessibilityScans": 8,
+  "exportAccessibilityScans": 2,
+  "repositoryFormat": "two unchanged baseline evidence files only",
+  "changedFormat": "passed",
+  "visibleSubmissions": 45,
+  "visibleOutcomes": {
+    "handled": 39,
+    "clarified": 4,
+    "rejected": 2
+  },
+  "runtimeSourceUnchangedSinceVisiblePlaytest": true
+}

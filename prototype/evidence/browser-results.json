@@ -1,0 +1,256 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:5174/__prototype/",
+  "headed": true,
+  "checks": [
+    "Visible click-to-walk routed around the bench with continuous footprint clearance; no story time elapsed.",
+    "Unreachable wall click produces feedback and no movement.",
+    "Canvas target selection, approach, double click cancellation, one physical take and inventory consistency.",
+    "Inventory use places the real envelope on the ledge; it can be collected again.",
+    "Existing authored conversation opens/closes; declined offer changes no custody; accepted agreement and observed collection use established outcomes.",
+    "Private commentary is displayed separately and is untimed.",
+    "NPC marker and interaction disappear when the existing schedule moves Inez away.",
+    "No storage reads/writes/removals: synthetic autosave, bookmark and session draft unchanged.",
+    "Reload restarts the disposable fixture, without loading the sentinel autosave.",
+    "390px layout fits; scaled canvas input walks to the expected logical position. Desktop accessibility scan: zero violations."
+  ],
+  "errors": [],
+  "movementSamples": [
+    {
+      "x": 480,
+      "y": 540
+    },
+    {
+      "x": 483.33,
+      "y": 540
+    },
+    {
+      "x": 496.67,
+      "y": 540
+    },
+    {
+      "x": 511.67,
+      "y": 540
+    },
+    {
+      "x": 523.33,
+      "y": 540
+    },
+    {
+      "x": 538.33,
+      "y": 540
+    },
+    {
+      "x": 548.33,
+      "y": 540
+    },
+    {
+      "x": 560,
+      "y": 540
+    },
+    {
+      "x": 571.67,
+      "y": 540
+    },
+    {
+      "x": 583.33,
+      "y": 540
+    },
+    {
+      "x": 593.34,
+      "y": 540
+    },
+    {
+      "x": 605,
+      "y": 540
+    },
+    {
+      "x": 616.66,
+      "y": 540
+    },
+    {
+      "x": 626.66,
+      "y": 540
+    },
+    {
+      "x": 641.67,
+      "y": 540
+    },
+    {
+      "x": 651.66,
+      "y": 540
+    },
+    {
+      "x": 660,
+      "y": 538.33
+    },
+    {
+      "x": 660,
+      "y": 526.67
+    },
+    {
+      "x": 660,
+      "y": 511.67
+    },
+    {
+      "x": 660,
+      "y": 501.67
+    },
+    {
+      "x": 660,
+      "y": 490
+    },
+    {
+      "x": 660,
+      "y": 480
+    },
+    {
+      "x": 660,
+      "y": 468.33
+    },
+    {
+      "x": 660,
+      "y": 456.66
+    },
+    {
+      "x": 660,
+      "y": 441.66
+    },
+    {
+      "x": 660,
+      "y": 431.67
+    },
+    {
+      "x": 660,
+      "y": 420
+    },
+    {
+      "x": 660,
+      "y": 410
+    },
+    {
+      "x": 660,
+      "y": 400
+    },
+    {
+      "x": 660,
+      "y": 390
+    },
+    {
+      "x": 660,
+      "y": 378.33
+    },
+    {
+      "x": 660,
+      "y": 366.66
+    },
+    {
+      "x": 660,
+      "y": 356.67
+    },
+    {
+      "x": 660,
+      "y": 345
+    },
+    {
+      "x": 660,
+      "y": 335
+    },
+    {
+      "x": 660,
+      "y": 323.33
+    },
+    {
+      "x": 660,
+      "y": 315.01
+    },
+    {
+      "x": 660,
+      "y": 303.34
+    },
+    {
+      "x": 660,
+      "y": 293.33
+    },
+    {
+      "x": 660,
+      "y": 281.66
+    },
+    {
+      "x": 648.36,
+      "y": 273.5
+    },
+    {
+      "x": 639.63,
+      "y": 268.63
+    },
+    {
+      "x": 629.44,
+      "y": 262.94
+    },
+    {
+      "x": 619.25,
+      "y": 257.25
+    },
+    {
+      "x": 610.52,
+      "y": 252.37
+    },
+    {
+      "x": 600.33,
+      "y": 246.69
+    },
+    {
+      "x": 590.14,
+      "y": 241
+    },
+    {
+      "x": 581.41,
+      "y": 236.12
+    },
+    {
+      "x": 571.23,
+      "y": 230.44
+    },
+    {
+      "x": 561.04,
+      "y": 224.75
+    },
+    {
+      "x": 552.31,
+      "y": 219.87
+    },
+    {
+      "x": 542.12,
+      "y": 214.18
+    },
+    {
+      "x": 530.48,
+      "y": 207.68
+    },
+    {
+      "x": 518.84,
+      "y": 201.18
+    },
+    {
+      "x": 508.65,
+      "y": 195.5
+    },
+    {
+      "x": 499.92,
+      "y": 190.62
+    },
+    {
+      "x": 489.73,
+      "y": 184.93
+    },
+    {
+      "x": 480,
+      "y": 179.5
+    },
+    {
+      "x": 480,
+      "y": 179.5
+    }
+  ]
+}

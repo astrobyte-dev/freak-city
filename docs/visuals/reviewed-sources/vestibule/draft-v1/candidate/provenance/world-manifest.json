@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 2,
+  "role": "canonical-room",
+  "roomId": "vestibule",
+  "roomIdentity": "The vestibule",
+  "canonicalArchitecture": "Warm air. Wet wool. A corridor the colour of dried wine. A notice points left to the working toilets. The bar is ahead; a cloakroom opens on the right.",
+  "layoutBlueprint": null,
+  "exits": [
+    {
+      "name": "bar",
+      "to": "bar",
+      "minutes": 1,
+      "aliases": [
+        "inside",
+        "in",
+        "ahead",
+        "north",
+        "floor"
+      ]
+    },
+    {
+      "name": "outside",
+      "to": "street",
+      "minutes": 1,
+      "aliases": [
+        "out",
+        "south"
+      ],
+      "door": "side_door"
+    },
+    {
+      "name": "cloakroom",
+      "to": "cloakroom",
+      "minutes": 1,
+      "aliases": [
+        "right",
+        "coat"
+      ]
+    },
+    {
+      "name": "washroom",
+      "to": "washroom",
+      "minutes": 1,
+      "aliases": [
+        "left",
+        "toilets"
+      ]
+    }
+  ],
+  "staticArchitecture": [
+    {
+      "text": "Dried-wine corridor; bar ahead, cloakroom right, toilets left"
+    }
+  ],
+  "fixedFurniture": [],
+  "dynamicObjects": [
+    "ledge",
+    "detail_vestibule_bench",
+    "detail_vestibule_notice",
+    "detail_vestibule_heater",
+    "detail_vestibule_book",
+    "detail_vestibule_bag"
+  ],
+  "dynamicDoors": [
+    "side_door"
+  ],
+  "npcZones": [
+    {
+      "x": 260,
+      "y": 160
+    },
+    {
+      "x": 143,
+      "y": 140
+    },
+    {
+      "x": 78,
+      "y": 152
+    },
+    {
+      "x": 297,
+      "y": 135
+    }
+  ],
+  "atmosphereZones": [
+    {
+      "x": 30,
+      "y": 100,
+      "width": 260,
+      "height": 64
+    }
+  ],
+  "foregroundZones": [
+    {
+      "x": 0,
+      "y": 180,
+      "width": 320,
+      "height": 44
+    }
+  ],
+  "sceneIllustrationHints": [
+    "Quiet environmental introduction to The vestibule; no invented event or hidden discovery"
+  ],
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "generationPresets": {
+    "texture": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1.3,
+      "displayWidth": 320
+    },
+    "canonical-room": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1.15,
+      "displayWidth": 640
+    },
+    "scene-illustration": {
+      "pixelWidth": 320,
+      "colors": 64,
+      "contrast": 1.1,
+      "displayWidth": 512
+    },
+    "overlay": {
+      "pixelWidth": 320,
+      "colors": 48,
+      "contrast": 1,
+      "displayWidth": 512
+    }
+  },
+  "bakedEntities": [],
+  "conditioning": {
+    "mode": "text-only",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "canonicalEntities": [
+    {
+      "id": "ledge",
+      "name": "dry ledge",
+      "aliases": [
+        "ledge",
+        "dry ledge"
+      ],
+      "description": "A dry ledge well away from the rain.",
+      "kind": "Container",
+      "portable": false,
+      "open": true,
+      "properties": {
+        "surface": true
+      }
+    },
+    {
+      "id": "detail_vestibule_bench",
+      "name": "wooden bench",
+      "aliases": [
+        "bench",
+        "wooden bench"
+      ],
+      "description": "A dry bench faces the entrance. One leg wears a paper shim.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "sit": true,
+        "lean": true
+      }
+    },
+    {
+      "id": "detail_vestibule_notice",
+      "name": "toilet notice",
+      "aliases": [
+        "notice",
+        "toilet notice"
+      ],
+      "description": "TOILETS ON THE LEFT. Underneath: CURRENTLY.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "read": "The working toilets are on the left. The added word CURRENTLY is underlined twice."
+      }
+    },
+    {
+      "id": "detail_vestibule_heater",
+      "name": "portable heater",
+      "aliases": [
+        "heater",
+        "portable heater"
+      ],
+      "description": "A quiet orange element behind a wire guard.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "touch": "You hold your hands near the guard. The warmth is enough.",
+        "listen": "The heater ticks as the metal expands."
+      }
+    },
+    {
+      "id": "detail_vestibule_book",
+      "name": "entry book",
+      "aliases": [
+        "book",
+        "entry book"
+      ],
+      "description": "An alias book, shut beside Inez's chair. Names stay on their own side of the cover.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true,
+        "read": "The cover says ENTRY. Other people's entries remain private."
+      }
+    },
+    {
+      "id": "detail_vestibule_bag",
+      "name": "paper bag",
+      "aliases": [
+        "bag",
+        "paper bag"
+      ],
+      "description": "Clear tape reinforces the base. The handles have outlasted the rest of it.",
+      "kind": "Object",
+      "portable": false,
+      "properties": {
+        "scenery": true
+      }
+    }
+  ],
+  "requiredVisualFacts": [
+    "Background texture plate only: muted material, colour and ambient light.",
+    "Reserve all canonical object and NPC zones for runtime compositing.",
+    "Composition uses the 320 x 224 reference frame without cropping."
+  ],
+  "forbiddenVisualFacts": [
+    "Any identifiable object, evidence, NPC, silhouette, door, window, staircase, sign or damage baked into the plate.",
+    "Additional architecture or routes not represented in the canonical reference.",
+    "Legible text, faces, nudity, sexual activity, branded logos or personal data.",
+    "Current hidden facts, solved-mystery clues or state inferred from plot summaries."
+  ],
+  "styleGuide": {
+    "artDirectionFamily": "Public Velvet",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "sceneConcept": "velvet material study for The vestibule; flat texture and lighting only. Runtime sprites supply all recognizable world facts.",
+  "lighting": "amber",
+  "state": {
+    "time": 1428,
+    "timeBand": "early",
+    "weather": "rain",
+    "lighting": "amber",
+    "crowd": "quiet",
+    "npcPresence": [
+      "inez"
+    ],
+    "canonicalObjects": [
+      {
+        "id": "side_door",
+        "name": "side door",
+        "aliases": [
+          "door",
+          "side door",
+          "entrance"
+        ],
+        "kind": "Door",
+        "location": "street",
+        "open": true,
+        "locked": false,
+        "damaged": false
+      },
+      {
+        "id": "ledge",
+        "name": "dry ledge",
+        "aliases": [
+          "ledge",
+          "dry ledge"
+        ],
+        "kind": "Container",
+        "location": "vestibule",
+        "open": true,
+        "damaged": false
+      },
+      {
+        "id": "detail_vestibule_bench",
+        "name": "wooden bench",
+        "aliases": [
+          "bench",
+          "wooden bench"
+        ],
+        "kind": "Object",
+        "location": "vestibule",
+        "damaged": false
+      },
+      {
+        "id": "detail_vestibule_notice",
+        "name": "toilet notice",
+        "aliases": [
+          "notice",
+          "toilet notice"
+        ],
+        "kind": "Object",
+        "location": "vestibule",
+        "damaged": false
+      },
+      {
+        "id": "detail_vestibule_heater",
+        "name": "portable heater",
+        "aliases": [
+          "heater",
+          "portable heater"
+        ],
+        "kind": "Object",
+        "location": "vestibule",
+        "damaged": false
+      },
+      {
+        "id": "detail_vestibule_book",
+        "name": "entry book",
+        "aliases": [
+          "book",
+          "entry book"
+        ],
+        "kind": "Object",
+        "location": "vestibule",
+        "damaged": false
+      },
+      {
+        "id": "detail_vestibule_bag",
+        "name": "paper bag",
+        "aliases": [
+          "bag",
+          "paper bag"
+        ],
+        "kind": "Object",
+        "location": "vestibule",
+        "damaged": false
+      }
+    ],
+    "openClosedState": {
+      "side_door": true,
+      "ledge": true
+    },
+    "specialEvents": ""
+  },
+  "timeVariants": [
+    "early",
+    "night",
+    "late",
+    "closing",
+    "dawn",
+    "day"
+  ],
+  "weatherCompatibility": "inside",
+  "canonicalVisualAnchors": {},
+  "npcPlacementZones": [
+    {
+      "x": 260,
+      "y": 160
+    },
+    {
+      "x": 143,
+      "y": 140
+    },
+    {
+      "x": 78,
+      "y": 152
+    },
+    {
+      "x": 297,
+      "y": 135
+    }
+  ],
+  "output": {
+    "formats": [
+      "webp",
+      "avif"
+    ],
+    "width": 640,
+    "height": 448,
+    "maximumBytes": 150000,
+    "directory": "public/visuals/generated",
+    "initialStatus": "draft"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "status": "draft-unactivated",
+  "tool": "native SVG pixel-layer authoring, headless rasterization",
+  "chair": {
+    "mode": "off-camera prose detail",
+    "rendered": false,
+    "newEntity": false,
+    "notes": "The prose chair is acknowledged but outside this composition. No chair is baked, drawn, or tied to Inez disappearance. Existing procedural Inez is a presence marker, not a new seated pose or identity asset.",
+    "position": "Beyond the near-right camera edge, next to the book/ledge zone; no image, mask, effect, fixed fixture or new entity."
+  },
+  "envelopeSource": "public/visuals/velvet-overlay/sprites/envelope.png",
+  "envelopeSha256": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+  "layers": {
+    "bag-effect": {
+      "svg": "bag-effect.svg",
+      "sha256": "c6e0dd4fe11e0fbab3b522e2d0e6330b25ba2cb5c0bbe54d03cba7bdab31b170",
+      "png": "bag-effect.png",
+      "pngSha256": "435f0956bbea1abbc460be708dbd6431fb8340f54b704b2ce19be9b33b66c956"
+    },
+    "bag": {
+      "svg": "bag.svg",
+      "sha256": "df8622655936229e7d63fce4b4627848d992e7c78c4b8475f8c84869106dba6f",
+      "png": "bag.png",
+      "pngSha256": "4b83086f587aeb4a2330c2c6f927642197e07df8b43b418615ea92927e434653"
+    },
+    "bench-effect": {
+      "svg": "bench-effect.svg",
+      "sha256": "efefb91fd8a026adcf9748226d2210ff4f81e97b6afeeabbba96210060f70355",
+      "png": "bench-effect.png",
+      "pngSha256": "99dcdd1219d23edaf8b2e87e4d71aea97da5b0357a50d069daad0217b0e2882a"
+    },
+    "bench": {
+      "svg": "bench.svg",
+      "sha256": "7b1d684b696e02f5b5bcfd58f2f85f504a1c83156b78f5edc6858bd2b43d0188",
+      "png": "bench.png",
+      "pngSha256": "7ee5bdcb7f54a8d5a355ada46c75433a76227ae125b4c1f8f335531b7ac1d9e9"
+    },
+    "book-effect": {
+      "svg": "book-effect.svg",
+      "sha256": "754c0ade0249c067bfcd91facce59a54c9c666ea5e492b1e09445440235b8731",
+      "png": "book-effect.png",
+      "pngSha256": "7f33f393498abe444dc1312ddce4b8ffaafb6bf001b6aaef842feff1c5830765"
+    },
+    "book": {
+      "svg": "book.svg",
+      "sha256": "0e01b3e8f2a224540c84bb0a2e238fafc14fb5543ad2620237707ddd70e6073f",
+      "png": "book.png",
+      "pngSha256": "c85948632048be040a99d13cfb7c8ec764166fcea477ac76b2bfcb5a63e2e76f"
+    },
+    "door-closed": {
+      "svg": "door-closed.svg",
+      "sha256": "b0acd0b8242fb4adc78d09d284268f4adcf52de4211319f261aa12d806846047",
+      "png": "door-closed.png",
+      "pngSha256": "55c8f91d9ec0ffd414820e6209aac6ee0035a938fe4df26228a7365a32f63bfb"
+    },
+    "door-open-effect": {
+      "svg": "door-open-effect.svg",
+      "sha256": "39f29804aab0f036223ed15c12dcd99dba933e9bafdb181e5ea2c085ac2d3b1d",
+      "png": "door-open-effect.png",
+      "pngSha256": "d1c2e35eeff6a636f7f6d3ad34774d5312e38fdf9d639c06448d2d023906b55e"
+    },
+    "door-open": {
+      "svg": "door-open.svg",
+      "sha256": "5fca5e0cedf598ae4fd7fba5f71a634500d71e270d2e1601cf983ecd8d4d0e28",
+      "png": "door-open.png",
+      "pngSha256": "d9afdb6b3f19e1a5964fc0ee9b1fe758b8cc8b8f4fa610a94cb6dcdd767ec0e0"
+    },
+    "envelope-floor-effect": {
+      "svg": "envelope-floor-effect.svg",
+      "sha256": "d80246aac3e02846eb3b848eec7f915b679ee6dfe9c8b792d694a17351104117",
+      "png": "envelope-floor-effect.png",
+      "pngSha256": "8a96cc51c807374b82493c09c380220c5856819b83dc9d898ee2da9464237115"
+    },
+    "envelope-ledge-effect": {
+      "svg": "envelope-ledge-effect.svg",
+      "sha256": "974ab49506c3f733292a9dafeea5bcd1744c5562efe9e1fd553c4a121e8d2a3f",
+      "png": "envelope-ledge-effect.png",
+      "pngSha256": "c7ae35d1101d0630b612ce52f0d58a3481dbc76e36b5beb5b51299ce34b95ff6"
+    },
+    "heater-effect": {
+      "svg": "heater-effect.svg",
+      "sha256": "115e4d2b9426abed451f52e7226cc5dc6f1397277b8bf2dea8efa6f14e501f20",
+      "png": "heater-effect.png",
+      "pngSha256": "d353242d1e350b72fd231bacf7486136b9e21415af2dade61e0c52cbe96bc040"
+    },
+    "heater": {
+      "svg": "heater.svg",
+      "sha256": "7e962a7b589510615ccc0c4bf96aea8d5f505422852009bf7b45023550a295ea",
+      "png": "heater.png",
+      "pngSha256": "2c663994be7f81fca16a88aa77f76c56aaed5976398ee57f0c5bc7cd4bc5d15f"
+    },
+    "ledge-effect": {
+      "svg": "ledge-effect.svg",
+      "sha256": "f2129d720db026502ce7b39e4dc2106111128a7bd405c95233d07d5ee775776d",
+      "png": "ledge-effect.png",
+      "pngSha256": "1e2139cde27e728865e59363cebf0268026b278f08cbcebcc22e680a923389b5"
+    },
+    "ledge": {
+      "svg": "ledge.svg",
+      "sha256": "621502c7aaf371e4512f5438bd7a84fe62b5aaac1392bf092fdf9fbb53847733",
+      "png": "ledge.png",
+      "pngSha256": "72938acd821266c49d3a4ded8e8d504964ec07dfab448c8975717eaefbf2c2b6"
+    },
+    "notice-effect": {
+      "svg": "notice-effect.svg",
+      "sha256": "3e1083c77e750e853ab3fd361f7a6e094e45a690c78927224c181d259d90a1ac",
+      "png": "notice-effect.png",
+      "pngSha256": "fe706d69127278025e257100c12672a363e94f2e244d91bd6e57ac614d89efaa"
+    },
+    "notice": {
+      "svg": "notice.svg",
+      "sha256": "f6c385a2ba573335bc13b8419a1f09c3601776a4b37e368b5492440209d615c0",
+      "png": "notice.png",
+      "pngSha256": "70e0cf817bb513f4cce01e1dc9f5e174b287957e4ab91469e32a20b2329a5d2d"
+    }
+  }
+}

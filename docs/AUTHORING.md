@@ -1,5 +1,9 @@
 # Narrative production and expansion
 
+## Visual authoring
+
+Use [art contracts](art-contracts/README.md) and the [provider-neutral pipeline](PROVIDER-NEUTRAL-ART-PIPELINE.md). Canonical art accepts manual, local, hosted or external sources with the same review gates. Preserve editable PNGs and provenance; no original model or assistant memory is required. [Optional ComfyUI workflow](COMFYUI-VISUAL-WORKFLOW.md).
+
 ## Pipeline
 
 1. Update the story bible. Separate immutable rules from a curated seed variation.

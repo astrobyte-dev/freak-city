@@ -1,0 +1,130 @@
+{
+  "id": "velvet-bar-layout",
+  "version": 1,
+  "roomId": "bar",
+  "frame": [320, 224],
+  "boundary": [0, 0, 320, 224],
+  "wallHeight": 144,
+  "coordinatePolicy": "Non-metric art coordinates: x west to east, y front/south to back/north. Rectangle, dimensions and unspecified route positions are composition choices, not additional parser geography. Front wall is a camera cutaway, not an exit.",
+  "elements": [
+    {
+      "id": "stairs",
+      "kind": "staircase",
+      "box": [132, 146, 176, 224],
+      "height": 140,
+      "steps": 8,
+      "route": "landing",
+      "beside": "salon",
+      "facts": ["staticArchitecture:0"],
+      "label": "One staircase / upstairs"
+    },
+    {
+      "id": "counter",
+      "kind": "counter",
+      "box": [14, 18, 80, 139],
+      "height": 44,
+      "entityId": "counter",
+      "facts": ["fixedFurniture:0"],
+      "label": "Fixed counter / bare surface"
+    },
+    {
+      "id": "shelves",
+      "kind": "shelves",
+      "box": [0, 98, 10, 157],
+      "bottom": 75,
+      "height": 122,
+      "entityId": "detail_bar_shelves",
+      "facts": ["fixedFurniture:1"],
+      "label": "Fixed bottle shelving / empty"
+    },
+    {
+      "id": "window",
+      "kind": "window",
+      "box": [316, 45, 320, 103],
+      "bottom": 99,
+      "height": 134,
+      "entityId": "detail_bar_window",
+      "facts": ["staticArchitecture:1"],
+      "label": "High street-facing window"
+    },
+    {
+      "id": "stage-view",
+      "kind": "stage-view",
+      "box": [307, 166, 320, 217],
+      "height": 7,
+      "route": "stage",
+      "facts": ["staticArchitecture:0"],
+      "label": "Distant small stage beyond east route"
+    }
+  ],
+  "routes": [
+    {
+      "to": "vestibule",
+      "wall": "south",
+      "span": [100, 145],
+      "height": 90,
+      "label": "Vestibule / south",
+      "offCamera": true
+    },
+    {
+      "to": "street",
+      "wall": "south",
+      "span": [235, 280],
+      "height": 90,
+      "label": "Outside / front door",
+      "offCamera": true
+    },
+    {
+      "to": "landing",
+      "wall": "north",
+      "span": [132, 176],
+      "height": 140,
+      "label": "Upstairs via the single staircase"
+    },
+    {
+      "to": "kitchen",
+      "wall": "west",
+      "span": [30, 72],
+      "height": 92,
+      "label": "Kitchen / service opening"
+    },
+    {
+      "to": "stage",
+      "wall": "east",
+      "span": [164, 219],
+      "height": 92,
+      "label": "Stage / east"
+    },
+    {
+      "to": "salon",
+      "wall": "north",
+      "span": [186, 230],
+      "height": 92,
+      "label": "Salon / beside stairs"
+    },
+    {
+      "to": "archive",
+      "wall": "west",
+      "span": [175, 216],
+      "height": 92,
+      "label": "Archive / service-table route"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "npc-floor",
+      "box": [97, 24, 235, 130],
+      "purpose": "NPCs and movable objects; no figures baked in"
+    },
+    {
+      "id": "right-floor",
+      "box": [244, 34, 300, 137],
+      "purpose": "Additional dynamic object / NPC space"
+    },
+    {
+      "id": "foreground",
+      "box": [86, 0, 307, 20],
+      "purpose": "Foreground overlays / transient clutter"
+    }
+  ]
+}

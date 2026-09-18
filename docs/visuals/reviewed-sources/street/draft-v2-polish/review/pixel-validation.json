@@ -1,0 +1,210 @@
+{
+  "status": "passed-draft-unactivated",
+  "coordinateSpace": [
+    320,
+    224
+  ],
+  "ownerRegions": {
+    "door": [
+      179,
+      64,
+      242,
+      186
+    ],
+    "bin": [
+      274,
+      130,
+      306,
+      192
+    ],
+    "envelope": [
+      155,
+      171,
+      172,
+      190
+    ]
+  },
+  "pairs": [
+    {
+      "before": "open-desktop-before-viewport.png",
+      "after": "open-desktop-after-viewport.png",
+      "dimensions": [
+        640,
+        448
+      ],
+      "allowedOwners": [
+        "door",
+        "bin"
+      ],
+      "changedPixels": 18588,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        358,
+        130,
+        610,
+        382
+      ]
+    },
+    {
+      "before": "closed-desktop-before-viewport.png",
+      "after": "closed-desktop-after-viewport.png",
+      "dimensions": [
+        640,
+        448
+      ],
+      "allowedOwners": [
+        "bin"
+      ],
+      "changedPixels": 3660,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        552,
+        260,
+        610,
+        382
+      ]
+    },
+    {
+      "before": "dropped-desktop-before-viewport.png",
+      "after": "dropped-desktop-after-viewport.png",
+      "dimensions": [
+        640,
+        448
+      ],
+      "allowedOwners": [
+        "door",
+        "bin",
+        "envelope"
+      ],
+      "changedPixels": 18984,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        312,
+        130,
+        610,
+        382
+      ]
+    },
+    {
+      "before": "open-mobile-before-viewport.png",
+      "after": "open-mobile-after-viewport.png",
+      "dimensions": [
+        354,
+        248
+      ],
+      "allowedOwners": [
+        "door",
+        "bin"
+      ],
+      "changedPixels": 5628,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        198,
+        72,
+        337,
+        211
+      ]
+    },
+    {
+      "before": "closed-mobile-before-viewport.png",
+      "after": "closed-mobile-after-viewport.png",
+      "dimensions": [
+        354,
+        248
+      ],
+      "allowedOwners": [
+        "bin"
+      ],
+      "changedPixels": 1108,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        305,
+        144,
+        337,
+        211
+      ]
+    },
+    {
+      "before": "dropped-mobile-before-viewport.png",
+      "after": "dropped-mobile-after-viewport.png",
+      "dimensions": [
+        354,
+        248
+      ],
+      "allowedOwners": [
+        "door",
+        "bin",
+        "envelope"
+      ],
+      "changedPixels": 5754,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        173,
+        72,
+        337,
+        211
+      ]
+    },
+    {
+      "before": "neutral-desktop-before-viewport.png",
+      "after": "neutral-desktop-after-viewport.png",
+      "dimensions": [
+        640,
+        448
+      ],
+      "allowedOwners": [],
+      "changedPixels": 0,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": null
+    },
+    {
+      "before": "open-desktop-after-viewport.png",
+      "after": "closed-desktop-after-viewport.png",
+      "dimensions": [
+        640,
+        448
+      ],
+      "allowedOwners": [
+        "door"
+      ],
+      "changedPixels": 17960,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        366,
+        128,
+        462,
+        358
+      ]
+    },
+    {
+      "before": "dropped-desktop-after-viewport.png",
+      "after": "retaken-desktop-after-viewport.png",
+      "dimensions": [
+        640,
+        448
+      ],
+      "allowedOwners": [
+        "envelope"
+      ],
+      "changedPixels": 480,
+      "outsideOwnerRegions": 0,
+      "differenceBounds": [
+        312,
+        344,
+        340,
+        372
+      ]
+    }
+  ],
+  "windowAndAwningIdentical": true,
+  "allPriorDraftFilesUnchanged": true,
+  "protectedFilesVerified": 76,
+  "unchangedLayersPixelIdentical": [
+    "door-closed",
+    "sign",
+    "sign-effect",
+    "rain"
+  ],
+  "envelopeMasterByteIdentical": true,
+  "limitation": "Pixel and state checks establish containment, not personal visual approval."
+}

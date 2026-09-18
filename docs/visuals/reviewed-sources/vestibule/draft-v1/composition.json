@@ -1,0 +1,208 @@
+{
+  "status": "draft",
+  "frame": [
+    320,
+    224
+  ],
+  "anchors": {
+    "side_door": {
+      "glyph": "door",
+      "x": 0,
+      "y": 18,
+      "width": 27,
+      "height": 168
+    },
+    "ledge": {
+      "glyph": "shelf",
+      "x": 268,
+      "y": 156,
+      "width": 50,
+      "height": 18
+    },
+    "detail_vestibule_bench": {
+      "glyph": "stool",
+      "x": 49,
+      "y": 157,
+      "width": 53,
+      "height": 38
+    },
+    "detail_vestibule_notice": {
+      "glyph": "sign",
+      "x": 65,
+      "y": 68,
+      "width": 26,
+      "height": 20
+    },
+    "detail_vestibule_heater": {
+      "glyph": "light",
+      "x": 116,
+      "y": 138,
+      "width": 20,
+      "height": 27
+    },
+    "detail_vestibule_book": {
+      "glyph": "table",
+      "x": 298,
+      "y": 156,
+      "width": 15,
+      "height": 7
+    },
+    "detail_vestibule_bag": {
+      "glyph": "bin",
+      "x": 292,
+      "y": 179,
+      "width": 19,
+      "height": 26
+    }
+  },
+  "npcZones": [
+    {
+      "x": 206,
+      "y": 155
+    },
+    {
+      "x": 169,
+      "y": 145
+    },
+    {
+      "x": 233,
+      "y": 171
+    },
+    {
+      "x": 136,
+      "y": 164
+    }
+  ],
+  "atmosphereZones": [
+    {
+      "x": 149,
+      "y": 118,
+      "width": 52,
+      "height": 27
+    }
+  ],
+  "foregroundZones": [
+    {
+      "x": 0,
+      "y": 206,
+      "width": 320,
+      "height": 18
+    }
+  ],
+  "envelope": {
+    "floor": {
+      "x": 165,
+      "y": 191,
+      "width": 10,
+      "height": 6,
+      "contact": [
+        170,
+        197
+      ]
+    },
+    "ledge": {
+      "x": 278,
+      "y": 156,
+      "width": 10,
+      "height": 6,
+      "contact": [
+        283,
+        162
+      ]
+    }
+  },
+  "floorPolygon": [
+    [
+      0,
+      189
+    ],
+    [
+      42,
+      179
+    ],
+    [
+      101,
+      135
+    ],
+    [
+      122,
+      119
+    ],
+    [
+      217,
+      119
+    ],
+    [
+      278,
+      151
+    ],
+    [
+      320,
+      171
+    ],
+    [
+      320,
+      224
+    ],
+    [
+      0,
+      224
+    ]
+  ],
+  "ownerBounds": {
+    "side_door": [
+      0,
+      13,
+      68,
+      218
+    ],
+    "ledge": [
+      264,
+      153,
+      320,
+      180
+    ],
+    "detail_vestibule_bench": [
+      45,
+      155,
+      107,
+      201
+    ],
+    "detail_vestibule_notice": [
+      64,
+      67,
+      93,
+      91
+    ],
+    "detail_vestibule_heater": [
+      101,
+      126,
+      153,
+      175
+    ],
+    "detail_vestibule_book": [
+      296,
+      154,
+      316,
+      166
+    ],
+    "detail_vestibule_bag": [
+      289,
+      177,
+      314,
+      209
+    ],
+    "envelopeFloor": [
+      162,
+      189,
+      178,
+      201
+    ],
+    "envelopeLedge": [
+      275,
+      154,
+      291,
+      167
+    ]
+  }
+}

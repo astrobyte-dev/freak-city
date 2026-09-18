@@ -1,0 +1,6 @@
+tooling/
+external/
+build/auto.inf
+build/Debug log.txt
+build/Problems.html
+__pycache__/

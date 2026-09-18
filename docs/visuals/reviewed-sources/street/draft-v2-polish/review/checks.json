@@ -1,0 +1,428 @@
+{
+  "status": "passed-draft-unactivated",
+  "records": [
+    {
+      "time": 1430,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "open",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1430,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "open",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "closed",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "closed",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1433,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "dropped",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1433,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "dropped",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1430,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "open",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "time": 1430,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "open",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "closed",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "closed",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "time": 1433,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "dropped",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "time": 1433,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "dropped",
+      "size": "mobile",
+      "mode": "on"
+    },
+    {
+      "time": 1435,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "return",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1436,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "retaken",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1430,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "bin-absent",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1430,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "bin-damaged",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "before",
+      "label": "neutral",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "neutral",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1431,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "closed-no-spill",
+      "size": "desktop",
+      "mode": "on"
+    },
+    {
+      "time": 1433,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "reduced",
+      "size": "mobile",
+      "mode": "reduced"
+    },
+    {
+      "time": 1433,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "street",
+      "door": {
+        "open": true,
+        "locked": false
+      },
+      "revision": "after",
+      "label": "off",
+      "size": "mobile",
+      "mode": "off"
+    },
+    {
+      "time": 1600,
+      "room": "street",
+      "npcs": [],
+      "crowd": "quiet",
+      "envelopeLocation": "player",
+      "door": {
+        "open": false,
+        "locked": true
+      },
+      "revision": "after",
+      "label": "locked",
+      "size": "desktop",
+      "mode": "on"
+    }
+  ],
+  "preservedHashes": {
+    "docs/visuals/reviewed-sources/street/draft-v1/authoring-prompt.txt": "cb7519cb5d3af52742a699e627104330d9fc8d5abd29f248b23c4e598f471ae9",
+    "docs/visuals/reviewed-sources/street/draft-v1/authoring.json": "197c2f6e8474f25f93e5e9254b0a51b2724e8a8048cffa089b1ecaae5d794e6c",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/pixels/64-colours.png": "8af972f6d99cf82bad87ebcea4950ff0d3b77e1080e0d23a290bd7ee1b405927",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/pixels/unquantized.png": "1013a49997b8845402996575b73d19cd45726e18299a15412be4bf1240e36aa2",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/provenance/art-contract.md": "18b9ce04f19701777776dbbb7741cc656c8a6119ec3a726eefb6c0bb2a235a5a",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/provenance/world-manifest.json": "739915af6b98ecb26be395a02ff5b034b54ed252fd1d5ddb38c8405f6edccca1",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/sources/framed.png": "d0058b9c7ec1d011dc4a384cba01970e1847d61b597753cf95d5e4cedbdb06fd",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/sources/original.png": "4fcdccc2fc91a436007dcbc92298245d0cb85f128966625788c40eb6f86bbe4b",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/street__canonical-room__canonical__64-colours.json": "ddf89bc35891a12ce95a109481ab13d4ad522659cb4c96df764cdc25e952fcaa",
+    "docs/visuals/reviewed-sources/street/draft-v1/candidate/street__canonical-room__canonical__64-colours.png": "340321a8a59fbd57c25f9e76889580b9e5055c11ad383f28f90e6fe586e52f78",
+    "docs/visuals/reviewed-sources/street/draft-v1/composition.json": "8fd4a15f31008bb6900dbe1f871b5e8a9a01dfa8b8c5973e9e9d64fe6cff87c0",
+    "docs/visuals/reviewed-sources/street/draft-v1/generated-source.png": "4fcdccc2fc91a436007dcbc92298245d0cb85f128966625788c40eb6f86bbe4b",
+    "docs/visuals/reviewed-sources/street/draft-v1/layer-provenance.json": "f1e6c5be09a63f028146b2c6cd70c755235a56e80e62737bd3fc713f0de3ce01",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/bin-effect.png": "ce57633f8feaf4e9804967723550c43eb5759155ffc0bb13015f226975cd46fc",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/bin-effect.svg": "1ff94eb25baf3a10534e15ceebfbf75956a97a073e4667a89b668a4a47500cfd",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/bin.png": "9b46c5c092e82bb110c526aeda2459fc463501150e0e4f1ded8ef5f0e267f524",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/bin.svg": "a586859fff048abf0e112b8d41c2015ab57cd1124997c096ef10b2eb53a69333",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/door-closed.png": "1c894f1f71c192d5193c0393dbaa9f1650f5e44e34e1fed224892f945ff926ab",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/door-closed.svg": "d3d1b08a267bd7b5f12ab49d71180d76a523112895b092f58e3c28b1be1cd83d",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/door-open-effect.png": "f13033fb0f03ac7273da32ee2374db6fbcbf6a9ff9541b3ae6d1b37db551d59b",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/door-open-effect.svg": "888ef47fc0255aa38a481b8eb62df578378506c896294aff6807db4b48a9789d",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/door-open.png": "6c0196993e076ed0499acb2664bbd14c6f7275575b942bb3f1c9293902d4bcda",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/door-open.svg": "fe1f9bd8fcc1d0d526b0dfcebdcd98ef953984e2d00ced8cdd4fc33302512d19",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/envelope-effect.png": "a28c2de9b636e2dd736195683f211a10b12bb9bc559db28c7dbc0125b91cb5b2",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/envelope-effect.svg": "603da06d5f27362301fa814781af93339f0d717d5f626b70f4cea54590850924",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/envelope.png": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/rain.png": "dee7a52e2ec2ba21dcbe4bdd7a7225e65898787d91d4cb7bb6df79d31cac6d1c",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/rain.svg": "7a1c98cff567c6d48c814ffc6af2df66ca1958ed851b144bf2e5e4705359b4bd",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/sign-effect.png": "99838c709f40c22a22839b51e9912ee32a8d0e85f39949d1fab9ed930b9e3f9c",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/sign-effect.svg": "e0cd0abc8c2a945926dab8180fbe31e99a7ad6406d99a8bc1d876d5da6932870",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/sign.png": "caf54ac44311fcb4e1100e163016cf2f5329f18b2dd28b7d61d905f872b56a58",
+    "docs/visuals/reviewed-sources/street/draft-v1/layers/sign.svg": "2af6f8b08f52e7913ec152818f3e1d31c0ce1c72cf47d0f82e2de04516043b17",
+    "docs/visuals/reviewed-sources/street/draft-v1/layout-final.svg": "f00cccbc439cfae138a567a3390e753f67620a6659bed4d4cff8c456d702e497",
+    "docs/visuals/reviewed-sources/street/draft-v1/layout-guide.png": "905d5f02557142318d046686c7594fe169d54ede7442a7f0cba97a939318732a",
+    "docs/visuals/reviewed-sources/street/draft-v1/layout-proposal-v1.json": "4924252820215129e0e6518f34f26d627af11c0c95461c1bb07ca8b23bbed5c6",
+    "docs/visuals/reviewed-sources/street/draft-v1/layout.json": "22dc2a40ec0dfabaa961dfa5849fb16810d29f8e268eafe40b2ddcd57763fc34",
+    "docs/visuals/reviewed-sources/street/draft-v1/REPORT.md": "15860af67a9805f9851d53e3053e392ff73920958d8b8cbb4a0316667d68cec9",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/01-open-door-viewport.png": "18743dc1444e10ee47975f7be0aca07e7da1c1191c96e28d9a217a0c739f2e64",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/01-open-door.png": "b79651bb98c2472cd69ee551a9186a428058d28d72683643a8ad279ec6250494",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/02-closed-door-viewport.png": "d3b4278f27ac95450aa885e0a77249f819892537d2712a41833d8e4dfecd4664",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/02-closed-door.png": "449f289b7e172fb2be378f7e23628d2e8997e6d229c7e557e2ae34537c60ace0",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/03-dropped-envelope-viewport.png": "4c546915a40f8506d14fe676db00f795fc2db79c36f17ddb8b2e68a8df79d094",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/03-dropped-envelope.png": "6caa52cc1b5cb0e8c58d59e7b9179d3bf7f0f943de655926d92c3c26da4b84ad",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/04-return-envelope-viewport.png": "4c546915a40f8506d14fe676db00f795fc2db79c36f17ddb8b2e68a8df79d094",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/04-return-envelope.png": "b5aaf1d3a5e5198a520165a0872f15c5d6b0557686bd0dd49c08bbbe5708c7ff",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/05-retaken-envelope-viewport.png": "18743dc1444e10ee47975f7be0aca07e7da1c1191c96e28d9a217a0c739f2e64",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/05-retaken-envelope.png": "40786799870487b54fef40e578c281c452ef2399ea4df0e4d454168c7e8c846c",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/06-master-320-viewport.png": "254505981929565bdcf1e76559f2ef414ff3c4a59790e7e5512a359599913978",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/06-master-320.png": "5cd8e54d570e898114253f74070e3cb4091abf6a89d8e9ee21cac573c2d3662d",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/07-mobile-390-viewport.png": "6955b92510c3d7eba596b8bb1fddd41b84d45475f71196e18b1ed686a7db3df5",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/07-mobile-390.png": "27a0a6498d4babe31de0e4879fb7c10c893e059785138cbd6395b230aab7da20",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/08-reduced-viewport.png": "aa2b4bc076e83bb154554bade522c4b22bd11351bc022308eb0af61e041c3236",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/08-reduced.png": "e8346acd927bce04d6976743c771009445e6fc35a8da0eafd7aad3d5373c78ab",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/09-off.png": "833c67d3c68e5ea31f8538ebd9d453d3f43bc35127777a202dd9b2ef9e9429db",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/10-locked-0240-viewport.png": "ae50a3747341bed19961833a185c376bcc2f953a6c8145f43b49930561919ae3",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/10-locked-0240.png": "c35b05b281c180869e05bf97f92007c3b9a66262e164b23b0a86255dc51bd4fb",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/11-dawn-viewport.png": "66555006c581f91494fc11d3088b08da4adbacdcf7142b9ace1c213eb8c12f05",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/11-dawn.png": "a3b436fd8671ea65d9152b2d786642759ca1c3717059d215dba0756c7da326c5",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/12-sign-damaged-fallback-viewport.png": "286f6df030a23dafaeb02b9e55089d6df458046804a6c9ca15ece92d89021c8b",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/12-sign-damaged-fallback.png": "b986c81b38ee2fd69227f09e361b3c1889650d736e3584db793596c98e8fb922",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/13-bin-absent-viewport.png": "325633a931dc6d2a329ea99f72115adc723f6c312bf56893a8680aa30478a450",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/13-bin-absent.png": "3e58c6a96fcc70f7a1da2ae02d45c36f4fec92a5f72d6871a2c448cbea2176a5",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/14-bin-image-fallback.png": "29987cc70a91baaac66a816c4603620c7302a288c9c12478ab275e9623263154",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/15-plate-image-fallback.png": "0ca7e99cec6b3a630ed21a8c2d075daed4477ea5b153b3f3aa59b917ae343689",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/16-ordinary-ui-desktop.png": "b3abf0a8785af936aa5f2a8c3346c9075018e689418edbe2dc2d7fc88049fef2",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/17-ordinary-ui-mobile.png": "1f83abbbc9dc8e62eb153696a42d2a88f5e3091eef8e1a7248b51f0ef495ec49",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/18-ordinary-ui-locked.png": "aaa65571ee5967262df9f34ccfa5ea236821c86d7b352a64d6c04782c09b21c7",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/art-validation.json": "3fbda885e460a0adb656c98ee593db58e7d8737daf3ebb9163cde602a587a225",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/checks.json": "94adce13083ff1c9a0124d954d55515546f43f705e962c1faf1233f3cd048fe8",
+    "docs/visuals/reviewed-sources/street/draft-v1/review/index.html": "1edd73c7d4234ee076f97c746515ed0babdc57ee881741bc748514c0b43065be",
+    "docs/visuals/reviewed-sources/street/draft-v1/world-manifest.json": "739915af6b98ecb26be395a02ff5b034b54ed252fd1d5ddb38c8405f6edccca1",
+    "public/visuals/velvet-overlay/sprites/envelope.png": "c3a9e0ee2f1030d6ffb82e2fc31c1a637f055d2d85a279c092fe4e35efe1e146",
+    "src/content/visuals/assets.json": "f525badec035f96d5d9d6bbef503e83257b9ab65601b3eb7f6ee2235297cc6f0",
+    "src/content/visuals/velvet-overlay.json": "04da56b4cbdee79bed88458a5b45af5a2e1fb0b28c4f95f215b75cece5983132",
+    "src/content/spaces.ts": "c4345172d75021b9cfd948fa3c2344d44d8e3878edc608d1e671fdb12df8b240",
+    "src/engine/parser.ts": "6d5436beeb6bce9535beda4702028f506d3e15bff3235cb99b4ec579c49cd7c1"
+  },
+  "checks": [
+    "before/after open, closed and dropped at desktop and mobile",
+    "fixed sprite sizes and positions",
+    "drop/return/take and reload",
+    "bin absence/damage",
+    "closed/locked door removes open effects",
+    "failed bin/door/envelope remove their effects",
+    "On/Reduced/Off",
+    "front entrance remains usable after side-door lock",
+    "ordinary UI through isolated request injection",
+    "all prior draft files and protected gameplay/art unchanged"
+  ],
+  "errors": [],
+  "unexpectedRequests": [],
+  "unexpectedFailures": []
+}

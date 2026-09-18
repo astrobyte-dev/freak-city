@@ -1,0 +1,1 @@
+Initial standard production preview on port 52746 correctly excluded the DEV-only Sable query route. No commands or age gate were submitted in the original campaign. Added a separate explicit compiled trial entry; final visible trial uses fresh origin 52747. Original campaign entry and main build config unchanged.

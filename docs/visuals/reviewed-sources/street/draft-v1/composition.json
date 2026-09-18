@@ -1,0 +1,186 @@
+{
+  "status": "draft",
+  "frame": [
+    320,
+    224
+  ],
+  "alignment": "Measured against the explicitly cropped 320x224 candidate; generation guide remains retained as the prior composition proposal.",
+  "anchors": {
+    "detail_street_wall": {
+      "glyph": "wall",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 161
+    },
+    "detail_street_window": {
+      "glyph": "window",
+      "x": 33,
+      "y": 54,
+      "width": 114,
+      "height": 65
+    },
+    "detail_street_awning": {
+      "glyph": "shelf",
+      "x": 169,
+      "y": 40,
+      "width": 80,
+      "height": 23
+    },
+    "side_door": {
+      "glyph": "door",
+      "x": 183,
+      "y": 64,
+      "width": 48,
+      "height": 92
+    },
+    "detail_street_sign": {
+      "glyph": "sign",
+      "x": 171,
+      "y": 19,
+      "width": 82,
+      "height": 18
+    },
+    "detail_street_bin": {
+      "glyph": "bin",
+      "x": 278,
+      "y": 142,
+      "width": 23,
+      "height": 32
+    }
+  },
+  "npcZones": [
+    {
+      "x": 155,
+      "y": 161
+    },
+    {
+      "x": 270,
+      "y": 160
+    },
+    {
+      "x": 111,
+      "y": 170
+    },
+    {
+      "x": 305,
+      "y": 166
+    }
+  ],
+  "atmosphereZones": [
+    {
+      "x": 0,
+      "y": 190,
+      "width": 320,
+      "height": 34
+    }
+  ],
+  "foregroundZones": [
+    {
+      "x": 0,
+      "y": 190,
+      "width": 320,
+      "height": 34
+    }
+  ],
+  "contacts": {
+    "side_door": [
+      207,
+      156
+    ],
+    "detail_street_bin": [
+      290,
+      174
+    ],
+    "envelope": [
+      163,
+      180
+    ]
+  },
+  "pavementPolygon": [
+    [
+      0,
+      161
+    ],
+    [
+      320,
+      161
+    ],
+    [
+      320,
+      224
+    ],
+    [
+      0,
+      224
+    ]
+  ],
+  "shelterPolygon": [
+    [
+      169,
+      61
+    ],
+    [
+      249,
+      61
+    ],
+    [
+      255,
+      173
+    ],
+    [
+      165,
+      173
+    ]
+  ],
+  "windowPolygon": [
+    [
+      37,
+      57
+    ],
+    [
+      144,
+      57
+    ],
+    [
+      144,
+      115
+    ],
+    [
+      37,
+      115
+    ]
+  ],
+  "doorOpening": [
+    183,
+    64,
+    231,
+    156
+  ],
+  "ownedEffectBounds": {
+    "door-open": [
+      179,
+      155,
+      242,
+      186
+    ],
+    "sign": [
+      166,
+      14,
+      258,
+      210
+    ],
+    "bin": [
+      274,
+      169,
+      306,
+      192
+    ],
+    "envelope": [
+      157,
+      180,
+      170,
+      190
+    ]
+  }
+}

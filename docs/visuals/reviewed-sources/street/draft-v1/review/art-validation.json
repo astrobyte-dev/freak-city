@@ -1,0 +1,63 @@
+{
+  "status": "passed-draft-unactivated",
+  "importReplay": "source/framing/master/display hashes and pixels verified after copying into retained evidence",
+  "masterColors": 58,
+  "display": [
+    640,
+    448
+  ],
+  "master": [
+    320,
+    224
+  ],
+  "comparisons": [
+    {
+      "before": "01-open-door-viewport.png",
+      "after": "02-closed-door-viewport.png",
+      "differenceBounds": [
+        358,
+        128,
+        470,
+        364
+      ],
+      "allowedBounds": [
+        358,
+        128,
+        484,
+        372
+      ],
+      "outsideOwnedRegionUnchanged": true
+    },
+    {
+      "before": "03-dropped-envelope-viewport.png",
+      "after": "05-retaken-envelope-viewport.png",
+      "differenceBounds": [
+        314,
+        348,
+        338,
+        376
+      ],
+      "allowedBounds": [
+        312,
+        344,
+        344,
+        384
+      ],
+      "outsideOwnedRegionUnchanged": true
+    }
+  ],
+  "references": [
+    {
+      "file": "public/velvet-exterior.png",
+      "sha256": "fe50b7befc4a5525d8bf33efd42c54dcb3fc4ea27ff6bcf3e5fef8e4a62bac30"
+    },
+    {
+      "file": "docs/visuals/velvet-architecture-cleanup/candidate/sources/original.png",
+      "sha256": "3b6bcb06d78bc43a636e782c082891842d0054c93be1073200826cbcd103c9f2"
+    },
+    {
+      "file": "docs/visuals/reviewed-sources/street/draft-v1/layout-guide.png",
+      "sha256": "905d5f02557142318d046686c7594fe169d54ede7442a7f0cba97a939318732a"
+    }
+  ]
+}

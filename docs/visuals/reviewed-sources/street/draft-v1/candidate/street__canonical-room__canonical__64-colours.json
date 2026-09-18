@@ -1,0 +1,324 @@
+{
+  "roomId": "street",
+  "variantId": "canonical",
+  "role": "canonical-room",
+  "prompt": "Use case: stylized-concept. Asset type: a clean canonical architectural background plate for FREAK//CITY, to receive separate pixel-art object layers. Create ONE landscape image, 1440 x 1008 (10:7) if possible.\n\nReference roles: Image 1 is the retained exterior, for damp worn old masonry and street atmosphere only; DO NOT copy its additional doors, lamps, shutters, signage or perspective streets. Image 2 is the approved Velvet interior, for distressed material, expressive magenta/cyan light and rich dark midtones only; DO NOT depict the interior, furniture or neon tube fixtures. Image 3 is an authored facade composition guide; use its geometry. Text and colored labels in the guide are not art.\n\nThe view is the quiet exterior side entrance of an old adult nightlife venue, near-frontally seen from across a narrow road. A SINGLE uninterrupted old brick facade fills the frame width, wet worn pavement in the lower approximately 22 percent. We see only this bounded stretch of facade; additional exits, the kiosk across the road, and routes to the front entrance and behind the building are outside the view. No sky or neighboring buildings required.\n\nArchitecture on a 320 x 224 image grid: brick facade fills x0..320 y0..177. One large landscape frosted club window, rectangle approximately x42..135 y76..134, sits LEFT. Indistinct pink/cyan ambient light through frosted glass, no clear interior view, no faces or silhouettes. One SIDE-ENTRY OPENING is RIGHT OF CENTRE, x193..248 y76..177, a rectangular, very dark empty recess with a fixed aged lintel/jamb and bare threshold. Render NO door leaf inside or beside it: a game layer supplies both the closed door and the open leaf. The recess must stay unlit, nearly black and empty; no corridor, equipment, interior furniture or deep room view. Above it a NARROW WORN BURGUNDY AWNING spans roughly x179..259 y55..73, projecting a little toward the camera. The area above the awning at x177..257 y30..48 is simply brick, empty of signage, brackets or lettering: a separate overlay will supply the VELVET sign. Rightmost floor area x281..303 y150..184 must remain empty for the future bin. Foreground x159..169 y190..197 must remain empty for a future envelope.\n\nStyle: a high-quality painterly game environment source with PS1-era rough texture and cohesive chunky material detail that survives 320-pixel reduction. Grungy underground neo-noir, physically believable worn old brick, damp dark mortar and reflective stone. Rich, readable dirty midtones and deep shadow; palette compatible with the approved interior but more restrained outdoors. Magenta and cyan may softly diffuse through the frosted window and very faintly reflect beneath that window. Keep the ground under the empty sign/door reservation neutral, with NO already-painted sign glow, doorway spill, text reflection, bins or human reflections. No visible neon tube, new practical lamp or light fixture. No active rain streaks baked into art (a separate weather layer supplies rain); damp material and shallow wet texture are appropriate. No bloom so strong that brick detail disappears.\n\nOnly permanent architecture and pavement. NO people, animals, cars, queues, bin, paper, umbrella, envelope, movable objects, sign, text, logos, placards, wall posters, graffiti, damage decals, stickers, second window, second visible door, shutters, stairs, rails, camera, bus stop, street lamp or kiosk in frame. Empty reservations must remain natural background, not outlined placeholders. Preserve architectural scale: full-height ordinary single-person door opening and low foreground pavement; not a grand monumental entrance. Do not reproduce guide colors, arrows, grids, labels or UI.\n",
+  "modelPrompt": null,
+  "style": {
+    "artDirectionFamily": "Exteriors",
+    "sceneModel": "Grungy PS1 pixel art, hot pink, cyan, deep shadow",
+    "core": "32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography.",
+    "family": "Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.",
+    "roomModel": "32-bit pixel art, PS1, crimson noir",
+    "model": "32-bit pixel art, PS1 texture, grungy neo-noir, restrained colour, heavy shadow",
+    "familyModel": "Dirty charcoal, muted burgundy, aged brass"
+  },
+  "requiredFacts": [
+    "One stable room identity across all time bands; preserve established exit relationships.",
+    "Leave named characters, stateful doors and movable objects to runtime layers.",
+    "Keep overlay placement zones usable at desktop and mobile sizes.",
+    "Old brick exterior",
+    "Frosted club window",
+    "Narrow awning above the side entrance",
+    "One canonical image across the night; no time-specific architecture variants.",
+    "Human must check all exits, staircase count, fixed placement and overlay composition."
+  ],
+  "forbiddenFacts": [
+    "Extra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.",
+    "Named NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.",
+    "Invented booth seating or altered window placement not supported by this room's reference.",
+    "Explicit sexual activity, nudity, minors, branded logos or hidden mystery facts."
+  ],
+  "state": {
+    "timeBand": "canonical",
+    "lighting": "neutral practical",
+    "weather": "base"
+  },
+  "layer": "background-architecture",
+  "authoritativeGeometry": false,
+  "authoritativeArchitecture": false,
+  "architectureReviewRequired": true,
+  "bakedEntities": [
+    {
+      "id": "detail_street_wall",
+      "location": "street"
+    },
+    {
+      "id": "detail_street_window",
+      "location": "street"
+    },
+    {
+      "id": "detail_street_awning",
+      "location": "street"
+    }
+  ],
+  "reviewContract": {
+    "staticArchitecture": [
+      {
+        "text": "Old brick exterior",
+        "entityId": "detail_street_wall"
+      },
+      {
+        "text": "Frosted club window",
+        "entityId": "detail_street_window"
+      },
+      {
+        "text": "Narrow awning above the side entrance",
+        "entityId": "detail_street_awning"
+      }
+    ],
+    "fixedFurniture": [],
+    "dynamicObjects": [
+      "detail_street_sign",
+      "detail_street_bin"
+    ],
+    "dynamicDoors": [
+      "side_door"
+    ],
+    "exits": [
+      {
+        "name": "inside",
+        "to": "vestibule",
+        "minutes": 1,
+        "aliases": [
+          "in",
+          "velvet",
+          "entrance",
+          "side entrance"
+        ],
+        "door": "side_door"
+      },
+      {
+        "name": "loading bay",
+        "to": "loading-bay",
+        "minutes": 4,
+        "aliases": [
+          "bay",
+          "loading door",
+          "behind",
+          "east"
+        ]
+      },
+      {
+        "name": "kiosk",
+        "to": "kiosk",
+        "minutes": 2,
+        "aliases": [
+          "across street"
+        ]
+      },
+      {
+        "name": "home",
+        "to": "apartment",
+        "minutes": 18,
+        "aliases": [
+          "apartment",
+          "west"
+        ]
+      },
+      {
+        "name": "front door",
+        "to": "bar",
+        "minutes": 2,
+        "aliases": [
+          "front",
+          "front entrance"
+        ]
+      }
+    ],
+    "composition": {
+      "anchors": {
+        "detail_street_wall": {
+          "glyph": "wall",
+          "x": 0,
+          "y": 15,
+          "width": 320,
+          "height": 125
+        },
+        "side_door": {
+          "glyph": "door",
+          "x": 197,
+          "y": 65,
+          "width": 54,
+          "height": 112
+        },
+        "detail_street_window": {
+          "glyph": "window",
+          "x": 51,
+          "y": 74,
+          "width": 87,
+          "height": 54
+        },
+        "detail_street_sign": {
+          "glyph": "sign",
+          "x": 167,
+          "y": 35,
+          "width": 108,
+          "height": 21
+        },
+        "detail_street_awning": {
+          "glyph": "shelf",
+          "x": 180,
+          "y": 58,
+          "width": 90,
+          "height": 8
+        },
+        "detail_street_bin": {
+          "glyph": "bin",
+          "x": 282,
+          "y": 149,
+          "width": 22,
+          "height": 33
+        }
+      },
+      "npcZones": [
+        {
+          "x": 260,
+          "y": 160
+        },
+        {
+          "x": 143,
+          "y": 140
+        },
+        {
+          "x": 78,
+          "y": 152
+        },
+        {
+          "x": 297,
+          "y": 135
+        }
+      ],
+      "atmosphereZones": [
+        {
+          "x": 30,
+          "y": 100,
+          "width": 260,
+          "height": 64
+        }
+      ],
+      "foregroundZones": [
+        {
+          "x": 0,
+          "y": 180,
+          "width": 320,
+          "height": 44
+        }
+      ]
+    }
+  },
+  "conditioning": {
+    "mode": "source-image-import",
+    "reference": null,
+    "mask": null,
+    "layout": null
+  },
+  "reviewBrief": "ROLE: canonical-room\n\nSTYLE: 32-bit pixel-map art; PS1 texture character; adult underground neo-noir nightlife; old-city architecture; expensive decay; crimson, deep red and dirty neutrals; selective hot pink and magenta, cyan as contrast; practical lamps, stained concrete, dirty brick, rain-slick pavement, haze and melancholy. Non-explicit atmosphere and implication. Clean modern UI typography. Old-city red-light district; expensive decay, crimson, dried wine, black, aged brass, wet stone. Adult underground venues with technology as texture, not generic futuristic cyberpunk.\n\nROOM REFERENCE: Velvet / side entrance\nRain writes over the taxi's tyre marks. Velvet's side entrance glows beneath a narrow awning. The loading bay runs behind the building; a soup kiosk stays lit across the road.\n\nREQUIRED:\nOne stable room identity across all time bands; preserve established exit relationships.\nLeave named characters, stateful doors and movable objects to runtime layers.\nKeep overlay placement zones usable at desktop and mobile sizes.\nOld brick exterior\nFrosted club window\nNarrow awning above the side entrance\nOne canonical image across the night; no time-specific architecture variants.\nHuman must check all exits, staircase count, fixed placement and overlay composition.\n\nFORBIDDEN:\nExtra staircases, balconies, fireplaces or gameplay-significant exits absent from the world reference.\nNamed NPCs, evidence, player belongings, readable story text, temporary damage or changing plot props baked into architecture.\nInvented booth seating or altered window placement not supported by this room's reference.\nExplicit sexual activity, nudity, minors, branded logos or hidden mystery facts.\n\nLAYER CONTRACT: {'staticArchitecture': [{'text': 'Old brick exterior', 'entityId': 'detail_street_wall'}, {'text': 'Frosted club window', 'entityId': 'detail_street_window'}, {'text': 'Narrow awning above the side entrance', 'entityId': 'detail_street_awning'}], 'fixedFurniture': [], 'dynamicObjects': ['detail_street_sign', 'detail_street_bin'], 'dynamicDoors': ['side_door'], 'exits': [{'name': 'inside', 'to': 'vestibule', 'minutes': 1, 'aliases': ['in', 'velvet', 'entrance', 'side entrance'], 'door': 'side_door'}, {'name': 'loading bay', 'to': 'loading-bay', 'minutes': 4, 'aliases': ['bay', 'loading door', 'behind', 'east']}, {'name': 'kiosk', 'to': 'kiosk', 'minutes': 2, 'aliases': ['across street']}, {'name': 'home', 'to': 'apartment', 'minutes': 18, 'aliases': ['apartment', 'west']}, {'name': 'front door', 'to': 'bar', 'minutes': 2, 'aliases': ['front', 'front entrance']}], 'composition': {'anchors': {'detail_street_wall': {'glyph': 'wall', 'x': 0, 'y': 15, 'width': 320, 'height': 125}, 'side_door': {'glyph': 'door', 'x': 197, 'y': 65, 'width': 54, 'height': 112}, 'detail_street_window': {'glyph': 'window', 'x': 51, 'y': 74, 'width': 87, 'height': 54}, 'detail_street_sign': {'glyph': 'sign', 'x': 167, 'y': 35, 'width': 108, 'height': 21}, 'detail_street_awning': {'glyph': 'shelf', 'x': 180, 'y': 58, 'width': 90, 'height': 8}, 'detail_street_bin': {'glyph': 'bin', 'x': 282, 'y': 149, 'width': 22, 'height': 33}}, 'npcZones': [{'x': 260, 'y': 160}, {'x': 143, 'y': 140}, {'x': 78, 'y': 152}, {'x': 297, 'y': 135}], 'atmosphereZones': [{'x': 30, 'y': 100, 'width': 260, 'height': 64}], 'foregroundZones': [{'x': 0, 'y': 180, 'width': 320, 'height': 44}]}}\n\nSTATE (runtime layers): {'timeBand': 'canonical', 'lighting': 'neutral practical', 'weather': 'base'}\n\nCONCEPT: canonical-room\n\nCOMPOSITOR: dynamic objects, stateful doors, evidence, named NPCs and time lighting remain simulation-driven.",
+  "sourceSchemaVersion": 1,
+  "sourceType": "hosted-generation",
+  "backend": "source-image-import",
+  "model": null,
+  "seed": null,
+  "modelExecuted": false,
+  "sourceGeneratorVersion": "freak-city-visual-gen/4",
+  "runId": "438886447bed",
+  "createdAt": "2026-09-13T23:08:21.833433+00:00",
+  "reviewStatus": "draft",
+  "architectureReviewState": "pending-human-review",
+  "originalSource": {
+    "file": "sources/original.png",
+    "sha256": "4fcdccc2fc91a436007dcbc92298245d0cb85f128966625788c40eb6f86bbe4b",
+    "bytes": 2587094
+  },
+  "sourceImage": {
+    "file": "sources/framed.png",
+    "sha256": "d0058b9c7ec1d011dc4a384cba01970e1847d61b597753cf95d5e4cedbdb06fd",
+    "bytes": 2586887
+  },
+  "unquantizedMaster": {
+    "file": "pixels/unquantized.png",
+    "sha256": "1013a49997b8845402996575b73d19cd45726e18299a15412be4bf1240e36aa2",
+    "bytes": 149593
+  },
+  "pixelSource": {
+    "file": "pixels/64-colours.png",
+    "sha256": "8af972f6d99cf82bad87ebcea4950ff0d3b77e1080e0d23a290bd7ee1b405927",
+    "bytes": 117107
+  },
+  "worldManifest": {
+    "file": "provenance/world-manifest.json",
+    "sha256": "739915af6b98ecb26be395a02ff5b034b54ed252fd1d5ddb38c8405f6edccca1",
+    "bytes": 11865
+  },
+  "sha256": "340321a8a59fbd57c25f9e76889580b9e5055c11ad383f28f90e6fe586e52f78",
+  "rawBytes": 138824,
+  "dimensions": {
+    "width": 640,
+    "height": 448
+  },
+  "pixelDimensions": {
+    "width": 320,
+    "height": 224
+  },
+  "framing": {
+    "method": "explicit-crop",
+    "crop": [
+      4,
+      3,
+      1494,
+      1046
+    ],
+    "orientedSourceDimensions": [
+      1499,
+      1049
+    ],
+    "framedDimensions": [
+      1490,
+      1043
+    ],
+    "notes": "Source 1499x1049; centered explicit 1490x1043 10:7 crop removes 4 left, 5 right, 3 top and 3 bottom pixels. No geometry resampling before standard pixel import.",
+    "orientation": "EXIF transpose before coordinates; original bytes retained"
+  },
+  "generationSettings": {
+    "operation": "pixel-processing-only",
+    "width": 1490,
+    "height": 1043,
+    "pixelWidth": 320,
+    "displayWidth": 640,
+    "colors": 64,
+    "contrast": 1.15,
+    "resampling": "nearest-neighbour",
+    "quantization": "Pillow MEDIANCUT",
+    "pillowVersion": "12.1.1"
+  },
+  "provenance": {
+    "origin": "hosted-generation",
+    "editor": "Codex",
+    "service": null,
+    "notes": "One new exterior architecture source from built-in imagegen; no local inference. Exterior and approved bar are style references, not edited parents. Door, sign, bin and owned effects excluded for separate review layers.",
+    "authoring": {
+      "authoringTool": "OpenAI built-in imagegen",
+      "provider": "OpenAI",
+      "model": null,
+      "seed": null,
+      "settings": {
+        "requestedDimensions": [
+          1440,
+          1008
+        ],
+        "intent": "new source using exterior mood, approved bar style and authored layout references",
+        "promptFile": "authoring-prompt.txt"
+      }
+    },
+    "artContract": {
+      "file": "provenance/art-contract.md",
+      "sha256": "18b9ce04f19701777776dbbb7741cc656c8a6119ec3a726eefb6c0bb2a235a5a",
+      "bytes": 23768
+    },
+    "modelVersion": null,
+    "sourceCreatedAt": null,
+    "parentSource": null,
+    "editPrompt": "Use case: stylized-concept. Asset type: a clean canonical architectural background plate for FREAK//CITY, to receive separate pixel-art object layers. Create ONE landscape image, 1440 x 1008 (10:7) if possible.\n\nReference roles: Image 1 is the retained exterior, for damp worn old masonry and street atmosphere only; DO NOT copy its additional doors, lamps, shutters, signage or perspective streets. Image 2 is the approved Velvet interior, for distressed material, expressive magenta/cyan light and rich dark midtones only; DO NOT depict the interior, furniture or neon tube fixtures. Image 3 is an authored facade composition guide; use its geometry. Text and colored labels in the guide are not art.\n\nThe view is the quiet exterior side entrance of an old adult nightlife venue, near-frontally seen from across a narrow road. A SINGLE uninterrupted old brick facade fills the frame width, wet worn pavement in the lower approximately 22 percent. We see only this bounded stretch of facade; additional exits, the kiosk across the road, and routes to the front entrance and behind the building are outside the view. No sky or neighboring buildings required.\n\nArchitecture on a 320 x 224 image grid: brick facade fills x0..320 y0..177. One large landscape frosted club window, rectangle approximately x42..135 y76..134, sits LEFT. Indistinct pink/cyan ambient light through frosted glass, no clear interior view, no faces or silhouettes. One SIDE-ENTRY OPENING is RIGHT OF CENTRE, x193..248 y76..177, a rectangular, very dark empty recess with a fixed aged lintel/jamb and bare threshold. Render NO door leaf inside or beside it: a game layer supplies both the closed door and the open leaf. The recess must stay unlit, nearly black and empty; no corridor, equipment, interior furniture or deep room view. Above it a NARROW WORN BURGUNDY AWNING spans roughly x179..259 y55..73, projecting a little toward the camera. The area above the awning at x177..257 y30..48 is simply brick, empty of signage, brackets or lettering: a separate overlay will supply the VELVET sign. Rightmost floor area x281..303 y150..184 must remain empty for the future bin. Foreground x159..169 y190..197 must remain empty for a future envelope.\n\nStyle: a high-quality painterly game environment source with PS1-era rough texture and cohesive chunky material detail that survives 320-pixel reduction. Grungy underground neo-noir, physically believable worn old brick, damp dark mortar and reflective stone. Rich, readable dirty midtones and deep shadow; palette compatible with the approved interior but more restrained outdoors. Magenta and cyan may softly diffuse through the frosted window and very faintly reflect beneath that window. Keep the ground under the empty sign/door reservation neutral, with NO already-painted sign glow, doorway spill, text reflection, bins or human reflections. No visible neon tube, new practical lamp or light fixture. No active rain streaks baked into art (a separate weather layer supplies rain); damp material and shallow wet texture are appropriate. No bloom so strong that brick detail disappears.\n\nOnly permanent architecture and pavement. NO people, animals, cars, queues, bin, paper, umbrella, envelope, movable objects, sign, text, logos, placards, wall posters, graffiti, damage decals, stickers, second window, second visible door, shutters, stairs, rails, camera, bus stop, street lamp or kiosk in frame. Empty reservations must remain natural background, not outlined placeholders. Preserve architectural scale: full-height ordinary single-person door opening and low foreground pavement; not a grand monumental entrance. Do not reproduce guide colors, arrows, grids, labels or UI.\n",
+    "modelExecutedDuringImport": false
+  }
+}
