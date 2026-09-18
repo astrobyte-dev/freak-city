@@ -168,6 +168,27 @@ describe("B. Scenery: every noun the visible prose names is examinable", () => {
       expect(new Set(forms.map(text)).size).toBe(1);
     },
   );
+  // A look with a preposition is a glance: the EXAMINE line, one free line,
+  // nothing recorded, for scenery and real objects alike.
+  it.each([
+    ["look behind the curtain", "curtain"],
+    ["look under the counter", "counter"],
+  ])("%s at the bar is the %s line and records nothing", (command, noun) => {
+    const before = newTrial();
+    const after = oneFreeLine(before, command);
+    expect(lines(after)).toEqual(lines(run(before, `x ${noun}`)));
+  });
+  it("mug is an alias of the cup", () => {
+    const served = run(newTrial(), "order coffee");
+    expect(lines(run(served, "x mug"))).toEqual(lines(run(served, "x cup")));
+    expect(text(run(served, "x mug"))).toMatch(/cup/);
+  });
+  it("pick up mug takes the cup", () => {
+    const served = run(newTrial(), "order coffee");
+    const taken = run(served, "pick up mug");
+    expect(last(taken).failed, text(taken)).toBe(false);
+    expect(taken.entities["trial-cup"].location).toBe("player");
+  });
   it("scenery belongs to its room", () => {
     const kettle = text(run(arrive.home(), "x kettle"));
     const after = run(newTrial(), "x kettle");
