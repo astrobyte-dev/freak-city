@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "path": "direct",
+      "course": "formal",
+      "receipt": {
+        "id": "sable:observation:9",
+        "at": 1096,
+        "path": "direct",
+        "sources": [
+          "sable:observation:7",
+          "sable:observation:8"
+        ]
+      },
+      "decision": {
+        "at": 1106,
+        "course": "formal",
+        "reasons": [
+          "The photo and independent listing conflict with my hospital account.",
+          "The independent practitioner agrees to explain every step and stop when asked.",
+          "I can make room around work and want an examination."
+        ],
+        "receipt": "sable:observation:9"
+      },
+      "completed": {
+        "at": 5426,
+        "course": "formal"
+      },
+      "updateAt": 6962,
+      "commands": 26
+    },
+    {
+      "path": "direct",
+      "course": "document",
+      "receipt": {
+        "id": "sable:observation:9",
+        "at": 1216,
+        "path": "direct",
+        "sources": [
+          "sable:observation:7",
+          "sable:observation:8"
+        ]
+      },
+      "decision": {
+        "at": 1226,
+        "course": "document",
+        "reasons": [
+          "The photo and independent listing justify investigating.",
+          "Tonight's service needs my attention; I prefer a task I can pace myself.",
+          "A dated notebook can distinguish what I remember from what I can check."
+        ],
+        "receipt": "sable:observation:9"
+      },
+      "completed": {
+        "at": 2666,
+        "course": "document"
+      },
+      "updateAt": 6962,
+      "commands": 27
+    },
+    {
+      "path": "vesper",
+      "course": "formal",
+      "receipt": {
+        "id": "sable:observation:10",
+        "at": 2536,
+        "path": "vesper",
+        "sources": [
+          "sable:observation:7",
+          "sable:observation:8"
+        ]
+      },
+      "decision": {
+        "at": 2546,
+        "course": "formal",
+        "reasons": [
+          "The photo and independent listing conflict with my hospital account.",
+          "The independent practitioner agrees to explain every step and stop when asked.",
+          "I can make room around work and want an examination."
+        ],
+        "receipt": "sable:observation:10"
+      },
+      "completed": {
+        "at": 6866,
+        "course": "formal"
+      },
+      "updateAt": 6962,
+      "commands": 25
+    },
+    {
+      "path": "vesper",
+      "course": "document",
+      "receipt": {
+        "id": "sable:observation:10",
+        "at": 2656,
+        "path": "vesper",
+        "sources": [
+          "sable:observation:7",
+          "sable:observation:8"
+        ]
+      },
+      "decision": {
+        "at": 2666,
+        "course": "document",
+        "reasons": [
+          "The photo and independent listing justify investigating.",
+          "Tonight's service needs my attention; I prefer a task I can pace myself.",
+          "A dated notebook can distinguish what I remember from what I can check."
+        ],
+        "receipt": "sable:observation:10"
+      },
+      "completed": {
+        "at": 4106,
+        "course": "document"
+      },
+      "updateAt": 6962,
+      "commands": 26
+    }
+  ],
+  "audits": [
+    {
+      "path": "direct",
+      "course": "formal",
+      "viewport": "desktop",
+      "violations": []
+    },
+    {
+      "path": "direct",
+      "course": "formal",
+      "viewport": "mobile",
+      "violations": []
+    },
+    {
+      "path": "direct",
+      "course": "document",
+      "viewport": "desktop",
+      "violations": []
+    },
+    {
+      "path": "direct",
+      "course": "document",
+      "viewport": "mobile",
+      "violations": []
+    },
+    {
+      "path": "vesper",
+      "course": "formal",
+      "viewport": "desktop",
+      "violations": []
+    },
+    {
+      "path": "vesper",
+      "course": "formal",
+      "viewport": "mobile",
+      "violations": []
+    },
+    {
+      "path": "vesper",
+      "course": "document",
+      "viewport": "desktop",
+      "violations": []
+    },
+    {
+      "path": "vesper",
+      "course": "document",
+      "viewport": "mobile",
+      "violations": []
+    }
+  ],
+  "errors": []
+}

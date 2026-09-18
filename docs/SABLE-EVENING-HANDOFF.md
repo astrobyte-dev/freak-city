@@ -15,7 +15,7 @@ Launch **[the final build](http://localhost:52753/sable-trial.html)** (`sable-ev
 
 ## Frozen sessions and review
 
-All four exports were downloaded as matching Markdown/JSON snapshots before further repairs. Source copies/hashes and compiled hashes identify each build. The [snapshot verifier](../artifacts/sable-evening-20260918/verify-snapshots.ts) reproduces their Markdown exactly and compares diagnostic content, retaining each original build identifier.
+The four evening exports were downloaded as matching Markdown/JSON snapshots before further repairs; the later story-exploration export was frozen the same way before its review. Source copies/hashes and compiled hashes identify each build. The [snapshot verifier](../artifacts/sable-evening-20260918/verify-snapshots.ts) reproduces their Markdown exactly and compares diagnostic content, retaining each original build identifier.
 
 | Session                               | Readable export                                                                                                               | Matching diagnostic JSON                                                                                                                                                                                                                                                 | Purpose                                                                                                                                                                                           |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -32,6 +32,16 @@ It also exposed real defects. “No, I think it sounds perfectly reasonable” w
 The later wording check exposed “I found a photograph, but it isn't you” becoming a positive claim. Shared negation now recognises the missing contractions, with variants covered by regressions. The final response asks for clarification and records no claim. This is safe clarification, not full understanding of a negative photographic identification. The final diagnostic contains two clarifications, fourteen handled sub-actions, one deferred reply and two expected rejections, across twelve submissions. Both denials and hesitation leave state unchanged.
 
 Remaining limits are concrete. “I'd call it the assistant manager” cannot name the rubber octopus; this is unsupported scenery interaction, and the naming joke still suggests more freedom than exists. “Take cup and finish coffee” clarifies as competing object wording; semicolon-separated actions work. Conversation is finite and authored, including repeated replies; it does not provide unrestricted natural-language understanding or infer sarcasm. These limitations were retained in the exports, not disguised as success.
+
+## Context-priority routing (18 Sep, 282d42b)
+
+- One anchored greeting rule, shared by `namedTopic` and the conversation opening; the drifted engine copy is removed.
+- `namedTopic` takes the active subject: under hospital, photo, listing, investigation or report, a passing “night” or “evening” no longer redirects to plans, and an unplaced remark is answered with a clarification.
+- Drink requests need a named drink, refill, fresh drink or “drink”; ordering words alone fall through, except that while Sable's offer is pending they accept it exactly as “yes” does.
+- `companyReply` recognises questions about Sable's own preference and answers with the recorded position, offering, declining and arranging nothing.
+- A look, visit or pop-in sentence that names another reachable room is travel; without a room, current behaviour is unchanged.
+
+Sable suites 190 → 213 with no existing assertion changed; the [regression file](../tests/sable-context-routing.test.ts) replays the story-exploration submissions. Four browser routes, eight accessibility scans and legacy storage isolation passed on a fresh build ([browser results](../artifacts/sable-context-routing-20260918/browser-results.json)); `npm run check` passed with 1,320 tests. Story-exploration items #9, #22, #37, #47 and #48 are resolved; #29 now clarifies instead of joking, with its authored reply deferred to the expressive-speech task.
 
 ## Verification and preservation
 
@@ -56,3 +66,5 @@ node node_modules/vite/bin/vite.js preview --config vite.sable.config.ts --host 
 ```
 
 Then open `http://localhost:52754/sable-trial.html`. No installation is needed. The normal campaign build remains separate.
+
+Under Git Bash, run the browser scripts with `MSYS_NO_PATHCONV=1`; otherwise `SABLE_TRIAL_PATH=/sable-trial.html` is rewritten as a Windows path.
