@@ -50,6 +50,7 @@ __pycache__/
 /artifacts/sable-story-exploration-*/
 /artifacts/sable-context-routing-*/
 /artifacts/vocabulary-layer-*/
+/artifacts/smoke-machine-hook-*/
 
 # Local design review captures and notes
 /docs/design/
