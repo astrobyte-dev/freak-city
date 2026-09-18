@@ -86,7 +86,7 @@ export function createTrialEntities() {
     "trial-bag": ["bag"],
   };
   for (const e of Object.values(result)) e.aliases = aliases[e.id] ?? [];
-  result["trial-cup"] = createVessel("trial-cup", "cup", ["cup"]);
+  result["trial-cup"] = createVessel("trial-cup", "cup", ["cup", "mug"]);
   result["trial-glass"] = createVessel("trial-glass", "glass", ["glass"]);
   result["trial-counter"] = entitySchema.parse({
     id: "trial-counter",

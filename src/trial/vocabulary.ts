@@ -4,6 +4,7 @@ import { beverages, trialInterlocutors } from "./interaction-content";
 import type { Failure, InteractionResult } from "./interaction-model";
 import { activeInteraction, entityCandidates } from "./interactions";
 import { trialText } from "./language";
+import { describeVessel, isVessel } from "./vessels";
 import {
   nearby,
   people,
@@ -22,6 +23,7 @@ export const trialVerbs = [
   "look",
   "examine",
   "read",
+  "search",
   "take",
   "get",
   "drop",
@@ -101,8 +103,10 @@ const examineForms = [
   "read",
   "check",
   "have",
+  "search",
 ];
-const examineVerbs = ["examine", "read", "look"];
+// The shared parser turns "look behind/under/in X" into "search X".
+const examineVerbs = ["examine", "read", "look", "search"];
 // Words a player puts between LOOK and a noun.
 const preposition =
   /^(?:behind|under|underneath|beneath|inside|in|into|through|past|beyond|at|on|over|around|round) (?:the |a |an )?/;
@@ -288,7 +292,18 @@ export function standardAction(
   }
   if (examineVerbs.includes(c.verb) && examineForms.includes(first)) {
     const found = findNoun(s, noun);
-    if (!found || found.kind === "entity") return undefined;
+    if (!found) return undefined;
+    // A look with a preposition is a glance: the EXAMINE line with nothing
+    // recorded, even for a real object. A plain EXAMINE still defers to it.
+    if (found.kind === "entity") {
+      const e = s.entities[found.id];
+      return c.verb === "search" && visibleAt(s.entities, e.id, s.room)
+        ? free(
+            isVessel(e) ? describeVessel(e) : e.description,
+            "examine:glance",
+          )
+        : undefined;
+    }
     if (found.kind === "person")
       return present(found.person.id)
         ? free(found.person.description, "examine:person")
