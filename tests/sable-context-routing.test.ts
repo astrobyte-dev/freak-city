@@ -229,6 +229,16 @@ describe("Unchanged social and ordering routes", () => {
     expect(intent(s)).toMatch(/order-drink/);
     expect(currentDrink(s)?.kind).toBe("alcohol-free special");
   });
+  it("does not travel without a named room", () => {
+    const shop = run(newTrial(), "go shop", "take photograph");
+    const photo = run(shop, "have a look at the photograph");
+    expect(photo.room).toBe("shop");
+    expect(intent(photo)).toBe("conversation:photo");
+    const around = run(shop, "have a look around");
+    expect(around.room).toBe("shop");
+    expect(outcome(around)).toBe("clarified");
+    expect(intent(around)).toBe("action:unknown-object");
+  });
   it("neither crashes nor invents knowledge for a night question with no active subject", () => {
     const before = run(newTrial(), "wait for an hour");
     expect(activeContext(before)).toBeUndefined();

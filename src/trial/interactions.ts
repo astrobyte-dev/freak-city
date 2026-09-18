@@ -543,10 +543,13 @@ export function handleInteraction(
     /\b(new|fresh|different) (?:one|cup|glass|drink|coffee|tea|water)\b/.test(
       body,
     );
+  // Ordering words alone are not an order: the request must name a drink,
+  // an explicit refill or fresh drink, or say "drink".
   const requestDrink =
-    /^(?:ask for|request|order|refill|top up|(?:a )?(?:new|fresh) (?:one|drink|coffee|tea|water)|(?:can|could|may) i (?:have|try|get|order)|i(?:'d| would) like|i(?:'ll| will) have|yes\b.*(?:have|get|coffee|tea|water)|another (?:drink|coffee|tea|water)|more (?:coffee|tea|water))\b/.test(
+    (/^(?:ask for|request|order|refill|top up|(?:a )?(?:new|fresh) (?:one|drink|coffee|tea|water)|(?:can|could|may) i (?:have|try|get|order)|i(?:'d| would) like|i(?:'ll| will) have|yes\b.*(?:have|get|coffee|tea|water)|another (?:drink|coffee|tea|water)|more (?:coffee|tea|water))\b/.test(
       body,
-    ) ||
+    ) &&
+      (namedDrinks.length > 0 || /\bdrink\b/.test(body))) ||
     explicitRefill ||
     explicitNew ||
     host.beverages.some((d) =>
@@ -687,19 +690,6 @@ export function handleInteraction(
         ? "decline"
         : "accept";
     meaning.polarity = response;
-    if (
-      requestDrink &&
-      !namedDrinks.length &&
-      !explicitRefill &&
-      !explicitNew &&
-      !/\bdrink\b/.test(body)
-    )
-      return attach(
-        clarified(
-          `Trial limitation: that request is not available here. You can order a drink from the menu.`,
-          "conversation:unsupported",
-        ),
-      );
     if (!actor.service)
       return attach(rejected(`${actor.name} does not offer drink service.`));
     if (!host.present(actor.id))

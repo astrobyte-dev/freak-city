@@ -46,7 +46,29 @@ export function speechText(text: string) {
 }
 
 export type Topic = NonNullable<TrialState["context"]>["topic"];
-export function namedTopic(text: string): Topic {
+// One anchored greeting rule. A question that merely begins "how are you"
+// ("how are you feeling about this?") is not a greeting.
+export function greeting(text: string) {
+  const bare = text
+    .replace(/^(?:hi|hello|hey)\b ?/, "")
+    .replace(/^sable ?/, "")
+    .replace(/ ?sable$/, "");
+  return bare
+    ? /^how (?:are you(?: doing)?(?: today| tonight| this evening)?|have you been)$|^how's things$/.test(
+        bare,
+      )
+    : /^(?:hi|hello|hey)\b/.test(text);
+}
+// While one of these subjects is active, a passing "night" or "evening" does
+// not change the subject to party plans; the caller asks instead.
+export const sensitiveTopics = [
+  "hospital",
+  "photo",
+  "listing",
+  "investigation",
+  "report",
+];
+export function namedTopic(text: string, active?: string): Topic {
   if (/\b(menu|cocktail|minor administrative disappointment)\b/.test(text))
     return "drink";
   if (/\b(lids?|jars?|supplier|complaint)\b/.test(text)) return "supplier";
@@ -80,9 +102,10 @@ export function namedTopic(text: string): Topic {
   )
     return "investigation";
   if (/\b(roleplay|kink|switch|recording)\b/.test(text)) return "roleplay";
+  if (greeting(text)) return "plans";
   if (
-    /\b(evening|night|plans)\b/.test(text) ||
-    /^(?:hi|hello|hey|how (?:are you|have you been)|how's things)/.test(text)
+    /\b(evening|night|plans)\b/.test(text) &&
+    !(active && sensitiveTopics.includes(active))
   )
     return "plans";
   return undefined;
@@ -90,12 +113,19 @@ export function namedTopic(text: string): Topic {
 
 export function companyReply(
   text: string,
-): "offer" | "decline" | "uncertain" | undefined {
+): "offer" | "decline" | "uncertain" | "ask-preference" | undefined {
   const company =
     /\b(company|accompany|come with|go with|join you|sit with|stay with)\b/.test(
       text,
     );
   if (!company) return undefined;
+  // Asking what Sable wants is neither an offer nor a refusal.
+  if (
+    /^(?:have you decided|do you (?:want|prefer)|would you (?:like|prefer|want)|what (?:do|would) you (?:want|prefer|like)|do you know (?:yet )?(?:whether|if))\b/.test(
+      text,
+    )
+  )
+    return "ask-preference";
   if (
     /^(?:what if|if i|should i|would you|do you|are you|can you|don't|do not|never)\b/.test(
       text,

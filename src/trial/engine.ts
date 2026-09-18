@@ -14,7 +14,14 @@ import {
   setTopic,
   socialConversation,
 } from "./conversation";
-import { companyReply, namedTopic, speechText, trialText } from "./language";
+import {
+  companyReply,
+  greeting,
+  namedTopic,
+  sensitiveTopics,
+  speechText,
+  trialText,
+} from "./language";
 import {
   evidenceIds,
   helpText,
@@ -541,6 +548,8 @@ function respond(s: TrialState, raw: string): InteractionResult {
   }
   const company = companyReply(reply);
   if (company) {
+    const companyOffered =
+      "Sable: ‘Thank you for offering. I haven't decided whether I want company. I'll ask before we arrange anything.’";
     if (!sablePresent(s))
       return clarify(
         "Sable isn't here to hear that offer or reply.",
@@ -554,6 +563,26 @@ function respond(s: TrialState, raw: string): InteractionResult {
         "Are you offering Sable company, saying you cannot come, or asking what they would prefer? No arrangement has been made.",
         "conversation:company-clarification",
       );
+    if (company === "ask-preference") {
+      // Answer from the latest recorded position; asking offers, declines and arranges nothing.
+      const position = [...s.observations]
+        .reverse()
+        .find(
+          (o) =>
+            o.actor === "sable" &&
+            ["company-offer", "company-declined"].includes(o.subject),
+        )?.subject;
+      return {
+        ...ok(
+          position === "company-offer"
+            ? companyOffered
+            : position === "company-declined"
+              ? "Sable: ‘I won't count on you coming. I can make my own arrangements.’"
+              : "Sable: ‘I haven't decided whether I want company. No arrangement has been made.’",
+        ),
+        intent: "conversation:company-preference",
+      };
+    }
     if (company === "decline") {
       record(
         s,
@@ -586,12 +615,7 @@ function respond(s: TrialState, raw: string): InteractionResult {
       raw,
       "Player offered company; no acceptance or appointment commitment",
     );
-    return {
-      ...ok(
-        "Sable: ‘Thank you for offering. I haven't decided whether I want company. I'll ask before we arrange anything.’",
-      ),
-      intent: "conversation:offer-company",
-    };
+    return { ...ok(companyOffered), intent: "conversation:offer-company" };
   }
   const timeSuggestion =
     /^(?:(?:you can|you could|please) )?(?:take|have) (?:all )?(?:the |your |some )?time\b/.test(
@@ -672,21 +696,27 @@ function respond(s: TrialState, raw: string): InteractionResult {
   }
   const moving =
     /^(go|walk|head|return|enter|leave)\b/.test(text) || text === "home";
-  if (moving) {
-    const room = /home|apartment/.test(text)
-      ? "home"
-      : /shop|secondhand/.test(text)
-        ? "shop"
-        : /booth/.test(text)
-          ? "booth"
-          : /bar|velvet|outside|leave/.test(text)
-            ? "bar"
-            : undefined;
-    if (!room) return no("You can go to the bar, shop, booth or home.");
-    s.room = room;
+  // A look, visit or pop-in sentence that names another reachable room is
+  // travel. Without a room it keeps its object or conversation meaning.
+  const visiting =
+    /^(?:i(?:'ll| will| want to|'d like to| think i'll)? )?(?:(?:have|take) a look|look|visit|pop|drop|nip|wander|step)(?: (?:in|into|at|by|over|round|around|back|to|the))+ (?:shop|secondhand shop|booth|bar|velvet corner|home|apartment)\b/.test(
+      text,
+    );
+  const destination = /home|apartment/.test(text)
+    ? "home"
+    : /shop|secondhand/.test(text)
+      ? "shop"
+      : /booth/.test(text)
+        ? "booth"
+        : /bar|velvet|outside|leave/.test(text)
+          ? "bar"
+          : undefined;
+  if (moving || (visiting && destination !== s.room)) {
+    if (!destination) return no("You can go to the bar, shop, booth or home.");
+    s.room = destination;
     delete s.context;
     delete s.privateUntil;
-    return ok(`You go to ${rooms[room]}.`);
+    return ok(`You go to ${rooms[destination]}.`);
   }
   const response = socialReply;
   const isSilence =
@@ -1187,14 +1217,24 @@ function respond(s: TrialState, raw: string): InteractionResult {
     );
   const context = activeContext(s);
   const followup = isFollowup(reply);
-  let topic = namedTopic(reply);
+  let topic = namedTopic(reply, context?.topic);
   if (!topic && followup) topic = context?.topic;
   const socialOpening =
-    /^(?:(?:hi|hello|hey)(?: sable)?|(?:talk|chat|speak)(?: (?:to |with )?sable)?|how are you|how have you been)$/.test(
-      text,
-    );
+    greeting(text) ||
+    /^(?:talk|chat|speak)(?: (?:to |with )?sable)?$/.test(text);
   if (!topic && socialOpening) topic = "plans";
-  if (recipient === "sable" || topic || followup || socialOpening) {
+  // Under a sensitive subject an unplaced remark gets a question, not a guess.
+  const sensitive =
+    context?.interlocutor === "sable" &&
+    !!context.topic &&
+    sensitiveTopics.includes(context.topic);
+  if (
+    recipient === "sable" ||
+    topic ||
+    followup ||
+    socialOpening ||
+    sensitive
+  ) {
     if (!sablePresent(s))
       return clarify(
         "Sable isn't here to continue that conversation. They are at the bar during staffed evenings, except for their own commitments.",
