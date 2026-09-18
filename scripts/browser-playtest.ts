@@ -143,7 +143,7 @@ try {
     .poll(async () => (await state()).world.commandHistory.length)
     .toBe(beforeComposition + 1);
   await command("levitate piano");
-  await expect(input).toHaveValue("levitate piano");
+  await expect(input).toHaveValue("");
   await command("phone");
   const messageInput = page.getByRole("textbox", {
     name: "MESSAGE",
