@@ -35,3 +35,19 @@ __pycache__/
 *.pt
 *.pth
 *.gguf
+
+# Inform comparison experiment: compiled story, vendored web interpreter and playtest evidence dumps
+/experiments/inform-comparison/build/story.ulx
+/experiments/inform-comparison/web/interpreter/
+/experiments/inform-comparison/evidence/
+
+# Per-run Sable playtest output; only the handoff-referenced foundations evidence is tracked
+/artifacts/sable-*-port*/
+/artifacts/sable-connection-*/
+/artifacts/sable-evening-*/
+/artifacts/sable-exploratory-*/
+/artifacts/sable-routing-repair-*/
+/artifacts/sable-story-exploration-*/
+
+# Local design review captures and notes
+/docs/design/
