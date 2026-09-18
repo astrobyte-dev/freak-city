@@ -7,7 +7,12 @@ export const beverages: BeverageDefinition[] = [
   { kind: "water", aliases: ["water"] },
   {
     kind: "alcohol-free special",
-    aliases: ["special", "cocktail", "minor administrative disappointment"],
+    aliases: [
+      "special",
+      "cocktail",
+      "minor administrative disappointment",
+      "gin",
+    ],
     variant: { words: ["gin", "alcohol", "alcoholic"], kind: "gin special" },
   },
 ];

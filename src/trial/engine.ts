@@ -2,6 +2,7 @@ import { handleInteraction } from "./interactions";
 import { currentDrink, describeVessel, isVessel } from "./vessels";
 import { trialInterlocutors, beverages } from "./interaction-content";
 import { isFollowup } from "./interaction-language";
+import { canonical, standardAction, unresolved } from "./vocabulary";
 import type { InteractionHost, InteractionResult } from "./interaction-model";
 import { carriedBy, visibleAt } from "../engine/custody";
 import { nextDueEvent, scheduleOnce } from "../engine/event-queue";
@@ -523,6 +524,8 @@ function respond(s: TrialState, raw: string): InteractionResult {
   if (/^(journal|check journal)$/.test(text)) return { lines: journal(s) };
   if (/^(think|remember|consider)(\b|$)/.test(text))
     return { lines: [privateThought(s)], intent: "think:private" };
+  const standard = standardAction(s, text, (a) => present(s, a as Actor));
+  if (standard) return standard;
   const interaction = handleInteraction(s, raw, interactionHost(s));
   if (interaction) return interaction;
   if (
@@ -1211,10 +1214,7 @@ function respond(s: TrialState, raw: string): InteractionResult {
       "use",
     ].includes(c.verb)
   )
-    return clarify(
-      "I couldn't identify a supported object for that action. Name the menu or a visible evidence item; no object has changed.",
-      "action:unknown-object",
-    );
+    return unresolved(s, c, "object", (a) => present(s, a as Actor));
   const context = activeContext(s);
   const followup = isFollowup(reply);
   let topic = namedTopic(reply, context?.topic);
@@ -1358,9 +1358,7 @@ function respond(s: TrialState, raw: string): InteractionResult {
       );
     }
   }
-  return no(
-    "I couldn't place that action. Nothing changed. HELP gives examples; name the person or object when returning to an interrupted conversation.",
-  );
+  return unresolved(s, c, "action", (a) => present(s, a as Actor));
 }
 function acknowledge(s: TrialState) {
   setTopic(s, "decision", "investigation", { kind: "consider-options" });
@@ -1385,7 +1383,7 @@ export function executeTrial(state: TrialState, raw: string): TrialState {
     const before = structuredClone(s);
     const beforeRoom = s.room,
       beforeDecision = s.decision;
-    const result = respond(s, command);
+    const result = respond(s, canonical(s, command));
     if (!result.failed && !result.deferred) {
       s.turn++;
       advance(s, result.minutes ?? 0);
@@ -1434,6 +1432,7 @@ export function executeTrial(state: TrialState, raw: string): TrialState {
             ? "rejected"
             : "handled",
       meaning: result.meaning,
+      failure: result.failure,
       from: before.time,
       to: s.time,
       roomBefore: before.room,

@@ -64,6 +64,20 @@ export const responseMeaning = z.object({
   tone: z.literal("explicit-teasing").optional(),
 });
 export type ResponseMeaning = z.infer<typeof responseMeaning>;
+// Where a failed verb or object resolution gave up; the wording is separate.
+export const failureStage = z.enum([
+  "unknown-word",
+  "unknown-verb",
+  "not-here",
+  "not-a-thing",
+  "partial",
+  "refused",
+]);
+export const failure = z.object({
+  stage: failureStage,
+  token: z.string().optional(),
+});
+export type Failure = z.infer<typeof failure>;
 // Presentation memory, not a second authority for objects or evidence.
 export const interactionMemory = z.object({
   replies: z.record(z.number().int().nonnegative()).default({}),
@@ -90,6 +104,7 @@ export interface InteractionResult {
   intent?: string;
   meaning?: ResponseMeaning;
   deferred?: boolean;
+  failure?: Failure;
 }
 export interface TopicDefinition {
   id: string;

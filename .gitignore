@@ -49,6 +49,7 @@ __pycache__/
 /artifacts/sable-routing-repair-*/
 /artifacts/sable-story-exploration-*/
 /artifacts/sable-context-routing-*/
+/artifacts/vocabulary-layer-*/
 
 # Local design review captures and notes
 /docs/design/
