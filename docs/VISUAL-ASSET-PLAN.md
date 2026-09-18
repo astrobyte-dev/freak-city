@@ -2,6 +2,8 @@
 
 Audited against the 17 persistent rooms in `src/content/spaces.ts`, their affordances, and current visual manifests. Priorities are production judgments based on hub connectivity, narrative role and repeated use—not measured dwell-time analytics. No locations or gameplay events are added.
 
+**Current continuation, 2026-09-14:** bar and street are approved and active on the feature branch. The owner accepted the [vestibule brief](art-contracts/rooms/vestibule.md); its [complete draft](visuals/reviewed-sources/vestibule/draft-v1/REPORT.md) now awaits visual review, unactivated. The [evidence review](art-contracts/NEXT-ROOM-REVIEW.md) explains its priority ahead of loading bay. The ordering and first-production gate below are the original broad plan, superseded for the immediate next step. Accepted street/Velvet polish remains deferred.
+
 ## Product decisions
 
 - Canonical gameplay rooms provide stable place: manifest → layout → blockout → bounded surface work → optional documented cleanup → pixel masters → human review → runtime composite validation.

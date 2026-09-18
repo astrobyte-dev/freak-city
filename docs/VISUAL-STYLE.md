@@ -18,6 +18,14 @@ Atmosphere may include haze, smoke-like mist, lonely early-morning streets, bars
 
 Adults-only tone comes through atmosphere, implication, adult presentation and framing. Shipping art remains non-explicit. Do not invent a mystery clue to make a picture more dramatic. Named-character staging requires actual presence and human review; no final face or outfit is defined by this pass.
 
+## Future scene-framing preference
+
+Owner direction, 2026-09-14: when an authored adult flirtatious or mature scene intentionally focuses on feet, give anatomy, pose, framing, lighting and readable pixel detail extra attention. The owner's cinematic reference is **Quentin Tarantino's deliberate framing**, adapted to FREAK//CITY's established pixel-art style.
+
+Use credible foot/ankle anatomy, natural weight and surface contact, deliberate crops with enough body/scene context, and lighting that separates form without losing the worn-material palette. Preserve readable toe, arch and heel shapes through careful pixel clusters at the final desktop/mobile size. Apply the existing non-explicit scene standard and actual character/state context.
+
+This preference applies only to future relevant scenes. It requests no new scenes, feet-focused room views, changes to approved artwork or reopening of accepted polish.
+
 ## Families
 
 | Family                   | Materials, palette and lighting                                                                                               | Current rooms                                     |

@@ -10,3 +10,9 @@ docs/visuals/velvet-architecture-cleanup/
 docs/visuals/velvet-overlay-pilot/
 docs/visuals/reviewed-sources/
 docs/visuals/street-activation/
+
+# Raw playtest downloads: preserve exact submitted whitespace and save bytes.
+docs/design/sable-playtest-review/*-transcript.md
+docs/design/sable-playtest-review/without-note.md
+docs/design/sable-playtest-review/opening-diagnostics-SPOILERS.json
+docs/design/sable-playtest-review/restorable-trial-save.json
