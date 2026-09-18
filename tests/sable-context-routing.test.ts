@@ -248,3 +248,56 @@ describe("Unchanged social and ordering routes", () => {
     expect(after.receipt).toBeUndefined();
   });
 });
+
+describe("Modal acceptance of a pending drink offer", () => {
+  const phrases = [
+    "I'll have another",
+    "yes I'll have another",
+    "I'll have one",
+  ];
+  it.each(phrases)("%s accepts a named offer exactly as yes does", (phrase) => {
+    const pending = run(
+      newTrial(),
+      "order coffee",
+      "finish cup",
+      "ask for another drink",
+    );
+    expect(pending.context?.question).toMatchObject({
+      kind: "confirm-drink",
+      subject: "drink",
+      offered: "coffee",
+    });
+    const yes = run(pending, "yes");
+    const modal = run(pending, phrase);
+    expect(outcome(modal)).toBe(outcome(yes));
+    expect(intent(modal)).toBe(intent(yes));
+    expect(text(modal)).toBe(text(yes));
+    expect(currentDrink(modal)).toEqual(currentDrink(yes));
+    expect(modal.context).toEqual(yes.context);
+  });
+  it.each(phrases)(
+    "%s answers an open choice exactly as yes does",
+    (phrase) => {
+      const pending = run(newTrial(), "talk");
+      expect(pending.context?.question).toMatchObject({
+        kind: "choose-drink",
+        subject: "drink",
+      });
+      const yes = run(pending, "yes");
+      const modal = run(pending, phrase);
+      expect(outcome(modal)).toBe(outcome(yes));
+      expect(intent(modal)).toBe(intent(yes));
+      expect(text(modal)).toBe(text(yes));
+      expect(currentDrink(modal)).toEqual(currentDrink(yes));
+    },
+  );
+  it.each(phrases)("%s still falls through with nothing pending", (phrase) => {
+    const idle = run(newTrial(), "wait for an hour");
+    expect(activeContext(idle)).toBeUndefined();
+    const after = run(idle, phrase);
+    expect(outcome(after)).toBe("rejected");
+    expect(intent(after)).not.toMatch(/drink/);
+    expect(currentDrink(after)).toBeUndefined();
+    expect(after.context).toEqual(idle.context);
+  });
+});
